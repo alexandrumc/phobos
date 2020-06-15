@@ -20,7 +20,7 @@ obj/
 # Rule for VS Code config folder
 .vscode
 
-*.html
+# *.html
 
 .dub/
 libphobos_*
