@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2955,23 +2970,29 @@ original C header.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="localeconv" class="public" href="../../core/stdc/locale/localeconv.html">localeconv</a><span class="decoration">()</span>
+									<a id="localeconv" class="public" href="../../core/stdc/locale/localeconv.html">localeconv</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="setlocale" class="public" href="../../core/stdc/locale/setlocale.html">setlocale</a><span class="decoration">(category, locale)</span>
+									<a id="setlocale" class="public" href="../../core/stdc/locale/setlocale.html">setlocale</a><span class="tableEntryAnnotation">(category, locale)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -2980,7 +3001,7 @@ original C header.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -2989,6 +3010,8 @@ original C header.
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

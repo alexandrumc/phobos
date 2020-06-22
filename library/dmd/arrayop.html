@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2958,79 +2973,103 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="arrayOp" class="public" href="../dmd/arrayop/array_op.html">arrayOp</a><span class="decoration">(e, sc)</span>
+									<a id="arrayOp" class="public" href="../dmd/arrayop/array_op.html">arrayOp</a><span class="tableEntryAnnotation">(e, sc)</span>
 								</code>
 							</td>
 							<td>Construct the array operation expression, call object.arrayOp!(tiargs)(args).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="arrayOpInvalidError" class="public" href="../dmd/arrayop/array_op_invalid_error.html">arrayOpInvalidError</a><span class="decoration">(e)</span>
+									<a id="arrayOpInvalidError" class="public" href="../dmd/arrayop/array_op_invalid_error.html">arrayOpInvalidError</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>Print error message about invalid array operation.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isArrayOpImplicitCast" class="public" href="../dmd/arrayop/is_array_op_implicit_cast.html">isArrayOpImplicitCast</a><span class="decoration">(tfrom, tto)</span>
+									<a id="isArrayOpImplicitCast" class="public" href="../dmd/arrayop/is_array_op_implicit_cast.html">isArrayOpImplicitCast</a><span class="tableEntryAnnotation">(tfrom, tto)</span>
 								</code>
 							</td>
 							<td>Some implicit casting can be performed by the arrayOp template.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isArrayOpOperand" class="public" href="../dmd/arrayop/is_array_op_operand.html">isArrayOpOperand</a><span class="decoration">(e)</span>
+									<a id="isArrayOpOperand" class="public" href="../dmd/arrayop/is_array_op_operand.html">isArrayOpOperand</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>Test if operand is a valid array op operand.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isArrayOpValid" class="public" href="../dmd/arrayop/is_array_op_valid.html">isArrayOpValid</a><span class="decoration">(e)</span>
+									<a id="isArrayOpValid" class="public" href="../dmd/arrayop/is_array_op_valid.html">isArrayOpValid</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>Check that there are no uses of arrays without [].
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isBinArrayOp" class="public" href="../dmd/arrayop/is_bin_array_op.html">isBinArrayOp</a><span class="decoration">(op)</span>
+									<a id="isBinArrayOp" class="public" href="../dmd/arrayop/is_bin_array_op.html">isBinArrayOp</a><span class="tableEntryAnnotation">(op)</span>
 								</code>
 							</td>
 							<td>Test if expression is a binary array op.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isBinAssignArrayOp" class="public" href="../dmd/arrayop/is_bin_assign_array_op.html">isBinAssignArrayOp</a><span class="decoration">(op)</span>
+									<a id="isBinAssignArrayOp" class="public" href="../dmd/arrayop/is_bin_assign_array_op.html">isBinAssignArrayOp</a><span class="tableEntryAnnotation">(op)</span>
 								</code>
 							</td>
 							<td>Test if expression is a binary assignment array op.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isUnaArrayOp" class="public" href="../dmd/arrayop/is_una_array_op.html">isUnaArrayOp</a><span class="decoration">(op)</span>
+									<a id="isUnaArrayOp" class="public" href="../dmd/arrayop/is_una_array_op.html">isUnaArrayOp</a><span class="tableEntryAnnotation">(op)</span>
 								</code>
 							</td>
 							<td>Test if expression is a unary array op.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

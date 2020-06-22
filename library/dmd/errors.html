@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2954,203 +2969,266 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="deprecation" class="public" href="../dmd/errors/deprecation.html">deprecation</a><span class="decoration">(loc, format)</span>
+									<a id="deprecation" class="public" href="../dmd/errors/deprecation.html">deprecation</a><span class="tableEntryAnnotation">(loc, format)</span>
 								</code>
 							</td>
 							<td>Print a deprecation message, may increase the global warning or error count
  depending on whether deprecations are ignored.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="deprecationSupplemental" class="public" href="../dmd/errors/deprecation_supplemental.html">deprecationSupplemental</a><span class="decoration">(loc, format)</span>
+									<a id="deprecationSupplemental" class="public" href="../dmd/errors/deprecation_supplemental.html">deprecationSupplemental</a><span class="tableEntryAnnotation">(loc, format)</span>
 								</code>
 							</td>
 							<td>Print additional details about a deprecation message.
  Doesn't increase the error count, or print an additional deprecation prefix.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="error" class="public" href="../dmd/errors/error.html">error</a><span class="decoration">(loc, format)</span>
+									<a id="error" class="public" href="../dmd/errors/error.html">error</a><span class="tableEntryAnnotation">(loc, format)</span>
 								</code>
 							</td>
 							<td>Print an error message, increasing the global error count.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="error" class="public" href="../dmd/errors/error.html">error</a><span class="decoration">(loc, format)</span>
+									<a id="error" class="public" href="../dmd/errors/error.html">error</a><span class="tableEntryAnnotation">(loc, format)</span>
 								</code>
 							</td>
 							<td>Same as above, but allows Loc() literals to be passed.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="error" class="public" href="../dmd/errors/error.html">error</a><span class="decoration">(filename, linnum, charnum, format)</span>
+									<a id="error" class="public" href="../dmd/errors/error.html">error</a><span class="tableEntryAnnotation">(filename, linnum, charnum, format)</span>
 								</code>
 							</td>
 							<td>Same as above, but takes a filename and line information arguments as separate parameters.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="errorSupplemental" class="public" href="../dmd/errors/error_supplemental.html">errorSupplemental</a><span class="decoration">(loc, format)</span>
+									<a id="errorSupplemental" class="public" href="../dmd/errors/error_supplemental.html">errorSupplemental</a><span class="tableEntryAnnotation">(loc, format)</span>
 								</code>
 							</td>
 							<td>Print additional details about an error message.
  Doesn't increase the error count or print an additional error prefix.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fatal" class="public" href="../dmd/errors/fatal.html">fatal</a><span class="decoration">()</span>
+									<a id="fatal" class="public" href="../dmd/errors/fatal.html">fatal</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Call this after printing out fatal error messages to clean up and exit
  the compiler.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="halt" class="public" href="../dmd/errors/halt.html">halt</a><span class="decoration">()</span>
+									<a id="halt" class="public" href="../dmd/errors/halt.html">halt</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Try to stop forgetting to remove the breakpoints from
  release builds.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="message" class="public" href="../dmd/errors/message.html">message</a><span class="decoration">(loc, format)</span>
+									<a id="message" class="public" href="../dmd/errors/message.html">message</a><span class="tableEntryAnnotation">(loc, format)</span>
 								</code>
 							</td>
 							<td>Print a verbose message.
  Doesn't prefix or highlight messages.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="message" class="public" href="../dmd/errors/message.html">message</a><span class="decoration">(format)</span>
+									<a id="message" class="public" href="../dmd/errors/message.html">message</a><span class="tableEntryAnnotation">(format)</span>
 								</code>
 							</td>
 							<td>Same as above, but doesn't take a location argument.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="tip" class="public" href="../dmd/errors/tip.html">tip</a><span class="decoration">(format)</span>
+									<a id="tip" class="public" href="../dmd/errors/tip.html">tip</a><span class="tableEntryAnnotation">(format)</span>
 								</code>
 							</td>
 							<td>Print a tip message with the prefix and highlighting.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vdeprecation" class="public" href="../dmd/errors/vdeprecation.html">vdeprecation</a><span class="decoration">(loc, format, ap, p1, p2)</span>
+									<a id="vdeprecation" class="public" href="../dmd/errors/vdeprecation.html">vdeprecation</a><span class="tableEntryAnnotation">(loc, format, ap, p1, p2)</span>
 								</code>
 							</td>
 							<td>Same as <code class="lang-d"><a href="../dmd/errors/deprecation.html"><span class="pln">deprecation</span></a></code>, but takes a va_list parameter, and optionally additional message prefixes.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vdeprecationSupplemental" class="public" href="../dmd/errors/vdeprecation_supplemental.html">vdeprecationSupplemental</a><span class="decoration">(loc, format, ap)</span>
+									<a id="vdeprecationSupplemental" class="public" href="../dmd/errors/vdeprecation_supplemental.html">vdeprecationSupplemental</a><span class="tableEntryAnnotation">(loc, format, ap)</span>
 								</code>
 							</td>
 							<td>Same as <code class="lang-d"><a href="../dmd/errors/deprecation_supplemental.html"><span class="pln">deprecationSupplemental</span></a></code>, but takes a va_list parameter.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="verror" class="public" href="../dmd/errors/verror.html">verror</a><span class="decoration">(loc, format, ap, p1, p2, header)</span>
+									<a id="verror" class="public" href="../dmd/errors/verror.html">verror</a><span class="tableEntryAnnotation">(loc, format, ap, p1, p2, header)</span>
 								</code>
 							</td>
 							<td>Same as <code class="lang-d"><a href="../dmd/errors/error.html"><span class="pln">error</span></a></code>, but takes a va_list parameter, and optionally additional message prefixes.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="verrorSupplemental" class="public" href="../dmd/errors/verror_supplemental.html">verrorSupplemental</a><span class="decoration">(loc, format, ap)</span>
+									<a id="verrorSupplemental" class="public" href="../dmd/errors/verror_supplemental.html">verrorSupplemental</a><span class="tableEntryAnnotation">(loc, format, ap)</span>
 								</code>
 							</td>
 							<td>Same as <code class="lang-d"><a href="../dmd/errors/error_supplemental.html"><span class="pln">errorSupplemental</span></a></code>, but takes a va_list parameter.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vmessage" class="public" href="../dmd/errors/vmessage.html">vmessage</a><span class="decoration">(loc, format, ap)</span>
+									<a id="vmessage" class="public" href="../dmd/errors/vmessage.html">vmessage</a><span class="tableEntryAnnotation">(loc, format, ap)</span>
 								</code>
 							</td>
 							<td>Same as <code class="lang-d"><a href="../dmd/errors/message.html"><span class="pln">message</span></a></code>, but takes a va_list parameter.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vtip" class="public" href="../dmd/errors/vtip.html">vtip</a><span class="decoration">(format, ap)</span>
+									<a id="vtip" class="public" href="../dmd/errors/vtip.html">vtip</a><span class="tableEntryAnnotation">(format, ap)</span>
 								</code>
 							</td>
 							<td>Same as <code class="lang-d"><a href="../dmd/errors/tip.html"><span class="pln">tip</span></a></code>, but takes a va_list parameter.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vwarning" class="public" href="../dmd/errors/vwarning.html">vwarning</a><span class="decoration">(loc, format, ap)</span>
+									<a id="vwarning" class="public" href="../dmd/errors/vwarning.html">vwarning</a><span class="tableEntryAnnotation">(loc, format, ap)</span>
 								</code>
 							</td>
 							<td>Same as <code class="lang-d"><a href="../dmd/errors/warning.html"><span class="pln">warning</span></a></code>, but takes a va_list parameter.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vwarningSupplemental" class="public" href="../dmd/errors/vwarning_supplemental.html">vwarningSupplemental</a><span class="decoration">(loc, format, ap)</span>
+									<a id="vwarningSupplemental" class="public" href="../dmd/errors/vwarning_supplemental.html">vwarningSupplemental</a><span class="tableEntryAnnotation">(loc, format, ap)</span>
 								</code>
 							</td>
 							<td>Same as <code class="lang-d"><a href="../dmd/errors/warning_supplemental.html"><span class="pln">warningSupplemental</span></a></code>, but takes a va_list parameter.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="warning" class="public" href="../dmd/errors/warning.html">warning</a><span class="decoration">(loc, format)</span>
+									<a id="warning" class="public" href="../dmd/errors/warning.html">warning</a><span class="tableEntryAnnotation">(loc, format)</span>
 								</code>
 							</td>
 							<td>Print a warning message, increasing the global warning count.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="warningSupplemental" class="public" href="../dmd/errors/warning_supplemental.html">warningSupplemental</a><span class="decoration">(loc, format)</span>
+									<a id="warningSupplemental" class="public" href="../dmd/errors/warning_supplemental.html">warningSupplemental</a><span class="tableEntryAnnotation">(loc, format)</span>
 								</code>
 							</td>
 							<td>Print additional details about a warning message.
  Doesn't increase the warning count or print an additional warning prefix.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3159,7 +3237,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3169,6 +3247,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Color highlighting to classify messages
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3179,6 +3259,8 @@ $('#symbolSearchPane').show();</script>
 							<td>Embed these highlighting commands in the text stream.
  HIGHLIGHT.Escape indicates a Color follows.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3196,7 +3278,7 @@ $('#symbolSearchPane').show();</script>
 								</a>
 							</td>
 							<td>
-								<code class="prettyprint lang-d"><span class="typ">bool</span> <span class="kwd">delegate</span><span class="pun">(</span><span class="kwd">ref</span> <span class="kwd">const</span><span class="pun">(</span><span class="pln">dmd<wbr/></span><span class="pun">.</span><span class="pln">globals<wbr/></span><span class="pun">.</span><span class="typ">Loc</span><span class="pun">)</span><span class="pun">, </span><span class="pln">dmd<wbr/></span><span class="pun">.</span><span class="pln">console<wbr/></span><span class="pun">.</span><span class="typ">Color</span><span class="pun">, </span><span class="kwd">const</span><span class="pun">(</span><span class="typ">char</span><span class="pun">)</span><span class="pun">*</span><span class="pun">, </span><span class="kwd">const</span><span class="pun">(</span><span class="typ">char</span><span class="pun">)</span><span class="pun">*</span><span class="pun">, </span><span class="pln">core<wbr/></span><span class="pun">.</span><span class="pln">stdc<wbr/></span><span class="pun">.</span><span class="pln">stdarg<wbr/></span><span class="pun">.</span><span class="pln">__va_list_tag</span><span class="pun">*</span><span class="pun">, </span><span class="kwd">const</span><span class="pun">(</span><span class="typ">char</span><span class="pun">)</span><span class="pun">*</span><span class="pun">, </span><span class="kwd">const</span><span class="pun">(</span><span class="typ">char</span><span class="pun">)</span><span class="pun">*</span><span class="pun">)</span></code>
+								<code class="prettyprint lang-d"><span class="typ">bool</span> <span class="kwd">delegate</span><span class="pun">(</span><span class="kwd">ref</span> <span class="kwd">const</span><span class="pun">(</span><span class="pln">dmd<wbr/></span><span class="pun">.</span><span class="pln">globals<wbr/></span><span class="pun">.</span><span class="typ">Loc</span><span class="pun">)</span><span class="pun">, </span><span class="pln">dmd<wbr/></span><span class="pun">.</span><span class="pln">console<wbr/></span><span class="pun">.</span><span class="typ">Color</span><span class="pun">, </span><span class="kwd">const</span><span class="pun">(</span><span class="typ">char</span><span class="pun">)</span><span class="pun">*</span><span class="pun">, </span><span class="kwd">const</span><span class="pun">(</span><span class="typ">char</span><span class="pun">)</span><span class="pun">*</span><span class="pun">, </span><span class="pln">core<wbr/></span><span class="pun">.</span><span class="pln">internal<wbr/></span><span class="pun">.</span><span class="pln">vararg<wbr/></span><span class="pun">.</span><span class="pln">sysv_x64<wbr/></span><span class="pun">.</span><span class="pln">__va_list_tag</span><span class="pun">*</span><span class="pun">, </span><span class="kwd">const</span><span class="pun">(</span><span class="typ">char</span><span class="pun">)</span><span class="pun">*</span><span class="pun">, </span><span class="kwd">const</span><span class="pun">(</span><span class="typ">char</span><span class="pun">)</span><span class="pun">*</span><span class="pun">)</span></code>
 							</td>
 							<td>The diagnostic handler.
  If non-null it will be called for every diagnostic message issued by the compiler.
@@ -3219,7 +3301,7 @@ $('#symbolSearchPane').show();</script>
 								</a>
 							</td>
 							<td>
-								<code class="prettyprint lang-d"><span class="typ">bool</span> <span class="kwd">delegate</span><span class="pun">(</span><span class="kwd">ref</span> <span class="kwd">const</span><span class="pun">(</span><span class="pln">dmd<wbr/></span><span class="pun">.</span><span class="pln">globals<wbr/></span><span class="pun">.</span><span class="typ">Loc</span><span class="pun">)</span><span class="pun">, </span><span class="pln">dmd<wbr/></span><span class="pun">.</span><span class="pln">console<wbr/></span><span class="pun">.</span><span class="typ">Color</span><span class="pun">, </span><span class="kwd">const</span><span class="pun">(</span><span class="typ">char</span><span class="pun">)</span><span class="pun">*</span><span class="pun">, </span><span class="kwd">const</span><span class="pun">(</span><span class="typ">char</span><span class="pun">)</span><span class="pun">*</span><span class="pun">, </span><span class="pln">core<wbr/></span><span class="pun">.</span><span class="pln">stdc<wbr/></span><span class="pun">.</span><span class="pln">stdarg<wbr/></span><span class="pun">.</span><span class="pln">__va_list_tag</span><span class="pun">*</span><span class="pun">, </span><span class="kwd">const</span><span class="pun">(</span><span class="typ">char</span><span class="pun">)</span><span class="pun">*</span><span class="pun">, </span><span class="kwd">const</span><span class="pun">(</span><span class="typ">char</span><span class="pun">)</span><span class="pun">*</span><span class="pun">)</span></code>
+								<code class="prettyprint lang-d"><span class="typ">bool</span> <span class="kwd">delegate</span><span class="pun">(</span><span class="kwd">ref</span> <span class="kwd">const</span><span class="pun">(</span><span class="pln">dmd<wbr/></span><span class="pun">.</span><span class="pln">globals<wbr/></span><span class="pun">.</span><span class="typ">Loc</span><span class="pun">)</span><span class="pun">, </span><span class="pln">dmd<wbr/></span><span class="pun">.</span><span class="pln">console<wbr/></span><span class="pun">.</span><span class="typ">Color</span><span class="pun">, </span><span class="kwd">const</span><span class="pun">(</span><span class="typ">char</span><span class="pun">)</span><span class="pun">*</span><span class="pun">, </span><span class="kwd">const</span><span class="pun">(</span><span class="typ">char</span><span class="pun">)</span><span class="pun">*</span><span class="pun">, </span><span class="pln">core<wbr/></span><span class="pun">.</span><span class="pln">internal<wbr/></span><span class="pun">.</span><span class="pln">vararg<wbr/></span><span class="pun">.</span><span class="pln">sysv_x64<wbr/></span><span class="pun">.</span><span class="pln">__va_list_tag</span><span class="pun">*</span><span class="pun">, </span><span class="kwd">const</span><span class="pun">(</span><span class="typ">char</span><span class="pun">)</span><span class="pun">*</span><span class="pun">, </span><span class="kwd">const</span><span class="pun">(</span><span class="typ">char</span><span class="pun">)</span><span class="pun">*</span><span class="pun">)</span></code>
 							</td>
 							<td>The type of the diagnostic handler
  see verrorPrint for arguments

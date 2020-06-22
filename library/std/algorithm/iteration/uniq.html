@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/algorithm/iteration.d#L6844">
+							<a href="https://github.com/dlang/phobos/blob/master/std/algorithm/iteration.d#L6862">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/algorithm/iteration.d#L6844">
+							<a href="https://github.com/dlang/phobos/edit/master/std/algorithm/iteration.d#L6862">
 								Improve this page
 							</a>
 							<div>
@@ -2943,13 +2958,13 @@ utility). Equivalence of elements is assessed by using the predicate
 <code class="lang-d"><span class="pln">pred</span></code>, by default <code class="lang-d"><span class="str">"a == b"</span></code>. The predicate is passed to
 <code class="lang-d"><a href="../../../std/functional/binary_fun.html" title="std.functional.binaryFun"><span class="pln">binaryFun</span></a></code>, and can either accept a string, or any callable
 that can be executed via <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">element</span><span class="pun">, </span><span class="pln">element</span><span class="pun">)</span></code>. If the given range is
-bidirectional, <code class="lang-d"><span class="pln"><span class="pln">uniq</span></span></code> also yields a
+bidirectional, <code class="lang-d"><span class="pln">uniq</span></code> also yields a
 <a href="../../../std/range/primitives/is_bidirectional_range.html" title="std.range.primitives.isBidirectionalRange">bidirectional range</a>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">uniq</span>(alias pred, Range)
+				<span class="kwd">auto</span> <span class="pln">uniq</span>(alias pred, Range)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">Range</span> <span class="pln">r</span>

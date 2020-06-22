@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,7 +2952,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../../std/algorithm/iteration.html">std.algorithm.iteration</a>.cacheBidirectional</code></h1><p><code class="lang-d"><span class="pln"><a href="../../std/algorithm/iteration/cache.html"><span class="pln"><a href="../../../std/algorithm/iteration/cache.html"><span class="pln">cache</span></a></span></a></span></code> eagerly evaluates <a href="../../../std/range/primitives/front.html" title="std.range.primitives.front">front</a> of <code class="lang-d"><a href="../../std/algorithm/iteration/cache.html#range"><span class="pln"><a href="../../std/algorithm/iteration/cache_bidirectional.html#range"><span class="pln"><a href="../../../std/algorithm/iteration/cache_bidirectional.html#range"><span class="pln">range</span></a></span></a></span></a></code>
+				</div><h1>Function <code><a href="../../../std/algorithm/iteration.html">std.algorithm.iteration</a>.cacheBidirectional</code></h1><p><code class="lang-d"><a href="../../../std/algorithm/iteration/cache.html"><span class="pln">cache</span></a></code> eagerly evaluates <a href="../../../std/range/primitives/front.html" title="std.range.primitives.front">front</a> of <code class="lang-d"><a href="../../../std/algorithm/iteration/cache_bidirectional.html#range"><span class="pln">range</span></a></code>
 on each construction or call to <a href="../../../std/range/primitives/pop_front.html" title="std.range.primitives.popFront">popFront</a>,
 to store the result in a cache.
 The result is then directly returned when <a href="../../../std/range/primitives/front.html" title="std.range.primitives.front">front</a> is called,
@@ -2946,7 +2961,7 @@ rather than re-evaluated.
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">cacheBidirectional</span>(Range)
+				<span class="kwd">auto</span> <span class="pln">cacheBidirectional</span>(Range)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">Range</span> <span class="pln">range</span>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2938,14 +2953,14 @@ $('#symbolSearchPane').show();</script>
 						</div>
 					</div>
 				</div><h1>Function <code><a href="../../../../std/experimental/allocator/showcase.html">std.experimental.allocator.showcase</a>.mmapRegionList</code></h1><p>Creates a scalable <code class="lang-d"><span class="typ">AllocatorList</span></code> of <code class="lang-d"><span class="typ">Regions</span></code>, each having at least
-<code class="lang-d"><a href="../../../std/experimental/allocator/showcase/mmap_region_list.html#bytesPerRegion"><span class="pln"><a href="../../../../std/experimental/allocator/showcase/mmap_region_list.html#bytesPerRegion"><span class="pln">bytesPerRegion</span></a></span></a></code> bytes. Allocation is very fast. This allocator does not offer
+<code class="lang-d"><a href="../../../../std/experimental/allocator/showcase/mmap_region_list.html#bytesPerRegion"><span class="pln">bytesPerRegion</span></a></code> bytes. Allocation is very fast. This allocator does not offer
 <code class="lang-d"><span class="pln">deallocate</span></code> but does free all regions in its destructor. It is recommended for
 short-lived batch applications that count on never running out of memory.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><a href="../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.html"><span class="typ">AllocatorList</span></a>!(std.experimental.allocator.showcase.mmapRegionList(ulong).Factory,std.experimental.allocator.building_blocks.null_allocator.NullAllocator) <span class="pln">mmapRegionList</span>
+				<a href="../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.html"><span class="typ">AllocatorList</span></a>!(std.experimental.allocator.showcase.mmapRegionList(ulong).Factory,std.experimental.allocator.building_blocks.null_allocator.NullAllocator) <span class="pln">mmapRegionList</span>
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">ulong</span> <span class="pln">bytesPerRegion</span>

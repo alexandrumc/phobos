@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2962,15 +2977,15 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function task</h2><p>Creates a <code class="lang-d"><a href="../std/parallelism/task.html"><span class="typ"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></span></a></code> on the GC heap that calls an alias.  This may be executed
-via <code class="lang-d"><a href="../std/parallelism/task.execute_in_new_thread.html"><span class="typ"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a><wbr/></span><span class="pun">.</span><span class="pln">executeInNewThread</span></a></code> or by submitting to a
+				</nav><h2 id="0">Function task</h2><p>Creates a <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></code> on the GC heap that calls an alias.  This may be executed
+via <code class="lang-d"><a href="../../std/parallelism/task.execute_in_new_thread.html"><span class="typ">Task<wbr/></span><span class="pun">.</span><span class="pln">executeInNewThread</span></a></code> or by submitting to a
 <code class="lang-d"><a href="../../std/parallelism/task_pool.html" title="std.parallelism.TaskPool"><span class="typ">TaskPool</span></a></code>.  A globally accessible instance of
-<code class="lang-d"><a href="../std/parallelism/task_pool.html"><span class="typ"><a href="../../std/parallelism/task_pool.html"><span class="typ">TaskPool</span></a></span></a></code> is provided by <code class="lang-d"><a href="../../std/parallelism/task_pool.html" title="std.parallelism.taskPool"><span class="pln">taskPool</span></a></code>.
+<code class="lang-d"><a href="../../std/parallelism/task_pool.html"><span class="typ">TaskPool</span></a></code> is provided by <code class="lang-d"><a href="../../std/parallelism/task_pool.html" title="std.parallelism.taskPool"><span class="pln">taskPool</span></a></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">task</span>(alias fun, Args...)
+				<span class="kwd">auto</span> <span class="pln">task</span>(alias fun, Args...)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">Args</span> <span class="pln">args</span>
@@ -3039,13 +3054,13 @@ via <code class="lang-d"><a href="../std/parallelism/task.execute_in_new_thread.
     </span><span class="pln">recurseTask<wbr/></span><span class="pun">.</span><span class="pln">yieldForce</span><span class="pun">;
 }</span></code></pre>
 </section>
-<h2 id="1">Function task</h2><p>Version of <code class="lang-d"><a href="../std/parallelism/task.html"><span class="pln"><a href="../../std/parallelism/task.html"><span class="pln">task</span></a></span></a></code> usable from <code class="lang-d"><span class="kwd">@safe</span></code> code.  Usage mechanics are
+<h2 id="1">Function task</h2><p>Version of <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="pln">task</span></a></code> usable from <code class="lang-d"><span class="kwd">@safe</span></code> code.  Usage mechanics are
 identical to the non-@safe case, but safety introduces some restrictions:
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">task</span>(F, Args...)
+				<span class="kwd">auto</span> <span class="pln">task</span>(F, Args...)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">F</span> <span class="pln">fun</span><span class="pun">,</span>
@@ -3080,13 +3095,13 @@ identical to the non-@safe case, but safety introduces some restrictions:
 </p>
 </section>
 
-				<h2 id="2">Function task</h2><p>Creates a <code class="lang-d"><a href="../std/parallelism/task.html"><span class="typ"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></span></a></code> on the GC heap that calls a function pointer, delegate, or
+				<h2 id="2">Function task</h2><p>Creates a <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></code> on the GC heap that calls a function pointer, delegate, or
 class/struct with overloaded opCall.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">task</span>(F, Args...)
+				<span class="kwd">auto</span> <span class="pln">task</span>(F, Args...)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">F</span> <span class="pln">delegateOrFp</span><span class="pun">,</span>
@@ -3128,15 +3143,15 @@ class/struct with overloaded opCall.
        takes a scope delegate.
 </p>
 </section>
-<h2 id="3">Struct Task</h2><p><code class="lang-d"><span class="typ"><span class="typ">Task</span></span></code> represents the fundamental unit of work.  A <code class="lang-d"><span class="typ"><span class="typ">Task</span></span></code> may be
-executed in parallel with any other <code class="lang-d"><span class="typ"><span class="typ">Task</span></span></code>.  Using this struct directly
+<h2 id="3">Struct Task</h2><p><code class="lang-d"><span class="typ">Task</span></code> represents the fundamental unit of work.  A <code class="lang-d"><span class="typ">Task</span></code> may be
+executed in parallel with any other <code class="lang-d"><span class="typ">Task</span></code>.  Using this struct directly
 allows future/promise parallelism.  In this paradigm, a function (or delegate
 or other callable) is executed in a thread other than the one it was called
 from.  The calling thread does not block while the function is being executed.
-A call to <code class="lang-d"><a href="../std/parallelism/task.work_force.html"><span class="pln"><a href="../../std/parallelism/task.work_force.html"><span class="pln">workForce</span></a></span></a></code>, <code class="lang-d"><a href="../std/parallelism/task.yield_force.html"><span class="pln"><a href="../../std/parallelism/task.yield_force.html"><span class="pln">yieldForce</span></a></span></a></code>, or <code class="lang-d"><a href="../std/parallelism/task.spin_force.html"><span class="pln"><a href="../../std/parallelism/task.spin_force.html"><span class="pln">spinForce</span></a></span></a></code> is used to
-ensure that the <code class="lang-d"><span class="typ"><span class="typ">Task</span></span></code> has finished executing and to obtain the return
-value, if any.  These functions and <code class="lang-d"><a href="../std/parallelism/task.done.html"><span class="pln"><a href="../../std/parallelism/task.done.html"><span class="pln">done</span></a></span></a></code> also act as full memory barriers,
-meaning that any memory writes made in the thread that executed the <code class="lang-d"><span class="typ"><span class="typ">Task</span></span></code>
+A call to <code class="lang-d"><a href="../../std/parallelism/task.work_force.html"><span class="pln">workForce</span></a></code>, <code class="lang-d"><a href="../../std/parallelism/task.yield_force.html"><span class="pln">yieldForce</span></a></code>, or <code class="lang-d"><a href="../../std/parallelism/task.spin_force.html"><span class="pln">spinForce</span></a></code> is used to
+ensure that the <code class="lang-d"><span class="typ">Task</span></code> has finished executing and to obtain the return
+value, if any.  These functions and <code class="lang-d"><a href="../../std/parallelism/task.done.html"><span class="pln">done</span></a></code> also act as full memory barriers,
+meaning that any memory writes made in the thread that executed the <code class="lang-d"><span class="typ">Task</span></code>
 are guaranteed to be visible in the calling thread after one of these functions
 returns.
 </p>
@@ -3174,14 +3189,14 @@ pointer.
 							<td>
 								<a href="../../std/parallelism/task.done.html" class="public property"><code>done</code></a><span class="tableEntryAnnotation">[get]</span>
 							</td>
-							<td class="typecol"><code class="prettyprint lang-d"><span class="typ">bool</span></code></td><td>Returns <code class="lang-d"><span class="kwd">true</span></code> if the <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></span></a></code> is finished executing.
+							<td class="typecol"><code class="prettyprint lang-d"><span class="typ">bool</span></code></td><td>Returns <code class="lang-d"><span class="kwd">true</span></code> if the <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></code> is finished executing.
 </td>
 						</tr>
 						<tr>
 							<td>
 								<a href="../../std/parallelism/task.spin_force.html" class="public property"><code>spinForce</code></a><span class="tableEntryAnnotation">[get]</span>
 							</td>
-							<td class="typecol"><code class="prettyprint lang-d"><a href="../../std/parallelism/task.return_type.html"><span class="typ">Task<wbr/></span><span class="pun">.<wbr/></span><span class="typ">ReturnType</span></a></code></td><td>If the <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></span></a></code> isn't started yet, execute it in the current thread.
+							<td class="typecol"><code class="prettyprint lang-d"><a href="../../std/parallelism/task.return_type.html"><span class="typ">Task<wbr/></span><span class="pun">.<wbr/></span><span class="typ">ReturnType</span></a></code></td><td>If the <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></code> isn't started yet, execute it in the current thread.
     If it's done, return its return value, if any.  If it's in progress,
     busy spin until it's done, then return the return value.  If it threw
     an exception, rethrow that exception.
@@ -3204,7 +3219,7 @@ pointer.
 							<td>
 								<a href="../../std/parallelism/task.yield_force.html" class="public property"><code>yieldForce</code></a><span class="tableEntryAnnotation">[get]</span>
 							</td>
-							<td class="typecol"><code class="prettyprint lang-d"><a href="../../std/parallelism/task.return_type.html"><span class="typ">Task<wbr/></span><span class="pun">.<wbr/></span><span class="typ">ReturnType</span></a></code></td><td>If the <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></span></a></code> isn't started yet, execute it in the current thread.
+							<td class="typecol"><code class="prettyprint lang-d"><a href="../../std/parallelism/task.return_type.html"><span class="typ">Task<wbr/></span><span class="pun">.<wbr/></span><span class="typ">ReturnType</span></a></code></td><td>If the <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></code> isn't started yet, execute it in the current thread.
     If it's done, return its return value, if any.  If it's in progress,
     wait on a condition variable.  If it threw an exception, rethrow that
     exception.
@@ -3223,12 +3238,13 @@ pointer.
 								<a href="../../std/parallelism/task.execute_in_new_thread.html" class="public">
 									<code>executeInNewThread</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
-							<td>Create a new thread for executing this <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></span></a></code>, execute it in the
+							<td>Create a new thread for executing this <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></code>, execute it in the
     newly created thread, then terminate the thread.  This can be used for
     future/promise parallelism.  An explicit priority may be given
-    to the <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></span></a></code>.  If one is provided, its value is forwarded to
-    <code class="lang-d"><span class="pln">core<wbr/></span><span class="pun">.</span><span class="pln">thread<wbr/></span><span class="pun">.</span><span class="typ">Thread<wbr/></span><span class="pun">.</span><span class="pln"><a href="../../std/parallelism/task.execute_in_new_thread.html#priority"><span class="pln">priority</span></a></span></code>. See <code class="lang-d"><a href="../../std/parallelism/task.html" title="std.parallelism.task"><span class="pln">task</span></a></code> for
+    to the <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></code>.  If one is provided, its value is forwarded to
+    <code class="lang-d"><span class="pln">core<wbr/></span><span class="pun">.</span><span class="pln">thread<wbr/></span><span class="pun">.</span><span class="typ">Thread<wbr/></span><span class="pun">.</span><span class="pln">priority</span></code>. See <code class="lang-d"><a href="../../std/parallelism/task.html" title="std.parallelism.task"><span class="pln">task</span></a></code> for
     usage example.
 </td>
 						</tr>

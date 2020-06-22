@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2954,180 +2969,237 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="addressElem" class="public" href="../dmd/e2ir/address_elem.html">addressElem</a><span class="decoration">(e, t, alwaysCopy)</span>
+									<a id="addressElem" class="public" href="../dmd/e2ir/address_elem.html">addressElem</a><span class="tableEntryAnnotation">(e, t, alwaysCopy)</span>
 								</code>
 							</td>
 							<td>Take address of an elem.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="array_toDarray" class="public" href="../dmd/e2ir/array_to_darray.html">array_toDarray</a><span class="decoration">(t, e)</span>
+									<a id="array_toDarray" class="public" href="../dmd/e2ir/array_to_darray.html">array_toDarray</a><span class="tableEntryAnnotation">(t, e)</span>
 								</code>
 							</td>
 							<td>Convert array to a dynamic array.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="array_toPtr" class="public" href="../dmd/e2ir/array_to_ptr.html">array_toPtr</a><span class="decoration">(t, e)</span>
+									<a id="array_toPtr" class="public" href="../dmd/e2ir/array_to_ptr.html">array_toPtr</a><span class="tableEntryAnnotation">(t, e)</span>
 								</code>
 							</td>
 							<td>Convert array to a pointer to the data.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="buildArrayBoundsError" class="public" href="../dmd/e2ir/build_array_bounds_error.html">buildArrayBoundsError</a><span class="decoration">(irs, loc, lwr, upr, elength)</span>
+									<a id="buildArrayBoundsError" class="public" href="../dmd/e2ir/build_array_bounds_error.html">buildArrayBoundsError</a><span class="tableEntryAnnotation">(irs, loc, lwr, upr, elength)</span>
 								</code>
 							</td>
 							<td>Construct elem to run when an array bounds check fails.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="callCAssert" class="public" href="../dmd/e2ir/call_c_assert.html">callCAssert</a><span class="decoration">(irs, loc, exp, emsg, str)</span>
+									<a id="callCAssert" class="public" href="../dmd/e2ir/call_c_assert.html">callCAssert</a><span class="tableEntryAnnotation">(irs, loc, exp, emsg, str)</span>
 								</code>
 							</td>
 							<td>Generate call to C's assert failure function.
  One of exp, emsg, or str must not be null.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="clearStringTab" class="public" href="../dmd/e2ir/clear_string_tab.html">clearStringTab</a><span class="decoration">()</span>
+									<a id="clearStringTab" class="public" href="../dmd/e2ir/clear_string_tab.html">clearStringTab</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Reset stringTab[] between object files being emitted, because the symbols are local.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="elAssign" class="public" href="../dmd/e2ir/el_assign.html">elAssign</a><span class="decoration">(e1, e2, t, tx)</span>
+									<a id="elAssign" class="public" href="../dmd/e2ir/el_assign.html">elAssign</a><span class="tableEntryAnnotation">(e1, e2, t, tx)</span>
 								</code>
 							</td>
 							<td>Generate a copy from e2 to e1.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="elemIsLvalue" class="public" href="../dmd/e2ir/elem_is_lvalue.html">elemIsLvalue</a><span class="decoration">(e)</span>
+									<a id="elemIsLvalue" class="public" href="../dmd/e2ir/elem_is_lvalue.html">elemIsLvalue</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>Return <code class="lang-d"><span class="kwd">true</span></code> if elem is a an lvalue.
  Lvalue elems are OPvar and OPind.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="genHalt" class="public" href="../dmd/e2ir/gen_halt.html">genHalt</a><span class="decoration">(loc)</span>
+									<a id="genHalt" class="public" href="../dmd/e2ir/gen_halt.html">genHalt</a><span class="tableEntryAnnotation">(loc)</span>
 								</code>
 							</td>
 							<td>Generate HALT instruction.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getTypeInfo" class="public" href="../dmd/e2ir/get_type_info.html">getTypeInfo</a><span class="decoration">(loc, t, irs)</span>
+									<a id="getTypeInfo" class="public" href="../dmd/e2ir/get_type_info.html">getTypeInfo</a><span class="tableEntryAnnotation">(loc, t, irs)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="needsDtor" class="public" href="../dmd/e2ir/needs_dtor.html">needsDtor</a><span class="decoration">(t)</span>
+									<a id="needsDtor" class="public" href="../dmd/e2ir/needs_dtor.html">needsDtor</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Determine if t is a struct that has destructor.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="needsPostblit" class="public" href="../dmd/e2ir/needs_postblit.html">needsPostblit</a><span class="decoration">(t)</span>
+									<a id="needsPostblit" class="public" href="../dmd/e2ir/needs_postblit.html">needsPostblit</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Determine if t is a struct that has postblit.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="sarray_toDarray" class="public" href="../dmd/e2ir/sarray_to_darray.html">sarray_toDarray</a><span class="decoration">(loc, tfrom, tto, e)</span>
+									<a id="sarray_toDarray" class="public" href="../dmd/e2ir/sarray_to_darray.html">sarray_toDarray</a><span class="tableEntryAnnotation">(loc, tfrom, tto, e)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="setEthis2" class="public" href="../dmd/e2ir/set_ethis2.html">setEthis2</a><span class="decoration">(loc, irs, fd, ethis2, ethis, eside)</span>
+									<a id="setEthis2" class="public" href="../dmd/e2ir/set_ethis2.html">setEthis2</a><span class="tableEntryAnnotation">(loc, irs, fd, ethis2, ethis, eside)</span>
 								</code>
 							</td>
 							<td>Initialize the dual-context array with the context pointers.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toElemDtor" class="public" href="../dmd/e2ir/to_elem_dtor.html">toElemDtor</a><span class="decoration">(e, irs)</span>
+									<a id="toElemDtor" class="public" href="../dmd/e2ir/to_elem_dtor.html">toElemDtor</a><span class="tableEntryAnnotation">(e, irs)</span>
 								</code>
 							</td>
 							<td>Convert Expression to elem, then append destructors for any
  temporaries created in elem.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toStringSymbol" class="public" href="../dmd/e2ir/to_string_symbol.html">toStringSymbol</a><span class="decoration">(str, len, sz)</span>
+									<a id="toStringSymbol" class="public" href="../dmd/e2ir/to_string_symbol.html">toStringSymbol</a><span class="tableEntryAnnotation">(str, len, sz)</span>
 								</code>
 							</td>
 							<td>Write read-only string to object file, create a local symbol for it.
  Makes a copy of str's contents, does not keep a reference to it.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toStringSymbol" class="public" href="../dmd/e2ir/to_string_symbol.html">toStringSymbol</a><span class="decoration">(se)</span>
+									<a id="toStringSymbol" class="public" href="../dmd/e2ir/to_string_symbol.html">toStringSymbol</a><span class="tableEntryAnnotation">(se)</span>
 								</code>
 							</td>
 							<td>Turn StringExp into Symbol.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toTraceGC" class="public" href="../dmd/e2ir/to_trace_gc.html">toTraceGC</a><span class="decoration">(irs, e, loc)</span>
+									<a id="toTraceGC" class="public" href="../dmd/e2ir/to_trace_gc.html">toTraceGC</a><span class="tableEntryAnnotation">(irs, e, loc)</span>
 								</code>
 							</td>
 							<td>Replace call to GC allocator with call to tracing GC allocator.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_zeroCopy" class="public" href="../dmd/e2ir/type_zero_copy.html">type_zeroCopy</a><span class="decoration">(t)</span>
+									<a id="type_zeroCopy" class="public" href="../dmd/e2ir/type_zero_copy.html">type_zeroCopy</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Determine if zero bits need to be copied for this backend type
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

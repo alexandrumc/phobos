@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2940,12 +2955,12 @@ $('#symbolSearchPane').show();</script>
 				</div><h1>Function <code><a href="../../../std/algorithm/setops.html">std.algorithm.setops</a>.multiwayUnion</code></h1><p>Computes the union of multiple ranges. The
 <a href="../../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input ranges</a> are passed
 as a range of ranges and each is assumed to be sorted by <code class="lang-d"><span class="pln">less</span></code>. Computation is done lazily, one union element at a time.
-<code class="lang-d"><span class="pln"><span class="pln">multiwayUnion</span></span><span class="pun">(<a href="../../std/algorithm/setops/multiway_union.html#ror"></span><span class="pln"><a href="../../../std/algorithm/setops/multiway_union.html#ror"><span class="pln">ror</span></a></span></a><span class="pun">)</span></code> is functionally equivalent to <code class="lang-d"><a href="../../std/algorithm/setops/multiway_merge.html"><span class="pln"><a href="../../../std/algorithm/setops/multiway_merge.html"><span class="pln">multiwayMerge</span></a></span></a><span class="pun">(<a href="../../std/algorithm/setops/multiway_union.html#ror"></span><span class="pln"><a href="../../../std/algorithm/setops/multiway_union.html#ror"><span class="pln">ror</span></a></span></a><span class="pun">)<wbr/>.</span><span class="pln">uniq</span></code>.
+<code class="lang-d"><span class="pln">multiwayUnion</span><span class="pun">(<a href="../../../std/algorithm/setops/multiway_union.html#ror"></span><span class="pln">ror</span></a><span class="pun">)</span></code> is functionally equivalent to <code class="lang-d"><a href="../../../std/algorithm/setops/multiway_merge.html"><span class="pln">multiwayMerge</span></a><span class="pun">(<a href="../../../std/algorithm/setops/multiway_union.html#ror"></span><span class="pln">ror</span></a><span class="pun">)<wbr/>.</span><span class="pln">uniq</span></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">multiwayUnion</span>(alias less, RangeOfRanges)
+				<span class="kwd">auto</span> <span class="pln">multiwayUnion</span>(alias less, RangeOfRanges)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">RangeOfRanges</span> <span class="pln">ror</span>

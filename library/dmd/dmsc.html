@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2954,51 +2969,66 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_align" class="public" href="../dmd/dmsc/_align.html">_align</a><span class="decoration">(size, offset)</span>
+									<a id="_align" class="public" href="../dmd/dmsc/_align.html">_align</a><span class="tableEntryAnnotation">(size, offset)</span>
 								</code>
 							</td>
 							<td>Return aligned 'offset' if it is of size 'size'.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="backend_init" class="public" href="../dmd/dmsc/backend_init.html">backend_init</a><span class="decoration">()</span>
+									<a id="backend_init" class="public" href="../dmd/dmsc/backend_init.html">backend_init</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Initialize config variables.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="backend_term" class="public" href="../dmd/dmsc/backend_term.html">backend_term</a><span class="decoration">()</span>
+									<a id="backend_term" class="public" href="../dmd/dmsc/backend_term.html">backend_term</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="size" class="public" href="../dmd/dmsc/size.html">size</a><span class="decoration">(ty)</span>
+									<a id="size" class="public" href="../dmd/dmsc/size.html">size</a><span class="tableEntryAnnotation">(ty)</span>
 								</code>
 							</td>
 							<td>Get size of ty
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="symboldata" class="public" href="../dmd/dmsc/symboldata.html">symboldata</a><span class="decoration">(offset, ty)</span>
+									<a id="symboldata" class="public" href="../dmd/dmsc/symboldata.html">symboldata</a><span class="tableEntryAnnotation">(offset, ty)</span>
 								</code>
 							</td>
 							<td>Generate symbol of type ty at DATA:offset
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

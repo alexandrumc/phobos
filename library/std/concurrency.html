@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2994,174 +3009,228 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="initOnce" class="public" href="../std/concurrency/init_once.html">initOnce</a><span class="decoration">(init)</span>
+									<a id="initOnce" class="public" href="../std/concurrency/init_once.html">initOnce</a><span class="tableEntryAnnotation">(init)</span>
 								</code>
 							</td>
 							<td>Initializes <span class="d_param">var</span> with the lazy <span class="d_param">init</span> value in a
  thread-safe manner.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="initOnce" class="public" href="../std/concurrency/init_once.html">initOnce</a><span class="decoration">(init, mutex)</span>
+									<a id="initOnce" class="public" href="../std/concurrency/init_once.html">initOnce</a><span class="tableEntryAnnotation">(init, mutex)</span>
 								</code>
 							</td>
 							<td>Same as above, but takes a separate mutex instead of sharing one among
  all initOnce instances.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="locate" class="public" href="../std/concurrency/locate.html">locate</a><span class="decoration">(name)</span>
+									<a id="locate" class="public" href="../std/concurrency/locate.html">locate</a><span class="tableEntryAnnotation">(name)</span>
 								</code>
 							</td>
 							<td>Gets the Tid associated with name.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="ownerTid" class="public property" href="../std/concurrency/owner_tid.html">ownerTid</a><span class="decoration">()</span>
+									<a id="ownerTid" class="public property" href="../std/concurrency/owner_tid.html">ownerTid</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Return the Tid of the thread which spawned the caller's thread.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="prioritySend" class="public" href="../std/concurrency/priority_send.html">prioritySend</a><span class="decoration">(tid, vals)</span>
+									<a id="prioritySend" class="public" href="../std/concurrency/priority_send.html">prioritySend</a><span class="tableEntryAnnotation">(tid, vals)</span>
 								</code>
 							</td>
 							<td>Places the values as a message on the front of tid's message queue.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="receive" class="public" href="../std/concurrency/receive.html">receive</a><span class="decoration">(ops)</span>
+									<a id="receive" class="public" href="../std/concurrency/receive.html">receive</a><span class="tableEntryAnnotation">(ops)</span>
 								</code>
 							</td>
 							<td>Receives a message from another thread.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="receiveOnly" class="public" href="../std/concurrency/receive_only.html">receiveOnly</a><span class="decoration">()</span>
+									<a id="receiveOnly" class="public" href="../std/concurrency/receive_only.html">receiveOnly</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Receives only messages with arguments of the specified types.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="receiveTimeout" class="public" href="../std/concurrency/receive_timeout.html">receiveTimeout</a><span class="decoration">(duration, ops)</span>
+									<a id="receiveTimeout" class="public" href="../std/concurrency/receive_timeout.html">receiveTimeout</a><span class="tableEntryAnnotation">(duration, ops)</span>
 								</code>
 							</td>
 							<td>Receives a message from another thread and gives up if no match
  arrives within a specified duration.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="register" class="public" href="../std/concurrency/register.html">register</a><span class="decoration">(name, tid)</span>
+									<a id="register" class="public" href="../std/concurrency/register.html">register</a><span class="tableEntryAnnotation">(name, tid)</span>
 								</code>
 							</td>
 							<td>Associates name with tid.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="send" class="public" href="../std/concurrency/send.html">send</a><span class="decoration">(tid, vals)</span>
+									<a id="send" class="public" href="../std/concurrency/send.html">send</a><span class="tableEntryAnnotation">(tid, vals)</span>
 								</code>
 							</td>
 							<td>Places the values as a message at the back of tid's message queue.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="setMaxMailboxSize" class="public" href="../std/concurrency/set_max_mailbox_size.html">setMaxMailboxSize</a><span class="decoration">(tid, messages, doThis)</span>
+									<a id="setMaxMailboxSize" class="public" href="../std/concurrency/set_max_mailbox_size.html">setMaxMailboxSize</a><span class="tableEntryAnnotation">(tid, messages, doThis)</span>
 								</code>
 							</td>
 							<td>Sets a maximum mailbox size.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="setMaxMailboxSize" class="public" href="../std/concurrency/set_max_mailbox_size.html">setMaxMailboxSize</a><span class="decoration">(tid, messages, onCrowdingDoThis)</span>
+									<a id="setMaxMailboxSize" class="public" href="../std/concurrency/set_max_mailbox_size.html">setMaxMailboxSize</a><span class="tableEntryAnnotation">(tid, messages, onCrowdingDoThis)</span>
 								</code>
 							</td>
 							<td>Sets a maximum mailbox size.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="spawn" class="public" href="../std/concurrency/spawn.html">spawn</a><span class="decoration">(fn, args)</span>
+									<a id="spawn" class="public" href="../std/concurrency/spawn.html">spawn</a><span class="tableEntryAnnotation">(fn, args)</span>
 								</code>
 							</td>
 							<td>Starts fn(args) in a new logical thread.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="spawnLinked" class="public" href="../std/concurrency/spawn_linked.html">spawnLinked</a><span class="decoration">(fn, args)</span>
+									<a id="spawnLinked" class="public" href="../std/concurrency/spawn_linked.html">spawnLinked</a><span class="tableEntryAnnotation">(fn, args)</span>
 								</code>
 							</td>
 							<td>Starts fn(args) in a logical thread and will receive a LinkTerminated
  message when the operation terminates.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="thisTid" class="public property" href="../std/concurrency/this_tid.html">thisTid</a><span class="decoration">()</span>
+									<a id="thisTid" class="public property" href="../std/concurrency/this_tid.html">thisTid</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="unregister" class="public" href="../std/concurrency/unregister.html">unregister</a><span class="decoration">(name)</span>
+									<a id="unregister" class="public" href="../std/concurrency/unregister.html">unregister</a><span class="tableEntryAnnotation">(name)</span>
 								</code>
 							</td>
 							<td>Removes the registered name associated with a tid.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="yield" class="public" href="../std/concurrency/yield.html">yield</a><span class="decoration">()</span>
+									<a id="yield" class="public" href="../std/concurrency/yield.html">yield</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>If the caller is a Fiber and is not a Generator, this function will call
  scheduler.yield() or Fiber.yield(), as appropriate.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="yield" class="public" href="../std/concurrency/yield.html">yield</a><span class="decoration">(value)</span>
+									<a id="yield" class="public" href="../std/concurrency/yield.html">yield</a><span class="tableEntryAnnotation">(value)</span>
 								</code>
 							</td>
 							<td>Yields a value of type T to the caller of the currently executing
  generator.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3170,7 +3239,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3180,6 +3249,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>A Scheduler controls how threading is performed by spawn.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3188,7 +3259,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3198,6 +3269,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>An example Scheduler using Fibers.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3208,6 +3281,8 @@ $('#symbolSearchPane').show();</script>
 							<td>A Generator is a Fiber that periodically returns values of type T to the
  caller via yield.  This is represented as an InputRange.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3217,6 +3292,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Thrown if a linked thread has terminated.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3227,6 +3304,8 @@ $('#symbolSearchPane').show();</script>
 							<td>Thrown on mailbox crowding if the mailbox is configured with
  <code class="lang-d"><a href="../std/concurrency/on_crowding.html#throwException"><span class="typ">OnCrowding<wbr/></span><span class="pun">.</span><span class="pln">throwException</span></a></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3237,6 +3316,8 @@ $('#symbolSearchPane').show();</script>
 							<td>Thrown on calls to <code class="lang-d"><a href="../std/concurrency/receive_only.html"><span class="pln">receiveOnly</span></a></code> if a message other than the type
  the receiving thread expected is sent.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3247,6 +3328,8 @@ $('#symbolSearchPane').show();</script>
 							<td>Thrown on calls to <code class="lang-d"><a href="../std/concurrency/receive.html"><span class="pln">receive</span></a></code> if the thread that spawned the receiving
  thread has terminated and no more messages exist.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3258,6 +3341,8 @@ $('#symbolSearchPane').show();</script>
  <code class="lang-d"><a href="../std/concurrency/priority_send.html" title="std.concurrency.prioritySend"><span class="pln">prioritySend</span></a></code> and the receiver does not have a handler
  for a message of this type.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3267,6 +3352,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>An example Scheduler using kernel threads.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3277,6 +3364,8 @@ $('#symbolSearchPane').show();</script>
 							<td>Thrown when a Tid is missing, e.g. when <code class="lang-d"><a href="../std/concurrency/owner_tid.html"><span class="pln">ownerTid</span></a></code> doesn't
  find an owner thread.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3285,7 +3374,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3295,6 +3384,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Encapsulates all implementation-level data needed for scheduling.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3304,6 +3395,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>An opaque type used to represent a logical thread.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3312,7 +3405,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3322,6 +3415,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>These behaviors may be specified when a mailbox is full.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

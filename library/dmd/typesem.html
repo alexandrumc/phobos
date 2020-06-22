@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2954,83 +2969,107 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="compileTypeMixin" class="public" href="../dmd/typesem/compile_type_mixin.html">compileTypeMixin</a><span class="decoration">(tm, loc, sc)</span>
+									<a id="compileTypeMixin" class="public" href="../dmd/typesem/compile_type_mixin.html">compileTypeMixin</a><span class="tableEntryAnnotation">(tm, loc, sc)</span>
 								</code>
 							</td>
 							<td>Compile the MixinType, returning the type or expression AST.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="defaultInit" class="public" href="../dmd/typesem/default_init.html">defaultInit</a><span class="decoration">(mt, loc)</span>
+									<a id="defaultInit" class="public" href="../dmd/typesem/default_init.html">defaultInit</a><span class="tableEntryAnnotation">(mt, loc)</span>
 								</code>
 							</td>
 							<td>Get the the default initialization expression for a type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dotExp" class="public" href="../dmd/typesem/dot_exp.html">dotExp</a><span class="decoration">(mt, sc, e, ident, flag)</span>
+									<a id="dotExp" class="public" href="../dmd/typesem/dot_exp.html">dotExp</a><span class="tableEntryAnnotation">(mt, sc, e, ident, flag)</span>
 								</code>
 							</td>
 							<td>Access the members of the object e. This type is same as e.type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getProperty" class="public" href="../dmd/typesem/get_property.html">getProperty</a><span class="decoration">(t, scope_, loc, ident, flag)</span>
+									<a id="getProperty" class="public" href="../dmd/typesem/get_property.html">getProperty</a><span class="tableEntryAnnotation">(t, scope_, loc, ident, flag)</span>
 								</code>
 							</td>
 							<td>Calculate built-in properties which just the type is necessary.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="merge" class="public" href="../dmd/typesem/merge.html">merge</a><span class="decoration">(type)</span>
+									<a id="merge" class="public" href="../dmd/typesem/merge.html">merge</a><span class="tableEntryAnnotation">(type)</span>
 								</code>
 							</td>
 							<td>If an identical type to <code class="lang-d"><a href="../dmd/typesem/merge.html#type"><span class="pln">type</span></a></code> is in <code class="lang-d"><span class="pln">type<wbr/></span><span class="pun">.</span><span class="pln">stringtable</span></code>, return
  the latter one. Otherwise, add it to <code class="lang-d"><span class="pln">type<wbr/></span><span class="pun">.</span><span class="pln">stringtable</span></code>.
  Some types don't get merged and are returned as-is.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="resolve" class="public" href="../dmd/typesem/resolve.html">resolve</a><span class="decoration">(mt, loc, sc, pe, pt, ps, intypeid)</span>
+									<a id="resolve" class="public" href="../dmd/typesem/resolve.html">resolve</a><span class="tableEntryAnnotation">(mt, loc, sc, pe, pt, ps, intypeid)</span>
 								</code>
 							</td>
 							<td>Resolve type 'mt' to either type, symbol, or expression.
  If errors happened, resolved to Type.terror.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="typeSemantic" class="public" href="../dmd/typesem/type_semantic.html">typeSemantic</a><span class="decoration">(t, loc, sc)</span>
+									<a id="typeSemantic" class="public" href="../dmd/typesem/type_semantic.html">typeSemantic</a><span class="tableEntryAnnotation">(t, loc, sc)</span>
 								</code>
 							</td>
 							<td>Perform semantic analysis on a type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="typeToExpression" class="public" href="../dmd/typesem/type_to_expression.html">typeToExpression</a><span class="decoration">(t)</span>
+									<a id="typeToExpression" class="public" href="../dmd/typesem/type_to_expression.html">typeToExpression</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>We've mistakenly parsed <code class="lang-d"><a href="../dmd/typesem/type_to_expression.html#t"><span class="pln">t</span></a></code> as a type.
  Redo <code class="lang-d"><a href="../dmd/typesem/type_to_expression.html#t"><span class="pln">t</span></a></code> as an Expression.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

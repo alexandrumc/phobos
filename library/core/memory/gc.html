@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2960,6 +2975,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.add_range.html" class="public">
 									<code>addRange</code>
 								</a>
+								<span class="tableEntryAnnotation">(p, sz, ti)</span>
 							</td>
 							<td>Adds <code class="lang-d"><a href="../../core/memory/gc.add_range.html#p"><span class="pln">p</span></a><span class="pun">[</span><span class="lit">0 </span><span class="pun">.. <a href="../../core/memory/gc.add_range.html#sz"></span><span class="pln">sz</span></a><span class="pun">]</span></code> to the list of memory ranges to be scanned for
  pointers during a collection. If p is null, no operation is performed.
@@ -2970,6 +2986,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.addr_of.html" class="public">
 									<code>addrOf</code>
 								</a>
+								<span class="tableEntryAnnotation">(p)</span>
 							</td>
 							<td>Returns the base address of the memory block containing p.  This value
  is useful to determine whether p is an interior pointer, and the result
@@ -2984,6 +3001,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.add_root.html" class="public">
 									<code>addRoot</code>
 								</a>
+								<span class="tableEntryAnnotation">(p)</span>
 							</td>
 							<td>Adds an internal root pointing to the GC memory block referenced by p.
  As a result, the block referenced by p itself and any blocks accessible
@@ -2995,6 +3013,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.calloc.html" class="public">
 									<code>calloc</code>
 								</a>
+								<span class="tableEntryAnnotation">(sz, ba, ti)</span>
 							</td>
 							<td>Requests an aligned block of managed memory from the garbage collector,
  which is initialized with all bits set to zero.  This memory may be
@@ -3009,6 +3028,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.clr_attr.html" class="public">
 									<code>clrAttr</code>
 								</a>
+								<span class="tableEntryAnnotation">(p, a)</span>
 							</td>
 							<td>Clears the specified bits for the memory references by p.  If p
  references memory not originally allocated by this garbage collector,
@@ -3021,6 +3041,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.collect.html" class="public">
 									<code>collect</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Begins a full collection.  While the meaning of this may change based
  on the garbage collector implementation, typical behavior is to scan
@@ -3034,6 +3055,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.disable.html" class="public">
 									<code>disable</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Disables automatic garbage collections performed to minimize the
  process footprint.  Collections may continue to occur in instances
@@ -3047,6 +3069,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.enable.html" class="public">
 									<code>enable</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Enables automatic garbage collection behavior if collections have
  previously been suspended by a call to disable.  This function is
@@ -3059,6 +3082,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.extend.html" class="public">
 									<code>extend</code>
 								</a>
+								<span class="tableEntryAnnotation">(p, mx, sz, ti)</span>
 							</td>
 							<td>Requests that the managed memory block referenced by p be extended in
  place by at least mx bytes, with a desired extension of sz bytes.  If an
@@ -3072,6 +3096,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.free.html" class="public">
 									<code>free</code>
 								</a>
+								<span class="tableEntryAnnotation">(p)</span>
 							</td>
 							<td>Deallocates the memory referenced by p.  If p is null, no action occurs.
  If p references memory not originally allocated by this garbage
@@ -3086,6 +3111,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.get_attr.html" class="public">
 									<code>getAttr</code>
 								</a>
+								<span class="tableEntryAnnotation">(p)</span>
 							</td>
 							<td>Returns a bit field representing all block attributes set for the memory
  referenced by p.  If p references memory not originally allocated by
@@ -3098,6 +3124,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.in_finalizer.html" class="public">
 									<code>inFinalizer</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Queries the GC whether the current thread is running object finalization
  as part of a GC collection, or an explicit call to runFinalizers.
@@ -3108,6 +3135,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.malloc.html" class="public">
 									<code>malloc</code>
 								</a>
+								<span class="tableEntryAnnotation">(sz, ba, ti)</span>
 							</td>
 							<td>Requests an aligned block of managed memory from the garbage collector.
  This memory may be deleted at will with a call to free, or it may be
@@ -3121,6 +3149,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.minimize.html" class="public">
 									<code>minimize</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Indicates that the managed memory space be minimized by returning free
  physical memory to the operating system.  The amount of free memory
@@ -3132,9 +3161,10 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.profile_stats.html" class="public">
 									<code>profileStats</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns runtime profile stats for currently active GC implementation
- See <code class="lang-d"><a href="../../core/memory/gc.profile_stats.html" title="core.memory.GC.ProfileStats"><span class="pln"><a href="../../core/memory/gc.html"><span class="pln">GC</span></a><wbr/></span><span class="pun">.</span><span class="typ"><a href="../../core/memory/gc.profile_stats.html"><span class="typ">ProfileStats</span></a></span></a></code> for list of available metrics.
+ See <code class="lang-d"><a href="../../core/memory/gc.profile_stats.html" title="core.memory.GC.ProfileStats"><span class="pln">GC<wbr/></span><span class="pun">.</span><span class="typ">ProfileStats</span></a></code> for list of available metrics.
 </td>
 						</tr>
 						<tr>
@@ -3142,6 +3172,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.qalloc.html" class="public">
 									<code>qalloc</code>
 								</a>
+								<span class="tableEntryAnnotation">(sz, ba, ti)</span>
 							</td>
 							<td>Requests an aligned block of managed memory from the garbage collector.
  This memory may be deleted at will with a call to free, or it may be
@@ -3155,6 +3186,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.query.html" class="public">
 									<code>query</code>
 								</a>
+								<span class="tableEntryAnnotation">(p)</span>
 							</td>
 							<td>Returns aggregate information about the memory block containing p.  If p
  references memory not originally allocated by this garbage collector, if
@@ -3168,6 +3200,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.realloc.html" class="public">
 									<code>realloc</code>
 								</a>
+								<span class="tableEntryAnnotation">(p, sz, ba, ti)</span>
 							</td>
 							<td>Extend, shrink or allocate a new block of memory keeping the contents of
  an existing block
@@ -3178,6 +3211,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.remove_range.html" class="public">
 									<code>removeRange</code>
 								</a>
+								<span class="tableEntryAnnotation">(p)</span>
 							</td>
 							<td>Removes the memory range starting at p from an internal list of ranges
  to be scanned during a collection. If p is null or does not represent
@@ -3190,6 +3224,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.remove_root.html" class="public">
 									<code>removeRoot</code>
 								</a>
+								<span class="tableEntryAnnotation">(p)</span>
 							</td>
 							<td>Removes the memory block referenced by p from an internal list of roots
  to be scanned during a collection.  If p is null or is not a value
@@ -3201,6 +3236,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.reserve.html" class="public">
 									<code>reserve</code>
 								</a>
+								<span class="tableEntryAnnotation">(sz)</span>
 							</td>
 							<td>Requests that at least sz bytes of memory be obtained from the operating
  system and marked as free.
@@ -3211,6 +3247,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.run_finalizers.html" class="public">
 									<code>runFinalizers</code>
 								</a>
+								<span class="tableEntryAnnotation">(segment)</span>
 							</td>
 							<td>Runs any finalizer that is located in address range of the
  given code segment.  This is used before unloading shared
@@ -3224,6 +3261,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.set_attr.html" class="public">
 									<code>setAttr</code>
 								</a>
+								<span class="tableEntryAnnotation">(p, a)</span>
 							</td>
 							<td>Sets the specified bits for the memory references by p.  If p references
  memory not originally allocated by this garbage collector, points to the
@@ -3236,6 +3274,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.size_of.html" class="public">
 									<code>sizeOf</code>
 								</a>
+								<span class="tableEntryAnnotation">(p)</span>
 							</td>
 							<td>Returns the true size of the memory block referenced by p.  This value
  represents the maximum number of bytes for which a call to realloc may
@@ -3249,6 +3288,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../core/memory/gc.stats.html" class="public">
 									<code>stats</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns runtime stats for currently active GC implementation
  See <code class="lang-d"><a href="../../core/memory/gc.stats.html" title="core.memory.GC.Stats"><span class="pln">GC<wbr/></span><span class="pun">.</span><span class="typ">Stats</span></a></code> for list of available metrics.

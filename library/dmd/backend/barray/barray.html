@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2956,9 +2971,30 @@ $('#symbolSearchPane').show();</script>
 						</tr>
 						<tr>
 							<td>
+								<a href="../../../dmd/backend/barray/barray.dtor.html" class="public">
+									<code>dtor</code>
+								</a>
+								<span class="tableEntryAnnotation">()</span>
+							</td>
+							<td>Release all memory used.
+</td>
+						</tr>
+						<tr>
+							<td>
 								<a href="../../../dmd/backend/barray/barray.push.html" class="public">
 									<code>push</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
+							</td>
+							<td>Append a 0-initialized element of T to array
+</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="../../../dmd/backend/barray/barray.push.html" class="public">
+									<code>push</code>
+								</a>
+								<span class="tableEntryAnnotation">(t)</span>
 							</td>
 							<td>Append element t to array.
 </td>
@@ -2968,6 +3004,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../dmd/backend/barray/barray.remove.html" class="public">
 									<code>remove</code>
 								</a>
+								<span class="tableEntryAnnotation">(i)</span>
 							</td>
 							<td>Move the last element from the array into [i].
  Reduce the array length by one.
@@ -2975,9 +3012,22 @@ $('#symbolSearchPane').show();</script>
 						</tr>
 						<tr>
 							<td>
+								<a href="../../../dmd/backend/barray/barray.reset.html" class="public">
+									<code>reset</code>
+								</a>
+								<span class="tableEntryAnnotation">()</span>
+							</td>
+							<td>Resets length of array to 0 without
+ free'ing the array memory. This
+ sets it up for re-using the memory.
+</td>
+						</tr>
+						<tr>
+							<td>
 								<a href="../../../dmd/backend/barray/barray.set_length.html" class="public">
 									<code>setLength</code>
 								</a>
+								<span class="tableEntryAnnotation">(length)</span>
 							</td>
 							<td>Set useable length of array.
 </td>

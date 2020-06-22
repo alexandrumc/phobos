@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2956,138 +2971,183 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="list_append" class="public" href="../../dmd/backend/dlist/list_append.html">list_append</a><span class="decoration">(plist, ptr)</span>
+									<a id="list_append" class="public" href="../../dmd/backend/dlist/list_append.html">list_append</a><span class="tableEntryAnnotation">(plist, ptr)</span>
 								</code>
 							</td>
 							<td>Append ptr to *plist.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="list_apply" class="public" href="../../dmd/backend/dlist/list_apply.html">list_apply</a><span class="decoration">(plist, fp)</span>
+									<a id="list_apply" class="public" href="../../dmd/backend/dlist/list_apply.html">list_apply</a><span class="tableEntryAnnotation">(plist, fp)</span>
 								</code>
 							</td>
 							<td>Apply a function fp to each member of a list.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="list_data" class="public" href="../../dmd/backend/dlist/list_data.html">list_data</a><span class="decoration">(list)</span>
+									<a id="list_data" class="public" href="../../dmd/backend/dlist/list_data.html">list_data</a><span class="tableEntryAnnotation">(list)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="list_equal" class="public" href="../../dmd/backend/dlist/list_equal.html">list_equal</a><span class="decoration">(list1, list2)</span>
+									<a id="list_equal" class="public" href="../../dmd/backend/dlist/list_equal.html">list_equal</a><span class="tableEntryAnnotation">(list1, list2)</span>
 								</code>
 							</td>
 							<td>Compare two lists.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="list_free" class="public" href="../../dmd/backend/dlist/list_free.html">list_free</a><span class="decoration">(plist, freeptr)</span>
+									<a id="list_free" class="public" href="../../dmd/backend/dlist/list_free.html">list_free</a><span class="tableEntryAnnotation">(plist, freeptr)</span>
 								</code>
 							</td>
 							<td>Free list.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="list_inlist" class="public" href="../../dmd/backend/dlist/list_inlist.html">list_inlist</a><span class="decoration">(list, ptr)</span>
+									<a id="list_inlist" class="public" href="../../dmd/backend/dlist/list_inlist.html">list_inlist</a><span class="tableEntryAnnotation">(list, ptr)</span>
 								</code>
 							</td>
 							<td>Search for ptr in list.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="list_next" class="public" href="../../dmd/backend/dlist/list_next.html">list_next</a><span class="decoration">(list)</span>
+									<a id="list_next" class="public" href="../../dmd/backend/dlist/list_next.html">list_next</a><span class="tableEntryAnnotation">(list)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="list_nitems" class="public" href="../../dmd/backend/dlist/list_nitems.html">list_nitems</a><span class="decoration">(list)</span>
+									<a id="list_nitems" class="public" href="../../dmd/backend/dlist/list_nitems.html">list_nitems</a><span class="tableEntryAnnotation">(list)</span>
 								</code>
 							</td>
 							<td>Count up and return number of items in list.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="list_nth" class="public" href="../../dmd/backend/dlist/list_nth.html">list_nth</a><span class="decoration">(list, n)</span>
+									<a id="list_nth" class="public" href="../../dmd/backend/dlist/list_nth.html">list_nth</a><span class="tableEntryAnnotation">(list, n)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="list_pop" class="public" href="../../dmd/backend/dlist/list_pop.html">list_pop</a><span class="decoration">(plist)</span>
+									<a id="list_pop" class="public" href="../../dmd/backend/dlist/list_pop.html">list_pop</a><span class="tableEntryAnnotation">(plist)</span>
 								</code>
 							</td>
 							<td>Remove first element in list pointed to by *plist.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="list_prepend" class="public" href="../../dmd/backend/dlist/list_prepend.html">list_prepend</a><span class="decoration">(plist, ptr)</span>
+									<a id="list_prepend" class="public" href="../../dmd/backend/dlist/list_prepend.html">list_prepend</a><span class="tableEntryAnnotation">(plist, ptr)</span>
 								</code>
 							</td>
 							<td>Prepend ptr to *plist.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="list_prependdata" class="public" href="../../dmd/backend/dlist/list_prependdata.html">list_prependdata</a><span class="decoration">(plist, d)</span>
+									<a id="list_prependdata" class="public" href="../../dmd/backend/dlist/list_prependdata.html">list_prependdata</a><span class="tableEntryAnnotation">(plist, d)</span>
 								</code>
 							</td>
 							<td>Prepend integer item to list.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="list_ptr" class="public" href="../../dmd/backend/dlist/list_ptr.html">list_ptr</a><span class="decoration">(list)</span>
+									<a id="list_ptr" class="public" href="../../dmd/backend/dlist/list_ptr.html">list_ptr</a><span class="tableEntryAnnotation">(list)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="list_reverse" class="public" href="../../dmd/backend/dlist/list_reverse.html">list_reverse</a><span class="decoration">(l)</span>
+									<a id="list_reverse" class="public" href="../../dmd/backend/dlist/list_reverse.html">list_reverse</a><span class="tableEntryAnnotation">(l)</span>
 								</code>
 							</td>
 							<td>Reverse a list in place.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="list_subtract" class="public" href="../../dmd/backend/dlist/list_subtract.html">list_subtract</a><span class="decoration">(plist, ptr)</span>
+									<a id="list_subtract" class="public" href="../../dmd/backend/dlist/list_subtract.html">list_subtract</a><span class="tableEntryAnnotation">(plist, ptr)</span>
 								</code>
 							</td>
 							<td>Remove ptr from the list pointed to by *plist.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3096,7 +3156,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3106,6 +3166,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Range for Lists.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

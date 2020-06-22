@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2953,7 +2968,7 @@ $('#symbolSearchPane').show();</script>
 						</li>
 					</ul>
 				</nav><h2 id="0">Function transversal</h2><p>Given a range of ranges, iterate transversally through the
-    <code class="lang-d"><a href="../std/range/transversal.html#n"><span class="pln"><a href="../../std/range/transversal.html#n"><span class="pln">n</span></a></span></a></code>th element of each of the enclosed ranges. This function
+    <code class="lang-d"><a href="../../std/range/transversal.html#n"><span class="pln">n</span></a></code>th element of each of the enclosed ranges. This function
     is similar to <code class="lang-d"><span class="pln">unzip</span></code> in other languages.
 </p>
 				<div class="prototype">
@@ -3006,7 +3021,7 @@ $('#symbolSearchPane').show();</script>
 </span></code></pre>
 </section>
 <h2 id="1">Struct Transversal</h2><p>Given a range of ranges, iterate transversally through the
-    <code class="lang-d"><a href="../std/range/transversal.html#n"><span class="pln"><a href="../../std/range/transversal.html#n"><span class="pln">n</span></a></span></a></code>th element of each of the enclosed ranges. This function
+    <code class="lang-d"><span class="pln">n</span></code>th element of each of the enclosed ranges. This function
     is similar to <code class="lang-d"><span class="pln">unzip</span></code> in other languages.
 </p>
 				<div class="prototype">
@@ -3030,6 +3045,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/transversal.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(input, n)</span>
 							</td>
 							<td>Construction from an input and an index.
 </td>
@@ -3085,6 +3101,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/transversal.move_at.html" class="public">
 									<code>moveAt</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
 							<td>Random-access primitive. It is offered if <code class="lang-d"><span class="pln">   isRandomAccessRange</span><span class="pun">!</span><span class="typ">RangeOfRanges </span><span class="pun">&amp;&amp; (</span><span class="pln">opt </span><span class="pun">==
    <a href="../../std/range/transverse_options.html#assumeNotJagged"></span><span class="typ">TransverseOptions<wbr/></span><span class="pun">.</span><span class="pln">assumeNotJagged</span></a><span class="pln"> </span><span class="pun">|| </span><span class="pln">opt </span><span class="pun">==
@@ -3096,6 +3113,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/transversal.move_back.html" class="public">
 									<code>moveBack</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Bidirectional primitives. They are offered if <code class="lang-d"><span class="pln">   isBidirectionalRange</span><span class="pun">!</span><span class="typ">RangeOfRanges</span></code>.
 </td>
@@ -3105,6 +3123,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/transversal.move_front.html" class="public">
 									<code>moveFront</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Forward range primitives.
 </td>
@@ -3114,6 +3133,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/transversal.op_index.html" class="public">
 									<code>opIndex</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
 							<td>Random-access primitive. It is offered if <code class="lang-d"><span class="pln">   isRandomAccessRange</span><span class="pun">!</span><span class="typ">RangeOfRanges </span><span class="pun">&amp;&amp; (</span><span class="pln">opt </span><span class="pun">==
    <a href="../../std/range/transverse_options.html#assumeNotJagged"></span><span class="typ">TransverseOptions<wbr/></span><span class="pun">.</span><span class="pln">assumeNotJagged</span></a><span class="pln"> </span><span class="pun">|| </span><span class="pln">opt </span><span class="pun">==
@@ -3125,6 +3145,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/transversal.op_index_assign.html" class="public">
 									<code>opIndexAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(val, n)</span>
 							</td>
 							<td>Random-access primitive. It is offered if <code class="lang-d"><span class="pln">   isRandomAccessRange</span><span class="pun">!</span><span class="typ">RangeOfRanges </span><span class="pun">&amp;&amp; (</span><span class="pln">opt </span><span class="pun">==
    <a href="../../std/range/transverse_options.html#assumeNotJagged"></span><span class="typ">TransverseOptions<wbr/></span><span class="pun">.</span><span class="pln">assumeNotJagged</span></a><span class="pln"> </span><span class="pun">|| </span><span class="pln">opt </span><span class="pun">==
@@ -3136,6 +3157,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/transversal.op_slice.html" class="public">
 									<code>opSlice</code>
 								</a>
+								<span class="tableEntryAnnotation">(lower, upper)</span>
 							</td>
 							<td>Slicing if offered if <code class="lang-d"><span class="typ">RangeOfRanges</span></code> supports slicing and all the
    conditions for supporting indexing are met.
@@ -3146,6 +3168,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/transversal.pop_back.html" class="public">
 									<code>popBack</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Bidirectional primitives. They are offered if <code class="lang-d"><span class="pln">   isBidirectionalRange</span><span class="pun">!</span><span class="typ">RangeOfRanges</span></code>.
 </td>
@@ -3155,6 +3178,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/transversal.pop_front.html" class="public">
 									<code>popFront</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Forward range primitives.
 </td>
@@ -3189,7 +3213,7 @@ $('#symbolSearchPane').show();</script>
 </section>
 <section><h3>Returns</h3>
 <p>At minimum, an input range. Range primitives such as bidirectionality
-        and random access are given if the element type of <code class="lang-d"><a href="../../std/range/transversal.html#rr"><span class="pln">rr</span></a></code> provides them.
+        and random access are given if the element type of <code class="lang-d"><span class="pln">rr</span></code> provides them.
 </p>
 </section>
 <section><h3>Example</h3>

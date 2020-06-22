@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/experimental/allocator/common.d#L356">
+							<a href="https://github.com/dlang/phobos/blob/master/std/experimental/allocator/common.d#L352">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/experimental/allocator/common.d#L356">
+							<a href="https://github.com/dlang/phobos/edit/master/std/experimental/allocator/common.d#L352">
 								Improve this page
 							</a>
 							<div>
@@ -2937,7 +2952,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../../../std/experimental/allocator/common.html">std.experimental.allocator.common</a>.reallocate</code></h1><p>The default <code class="lang-d"><span class="pln"><span class="pln">reallocate</span></span></code> function first attempts to use <code class="lang-d"><span class="pln">expand</span></code>. If <code class="lang-d"><span class="typ">Allocator<wbr/></span><span class="pun">.</span><span class="pln">expand</span></code> is not defined or returns <code class="lang-d"><span class="kwd">false</span></code>, <code class="lang-d"><span class="pln"><span class="pln">reallocate</span></span></code>
+				</div><h1>Function <code><a href="../../../../std/experimental/allocator/common.html">std.experimental.allocator.common</a>.reallocate</code></h1><p>The default <code class="lang-d"><span class="pln">reallocate</span></code> function first attempts to use <code class="lang-d"><span class="pln">expand</span></code>. If <code class="lang-d"><span class="typ">Allocator<wbr/></span><span class="pun">.</span><span class="pln">expand</span></code> is not defined or returns <code class="lang-d"><span class="kwd">false</span></code>, <code class="lang-d"><span class="pln">reallocate</span></code>
 allocates a new block of memory of appropriate size and copies data from the old
 block to the new block. Finally, if <code class="lang-d"><span class="typ">Allocator</span></code> defines <code class="lang-d"><span class="pln">deallocate</span></code>, <code class="lang-d"><span class="pln">reallocate</span></code> uses it to free the old memory block.
 </p>

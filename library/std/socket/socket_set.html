@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,7 +2952,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Class <code><a href="../../std/socket.html">std.socket</a>.SocketSet</code></h1><p>A collection of sockets for use with <code class="lang-d"><a href="../std/socket/socket.select.html"><span class="typ"><a href="../../std/socket/socket.html"><span class="typ">Socket</span></a><wbr/></span><span class="pun">.</span><span class="pln">select</span></a></code>.
+				</div><h1>Class <code><a href="../../std/socket.html">std.socket</a>.SocketSet</code></h1><p>A collection of sockets for use with <code class="lang-d"><a href="../../std/socket/socket.select.html"><span class="typ">Socket<wbr/></span><span class="pun">.</span><span class="pln">select</span></a></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2964,6 +2979,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket_set.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(size)</span>
 							</td>
 							<td>Create a SocketSet with a specific initial capacity (defaults to
  <code class="lang-d"><span class="pln">FD_SETSIZE</span></code>, the system's default capacity).
@@ -2996,8 +3012,9 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket_set.add.html" class="public">
 									<code>add</code>
 								</a>
+								<span class="tableEntryAnnotation">(s)</span>
 							</td>
-							<td>Add a <code class="lang-d"><a href="../../std/socket/socket.html"><span class="typ"><a href="../../std/socket/socket.html"><span class="typ">Socket</span></a></span></a></code> to the collection.
+							<td>Add a <code class="lang-d"><a href="../../std/socket/socket.html"><span class="typ">Socket</span></a></code> to the collection.
  The socket must not already be in the collection.
 </td>
 						</tr>
@@ -3006,6 +3023,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket_set.is_set.html" class="public">
 									<code>isSet</code>
 								</a>
+								<span class="tableEntryAnnotation">(s)</span>
 							</td>
 							<td>Return nonzero if this <code class="lang-d"><a href="../../std/socket/socket.html"><span class="typ">Socket</span></a></code> is in the collection.
 </td>
@@ -3015,6 +3033,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket_set.remove.html" class="public">
 									<code>remove</code>
 								</a>
+								<span class="tableEntryAnnotation">(s)</span>
 							</td>
 							<td>Remove this <code class="lang-d"><a href="../../std/socket/socket.html"><span class="typ">Socket</span></a></code> from the collection.
  Does nothing if the socket is not in the collection already.
@@ -3025,8 +3044,9 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket_set.reset.html" class="public">
 									<code>reset</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
-							<td>Reset the <code class="lang-d"><a href="../../std/socket/socket_set.html"><span class="typ"><a href="../../std/socket/socket_set.html"><span class="typ">SocketSet</span></a></span></a></code> so that there are 0 <code class="lang-d"><a href="../../std/socket/socket.html"><span class="typ"><a href="../../std/socket/socket.html"><span class="typ">Socket</span></a></span></a></code>s in the collection.
+							<td>Reset the <code class="lang-d"><a href="../../std/socket/socket_set.html"><span class="typ">SocketSet</span></a></code> so that there are 0 <code class="lang-d"><a href="../../std/socket/socket.html"><span class="typ">Socket</span></a></code>s in the collection.
 </td>
 						</tr>
 						<tr>
@@ -3034,6 +3054,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.factory.html" class="public inherited">
 									<code>factory</code>
 								</a>
+								<span class="tableEntryAnnotation">(classname)</span>
 							</td>
 							<td>Create instance of class specified by the fully qualified name
  classname.
@@ -3046,6 +3067,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.op_cmp.html" class="public inherited">
 									<code>opCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Compare with another Object obj.
 </td>
@@ -3055,6 +3077,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.op_equals.html" class="public inherited">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Test whether <code class="lang-d"><span class="kwd">this</span></code> is equal to <code class="lang-d"><a href="../../object/object.op_equals.html#o"><span class="pln">o</span></a></code>.
  The default implementation only compares by identity (using the <code class="lang-d"><span class="kwd">is</span></code> operator).
@@ -3066,6 +3089,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.to_hash.html" class="public inherited">
 									<code>toHash</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Compute hash function for Object.
 </td>
@@ -3075,6 +3099,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Convert Object to a human readable string.
 </td>

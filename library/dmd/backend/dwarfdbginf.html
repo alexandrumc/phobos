@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2951,164 +2966,215 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cv_func" class="public" href="../../dmd/backend/dwarfdbginf/cv_func.html">cv_func</a><span class="decoration">(s)</span>
+									<a id="cv_func" class="public" href="../../dmd/backend/dwarfdbginf/cv_func.html">cv_func</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Write out symbol table for current function.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cv_outlist" class="public" href="../../dmd/backend/dwarfdbginf/cv_outlist.html">cv_outlist</a><span class="decoration">()</span>
+									<a id="cv_outlist" class="public" href="../../dmd/backend/dwarfdbginf/cv_outlist.html">cv_outlist</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Write out any deferred symbols.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cv_outsym" class="public" href="../../dmd/backend/dwarfdbginf/cv_outsym.html">cv_outsym</a><span class="decoration">(s)</span>
+									<a id="cv_outsym" class="public" href="../../dmd/backend/dwarfdbginf/cv_outsym.html">cv_outsym</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Write out symbol table for current function.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="doUnwindEhFrame" class="public" href="../../dmd/backend/dwarfdbginf/do_unwind_eh_frame.html">doUnwindEhFrame</a><span class="decoration">()</span>
+									<a id="doUnwindEhFrame" class="public" href="../../dmd/backend/dwarfdbginf/do_unwind_eh_frame.html">doUnwindEhFrame</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Determine if generating a eh_frame with full
  unwinding information.
  This decision is done on a per-function basis.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dwarf_CFA_args_size" class="public" href="../../dmd/backend/dwarfdbginf/dwarf__cf_a_args_size.html">dwarf_CFA_args_size</a><span class="decoration">(sz)</span>
+									<a id="dwarf_CFA_args_size" class="public" href="../../dmd/backend/dwarfdbginf/dwarf__cf_a_args_size.html">dwarf_CFA_args_size</a><span class="tableEntryAnnotation">(sz)</span>
 								</code>
 							</td>
 							<td>Set total size of arguments pushed on the stack.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dwarf_CFA_offset" class="public" href="../../dmd/backend/dwarfdbginf/dwarf__cf_a_offset.html">dwarf_CFA_offset</a><span class="decoration">(reg, offset)</span>
+									<a id="dwarf_CFA_offset" class="public" href="../../dmd/backend/dwarfdbginf/dwarf__cf_a_offset.html">dwarf_CFA_offset</a><span class="tableEntryAnnotation">(reg, offset)</span>
 								</code>
 							</td>
 							<td>Set reg to be at offset from frame register.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dwarf_CFA_set_loc" class="public" href="../../dmd/backend/dwarfdbginf/dwarf__cf_a_set_loc.html">dwarf_CFA_set_loc</a><span class="decoration">(location)</span>
+									<a id="dwarf_CFA_set_loc" class="public" href="../../dmd/backend/dwarfdbginf/dwarf__cf_a_set_loc.html">dwarf_CFA_set_loc</a><span class="tableEntryAnnotation">(location)</span>
 								</code>
 							</td>
 							<td>Set the location, i.e. the offset from the start
  of the function. It must always be greater than
  the current location.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dwarf_CFA_set_reg_offset" class="public" href="../../dmd/backend/dwarfdbginf/dwarf__cf_a_set_reg_offset.html">dwarf_CFA_set_reg_offset</a><span class="decoration">(reg, offset)</span>
+									<a id="dwarf_CFA_set_reg_offset" class="public" href="../../dmd/backend/dwarfdbginf/dwarf__cf_a_set_reg_offset.html">dwarf_CFA_set_reg_offset</a><span class="tableEntryAnnotation">(reg, offset)</span>
 								</code>
 							</td>
 							<td>Set the frame register, and its offset.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dwarf_except_gentables" class="public" href="../../dmd/backend/dwarfdbginf/dwarf_except_gentables.html">dwarf_except_gentables</a><span class="decoration">(sfunc, startoffset, retoffset)</span>
+									<a id="dwarf_except_gentables" class="public" href="../../dmd/backend/dwarfdbginf/dwarf_except_gentables.html">dwarf_except_gentables</a><span class="tableEntryAnnotation">(sfunc, startoffset, retoffset)</span>
 								</code>
 							</td>
 							<td>Write Dwarf-style exception tables.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dwarf_func_start" class="public" href="../../dmd/backend/dwarfdbginf/dwarf_func_start.html">dwarf_func_start</a><span class="decoration">(sfunc)</span>
+									<a id="dwarf_func_start" class="public" href="../../dmd/backend/dwarfdbginf/dwarf_func_start.html">dwarf_func_start</a><span class="tableEntryAnnotation">(sfunc)</span>
 								</code>
 							</td>
 							<td>Start of code gen for function.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dwarf_func_term" class="public" href="../../dmd/backend/dwarfdbginf/dwarf_func_term.html">dwarf_func_term</a><span class="decoration">(sfunc)</span>
+									<a id="dwarf_func_term" class="public" href="../../dmd/backend/dwarfdbginf/dwarf_func_term.html">dwarf_func_term</a><span class="tableEntryAnnotation">(sfunc)</span>
 								</code>
 							</td>
 							<td>End of code gen for function.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dwarf_line_addfile" class="public" href="../../dmd/backend/dwarfdbginf/dwarf_line_addfile.html">dwarf_line_addfile</a><span class="decoration">(filename)</span>
+									<a id="dwarf_line_addfile" class="public" href="../../dmd/backend/dwarfdbginf/dwarf_line_addfile.html">dwarf_line_addfile</a><span class="tableEntryAnnotation">(filename)</span>
 								</code>
 							</td>
 							<td>Add a file to the .debug_line header
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dwarf_regno" class="public" href="../../dmd/backend/dwarfdbginf/dwarf_regno.html">dwarf_regno</a><span class="decoration">(reg)</span>
+									<a id="dwarf_regno" class="public" href="../../dmd/backend/dwarfdbginf/dwarf_regno.html">dwarf_regno</a><span class="tableEntryAnnotation">(reg)</span>
 								</code>
 							</td>
 							<td>Convert CPU register number to Dwarf register number.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dwarf_termfile" class="public" href="../../dmd/backend/dwarfdbginf/dwarf_termfile.html">dwarf_termfile</a><span class="decoration">()</span>
+									<a id="dwarf_termfile" class="public" href="../../dmd/backend/dwarfdbginf/dwarf_termfile.html">dwarf_termfile</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Finish writing Dwarf debug info to object file.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="writeDebugFrameFDE" class="public" href="../../dmd/backend/dwarfdbginf/write_debug_frame_fde.html">writeDebugFrameFDE</a><span class="decoration">(dfseg, sfunc)</span>
+									<a id="writeDebugFrameFDE" class="public" href="../../dmd/backend/dwarfdbginf/write_debug_frame_fde.html">writeDebugFrameFDE</a><span class="tableEntryAnnotation">(dfseg, sfunc)</span>
 								</code>
 							</td>
 							<td>Generate function's Frame Description Entry into .debug_frame
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="writeDebugFrameHeader" class="public" href="../../dmd/backend/dwarfdbginf/write_debug_frame_header.html">writeDebugFrameHeader</a><span class="decoration">(buf)</span>
+									<a id="writeDebugFrameHeader" class="public" href="../../dmd/backend/dwarfdbginf/write_debug_frame_header.html">writeDebugFrameHeader</a><span class="tableEntryAnnotation">(buf)</span>
 								</code>
 							</td>
 							<td>Append .debug_frame header to buf.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="writeEhFrameFDE" class="public" href="../../dmd/backend/dwarfdbginf/write_eh_frame_fde.html">writeEhFrameFDE</a><span class="decoration">(dfseg, sfunc, ehunwind, CIE_offset)</span>
+									<a id="writeEhFrameFDE" class="public" href="../../dmd/backend/dwarfdbginf/write_eh_frame_fde.html">writeEhFrameFDE</a><span class="tableEntryAnnotation">(dfseg, sfunc, ehunwind, CIE_offset)</span>
 								</code>
 							</td>
 							<td>Append function's FDE (Frame Description Entry) to .eh_frame
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3117,7 +3183,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3127,6 +3193,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>DWARF DEBUG OUTPUT
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

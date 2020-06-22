@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2947,52 +2962,67 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getRtlsym" class="public" href="../../dmd/backend/drtlsym/get_rtlsym.html">getRtlsym</a><span class="decoration">(i)</span>
+									<a id="getRtlsym" class="public" href="../../dmd/backend/drtlsym/get_rtlsym.html">getRtlsym</a><span class="tableEntryAnnotation">(i)</span>
 								</code>
 							</td>
 							<td>Get Symbol corresponding to i.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getRtlsymPersonality" class="public" href="../../dmd/backend/drtlsym/get_rtlsym_personality.html">getRtlsymPersonality</a><span class="decoration">()</span>
+									<a id="getRtlsymPersonality" class="public" href="../../dmd/backend/drtlsym/get_rtlsym_personality.html">getRtlsymPersonality</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Get Symbol corresponding to Dwarf "personality" function.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rtlsym_init" class="public" href="../../dmd/backend/drtlsym/rtlsym_init.html">rtlsym_init</a><span class="decoration">()</span>
+									<a id="rtlsym_init" class="public" href="../../dmd/backend/drtlsym/rtlsym_init.html">rtlsym_init</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Initialize rtl symbols.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rtlsym_reset" class="public" href="../../dmd/backend/drtlsym/rtlsym_reset.html">rtlsym_reset</a><span class="decoration">()</span>
+									<a id="rtlsym_reset" class="public" href="../../dmd/backend/drtlsym/rtlsym_reset.html">rtlsym_reset</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Reset the symbols for the case when we are generating multiple
  .OBJ files from one compile.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rtlsym_term" class="public" href="../../dmd/backend/drtlsym/rtlsym_term.html">rtlsym_term</a><span class="decoration">()</span>
+									<a id="rtlsym_term" class="public" href="../../dmd/backend/drtlsym/rtlsym_term.html">rtlsym_term</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

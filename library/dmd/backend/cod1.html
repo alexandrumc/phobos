@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2951,30 +2966,36 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="buildEA" class="public" href="../../dmd/backend/cod1/build_ea.html">buildEA</a><span class="decoration">(c, base, index, scale, disp)</span>
+									<a id="buildEA" class="public" href="../../dmd/backend/cod1/build_ea.html">buildEA</a><span class="tableEntryAnnotation">(c, base, index, scale, disp)</span>
 								</code>
 							</td>
 							<td>Build an EA of the form disp[base][index*scale].
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="buildModregrm" class="public" href="../../dmd/backend/cod1/build_modregrm.html">buildModregrm</a><span class="decoration">(mod, reg, rm)</span>
+									<a id="buildModregrm" class="public" href="../../dmd/backend/cod1/build_modregrm.html">buildModregrm</a><span class="tableEntryAnnotation">(mod, reg, rm)</span>
 								</code>
 							</td>
 							<td>Build REX, modregrm and sib bytes
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="callclib" class="public" href="../../dmd/backend/cod1/callclib.html">callclib</a><span class="decoration">(cdb, e, clib, pretregs, keepmask)</span>
+									<a id="callclib" class="public" href="../../dmd/backend/cod1/callclib.html">callclib</a><span class="tableEntryAnnotation">(cdb, e, clib, pretregs, keepmask)</span>
 								</code>
 							</td>
 							<td>Generate code sequence to call C runtime library support routine.
@@ -2983,206 +3004,272 @@ $('#symbolSearchPane').show();</script>
               handle only 1. Should use a temporary rather than
               push/pop for speed.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdfunc" class="public" href="../../dmd/backend/cod1/cdfunc.html">cdfunc</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdfunc" class="public" href="../../dmd/backend/cod1/cdfunc.html">cdfunc</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code sequence for function call.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdisscaledindex" class="public" href="../../dmd/backend/cod1/cdisscaledindex.html">cdisscaledindex</a><span class="decoration">(cdb, e, pidxregs, keepmsk)</span>
+									<a id="cdisscaledindex" class="public" href="../../dmd/backend/cod1/cdisscaledindex.html">cdisscaledindex</a><span class="tableEntryAnnotation">(cdb, e, pidxregs, keepmsk)</span>
 								</code>
 							</td>
 							<td>Generate code for which isscaledindex(e) returned a non-zero result.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdstrthis" class="public" href="../../dmd/backend/cod1/cdstrthis.html">cdstrthis</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdstrthis" class="public" href="../../dmd/backend/cod1/cdstrthis.html">cdstrthis</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fixresult" class="public" href="../../dmd/backend/cod1/fixresult.html">fixresult</a><span class="decoration">(cdb, e, retregs, pretregs)</span>
+									<a id="fixresult" class="public" href="../../dmd/backend/cod1/fixresult.html">fixresult</a><span class="tableEntryAnnotation">(cdb, e, retregs, pretregs)</span>
 								</code>
 							</td>
 							<td>Given the result of an expression is in retregs,
  generate necessary code to return result in *pretregs.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fltregs" class="public" href="../../dmd/backend/cod1/fltregs.html">fltregs</a><span class="decoration">(cdb, pcs, tym)</span>
+									<a id="fltregs" class="public" href="../../dmd/backend/cod1/fltregs.html">fltregs</a><span class="tableEntryAnnotation">(cdb, pcs, tym)</span>
 								</code>
 							</td>
 							<td>Given an opcode and EA in cs, generate code
  for each floating register in turn.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="FuncParamRegs_create" class="public" href="../../dmd/backend/cod1/func_param_regs_create.html">FuncParamRegs_create</a><span class="decoration">(tyf)</span>
+									<a id="FuncParamRegs_create" class="public" href="../../dmd/backend/cod1/func_param_regs_create.html">FuncParamRegs_create</a><span class="tableEntryAnnotation">(tyf)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="genEEcode" class="public" href="../../dmd/backend/cod1/gen_e_ecode.html">genEEcode</a><span class="decoration">()</span>
+									<a id="genEEcode" class="public" href="../../dmd/backend/cod1/gen_e_ecode.html">genEEcode</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Generate code for eecontext
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="gensaverestore" class="public" href="../../dmd/backend/cod1/gensaverestore.html">gensaverestore</a><span class="decoration">(regm, cdbsave, cdbrestore)</span>
+									<a id="gensaverestore" class="public" href="../../dmd/backend/cod1/gensaverestore.html">gensaverestore</a><span class="tableEntryAnnotation">(regm, cdbsave, cdbrestore)</span>
 								</code>
 							</td>
 							<td>Gen a save/restore sequence for mask of registers.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="genstackclean" class="public" href="../../dmd/backend/cod1/genstackclean.html">genstackclean</a><span class="decoration">(cdb, numpara, keepmsk)</span>
+									<a id="genstackclean" class="public" href="../../dmd/backend/cod1/genstackclean.html">genstackclean</a><span class="tableEntryAnnotation">(cdb, numpara, keepmsk)</span>
 								</code>
 							</td>
 							<td>Clean parameters off stack.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getaddrmode" class="public" href="../../dmd/backend/cod1/getaddrmode.html">getaddrmode</a><span class="decoration">(idxregs)</span>
+									<a id="getaddrmode" class="public" href="../../dmd/backend/cod1/getaddrmode.html">getaddrmode</a><span class="tableEntryAnnotation">(idxregs)</span>
 								</code>
 							</td>
 							<td>Get addressing mode.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getlvalue" class="public" href="../../dmd/backend/cod1/getlvalue.html">getlvalue</a><span class="decoration">(cdb, pcs, e, keepmsk)</span>
+									<a id="getlvalue" class="public" href="../../dmd/backend/cod1/getlvalue.html">getlvalue</a><span class="tableEntryAnnotation">(cdb, pcs, e, keepmsk)</span>
 								</code>
 							</td>
 							<td>Compute addressing mode.
  Generate &amp; return sequence of code (if any).
  Return in cs the info on it.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getlvalue_lsw" class="public" href="../../dmd/backend/cod1/getlvalue_lsw.html">getlvalue_lsw</a><span class="decoration">(c)</span>
+									<a id="getlvalue_lsw" class="public" href="../../dmd/backend/cod1/getlvalue_lsw.html">getlvalue_lsw</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getlvalue_msw" class="public" href="../../dmd/backend/cod1/getlvalue_msw.html">getlvalue_msw</a><span class="decoration">(c)</span>
+									<a id="getlvalue_msw" class="public" href="../../dmd/backend/cod1/getlvalue_msw.html">getlvalue_msw</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isscaledindex" class="public" href="../../dmd/backend/cod1/isscaledindex.html">isscaledindex</a><span class="decoration">(e)</span>
+									<a id="isscaledindex" class="public" href="../../dmd/backend/cod1/isscaledindex.html">isscaledindex</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>Determine if e is a 32 bit scaled index addressing mode.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="loaddata" class="public" href="../../dmd/backend/cod1/loaddata.html">loaddata</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="loaddata" class="public" href="../../dmd/backend/cod1/loaddata.html">loaddata</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code to load data into registers.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="loadea" class="public" href="../../dmd/backend/cod1/loadea.html">loadea</a><span class="decoration">(cdb, e, cs, op, reg, offset, keepmsk, desmsk)</span>
+									<a id="loadea" class="public" href="../../dmd/backend/cod1/loadea.html">loadea</a><span class="tableEntryAnnotation">(cdb, e, cs, op, reg, offset, keepmsk, desmsk)</span>
 								</code>
 							</td>
 							<td>Routine to aid in setting things up for gen().
  Look for common subexpression.
  Can handle indirection operators, but not if they're common subs.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="logexp" class="public" href="../../dmd/backend/cod1/logexp.html">logexp</a><span class="decoration">(cdb, e, jcond, fltarg, targ)</span>
+									<a id="logexp" class="public" href="../../dmd/backend/cod1/logexp.html">logexp</a><span class="tableEntryAnnotation">(cdb, e, jcond, fltarg, targ)</span>
 								</code>
 							</td>
 							<td>Generate code for a logical expression.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="offsetinreg" class="public" href="../../dmd/backend/cod1/offsetinreg.html">offsetinreg</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="offsetinreg" class="public" href="../../dmd/backend/cod1/offsetinreg.html">offsetinreg</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Get offset portion of e, and store it in an index
  register. Return mask of index register in *pretregs.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="paramsize" class="public" href="../../dmd/backend/cod1/paramsize.html">paramsize</a><span class="decoration">(e, tyf)</span>
+									<a id="paramsize" class="public" href="../../dmd/backend/cod1/paramsize.html">paramsize</a><span class="tableEntryAnnotation">(e, tyf)</span>
 								</code>
 							</td>
 							<td>Determine size of argument e that will be pushed.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="pushParams" class="public" href="../../dmd/backend/cod1/push_params.html">pushParams</a><span class="decoration">(cdb, e, stackalign, tyf)</span>
+									<a id="pushParams" class="public" href="../../dmd/backend/cod1/push_params.html">pushParams</a><span class="tableEntryAnnotation">(cdb, e, stackalign, tyf)</span>
 								</code>
 							</td>
 							<td>Generate code to push argument e on the stack.
  stackpush is incremented by stackalign for each PUSH.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="regParamInPreg" class="public" href="../../dmd/backend/cod1/reg_param_in_preg.html">regParamInPreg</a><span class="decoration">(s)</span>
+									<a id="regParamInPreg" class="public" href="../../dmd/backend/cod1/reg_param_in_preg.html">regParamInPreg</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Determine if we should leave parameter <code class="lang-d"><a href="../../dmd/backend/cod1/reg_param_in_preg.html#s"><span class="pln">s</span></a></code> in the register it
  came in, or allocate a register it using the register
  allocator.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="tstresult" class="public" href="../../dmd/backend/cod1/tstresult.html">tstresult</a><span class="decoration">(cdb, regm, tym, saveflag)</span>
+									<a id="tstresult" class="public" href="../../dmd/backend/cod1/tstresult.html">tstresult</a><span class="tableEntryAnnotation">(cdb, regm, tym, saveflag)</span>
 								</code>
 							</td>
 							<td>Given a result in registers, test it for true or false.
@@ -3190,6 +3277,9 @@ $('#symbolSearchPane').show();</script>
  If saveflag is true, preserve the contents of the
  registers.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3198,7 +3288,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3208,6 +3298,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Helper function for converting OPparam's into array of Parameters.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

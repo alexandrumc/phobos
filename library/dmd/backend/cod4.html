@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2947,114 +2962,147 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdaddass" class="public" href="../../dmd/backend/cod4/cdaddass.html">cdaddass</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdaddass" class="public" href="../../dmd/backend/cod4/cdaddass.html">cdaddass</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for += -= &amp;= |= ^= negass
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdasm" class="public" href="../../dmd/backend/cod4/cdasm.html">cdasm</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdasm" class="public" href="../../dmd/backend/cod4/cdasm.html">cdasm</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for an asm elem.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdbscan" class="public" href="../../dmd/backend/cod4/cdbscan.html">cdbscan</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdbscan" class="public" href="../../dmd/backend/cod4/cdbscan.html">cdbscan</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for OPbsf and OPbsr.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdbt" class="public" href="../../dmd/backend/cod4/cdbt.html">cdbt</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdbt" class="public" href="../../dmd/backend/cod4/cdbt.html">cdbt</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for OPbt, OPbtc, OPbtr, OPbts
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdbtst" class="public" href="../../dmd/backend/cod4/cdbtst.html">cdbtst</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdbtst" class="public" href="../../dmd/backend/cod4/cdbtst.html">cdbtst</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for OPbtst
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdbyteint" class="public" href="../../dmd/backend/cod4/cdbyteint.html">cdbyteint</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdbyteint" class="public" href="../../dmd/backend/cod4/cdbyteint.html">cdbyteint</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Convert byte to int.
  For OPu8_16 and OPs8_16.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdcmp" class="public" href="../../dmd/backend/cod4/cdcmp.html">cdcmp</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdcmp" class="public" href="../../dmd/backend/cod4/cdcmp.html">cdcmp</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for compares.
  Handles lt,gt,le,ge,eqeq,ne for all data types.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdcmpxchg" class="public" href="../../dmd/backend/cod4/cdcmpxchg.html">cdcmpxchg</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdcmpxchg" class="public" href="../../dmd/backend/cod4/cdcmpxchg.html">cdcmpxchg</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for OPcmpxchg
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdcnvt" class="public" href="../../dmd/backend/cod4/cdcnvt.html">cdcnvt</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdcnvt" class="public" href="../../dmd/backend/cod4/cdcnvt.html">cdcnvt</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Do conversions.
  Depends on OPd_s32 and CLIB.dbllng being in sequence.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdeq" class="public" href="../../dmd/backend/cod4/cdeq.html">cdeq</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdeq" class="public" href="../../dmd/backend/cod4/cdeq.html">cdeq</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for an assignment.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdfar16" class="public" href="../../dmd/backend/cod4/cdfar16.html">cdfar16</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdfar16" class="public" href="../../dmd/backend/cod4/cdfar16.html">cdfar16</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for OPnp_f16p and OPf16p_np.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdlngsht" class="public" href="../../dmd/backend/cod4/cdlngsht.html">cdlngsht</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdlngsht" class="public" href="../../dmd/backend/cod4/cdlngsht.html">cdlngsht</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Convert long to short (OP32_16).
@@ -3063,11 +3111,14 @@ $('#symbolSearchPane').show();</script>
  Convert long long to long (OP64_32).
  OP128_64
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdmsw" class="public" href="../../dmd/backend/cod4/cdmsw.html">cdmsw</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdmsw" class="public" href="../../dmd/backend/cod4/cdmsw.html">cdmsw</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Get top 32 bits of 64 bit value (I32)
@@ -3075,102 +3126,135 @@ $('#symbolSearchPane').show();</script>
  or top 64 bits of 128 bit value (I64).
  OPmsw
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdmulass" class="public" href="../../dmd/backend/cod4/cdmulass.html">cdmulass</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdmulass" class="public" href="../../dmd/backend/cod4/cdmulass.html">cdmulass</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for *= /= %=
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdpair" class="public" href="../../dmd/backend/cod4/cdpair.html">cdpair</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdpair" class="public" href="../../dmd/backend/cod4/cdpair.html">cdpair</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for OPpair, OPrpair.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdpopcnt" class="public" href="../../dmd/backend/cod4/cdpopcnt.html">cdpopcnt</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdpopcnt" class="public" href="../../dmd/backend/cod4/cdpopcnt.html">cdpopcnt</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>OPpopcnt operator
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdport" class="public" href="../../dmd/backend/cod4/cdport.html">cdport</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdport" class="public" href="../../dmd/backend/cod4/cdport.html">cdport</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Handle operators OPinp and OPoutp.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdprefetch" class="public" href="../../dmd/backend/cod4/cdprefetch.html">cdprefetch</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdprefetch" class="public" href="../../dmd/backend/cod4/cdprefetch.html">cdprefetch</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for OPprefetch
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdshass" class="public" href="../../dmd/backend/cod4/cdshass.html">cdshass</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdshass" class="public" href="../../dmd/backend/cod4/cdshass.html">cdshass</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for &lt;&lt;= and &gt;&gt;=
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdshtlng" class="public" href="../../dmd/backend/cod4/cdshtlng.html">cdshtlng</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdshtlng" class="public" href="../../dmd/backend/cod4/cdshtlng.html">cdshtlng</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Convert short to long.
  For OPs16_32, OPu16_32, OPnp_fp, OPu32_64, OPs32_64,
  OPu64_128, OPs64_128
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="doinreg" class="public" href="../../dmd/backend/cod4/doinreg.html">doinreg</a><span class="decoration">(s, e)</span>
+									<a id="doinreg" class="public" href="../../dmd/backend/cod4/doinreg.html">doinreg</a><span class="tableEntryAnnotation">(s, e)</span>
 								</code>
 							</td>
 							<td>Determine if expression e can be evaluated directly into register
  variable s.
  Have to be careful about things like x=x+x+x, and x=a+x.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="longcmp" class="public" href="../../dmd/backend/cod4/longcmp.html">longcmp</a><span class="decoration">(cdb, e, jcond, fltarg, targ)</span>
+									<a id="longcmp" class="public" href="../../dmd/backend/cod4/longcmp.html">longcmp</a><span class="tableEntryAnnotation">(cdb, e, jcond, fltarg, targ)</span>
 								</code>
 							</td>
 							<td>Generate code for signed compare of longs.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="modEA" class="public" href="../../dmd/backend/cod4/mod_ea.html">modEA</a><span class="decoration">(cdb, c)</span>
+									<a id="modEA" class="public" href="../../dmd/backend/cod4/mod_ea.html">modEA</a><span class="tableEntryAnnotation">(cdb, c)</span>
 								</code>
 							</td>
 							<td>Return code for saving common subexpressions if EA
  turns out to be a register.
  This is called just before modifying an EA.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

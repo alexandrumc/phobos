@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2976,17 +2991,17 @@ input, output and/or error streams.
 						</div>
 					</code>
 				</div>
-				<section><p><code class="lang-d"><a href="../../std/process/pipe_process.html"><span class="pln"><span class="pln">pipeProcess</span></span></a></code> and <code class="lang-d"><span class="pln"><a href="../../std/process/pipe_shell.html"><span class="pln">pipeShell</span></a></span></code> are convenient wrappers around
+				<section><p><code class="lang-d"><span class="pln">pipeProcess</span></code> and <code class="lang-d"><a href="../../std/process/pipe_shell.html"><span class="pln">pipeShell</span></a></code> are convenient wrappers around
 <code class="lang-d"><a href="../../std/process/spawn_process.html"><span class="pln">spawnProcess</span></a></code> and <code class="lang-d"><a href="../../std/process/spawn_shell.html"><span class="pln">spawnShell</span></a></code>, respectively, and
 automate the task of redirecting one or more of the child process'
 standard streams through pipes.  Like the functions they wrap,
 these functions return immediately, leaving the child process to
 execute in parallel with the invoking process.  It is recommended
 to always call <code class="lang-d"><a href="../../std/process/wait.html"><span class="pln">wait</span></a></code> on the returned <code class="lang-d"><a href="../../std/process/process_pipes.pid.html"><span class="typ">ProcessPipes<wbr/></span><span class="pun">.</span><span class="pln">pid</span></a></code>,
-as detailed in the documentation for <code class="lang-d"><a href="../../std/process/wait.html"><span class="pln"><a href="../../std/process/wait.html"><span class="pln">wait</span></a></span></a></code>.
+as detailed in the documentation for <code class="lang-d"><a href="../../std/process/wait.html"><span class="pln">wait</span></a></code>.
 </p>
 
-<p>The <code class="lang-d"><span class="pln"><a href="../../std/process/pipe_process.html#args"><span class="pln">args</span></a></span></code>/<code class="lang-d"><span class="pln"><a href="../../std/process/pipe_process.html#program"><span class="pln">program</span></a></span></code>/<code class="lang-d"><a href="../../std/process/pipe_shell.html#command"><span class="pln">command</span></a></code>, <code class="lang-d"><a href="../../std/process/pipe_shell.html#env"><span class="pln"><a href="../../std/process/pipe_process.html#env"><span class="pln">env</span></a></span></a></code> and <code class="lang-d"><a href="../../std/process/pipe_shell.html#config"><span class="pln"><a href="../../std/process/pipe_process.html#config"><span class="pln">config</span></a></span></a></code>
+<p>The <code class="lang-d"><a href="../../std/process/pipe_process.html#args"><span class="pln">args</span></a></code>/<code class="lang-d"><a href="../../std/process/pipe_process.html#program"><span class="pln">program</span></a></code>/<code class="lang-d"><span class="pln">command</span></code>, <code class="lang-d"><a href="../../std/process/pipe_process.html#env"><span class="pln">env</span></a></code> and <code class="lang-d"><a href="../../std/process/pipe_process.html#config"><span class="pln">config</span></a></code>
 parameters are forwarded straight to the underlying spawn functions,
 and we refer to their documentation for details.
 </p>

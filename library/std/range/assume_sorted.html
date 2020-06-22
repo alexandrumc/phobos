@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/range/package.d#L11360">
+							<a href="https://github.com/dlang/phobos/blob/master/std/range/package.d#L11362">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/range/package.d#L11360">
+							<a href="https://github.com/dlang/phobos/edit/master/std/range/package.d#L11362">
 								Improve this page
 							</a>
 							<div>
@@ -2937,15 +2952,15 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../std/range.html">std.range</a>.assumeSorted</code></h1><p>Assumes <code class="lang-d"><a href="../std/range/assume_sorted.html#r"><span class="pln"><a href="../../std/range/assume_sorted.html#r"><span class="pln">r</span></a></span></a></code> is sorted by predicate <code class="lang-d"><span class="pln">pred</span></code> and returns the
-corresponding <code class="lang-d"><a href="../../std/range/sorted_range.html"><span class="typ">SortedRange</span></a><span class="pun">!(</span><span class="pln">pred</span><span class="pun">, </span><span class="pln">R</span><span class="pun">)</span></code> having <code class="lang-d"><a href="../std/range/assume_sorted.html#r"><span class="pln"><a href="../../std/range/assume_sorted.html#r"><span class="pln">r</span></a></span></a></code> as support.
+				</div><h1>Function <code><a href="../../std/range.html">std.range</a>.assumeSorted</code></h1><p>Assumes <code class="lang-d"><a href="../../std/range/assume_sorted.html#r"><span class="pln">r</span></a></code> is sorted by predicate <code class="lang-d"><span class="pln">pred</span></code> and returns the
+corresponding <code class="lang-d"><a href="../../std/range/sorted_range.html"><span class="typ">SortedRange</span></a><span class="pun">!(</span><span class="pln">pred</span><span class="pun">, </span><span class="pln">R</span><span class="pun">)</span></code> having <code class="lang-d"><a href="../../std/range/assume_sorted.html#r"><span class="pln">r</span></a></code> as support.
 To check for sorted-ness at
 cost <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">n</span></code>)</span>, use <code class="lang-d"><a href="../../std/algorithm/sorting/is_sorted.html" title="std.algorithm.sorting.isSorted"><span class="pln">isSorted</span></a></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">assumeSorted</span>(alias pred, R)
+				<span class="kwd">auto</span> <span class="pln">assumeSorted</span>(alias pred, R)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">R</span> <span class="pln">r</span>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2953,7 +2968,7 @@ $('#symbolSearchPane').show();</script>
 						</li>
 					</ul>
 				</nav><h2 id="0">Function fallbackAllocator</h2><p>Convenience function that uses type deduction to return the appropriate
-<code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.html"><span class="typ">FallbackAllocator</span></a></span></a></code> instance. To initialize with allocators that don't have
+<code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.html"><span class="typ">FallbackAllocator</span></a></code> instance. To initialize with allocators that don't have
 state, use their <code class="lang-d"><span class="pln">it</span></code> static member.
 </p>
 				<div class="prototype">
@@ -2986,7 +3001,7 @@ state, use their <code class="lang-d"><span class="pln">it</span></code> static 
 </span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">a<wbr/></span><span class="pun">.</span><span class="pln">primary<wbr/></span><span class="pun">.</span><span class="pln">owns</span><span class="pun">(</span><span class="pln">b2</span><span class="pun">)); </span><span class="com">// Ternary.no
 </span></code></pre>
 </section>
-<h2 id="1">Struct FallbackAllocator</h2><p><code class="lang-d"><span class="typ"><span class="typ">FallbackAllocator</span></span></code> is the allocator equivalent of an "or" operator in
+<h2 id="1">Struct FallbackAllocator</h2><p><code class="lang-d"><span class="typ">FallbackAllocator</span></code> is the allocator equivalent of an "or" operator in
 algebra. An allocation request is first attempted with the <code class="lang-d"><span class="typ">Primary</span></code>
 allocator. If that returns <code class="lang-d"><span class="kwd">null</span></code>, the request is forwarded to the <code class="lang-d"><span class="typ">Fallback</span></code> allocator. All other requests are dispatched appropriately to one of
 the two allocators.
@@ -3027,8 +3042,8 @@ up by the <code class="lang-d"><span class="typ">GCAllocator</span></code>.
 							<td>
 								<a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.instance.html" class="public"><code>instance</code></a>
 							</td>
-							<td class="typecol"><code class="prettyprint lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.html"><span class="typ">FallbackAllocator</span></a></code></td><td>If both <code class="lang-d"><span class="typ">Primary</span></code> and <code class="lang-d"><span class="typ">Fallback</span></code> are stateless, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.html"><span class="typ">FallbackAllocator</span></a></span></a></code>
-    defines a static instance called <code class="lang-d"><span class="pln"><span class="pln">instance</span></span></code>.
+							<td class="typecol"><code class="prettyprint lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.html"><span class="typ">FallbackAllocator</span></a></code></td><td>If both <code class="lang-d"><span class="typ">Primary</span></code> and <code class="lang-d"><span class="typ">Fallback</span></code> are stateless, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.html"><span class="typ">FallbackAllocator</span></a></code>
+    defines a static instance called <code class="lang-d"><span class="pln">instance</span></code>.
 </td>
 						</tr>
 						<tr>
@@ -3051,8 +3066,9 @@ up by the <code class="lang-d"><span class="typ">GCAllocator</span></code>.
 								<a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.aligned_allocate.html" class="public">
 									<code>alignedAllocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(s, a)</span>
 							</td>
-							<td><code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.html"><span class="typ">FallbackAllocator</span></a></span></a></code> offers <code class="lang-d"><span class="pln"><span class="pln">alignedAllocate</span></span></code> iff at least one of the
+							<td><code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.html"><span class="typ">FallbackAllocator</span></a></code> offers <code class="lang-d"><span class="pln">alignedAllocate</span></code> iff at least one of the
     allocators also offers it. It attempts to allocate using either or both.
 </td>
 						</tr>
@@ -3061,6 +3077,7 @@ up by the <code class="lang-d"><span class="typ">GCAllocator</span></code>.
 								<a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(s)</span>
 							</td>
 							<td>Allocates memory trying the primary allocator first. If it returns <code class="lang-d"><span class="pln">    </span><span class="kwd">null</span></code>, the fallback allocator is tried.
 </td>
@@ -3070,6 +3087,7 @@ up by the <code class="lang-d"><span class="typ">GCAllocator</span></code>.
 								<a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td><code class="lang-d"><span class="pln">deallocate</span></code> is defined if and only if at least one of the allocators
     define    <code class="lang-d"><span class="pln">deallocate</span></code>. It works as follows. If <code class="lang-d"><span class="pln">primary<wbr/></span><span class="pun">.</span><span class="pln">owns</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.deallocate.html#b"></span><span class="pln">b</span></a><span class="pun">)</span></code>,
@@ -3084,6 +3102,7 @@ up by the <code class="lang-d"><span class="typ">GCAllocator</span></code>.
 								<a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.empty.html" class="public">
 									<code>empty</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td><code class="lang-d"><span class="pln">empty</span></code> is defined if both allocators also define it.
 </td>
@@ -3093,6 +3112,7 @@ up by the <code class="lang-d"><span class="typ">GCAllocator</span></code>.
 								<a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.expand.html" class="public">
 									<code>expand</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, delta)</span>
 							</td>
 							<td><code class="lang-d"><span class="pln">expand</span></code> is defined if and only if at least one of the allocators
     defines <code class="lang-d"><span class="pln">expand</span></code>. It works as follows. If <code class="lang-d"><span class="pln">primary<wbr/></span><span class="pun">.</span><span class="pln">owns</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.expand.html#b"></span><span class="pln">b</span></a><span class="pun">)</span></code>, then the
@@ -3107,6 +3127,7 @@ up by the <code class="lang-d"><span class="typ">GCAllocator</span></code>.
 								<a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.owns.html" class="public">
 									<code>owns</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td><code class="lang-d"><span class="pln">owns</span></code> is defined if and only if both allocators define <code class="lang-d"><span class="pln">owns</span></code>.
     Returns <code class="lang-d"><span class="pln">primary<wbr/></span><span class="pun">.</span><span class="pln">owns</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.owns.html#b"></span><span class="pln">b</span></a><span class="pun">) | </span><span class="pln">fallback<wbr/></span><span class="pun">.</span><span class="pln">owns</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.owns.html#b"></span><span class="pln">b</span></a><span class="pun">)</span></code>.
@@ -3117,9 +3138,10 @@ up by the <code class="lang-d"><span class="typ">GCAllocator</span></code>.
 								<a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.reallocate.html" class="public">
 									<code>reallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, newSize)</span>
 							</td>
-							<td><code class="lang-d"><span class="pln"><span class="pln">reallocate</span></span></code> works as follows. If <code class="lang-d"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.primary.html"><span class="pln">primary</span></a><wbr/></span><span class="pun">.</span><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.owns.html"><span class="pln">owns</span></a></span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.reallocate.html#b"></span><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.reallocate.html#b"><span class="pln">b</span></a></span></a><span class="pun">)</span></code>, then <code class="lang-d"><span class="pln">    primary<wbr/></span><span class="pun">.</span><span class="pln">reallocate</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.reallocate.html#b"></span><span class="pln">b</span></a><span class="pun">, <a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.reallocate.html#newSize"></span><span class="pln">newSize</span></a><span class="pun">)</span></code> is attempted. If it fails, an attempt is
-    made to move the allocation from <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.primary.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.primary.html"><span class="pln">primary</span></a></span></a></code> to <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.fallback.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.fallback.html"><span class="pln">fallback</span></a></span></a></code>.
+							<td><code class="lang-d"><span class="pln">reallocate</span></code> works as follows. If <code class="lang-d"><span class="pln">primary<wbr/></span><span class="pun">.</span><span class="pln">owns</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.reallocate.html#b"></span><span class="pln">b</span></a><span class="pun">)</span></code>, then <code class="lang-d"><span class="pln">    primary<wbr/></span><span class="pun">.</span><span class="pln">reallocate</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.reallocate.html#b"></span><span class="pln">b</span></a><span class="pun">, <a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.reallocate.html#newSize"></span><span class="pln">newSize</span></a><span class="pun">)</span></code> is attempted. If it fails, an attempt is
+    made to move the allocation from <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.primary.html"><span class="pln">primary</span></a></code> to <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.fallback.html"><span class="pln">fallback</span></a></code>.
 </td>
 						</tr>
 						<tr>
@@ -3127,8 +3149,9 @@ up by the <code class="lang-d"><span class="typ">GCAllocator</span></code>.
 								<a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.resolve_internal_pointer.html" class="public">
 									<code>resolveInternalPointer</code>
 								</a>
+								<span class="tableEntryAnnotation">(p, result)</span>
 							</td>
-							<td><code class="lang-d"><span class="pln"><span class="pln">resolveInternalPointer</span></span></code> is defined if and only if both allocators
+							<td><code class="lang-d"><span class="pln">resolveInternalPointer</span></code> is defined if and only if both allocators
     define it.
 </td>
 						</tr>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2947,23 +2962,26 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdvecfill" class="public" href="../../dmd/backend/cgxmm/cdvecfill.html">cdvecfill</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdvecfill" class="public" href="../../dmd/backend/cgxmm/cdvecfill.html">cdvecfill</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for OPvecfill (broadcast).
  OPvecfill takes the single value in e1 and
  fills the vector type with it.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdvecsto" class="public" href="../../dmd/backend/cgxmm/cdvecsto.html">cdvecsto</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdvecsto" class="public" href="../../dmd/backend/cgxmm/cdvecsto.html">cdvecsto</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for vector "store" operations.
@@ -2971,119 +2989,158 @@ $('#symbolSearchPane').show();</script>
   (op1 OPvecsto (op OPparam op2))
  where op is the store instruction STOxxxx.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="checkSetVex" class="public" href="../../dmd/backend/cgxmm/check_set_vex.html">checkSetVex</a><span class="decoration">(c, ty)</span>
+									<a id="checkSetVex" class="public" href="../../dmd/backend/cgxmm/check_set_vex.html">checkSetVex</a><span class="tableEntryAnnotation">(c, ty)</span>
 								</code>
 							</td>
 							<td>Determine if operation should be rewritten as a VEX
  operation; and do so.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="checkSetVex3" class="public" href="../../dmd/backend/cgxmm/check_set_vex3.html">checkSetVex3</a><span class="decoration">(c)</span>
+									<a id="checkSetVex3" class="public" href="../../dmd/backend/cgxmm/check_set_vex3.html">checkSetVex3</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>VEX prefixes can be 2 or 3 bytes.
  If it must be 3 bytes, set the CFvex3 flag.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isXMMstore" class="public" href="../../dmd/backend/cgxmm/is_xm_mstore.html">isXMMstore</a><span class="decoration">(op)</span>
+									<a id="isXMMstore" class="public" href="../../dmd/backend/cgxmm/is_xm_mstore.html">isXMMstore</a><span class="tableEntryAnnotation">(op)</span>
 								</code>
 							</td>
 							<td>Is operator a store operator?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="orthxmm" class="public" href="../../dmd/backend/cgxmm/orthxmm.html">orthxmm</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="orthxmm" class="public" href="../../dmd/backend/cgxmm/orthxmm.html">orthxmm</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Do simple orthogonal operators for XMM registers.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="xmmcnvt" class="public" href="../../dmd/backend/cgxmm/xmmcnvt.html">xmmcnvt</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="xmmcnvt" class="public" href="../../dmd/backend/cgxmm/xmmcnvt.html">xmmcnvt</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for conversion using SSE2 instructions.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="xmmeq" class="public" href="../../dmd/backend/cgxmm/xmmeq.html">xmmeq</a><span class="decoration">(cdb, e, op, e1, e2, pretregs)</span>
+									<a id="xmmeq" class="public" href="../../dmd/backend/cgxmm/xmmeq.html">xmmeq</a><span class="tableEntryAnnotation">(cdb, e, op, e1, e2, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for an assignment using XMM registers.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="xmmIsAligned" class="public" href="../../dmd/backend/cgxmm/xmm_is_aligned.html">xmmIsAligned</a><span class="decoration">(e)</span>
+									<a id="xmmIsAligned" class="public" href="../../dmd/backend/cgxmm/xmm_is_aligned.html">xmmIsAligned</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>Determine if lvalue e is a vector aligned on a 16/32 byte boundary.
  Assume it to be aligned unless can prove it is not.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="xmmload" class="public" href="../../dmd/backend/cgxmm/xmmload.html">xmmload</a><span class="decoration">(tym, aligned)</span>
+									<a id="xmmload" class="public" href="../../dmd/backend/cgxmm/xmmload.html">xmmload</a><span class="tableEntryAnnotation">(tym, aligned)</span>
 								</code>
 							</td>
 							<td>Get correct load operator based on type.
  It is important to use the right one even if the number of bits moved is the same,
  as there are performance consequences for using the wrong one.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="xmmneg" class="public" href="../../dmd/backend/cgxmm/xmmneg.html">xmmneg</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="xmmneg" class="public" href="../../dmd/backend/cgxmm/xmmneg.html">xmmneg</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Negate operator
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="xmmopass" class="public" href="../../dmd/backend/cgxmm/xmmopass.html">xmmopass</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="xmmopass" class="public" href="../../dmd/backend/cgxmm/xmmopass.html">xmmopass</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for op=
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="xmmpost" class="public" href="../../dmd/backend/cgxmm/xmmpost.html">xmmpost</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="xmmpost" class="public" href="../../dmd/backend/cgxmm/xmmpost.html">xmmpost</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for post increment and post decrement.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="xmmstore" class="public" href="../../dmd/backend/cgxmm/xmmstore.html">xmmstore</a><span class="decoration">(tym, aligned)</span>
+									<a id="xmmstore" class="public" href="../../dmd/backend/cgxmm/xmmstore.html">xmmstore</a><span class="tableEntryAnnotation">(tym, aligned)</span>
 								</code>
 							</td>
 							<td>Get correct store operator based on type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

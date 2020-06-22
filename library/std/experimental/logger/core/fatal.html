@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,7 +2952,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Alias <code><a href="../../../../std/experimental/logger/core.html">std.experimental.logger.core</a>.fatal</code></h1><p>This function logs data to the <code class="lang-d"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln">stdThreadLocalLog</span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></code>, optionally depending
+				</div><h1>Alias <code><a href="../../../../std/experimental/logger/core.html">std.experimental.logger.core</a>.fatal</code></h1><p>This function logs data to the <code class="lang-d"><a href="../../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln">stdThreadLocalLog</span></a></code>, optionally depending
 on a condition.
 </p>
 				<div class="prototype">
@@ -2948,10 +2963,10 @@ on a condition.
 						</div>
 					</code>
 				</div>
-				<section><p>In order for the resulting log message to be logged the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></span></a></span></a></code> must
-be greater or equal than the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></span></a></span></a></code> of the <code class="lang-d"><a href="../../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln">stdThreadLocalLog</span></a></span></a></span></a></span></a></code> and
-must be greater or equal than the global <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></span></a></span></a></code>.
-Additionally the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></span></a></span></a></code> must be greater or equal than the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></span></a></span></a></code>
+				<section><p>In order for the resulting log message to be logged the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> must
+be greater or equal than the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> of the <code class="lang-d"><a href="../../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln">stdThreadLocalLog</span></a></code> and
+must be greater or equal than the global <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code>.
+Additionally the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> must be greater or equal than the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code>
 of the <code class="lang-d"><span class="pln">stdSharedLogger</span></code>.
 If a condition is given, it must evaluate to <code class="lang-d"><span class="kwd">true</span></code>.
 </p>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2939,7 +2954,7 @@ $('#symbolSearchPane').show();</script>
 					</div>
 				</div><h1>Struct <code><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list.html">std.experimental.allocator.building_blocks.allocator_list</a>.AllocatorList</code></h1><p>Given an <a href="https://en.wikipedia.org/wiki/Factory_(object-oriented_programming)">object factory</a> of type <code class="lang-d"><span class="typ">Factory</span></code> or a factory function
 <code class="lang-d"><span class="pln">factoryFunction</span></code>, and optionally also <code class="lang-d"><span class="typ">BookkeepingAllocator</span></code> as a supplemental
-allocator for bookkeeping, <code class="lang-d"><span class="typ"><span class="typ"><span class="typ">AllocatorList</span></span></span></code> creates an allocator that lazily
+allocator for bookkeeping, <code class="lang-d"><span class="typ">AllocatorList</span></code> creates an allocator that lazily
 creates as many allocators are needed for satisfying client allocation requests.
 </p>
 				<div class="prototype">
@@ -2988,8 +3003,9 @@ patterns), it keeps unused allocators for a while.
 								<a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(plant)</span>
 							</td>
-							<td>Constructs an <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.html"><span class="typ">AllocatorList</span></a></span></a></code> given a factory object. This constructor is
+							<td>Constructs an <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.html"><span class="typ">AllocatorList</span></a></code> given a factory object. This constructor is
     defined only if <code class="lang-d"><span class="typ">Factory</span></code> has state.
 </td>
 						</tr>
@@ -3022,12 +3038,13 @@ patterns), it keeps unused allocators for a while.
 								<a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.aligned_allocate.html" class="public">
 									<code>alignedAllocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(s, theAlignment)</span>
 							</td>
-							<td>Allocate a block of size <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.aligned_allocate.html#s"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.aligned_allocate.html#s"><span class="pln">s</span></a></span></a></code> with alignment <code class="lang-d"><span class="pln">a</span></code>. First tries to allocate
+							<td>Allocate a block of size <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.aligned_allocate.html#s"><span class="pln">s</span></a></code> with alignment <code class="lang-d"><span class="pln">a</span></code>. First tries to allocate
     from the existing list of already-created allocators. If neither can
-    satisfy the request, creates a new allocator by calling <code class="lang-d"><span class="pln">make</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.aligned_allocate.html#s"></span><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.aligned_allocate.html#s"><span class="pln">s</span></a></span></a><span class="pln"> </span><span class="pun">+ </span><span class="pln">a </span><span class="pun">- </span><span class="lit">1</span><span class="pun">)</span></code>
+    satisfy the request, creates a new allocator by calling <code class="lang-d"><span class="pln">make</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.aligned_allocate.html#s"></span><span class="pln">s</span></a><span class="pln"> </span><span class="pun">+ </span><span class="pln">a </span><span class="pun">- </span><span class="lit">1</span><span class="pun">)</span></code>
     and delegates the request to it. However, if the allocation fresh off a
-    newly created allocator fails, subsequent calls to <code class="lang-d"><span class="pln"><span class="pln">alignedAllocate</span></span></code>
+    newly created allocator fails, subsequent calls to <code class="lang-d"><span class="pln">alignedAllocate</span></code>
     will not cause more calls to <code class="lang-d"><span class="pln">make</span></code>.
 </td>
 						</tr>
@@ -3036,12 +3053,13 @@ patterns), it keeps unused allocators for a while.
 								<a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(s)</span>
 							</td>
-							<td>Allocate a block of size <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.allocate.html#s"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.allocate.html#s"><span class="pln">s</span></a></span></a></code>. First tries to allocate from the existing
+							<td>Allocate a block of size <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.allocate.html#s"><span class="pln">s</span></a></code>. First tries to allocate from the existing
     list of already-created allocators. If neither can satisfy the request,
-    creates a new allocator by calling <code class="lang-d"><span class="pln">make</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.allocate.html#s"></span><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.allocate.html#s"><span class="pln">s</span></a></span></a><span class="pun">)</span></code> and delegates the request
+    creates a new allocator by calling <code class="lang-d"><span class="pln">make</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.allocate.html#s"></span><span class="pln">s</span></a><span class="pun">)</span></code> and delegates the request
     to it. However, if the allocation fresh off a newly created allocator
-    fails, subsequent calls to <code class="lang-d"><span class="pln"><span class="pln">allocate</span></span></code> will not cause more calls to <code class="lang-d"><span class="pln">    make</span></code>.
+    fails, subsequent calls to <code class="lang-d"><span class="pln">allocate</span></code> will not cause more calls to <code class="lang-d"><span class="pln">    make</span></code>.
 </td>
 						</tr>
 						<tr>
@@ -3049,8 +3067,9 @@ patterns), it keeps unused allocators for a while.
 								<a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
-							<td>Defined if <code class="lang-d"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.allocator.html"><span class="typ">Allocator</span></a><wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">deallocate</span></span></code> and <code class="lang-d"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.allocator.html"><span class="typ">Allocator</span></a><wbr/></span><span class="pun">.</span><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.owns.html"><span class="pln">owns</span></a></span></code> are defined.
+							<td>Defined if <code class="lang-d"><span class="typ">Allocator<wbr/></span><span class="pun">.</span><span class="pln">deallocate</span></code> and <code class="lang-d"><span class="typ">Allocator<wbr/></span><span class="pun">.</span><span class="pln">owns</span></code> are defined.
 </td>
 						</tr>
 						<tr>
@@ -3058,8 +3077,9 @@ patterns), it keeps unused allocators for a while.
 								<a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.deallocate_all.html" class="public">
 									<code>deallocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
-							<td>Defined only if <code class="lang-d"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.allocator.html"><span class="typ">Allocator</span></a><wbr/></span><span class="pun">.</span><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.owns.html"><span class="pln">owns</span></a></span></code> and <code class="lang-d"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.allocator.html"><span class="typ">Allocator</span></a><wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">deallocateAll</span></span></code> are
+							<td>Defined only if <code class="lang-d"><span class="typ">Allocator<wbr/></span><span class="pun">.</span><span class="pln">owns</span></code> and <code class="lang-d"><span class="typ">Allocator<wbr/></span><span class="pun">.</span><span class="pln">deallocateAll</span></code> are
     defined.
 </td>
 						</tr>
@@ -3068,6 +3088,7 @@ patterns), it keeps unused allocators for a while.
 								<a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.empty.html" class="public">
 									<code>empty</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">yes</span></code> if no allocators are currently active,
     <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">no</span></code> otherwise. This methods never returns <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">unknown</span></code>.
@@ -3078,9 +3099,10 @@ patterns), it keeps unused allocators for a while.
 								<a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.expand.html" class="public">
 									<code>expand</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, delta)</span>
 							</td>
-							<td>Defined only if <code class="lang-d"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.allocator.html"><span class="typ">Allocator</span></a><wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">expand</span></span></code> is defined. Finds the owner of <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.expand.html#b"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.expand.html#b"><span class="pln">b</span></a></span></a></code>
-    and calls <code class="lang-d"><span class="pln"><span class="pln">expand</span></span></code> for it. The owner is not brought to the head of the
+							<td>Defined only if <code class="lang-d"><span class="typ">Allocator<wbr/></span><span class="pun">.</span><span class="pln">expand</span></code> is defined. Finds the owner of <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.expand.html#b"><span class="pln">b</span></a></code>
+    and calls <code class="lang-d"><span class="pln">expand</span></code> for it. The owner is not brought to the head of the
     list.
 </td>
 						</tr>
@@ -3089,6 +3111,7 @@ patterns), it keeps unused allocators for a while.
 								<a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.owns.html" class="public">
 									<code>owns</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>Defined only if <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.allocator.html"><span class="typ">Allocator</span></a></code> defines <code class="lang-d"><span class="pln">owns</span></code>. Tries each allocator in
     turn, in most-recently-used order. If the owner is found, it is moved to
@@ -3101,10 +3124,11 @@ patterns), it keeps unused allocators for a while.
 								<a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.reallocate.html" class="public">
 									<code>reallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, s)</span>
 							</td>
-							<td>Defined only if <code class="lang-d"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.allocator.html"><span class="typ">Allocator</span></a><wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">reallocate</span></span></code> is defined. Finds the owner of
-    <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.reallocate.html#b"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.reallocate.html#b"><span class="pln">b</span></a></span></a></code> and calls <code class="lang-d"><span class="pln"><span class="pln">reallocate</span></span></code> for it. If that fails, calls the global
-    <code class="lang-d"><span class="pln"><span class="pln">reallocate</span></span></code>, which allocates a new block and moves memory.
+							<td>Defined only if <code class="lang-d"><span class="typ">Allocator<wbr/></span><span class="pun">.</span><span class="pln">reallocate</span></code> is defined. Finds the owner of
+    <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/allocator_list/allocator_list.reallocate.html#b"><span class="pln">b</span></a></code> and calls <code class="lang-d"><span class="pln">reallocate</span></code> for it. If that fails, calls the global
+    <code class="lang-d"><span class="pln">reallocate</span></code>, which allocates a new block and moves memory.
 </td>
 						</tr>
 					</table>

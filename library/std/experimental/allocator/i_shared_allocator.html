@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2990,8 +3005,9 @@ implemented by the allocator instance.
 								<a href="../../../std/experimental/allocator/i_shared_allocator.aligned_allocate.html" class="public">
 									<code>alignedAllocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(n, a)</span>
 							</td>
-							<td>Allocates <code class="lang-d"><a href="../../../std/experimental/allocator/i_shared_allocator.aligned_allocate.html#n"><span class="pln"><a href="../../../std/experimental/allocator/i_shared_allocator.aligned_allocate.html#n"><span class="pln">n</span></a></span></a></code> bytes of memory with specified alignment <code class="lang-d"><a href="../../../std/experimental/allocator/i_shared_allocator.aligned_allocate.html#a"><span class="pln"><a href="../../../std/experimental/allocator/i_shared_allocator.aligned_allocate.html#a"><span class="pln">a</span></a></span></a></code>. Implementations
+							<td>Allocates <code class="lang-d"><a href="../../../std/experimental/allocator/i_shared_allocator.aligned_allocate.html#n"><span class="pln">n</span></a></code> bytes of memory with specified alignment <code class="lang-d"><a href="../../../std/experimental/allocator/i_shared_allocator.aligned_allocate.html#a"><span class="pln">a</span></a></code>. Implementations
     that do not support this primitive should always return <code class="lang-d"><span class="kwd">null</span></code>.
 </td>
 						</tr>
@@ -3000,6 +3016,7 @@ implemented by the allocator instance.
 								<a href="../../../std/experimental/allocator/i_shared_allocator.aligned_reallocate.html" class="public">
 									<code>alignedReallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, size, alignment)</span>
 							</td>
 							<td>Reallocates a memory block with specified alignment.
 </td>
@@ -3009,6 +3026,7 @@ implemented by the allocator instance.
 								<a href="../../../std/experimental/allocator/i_shared_allocator.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(, ti)</span>
 							</td>
 							<td>Allocates <code class="lang-d"><span class="pln">n</span></code> bytes of memory.
 </td>
@@ -3018,6 +3036,7 @@ implemented by the allocator instance.
 								<a href="../../../std/experimental/allocator/i_shared_allocator.allocate_all.html" class="public">
 									<code>allocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Allocates and returns all memory available to this allocator.
     Implementations that do not support this primitive should always return
@@ -3029,10 +3048,11 @@ implemented by the allocator instance.
 								<a href="../../../std/experimental/allocator/i_shared_allocator.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>Deallocates a memory block. Implementations that don't support this
     primitive should always return <code class="lang-d"><span class="kwd">false</span></code>. A simple way to check that an
-    allocator supports deallocation is to call <code class="lang-d"><span class="pln"><span class="pln">deallocate</span></span><span class="pun">(</span><span class="kwd">null</span><span class="pun">)</span></code>.
+    allocator supports deallocation is to call <code class="lang-d"><span class="pln">deallocate</span><span class="pun">(</span><span class="kwd">null</span><span class="pun">)</span></code>.
 </td>
 						</tr>
 						<tr>
@@ -3040,6 +3060,7 @@ implemented by the allocator instance.
 								<a href="../../../std/experimental/allocator/i_shared_allocator.deallocate_all.html" class="public">
 									<code>deallocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Deallocates all memory. Implementations that don't support this primitive
     should always return <code class="lang-d"><span class="kwd">false</span></code>.
@@ -3050,6 +3071,7 @@ implemented by the allocator instance.
 								<a href="../../../std/experimental/allocator/i_shared_allocator.dec_ref.html" class="public">
 									<code>decRef</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Decreases the reference count of the concrete class that implements this
     interface.
@@ -3061,6 +3083,7 @@ implemented by the allocator instance.
 								<a href="../../../std/experimental/allocator/i_shared_allocator.empty.html" class="public">
 									<code>empty</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">yes</span></code> if no memory is currently allocated from this
     allocator, <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">no</span></code> if some allocations are currently active, or
@@ -3072,6 +3095,7 @@ implemented by the allocator instance.
 								<a href="../../../std/experimental/allocator/i_shared_allocator.expand.html" class="public">
 									<code>expand</code>
 								</a>
+								<span class="tableEntryAnnotation">(, )</span>
 							</td>
 							<td>Expands a memory block in place and returns <code class="lang-d"><span class="kwd">true</span></code> if successful.
     Implementations that don't support this primitive should always return
@@ -3083,6 +3107,7 @@ implemented by the allocator instance.
 								<a href="../../../std/experimental/allocator/i_shared_allocator.good_alloc_size.html" class="public">
 									<code>goodAllocSize</code>
 								</a>
+								<span class="tableEntryAnnotation">(s)</span>
 							</td>
 							<td>Returns the good allocation size that guarantees zero internal
     fragmentation.
@@ -3093,6 +3118,7 @@ implemented by the allocator instance.
 								<a href="../../../std/experimental/allocator/i_shared_allocator.inc_ref.html" class="public">
 									<code>incRef</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Increases the reference count of the concrete class that implements this
     interface.
@@ -3103,9 +3129,10 @@ implemented by the allocator instance.
 								<a href="../../../std/experimental/allocator/i_shared_allocator.owns.html" class="public">
 									<code>owns</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
-							<td>Returns <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">yes</span></code> if the allocator owns <code class="lang-d"><a href="../../../std/experimental/allocator/i_shared_allocator.owns.html#b"><span class="pln"><a href="../../../std/experimental/allocator/i_shared_allocator.owns.html#b"><span class="pln">b</span></a></span></a></code>, <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">no</span></code> if
-    the allocator doesn't own <code class="lang-d"><a href="../../../std/experimental/allocator/i_shared_allocator.owns.html#b"><span class="pln"><a href="../../../std/experimental/allocator/i_shared_allocator.owns.html#b"><span class="pln">b</span></a></span></a></code>, and <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">unknown</span></code> if ownership
+							<td>Returns <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">yes</span></code> if the allocator owns <code class="lang-d"><a href="../../../std/experimental/allocator/i_shared_allocator.owns.html#b"><span class="pln">b</span></a></code>, <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">no</span></code> if
+    the allocator doesn't own <code class="lang-d"><a href="../../../std/experimental/allocator/i_shared_allocator.owns.html#b"><span class="pln">b</span></a></code>, and <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">unknown</span></code> if ownership
     cannot be determined. Implementations that don't support this primitive
     should always return <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">unknown</span></code>.
 </td>
@@ -3115,6 +3142,7 @@ implemented by the allocator instance.
 								<a href="../../../std/experimental/allocator/i_shared_allocator.reallocate.html" class="public">
 									<code>reallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(, )</span>
 							</td>
 							<td>Reallocates a memory block.
 </td>
@@ -3124,6 +3152,7 @@ implemented by the allocator instance.
 								<a href="../../../std/experimental/allocator/i_shared_allocator.resolve_internal_pointer.html" class="public">
 									<code>resolveInternalPointer</code>
 								</a>
+								<span class="tableEntryAnnotation">(p, result)</span>
 							</td>
 							<td>Resolves an internal pointer to the full block allocated. Implementations
     that don't support this primitive should always return <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">unknown</span></code>.

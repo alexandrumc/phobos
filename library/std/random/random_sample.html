@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2952,15 +2967,15 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function randomSample</h2><p>Selects a random subsample out of <code class="lang-d"><a href="../std/random/random_sample.html#r"><span class="pln"><a href="../../std/random/random_sample.html#r"><span class="pln">r</span></a></span></a></code>, containing exactly <code class="lang-d"><a href="../std/random/random_sample.html#n"><span class="pln"><a href="../../std/random/random_sample.html#n"><span class="pln">n</span></a></span></a></code>
+				</nav><h2 id="0">Function randomSample</h2><p>Selects a random subsample out of <code class="lang-d"><a href="../../std/random/random_sample.html#r"><span class="pln">r</span></a></code>, containing exactly <code class="lang-d"><a href="../../std/random/random_sample.html#n"><span class="pln">n</span></a></code>
 elements. The order of elements is the same as in the original
-range. The total length of <code class="lang-d"><a href="../std/random/random_sample.html#r"><span class="pln"><a href="../../std/random/random_sample.html#r"><span class="pln">r</span></a></span></a></code> must be known. If <code class="lang-d"><a href="../std/random/random_sample.html#total"><span class="pln"><a href="../../std/random/random_sample.html#total"><span class="pln">total</span></a></span></a></code> is
-passed in, the total number of sample is considered to be <code class="lang-d"><a href="../../std/random/random_sample.html#total"><span class="pln">total</span></a></code>. Otherwise, <code class="lang-d"><a href="../std/random/random_sample.html"><span class="typ"><span class="typ"><a href="../../std/random/random_sample.html"><span class="typ">RandomSample</span></a></span></span></a></code> uses <code class="lang-d"><span class="pln"><a href="../../std/random/random_sample.html#r"><span class="pln">r</span></a><wbr/></span><span class="pun">.</span><span class="pln"><a href="../std/random/random_sample.length.html"><span class="pln">length</span></a></span></code>.
+range. The total length of <code class="lang-d"><a href="../../std/random/random_sample.html#r"><span class="pln">r</span></a></code> must be known. If <code class="lang-d"><a href="../../std/random/random_sample.html#total"><span class="pln">total</span></a></code> is
+passed in, the total number of sample is considered to be <code class="lang-d"><a href="../../std/random/random_sample.html#total"><span class="pln">total</span></a></code>. Otherwise, <code class="lang-d"><a href="../../std/random/random_sample.html"><span class="typ">RandomSample</span></a></code> uses <code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">randomSample</span>(Range)
+				<span class="kwd">auto</span> <span class="pln">randomSample</span>(Range)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">Range</span> <span class="pln">r</span><span class="pun">,</span>
@@ -2974,7 +2989,7 @@ passed in, the total number of sample is considered to be <code class="lang-d"><
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isInputRange</span><span class="pun">!</span><span class="typ">Range</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">randomSample</span>(Range)
+				<span class="kwd">auto</span> <span class="pln">randomSample</span>(Range)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">Range</span> <span class="pln">r</span><span class="pun">,</span>
@@ -2986,7 +3001,7 @@ passed in, the total number of sample is considered to be <code class="lang-d"><
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isInputRange</span><span class="pun">!</span><span class="typ">Range </span><span class="pun">&amp;&amp; </span><span class="pln">hasLength</span><span class="pun">!</span><span class="typ">Range</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">randomSample</span>(Range, UniformRNG)
+				<span class="kwd">auto</span> <span class="pln">randomSample</span>(Range, UniformRNG)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">Range</span> <span class="pln">r</span><span class="pun">,</span>
@@ -3002,7 +3017,7 @@ passed in, the total number of sample is considered to be <code class="lang-d"><
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isInputRange</span><span class="pun">!</span><span class="typ">Range </span><span class="pun">&amp;&amp; </span><span class="pln">isUniformRNG</span><span class="pun">!</span><span class="typ">UniformRNG</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">randomSample</span>(Range, UniformRNG)
+				<span class="kwd">auto</span> <span class="pln">randomSample</span>(Range, UniformRNG)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">Range</span> <span class="pln">r</span><span class="pun">,</span>
@@ -3072,10 +3087,10 @@ thread-global RNG rndGen will be used internally.
 </span><span class="kwd">assert</span><span class="pun">(</span><span class="lit">10<wbr/></span><span class="pun">.</span><span class="pln">iota<wbr/></span><span class="pun">.</span><span class="pln">randomSample</span><span class="pun">(</span><span class="lit">3</span><span class="pun">, </span><span class="pln">rnd</span><span class="pun">)<wbr/>.</span><span class="pln">equal</span><span class="pun">([</span><span class="lit">7</span><span class="pun">, </span><span class="lit">8</span><span class="pun">, </span><span class="lit">9</span><span class="pun">]));
 </span></code></pre>
 </section>
-<h2 id="1">Struct RandomSample</h2><p>Selects a random subsample out of <code class="lang-d"><a href="../std/random/random_sample.html#r"><span class="pln"><a href="../../std/random/random_sample.html#r"><span class="pln">r</span></a></span></a></code>, containing exactly <code class="lang-d"><a href="../std/random/random_sample.html#n"><span class="pln"><a href="../../std/random/random_sample.html#n"><span class="pln">n</span></a></span></a></code>
+<h2 id="1">Struct RandomSample</h2><p>Selects a random subsample out of <code class="lang-d"><span class="pln">r</span></code>, containing exactly <code class="lang-d"><span class="pln">n</span></code>
 elements. The order of elements is the same as in the original
-range. The total length of <code class="lang-d"><a href="../std/random/random_sample.html#r"><span class="pln"><a href="../../std/random/random_sample.html#r"><span class="pln">r</span></a></span></a></code> must be known. If <code class="lang-d"><a href="../std/random/random_sample.html#total"><span class="pln"><a href="../../std/random/random_sample.html#total"><span class="pln">total</span></a></span></a></code> is
-passed in, the total number of sample is considered to be <code class="lang-d"><span class="pln">total</span></code>. Otherwise, <code class="lang-d"><a href="../std/random/random_sample.html"><span class="typ"><span class="typ"><a href="../../std/random/random_sample.html"><span class="typ"><span class="typ">RandomSample</span></span></a></span></span></a></code> uses <code class="lang-d"><span class="pln"><a href="../../std/random/random_sample.html#r"><span class="pln">r</span></a><wbr/></span><span class="pun">.</span><span class="pln"><a href="../std/random/random_sample.length.html"><span class="pln"><a href="../../std/random/random_sample.length.html"><span class="pln">length</span></a></span></a></span></code>.
+range. The total length of <code class="lang-d"><span class="pln">r</span></code> must be known. If <code class="lang-d"><span class="pln">total</span></code> is
+passed in, the total number of sample is considered to be <code class="lang-d"><span class="pln">total</span></code>. Otherwise, <code class="lang-d"><span class="typ">RandomSample</span></code> uses <code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -3144,6 +3159,7 @@ passed in, the total number of sample is considered to be <code class="lang-d"><
 								<a href="../../std/random/random_sample.pop_front.html" class="public">
 									<code>popFront</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Range primitives.
 </td>
@@ -3155,29 +3171,29 @@ passed in, the total number of sample is considered to be <code class="lang-d"><
 <tr><td id="r">r</td><td> range to sample from</td></tr>
 <tr><td id="n">n</td><td> number of elements to include in the sample;
         must be less than or equal to the total number
-        of elements in <code class="lang-d"><a href="../../std/random/random_sample.html#r"><span class="pln">r</span></a></code> and/or the parameter
-        <code class="lang-d"><a href="../../std/random/random_sample.html#total"><span class="pln">total</span></a></code> (if provided)</td></tr>
-<tr><td id="total">total</td><td> (semi-optional) number of elements of <code class="lang-d"><a href="../../std/random/random_sample.html#r"><span class="pln">r</span></a></code>
+        of elements in <code class="lang-d"><span class="pln">r</span></code> and/or the parameter
+        <code class="lang-d"><span class="pln">total</span></code> (if provided)</td></tr>
+<tr><td id="total">total</td><td> (semi-optional) number of elements of <code class="lang-d"><span class="pln">r</span></code>
             from which to select the sample (counting from
             the beginning); must be less than or equal to
-            the total number of elements in <code class="lang-d"><a href="../../std/random/random_sample.html#r"><span class="pln">r</span></a></code> itself.
-            May be omitted if <code class="lang-d"><a href="../../std/random/random_sample.html#r"><span class="pln">r</span></a></code> has the <code class="lang-d"><wbr/><span class="pun">.</span><span class="pln"><a href="../../std/random/random_sample.length.html"><span class="pln">length</span></a></span></code>
+            the total number of elements in <code class="lang-d"><span class="pln">r</span></code> itself.
+            May be omitted if <code class="lang-d"><span class="pln">r</span></code> has the <code class="lang-d"><wbr/><span class="pun">.</span><span class="pln">length</span></code>
             property and the sample is to be drawn from
-            all elements of <code class="lang-d"><a href="../../std/random/random_sample.html#r"><span class="pln">r</span></a></code>.</td></tr>
+            all elements of <code class="lang-d"><span class="pln">r</span></code>.</td></tr>
 <tr><td id="rng">rng</td><td> (optional) random number generator to use;
-          if not specified, defaults to <code class="lang-d"><a href="../../std/random/rnd_gen.html"><span class="pln"><a href="../../std/random/rnd_gen.html"><span class="pln">rndGen</span></a></span></a></code></td></tr>
+          if not specified, defaults to <code class="lang-d"><a href="../../std/random/rnd_gen.html"><span class="pln">rndGen</span></a></code></td></tr>
 </table>
 </section>
 <section><h3>Returns</h3>
 <p>Range whose elements consist of a randomly selected subset of
-    the elements of <code class="lang-d"><a href="../../std/random/random_sample.html#r"><span class="pln">r</span></a></code>, in the same order as these elements
-    appear in <code class="lang-d"><a href="../../std/random/random_sample.html#r"><span class="pln">r</span></a></code> itself.  Will be a forward range if both <code class="lang-d"><a href="../../std/random/random_sample.html#r"><span class="pln">r</span></a></code>
-    and <code class="lang-d"><a href="../../std/random/random_sample.html#rng"><span class="pln">rng</span></a></code> are forward ranges, an input range otherwise.
+    the elements of <code class="lang-d"><span class="pln">r</span></code>, in the same order as these elements
+    appear in <code class="lang-d"><span class="pln">r</span></code> itself.  Will be a forward range if both <code class="lang-d"><span class="pln">r</span></code>
+    and <code class="lang-d"><span class="pln">rng</span></code> are forward ranges, an input range otherwise.
 </p>
 
-<p><code class="lang-d"><a href="../../std/random/random_sample.html"><span class="typ"><span class="typ">RandomSample</span></span></a></code> implements Jeffrey Scott Vitter's Algorithm D
+<p><code class="lang-d"><span class="typ">RandomSample</span></code> implements Jeffrey Scott Vitter's Algorithm D
 (see Vitter <a href="http://dx.doi.org/10.1145/358105.893">1984</a>, <a href="http://dx.doi.org/10.1145/23002.23003">1987</a>), which selects a sample
-of size <code class="lang-d"><a href="../../std/random/random_sample.html#n"><span class="pln">n</span></a></code> in O(n) steps and requiring O(n) random variates,
+of size <code class="lang-d"><span class="pln">n</span></code> in O(n) steps and requiring O(n) random variates,
 regardless of the size of the data being sampled.  The exception
 to this is if traversing k elements on the input range is itself
 an O(k) operation (e.g. when sampling lines from an input file),
@@ -3185,12 +3201,12 @@ in which case the sampling calculation will inevitably be of
 O(total).
 </p>
 
-<p>RandomSample will throw an exception if <code class="lang-d"><a href="../../std/random/random_sample.html#total"><span class="pln">total</span></a></code> is verifiably
+<p>RandomSample will throw an exception if <code class="lang-d"><span class="pln">total</span></code> is verifiably
 less than the total number of elements available in the input,
 or if <code class="lang-d"><span class="pln">n </span><span class="pun">&gt; </span><span class="pln">total</span></code>.
 </p>
 
-<p>If no random number generator is passed to <code class="lang-d"><span class="pln"><a href="../../std/random/random_sample.html"><span class="pln">randomSample</span></a></span></code>, the
+<p>If no random number generator is passed to <code class="lang-d"><a href="../../std/random/random_sample.html"><span class="pln">randomSample</span></a></code>, the
 thread-global RNG rndGen will be used internally.
 </p>
 </section>

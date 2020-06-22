@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2952,16 +2967,16 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function uniform</h2><p>Generates a number between <code class="lang-d"><a href="../std/random/uniform.html#a"><span class="pln"><a href="../../std/random/uniform.html#a"><span class="pln">a</span></a></span></a></code> and <code class="lang-d"><a href="../std/random/uniform.html#b"><span class="pln"><a href="../../std/random/uniform.html#b"><span class="pln">b</span></a></span></a></code>. The <code class="lang-d"><span class="pln">boundaries</span></code>
+				</nav><h2 id="0">Function uniform</h2><p>Generates a number between <code class="lang-d"><a href="../../std/random/uniform.html#a"><span class="pln">a</span></a></code> and <code class="lang-d"><a href="../../std/random/uniform.html#b"><span class="pln">b</span></a></code>. The <code class="lang-d"><span class="pln">boundaries</span></code>
 parameter controls the shape of the interval (open vs. closed on
 either side). Valid values for <code class="lang-d"><span class="pln">boundaries</span></code> are <code class="lang-d"><span class="str">"[]"</span></code>, <code class="lang-d"><span class="str">"(]"</span></code>, <code class="lang-d"><span class="str">"[)"</span></code>, and <code class="lang-d"><span class="str">"()"</span></code>. The default interval
 is closed to the left and open to the right. The version that does not
-take <code class="lang-d"><a href="../std/random/uniform.html#urng"><span class="pln"><a href="../../std/random/uniform.html#urng"><span class="pln">urng</span></a></span></a></code> uses the default generator <code class="lang-d"><a href="../std/random/rnd_gen.html"><span class="pln"><a href="../../std/random/rnd_gen.html"><span class="pln">rndGen</span></a></span></a></code>.
+take <code class="lang-d"><a href="../../std/random/uniform.html#urng"><span class="pln">urng</span></a></code> uses the default generator <code class="lang-d"><a href="../../std/random/rnd_gen.html"><span class="pln">rndGen</span></a></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">uniform</span>(<span class="typ">string</span> boundaries<span class="pln"> </span><span class="pun">= </span><span class="str">"[)"</span>, T1, T2)
+				<span class="kwd">auto</span> <span class="pln">uniform</span>(<span class="typ">string</span> boundaries<span class="pln"> </span><span class="pun">= </span><span class="str">"[)"</span>, T1, T2)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">T1</span> <span class="pln">a</span><span class="pun">,</span>
@@ -2973,7 +2988,7 @@ take <code class="lang-d"><a href="../std/random/uniform.html#urng"><span class=
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pun">!</span><span class="kwd">is</span><span class="pun">(</span><span class="typ">CommonType</span><span class="pun">!(</span><span class="pln">T1</span><span class="pun">, </span><span class="pln">T2</span><span class="pun">) == </span><span class="typ">void</span><span class="pun">)</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">uniform</span>(<span class="typ">string</span> boundaries<span class="pln"> </span><span class="pun">= </span><span class="str">"[)"</span>, T1, T2, UniformRandomNumberGenerator)
+				<span class="kwd">auto</span> <span class="pln">uniform</span>(<span class="typ">string</span> boundaries<span class="pln"> </span><span class="pun">= </span><span class="str">"[)"</span>, T1, T2, UniformRandomNumberGenerator)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">T1</span> <span class="pln">a</span><span class="pun">,</span>
@@ -3039,12 +3054,12 @@ take <code class="lang-d"><a href="../std/random/uniform.html#urng"><span class=
 </section>
 <h2 id="1">Function uniform</h2><p>Generates a uniformly-distributed number in the range <code class="lang-d"><span class="pun">[</span><span class="pln">T<wbr/></span><span class="pun">.</span><span class="pln">min</span><span class="pun">,
 </span><span class="pln">T<wbr/></span><span class="pun">.</span><span class="pln">max</span><span class="pun">]</span></code> for any integral or character type <code class="lang-d"><span class="pln">T</span></code>. If no random
-number generator is passed, uses the default <code class="lang-d"><a href="../std/random/rnd_gen.html"><span class="pln"><a href="../../std/random/rnd_gen.html"><span class="pln">rndGen</span></a></span></a></code>.
+number generator is passed, uses the default <code class="lang-d"><a href="../../std/random/rnd_gen.html"><span class="pln">rndGen</span></a></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">uniform</span>(T, UniformRandomNumberGenerator)
+				<span class="kwd">auto</span> <span class="pln">uniform</span>(T, UniformRandomNumberGenerator)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="kwd">ref </span><span class="typ">UniformRandomNumberGenerator</span> <span class="pln">urng</span>
@@ -3054,12 +3069,12 @@ number generator is passed, uses the default <code class="lang-d"><a href="../st
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pun">!</span><span class="kwd">is</span><span class="pun">(</span><span class="pln">T </span><span class="pun">== </span><span class="kwd">enum</span><span class="pun">) &amp;&amp; (</span><span class="pln">isIntegral</span><span class="pun">!</span><span class="pln">T </span><span class="pun">|| </span><span class="pln">isSomeChar</span><span class="pun">!</span><span class="pln">T</span><span class="pun">) &amp;&amp; </span><span class="pln">isUniformRNG</span><span class="pun">!</span><span class="typ">UniformRandomNumberGenerator</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">uniform</span>(T)<span class="pun">(</span><span class="pun">)</span>
+				<span class="kwd">auto</span> <span class="pln">uniform</span>(T)<span class="pun">(</span><span class="pun">)</span>
 				<br/>
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pun">!</span><span class="kwd">is</span><span class="pun">(</span><span class="pln">T </span><span class="pun">== </span><span class="kwd">enum</span><span class="pun">) &amp;&amp; (</span><span class="pln">isIntegral</span><span class="pun">!</span><span class="pln">T </span><span class="pun">|| </span><span class="pln">isSomeChar</span><span class="pun">!</span><span class="pln">T</span><span class="pun">)</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">uniform</span>(E, UniformRandomNumberGenerator)
+				<span class="kwd">auto</span> <span class="pln">uniform</span>(E, UniformRandomNumberGenerator)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="kwd">ref </span><span class="typ">UniformRandomNumberGenerator</span> <span class="pln">urng</span>
@@ -3069,7 +3084,7 @@ number generator is passed, uses the default <code class="lang-d"><a href="../st
 				<span class="kwd">if</span> <span class="pun">(</span><span class="kwd">is</span><span class="pun">(</span><span class="pln">E </span><span class="pun">== </span><span class="kwd">enum</span><span class="pun">) &amp;&amp; </span><span class="pln">isUniformRNG</span><span class="pun">!</span><span class="typ">UniformRandomNumberGenerator</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">uniform</span>(E)<span class="pun">(</span><span class="pun">)</span>
+				<span class="kwd">auto</span> <span class="pln">uniform</span>(E)<span class="pun">(</span><span class="pun">)</span>
 				<br/>
 				<span class="kwd">if</span> <span class="pun">(</span><span class="kwd">is</span><span class="pun">(</span><span class="pln">E </span><span class="pun">== </span><span class="kwd">enum</span><span class="pun">)</span><span class="pun">);</span>
 						</div>

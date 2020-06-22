@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,8 +2952,8 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Struct <code><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block.html">std.experimental.allocator.building_blocks.bitmapped_block</a>.BitmappedBlockWithInternalPointers</code></h1><p>A <code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.html"><span class="typ">BitmappedBlock</span></a></span></a></code> with additional structure for supporting <code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block_with_internal_pointers.resolve_internal_pointer.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block_with_internal_pointers.resolve_internal_pointer.html"><span class="pln">resolveInternalPointer</span></a></span></a></code>.
-To that end, <code class="lang-d"><span class="typ"><span class="typ">BitmappedBlockWithInternalPointers</span></span></code> adds a
+				</div><h1>Struct <code><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block.html">std.experimental.allocator.building_blocks.bitmapped_block</a>.BitmappedBlockWithInternalPointers</code></h1><p>A <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.html"><span class="typ">BitmappedBlock</span></a></code> with additional structure for supporting <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block_with_internal_pointers.resolve_internal_pointer.html"><span class="pln">resolveInternalPointer</span></a></code>.
+To that end, <code class="lang-d"><span class="typ">BitmappedBlockWithInternalPointers</span></code> adds a
 bitmap (one bit per block) that marks object starts. The bitmap itself has
 variable size and is allocated together with regular allocations.
 </p>
@@ -2966,6 +2981,7 @@ is the size of the object within which the internal pointer is looked up.
 								<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block_with_internal_pointers.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(data)</span>
 							</td>
 							<td>Constructors accepting desired capacity or a preallocated buffer, similar
     in semantics to those of <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.html"><span class="typ">BitmappedBlock</span></a></code>.
@@ -2984,6 +3000,7 @@ is the size of the object within which the internal pointer is looked up.
 								<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block_with_internal_pointers.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(bytes)</span>
 							</td>
 							<td>Allocator primitives.
 </td>
@@ -2993,6 +3010,7 @@ is the size of the object within which the internal pointer is looked up.
 								<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block_with_internal_pointers.allocate_all.html" class="public">
 									<code>allocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Allocator primitives.
 </td>
@@ -3002,6 +3020,7 @@ is the size of the object within which the internal pointer is looked up.
 								<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block_with_internal_pointers.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>Allocator primitives.
 </td>
@@ -3011,6 +3030,7 @@ is the size of the object within which the internal pointer is looked up.
 								<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block_with_internal_pointers.empty.html" class="public">
 									<code>empty</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Allocator primitives.
 </td>
@@ -3020,6 +3040,7 @@ is the size of the object within which the internal pointer is looked up.
 								<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block_with_internal_pointers.expand.html" class="public">
 									<code>expand</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, bytes)</span>
 							</td>
 							<td>Allocator primitives.
 </td>
@@ -3029,6 +3050,7 @@ is the size of the object within which the internal pointer is looked up.
 								<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block_with_internal_pointers.good_alloc_size.html" class="public">
 									<code>goodAllocSize</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
 							<td>Allocator primitives.
 </td>
@@ -3038,6 +3060,7 @@ is the size of the object within which the internal pointer is looked up.
 								<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block_with_internal_pointers.resolve_internal_pointer.html" class="public">
 									<code>resolveInternalPointer</code>
 								</a>
+								<span class="tableEntryAnnotation">(p, result)</span>
 							</td>
 							<td>Allocator primitives.
 </td>

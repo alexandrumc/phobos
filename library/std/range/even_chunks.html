@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2952,7 +2967,7 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function evenChunks</h2><p>This range splits a <code class="lang-d"><a href="../std/range/even_chunks.html#source"><span class="pln"><a href="../../std/range/even_chunks.html#source"><span class="pln">source</span></a></span></a></code> range into <code class="lang-d"><a href="../std/range/even_chunks.html#chunkCount"><span class="pln"><a href="../../std/range/even_chunks.html#chunkCount"><span class="pln">chunkCount</span></a></span></a></code> chunks of
+				</nav><h2 id="0">Function evenChunks</h2><p>This range splits a <code class="lang-d"><a href="../../std/range/even_chunks.html#source"><span class="pln">source</span></a></code> range into <code class="lang-d"><a href="../../std/range/even_chunks.html#chunkCount"><span class="pln">chunkCount</span></a></code> chunks of
 approximately equal length. <code class="lang-d"><span class="typ">Source</span></code> must be a forward range with
 known length.
 </p>
@@ -2993,7 +3008,7 @@ elements. If <code class="lang-d"><span class="pln">source<wbr/></span><span cla
 </span><span class="pln">writeln</span><span class="pun">(<a href="../../std/range/chunks.html"></span><span class="pln">chunks</span></a><span class="pun">[</span><span class="lit">2</span><span class="pun">]); </span><span class="com">// [8, 9, 10]
 </span></code></pre>
 </section>
-<h2 id="1">Struct EvenChunks</h2><p>This range splits a <code class="lang-d"><a href="../std/range/even_chunks.html#source"><span class="pln"><a href="../../std/range/even_chunks.html#source"><span class="pln">source</span></a></span></a></code> range into <code class="lang-d"><a href="../std/range/even_chunks.html#chunkCount"><span class="pln"><a href="../../std/range/even_chunks.html#chunkCount"><span class="pln">chunkCount</span></a></span></a></code> chunks of
+<h2 id="1">Struct EvenChunks</h2><p>This range splits a <code class="lang-d"><span class="pln">source</span></code> range into <code class="lang-d"><span class="pln">chunkCount</span></code> chunks of
 approximately equal length. <code class="lang-d"><span class="typ">Source</span></code> must be a forward range with
 known length.
 </p>
@@ -3008,13 +3023,13 @@ known length.
 						</div>
 					</code>
 				</div>
-				<section><p>Unlike <code class="lang-d"><a href="../../std/range/chunks.html"><span class="pln">chunks</span></a></code>, <code class="lang-d"><span class="pln"><a href="../../std/range/even_chunks.html"><span class="pln">evenChunks</span></a></span></code> takes a chunk count (not size).
+				<section><p>Unlike <code class="lang-d"><a href="../../std/range/chunks.html"><span class="pln">chunks</span></a></code>, <code class="lang-d"><a href="../../std/range/even_chunks.html"><span class="pln">evenChunks</span></a></code> takes a chunk count (not size).
 The returned range will contain zero or more <code class="lang-d"><span class="pln">source<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">/
 </span><span class="pln">chunkCount </span><span class="pun">+ </span><span class="lit">1</span></code> elements followed by <code class="lang-d"><span class="pln">source<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">/ </span><span class="pln">chunkCount</span></code>
 elements. If <code class="lang-d"><span class="pln">source<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">&lt; </span><span class="pln">chunkCount</span></code>, some chunks will be empty.
 </p>
 
-<p><code class="lang-d"><a href="../../std/range/even_chunks.html#chunkCount"><span class="pln">chunkCount</span></a></code> must not be zero, unless <code class="lang-d"><a href="../../std/range/even_chunks.html#source"><span class="pln">source</span></a></code> is also empty.
+<p><code class="lang-d"><span class="pln">chunkCount</span></code> must not be zero, unless <code class="lang-d"><span class="pln">source</span></code> is also empty.
 </p>
 </section>
 
@@ -3029,6 +3044,7 @@ elements. If <code class="lang-d"><span class="pln">source<wbr/></span><span cla
 								<a href="../../std/range/even_chunks.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(source, chunkCount)</span>
 							</td>
 							<td>Standard constructor
 </td>
@@ -3090,6 +3106,7 @@ elements. If <code class="lang-d"><span class="pln">source<wbr/></span><span cla
 								<a href="../../std/range/even_chunks.op_index.html" class="public">
 									<code>opIndex</code>
 								</a>
+								<span class="tableEntryAnnotation">(index)</span>
 							</td>
 							<td>Indexing, slicing and bidirectional operations and range primitives.
         Provided only if <code class="lang-d"><span class="pln">hasSlicing</span><span class="pun">!</span><span class="typ">Source</span></code> is <code class="lang-d"><span class="kwd">true</span></code>.
@@ -3100,6 +3117,7 @@ elements. If <code class="lang-d"><span class="pln">source<wbr/></span><span cla
 								<a href="../../std/range/even_chunks.op_slice.html" class="public">
 									<code>opSlice</code>
 								</a>
+								<span class="tableEntryAnnotation">(lower, upper)</span>
 							</td>
 							<td>Indexing, slicing and bidirectional operations and range primitives.
         Provided only if <code class="lang-d"><span class="pln">hasSlicing</span><span class="pun">!</span><span class="typ">Source</span></code> is <code class="lang-d"><span class="kwd">true</span></code>.
@@ -3110,6 +3128,7 @@ elements. If <code class="lang-d"><span class="pln">source<wbr/></span><span cla
 								<a href="../../std/range/even_chunks.pop_back.html" class="public">
 									<code>popBack</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Indexing, slicing and bidirectional operations and range primitives.
         Provided only if <code class="lang-d"><span class="pln">hasSlicing</span><span class="pun">!</span><span class="typ">Source</span></code> is <code class="lang-d"><span class="kwd">true</span></code>.
@@ -3120,6 +3139,7 @@ elements. If <code class="lang-d"><span class="pln">source<wbr/></span><span cla
 								<a href="../../std/range/even_chunks.pop_front.html" class="public">
 									<code>popFront</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Forward range primitives. Always present.
 </td>

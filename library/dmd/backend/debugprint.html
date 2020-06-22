@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2951,71 +2966,92 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="numberBlocks" class="public" href="../../dmd/backend/debugprint/number_blocks.html">numberBlocks</a><span class="decoration">(startblock)</span>
+									<a id="numberBlocks" class="public" href="../../dmd/backend/debugprint/number_blocks.html">numberBlocks</a><span class="tableEntryAnnotation">(startblock)</span>
 								</code>
 							</td>
 							<td>Number the blocks starting at 1.
  So much more convenient than pointer values.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="str_class" class="public" href="../../dmd/backend/debugprint/str_class.html">str_class</a><span class="decoration">(c)</span>
+									<a id="str_class" class="public" href="../../dmd/backend/debugprint/str_class.html">str_class</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Write out storage class.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="WRarglst" class="public" href="../../dmd/backend/debugprint/w_rarglst.html">WRarglst</a><span class="decoration">(a)</span>
+									<a id="WRarglst" class="public" href="../../dmd/backend/debugprint/w_rarglst.html">WRarglst</a><span class="tableEntryAnnotation">(a)</span>
 								</code>
 							</td>
 							<td>Write arglst
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="WRblock" class="public" href="../../dmd/backend/debugprint/w_rblock.html">WRblock</a><span class="decoration">(b)</span>
+									<a id="WRblock" class="public" href="../../dmd/backend/debugprint/w_rblock.html">WRblock</a><span class="tableEntryAnnotation">(b)</span>
 								</code>
 							</td>
 							<td>Write out block.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="WReqn" class="public" href="../../dmd/backend/debugprint/w_reqn.html">WReqn</a><span class="decoration">(e)</span>
+									<a id="WReqn" class="public" href="../../dmd/backend/debugprint/w_reqn.html">WReqn</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>Write out equation elem.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="WROP" class="public" href="../../dmd/backend/debugprint/wrop.html">WROP</a><span class="decoration">(oper)</span>
+									<a id="WROP" class="public" href="../../dmd/backend/debugprint/wrop.html">WROP</a><span class="tableEntryAnnotation">(oper)</span>
 								</code>
 							</td>
 							<td>Write out oper numbers.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="WRTYxx" class="public" href="../../dmd/backend/debugprint/wrt_yxx.html">WRTYxx</a><span class="decoration">(t)</span>
+									<a id="WRTYxx" class="public" href="../../dmd/backend/debugprint/wrt_yxx.html">WRTYxx</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Write TYxxxx
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

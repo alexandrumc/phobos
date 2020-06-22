@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2957,26 +2972,32 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="inlineCopy" class="public" href="../dmd/inline/inline_copy.html">inlineCopy</a><span class="decoration">(e, sc)</span>
+									<a id="inlineCopy" class="public" href="../dmd/inline/inline_copy.html">inlineCopy</a><span class="tableEntryAnnotation">(e, sc)</span>
 								</code>
 							</td>
 							<td>Perform the "inline copying" of a default argument for a function parameter.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="inlineScanModule" class="public" href="../dmd/inline/inline_scan_module.html">inlineScanModule</a><span class="decoration">(m)</span>
+									<a id="inlineScanModule" class="public" href="../dmd/inline/inline_scan_module.html">inlineScanModule</a><span class="tableEntryAnnotation">(m)</span>
 								</code>
 							</td>
 							<td>Scan function implementations in Module m looking for functions that can be inlined,
  and inline them in situ.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2951,98 +2966,128 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="doptelem" class="public" href="../../dmd/backend/cgelem/doptelem.html">doptelem</a><span class="decoration">(e, goal)</span>
+									<a id="doptelem" class="public" href="../../dmd/backend/cgelem/doptelem.html">doptelem</a><span class="tableEntryAnnotation">(e, goal)</span>
 								</code>
 							</td>
 							<td>Optimize and canonicalize an expression tree.
  Fiddle with double operators so that the rvalue is a pointer
  (this is needed by the 8086 code generator).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="elddtor" class="public" href="../../dmd/backend/cgelem/elddtor.html">elddtor</a><span class="decoration">(e, goal)</span>
+									<a id="elddtor" class="public" href="../../dmd/backend/cgelem/elddtor.html">elddtor</a><span class="tableEntryAnnotation">(e, goal)</span>
 								</code>
 							</td>
 							<td>Handle OPddtor
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="elemisnegone" class="public" href="../../dmd/backend/cgelem/elemisnegone.html">elemisnegone</a><span class="decoration">(e)</span>
+									<a id="elemisnegone" class="public" href="../../dmd/backend/cgelem/elemisnegone.html">elemisnegone</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="elemisone" class="public" href="../../dmd/backend/cgelem/elemisone.html">elemisone</a><span class="decoration">(e)</span>
+									<a id="elemisone" class="public" href="../../dmd/backend/cgelem/elemisone.html">elemisone</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="elmsw" class="public" href="../../dmd/backend/cgelem/elmsw.html">elmsw</a><span class="decoration">(e, goal)</span>
+									<a id="elmsw" class="public" href="../../dmd/backend/cgelem/elmsw.html">elmsw</a><span class="tableEntryAnnotation">(e, goal)</span>
 								</code>
 							</td>
 							<td>Handle OPmsw.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="elpair" class="public" href="../../dmd/backend/cgelem/elpair.html">elpair</a><span class="decoration">(e, goal)</span>
+									<a id="elpair" class="public" href="../../dmd/backend/cgelem/elpair.html">elpair</a><span class="tableEntryAnnotation">(e, goal)</span>
 								</code>
 							</td>
 							<td>Handle OPpair, OPrpair.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="elstruct" class="public" href="../../dmd/backend/cgelem/elstruct.html">elstruct</a><span class="decoration">(e, goal)</span>
+									<a id="elstruct" class="public" href="../../dmd/backend/cgelem/elstruct.html">elstruct</a><span class="tableEntryAnnotation">(e, goal)</span>
 								</code>
 							</td>
 							<td>See if we can replace struct operations with simpler ones.
  For OPstreq and OPstrpar.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fillinops" class="public" href="../../dmd/backend/cgelem/fillinops.html">fillinops</a><span class="decoration">(ops, opsi, maxops, oper, e)</span>
+									<a id="fillinops" class="public" href="../../dmd/backend/cgelem/fillinops.html">fillinops</a><span class="tableEntryAnnotation">(ops, opsi, maxops, oper, e)</span>
 								</code>
 							</td>
 							<td>Fill in ops[maxops] with operands of repeated operator oper.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="postoptelem" class="public" href="../../dmd/backend/cgelem/postoptelem.html">postoptelem</a><span class="decoration">(e)</span>
+									<a id="postoptelem" class="public" href="../../dmd/backend/cgelem/postoptelem.html">postoptelem</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>Do optimizations after bltailrecursion() and before common subexpressions.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="swaprel" class="public" href="../../dmd/backend/cgelem/swaprel.html">swaprel</a><span class="decoration">(op)</span>
+									<a id="swaprel" class="public" href="../../dmd/backend/cgelem/swaprel.html">swaprel</a><span class="tableEntryAnnotation">(op)</span>
 								</code>
 							</td>
 							<td>Swap relational operators (like if we swapped the leaves).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

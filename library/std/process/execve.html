@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,8 +2952,8 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../std/process.html">std.process</a>.execve</code></h1><p>Replaces the current process by executing a command, <code class="lang-d"><a href="../std/process/execv.html#pathname"><span class="pln"><a href="../std/process/execve.html#pathname"><span class="pln"><a href="../std/process/execvp.html#pathname"><span class="pln"><a href="../std/process/execvpe.html#pathname"><span class="pln"><a href="../../std/process/execvpe.html#pathname"><span class="pln"><a href="../../std/process/execvp.html#pathname"><span class="pln"><a href="../../std/process/execv.html#pathname"><span class="pln"><a href="../../std/process/execve.html#pathname"><span class="pln">pathname</span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></code>, with
-    the arguments in <code class="lang-d"><a href="../std/process/execv.html#argv"><span class="pln"><a href="../std/process/execve.html#argv"><span class="pln"><a href="../std/process/execvp.html#argv"><span class="pln"><a href="../std/process/execvpe.html#argv"><span class="pln"><a href="../../std/process/execvpe.html#argv"><span class="pln"><a href="../../std/process/execvp.html#argv"><span class="pln"><a href="../../std/process/execv.html#argv"><span class="pln"><a href="../../std/process/execve.html#argv"><span class="pln">argv</span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></code>.
+				</div><h1>Function <code><a href="../../std/process.html">std.process</a>.execve</code></h1><p>Replaces the current process by executing a command, <code class="lang-d"><a href="../../std/process/execve.html#pathname"><span class="pln">pathname</span></a></code>, with
+    the arguments in <code class="lang-d"><a href="../../std/process/execve.html#argv"><span class="pln">argv</span></a></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2959,7 +2974,7 @@ $('#symbolSearchPane').show();</script>
 				<section><p><span class="blue">This function is Posix-Only.</span>
 </p>
 
-<p>    Typically, the first element of <code class="lang-d"><a href="../../std/process/execvpe.html#argv"><span class="pln"><a href="../../std/process/execvp.html#argv"><span class="pln"><a href="../../std/process/execv.html#argv"><span class="pln"><a href="../../std/process/execve.html#argv"><span class="pln">argv</span></a></span></a></span></a></span></a></code> is
+<p>    Typically, the first element of <code class="lang-d"><a href="../../std/process/execve.html#argv"><span class="pln">argv</span></a></code> is
     the command being executed, i.e. <code class="lang-d"><a href="../../std/process/execve.html#argv"><span class="pln">argv</span></a><span class="pun">[</span><span class="lit">0</span><span class="pun">] == <a href="../../std/process/execve.html#pathname"></span><span class="pln">pathname</span></a></code>. The 'p'
     versions of <code class="lang-d"><span class="pln">exec</span></code> search the PATH environment variable for <code class="lang-d"><span class="pln">    <a href="../../std/process/execve.html#pathname"></span><span class="pln">pathname</span></a></code>. The 'e' versions additionally take the new process'
     environment variables as an array of strings of the form key=value.
@@ -2975,7 +2990,7 @@ $('#symbolSearchPane').show();</script>
 <p>These functions are only supported on POSIX platforms, as the Windows
     operating systems do not provide the ability to overwrite the current
     process image with another. In single-threaded programs it is possible
-    to approximate the effect of <code class="lang-d"><a href="../../std/process/execv.html"><span class="pln"><a href="../../std/process/execv.html"><span class="pln"><span class="pln"><a href="../../std/process/execv.html"><span class="pln">execv</span></a></span></span></a></span></a><span class="pun">*</span></code> by using <code class="lang-d"><a href="../../std/process/spawn_process.html"><span class="pln">spawnProcess</span></a></code>
+    to approximate the effect of <code class="lang-d"><a href="../../std/process/execv.html"><span class="pln">execv</span></a><span class="pun">*</span></code> by using <code class="lang-d"><a href="../../std/process/spawn_process.html"><span class="pln">spawnProcess</span></a></code>
     and terminating the current process once the child process has returned.
     For example:
 </p>
@@ -2990,7 +3005,7 @@ $('#symbolSearchPane').show();</script>
     </span><span class="kwd">import <a href="../../core/stdc/stdlib.html"></span><span class="pln">core<wbr/></span><span class="pun">.</span><span class="pln">stdc<wbr/></span><span class="pun">.</span><span class="pln">stdlib</span></a><span class="pln"> </span><span class="pun">: </span><span class="pln">_Exit</span><span class="pun">;
     </span><span class="pln">_Exit</span><span class="pun">(<a href="../../std/process/wait.html"></span><span class="pln">wait</span></a><span class="pun">(<a href="../../std/process/spawn_process.html"></span><span class="pln">spawnProcess</span></a><span class="pun">(</span><span class="pln">commandLine</span><span class="pun">)));
 }</span></code></pre>
-<p>    This is, however, NOT equivalent to POSIX' <code class="lang-d"><a href="../../std/process/execv.html"><span class="pln"><a href="../../std/process/execv.html"><span class="pln"><span class="pln"><a href="../../std/process/execv.html"><span class="pln">execv</span></a></span></span></a></span></a><span class="pun">*</span></code>.  For one thing, the
+<p>    This is, however, NOT equivalent to POSIX' <code class="lang-d"><a href="../../std/process/execv.html"><span class="pln">execv</span></a><span class="pun">*</span></code>.  For one thing, the
     executed program is started as a separate process, with all this entails.
     Secondly, in a multithreaded program, other threads will continue to do
     work while the current thread is waiting for the child process to complete.
@@ -2998,9 +3013,9 @@ $('#symbolSearchPane').show();</script>
 
 <p>    A better option may sometimes be to terminate the current program immediately
     after spawning the child process.  This is the behaviour exhibited by the
-    <a href="http://msdn.microsoft.com/en-us/library/431x4c1w.aspx"><code class="lang-d"><span class="pln">exec</span></code></a>
+    <a href="http://msdn.microsoft.com/en-us/library/431x4c1w.aspx"><code class="lang-d"><span class="pln">__exec</span></code></a>
     functions in Microsoft's C runtime library, and it is how D's now-deprecated
-    Windows <code class="lang-d"><a href="../../std/process/execv.html"><span class="pln"><a href="../../std/process/execv.html"><span class="pln"><span class="pln"><a href="../../std/process/execv.html"><span class="pln">execv</span></a></span></span></a></span></a><span class="pun">*</span></code> functions work. Example:
+    Windows <code class="lang-d"><a href="../../std/process/execv.html"><span class="pln">execv</span></a><span class="pun">*</span></code> functions work. Example:
 </p>
 <pre class="code"><code class="lang-d"><span class="kwd">auto </span><span class="pln">commandLine </span><span class="pun">= [ </span><span class="str">"program"</span><span class="pun">, </span><span class="str">"arg1"</span><span class="pun">, </span><span class="str">"arg2" </span><span class="pun">];
 </span><span class="kwd">version </span><span class="pun">(</span><span class="typ">Posix</span><span class="pun">)

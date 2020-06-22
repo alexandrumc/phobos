@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2939,12 +2954,12 @@ $('#symbolSearchPane').show();</script>
 					</div>
 				</div><h1>Function <code><a href="../../std/random.html">std.random</a>.choice</code></h1><p>Returns a random, uniformly chosen, element <code class="lang-d"><span class="pln">e</span></code> from the supplied
 <code class="lang-d"><span class="typ">Range </span><span class="pln">range</span></code>. If no random number generator is passed, the default
-<code class="lang-d"><a href="../std/random/rnd_gen.html"><span class="pln"><a href="../../std/random/rnd_gen.html"><span class="pln">rndGen</span></a></span></a></code> is used.
+<code class="lang-d"><a href="../../std/random/rnd_gen.html"><span class="pln">rndGen</span></a></code> is used.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto ref </span><span class="kwd">auto</span> <span class="pln">choice</span>(Range, RandomGen)
+				<span class="kwd">ref </span><span class="kwd">auto</span> <span class="pln">choice</span>(Range, RandomGen)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="kwd">auto ref </span><span class="typ">Range</span> <span class="pln">range</span><span class="pun">,</span>
@@ -2956,7 +2971,7 @@ $('#symbolSearchPane').show();</script>
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isRandomAccessRange</span><span class="pun">!</span><span class="typ">Range </span><span class="pun">&amp;&amp; </span><span class="pln">hasLength</span><span class="pun">!</span><span class="typ">Range </span><span class="pun">&amp;&amp; </span><span class="pln">isUniformRNG</span><span class="pun">!</span><span class="typ">RandomGen</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto ref </span><span class="kwd">auto</span> <span class="pln">choice</span>(Range)
+				<span class="kwd">ref </span><span class="kwd">auto</span> <span class="pln">choice</span>(Range)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="kwd">auto ref </span><span class="typ">Range</span> <span class="pln">range</span>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/algorithm/iteration.d#L6440">
+							<a href="https://github.com/dlang/phobos/blob/master/std/algorithm/iteration.d#L6446">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/algorithm/iteration.d#L6440">
+							<a href="https://github.com/dlang/phobos/edit/master/std/algorithm/iteration.d#L6446">
 								Improve this page
 							</a>
 							<div>
@@ -2937,16 +2952,16 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../../std/algorithm/iteration.html">std.algorithm.iteration</a>.sum</code></h1><p>Sums elements of <code class="lang-d"><a href="../../std/algorithm/iteration/sum.html#r"><span class="pln"><a href="../../../std/algorithm/iteration/sum.html#r"><span class="pln">r</span></a></span></a></code>, which must be a finite
+				</div><h1>Function <code><a href="../../../std/algorithm/iteration.html">std.algorithm.iteration</a>.sum</code></h1><p>Sums elements of <code class="lang-d"><a href="../../../std/algorithm/iteration/sum.html#r"><span class="pln">r</span></a></code>, which must be a finite
 <a href="../../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>. Although
-conceptually <code class="lang-d"><span class="pln"><span class="pln">sum</span></span><span class="pun">(<a href="../../std/algorithm/iteration/sum.html#r"></span><span class="pln"><a href="../../../std/algorithm/iteration/sum.html#r"><span class="pln">r</span></a></span></a><span class="pun">)</span></code> is equivalent to <code class="lang-d"><a href="../../../std/algorithm/iteration/fold.html"><span class="pln">fold</span></a></code>!((a, b) =&gt; a +
-b)(r, 0), <code class="lang-d"><span class="pln"><span class="pln">sum</span></span></code> uses specialized algorithms to maximize accuracy,
+conceptually <code class="lang-d"><span class="pln">sum</span><span class="pun">(<a href="../../../std/algorithm/iteration/sum.html#r"></span><span class="pln">r</span></a><span class="pun">)</span></code> is equivalent to <code class="lang-d"><a href="../../../std/algorithm/iteration/fold.html"><span class="pln">fold</span></a></code>!((a, b) =&gt; a +
+b)(r, 0), <code class="lang-d"><span class="pln">sum</span></code> uses specialized algorithms to maximize accuracy,
 as follows.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">sum</span>(R)
+				<span class="kwd">auto</span> <span class="pln">sum</span>(R)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">R</span> <span class="pln">r</span>
@@ -2956,7 +2971,7 @@ as follows.
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isInputRange</span><span class="pun">!</span><span class="pln">R </span><span class="pun">&amp;&amp; !</span><span class="pln">isInfinite</span><span class="pun">!</span><span class="pln">R </span><span class="pun">&amp;&amp; </span><span class="kwd">is</span><span class="pun">(</span><span class="kwd">typeof</span><span class="pun">(</span><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">front </span><span class="pun">+ </span><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">front</span><span class="pun">))</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">sum</span>(R, E)
+				<span class="kwd">auto</span> <span class="pln">sum</span>(R, E)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">R</span> <span class="pln">r</span><span class="pun">,</span>
@@ -2995,7 +3010,9 @@ type from the elements themselves (for example, in case of
 
 <p>A seed may be passed to <code class="lang-d"><span class="pln">sum</span></code>. Not only will this seed be used as an initial
 value, but its type will override all the above, and determine the algorithm
-and precision used for summation.
+and precision used for summation. If a seed is not passed, one is created with
+the value of <code class="lang-d"><span class="kwd">typeof</span><span class="pun">(</span><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">front </span><span class="pun">+ </span><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">front</span><span class="pun">)(</span><span class="lit">0</span><span class="pun">)</span></code>, or <code class="lang-d"><span class="kwd">typeof</span><span class="pun">(</span><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">front </span><span class="pun">+ </span><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">front</span><span class="pun">)<wbr/>.</span><span class="pln">zero</span></code>
+if no constructor exists that takes an int.
 </p>
 
 <p>Note that these specialized summing algorithms execute more primitive operations

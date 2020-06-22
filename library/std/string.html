@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -3062,173 +3077,221 @@ and <code class="lang-d"><a href="../std/range.html"><span class="pln">std<wbr/>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="abbrev" class="public" href="../std/string/abbrev.html">abbrev</a><span class="decoration">(values)</span>
+									<a id="abbrev" class="public" href="../std/string/abbrev.html">abbrev</a><span class="tableEntryAnnotation">(values)</span>
 								</code>
 							</td>
 							<td>Construct an associative array consisting of all
  abbreviations that uniquely map to the strings in values.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="assumeUTF" class="public" href="../std/string/assume_utf.html">assumeUTF</a><span class="decoration">(arr)</span>
+									<a id="assumeUTF" class="public" href="../std/string/assume_utf.html">assumeUTF</a><span class="tableEntryAnnotation">(arr)</span>
 								</code>
 							</td>
 							<td>Assume the given array of integers <code class="lang-d"><a href="../std/string/assume_utf.html#arr"><span class="pln">arr</span></a></code> is a well-formed UTF string and
 return it typed as a UTF string.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="capitalize" class="public" href="../std/string/capitalize.html">capitalize</a><span class="decoration">(input)</span>
+									<a id="capitalize" class="public" href="../std/string/capitalize.html">capitalize</a><span class="tableEntryAnnotation">(input)</span>
 								</code>
 							</td>
 							<td>Capitalize the first character of <code class="lang-d"><span class="pln">s</span></code> and convert the rest of <code class="lang-d"><span class="pln">s</span></code> to
  lowercase.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="center" class="public" href="../std/string/center.html">center</a><span class="decoration">(s, width, fillChar)</span>
+									<a id="center" class="public" href="../std/string/center.html">center</a><span class="tableEntryAnnotation">(s, width, fillChar)</span>
 								</code>
 							</td>
 							<td>Center <code class="lang-d"><a href="../std/string/center.html#s"><span class="pln">s</span></a></code> in a field <code class="lang-d"><a href="../std/string/center.html#width"><span class="pln">width</span></a></code> characters wide. <code class="lang-d"><a href="../std/string/center.html#fillChar"><span class="pln">fillChar</span></a></code>
     is the character that will be used to fill up the space in the field that
     <code class="lang-d"><a href="../std/string/center.html#s"><span class="pln">s</span></a></code> doesn't fill.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="centerJustifier" class="public" href="../std/string/center_justifier.html">centerJustifier</a><span class="decoration">(r, width, fillChar)</span>
+									<a id="centerJustifier" class="public" href="../std/string/center_justifier.html">centerJustifier</a><span class="tableEntryAnnotation">(r, width, fillChar)</span>
 								</code>
 							</td>
 							<td>Center justify <code class="lang-d"><a href="../std/string/center_justifier.html#r"><span class="pln">r</span></a></code> in a field <code class="lang-d"><a href="../std/string/center_justifier.html#width"><span class="pln">width</span></a></code> characters wide. <code class="lang-d"><a href="../std/string/center_justifier.html#fillChar"><span class="pln">fillChar</span></a></code>
     is the character that will be used to fill up the space in the field that
     <code class="lang-d"><a href="../std/string/center_justifier.html#r"><span class="pln">r</span></a></code> doesn't fill.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="chomp" class="public" href="../std/string/chomp.html">chomp</a><span class="decoration">(str)</span>
+									<a id="chomp" class="public" href="../std/string/chomp.html">chomp</a><span class="tableEntryAnnotation">(str)</span>
 								</code>
 							</td>
 							<td>If <code class="lang-d"><a href="../std/string/chomp.html#str"><span class="pln">str</span></a></code> ends with <code class="lang-d"><a href="../std/string/chomp.html#delimiter"><span class="pln">delimiter</span></a></code>, then <code class="lang-d"><a href="../std/string/chomp.html#str"><span class="pln">str</span></a></code> is returned without
     <code class="lang-d"><a href="../std/string/chomp.html#delimiter"><span class="pln">delimiter</span></a></code> on its end. If it <code class="lang-d"><a href="../std/string/chomp.html#str"><span class="pln">str</span></a></code> does <i>not</i> end with
     <code class="lang-d"><a href="../std/string/chomp.html#delimiter"><span class="pln">delimiter</span></a></code>, then it is returned unchanged.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="chompPrefix" class="public" href="../std/string/chomp_prefix.html">chompPrefix</a><span class="decoration">(str, delimiter)</span>
+									<a id="chompPrefix" class="public" href="../std/string/chomp_prefix.html">chompPrefix</a><span class="tableEntryAnnotation">(str, delimiter)</span>
 								</code>
 							</td>
 							<td>If <code class="lang-d"><a href="../std/string/chomp_prefix.html#str"><span class="pln">str</span></a></code> starts with <code class="lang-d"><a href="../std/string/chomp_prefix.html#delimiter"><span class="pln">delimiter</span></a></code>, then the part of <code class="lang-d"><a href="../std/string/chomp_prefix.html#str"><span class="pln">str</span></a></code> following
     <code class="lang-d"><a href="../std/string/chomp_prefix.html#delimiter"><span class="pln">delimiter</span></a></code> is returned. If <code class="lang-d"><a href="../std/string/chomp_prefix.html#str"><span class="pln">str</span></a></code> does <i>not</i> start with
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="chop" class="public" href="../std/string/chop.html">chop</a><span class="decoration">(str)</span>
+									<a id="chop" class="public" href="../std/string/chop.html">chop</a><span class="tableEntryAnnotation">(str)</span>
 								</code>
 							</td>
 							<td>Returns <code class="lang-d"><a href="../std/string/chop.html#str"><span class="pln">str</span></a></code> without its last character, if there is one. If <code class="lang-d"><a href="../std/string/chop.html#str"><span class="pln">str</span></a></code>
     ends with <code class="lang-d"><span class="str">"\r\n"</span></code>, then both are removed. If <code class="lang-d"><a href="../std/string/chop.html#str"><span class="pln">str</span></a></code> is empty, then
     it is returned unchanged.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="column" class="public" href="../std/string/column.html">column</a><span class="decoration">(str, tabsize)</span>
+									<a id="column" class="public" href="../std/string/column.html">column</a><span class="tableEntryAnnotation">(str, tabsize)</span>
 								</code>
 							</td>
 							<td>Compute column number at the end of the printed form of the string,
  assuming the string starts in the leftmost column, which is numbered
  starting from 0.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="detab" class="public" href="../std/string/detab.html">detab</a><span class="decoration">(s, tabSize)</span>
+									<a id="detab" class="public" href="../std/string/detab.html">detab</a><span class="tableEntryAnnotation">(s, tabSize)</span>
 								</code>
 							</td>
 							<td>Replace each tab character in <code class="lang-d"><a href="../std/string/detab.html#s"><span class="pln">s</span></a></code> with the number of spaces necessary
     to align the following character at the next tab stop.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="detabber" class="public" href="../std/string/detabber.html">detabber</a><span class="decoration">(r, tabSize)</span>
+									<a id="detabber" class="public" href="../std/string/detabber.html">detabber</a><span class="tableEntryAnnotation">(r, tabSize)</span>
 								</code>
 							</td>
 							<td>Replace each tab character in <code class="lang-d"><a href="../std/string/detabber.html#r"><span class="pln">r</span></a></code> with the number of spaces
     necessary to align the following character at the next tab stop.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="entab" class="public" href="../std/string/entab.html">entab</a><span class="decoration">(s, tabSize)</span>
+									<a id="entab" class="public" href="../std/string/entab.html">entab</a><span class="tableEntryAnnotation">(s, tabSize)</span>
 								</code>
 							</td>
 							<td>Replaces spaces in <code class="lang-d"><a href="../std/string/entab.html#s"><span class="pln">s</span></a></code> with the optimal number of tabs.
     All spaces and tabs at the end of a line are removed.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="entabber" class="public" href="../std/string/entabber.html">entabber</a><span class="decoration">(r, tabSize)</span>
+									<a id="entabber" class="public" href="../std/string/entabber.html">entabber</a><span class="tableEntryAnnotation">(r, tabSize)</span>
 								</code>
 							</td>
 							<td>Replaces spaces in range <code class="lang-d"><a href="../std/string/entabber.html#r"><span class="pln">r</span></a></code> with the optimal number of tabs.
     All spaces and tabs at the end of a line are removed.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fromStringz" class="public" href="../std/string/from_stringz.html">fromStringz</a><span class="decoration">(cString)</span>
+									<a id="fromStringz" class="public" href="../std/string/from_stringz.html">fromStringz</a><span class="tableEntryAnnotation">(cString)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="indexOf" class="public" href="../std/string/index_of.html">indexOf</a><span class="decoration">(s, c, cs)</span>
+									<a id="indexOf" class="public" href="../std/string/index_of.html">indexOf</a><span class="tableEntryAnnotation">(s, c, cs)</span>
 								</code>
 							</td>
 							<td>Searches for character in range.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="indexOf" class="public" href="../std/string/index_of.html">indexOf</a><span class="decoration">(s, sub)</span>
+									<a id="indexOf" class="public" href="../std/string/index_of.html">indexOf</a><span class="tableEntryAnnotation">(s, sub)</span>
 								</code>
 							</td>
 							<td>Searches for substring in <code class="lang-d"><a href="../std/string/index_of.html#s"><span class="pln">s</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="indexOfAny" class="public" href="../std/string/index_of_any.html">indexOfAny</a><span class="decoration">(haystack, needles, cs)</span>
+									<a id="indexOfAny" class="public" href="../std/string/index_of_any.html">indexOfAny</a><span class="tableEntryAnnotation">(haystack, needles, cs)</span>
 								</code>
 							</td>
 							<td>Returns the index of the first occurrence of any of the elements in <code class="lang-d"><span class="pln">    <a href="../std/string/index_of_any.html#needles"></span><span class="pln">needles</span></a></code> in <code class="lang-d"><a href="../std/string/index_of_any.html#haystack"><span class="pln">haystack</span></a></code>. If no element of <code class="lang-d"><a href="../std/string/index_of_any.html#needles"><span class="pln">needles</span></a></code> is found,
@@ -3238,22 +3301,28 @@ return it typed as a UTF string.
     does not represent a well formed codepoint, then a <code class="lang-d"><a href="../std/utf/utf_exception.html" title="std.utf.UTFException"><span class="typ">UTFException</span></a></code>
     may be thrown.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="indexOfNeither" class="public" href="../std/string/index_of_neither.html">indexOfNeither</a><span class="decoration">(haystack, needles, cs)</span>
+									<a id="indexOfNeither" class="public" href="../std/string/index_of_neither.html">indexOfNeither</a><span class="tableEntryAnnotation">(haystack, needles, cs)</span>
 								</code>
 							</td>
 							<td>Returns the index of the first occurrence of any character not an elements
     in <code class="lang-d"><a href="../std/string/index_of_neither.html#needles"><span class="pln">needles</span></a></code> in <code class="lang-d"><a href="../std/string/index_of_neither.html#haystack"><span class="pln">haystack</span></a></code>. If all element of <code class="lang-d"><a href="../std/string/index_of_neither.html#haystack"><span class="pln">haystack</span></a></code> are
     element of <code class="lang-d"><a href="../std/string/index_of_neither.html#needles"><span class="pln">needles</span></a></code> <code class="lang-d"><span class="pun">-</span><span class="lit">1</span></code> is returned.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isNumeric" class="public" href="../std/string/is_numeric.html">isNumeric</a><span class="decoration">(s, bAllowSep)</span>
+									<a id="isNumeric" class="public" href="../std/string/is_numeric.html">isNumeric</a><span class="tableEntryAnnotation">(s, bAllowSep)</span>
 								</code>
 							</td>
 							<td>Takes a string <code class="lang-d"><a href="../std/string/is_numeric.html#s"><span class="pln">s</span></a></code> and determines if it represents a number. This function
@@ -3263,27 +3332,36 @@ return it typed as a UTF string.
  of the conversion functions like <code class="lang-d"><span class="pln">to</span><span class="pun">!</span><span class="typ">int</span><span class="pun">()</span></code>, <code class="lang-d"><span class="pln">to</span><span class="pun">!</span><span class="typ">float</span><span class="pun">()</span></code>, and etc
  else an error will occur.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="lastIndexOf" class="public" href="../std/string/last_index_of.html">lastIndexOf</a><span class="decoration">(s, c, cs)</span>
+									<a id="lastIndexOf" class="public" href="../std/string/last_index_of.html">lastIndexOf</a><span class="tableEntryAnnotation">(s, c, cs)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="lastIndexOf" class="public" href="../std/string/last_index_of.html">lastIndexOf</a><span class="decoration">(s, sub, cs)</span>
+									<a id="lastIndexOf" class="public" href="../std/string/last_index_of.html">lastIndexOf</a><span class="tableEntryAnnotation">(s, sub, cs)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="lastIndexOfAny" class="public" href="../std/string/last_index_of_any.html">lastIndexOfAny</a><span class="decoration">(haystack, needles, cs)</span>
+									<a id="lastIndexOfAny" class="public" href="../std/string/last_index_of_any.html">lastIndexOfAny</a><span class="tableEntryAnnotation">(haystack, needles, cs)</span>
 								</code>
 							</td>
 							<td>Returns the index of the last occurrence of any of the elements in <code class="lang-d"><span class="pln">    <a href="../std/string/last_index_of_any.html#needles"></span><span class="pln">needles</span></a></code> in <code class="lang-d"><a href="../std/string/last_index_of_any.html#haystack"><span class="pln">haystack</span></a></code>. If no element of <code class="lang-d"><a href="../std/string/last_index_of_any.html#needles"><span class="pln">needles</span></a></code> is found,
@@ -3293,44 +3371,56 @@ return it typed as a UTF string.
     represent a well formed codepoint, then a <code class="lang-d"><a href="../std/utf/utf_exception.html" title="std.utf.UTFException"><span class="typ">UTFException</span></a></code> may be
     thrown.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="lastIndexOfNeither" class="public" href="../std/string/last_index_of_neither.html">lastIndexOfNeither</a><span class="decoration">(haystack, needles, cs)</span>
+									<a id="lastIndexOfNeither" class="public" href="../std/string/last_index_of_neither.html">lastIndexOfNeither</a><span class="tableEntryAnnotation">(haystack, needles, cs)</span>
 								</code>
 							</td>
 							<td>Returns the last index of the first occurence of any character that is not
     an elements in <code class="lang-d"><a href="../std/string/last_index_of_neither.html#needles"><span class="pln">needles</span></a></code> in <code class="lang-d"><a href="../std/string/last_index_of_neither.html#haystack"><span class="pln">haystack</span></a></code>. If all element of
     <code class="lang-d"><a href="../std/string/last_index_of_neither.html#haystack"><span class="pln">haystack</span></a></code> are element of <code class="lang-d"><a href="../std/string/last_index_of_neither.html#needles"><span class="pln">needles</span></a></code> <code class="lang-d"><span class="pun">-</span><span class="lit">1</span></code> is returned.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="leftJustifier" class="public" href="../std/string/left_justifier.html">leftJustifier</a><span class="decoration">(r, width, fillChar)</span>
+									<a id="leftJustifier" class="public" href="../std/string/left_justifier.html">leftJustifier</a><span class="tableEntryAnnotation">(r, width, fillChar)</span>
 								</code>
 							</td>
 							<td>Left justify <code class="lang-d"><span class="pln">s</span></code> in a field <code class="lang-d"><a href="../std/string/left_justifier.html#width"><span class="pln">width</span></a></code> characters wide. <code class="lang-d"><a href="../std/string/left_justifier.html#fillChar"><span class="pln">fillChar</span></a></code>
     is the character that will be used to fill up the space in the field that
     <code class="lang-d"><span class="pln">s</span></code> doesn't fill.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="leftJustify" class="public" href="../std/string/left_justify.html">leftJustify</a><span class="decoration">(s, width, fillChar)</span>
+									<a id="leftJustify" class="public" href="../std/string/left_justify.html">leftJustify</a><span class="tableEntryAnnotation">(s, width, fillChar)</span>
 								</code>
 							</td>
 							<td>Left justify <code class="lang-d"><a href="../std/string/left_justify.html#s"><span class="pln">s</span></a></code> in a field <code class="lang-d"><a href="../std/string/left_justify.html#width"><span class="pln">width</span></a></code> characters wide. <code class="lang-d"><a href="../std/string/left_justify.html#fillChar"><span class="pln">fillChar</span></a></code>
     is the character that will be used to fill up the space in the field that
     <code class="lang-d"><a href="../std/string/left_justify.html#s"><span class="pln">s</span></a></code> doesn't fill.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="lineSplitter" class="public" href="../std/string/line_splitter.html">lineSplitter</a><span class="decoration">(r)</span>
+									<a id="lineSplitter" class="public" href="../std/string/line_splitter.html">lineSplitter</a><span class="tableEntryAnnotation">(r)</span>
 								</code>
 							</td>
 							<td>Split an array or slicable range of characters into a range of lines
@@ -3339,101 +3429,131 @@ return it typed as a UTF string.
     as delimiters. If <code class="lang-d"><span class="pln">keepTerm</span></code> is set to <code class="lang-d"><span class="typ">Yes<wbr/></span><span class="pun">.</span><span class="pln">keepTerminator</span></code>, then the
     delimiter is included in the slices returned.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="makeTrans" class="public" href="../std/string/make_trans.html">makeTrans</a><span class="decoration">(from, to)</span>
+									<a id="makeTrans" class="public" href="../std/string/make_trans.html">makeTrans</a><span class="tableEntryAnnotation">(from, to)</span>
 								</code>
 							</td>
 							<td>Do same thing as <code class="lang-d"><a href="../std/string/make_trans_table.html"><span class="pln">makeTransTable</span></a></code> but allocate the translation table
  on the GC heap.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="makeTransTable" class="public" href="../std/string/make_trans_table.html">makeTransTable</a><span class="decoration">(from, to)</span>
+									<a id="makeTransTable" class="public" href="../std/string/make_trans_table.html">makeTransTable</a><span class="tableEntryAnnotation">(from, to)</span>
 								</code>
 							</td>
 							<td>Construct 256 character translation table, where characters in from[] are replaced
  by corresponding characters in to[].
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="outdent" class="public" href="../std/string/outdent.html">outdent</a><span class="decoration">(str)</span>
+									<a id="outdent" class="public" href="../std/string/outdent.html">outdent</a><span class="tableEntryAnnotation">(str)</span>
 								</code>
 							</td>
 							<td>Removes one level of indentation from a multi-line string.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="outdent" class="public" href="../std/string/outdent.html">outdent</a><span class="decoration">(lines)</span>
+									<a id="outdent" class="public" href="../std/string/outdent.html">outdent</a><span class="tableEntryAnnotation">(lines)</span>
 								</code>
 							</td>
 							<td>Removes one level of indentation from an array of single-line strings.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="representation" class="public" href="../std/string/representation.html">representation</a><span class="decoration">(s)</span>
+									<a id="representation" class="public" href="../std/string/representation.html">representation</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Returns the representation of a string, which has the same type
  as the string except the character type is replaced by <code class="lang-d"><span class="typ">ubyte</span></code>,
  <code class="lang-d"><span class="typ">ushort</span></code>, or <code class="lang-d"><span class="typ">uint</span></code> depending on the character width.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rightJustifier" class="public" href="../std/string/right_justifier.html">rightJustifier</a><span class="decoration">(r, width, fillChar)</span>
+									<a id="rightJustifier" class="public" href="../std/string/right_justifier.html">rightJustifier</a><span class="tableEntryAnnotation">(r, width, fillChar)</span>
 								</code>
 							</td>
 							<td>Right justify <code class="lang-d"><span class="pln">s</span></code> in a field <code class="lang-d"><a href="../std/string/right_justifier.html#width"><span class="pln">width</span></a></code> characters wide. <code class="lang-d"><a href="../std/string/right_justifier.html#fillChar"><span class="pln">fillChar</span></a></code>
     is the character that will be used to fill up the space in the field that
     <code class="lang-d"><span class="pln">s</span></code> doesn't fill.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rightJustify" class="public" href="../std/string/right_justify.html">rightJustify</a><span class="decoration">(s, width, fillChar)</span>
+									<a id="rightJustify" class="public" href="../std/string/right_justify.html">rightJustify</a><span class="tableEntryAnnotation">(s, width, fillChar)</span>
 								</code>
 							</td>
 							<td>Right justify <code class="lang-d"><a href="../std/string/right_justify.html#s"><span class="pln">s</span></a></code> in a field <code class="lang-d"><a href="../std/string/right_justify.html#width"><span class="pln">width</span></a></code> characters wide. <code class="lang-d"><a href="../std/string/right_justify.html#fillChar"><span class="pln">fillChar</span></a></code>
     is the character that will be used to fill up the space in the field that
     <code class="lang-d"><a href="../std/string/right_justify.html#s"><span class="pln">s</span></a></code> doesn't fill.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="soundex" class="public" href="../std/string/soundex.html">soundex</a><span class="decoration">(str, buffer)</span>
+									<a id="soundex" class="public" href="../std/string/soundex.html">soundex</a><span class="tableEntryAnnotation">(str, buffer)</span>
 								</code>
 							</td>
 							<td>Like <code class="lang-d"><a href="../std/string/soundexer.html"><span class="pln">soundexer</span></a></code>, but with different parameters
  and return value.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="soundexer" class="public" href="../std/string/soundexer.html">soundexer</a><span class="decoration">(str)</span>
+									<a id="soundexer" class="public" href="../std/string/soundexer.html">soundexer</a><span class="tableEntryAnnotation">(str)</span>
 								</code>
 							</td>
 							<td>Soundex algorithm.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="splitLines" class="public" href="../std/string/split_lines.html">splitLines</a><span class="decoration">(s, keepTerm)</span>
+									<a id="splitLines" class="public" href="../std/string/split_lines.html">splitLines</a><span class="tableEntryAnnotation">(s, keepTerm)</span>
 								</code>
 							</td>
 							<td>Split <code class="lang-d"><a href="../std/string/split_lines.html#s"><span class="pln">s</span></a></code> into an array of lines according to the unicode standard using
@@ -3442,41 +3562,53 @@ return it typed as a UTF string.
     as delimiters. If <code class="lang-d"><a href="../std/string/split_lines.html#keepTerm"><span class="pln">keepTerm</span></a></code> is set to <code class="lang-d"><span class="typ">KeepTerminator<wbr/></span><span class="pun">.</span><span class="pln">yes</span></code>, then the
     delimiter is included in the strings returned.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="strip" class="public" href="../std/string/strip.html">strip</a><span class="decoration">(str)</span>
+									<a id="strip" class="public" href="../std/string/strip.html">strip</a><span class="tableEntryAnnotation">(str)</span>
 								</code>
 							</td>
 							<td>Strips both leading and trailing whitespace (as defined by
     <code class="lang-d"><a href="../std/uni/is_white.html" title="std.uni.isWhite"><span class="pln">isWhite</span></a></code>) or as specified in the second argument.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="stripLeft" class="public" href="../std/string/strip_left.html">stripLeft</a><span class="decoration">(input)</span>
+									<a id="stripLeft" class="public" href="../std/string/strip_left.html">stripLeft</a><span class="tableEntryAnnotation">(input)</span>
 								</code>
 							</td>
 							<td>Strips leading whitespace (as defined by <code class="lang-d"><a href="../std/uni/is_white.html" title="std.uni.isWhite"><span class="pln">isWhite</span></a></code>) or
     as specified in the second argument.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="stripRight" class="public" href="../std/string/strip_right.html">stripRight</a><span class="decoration">(str)</span>
+									<a id="stripRight" class="public" href="../std/string/strip_right.html">stripRight</a><span class="tableEntryAnnotation">(str)</span>
 								</code>
 							</td>
 							<td>Strips trailing whitespace (as defined by <code class="lang-d"><a href="../std/uni/is_white.html" title="std.uni.isWhite"><span class="pln">isWhite</span></a></code>) or
     as specified in the second argument.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="succ" class="public" href="../std/string/succ.html">succ</a><span class="decoration">(s)</span>
+									<a id="succ" class="public" href="../std/string/succ.html">succ</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Return string that is the 'successor' to s[].
@@ -3484,29 +3616,38 @@ return it typed as a UTF string.
  its case or digits. If it generates a carry, the process is
  repeated with the one to its immediate left.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toStringz" class="public" href="../std/string/to_stringz.html">toStringz</a><span class="decoration">(s)</span>
+									<a id="toStringz" class="public" href="../std/string/to_stringz.html">toStringz</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="tr" class="public" href="../std/string/tr.html">tr</a><span class="decoration">(str, from, to, modifiers)</span>
+									<a id="tr" class="public" href="../std/string/tr.html">tr</a><span class="tableEntryAnnotation">(str, from, to, modifiers)</span>
 								</code>
 							</td>
 							<td>Replaces the characters in <code class="lang-d"><a href="../std/string/tr.html#str"><span class="pln">str</span></a></code> which are in <code class="lang-d"><a href="../std/string/tr.html#from"><span class="pln">from</span></a></code> with the
     the corresponding characters in <code class="lang-d"><a href="../std/string/tr.html#to"><span class="pln">to</span></a></code> and returns the resulting string.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="translate" class="public" href="../std/string/translate.html">translate</a><span class="decoration">(str, transTable, toRemove)</span>
+									<a id="translate" class="public" href="../std/string/translate.html">translate</a><span class="tableEntryAnnotation">(str, transTable, toRemove)</span>
 								</code>
 							</td>
 							<td>Replaces the characters in <code class="lang-d"><a href="../std/string/translate.html#str"><span class="pln">str</span></a></code> which are keys in <code class="lang-d"><a href="../std/string/translate.html#transTable"><span class="pln">transTable</span></a></code> with
@@ -3516,44 +3657,59 @@ return it typed as a UTF string.
     removed from <code class="lang-d"><a href="../std/string/translate.html#str"><span class="pln">str</span></a></code> prior to translation. <code class="lang-d"><a href="../std/string/translate.html#str"><span class="pln">str</span></a></code> itself is unaltered.
     A copy with the changes is returned.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="translate" class="public" href="../std/string/translate.html">translate</a><span class="decoration">(str, transTable, toRemove, buffer)</span>
+									<a id="translate" class="public" href="../std/string/translate.html">translate</a><span class="tableEntryAnnotation">(str, transTable, toRemove, buffer)</span>
 								</code>
 							</td>
 							<td>This is an overload of <code class="lang-d"><a href="../std/string/translate.html"><span class="pln">translate</span></a></code> which takes an existing buffer to write the contents to.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="translate" class="public" href="../std/string/translate.html">translate</a><span class="decoration">(str, transTable, toRemove)</span>
+									<a id="translate" class="public" href="../std/string/translate.html">translate</a><span class="tableEntryAnnotation">(str, transTable, toRemove)</span>
 								</code>
 							</td>
 							<td>This is an <i><span class="red">ASCII-only</span></i> overload of <code class="lang-d"><a href="../std/string/translate.html"><span class="pln">translate</span></a></code>. It
     will <i>not</i> work with Unicode. It exists as an optimization for the
     cases where Unicode processing is not necessary.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="translate" class="public" href="../std/string/translate.html">translate</a><span class="decoration">(str, transTable, toRemove, buffer)</span>
+									<a id="translate" class="public" href="../std/string/translate.html">translate</a><span class="tableEntryAnnotation">(str, transTable, toRemove, buffer)</span>
 								</code>
 							</td>
 							<td>This is an <i><span class="red">ASCII-only</span></i> overload of <code class="lang-d"><a href="../std/string/translate.html"><span class="pln">translate</span></a></code> which takes an existing buffer to write the contents to.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wrap" class="public" href="../std/string/wrap.html">wrap</a><span class="decoration">(s, columns, firstindent, indent, tabsize)</span>
+									<a id="wrap" class="public" href="../std/string/wrap.html">wrap</a><span class="tableEntryAnnotation">(s, columns, firstindent, indent, tabsize)</span>
 								</code>
 							</td>
 							<td>Wrap text into a paragraph.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3562,7 +3718,7 @@ return it typed as a UTF string.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3572,6 +3728,8 @@ return it typed as a UTF string.
 							</td>
 							<td>Exception thrown on errors in std.string functions.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3603,10 +3761,10 @@ return it typed as a UTF string.
 							<td>
 								<code class="prettyprint lang-d"><a href="../std/typecons/flag.html"><span class="typ">Flag</span></a>!("keepTerminator")</code>
 							</td>
-							<td>Split <code class="lang-d"><a href="../std/string/split_lines.html#s"><span class="pln">s</span></a></code> into an array of lines according to the unicode standard using
+							<td>Split <code class="lang-d"><span class="pln">s</span></code> into an array of lines according to the unicode standard using
     <code class="lang-d"><span class="str">'\r'</span></code>, <code class="lang-d"><span class="str">'\n'</span></code>, <code class="lang-d"><span class="str">"\r\n"</span></code>, <code class="lang-d"><a href="../std/uni/line_sep.html" title="std.uni.lineSep"><span class="pln">lineSep</span></a></code>,
     <code class="lang-d"><a href="../std/uni/para_sep.html" title="std.uni.paraSep"><span class="pln">paraSep</span></a></code>, <code class="lang-d"><span class="pln">U</span><span class="pun">+</span><span class="lit">0085</span></code> (NEL), <code class="lang-d"><span class="str">'\v'</span></code>  and <code class="lang-d"><span class="str">'\f'</span></code>
-    as delimiters. If <code class="lang-d"><a href="../std/string/split_lines.html#keepTerm"><span class="pln">keepTerm</span></a></code> is set to <code class="lang-d"><span class="typ"><span class="typ">KeepTerminator</span><wbr/></span><span class="pun">.</span><span class="pln">yes</span></code>, then the
+    as delimiters. If <code class="lang-d"><span class="pln">keepTerm</span></code> is set to <code class="lang-d"><span class="typ">KeepTerminator<wbr/></span><span class="pun">.</span><span class="pln">yes</span></code>, then the
     delimiter is included in the strings returned.
 </td>
 						</tr>

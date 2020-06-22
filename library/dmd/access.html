@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2958,52 +2973,64 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="checkAccess" class="public" href="../dmd/access/check_access.html">checkAccess</a><span class="decoration">(ad, loc, sc, smember)</span>
+									<a id="checkAccess" class="public" href="../dmd/access/check_access.html">checkAccess</a><span class="tableEntryAnnotation">(ad, loc, sc, smember)</span>
 								</code>
 							</td>
 							<td>Do access check for member of this class, this class being the
  type of the 'this' pointer used to access smember.
  Returns true if the member is not accessible.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="checkAccess" class="public" href="../dmd/access/check_access.html">checkAccess</a><span class="decoration">(loc, sc, e, d)</span>
+									<a id="checkAccess" class="public" href="../dmd/access/check_access.html">checkAccess</a><span class="tableEntryAnnotation">(loc, sc, e, d)</span>
 								</code>
 							</td>
 							<td>Check access to d for expression e.d
  Returns true if the declaration is not accessible.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="checkAccess" class="public" href="../dmd/access/check_access.html">checkAccess</a><span class="decoration">(sc, p)</span>
+									<a id="checkAccess" class="public" href="../dmd/access/check_access.html">checkAccess</a><span class="tableEntryAnnotation">(sc, p)</span>
 								</code>
 							</td>
 							<td>Check access to package/module <code class="lang-d"><a href="../dmd/access/check_access.html#p"><span class="pln">p</span></a></code> from scope <code class="lang-d"><a href="../dmd/access/check_access.html#sc"><span class="pln">sc</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="checkSymbolAccess" class="public" href="../dmd/access/check_symbol_access.html">checkSymbolAccess</a><span class="decoration">(sc, s)</span>
+									<a id="checkSymbolAccess" class="public" href="../dmd/access/check_symbol_access.html">checkSymbolAccess</a><span class="tableEntryAnnotation">(sc, s)</span>
 								</code>
 							</td>
 							<td>Check if a symbol is visible from a given scope without taking
  into account the most visible overload.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="mostVisibleOverload" class="public" href="../dmd/access/most_visible_overload.html">mostVisibleOverload</a><span class="decoration">(s, mod)</span>
+									<a id="mostVisibleOverload" class="public" href="../dmd/access/most_visible_overload.html">mostVisibleOverload</a><span class="tableEntryAnnotation">(s, mod)</span>
 								</code>
 							</td>
 							<td>Use the most visible overload to check visibility. Later perform an access
@@ -3011,34 +3038,46 @@ $('#symbolSearchPane').show();</script>
  but doesn't recurse nor resolve aliases because protection/visibility is an
  attribute of the alias not the aliasee.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="symbolIsVisible" class="public" href="../dmd/access/symbol_is_visible.html">symbolIsVisible</a><span class="decoration">(mod, s)</span>
+									<a id="symbolIsVisible" class="public" href="../dmd/access/symbol_is_visible.html">symbolIsVisible</a><span class="tableEntryAnnotation">(mod, s)</span>
 								</code>
 							</td>
 							<td>Check whether symbols <code class="lang-d"><a href="../dmd/access/symbol_is_visible.html#s"><span class="pln">s</span></a></code> is visible in <code class="lang-d"><a href="../dmd/access/symbol_is_visible.html#mod"><span class="pln">mod</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="symbolIsVisible" class="public" href="../dmd/access/symbol_is_visible.html">symbolIsVisible</a><span class="decoration">(origin, s)</span>
+									<a id="symbolIsVisible" class="public" href="../dmd/access/symbol_is_visible.html">symbolIsVisible</a><span class="tableEntryAnnotation">(origin, s)</span>
 								</code>
 							</td>
 							<td>Same as above, but determines the lookup module from symbols <code class="lang-d"><a href="../dmd/access/symbol_is_visible.html#origin"><span class="pln">origin</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="symbolIsVisible" class="public" href="../dmd/access/symbol_is_visible.html">symbolIsVisible</a><span class="decoration">(sc, s)</span>
+									<a id="symbolIsVisible" class="public" href="../dmd/access/symbol_is_visible.html">symbolIsVisible</a><span class="tableEntryAnnotation">(sc, s)</span>
 								</code>
 							</td>
 							<td>Same as above but also checks for protected symbols visible from scope <code class="lang-d"><a href="../dmd/access/symbol_is_visible.html#sc"><span class="pln">sc</span></a></code>.
  Used for qualified name lookup.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

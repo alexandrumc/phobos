@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2968,70 +2983,91 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="adds" class="public" href="../core/checkedint/adds.html">adds</a><span class="decoration">(x, y, overflow)</span>
+									<a id="adds" class="public" href="../core/checkedint/adds.html">adds</a><span class="tableEntryAnnotation">(x, y, overflow)</span>
 								</code>
 							</td>
 							<td>Add two signed integers, checking for overflow.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="addu" class="public" href="../core/checkedint/addu.html">addu</a><span class="decoration">(x, y, overflow)</span>
+									<a id="addu" class="public" href="../core/checkedint/addu.html">addu</a><span class="tableEntryAnnotation">(x, y, overflow)</span>
 								</code>
 							</td>
 							<td>Add two unsigned integers, checking for overflow (aka carry).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="muls" class="public" href="../core/checkedint/muls.html">muls</a><span class="decoration">(x, y, overflow)</span>
+									<a id="muls" class="public" href="../core/checkedint/muls.html">muls</a><span class="tableEntryAnnotation">(x, y, overflow)</span>
 								</code>
 							</td>
 							<td>Multiply two signed integers, checking for overflow.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="mulu" class="public" href="../core/checkedint/mulu.html">mulu</a><span class="decoration">(x, y, overflow)</span>
+									<a id="mulu" class="public" href="../core/checkedint/mulu.html">mulu</a><span class="tableEntryAnnotation">(x, y, overflow)</span>
 								</code>
 							</td>
 							<td>Multiply two unsigned integers, checking for overflow (aka carry).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="negs" class="public" href="../core/checkedint/negs.html">negs</a><span class="decoration">(x, overflow)</span>
+									<a id="negs" class="public" href="../core/checkedint/negs.html">negs</a><span class="tableEntryAnnotation">(x, overflow)</span>
 								</code>
 							</td>
 							<td>Negate an integer.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="subs" class="public" href="../core/checkedint/subs.html">subs</a><span class="decoration">(x, y, overflow)</span>
+									<a id="subs" class="public" href="../core/checkedint/subs.html">subs</a><span class="tableEntryAnnotation">(x, y, overflow)</span>
 								</code>
 							</td>
 							<td>Subtract two signed integers, checking for overflow.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="subu" class="public" href="../core/checkedint/subu.html">subu</a><span class="decoration">(x, y, overflow)</span>
+									<a id="subu" class="public" href="../core/checkedint/subu.html">subu</a><span class="tableEntryAnnotation">(x, y, overflow)</span>
 								</code>
 							</td>
 							<td>Subtract two unsigned integers, checking for overflow (aka borrow).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

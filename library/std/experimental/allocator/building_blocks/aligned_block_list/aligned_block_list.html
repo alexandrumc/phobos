@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,10 +2952,10 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Struct <code><a href="../../../../../std/experimental/allocator/building_blocks/aligned_block_list.html">std.experimental.allocator.building_blocks.aligned_block_list</a>.AlignedBlockList</code></h1><p><code class="lang-d"><span class="typ"><span class="typ">AlignedBlockList</span></span></code> represents a wrapper around a chain of allocators, allowing for fast deallocations
+				</div><h1>Struct <code><a href="../../../../../std/experimental/allocator/building_blocks/aligned_block_list.html">std.experimental.allocator.building_blocks.aligned_block_list</a>.AlignedBlockList</code></h1><p><code class="lang-d"><span class="typ">AlignedBlockList</span></code> represents a wrapper around a chain of allocators, allowing for fast deallocations
 and preserving a low degree of fragmentation.
 The allocator holds internally a doubly linked list of <code class="lang-d"><span class="typ">Allocator</span></code> objects, which will serve allocations
-in a most-recently-used fashion. Most recent allocators used for <code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/aligned_block_list/aligned_block_list.allocate.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/aligned_block_list/aligned_block_list.allocate.html"><span class="pln">allocate</span></a></span></a></code> calls, will be
+in a most-recently-used fashion. Most recent allocators used for <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/aligned_block_list/aligned_block_list.allocate.html"><span class="pln">allocate</span></a></code> calls, will be
 moved to the front of the list.
 </p>
 				<div class="prototype">
@@ -2969,6 +2984,7 @@ done by <code class="lang-d"><span class="typ">ParentAllocator</span></code> wil
 								<a href="../../../../../std/experimental/allocator/building_blocks/aligned_block_list/aligned_block_list.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
 							<td>Returns a chunk of memory of size <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/aligned_block_list/aligned_block_list.allocate.html#n"><span class="pln">n</span></a></code>
         It finds the first node in the <code class="lang-d"><span class="typ">AlignedBlockNode</span></code> list which has available memory,
@@ -2980,6 +2996,7 @@ done by <code class="lang-d"><span class="typ">ParentAllocator</span></code> wil
 								<a href="../../../../../std/experimental/allocator/building_blocks/aligned_block_list/aligned_block_list.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>Deallocates the buffer <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/aligned_block_list/aligned_block_list.deallocate.html#b"><span class="pln">b</span></a></code> given as parameter. Deallocations take place in constant
         time, regardless of the number of nodes in the list. <code class="lang-d"><span class="pln">b<wbr/></span><span class="pun">.</span><span class="pln">ptr</span></code> is rounded down
@@ -2992,6 +3009,7 @@ done by <code class="lang-d"><span class="typ">ParentAllocator</span></code> wil
 								<a href="../../../../../std/experimental/allocator/building_blocks/aligned_block_list/aligned_block_list.owns.html" class="public">
 									<code>owns</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>Returns <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">yes</span></code> if the buffer belongs to the parent allocator and
         <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">no</span></code> otherwise.

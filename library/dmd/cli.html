@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2958,26 +2973,32 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="capitalize" class="public" href="../dmd/cli/capitalize.html">capitalize</a><span class="decoration">(w)</span>
+									<a id="capitalize" class="public" href="../dmd/cli/capitalize.html">capitalize</a><span class="tableEntryAnnotation">(w)</span>
 								</code>
 							</td>
 							<td>Capitalize a the first character of a ASCII string.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isCurrentTargetOS" class="public" href="../dmd/cli/is_current_target_os.html">isCurrentTargetOS</a><span class="decoration">(os)</span>
+									<a id="isCurrentTargetOS" class="public" href="../dmd/cli/is_current_target_os.html">isCurrentTargetOS</a><span class="tableEntryAnnotation">(os)</span>
 								</code>
 							</td>
 							<td>Checks whether <code class="lang-d"><a href="../dmd/cli/is_current_target_os.html#os"><span class="pln">os</span></a></code> is the current <code class="lang-d"><a href="../dmd/cli/target_os.html"><span class="typ">TargetOS</span></a></code>.
 For <code class="lang-d"><span class="typ">TargetOS<wbr/></span><span class="pun">.</span><span class="pln">all</span></code> it will always return true.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -2986,7 +3007,7 @@ For <code class="lang-d"><span class="typ">TargetOS<wbr/></span><span class="pun
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -2996,6 +3017,8 @@ For <code class="lang-d"><span class="typ">TargetOS<wbr/></span><span class="pun
 							</td>
 							<td>Formats the <code class="lang-d"><span class="typ">Options</span></code> for CLI printing.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3005,6 +3028,8 @@ For <code class="lang-d"><span class="typ">TargetOS<wbr/></span><span class="pun
 							</td>
 							<td>Contains all available CLI <code class="lang-d"><a href="../dmd/cli/usage.option.html"><span class="typ">Usage<wbr/></span><span class="pun">.</span><span class="typ">Option</span></a></code>s.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3013,7 +3038,7 @@ For <code class="lang-d"><span class="typ">TargetOS<wbr/></span><span class="pun
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3023,6 +3048,8 @@ For <code class="lang-d"><span class="typ">TargetOS<wbr/></span><span class="pun
 							</td>
 							<td>Bit decoding of the TargetOS
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

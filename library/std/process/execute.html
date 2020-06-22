@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2943,7 +2958,7 @@ code and output.
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a>!(int,"status",string,"output") <span class="pln">execute</span>
+				<a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a>!(int,"status",string,"output") <span class="pln">execute</span>
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="kwd">scope </span><span class="kwd">const</span><span class="pun">(</span><span class="typ">char</span><span class="pun">[]</span><span class="pun">)</span><span class="pun">[]</span> <span class="pln">args</span><span class="pun">,</span>
@@ -2959,7 +2974,7 @@ code and output.
 				<span class="pun">)</span><span class="pln"> </span><span class="kwd">@trusted</span><span class="pun">;</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a>!(int,"status",string,"output") <span class="pln">execute</span>
+				<a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a>!(int,"status",string,"output") <span class="pln">execute</span>
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="kwd">scope </span><span class="kwd">const</span><span class="pun">(</span><span class="typ">char</span><span class="pun">)</span><span class="pun">[]</span> <span class="pln">program</span><span class="pun">,</span>
@@ -2976,7 +2991,7 @@ code and output.
 						</div>
 					</code>
 				</div>
-				<section><p><code class="lang-d"><a href="../../std/process/execute.html"><span class="pln"><span class="pln">execute</span></span></a></code> and <code class="lang-d"><span class="pln"><a href="../../std/process/execute_shell.html"><span class="pln">executeShell</span></a></span></code> start a new process using
+				<section><p><code class="lang-d"><span class="pln">execute</span></code> and <code class="lang-d"><a href="../../std/process/execute_shell.html"><span class="pln">executeShell</span></a></code> start a new process using
 <code class="lang-d"><a href="../../std/process/spawn_process.html"><span class="pln">spawnProcess</span></a></code> and <code class="lang-d"><a href="../../std/process/spawn_shell.html"><span class="pln">spawnShell</span></a></code>, respectively, and wait
 for the process to complete before returning.  The functions capture
 what the child process prints to both its standard output and
@@ -2989,7 +3004,7 @@ standard error streams, and return this together with its exit code.
 </span><span class="kwd">if </span><span class="pun">(</span><span class="pln">ls<wbr/></span><span class="pun">.</span><span class="pln">status </span><span class="pun">!= </span><span class="lit">0</span><span class="pun">) </span><span class="pln">writeln</span><span class="pun">(</span><span class="str">"Failed to retrieve file listing"</span><span class="pun">);
 </span><span class="kwd">else </span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">ls<wbr/></span><span class="pun">.</span><span class="pln">output</span><span class="pun">);</span></code></pre>
 
-<p>The <code class="lang-d"><span class="pln"><a href="../../std/process/execute.html#args"><span class="pln">args</span></a></span></code>/<code class="lang-d"><span class="pln"><a href="../../std/process/execute.html#program"><span class="pln">program</span></a></span></code>/<code class="lang-d"><a href="../../std/process/execute_shell.html#command"><span class="pln">command</span></a></code>, <code class="lang-d"><a href="../../std/process/execute_shell.html#env"><span class="pln"><a href="../../std/process/execute.html#env"><span class="pln">env</span></a></span></a></code> and <code class="lang-d"><a href="../../std/process/execute_shell.html#config"><span class="pln"><a href="../../std/process/execute.html#config"><span class="pln">config</span></a></span></a></code>
+<p>The <code class="lang-d"><a href="../../std/process/execute.html#args"><span class="pln">args</span></a></code>/<code class="lang-d"><a href="../../std/process/execute.html#program"><span class="pln">program</span></a></code>/<code class="lang-d"><span class="pln">command</span></code>, <code class="lang-d"><a href="../../std/process/execute.html#env"><span class="pln">env</span></a></code> and <code class="lang-d"><a href="../../std/process/execute.html#config"><span class="pln">config</span></a></code>
 parameters are forwarded straight to the underlying spawn functions,
 and we refer to their documentation for details.
 </p>

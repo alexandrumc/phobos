@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2955,143 +2970,95 @@ original C header.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="asctime" class="public" href="../../core/stdc/time/asctime.html">asctime</a><span class="decoration">(timeptr)</span>
+									<a id="asctime" class="public" href="../../core/stdc/time/asctime.html">asctime</a><span class="tableEntryAnnotation">(timeptr)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="clock" class="public" href="../../core/stdc/time/clock.html">clock</a><span class="decoration">()</span>
+									<a id="ctime" class="public" href="../../core/stdc/time/ctime.html">ctime</a><span class="tableEntryAnnotation">(timer)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="ctime" class="public" href="../../core/stdc/time/ctime.html">ctime</a><span class="decoration">(timer)</span>
+									<a id="difftime" class="public" href="../../core/stdc/time/difftime.html">difftime</a><span class="tableEntryAnnotation">(time1, time0)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="difftime" class="public" href="../../core/stdc/time/difftime.html">difftime</a><span class="decoration">(time1, time0)</span>
+									<a id="gmtime" class="public" href="../../core/stdc/time/gmtime.html">gmtime</a><span class="tableEntryAnnotation">(timer)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="gmtime" class="public" href="../../core/stdc/time/gmtime.html">gmtime</a><span class="decoration">(timer)</span>
+									<a id="localtime" class="public" href="../../core/stdc/time/localtime.html">localtime</a><span class="tableEntryAnnotation">(timer)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="localtime" class="public" href="../../core/stdc/time/localtime.html">localtime</a><span class="decoration">(timer)</span>
+									<a id="mktime" class="public" href="../../core/stdc/time/mktime.html">mktime</a><span class="tableEntryAnnotation">(timeptr)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="mktime" class="public" href="../../core/stdc/time/mktime.html">mktime</a><span class="decoration">(timeptr)</span>
+									<a id="strftime" class="public" href="../../core/stdc/time/strftime.html">strftime</a><span class="tableEntryAnnotation">(s, maxsize, format, timeptr)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="strftime" class="public" href="../../core/stdc/time/strftime.html">strftime</a><span class="decoration">(s, maxsize, format, timeptr)</span>
+									<a id="time" class="public" href="../../core/stdc/time/time.html">time</a><span class="tableEntryAnnotation">(timer)</span>
 								</code>
 							</td>
 							<td></td>
-						</tr>
-						<tr>
 							<td>
-								<code>
-									<a id="time" class="public" href="../../core/stdc/time/time.html">time</a><span class="decoration">(timer)</span>
-								</code>
+								<fd class="canBeNogc"></fd>
 							</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>
-								<code>
-									<a id="tzset" class="public" href="../../core/stdc/time/tzset.html">tzset</a><span class="decoration">()</span>
-								</code>
-							</td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section>
-					<h2>Structs</h2>
-					<table>
-						<col class="caption"/>
-						<tr>
-							<th>Name</th><th>Description</th>
-						</tr>
-						<tr>
-							<td>
-								<code>
-									<a id="tm" class="public" href="../../core/stdc/time/tm.html">tm</a>
-								</code>
-							</td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section>
-					<h2>Manifest constants</h2>
-					<table>
-						<col class="caption"/>
-						<tr>
-							<th>Name</th><th>Type</th><th>Description</th>
-						</tr>
-						<tr>
-							<td>
-								<a id="CLOCKS_PER_SEC" class="public" href="../../core/stdc/time/clock_s_pe_r_sec.html">
-									<code>CLOCKS_PER_SEC</code>
-								</a>
-							</td>
-							<td>
-							</td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section>
-					<h2>Global variables</h2>
-					<table>
-						<col class="caption"/>
-						<tr>
-							<th>Name</th><th>Type</th><th>Description</th>
-						</tr>
-						<tr>
-							<td>
-								<a id="tzname" class="public" href="../../core/stdc/time/tzname.html">
-									<code>tzname</code>
-								</a>
-							</td>
-							<td>
-								<code class="prettyprint lang-d"><span class="kwd">const</span><span class="pun">(</span><span class="typ">char</span><span class="pun">)</span><span class="pun">*</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]</span></code>
-							</td>
-							<td></td>
 						</tr>
 					</table>
 				</section>

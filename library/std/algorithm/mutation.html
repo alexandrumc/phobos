@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2988,12 +3003,12 @@ It contains generic mutation algorithms.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="bringToFront" class="public" href="../../std/algorithm/mutation/bring_to_front.html">bringToFront</a><span class="decoration">(front, back)</span>
+									<a id="bringToFront" class="public" href="../../std/algorithm/mutation/bring_to_front.html">bringToFront</a><span class="tableEntryAnnotation">(front, back)</span>
 								</code>
 							</td>
 							<td><code class="lang-d"><span class="pln">bringToFront</span></code> takes two ranges <code class="lang-d"><a href="../../std/algorithm/mutation/bring_to_front.html#front"><span class="pln">front</span></a></code> and <code class="lang-d"><a href="../../std/algorithm/mutation/bring_to_front.html#back"><span class="pln">back</span></a></code>, which may
@@ -3003,113 +3018,146 @@ range such that all elements in <code class="lang-d"><a href="../../std/algorith
 of the unified range. The relative ordering of elements in <code class="lang-d"><a href="../../std/algorithm/mutation/bring_to_front.html#front"><span class="pln">front</span></a></code>
 and <code class="lang-d"><a href="../../std/algorithm/mutation/bring_to_front.html#back"><span class="pln">back</span></a></code>, respectively, remains unchanged.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="copy" class="public" href="../../std/algorithm/mutation/copy.html">copy</a><span class="decoration">(source, target)</span>
+									<a id="copy" class="public" href="../../std/algorithm/mutation/copy.html">copy</a><span class="tableEntryAnnotation">(source, target)</span>
 								</code>
 							</td>
 							<td>Copies the content of <code class="lang-d"><a href="../../std/algorithm/mutation/copy.html#source"><span class="pln">source</span></a></code> into <code class="lang-d"><a href="../../std/algorithm/mutation/copy.html#target"><span class="pln">target</span></a></code> and returns the
 remaining (unfilled) part of <code class="lang-d"><a href="../../std/algorithm/mutation/copy.html#target"><span class="pln">target</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fill" class="public" href="../../std/algorithm/mutation/fill.html">fill</a><span class="decoration">(range, value)</span>
+									<a id="fill" class="public" href="../../std/algorithm/mutation/fill.html">fill</a><span class="tableEntryAnnotation">(range, value)</span>
 								</code>
 							</td>
 							<td>Assigns <code class="lang-d"><a href="../../std/algorithm/mutation/fill.html#value"><span class="pln">value</span></a></code> to each element of input range <code class="lang-d"><a href="../../std/algorithm/mutation/fill.html#range"><span class="pln">range</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="initializeAll" class="public" href="../../std/algorithm/mutation/initialize_all.html">initializeAll</a><span class="decoration">(range)</span>
+									<a id="initializeAll" class="public" href="../../std/algorithm/mutation/initialize_all.html">initializeAll</a><span class="tableEntryAnnotation">(range)</span>
 								</code>
 							</td>
 							<td>Initializes all elements of <code class="lang-d"><a href="../../std/algorithm/mutation/initialize_all.html#range"><span class="pln">range</span></a></code> with their <code class="lang-d"><wbr/><span class="pun">.</span><span class="pln">init</span></code> value.
 Assumes that the elements of the range are uninitialized.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="move" class="public" href="../../std/algorithm/mutation/move.html">move</a><span class="decoration">(source, target)</span>
+									<a id="move" class="public" href="../../std/algorithm/mutation/move.html">move</a><span class="tableEntryAnnotation">(source, target)</span>
 								</code>
 							</td>
 							<td>Moves <code class="lang-d"><a href="../../std/algorithm/mutation/move.html#source"><span class="pln">source</span></a></code> into <code class="lang-d"><a href="../../std/algorithm/mutation/move.html#target"><span class="pln">target</span></a></code>, via a destructive copy when necessary.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="moveAll" class="public" href="../../std/algorithm/mutation/move_all.html">moveAll</a><span class="decoration">(src, tgt)</span>
+									<a id="moveAll" class="public" href="../../std/algorithm/mutation/move_all.html">moveAll</a><span class="tableEntryAnnotation">(src, tgt)</span>
 								</code>
 							</td>
 							<td>Calls <code class="lang-d"><a href="../../std/algorithm/mutation/move.html"><span class="pln">move</span></a><span class="pun">(</span><span class="pln">a</span><span class="pun">, </span><span class="pln">b</span><span class="pun">)</span></code> for each element <code class="lang-d"><span class="pln">a</span></code> in <code class="lang-d"><a href="../../std/algorithm/mutation/move_all.html#src"><span class="pln">src</span></a></code> and the corresponding
 element <code class="lang-d"><span class="pln">b</span></code> in <code class="lang-d"><a href="../../std/algorithm/mutation/move_all.html#tgt"><span class="pln">tgt</span></a></code>, in increasing order.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="moveEmplace" class="public" href="../../std/algorithm/mutation/move_emplace.html">moveEmplace</a><span class="decoration">(source, target)</span>
+									<a id="moveEmplace" class="public" href="../../std/algorithm/mutation/move_emplace.html">moveEmplace</a><span class="tableEntryAnnotation">(source, target)</span>
 								</code>
 							</td>
 							<td>Similar to <code class="lang-d"><a href="../../std/algorithm/mutation/move.html"><span class="pln">move</span></a></code> but assumes <code class="lang-d"><a href="../../std/algorithm/mutation/move_emplace.html#target"><span class="pln">target</span></a></code> is uninitialized. This
  is more efficient because <code class="lang-d"><a href="../../std/algorithm/mutation/move_emplace.html#source"><span class="pln">source</span></a></code> can be blitted over <code class="lang-d"><a href="../../std/algorithm/mutation/move_emplace.html#target"><span class="pln">target</span></a></code>
  without destroying or initializing it first.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="moveEmplaceAll" class="public" href="../../std/algorithm/mutation/move_emplace_all.html">moveEmplaceAll</a><span class="decoration">(src, tgt)</span>
+									<a id="moveEmplaceAll" class="public" href="../../std/algorithm/mutation/move_emplace_all.html">moveEmplaceAll</a><span class="tableEntryAnnotation">(src, tgt)</span>
 								</code>
 							</td>
 							<td>Similar to <code class="lang-d"><a href="../../std/algorithm/mutation/move_all.html"><span class="pln">moveAll</span></a></code> but assumes all elements in <code class="lang-d"><a href="../../std/algorithm/mutation/move_emplace_all.html#tgt"><span class="pln">tgt</span></a></code> are
  uninitialized. Uses <code class="lang-d"><a href="../../std/algorithm/mutation/move_emplace.html"><span class="pln">moveEmplace</span></a></code> to move elements from
  <code class="lang-d"><a href="../../std/algorithm/mutation/move_emplace_all.html#src"><span class="pln">src</span></a></code> over elements from <code class="lang-d"><a href="../../std/algorithm/mutation/move_emplace_all.html#tgt"><span class="pln">tgt</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="moveEmplaceSome" class="public" href="../../std/algorithm/mutation/move_emplace_some.html">moveEmplaceSome</a><span class="decoration">(src, tgt)</span>
+									<a id="moveEmplaceSome" class="public" href="../../std/algorithm/mutation/move_emplace_some.html">moveEmplaceSome</a><span class="tableEntryAnnotation">(src, tgt)</span>
 								</code>
 							</td>
 							<td>Same as <code class="lang-d"><a href="../../std/algorithm/mutation/move_some.html"><span class="pln">moveSome</span></a></code> but assumes all elements in <code class="lang-d"><a href="../../std/algorithm/mutation/move_emplace_some.html#tgt"><span class="pln">tgt</span></a></code> are
  uninitialized. Uses <code class="lang-d"><a href="../../std/algorithm/mutation/move_emplace.html"><span class="pln">moveEmplace</span></a></code> to move elements from
  <code class="lang-d"><a href="../../std/algorithm/mutation/move_emplace_some.html#src"><span class="pln">src</span></a></code> over elements from <code class="lang-d"><a href="../../std/algorithm/mutation/move_emplace_some.html#tgt"><span class="pln">tgt</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="moveSome" class="public" href="../../std/algorithm/mutation/move_some.html">moveSome</a><span class="decoration">(src, tgt)</span>
+									<a id="moveSome" class="public" href="../../std/algorithm/mutation/move_some.html">moveSome</a><span class="tableEntryAnnotation">(src, tgt)</span>
 								</code>
 							</td>
 							<td>Calls <code class="lang-d"><a href="../../std/algorithm/mutation/move.html"><span class="pln">move</span></a><span class="pun">(</span><span class="pln">a</span><span class="pun">, </span><span class="pln">b</span><span class="pun">)</span></code> for each element <code class="lang-d"><span class="pln">a</span></code> in <code class="lang-d"><a href="../../std/algorithm/mutation/move_some.html#src"><span class="pln">src</span></a></code> and the corresponding
 element <code class="lang-d"><span class="pln">b</span></code> in <code class="lang-d"><a href="../../std/algorithm/mutation/move_some.html#tgt"><span class="pln">tgt</span></a></code>, in increasing order, stopping when either range has been
 exhausted.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="remove" class="public" href="../../std/algorithm/mutation/remove.html">remove</a><span class="decoration">(range, offset)</span>
+									<a id="remove" class="public" href="../../std/algorithm/mutation/remove.html">remove</a><span class="tableEntryAnnotation">(range, offset)</span>
 								</code>
 							</td>
 							<td>Eliminates elements at given offsets from <code class="lang-d"><a href="../../std/algorithm/mutation/remove.html#range"><span class="pln">range</span></a></code> and returns the shortened
 range.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="remove" class="public" href="../../std/algorithm/mutation/remove.html">remove</a><span class="decoration">(range)</span>
+									<a id="remove" class="public" href="../../std/algorithm/mutation/remove.html">remove</a><span class="tableEntryAnnotation">(range)</span>
 								</code>
 							</td>
 							<td>Reduces the length of the
@@ -3120,72 +3168,93 @@ to eliminate. If <code class="lang-d"><span class="pln">s </span><span class="pu
 elements are moved progressively to front such that their relative
 order is preserved. Returns the filtered range.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="reverse" class="public" href="../../std/algorithm/mutation/reverse.html">reverse</a><span class="decoration">(r)</span>
+									<a id="reverse" class="public" href="../../std/algorithm/mutation/reverse.html">reverse</a><span class="tableEntryAnnotation">(r)</span>
 								</code>
 							</td>
 							<td>Reverses <code class="lang-d"><a href="../../std/algorithm/mutation/reverse.html#r"><span class="pln">r</span></a></code> in-place.  Performs <code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">/ </span><span class="lit">2</span></code> evaluations of <code class="lang-d"><a href="../../std/algorithm/mutation/swap.html"><span class="pln">swap</span></a></code>.
 UTF sequences consisting of multiple code units are preserved properly.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="strip" class="public" href="../../std/algorithm/mutation/strip.html">strip</a><span class="decoration">(range, element)</span>
+									<a id="strip" class="public" href="../../std/algorithm/mutation/strip.html">strip</a><span class="tableEntryAnnotation">(range, element)</span>
 								</code>
 							</td>
 							<td>The strip group of functions allow stripping of either leading, trailing,
     or both leading and trailing elements.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="stripLeft" class="public" href="../../std/algorithm/mutation/strip_left.html">stripLeft</a><span class="decoration">(range, element)</span>
+									<a id="stripLeft" class="public" href="../../std/algorithm/mutation/strip_left.html">stripLeft</a><span class="tableEntryAnnotation">(range, element)</span>
 								</code>
 							</td>
 							<td>The strip group of functions allow stripping of either leading, trailing,
     or both leading and trailing elements.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="stripRight" class="public" href="../../std/algorithm/mutation/strip_right.html">stripRight</a><span class="decoration">(range, element)</span>
+									<a id="stripRight" class="public" href="../../std/algorithm/mutation/strip_right.html">stripRight</a><span class="tableEntryAnnotation">(range, element)</span>
 								</code>
 							</td>
 							<td>The strip group of functions allow stripping of either leading, trailing,
     or both leading and trailing elements.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="swap" class="public" href="../../std/algorithm/mutation/swap.html">swap</a><span class="decoration">(lhs, rhs)</span>
+									<a id="swap" class="public" href="../../std/algorithm/mutation/swap.html">swap</a><span class="tableEntryAnnotation">(lhs, rhs)</span>
 								</code>
 							</td>
 							<td>Swaps <code class="lang-d"><a href="../../std/algorithm/mutation/swap.html#lhs"><span class="pln">lhs</span></a></code> and <code class="lang-d"><a href="../../std/algorithm/mutation/swap.html#rhs"><span class="pln">rhs</span></a></code>. The instances <code class="lang-d"><a href="../../std/algorithm/mutation/swap.html#lhs"><span class="pln">lhs</span></a></code> and <code class="lang-d"><a href="../../std/algorithm/mutation/swap.html#rhs"><span class="pln">rhs</span></a></code> are moved in
 memory, without ever calling <code class="lang-d"><span class="pln">opAssign</span></code>, nor any other function. <code class="lang-d"><span class="pln">T</span></code>
 need not be assignable at all to be swapped.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="swapAt" class="public" href="../../std/algorithm/mutation/swap_at.html">swapAt</a><span class="decoration">(r, i1, i2)</span>
+									<a id="swapAt" class="public" href="../../std/algorithm/mutation/swap_at.html">swapAt</a><span class="tableEntryAnnotation">(r, i1, i2)</span>
 								</code>
 							</td>
 							<td>Swaps two elements in-place of a range <code class="lang-d"><a href="../../std/algorithm/mutation/swap_at.html#r"><span class="pln">r</span></a></code>,
 specified by their indices <code class="lang-d"><a href="../../std/algorithm/mutation/swap_at.html#i1"><span class="pln">i1</span></a></code> and <code class="lang-d"><a href="../../std/algorithm/mutation/swap_at.html#i2"><span class="pln">i2</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="swapRanges" class="public" href="../../std/algorithm/mutation/swap_ranges.html">swapRanges</a><span class="decoration">(r1, r2)</span>
+									<a id="swapRanges" class="public" href="../../std/algorithm/mutation/swap_ranges.html">swapRanges</a><span class="tableEntryAnnotation">(r1, r2)</span>
 								</code>
 							</td>
 							<td>Swaps all elements of <code class="lang-d"><a href="../../std/algorithm/mutation/swap_ranges.html#r1"><span class="pln">r1</span></a></code> with successive elements in <code class="lang-d"><a href="../../std/algorithm/mutation/swap_ranges.html#r2"><span class="pln">r2</span></a></code>.
@@ -3193,11 +3262,14 @@ Returns a tuple containing the remainder portions of <code class="lang-d"><a hre
 be of different types but must have the same element type and support
 swapping.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="uninitializedFill" class="public" href="../../std/algorithm/mutation/uninitialized_fill.html">uninitializedFill</a><span class="decoration">(range, value)</span>
+									<a id="uninitializedFill" class="public" href="../../std/algorithm/mutation/uninitialized_fill.html">uninitializedFill</a><span class="tableEntryAnnotation">(range, value)</span>
 								</code>
 							</td>
 							<td>Initializes each element of <code class="lang-d"><a href="../../std/algorithm/mutation/uninitialized_fill.html#range"><span class="pln">range</span></a></code> with <code class="lang-d"><a href="../../std/algorithm/mutation/uninitialized_fill.html#value"><span class="pln">value</span></a></code>.
@@ -3206,6 +3278,9 @@ This is of interest for structs that
 define copy constructors (for all other types, <code class="lang-d"><a href="../../std/algorithm/mutation/fill.html"><span class="pln">fill</span></a></code> and
 uninitializedFill are equivalent).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3214,7 +3289,7 @@ uninitializedFill are equivalent).
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3232,6 +3307,8 @@ and <code class="lang-d"><span class="str">"aBc"</span></code>. That does not af
 <code class="lang-d"><span class="pun">[</span><span class="str">"abc"</span><span class="pun">, </span><span class="str">"aBc"</span><span class="pun">, </span><span class="str">"b" </span><span class="pun">]</span></code> and <code class="lang-d"><span class="pun">[ </span><span class="str">"aBc"</span><span class="pun">, </span><span class="str">"abc"</span><span class="pun">, </span><span class="str">"b" </span><span class="pun">]</span></code> are valid
 outcomes.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2946,39 +2961,48 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cos" class="public" href="../core/math/cos.html">cos</a><span class="decoration">(x)</span>
+									<a id="cos" class="public" href="../core/math/cos.html">cos</a><span class="tableEntryAnnotation">(x)</span>
 								</code>
 							</td>
 							<td>Returns cosine of x. x is in radians.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fabs" class="public" href="../core/math/fabs.html">fabs</a><span class="decoration">(x)</span>
+									<a id="fabs" class="public" href="../core/math/fabs.html">fabs</a><span class="tableEntryAnnotation">(x)</span>
 								</code>
 							</td>
 							<td>Returns |x|
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="ldexp" class="public" href="../core/math/ldexp.html">ldexp</a><span class="decoration">(n, exp)</span>
+									<a id="ldexp" class="public" href="../core/math/ldexp.html">ldexp</a><span class="tableEntryAnnotation">(n, exp)</span>
 								</code>
 							</td>
 							<td>Compute n * 2<sup>exp</sup>
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rint" class="public" href="../core/math/rint.html">rint</a><span class="decoration">(x)</span>
+									<a id="rint" class="public" href="../core/math/rint.html">rint</a><span class="tableEntryAnnotation">(x)</span>
 								</code>
 							</td>
 							<td>Rounds x to the nearest integer value, using the current rounding
@@ -2988,11 +3012,14 @@ $('#symbolSearchPane').show();</script>
  <b>nearbyint</b> performs
  the same operation, but does not set the FE_INEXACT exception.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rndtol" class="public" href="../core/math/rndtol.html">rndtol</a><span class="decoration">(x)</span>
+									<a id="rndtol" class="public" href="../core/math/rndtol.html">rndtol</a><span class="tableEntryAnnotation">(x)</span>
 								</code>
 							</td>
 							<td>Returns x rounded to a long value using the current rounding mode.
@@ -3000,11 +3027,14 @@ $('#symbolSearchPane').show();</script>
  greater than long.max, the result is
  indeterminate.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rndtonl" class="public" href="../core/math/rndtonl.html">rndtonl</a><span class="decoration">(x)</span>
+									<a id="rndtonl" class="public" href="../core/math/rndtonl.html">rndtonl</a><span class="tableEntryAnnotation">(x)</span>
 								</code>
 							</td>
 							<td>Returns x rounded to a long value using the FE_TONEAREST rounding mode.
@@ -3012,52 +3042,71 @@ $('#symbolSearchPane').show();</script>
  greater than long.max, the result is
  indeterminate.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="sin" class="public" href="../core/math/sin.html">sin</a><span class="decoration">(x)</span>
+									<a id="sin" class="public" href="../core/math/sin.html">sin</a><span class="tableEntryAnnotation">(x)</span>
 								</code>
 							</td>
 							<td>Returns sine of x. x is in radians.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="sqrt" class="public" href="../core/math/sqrt.html">sqrt</a><span class="decoration">(x)</span>
+									<a id="sqrt" class="public" href="../core/math/sqrt.html">sqrt</a><span class="tableEntryAnnotation">(x)</span>
 								</code>
 							</td>
 							<td>Compute square root of x.
 </td>
-						</tr>
-						<tr>
 							<td>
-								<code>
-									<a id="sqrt" class="public" href="../core/math/sqrt.html">sqrt</a><span class="decoration">(x)</span>
-								</code>
+								<fd class="canBeNogc"></fd>
 							</td>
-							<td>ditto
-</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toPrec" class="public" href="../core/math/to_prec.html">toPrec</a><span class="decoration">(f)</span>
+									<a id="toPrec" class="public" href="../core/math/to_prec.html">toPrec</a><span class="tableEntryAnnotation">(f)</span>
 								</code>
 							</td>
 							<td>Round argument to a specific precision.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="yl2x" class="public" href="../core/math/yl2x.html">yl2x</a><span class="decoration">(x, y)</span>
+									<a id="yl2x" class="public" href="../core/math/yl2x.html">yl2x</a><span class="tableEntryAnnotation">(x, y)</span>
 								</code>
 							</td>
 							<td>Building block functions, they
  translate to a single x87 instruction.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>
+									<a id="yl2xp1" class="public" href="../core/math/yl2xp1.html">yl2xp1</a><span class="tableEntryAnnotation">(x, y)</span>
+								</code>
+							</td>
+							<td>Building block functions, they
+ translate to a single x87 instruction.
+</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

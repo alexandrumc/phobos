@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2958,40 +2973,61 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_Dmain" class="public" href="../dmd/mars/__dmain.html">_Dmain</a><span class="decoration">(_param_0)</span>
+									<a id="_Dmain" class="public" href="../dmd/mars/__dmain.html">_Dmain</a><span class="tableEntryAnnotation">(_param_0)</span>
 								</code>
 							</td>
 							<td>Manual D main (for druntime initialization), which forwards to <code class="lang-d"><span class="pln">tryMain</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="addDefaultVersionIdentifiers" class="public" href="../dmd/mars/add_default_version_identifiers.html">addDefaultVersionIdentifiers</a><span class="decoration">(params)</span>
+									<a id="addDefaultVersionIdentifiers" class="public" href="../dmd/mars/add_default_version_identifiers.html">addDefaultVersionIdentifiers</a><span class="tableEntryAnnotation">(params)</span>
 								</code>
 							</td>
 							<td>Add default <code class="lang-d"><span class="kwd">version</span></code> identifier for dmd, and set the
  target platform in <code class="lang-d"><a href="../dmd/mars/add_default_version_identifiers.html#params"><span class="pln">params</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="createModules" class="public" href="../dmd/mars/create_modules.html">createModules</a><span class="decoration">(files, libmodules)</span>
+									<a id="createModule" class="public" href="../dmd/mars/create_module.html">createModule</a><span class="tableEntryAnnotation">(file, libmodules)</span>
+								</code>
+							</td>
+							<td>Creates the module based on the file provided
+</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>
+									<a id="createModules" class="public" href="../dmd/mars/create_modules.html">createModules</a><span class="tableEntryAnnotation">(files, libmodules)</span>
 								</code>
 							</td>
 							<td>Creates the list of modules based on the files provided
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="flushMixins" class="public" href="../dmd/mars/flush_mixins.html">flushMixins</a><span class="decoration">()</span>
+									<a id="flushMixins" class="public" href="../dmd/mars/flush_mixins.html">flushMixins</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>we want to write the mixin expansion file also on error, but there
@@ -2999,72 +3035,96 @@ $('#symbolSearchPane').show();</script>
  so we can't rely on scope(exit) ... in tryMain() actually being executed
  so we add atexit(&flushMixins); for those fatal exits (with the GC still valid)
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getenv_setargv" class="public" href="../dmd/mars/getenv_setargv.html">getenv_setargv</a><span class="decoration">(envvalue, args)</span>
+									<a id="getenv_setargv" class="public" href="../dmd/mars/getenv_setargv.html">getenv_setargv</a><span class="tableEntryAnnotation">(envvalue, args)</span>
 								</code>
 							</td>
 							<td>Parses an environment variable containing command-line flags
  and append them to <code class="lang-d"><a href="../dmd/mars/getenv_setargv.html#args"><span class="pln">args</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="main" class="public" href="../dmd/mars/main.html">main</a><span class="decoration">(argc, argv)</span>
+									<a id="main" class="public" href="../dmd/mars/main.html">main</a><span class="tableEntryAnnotation">(argc, argv)</span>
 								</code>
 							</td>
 							<td>DMD's entry point, C main.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="parse_arch_arg" class="public" href="../dmd/mars/parse_arch_arg.html">parse_arch_arg</a><span class="decoration">(args, arch)</span>
+									<a id="parse_arch_arg" class="public" href="../dmd/mars/parse_arch_arg.html">parse_arch_arg</a><span class="tableEntryAnnotation">(args, arch)</span>
 								</code>
 							</td>
 							<td>Parse command line arguments for the last instance of -m32, -m64 or -m32mscoff
  to detect the desired architecture.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="parse_conf_arg" class="public" href="../dmd/mars/parse_conf_arg.html">parse_conf_arg</a><span class="decoration">(args)</span>
+									<a id="parse_conf_arg" class="public" href="../dmd/mars/parse_conf_arg.html">parse_conf_arg</a><span class="tableEntryAnnotation">(args)</span>
 								</code>
 							</td>
 							<td>Parse command line arguments for the last instance of -conf=path.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="parseCommandLine" class="public" href="../dmd/mars/parse_command_line.html">parseCommandLine</a><span class="decoration">(arguments, argc, params, files)</span>
+									<a id="parseCommandLine" class="public" href="../dmd/mars/parse_command_line.html">parseCommandLine</a><span class="tableEntryAnnotation">(arguments, argc, params, files)</span>
 								</code>
 							</td>
 							<td>Parse command line arguments.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="printInternalFailure" class="public" href="../dmd/mars/print_internal_failure.html">printInternalFailure</a><span class="decoration">(stream)</span>
+									<a id="printInternalFailure" class="public" href="../dmd/mars/print_internal_failure.html">printInternalFailure</a><span class="tableEntryAnnotation">(stream)</span>
 								</code>
 							</td>
 							<td>Print DMD's logo with more debug information and error-reporting pointers.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="setTarget" class="public" href="../dmd/mars/set_target.html">setTarget</a><span class="decoration">(params)</span>
+									<a id="setTarget" class="public" href="../dmd/mars/set_target.html">setTarget</a><span class="tableEntryAnnotation">(params)</span>
 								</code>
 							</td>
 							<td>Set the <code class="lang-d"><span class="kwd">is</span></code> target fields of <code class="lang-d"><a href="../dmd/mars/set_target.html#params"><span class="pln">params</span></a></code> according
  to the TARGET value.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

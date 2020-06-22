@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2947,87 +2962,114 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dt2common" class="public" href="../../dmd/backend/dt/dt2common.html">dt2common</a><span class="decoration">(pdt)</span>
+									<a id="dt2common" class="public" href="../../dmd/backend/dt/dt2common.html">dt2common</a><span class="tableEntryAnnotation">(pdt)</span>
 								</code>
 							</td>
 							<td>Turn DT_azeros into DTcommon
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dt_free" class="public" href="../../dmd/backend/dt/dt_free.html">dt_free</a><span class="decoration">(dt)</span>
+									<a id="dt_free" class="public" href="../../dmd/backend/dt/dt_free.html">dt_free</a><span class="tableEntryAnnotation">(dt)</span>
 								</code>
 							</td>
 							<td>Free a data definition struct.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dt_get_nzeros" class="public" href="../../dmd/backend/dt/dt_get_nzeros.html">dt_get_nzeros</a><span class="decoration">(n)</span>
+									<a id="dt_get_nzeros" class="public" href="../../dmd/backend/dt/dt_get_nzeros.html">dt_get_nzeros</a><span class="tableEntryAnnotation">(n)</span>
 								</code>
 							</td>
 							<td>Temporary hack to initialize a dt_t* for C.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dt_size" class="public" href="../../dmd/backend/dt/dt_size.html">dt_size</a><span class="decoration">(dtstart)</span>
+									<a id="dt_size" class="public" href="../../dmd/backend/dt/dt_size.html">dt_size</a><span class="tableEntryAnnotation">(dtstart)</span>
 								</code>
 							</td>
 							<td>Compute size of a dt
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dt_term" class="public" href="../../dmd/backend/dt/dt_term.html">dt_term</a><span class="decoration">()</span>
+									<a id="dt_term" class="public" href="../../dmd/backend/dt/dt_term.html">dt_term</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Free free list.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dtallzeros" class="public" href="../../dmd/backend/dt/dtallzeros.html">dtallzeros</a><span class="decoration">(dt)</span>
+									<a id="dtallzeros" class="public" href="../../dmd/backend/dt/dtallzeros.html">dtallzeros</a><span class="tableEntryAnnotation">(dt)</span>
 								</code>
 							</td>
 							<td>Return true if dt is all zeros.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dtpatchoffset" class="public" href="../../dmd/backend/dt/dtpatchoffset.html">dtpatchoffset</a><span class="decoration">(dt, offset)</span>
+									<a id="dtpatchoffset" class="public" href="../../dmd/backend/dt/dtpatchoffset.html">dtpatchoffset</a><span class="tableEntryAnnotation">(dt, offset)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dtpointers" class="public" href="../../dmd/backend/dt/dtpointers.html">dtpointers</a><span class="decoration">(dtstart)</span>
+									<a id="dtpointers" class="public" href="../../dmd/backend/dt/dtpointers.html">dtpointers</a><span class="tableEntryAnnotation">(dtstart)</span>
 								</code>
 							</td>
 							<td>Return true if dt contains pointers (requires relocations).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="init_common" class="public" href="../../dmd/backend/dt/init_common.html">init_common</a><span class="decoration">(s)</span>
+									<a id="init_common" class="public" href="../../dmd/backend/dt/init_common.html">init_common</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Make a common block for s.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3036,7 +3078,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3045,6 +3087,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

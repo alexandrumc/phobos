@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2943,7 +2958,7 @@ $('#symbolSearchPane').show();</script>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">iota</span>(B, E, S)
+				<span class="kwd">auto</span> <span class="pln">iota</span>(B, E, S)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">B</span> <span class="pln">begin</span><span class="pun">,</span>
@@ -2957,7 +2972,7 @@ $('#symbolSearchPane').show();</script>
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pun">(</span><span class="pln">isIntegral</span><span class="pun">!(</span><span class="typ">CommonType</span><span class="pun">!(</span><span class="pln">B</span><span class="pun">, </span><span class="pln">E</span><span class="pun">)) || </span><span class="pln">isPointer</span><span class="pun">!(</span><span class="typ">CommonType</span><span class="pun">!(</span><span class="pln">B</span><span class="pun">, </span><span class="pln">E</span><span class="pun">))) &amp;&amp; </span><span class="pln">isIntegral</span><span class="pun">!</span><span class="pln">S</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">iota</span>(B, E)
+				<span class="kwd">auto</span> <span class="pln">iota</span>(B, E)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">B</span> <span class="pln">begin</span><span class="pun">,</span>
@@ -2969,7 +2984,7 @@ $('#symbolSearchPane').show();</script>
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isFloatingPoint</span><span class="pun">!(</span><span class="typ">CommonType</span><span class="pun">!(</span><span class="pln">B</span><span class="pun">, </span><span class="pln">E</span><span class="pun">))</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">iota</span>(B, E)
+				<span class="kwd">auto</span> <span class="pln">iota</span>(B, E)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">B</span> <span class="pln">begin</span><span class="pun">,</span>
@@ -2981,7 +2996,7 @@ $('#symbolSearchPane').show();</script>
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isIntegral</span><span class="pun">!(</span><span class="typ">CommonType</span><span class="pun">!(</span><span class="pln">B</span><span class="pun">, </span><span class="pln">E</span><span class="pun">)) || </span><span class="pln">isPointer</span><span class="pun">!(</span><span class="typ">CommonType</span><span class="pun">!(</span><span class="pln">B</span><span class="pun">, </span><span class="pln">E</span><span class="pun">))</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">iota</span>(E)
+				<span class="kwd">auto</span> <span class="pln">iota</span>(E)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">E</span> <span class="pln">end</span>
@@ -2991,7 +3006,7 @@ $('#symbolSearchPane').show();</script>
 				<span class="kwd">if</span> <span class="pun">(</span><span class="kwd">is</span><span class="pun">(</span><span class="kwd">typeof</span><span class="pun">(</span><span class="pln">iota</span><span class="pun">(</span><span class="pln">E</span><span class="pun">(</span><span class="lit">0</span><span class="pun">), </span><span class="pln">end</span><span class="pun">)))</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">iota</span>(B, E, S)
+				<span class="kwd">auto</span> <span class="pln">iota</span>(B, E, S)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">B</span> <span class="pln">begin</span><span class="pun">,</span>
@@ -3005,7 +3020,7 @@ $('#symbolSearchPane').show();</script>
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isFloatingPoint</span><span class="pun">!(</span><span class="typ">CommonType</span><span class="pun">!(</span><span class="pln">B</span><span class="pun">, </span><span class="pln">E</span><span class="pun">, </span><span class="pln">S</span><span class="pun">))</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">iota</span>(B, E)
+				<span class="kwd">auto</span> <span class="pln">iota</span>(B, E)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">B</span> <span class="pln">begin</span><span class="pun">,</span>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,13 +2952,13 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../../std/algorithm/searching.html">std.algorithm.searching</a>.findSplitBefore</code></h1><p>These functions find the first occurrence of <code class="lang-d"><a href="../../std/algorithm/searching/find_split.html#needle"><span class="pln"><a href="../../std/algorithm/searching/find_split_after.html#needle"><span class="pln"><a href="../../std/algorithm/searching/find_split_before.html#needle"><span class="pln"><a href="../../../std/algorithm/searching/find_split_after.html#needle"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#needle"><span class="pln">needle</span></a></span></a></span></a></span></a></span></a></code> in <code class="lang-d"><a href="../../std/algorithm/searching/find_split.html#haystack"><span class="pln"><a href="../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln"><a href="../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln"><a href="../../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></span></a></span></a></span></a></span></a></code> and then
-split <code class="lang-d"><a href="../../std/algorithm/searching/find_split.html#haystack"><span class="pln"><a href="../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln"><a href="../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln"><a href="../../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></span></a></span></a></span></a></span></a></code> as follows.
+				</div><h1>Function <code><a href="../../../std/algorithm/searching.html">std.algorithm.searching</a>.findSplitBefore</code></h1><p>These functions find the first occurrence of <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#needle"><span class="pln">needle</span></a></code> in <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></code> and then
+split <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></code> as follows.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">findSplitBefore</span>(alias pred, R1, R2)
+				<span class="kwd">auto</span> <span class="pln">findSplitBefore</span>(alias pred, R1, R2)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">R1</span> <span class="pln">haystack</span><span class="pun">,</span>
@@ -2956,32 +2971,32 @@ split <code class="lang-d"><a href="../../std/algorithm/searching/find_split.htm
 						</div>
 					</code>
 				</div>
-				<section><p><code class="lang-d"><a href="../../../std/algorithm/searching/find_split.html"><span class="pln"><a href="../../../std/algorithm/searching/find_split.html"><span class="pln">findSplit</span></a></span></a></code> returns a tuple <code class="lang-d"><span class="pln">result</span></code> containing <i>three</i> ranges. <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span></code>
-is the portion of <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></span></a></code> before <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html#needle"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#needle"><span class="pln">needle</span></a></span></a></code>, <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span></code> is the portion of
-<code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></span></a></code> that matches <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html#needle"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#needle"><span class="pln">needle</span></a></span></a></code>, and <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]</span></code> is the portion of <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></span></a></code>
-after the match. If <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html#needle"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#needle"><span class="pln">needle</span></a></span></a></code> was not found, <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span></code> comprehends <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></span></a></code>
+				<section><p><code class="lang-d"><a href="../../../std/algorithm/searching/find_split.html"><span class="pln">findSplit</span></a></code> returns a tuple <code class="lang-d"><span class="pln">result</span></code> containing <i>three</i> ranges. <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span></code>
+is the portion of <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></code> before <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#needle"><span class="pln">needle</span></a></code>, <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span></code> is the portion of
+<code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></code> that matches <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#needle"><span class="pln">needle</span></a></code>, and <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]</span></code> is the portion of <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></code>
+after the match. If <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#needle"><span class="pln">needle</span></a></code> was not found, <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span></code> comprehends <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></code>
 entirely and <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span></code> and <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]</span></code> are empty.
 </p>
 
-<p><code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html"><span class="pln"><span class="pln">findSplitBefore</span></span></a></code> returns a tuple <code class="lang-d"><span class="pln">result</span></code> containing two ranges. <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span></code> is
-the portion of <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></span></a></code> before <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html#needle"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#needle"><span class="pln">needle</span></a></span></a></code>, and <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span></code> is the balance of
-<code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></span></a></code> starting with the match. If <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html#needle"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#needle"><span class="pln">needle</span></a></span></a></code> was not found, <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span></code>
-comprehends <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></span></a></code> entirely and <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span></code> is empty.
+<p><code class="lang-d"><span class="pln">findSplitBefore</span></code> returns a tuple <code class="lang-d"><span class="pln">result</span></code> containing two ranges. <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span></code> is
+the portion of <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></code> before <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#needle"><span class="pln">needle</span></a></code>, and <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span></code> is the balance of
+<code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></code> starting with the match. If <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#needle"><span class="pln">needle</span></a></code> was not found, <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span></code>
+comprehends <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></code> entirely and <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span></code> is empty.
 </p>
 
-<p><code class="lang-d"><span class="pln"><a href="../../../std/algorithm/searching/find_split_after.html"><span class="pln">findSplitAfter</span></a></span></code> returns a tuple <code class="lang-d"><span class="pln">result</span></code> containing two ranges.
-<code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span></code> is the portion of <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></span></a></code> up to and including the
-match, and <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span></code> is the balance of <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></span></a></code> starting
-after the match. If <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html#needle"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#needle"><span class="pln">needle</span></a></span></a></code> was not found, <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span></code> is empty
-and <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span></code> is <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></span></a></code>.
+<p><code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html"><span class="pln">findSplitAfter</span></a></code> returns a tuple <code class="lang-d"><span class="pln">result</span></code> containing two ranges.
+<code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span></code> is the portion of <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></code> up to and including the
+match, and <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span></code> is the balance of <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></code> starting
+after the match. If <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#needle"><span class="pln">needle</span></a></code> was not found, <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span></code> is empty
+and <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span></code> is <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></code>.
 </p>
 
 <p>In all cases, the concatenation of the returned ranges spans the
-entire <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></span></a></code>.
+entire <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></code>.
 </p>
 
-<p>If <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></span></a></code> is a random-access range, all three components of the tuple have
-the same type as <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></span></a></code>. Otherwise, <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></span></a></code> must be a
+<p>If <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></code> is a random-access range, all three components of the tuple have
+the same type as <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></code>. Otherwise, <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></code> must be a
 <a href="../../../std/range/primitives/is_forward_range.html" title="std.range.primitives.isForwardRange">forward range</a> and
 the type of <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span></code> and <code class="lang-d"><span class="pln">result</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span></code> is the same as <code class="lang-d"><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">range<wbr/></span><span class="pun">.</span><span class="pln">takeExactly</span></code>.
 </p>
@@ -2995,9 +3010,9 @@ the type of <code class="lang-d"><span class="pln">result</span><span class="pun
 </table>
 </section>
 <section><h2>Returns</h2>
-<p>A sub-type of <code class="lang-d"><span class="typ">Tuple</span><span class="pun">!()</span></code> of the split portions of <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></span></a></code> (see above for
+<p>A sub-type of <code class="lang-d"><span class="typ">Tuple</span><span class="pun">!()</span></code> of the split portions of <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></code> (see above for
 details).  This sub-type of <code class="lang-d"><span class="typ">Tuple</span><span class="pun">!()</span></code> has <code class="lang-d"><span class="pln">opCast</span></code> defined for <code class="lang-d"><span class="typ">bool</span></code>.  This
-<code class="lang-d"><span class="pln">opCast</span></code> returns <code class="lang-d"><span class="kwd">true</span></code> when the separating <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_after.html#needle"><span class="pln"><a href="../../../std/algorithm/searching/find_split_before.html#needle"><span class="pln">needle</span></a></span></a></code> was found
+<code class="lang-d"><span class="pln">opCast</span></code> returns <code class="lang-d"><span class="kwd">true</span></code> when the separating <code class="lang-d"><a href="../../../std/algorithm/searching/find_split_before.html#needle"><span class="pln">needle</span></a></code> was found
 and <code class="lang-d"><span class="kwd">false</span></code> otherwise.
 </p>
 </section>

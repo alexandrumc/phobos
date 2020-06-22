@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -3004,12 +3019,12 @@ It contains generic searching algorithms.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="balancedParens" class="public" href="../../std/algorithm/searching/balanced_parens.html">balancedParens</a><span class="decoration">(r, lPar, rPar, maxNestingLevel)</span>
+									<a id="balancedParens" class="public" href="../../std/algorithm/searching/balanced_parens.html">balancedParens</a><span class="tableEntryAnnotation">(r, lPar, rPar, maxNestingLevel)</span>
 								</code>
 							</td>
 							<td>Checks whether <code class="lang-d"><a href="../../std/algorithm/searching/balanced_parens.html#r"><span class="pln">r</span></a></code> has "balanced parentheses", i.e. all instances
@@ -3018,62 +3033,80 @@ parameter <code class="lang-d"><a href="../../std/algorithm/searching/balanced_p
 most common uses are the default or <code class="lang-d"><span class="lit">0</span></code>. In the latter case, no
 nesting is allowed.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="boyerMooreFinder" class="public" href="../../std/algorithm/searching/boyer_moore_finder.html">boyerMooreFinder</a><span class="decoration">(needle)</span>
+									<a id="boyerMooreFinder" class="public" href="../../std/algorithm/searching/boyer_moore_finder.html">boyerMooreFinder</a><span class="tableEntryAnnotation">(needle)</span>
 								</code>
 							</td>
 							<td>Sets up Boyer-Moore matching for use with <code class="lang-d"><a href="../../std/algorithm/searching/find.html"><span class="pln">find</span></a></code> below.
  By default, elements are compared for equality.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="commonPrefix" class="public" href="../../std/algorithm/searching/common_prefix.html">commonPrefix</a><span class="decoration">(r1, r2)</span>
+									<a id="commonPrefix" class="public" href="../../std/algorithm/searching/common_prefix.html">commonPrefix</a><span class="tableEntryAnnotation">(r1, r2)</span>
 								</code>
 							</td>
 							<td>Returns the common prefix of two ranges.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="count" class="public" href="../../std/algorithm/searching/count.html">count</a><span class="decoration">(haystack, needle)</span>
+									<a id="count" class="public" href="../../std/algorithm/searching/count.html">count</a><span class="tableEntryAnnotation">(haystack, needle)</span>
 								</code>
 							</td>
 							<td>The first version counts the number of elements <code class="lang-d"><span class="pln">x</span></code> in <code class="lang-d"><span class="pln">r</span></code> for
 which <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">x</span><span class="pun">, </span><span class="pln">value</span><span class="pun">)</span></code> is <code class="lang-d"><span class="kwd">true</span></code>. <code class="lang-d"><span class="pln">pred</span></code> defaults to
 equality. Performs <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">haystack<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>)</span> evaluations of <code class="lang-d"><span class="pln">pred</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="countUntil" class="public" href="../../std/algorithm/searching/count_until.html">countUntil</a><span class="decoration">(haystack, needles)</span>
+									<a id="countUntil" class="public" href="../../std/algorithm/searching/count_until.html">countUntil</a><span class="tableEntryAnnotation">(haystack, needles)</span>
 								</code>
 							</td>
 							<td>Counts elements in the given
     <a href="../../std/range/primitives/is_forward_range.html" title="std.range.primitives.isForwardRange">forward range</a>
     until the given predicate is true for one of the given <code class="lang-d"><a href="../../std/algorithm/searching/count_until.html#needles"><span class="pln">needles</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="endsWith" class="public" href="../../std/algorithm/searching/ends_with.html">endsWith</a><span class="decoration">(doesThisEnd, withOneOfThese)</span>
+									<a id="endsWith" class="public" href="../../std/algorithm/searching/ends_with.html">endsWith</a><span class="tableEntryAnnotation">(doesThisEnd, withOneOfThese)</span>
 								</code>
 							</td>
 							<td>Checks if the given range ends with (one of) the given needle(s).
 The reciprocal of <code class="lang-d"><a href="../../std/algorithm/searching/starts_with.html"><span class="pln">startsWith</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="find" class="public" href="../../std/algorithm/searching/find.html">find</a><span class="decoration">(haystack, needle)</span>
+									<a id="find" class="public" href="../../std/algorithm/searching/find.html">find</a><span class="tableEntryAnnotation">(haystack, needle)</span>
 								</code>
 							</td>
 							<td>Finds an individual element in an <a href="../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>.
@@ -3081,91 +3114,118 @@ Elements of <code class="lang-d"><a href="../../std/algorithm/searching/find.htm
 <code class="lang-d"><span class="pln">pred</span></code> with <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">haystack<wbr/></span><span class="pun">.</span><span class="pln">front</span><span class="pun">, <a href="../../std/algorithm/searching/find.html#needle"></span><span class="pln">needle</span></a><span class="pun">)</span></code>.
 <code class="lang-d"><span class="pln">find</span></code> performs <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">walkLength</span><span class="pun">(<a href="../../std/algorithm/searching/find.html#haystack"></span><span class="pln">haystack</span></a><span class="pun">)</span></code>)</span> evaluations of <code class="lang-d"><span class="pln">pred</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="find" class="public" href="../../std/algorithm/searching/find.html">find</a><span class="decoration">(haystack, needles)</span>
+									<a id="find" class="public" href="../../std/algorithm/searching/find.html">find</a><span class="tableEntryAnnotation">(haystack, needles)</span>
 								</code>
 							</td>
 							<td>Finds two or more <code class="lang-d"><a href="../../std/algorithm/searching/find.html#needles"><span class="pln">needles</span></a></code> into a <code class="lang-d"><a href="../../std/algorithm/searching/find.html#haystack"><span class="pln">haystack</span></a></code>. The predicate <code class="lang-d"><span class="pln">pred</span></code> is used throughout to compare elements. By default, elements are
 compared for equality.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="find" class="public" href="../../std/algorithm/searching/find.html">find</a><span class="decoration">(haystack, needle)</span>
+									<a id="find" class="public" href="../../std/algorithm/searching/find.html">find</a><span class="tableEntryAnnotation">(haystack, needle)</span>
 								</code>
 							</td>
 							<td>Finds <code class="lang-d"><a href="../../std/algorithm/searching/find.html#needle"><span class="pln">needle</span></a></code> in <code class="lang-d"><a href="../../std/algorithm/searching/find.html#haystack"><span class="pln">haystack</span></a></code> efficiently using the
  <a href="https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string_search_algorithm"> Boyer-Moore</a> method.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="findAdjacent" class="public" href="../../std/algorithm/searching/find_adjacent.html">findAdjacent</a><span class="decoration">(r)</span>
+									<a id="findAdjacent" class="public" href="../../std/algorithm/searching/find_adjacent.html">findAdjacent</a><span class="tableEntryAnnotation">(r)</span>
 								</code>
 							</td>
 							<td>Advances <code class="lang-d"><a href="../../std/algorithm/searching/find_adjacent.html#r"><span class="pln">r</span></a></code> until it finds the first two adjacent elements <code class="lang-d"><span class="pln">a</span></code>,
 <code class="lang-d"><span class="pln">b</span></code> that satisfy <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">a</span><span class="pun">, </span><span class="pln">b</span><span class="pun">)</span></code>. Performs <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>)</span>
 evaluations of <code class="lang-d"><span class="pln">pred</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="findAmong" class="public" href="../../std/algorithm/searching/find_among.html">findAmong</a><span class="decoration">(seq, choices)</span>
+									<a id="findAmong" class="public" href="../../std/algorithm/searching/find_among.html">findAmong</a><span class="tableEntryAnnotation">(seq, choices)</span>
 								</code>
 							</td>
 							<td>Searches the given range for an element that matches one of the given choices.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="findSkip" class="public" href="../../std/algorithm/searching/find_skip.html">findSkip</a><span class="decoration">(haystack, needle)</span>
+									<a id="findSkip" class="public" href="../../std/algorithm/searching/find_skip.html">findSkip</a><span class="tableEntryAnnotation">(haystack, needle)</span>
 								</code>
 							</td>
 							<td>Finds <code class="lang-d"><a href="../../std/algorithm/searching/find_skip.html#needle"><span class="pln">needle</span></a></code> in <code class="lang-d"><a href="../../std/algorithm/searching/find_skip.html#haystack"><span class="pln">haystack</span></a></code> and positions <code class="lang-d"><a href="../../std/algorithm/searching/find_skip.html#haystack"><span class="pln">haystack</span></a></code>
  right after the first occurrence of <code class="lang-d"><a href="../../std/algorithm/searching/find_skip.html#needle"><span class="pln">needle</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="findSplit" class="public" href="../../std/algorithm/searching/find_split.html">findSplit</a><span class="decoration">(haystack, needle)</span>
+									<a id="findSplit" class="public" href="../../std/algorithm/searching/find_split.html">findSplit</a><span class="tableEntryAnnotation">(haystack, needle)</span>
 								</code>
 							</td>
 							<td>These functions find the first occurrence of <code class="lang-d"><a href="../../std/algorithm/searching/find_split.html#needle"><span class="pln">needle</span></a></code> in <code class="lang-d"><a href="../../std/algorithm/searching/find_split.html#haystack"><span class="pln">haystack</span></a></code> and then
 split <code class="lang-d"><a href="../../std/algorithm/searching/find_split.html#haystack"><span class="pln">haystack</span></a></code> as follows.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="findSplitAfter" class="public" href="../../std/algorithm/searching/find_split_after.html">findSplitAfter</a><span class="decoration">(haystack, needle)</span>
+									<a id="findSplitAfter" class="public" href="../../std/algorithm/searching/find_split_after.html">findSplitAfter</a><span class="tableEntryAnnotation">(haystack, needle)</span>
 								</code>
 							</td>
-							<td>These functions find the first occurrence of <code class="lang-d"><a href="../../std/algorithm/searching/find_split.html#needle"><span class="pln"><a href="../../std/algorithm/searching/find_split_after.html#needle"><span class="pln">needle</span></a></span></a></code> in <code class="lang-d"><a href="../../std/algorithm/searching/find_split.html#haystack"><span class="pln"><a href="../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln">haystack</span></a></span></a></code> and then
-split <code class="lang-d"><a href="../../std/algorithm/searching/find_split.html#haystack"><span class="pln"><a href="../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln">haystack</span></a></span></a></code> as follows.
+							<td>These functions find the first occurrence of <code class="lang-d"><a href="../../std/algorithm/searching/find_split_after.html#needle"><span class="pln">needle</span></a></code> in <code class="lang-d"><a href="../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln">haystack</span></a></code> and then
+split <code class="lang-d"><a href="../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln">haystack</span></a></code> as follows.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="findSplitBefore" class="public" href="../../std/algorithm/searching/find_split_before.html">findSplitBefore</a><span class="decoration">(haystack, needle)</span>
+									<a id="findSplitBefore" class="public" href="../../std/algorithm/searching/find_split_before.html">findSplitBefore</a><span class="tableEntryAnnotation">(haystack, needle)</span>
 								</code>
 							</td>
-							<td>These functions find the first occurrence of <code class="lang-d"><a href="../../std/algorithm/searching/find_split.html#needle"><span class="pln"><a href="../../std/algorithm/searching/find_split_after.html#needle"><span class="pln"><a href="../../std/algorithm/searching/find_split_before.html#needle"><span class="pln">needle</span></a></span></a></span></a></code> in <code class="lang-d"><a href="../../std/algorithm/searching/find_split.html#haystack"><span class="pln"><a href="../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln"><a href="../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></span></a></span></a></code> and then
-split <code class="lang-d"><a href="../../std/algorithm/searching/find_split.html#haystack"><span class="pln"><a href="../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln"><a href="../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></span></a></span></a></code> as follows.
+							<td>These functions find the first occurrence of <code class="lang-d"><a href="../../std/algorithm/searching/find_split_before.html#needle"><span class="pln">needle</span></a></code> in <code class="lang-d"><a href="../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></code> and then
+split <code class="lang-d"><a href="../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></code> as follows.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="maxCount" class="public" href="../../std/algorithm/searching/max_count.html">maxCount</a><span class="decoration">(range)</span>
+									<a id="maxCount" class="public" href="../../std/algorithm/searching/max_count.html">maxCount</a><span class="tableEntryAnnotation">(range)</span>
 								</code>
 							</td>
 							<td>Computes the minimum (respectively maximum) of <code class="lang-d"><a href="../../std/algorithm/searching/max_count.html#range"><span class="pln">range</span></a></code> along with its number of
@@ -3173,85 +3233,109 @@ occurrences. Formally, the minimum is a value <code class="lang-d"><span class="
 a value <code class="lang-d"><span class="pln">x</span></code> in <code class="lang-d"><a href="../../std/algorithm/searching/max_count.html#range"><span class="pln">range</span></a></code> such that <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">x</span><span class="pun">, </span><span class="pln">a</span><span class="pun">)</span></code> is <code class="lang-d"><span class="kwd">false</span></code> for all values <code class="lang-d"><span class="pln">a</span></code>
 in <code class="lang-d"><a href="../../std/algorithm/searching/max_count.html#range"><span class="pln">range</span></a></code> (note the swapped arguments to <code class="lang-d"><span class="pln">pred</span></code>).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="maxElement" class="public" href="../../std/algorithm/searching/max_element.html">maxElement</a><span class="decoration">(r)</span>
+									<a id="maxElement" class="public" href="../../std/algorithm/searching/max_element.html">maxElement</a><span class="tableEntryAnnotation">(r)</span>
 								</code>
 							</td>
 							<td>Iterates the passed range and returns the maximal element.
 A custom mapping function can be passed to <code class="lang-d"><span class="pln">map</span></code>.
 In other languages this is sometimes called <code class="lang-d"><span class="pln">argmax</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="maxIndex" class="public" href="../../std/algorithm/searching/max_index.html">maxIndex</a><span class="decoration">(range)</span>
+									<a id="maxIndex" class="public" href="../../std/algorithm/searching/max_index.html">maxIndex</a><span class="tableEntryAnnotation">(range)</span>
 								</code>
 							</td>
 							<td>Computes the index of the first occurrence of <code class="lang-d"><a href="../../std/algorithm/searching/max_index.html#range"><span class="pln">range</span></a></code>'s maximum element.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="maxPos" class="public" href="../../std/algorithm/searching/max_pos.html">maxPos</a><span class="decoration">(range)</span>
+									<a id="maxPos" class="public" href="../../std/algorithm/searching/max_pos.html">maxPos</a><span class="tableEntryAnnotation">(range)</span>
 								</code>
 							</td>
 							<td>Computes a subrange of <code class="lang-d"><a href="../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></code> starting at the first occurrence of <code class="lang-d"><a href="../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></code>'s
 minimum (respectively maximum) and with the same ending as <code class="lang-d"><a href="../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></code>, or the
 empty range if <code class="lang-d"><a href="../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></code> itself is empty.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="minCount" class="public" href="../../std/algorithm/searching/min_count.html">minCount</a><span class="decoration">(range)</span>
+									<a id="minCount" class="public" href="../../std/algorithm/searching/min_count.html">minCount</a><span class="tableEntryAnnotation">(range)</span>
 								</code>
 							</td>
-							<td>Computes the minimum (respectively maximum) of <code class="lang-d"><a href="../../std/algorithm/searching/max_count.html#range"><span class="pln"><a href="../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></span></a></code> along with its number of
-occurrences. Formally, the minimum is a value <code class="lang-d"><span class="pln">x</span></code> in <code class="lang-d"><a href="../../std/algorithm/searching/max_count.html#range"><span class="pln"><a href="../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></span></a></code> such that <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">a</span><span class="pun">, </span><span class="pln">x</span><span class="pun">)</span></code> is <code class="lang-d"><span class="kwd">false</span></code> for all values <code class="lang-d"><span class="pln">a</span></code> in <code class="lang-d"><a href="../../std/algorithm/searching/max_count.html#range"><span class="pln"><a href="../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></span></a></code>. Conversely, the maximum is
-a value <code class="lang-d"><span class="pln">x</span></code> in <code class="lang-d"><a href="../../std/algorithm/searching/max_count.html#range"><span class="pln"><a href="../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></span></a></code> such that <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">x</span><span class="pun">, </span><span class="pln">a</span><span class="pun">)</span></code> is <code class="lang-d"><span class="kwd">false</span></code> for all values <code class="lang-d"><span class="pln">a</span></code>
-in <code class="lang-d"><a href="../../std/algorithm/searching/max_count.html#range"><span class="pln"><a href="../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></span></a></code> (note the swapped arguments to <code class="lang-d"><span class="pln">pred</span></code>).
+							<td>Computes the minimum (respectively maximum) of <code class="lang-d"><a href="../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></code> along with its number of
+occurrences. Formally, the minimum is a value <code class="lang-d"><span class="pln">x</span></code> in <code class="lang-d"><a href="../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></code> such that <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">a</span><span class="pun">, </span><span class="pln">x</span><span class="pun">)</span></code> is <code class="lang-d"><span class="kwd">false</span></code> for all values <code class="lang-d"><span class="pln">a</span></code> in <code class="lang-d"><a href="../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></code>. Conversely, the maximum is
+a value <code class="lang-d"><span class="pln">x</span></code> in <code class="lang-d"><a href="../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></code> such that <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">x</span><span class="pun">, </span><span class="pln">a</span><span class="pun">)</span></code> is <code class="lang-d"><span class="kwd">false</span></code> for all values <code class="lang-d"><span class="pln">a</span></code>
+in <code class="lang-d"><a href="../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></code> (note the swapped arguments to <code class="lang-d"><span class="pln">pred</span></code>).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="minElement" class="public" href="../../std/algorithm/searching/min_element.html">minElement</a><span class="decoration">(r)</span>
+									<a id="minElement" class="public" href="../../std/algorithm/searching/min_element.html">minElement</a><span class="tableEntryAnnotation">(r)</span>
 								</code>
 							</td>
 							<td>Iterates the passed range and returns the minimal element.
 A custom mapping function can be passed to <code class="lang-d"><span class="pln">map</span></code>.
 In other languages this is sometimes called <code class="lang-d"><span class="pln">argmin</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="minIndex" class="public" href="../../std/algorithm/searching/min_index.html">minIndex</a><span class="decoration">(range)</span>
+									<a id="minIndex" class="public" href="../../std/algorithm/searching/min_index.html">minIndex</a><span class="tableEntryAnnotation">(range)</span>
 								</code>
 							</td>
 							<td>Computes the index of the first occurrence of <code class="lang-d"><a href="../../std/algorithm/searching/min_index.html#range"><span class="pln">range</span></a></code>'s minimum element.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="minPos" class="public" href="../../std/algorithm/searching/min_pos.html">minPos</a><span class="decoration">(range)</span>
+									<a id="minPos" class="public" href="../../std/algorithm/searching/min_pos.html">minPos</a><span class="tableEntryAnnotation">(range)</span>
 								</code>
 							</td>
-							<td>Computes a subrange of <code class="lang-d"><a href="../../std/algorithm/searching/max_pos.html#range"><span class="pln"><a href="../../std/algorithm/searching/min_pos.html#range"><span class="pln">range</span></a></span></a></code> starting at the first occurrence of <code class="lang-d"><a href="../../std/algorithm/searching/max_pos.html#range"><span class="pln"><a href="../../std/algorithm/searching/min_pos.html#range"><span class="pln">range</span></a></span></a></code>'s
-minimum (respectively maximum) and with the same ending as <code class="lang-d"><a href="../../std/algorithm/searching/max_pos.html#range"><span class="pln"><a href="../../std/algorithm/searching/min_pos.html#range"><span class="pln">range</span></a></span></a></code>, or the
-empty range if <code class="lang-d"><a href="../../std/algorithm/searching/max_pos.html#range"><span class="pln"><a href="../../std/algorithm/searching/min_pos.html#range"><span class="pln">range</span></a></span></a></code> itself is empty.
+							<td>Computes a subrange of <code class="lang-d"><a href="../../std/algorithm/searching/min_pos.html#range"><span class="pln">range</span></a></code> starting at the first occurrence of <code class="lang-d"><a href="../../std/algorithm/searching/min_pos.html#range"><span class="pln">range</span></a></code>'s
+minimum (respectively maximum) and with the same ending as <code class="lang-d"><a href="../../std/algorithm/searching/min_pos.html#range"><span class="pln">range</span></a></code>, or the
+empty range if <code class="lang-d"><a href="../../std/algorithm/searching/min_pos.html#range"><span class="pln">range</span></a></code> itself is empty.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="startsWith" class="public" href="../../std/algorithm/searching/starts_with.html">startsWith</a><span class="decoration">(doesThisStart, withOneOfThese)</span>
+									<a id="startsWith" class="public" href="../../std/algorithm/searching/starts_with.html">startsWith</a><span class="tableEntryAnnotation">(doesThisStart, withOneOfThese)</span>
 								</code>
 							</td>
 							<td>Checks whether the given
@@ -3259,16 +3343,22 @@ empty range if <code class="lang-d"><a href="../../std/algorithm/searching/max_p
 of) the given needle(s) or, if no needles are given,
 if its front element fulfils predicate <code class="lang-d"><span class="pln">pred</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="until" class="public" href="../../std/algorithm/searching/until.html">until</a><span class="decoration">(range, sentinel, openRight)</span>
+									<a id="until" class="public" href="../../std/algorithm/searching/until.html">until</a><span class="tableEntryAnnotation">(range, sentinel, openRight)</span>
 								</code>
 							</td>
 							<td>Lazily iterates <code class="lang-d"><a href="../../std/algorithm/searching/until.html#range"><span class="pln">range</span></a></code> until the element <code class="lang-d"><span class="pln">e</span></code> for which
 <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">e</span><span class="pun">, <a href="../../std/algorithm/searching/until.html#sentinel"></span><span class="pln">sentinel</span></a><span class="pun">)</span></code> is true.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3277,7 +3367,7 @@ if its front element fulfils predicate <code class="lang-d"><span class="pln">pr
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3285,9 +3375,11 @@ if its front element fulfils predicate <code class="lang-d"><span class="pln">pr
 									<a id="BoyerMooreFinder" class="public" href="../../std/algorithm/searching/boyer_moore_finder.html">BoyerMooreFinder</a>
 								</code>
 							</td>
-							<td>Sets up Boyer-Moore matching for use with <code class="lang-d"><a href="../../std/algorithm/searching/find.html"><span class="pln"><a href="../../std/algorithm/searching/find.html"><span class="pln">find</span></a></span></a></code> below.
+							<td>Sets up Boyer-Moore matching for use with <code class="lang-d"><a href="../../std/algorithm/searching/find.html"><span class="pln">find</span></a></code> below.
  By default, elements are compared for equality.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3295,9 +3387,11 @@ if its front element fulfils predicate <code class="lang-d"><span class="pln">pr
 									<a id="Until" class="public" href="../../std/algorithm/searching/until.html">Until</a>
 								</code>
 							</td>
-							<td>Lazily iterates <code class="lang-d"><a href="../../std/algorithm/searching/until.html#range"><span class="pln">range</span></a></code> until the element <code class="lang-d"><span class="pln">e</span></code> for which
-<code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">e</span><span class="pun">, <a href="../../std/algorithm/searching/until.html#sentinel"></span><span class="pln">sentinel</span></a><span class="pun">)</span></code> is true.
+							<td>Lazily iterates <code class="lang-d"><span class="pln">range</span></code> until the element <code class="lang-d"><span class="pln">e</span></code> for which
+<code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">e</span><span class="pun">, </span><span class="pln">sentinel</span><span class="pun">)</span></code> is true.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3306,7 +3400,7 @@ if its front element fulfils predicate <code class="lang-d"><span class="pln">pr
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3316,6 +3410,8 @@ if its front element fulfils predicate <code class="lang-d"><span class="pln">pr
 							</td>
 							<td>Checks if <i>all</i> of the elements verify <code class="lang-d"><span class="pln">pred</span></code>.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3328,6 +3424,8 @@ if its front element fulfils predicate <code class="lang-d"><span class="pln">pr
 <code class="lang-d"><span class="pln">pred</span></code>.
 This is sometimes called <code class="lang-d"><span class="pln">exists</span></code> in other languages.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3338,6 +3436,8 @@ This is sometimes called <code class="lang-d"><span class="pln">exists</span></c
 							<td>Convenience function. Like find, but only returns whether or not the search
 was successful.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3350,6 +3450,8 @@ any of the additionally given ranges (<code class="lang-d"><span class="pln">nee
 if no second range is given skip over the elements that fulfill pred.
 Do nothing if there is no match.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 					</table>
 				</section>

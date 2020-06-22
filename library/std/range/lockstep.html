@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2954,11 +2969,11 @@ $('#symbolSearchPane').show();</script>
 					</ul>
 				</nav><h2 id="0">Function lockstep</h2><p>Iterate multiple ranges in lockstep using a <code class="lang-d"><span class="kwd">foreach</span></code> loop. In contrast to
    <code class="lang-d"><a href="../../std/range/zip.html"><span class="pln">zip</span></a></code> it allows reference access to its elements. If only a single
-   range is passed in, the <code class="lang-d"><a href="../std/range/lockstep.html"><span class="typ"><span class="typ"><a href="../../std/range/lockstep.html"><span class="typ">Lockstep</span></a></span></span></a></code> aliases itself away.  If the
-   ranges are of different lengths and <code class="lang-d"><a href="../std/range/lockstep.html#s"><span class="pln"><a href="../../std/range/lockstep.html#s"><span class="pln">s</span></a></span></a></code> == <code class="lang-d"><a href="../std/range/stopping_policy.html#shortest"><span class="typ"><a href="../std/range/stopping_policy.html"><span class="typ"><a href="../../std/range/stopping_policy.html"><span class="typ">StoppingPolicy</span></a></span></a><wbr/></span><span class="pun">.</span><span class="pln">shortest</span></a></code>
+   range is passed in, the <code class="lang-d"><a href="../../std/range/lockstep.html"><span class="typ">Lockstep</span></a></code> aliases itself away.  If the
+   ranges are of different lengths and <code class="lang-d"><a href="../../std/range/lockstep.html#s"><span class="pln">s</span></a></code> == <code class="lang-d"><a href="../../std/range/stopping_policy.html#shortest"><span class="typ">StoppingPolicy<wbr/></span><span class="pun">.</span><span class="pln">shortest</span></a></code>
    stop after the shortest range is empty.  If the ranges are of different
-   lengths and <code class="lang-d"><a href="../std/range/lockstep.html#s"><span class="pln"><a href="../../std/range/lockstep.html#s"><span class="pln">s</span></a></span></a></code> == <code class="lang-d"><a href="../std/range/stopping_policy.html#requireSameLength"><span class="typ"><a href="../std/range/stopping_policy.html"><span class="typ"><a href="../../std/range/stopping_policy.html"><span class="typ">StoppingPolicy</span></a></span></a><wbr/></span><span class="pun">.</span><span class="pln">requireSameLength</span></a></code>, throw an
-   exception.  <code class="lang-d"><a href="../std/range/lockstep.html#s"><span class="pln"><a href="../../std/range/lockstep.html#s"><span class="pln">s</span></a></span></a></code> may not be <code class="lang-d"><a href="../std/range/stopping_policy.html#longest"><span class="typ"><a href="../std/range/stopping_policy.html"><span class="typ"><a href="../../std/range/stopping_policy.html"><span class="typ">StoppingPolicy</span></a></span></a><wbr/></span><span class="pun">.</span><span class="pln">longest</span></a></code>, and passing this
+   lengths and <code class="lang-d"><a href="../../std/range/lockstep.html#s"><span class="pln">s</span></a></code> == <code class="lang-d"><a href="../../std/range/stopping_policy.html#requireSameLength"><span class="typ">StoppingPolicy<wbr/></span><span class="pun">.</span><span class="pln">requireSameLength</span></a></code>, throw an
+   exception.  <code class="lang-d"><a href="../../std/range/lockstep.html#s"><span class="pln">s</span></a></code> may not be <code class="lang-d"><a href="../../std/range/stopping_policy.html#longest"><span class="typ">StoppingPolicy<wbr/></span><span class="pun">.</span><span class="pln">longest</span></a></code>, and passing this
    will throw an exception.
 </p>
 				<div class="prototype">
@@ -3036,11 +3051,11 @@ $('#symbolSearchPane').show();</script>
 </section>
 <h2 id="1">Struct Lockstep</h2><p>Iterate multiple ranges in lockstep using a <code class="lang-d"><span class="kwd">foreach</span></code> loop. In contrast to
    <code class="lang-d"><a href="../../std/range/zip.html"><span class="pln">zip</span></a></code> it allows reference access to its elements. If only a single
-   range is passed in, the <code class="lang-d"><a href="../std/range/lockstep.html"><span class="typ"><span class="typ"><a href="../../std/range/lockstep.html"><span class="typ"><span class="typ">Lockstep</span></span></a></span></span></a></code> aliases itself away.  If the
-   ranges are of different lengths and <code class="lang-d"><a href="../std/range/lockstep.html#s"><span class="pln"><a href="../../std/range/lockstep.html#s"><span class="pln">s</span></a></span></a></code> == <code class="lang-d"><a href="../std/range/stopping_policy.html#shortest"><span class="typ"><a href="../std/range/stopping_policy.html"><span class="typ"><a href="../../std/range/stopping_policy.html"><span class="typ"><a href="../../std/range/stopping_policy.html"><span class="typ">StoppingPolicy</span></a></span></a></span></a><wbr/></span><span class="pun">.</span><span class="pln">shortest</span></a></code>
+   range is passed in, the <code class="lang-d"><span class="typ">Lockstep</span></code> aliases itself away.  If the
+   ranges are of different lengths and <code class="lang-d"><span class="pln">s</span></code> == <code class="lang-d"><a href="../../std/range/stopping_policy.html#shortest"><span class="typ">StoppingPolicy<wbr/></span><span class="pun">.</span><span class="pln">shortest</span></a></code>
    stop after the shortest range is empty.  If the ranges are of different
-   lengths and <code class="lang-d"><a href="../std/range/lockstep.html#s"><span class="pln"><a href="../../std/range/lockstep.html#s"><span class="pln">s</span></a></span></a></code> == <code class="lang-d"><a href="../std/range/stopping_policy.html#requireSameLength"><span class="typ"><a href="../std/range/stopping_policy.html"><span class="typ"><a href="../../std/range/stopping_policy.html"><span class="typ"><a href="../../std/range/stopping_policy.html"><span class="typ">StoppingPolicy</span></a></span></a></span></a><wbr/></span><span class="pun">.</span><span class="pln">requireSameLength</span></a></code>, throw an
-   exception.  <code class="lang-d"><a href="../std/range/lockstep.html#s"><span class="pln"><a href="../../std/range/lockstep.html#s"><span class="pln">s</span></a></span></a></code> may not be <code class="lang-d"><a href="../std/range/stopping_policy.html#longest"><span class="typ"><a href="../std/range/stopping_policy.html"><span class="typ"><a href="../../std/range/stopping_policy.html"><span class="typ"><a href="../../std/range/stopping_policy.html"><span class="typ">StoppingPolicy</span></a></span></a></span></a><wbr/></span><span class="pun">.</span><span class="pln">longest</span></a></code>, and passing this
+   lengths and <code class="lang-d"><span class="pln">s</span></code> == <code class="lang-d"><a href="../../std/range/stopping_policy.html#requireSameLength"><span class="typ">StoppingPolicy<wbr/></span><span class="pun">.</span><span class="pln">requireSameLength</span></a></code>, throw an
+   exception.  <code class="lang-d"><span class="pln">s</span></code> may not be <code class="lang-d"><a href="../../std/range/stopping_policy.html#longest"><span class="typ">StoppingPolicy<wbr/></span><span class="pun">.</span><span class="pln">longest</span></a></code>, and passing this
    will throw an exception.
 </p>
 				<div class="prototype">
@@ -3054,13 +3069,13 @@ $('#symbolSearchPane').show();</script>
 						</div>
 					</code>
 				</div>
-				<section><p>Iterating over <code class="lang-d"><a href="../../std/range/lockstep.html"><span class="typ"><span class="typ">Lockstep</span></span></a></code> in reverse and with an index is only possible
-   when <code class="lang-d"><a href="../../std/range/lockstep.html#s"><span class="pln">s</span></a></code> == <code class="lang-d"><a href="../../std/range/stopping_policy.html#requireSameLength"><span class="typ"><a href="../../std/range/stopping_policy.html"><span class="typ">StoppingPolicy</span></a><wbr/></span><span class="pun">.</span><span class="pln">requireSameLength</span></a></code>, in order to preserve
-   indexes. If an attempt is made at iterating in reverse when <code class="lang-d"><a href="../../std/range/lockstep.html#s"><span class="pln">s</span></a></code> ==
-   <code class="lang-d"><a href="../../std/range/stopping_policy.html#shortest"><span class="typ"><a href="../../std/range/stopping_policy.html"><span class="typ">StoppingPolicy</span></a><wbr/></span><span class="pun">.</span><span class="pln">shortest</span></a></code>, an exception will be thrown.
+				<section><p>Iterating over <code class="lang-d"><span class="typ">Lockstep</span></code> in reverse and with an index is only possible
+   when <code class="lang-d"><span class="pln">s</span></code> == <code class="lang-d"><a href="../../std/range/stopping_policy.html#requireSameLength"><span class="typ">StoppingPolicy<wbr/></span><span class="pun">.</span><span class="pln">requireSameLength</span></a></code>, in order to preserve
+   indexes. If an attempt is made at iterating in reverse when <code class="lang-d"><span class="pln">s</span></code> ==
+   <code class="lang-d"><a href="../../std/range/stopping_policy.html#shortest"><span class="typ">StoppingPolicy<wbr/></span><span class="pun">.</span><span class="pln">shortest</span></a></code>, an exception will be thrown.
 </p>
 
-<p>   By default <code class="lang-d"><a href="../../std/range/stopping_policy.html"><span class="typ"><a href="../../std/range/stopping_policy.html"><span class="typ">StoppingPolicy</span></a></span></a></code> is set to <code class="lang-d"><a href="../../std/range/stopping_policy.html#shortest"><span class="typ"><a href="../../std/range/stopping_policy.html"><span class="typ">StoppingPolicy</span></a><wbr/></span><span class="pun">.</span><span class="pln">shortest</span></a></code>.
+<p>   By default <code class="lang-d"><a href="../../std/range/stopping_policy.html"><span class="typ">StoppingPolicy</span></a></code> is set to <code class="lang-d"><a href="../../std/range/stopping_policy.html#shortest"><span class="typ">StoppingPolicy<wbr/></span><span class="pun">.</span><span class="pln">shortest</span></a></code>.
 </p>
 </section>
 
@@ -3075,6 +3090,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/lockstep.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(ranges, sp)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3082,7 +3098,7 @@ $('#symbolSearchPane').show();</script>
 				</section>
 				<section><h3>Limitations</h3>
 <p>The <code class="lang-d"><span class="kwd">pure</span></code>, <code class="lang-d"><span class="kwd">@safe</span></code>, <code class="lang-d"><span class="kwd">@nogc</span></code>, or <code class="lang-d"><span class="kwd">nothrow</span></code> attributes cannot be
-   inferred for <code class="lang-d"><span class="pln"><a href="../../std/range/lockstep.html"><span class="pln">lockstep</span></a></span></code> iteration. <code class="lang-d"><a href="../../std/range/zip.html"><span class="pln">zip</span></a></code> can infer the first two due to
+   inferred for <code class="lang-d"><a href="../../std/range/lockstep.html"><span class="pln">lockstep</span></a></code> iteration. <code class="lang-d"><a href="../../std/range/zip.html"><span class="pln">zip</span></a></code> can infer the first two due to
    a different implementation.
 </p>
 </section>
@@ -3090,10 +3106,10 @@ $('#symbolSearchPane').show();</script>
 <p><code class="lang-d"><a href="../../std/range/zip.html"><span class="pln">zip</span></a></code>
 </p>
 
-<p>       <code class="lang-d"><span class="pln"><a href="../../std/range/lockstep.html"><span class="pln">lockstep</span></a></span></code> is similar to <code class="lang-d"><a href="../../std/range/zip.html"><span class="pln">zip</span></a></code>, but <code class="lang-d"><a href="../../std/range/zip.html"><span class="pln"><a href="../../std/range/zip.html"><span class="pln">zip</span></a></span></a></code> bundles its
+<p>       <code class="lang-d"><a href="../../std/range/lockstep.html"><span class="pln">lockstep</span></a></code> is similar to <code class="lang-d"><a href="../../std/range/zip.html"><span class="pln">zip</span></a></code>, but <code class="lang-d"><a href="../../std/range/zip.html"><span class="pln">zip</span></a></code> bundles its
        elements and returns a range.
-       <code class="lang-d"><span class="pln"><a href="../../std/range/lockstep.html"><span class="pln">lockstep</span></a></span></code> also supports reference access.
-       Use <code class="lang-d"><a href="../../std/range/zip.html"><span class="pln"><a href="../../std/range/zip.html"><span class="pln">zip</span></a></span></a></code> if you want to pass the result to a range function.
+       <code class="lang-d"><a href="../../std/range/lockstep.html"><span class="pln">lockstep</span></a></code> also supports reference access.
+       Use <code class="lang-d"><a href="../../std/range/zip.html"><span class="pln">zip</span></a></code> if you want to pass the result to a range function.
 </p>
 </section>
 <section><h3>Example</h3>

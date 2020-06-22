@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2979,6 +2994,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/digest/murmurhash/murmur_hash3.finalize.html" class="public">
 									<code>finalize</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Incorporate <code class="lang-d"><span class="pln">element_count</span></code> and finalizes the hash.
 </td>
@@ -2988,6 +3004,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/digest/murmurhash/murmur_hash3.finish.html" class="public">
 									<code>finish</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Finalizes the computation of the hash and returns the computed value.
     Note that <code class="lang-d"><span class="pln">finish</span></code> can be called only once and that no subsequent calls
@@ -2999,6 +3016,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/digest/murmurhash/murmur_hash3.get.html" class="public">
 									<code>get</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns the hash as an uint value.
 </td>
@@ -3008,6 +3026,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/digest/murmurhash/murmur_hash3.get_bytes.html" class="public">
 									<code>getBytes</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns the current hashed value as an ubyte array.
 </td>
@@ -3017,6 +3036,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/digest/murmurhash/murmur_hash3.put.html" class="public">
 									<code>put</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Adds data to the digester. This function can be called many times in a row
     after start but before finish.
@@ -3027,9 +3047,10 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/digest/murmurhash/murmur_hash3.put_element.html" class="public">
 									<code>putElement</code>
 								</a>
+								<span class="tableEntryAnnotation">(block)</span>
 							</td>
 							<td>Adds a single Element of data without increasing <code class="lang-d"><span class="pln">element_count</span></code>.
-        Make sure to increase <code class="lang-d"><span class="pln">element_count</span></code> by <code class="lang-d"><span class="typ"><a href="../../../std/digest/murmurhash/murmur_hash3.element.html"><span class="typ">Element</span></a><wbr/></span><span class="pun">.</span><span class="pln">sizeof</span></code> for each call to <code class="lang-d"><span class="pln"><span class="pln">putElement</span></span></code>.
+        Make sure to increase <code class="lang-d"><span class="pln">element_count</span></code> by <code class="lang-d"><span class="typ">Element<wbr/></span><span class="pun">.</span><span class="pln">sizeof</span></code> for each call to <code class="lang-d"><span class="pln">putElement</span></code>.
 </td>
 						</tr>
 						<tr>
@@ -3037,6 +3058,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/digest/murmurhash/murmur_hash3.put_elements.html" class="public">
 									<code>putElements</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Pushes an array of elements at once. It is more efficient to push as much data as possible in a single call.
     On platforms that do not support unaligned reads (MIPS or old ARM chips), the compiler may produce slower code to ensure correctness.
@@ -3047,8 +3069,9 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/digest/murmurhash/murmur_hash3.put_remainder.html" class="public">
 									<code>putRemainder</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
-							<td>Put remainder bytes. This must be called only once after <code class="lang-d"><a href="../../../std/digest/murmurhash/murmur_hash3.put_element.html"><span class="pln"><a href="../../../std/digest/murmurhash/murmur_hash3.put_element.html"><span class="pln">putElement</span></a></span></a></code> and before <code class="lang-d"><a href="../../../std/digest/murmurhash/murmur_hash3.finalize.html"><span class="pln"><a href="../../../std/digest/murmurhash/murmur_hash3.finalize.html"><span class="pln">finalize</span></a></span></a></code>.
+							<td>Put remainder bytes. This must be called only once after <code class="lang-d"><a href="../../../std/digest/murmurhash/murmur_hash3.put_element.html"><span class="pln">putElement</span></a></code> and before <code class="lang-d"><a href="../../../std/digest/murmurhash/murmur_hash3.finalize.html"><span class="pln">finalize</span></a></code>.
 </td>
 						</tr>
 					</table>

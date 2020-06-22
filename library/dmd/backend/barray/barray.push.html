@@ -8,7 +8,7 @@
 		<meta charset="utf-8"/>
 		<meta name="keywords" content="D programming language"/>
 		<meta name="description" content="D Programming Language"/>
-		<title>Function Barray.push - D Programming Language</title>
+		<title>Barray.push - multiple declarations - D Programming Language</title>
 		<link rel="stylesheet" href="../../../../css/codemirror.css"/>
 		<link rel="stylesheet" href="../../../../css/style.css"/>
 		<link rel="stylesheet" href="../../../../css/print.css" media="print"/>
@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/dmd/blob/master/src/dmd/backend/barray.d#L62">
+							<a href="https://github.com/dlang/dmd/blob/master/src/dmd/backend/barray.d#L83">
 								View source code
 							</a>
 							<div>
@@ -2919,14 +2934,14 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://issues.dlang.org/enter_bug.cgi?bug_file_loc=http%3A%2F%2Fdlang.org/library-prerelease/src/dmd/backend/barray.html&amp;bug_severity=enhancement&amp;component=dmd&amp;op_sys=All&amp;priority=P3&amp;product=D&amp;rep_platform=All&amp;short_desc=%5BFunction Barray.push%5D&amp;version=D2">Report a bug</a>
+							<a href="https://issues.dlang.org/enter_bug.cgi?bug_file_loc=http%3A%2F%2Fdlang.org/library-prerelease/src/dmd/backend/barray.html&amp;bug_severity=enhancement&amp;component=dmd&amp;op_sys=All&amp;priority=P3&amp;product=D&amp;rep_platform=All&amp;short_desc=%5BBarray.push - multiple declarations%5D&amp;version=D2">Report a bug</a>
 							<div>
 								If you spot a problem with this page, click here to create a
 								Bugzilla issue.
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/dmd/edit/master/src/dmd/backend/barray.d#L62">
+							<a href="https://github.com/dlang/dmd/edit/master/src/dmd/backend/barray.d#L83">
 								Improve this page
 							</a>
 							<div>
@@ -2937,7 +2952,36 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../../dmd/backend/barray/barray.html">dmd.backend.barray.Barray</a>.push</code></h1><p>Append element t to array.
+				</div>
+				<h1><code><a href="../../../dmd/backend/barray.html">dmd.backend.barray</a>.Barray.push</code>  - multiple declarations</h1>
+				<nav class="page-nav">
+					<ul>
+						<li>
+							<a href="#0">
+								Function <code>Barray.push</code>
+							</a>
+						</li>
+						<li>
+							<a href="#1">
+								Function <code>Barray.push</code>
+							</a>
+						</li>
+					</ul>
+				</nav><h2 id="0">Function Barray.push</h2><p>Append a 0-initialized element of T to array
+</p>
+				<div class="prototype">
+					<code class="lang-d">
+						<div class="single-prototype">
+				<span class="kwd">extern</span><span class="pun">(</span><span class="pln">C</span><span class="pun">++) </span><span class="pln">T</span><span class="pun">*</span> <span class="pln">push</span><span class="pun">(</span><span class="pun">)</span><span class="pun">;</span>
+						</div>
+					</code>
+				</div>
+				
+				<section><h3>Returns</h3>
+<p>pointer to appended element
+</p>
+</section>
+<h2 id="1">Function Barray.push</h2><p>Append element t to array.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2952,7 +2996,7 @@ $('#symbolSearchPane').show();</script>
 					</code>
 				</div>
 				
-				<section><h2>Parameters</h2>
+				<section><h3>Parameters</h3>
 <table><col class="caption"><tr><th>Name</th><th>Description</th></tr>
 <tr><td id="t">t</td><td> element to append</td></tr>
 </table>

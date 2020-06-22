@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2940,10 +2955,10 @@ $('#symbolSearchPane').show();</script>
 				</div><h1>Struct <code><a href="../../../../std/experimental/allocator/mmap_allocator.html">std.experimental.allocator.mmap_allocator</a>.MmapAllocator</code></h1><p>Allocator (currently defined only for Posix and Windows) using
 <code class="lang-d"><a href="https://en.wikipedia.org/wiki/Mmap"><span class="pln">mmap</span></a></code>
 and <code class="lang-d"><a href="https://google.com/search?btnI=I%27m+Feeling+Lucky&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=munmap"><span class="pln">munmap</span></a></code> directly (or their Windows equivalents). There is no
-additional structure: each call to <code class="lang-d"><a href="../../../std/experimental/allocator/mmap_allocator/mmap_allocator.allocate.html"><span class="pln"><a href="../../../../std/experimental/allocator/mmap_allocator/mmap_allocator.allocate.html"><span class="pln">allocate</span></a></span></a><span class="pun">(</span><span class="pln">s</span><span class="pun">)</span></code> issues a call to
+additional structure: each call to <code class="lang-d"><a href="../../../../std/experimental/allocator/mmap_allocator/mmap_allocator.allocate.html"><span class="pln">allocate</span></a><span class="pun">(</span><span class="pln">s</span><span class="pun">)</span></code> issues a call to
 <code class="lang-d"><span class="pln">mmap</span><span class="pun">(</span><span class="kwd">null</span><span class="pun">, </span><span class="pln">s</span><span class="pun">, </span><span class="pln">PROT_READ </span><span class="pun">| </span><span class="pln">PROT_WRITE</span><span class="pun">, </span><span class="pln">MAP_PRIVATE </span><span class="pun">| </span><span class="pln">MAP_ANONYMOUS</span><span class="pun">, -</span><span class="lit">1</span><span class="pun">, </span><span class="lit">0</span><span class="pun">)</span></code>,
-and each call to <code class="lang-d"><a href="../../../std/experimental/allocator/mmap_allocator/mmap_allocator.deallocate.html"><span class="pln"><a href="../../../../std/experimental/allocator/mmap_allocator/mmap_allocator.deallocate.html"><span class="pln">deallocate</span></a></span></a><span class="pun">(</span><span class="pln">b</span><span class="pun">)</span></code> issues <code class="lang-d"><span class="pln">munmap</span><span class="pun">(</span><span class="pln">b<wbr/></span><span class="pun">.</span><span class="pln">ptr</span><span class="pun">, </span><span class="pln">b<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code>.
-So <code class="lang-d"><span class="typ"><span class="typ">MmapAllocator</span></span></code> is usually intended for allocating large chunks to be
+and each call to <code class="lang-d"><a href="../../../../std/experimental/allocator/mmap_allocator/mmap_allocator.deallocate.html"><span class="pln">deallocate</span></a><span class="pun">(</span><span class="pln">b</span><span class="pun">)</span></code> issues <code class="lang-d"><span class="pln">munmap</span><span class="pun">(</span><span class="pln">b<wbr/></span><span class="pun">.</span><span class="pln">ptr</span><span class="pun">, </span><span class="pln">b<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code>.
+So <code class="lang-d"><span class="typ">MmapAllocator</span></code> is usually intended for allocating large chunks to be
 managed by fine-granular allocators.
 </p>
 				<div class="prototype">
@@ -2981,6 +2996,7 @@ managed by fine-granular allocators.
 								<a href="../../../../std/experimental/allocator/mmap_allocator/mmap_allocator.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(bytes)</span>
 							</td>
 							<td>Allocator API.
 </td>
@@ -2990,6 +3006,7 @@ managed by fine-granular allocators.
 								<a href="../../../../std/experimental/allocator/mmap_allocator/mmap_allocator.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>Allocator API.
 </td>

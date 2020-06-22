@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2949,235 +2964,323 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_and" class="public" href="../../dmd/backend/dvec/vec_and.html">vec_and</a><span class="decoration">(v1, v2, v3)</span>
+									<a id="vec_and" class="public" href="../../dmd/backend/dvec/vec_and.html">vec_and</a><span class="tableEntryAnnotation">(v1, v2, v3)</span>
 								</code>
 							</td>
 							<td>Compute v1 = v2 &amp; v3.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_andass" class="public" href="../../dmd/backend/dvec/vec_andass.html">vec_andass</a><span class="decoration">(v1, v2)</span>
+									<a id="vec_andass" class="public" href="../../dmd/backend/dvec/vec_andass.html">vec_andass</a><span class="tableEntryAnnotation">(v1, v2)</span>
 								</code>
 							</td>
 							<td>Compute v1 &amp;= v2.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_calloc" class="public" href="../../dmd/backend/dvec/vec_calloc.html">vec_calloc</a><span class="decoration">(numbits)</span>
+									<a id="vec_calloc" class="public" href="../../dmd/backend/dvec/vec_calloc.html">vec_calloc</a><span class="tableEntryAnnotation">(numbits)</span>
 								</code>
 							</td>
 							<td>Allocate a vector given # of bits in it.
  Clear the vector.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_clear" class="public" href="../../dmd/backend/dvec/vec_clear.html">vec_clear</a><span class="decoration">(v)</span>
+									<a id="vec_clear" class="public" href="../../dmd/backend/dvec/vec_clear.html">vec_clear</a><span class="tableEntryAnnotation">(v)</span>
 								</code>
 							</td>
 							<td>Clear vector.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_clearbit" class="public" href="../../dmd/backend/dvec/vec_clearbit.html">vec_clearbit</a><span class="decoration">(b, v)</span>
+									<a id="vec_clearbit" class="public" href="../../dmd/backend/dvec/vec_clearbit.html">vec_clearbit</a><span class="tableEntryAnnotation">(b, v)</span>
 								</code>
 							</td>
 							<td>Clear bit b in vector v.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_clearextrabits" class="public" href="../../dmd/backend/dvec/vec_clearextrabits.html">vec_clearextrabits</a><span class="decoration">(v)</span>
+									<a id="vec_clearextrabits" class="public" href="../../dmd/backend/dvec/vec_clearextrabits.html">vec_clearextrabits</a><span class="tableEntryAnnotation">(v)</span>
 								</code>
 							</td>
 							<td>Clear any extra bits in vector.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_clone" class="public" href="../../dmd/backend/dvec/vec_clone.html">vec_clone</a><span class="decoration">(v)</span>
+									<a id="vec_clone" class="public" href="../../dmd/backend/dvec/vec_clone.html">vec_clone</a><span class="tableEntryAnnotation">(v)</span>
 								</code>
 							</td>
 							<td>Allocate copy of existing vector.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_copy" class="public" href="../../dmd/backend/dvec/vec_copy.html">vec_copy</a><span class="decoration">(to, from)</span>
+									<a id="vec_copy" class="public" href="../../dmd/backend/dvec/vec_copy.html">vec_copy</a><span class="tableEntryAnnotation">(to, from)</span>
 								</code>
 							</td>
 							<td>Copy vector.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_disjoint" class="public" href="../../dmd/backend/dvec/vec_disjoint.html">vec_disjoint</a><span class="decoration">(v1, v2)</span>
+									<a id="vec_disjoint" class="public" href="../../dmd/backend/dvec/vec_disjoint.html">vec_disjoint</a><span class="tableEntryAnnotation">(v1, v2)</span>
 								</code>
 							</td>
 							<td>Return 1 if (v1 &amp; v2) == 0
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_equal" class="public" href="../../dmd/backend/dvec/vec_equal.html">vec_equal</a><span class="decoration">(v1, v2)</span>
+									<a id="vec_equal" class="public" href="../../dmd/backend/dvec/vec_equal.html">vec_equal</a><span class="tableEntryAnnotation">(v1, v2)</span>
 								</code>
 							</td>
 							<td>Return 1 if vectors are equal.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_free" class="public" href="../../dmd/backend/dvec/vec_free.html">vec_free</a><span class="decoration">(v)</span>
+									<a id="vec_free" class="public" href="../../dmd/backend/dvec/vec_free.html">vec_free</a><span class="tableEntryAnnotation">(v)</span>
 								</code>
 							</td>
 							<td>Free a vector.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_index" class="public" href="../../dmd/backend/dvec/vec_index.html">vec_index</a><span class="decoration">(b, vec)</span>
+									<a id="vec_index" class="public" href="../../dmd/backend/dvec/vec_index.html">vec_index</a><span class="tableEntryAnnotation">(b, vec)</span>
 								</code>
 							</td>
 							<td>Find first set bit starting from b in vector v.
  If no bit is found, return vec_numbits(v).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_init" class="public" href="../../dmd/backend/dvec/vec_init.html">vec_init</a><span class="decoration">()</span>
+									<a id="vec_init" class="public" href="../../dmd/backend/dvec/vec_init.html">vec_init</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Initialize package.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_or" class="public" href="../../dmd/backend/dvec/vec_or.html">vec_or</a><span class="decoration">(v1, v2, v3)</span>
+									<a id="vec_or" class="public" href="../../dmd/backend/dvec/vec_or.html">vec_or</a><span class="tableEntryAnnotation">(v1, v2, v3)</span>
 								</code>
 							</td>
 							<td>Compute v1 = v2 | v3.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_orass" class="public" href="../../dmd/backend/dvec/vec_orass.html">vec_orass</a><span class="decoration">(v1, v2)</span>
+									<a id="vec_orass" class="public" href="../../dmd/backend/dvec/vec_orass.html">vec_orass</a><span class="tableEntryAnnotation">(v1, v2)</span>
 								</code>
 							</td>
 							<td>Compute v1 |= v2.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_println" class="public" href="../../dmd/backend/dvec/vec_println.html">vec_println</a><span class="decoration">(v)</span>
+									<a id="vec_println" class="public" href="../../dmd/backend/dvec/vec_println.html">vec_println</a><span class="tableEntryAnnotation">(v)</span>
 								</code>
 							</td>
 							<td>Write out vector.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_realloc" class="public" href="../../dmd/backend/dvec/vec_realloc.html">vec_realloc</a><span class="decoration">(v, numbits)</span>
+									<a id="vec_realloc" class="public" href="../../dmd/backend/dvec/vec_realloc.html">vec_realloc</a><span class="tableEntryAnnotation">(v, numbits)</span>
 								</code>
 							</td>
 							<td>Realloc a vector to have numbits bits in it.
  Extra bits are set to 0.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_set" class="public" href="../../dmd/backend/dvec/vec_set.html">vec_set</a><span class="decoration">(v)</span>
+									<a id="vec_recycle" class="public" href="../../dmd/backend/dvec/vec_recycle.html">vec_recycle</a><span class="tableEntryAnnotation">(v, numbits)</span>
+								</code>
+							</td>
+							<td>Recycle a vector <code class="lang-d"><a href="../../dmd/backend/dvec/vec_recycle.html#v"><span class="pln">v</span></a></code> to a new size <code class="lang-d"><a href="../../dmd/backend/dvec/vec_recycle.html#numbits"><span class="pln">numbits</span></a></code>, clear all bits.
+ Re-uses original if possible.
+</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>
+									<a id="vec_set" class="public" href="../../dmd/backend/dvec/vec_set.html">vec_set</a><span class="tableEntryAnnotation">(v)</span>
 								</code>
 							</td>
 							<td>Set vector.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_setbit" class="public" href="../../dmd/backend/dvec/vec_setbit.html">vec_setbit</a><span class="decoration">(b, v)</span>
+									<a id="vec_setbit" class="public" href="../../dmd/backend/dvec/vec_setbit.html">vec_setbit</a><span class="tableEntryAnnotation">(b, v)</span>
 								</code>
 							</td>
 							<td>Set bit b in vector v.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_sub" class="public" href="../../dmd/backend/dvec/vec_sub.html">vec_sub</a><span class="decoration">(v1, v2, v3)</span>
+									<a id="vec_sub" class="public" href="../../dmd/backend/dvec/vec_sub.html">vec_sub</a><span class="tableEntryAnnotation">(v1, v2, v3)</span>
 								</code>
 							</td>
 							<td>Compute v1 = v2 - v3.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_subass" class="public" href="../../dmd/backend/dvec/vec_subass.html">vec_subass</a><span class="decoration">(v1, v2)</span>
+									<a id="vec_subass" class="public" href="../../dmd/backend/dvec/vec_subass.html">vec_subass</a><span class="tableEntryAnnotation">(v1, v2)</span>
 								</code>
 							</td>
 							<td>Compute v1 -= v2.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_term" class="public" href="../../dmd/backend/dvec/vec_term.html">vec_term</a><span class="decoration">()</span>
+									<a id="vec_term" class="public" href="../../dmd/backend/dvec/vec_term.html">vec_term</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Terminate package.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_testbit" class="public" href="../../dmd/backend/dvec/vec_testbit.html">vec_testbit</a><span class="decoration">(b, v)</span>
+									<a id="vec_testbit" class="public" href="../../dmd/backend/dvec/vec_testbit.html">vec_testbit</a><span class="tableEntryAnnotation">(b, v)</span>
 								</code>
 							</td>
 							<td>Test bit b in vector v.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_xor" class="public" href="../../dmd/backend/dvec/vec_xor.html">vec_xor</a><span class="decoration">(v1, v2, v3)</span>
+									<a id="vec_xor" class="public" href="../../dmd/backend/dvec/vec_xor.html">vec_xor</a><span class="tableEntryAnnotation">(v1, v2, v3)</span>
 								</code>
 							</td>
 							<td>Compute v1 = v2 ^ v3.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vec_xorass" class="public" href="../../dmd/backend/dvec/vec_xorass.html">vec_xorass</a><span class="decoration">(v1, v2)</span>
+									<a id="vec_xorass" class="public" href="../../dmd/backend/dvec/vec_xorass.html">vec_xorass</a><span class="tableEntryAnnotation">(v1, v2)</span>
 								</code>
 							</td>
 							<td>Compute v1 ^= v2.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

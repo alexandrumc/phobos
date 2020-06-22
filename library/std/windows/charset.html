@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2946,27 +2961,33 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fromMBSz" class="public" href="../../std/windows/charset/from_mb_sz.html">fromMBSz</a><span class="decoration">(s, codePage)</span>
+									<a id="fromMBSz" class="public" href="../../std/windows/charset/from_mb_sz.html">fromMBSz</a><span class="tableEntryAnnotation">(s, codePage)</span>
 								</code>
 							</td>
 							<td>Converts the null-terminated string s from a Windows 8-bit character set
  into a UTF-8 char array.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toMBSz" class="public" href="../../std/windows/charset/to_mb_sz.html">toMBSz</a><span class="decoration">(s, codePage)</span>
+									<a id="toMBSz" class="public" href="../../std/windows/charset/to_mb_sz.html">toMBSz</a><span class="tableEntryAnnotation">(s, codePage)</span>
 								</code>
 							</td>
 							<td>Converts the UTF-8 string s into a null-terminated string in a Windows
  8-bit character set.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

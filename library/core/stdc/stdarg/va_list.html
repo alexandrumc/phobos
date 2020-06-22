@@ -8,7 +8,7 @@
 		<meta charset="utf-8"/>
 		<meta name="keywords" content="D programming language"/>
 		<meta name="description" content="D Programming Language"/>
-		<title>Variable tm.tm_mon - D Programming Language</title>
+		<title>Alias va_list - D Programming Language</title>
 		<link rel="stylesheet" href="../../../../css/codemirror.css"/>
 		<link rel="stylesheet" href="../../../../css/style.css"/>
 		<link rel="stylesheet" href="../../../../css/print.css" media="print"/>
@@ -18,7 +18,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.1, maximum-scale=10.0"/>
 	</head>
-	<body class="std" id="core.stdc.time">
+	<body class="std" id="core.stdc.stdarg">
 		<script type="text/javascript">document.body.className += ' have-javascript';</script>
 		<div id="top">
 			<div class="helper">
@@ -930,7 +930,7 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
-						<a class="module " href="../../../core/stdc/stdarg.html">
+						<a class="module selected" href="../../../core/stdc/stdarg.html">
 							<span>stdarg</span>
 						</a>
 					</li>
@@ -965,7 +965,7 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
-						<a class="module selected" href="../../../core/stdc/time.html">
+						<a class="module " href="../../../core/stdc/time.html">
 							<span>time</span>
 						</a>
 					</li>
@@ -1029,6 +1029,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/stdcpp/typeinfo.html">
 							<span>typeinfo</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
 						</a>
 					</li>
 					<li>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,23 +2925,23 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/druntime/blob/master/src/core/stdc/time.d#L59">
+							<a href="https://github.com/dlang/druntime/blob/master/src/core/stdc/stdarg.d#L112">
 								View source code
 							</a>
 							<div>
-								Display the source code in core/stdc/time.d from which this
+								Display the source code in core/stdc/stdarg.d from which this
 								page was generated on github.
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://issues.dlang.org/enter_bug.cgi?bug_file_loc=http%3A%2F%2Fdlang.org/library-prerelease/src/core/stdc/time.html&amp;bug_severity=enhancement&amp;component=druntime&amp;op_sys=All&amp;priority=P3&amp;product=D&amp;rep_platform=All&amp;short_desc=%5BVariable tm.tm_mon%5D&amp;version=D2">Report a bug</a>
+							<a href="https://issues.dlang.org/enter_bug.cgi?bug_file_loc=http%3A%2F%2Fdlang.org/library-prerelease/src/core/stdc/stdarg.html&amp;bug_severity=enhancement&amp;component=druntime&amp;op_sys=All&amp;priority=P3&amp;product=D&amp;rep_platform=All&amp;short_desc=%5BAlias va_list%5D&amp;version=D2">Report a bug</a>
 							<div>
 								If you spot a problem with this page, click here to create a
 								Bugzilla issue.
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/druntime/edit/master/src/core/stdc/time.d#L59">
+							<a href="https://github.com/dlang/druntime/edit/master/src/core/stdc/stdarg.d#L112">
 								Improve this page
 							</a>
 							<div>
@@ -2937,40 +2952,25 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Variable <code><a href="../../../core/stdc/time/tm.html">core.stdc.time.tm</a>.tm_mon</code></h1><p>months since January [0-11]
+				</div><h1>Alias <code><a href="../../../core/stdc/stdarg.html">core.stdc.stdarg</a>.va_list</code></h1><p>The argument pointer type.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">struct</span> <a href="../../../core/stdc/time/tm.html"><span class="typ">tm</span></a>
-				<br/>
-				<span class="pun">
-					{
-					<br/>
-				</span>
-				&nbsp;&nbsp;<span class="com">// ...</span>
-				<br/>
-				&nbsp;&nbsp;<span class="typ">int</span> <span class="pln">tm_mon</span>
-				<span class="pun">;</span>
-				<br/>
-				&nbsp;&nbsp;<span class="com">// ...</span>
-				<br/>
-				<span class="pun">}</span>
+				<span class="kwd">alias</span> <span class="pln">va_list</span>
+				 <span class="pun">=</span> <span class="pln">core<wbr/></span><span class="pun">.</span><span class="pln">internal<wbr/></span><span class="pun">.</span><span class="pln">vararg<wbr/></span><span class="pun">.</span><span class="pln">sysv_x64<wbr/></span><span class="pun">.</span><span class="pln">__va_list_tag</span><span class="pun">*</span><span class="pun">;</span>
 						</div>
 					</code>
 				</div>
 				
 				
 				<section>
-					<h2>Authors</h2><p>Sean Kelly,
-            Alex Rønne Petersen
+					<h2>Authors</h2><p>Walter Bright, Hauke Duden
 </p>
 
 				</section>
 				<section>
-					<h2>License</h2><p>Distributed under the
-      <a href="http://www.boost.org/LICENSE_1_0.txt">Boost Software License 1.0</a>.
-    (See accompanying file LICENSE)
+					<h2>License</h2><p><a href="http://www.boost.org/LICENSE_1_0.txt">Boost License 1.0</a>.
 </p>
 
 				</section>

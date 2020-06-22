@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2958,26 +2973,32 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="search_toString" class="public" href="../dmd/dstruct/search_to_string.html">search_toString</a><span class="decoration">(sd)</span>
+									<a id="search_toString" class="public" href="../dmd/dstruct/search_to_string.html">search_toString</a><span class="tableEntryAnnotation">(sd)</span>
 								</code>
 							</td>
 							<td>Search sd for a member function of the form:
    <code class="lang-d"><span class="kwd">extern </span><span class="pun">(</span><span class="pln">D</span><span class="pun">) </span><span class="typ">string </span><span class="pln">toString</span><span class="pun">();</span></code>
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="semanticTypeInfo" class="public" href="../dmd/dstruct/semantic_type_info.html">semanticTypeInfo</a><span class="decoration">(sc, t)</span>
+									<a id="semanticTypeInfo" class="public" href="../dmd/dstruct/semantic_type_info.html">semanticTypeInfo</a><span class="tableEntryAnnotation">(sc, t)</span>
 								</code>
 							</td>
 							<td>Request additional semantic analysis for TypeInfo generation.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -2986,7 +3007,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -2996,6 +3017,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>All <code class="lang-d"><span class="kwd">struct</span></code> declarations are an instance of this.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3005,6 +3028,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Unions are a variation on structs.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

@@ -2664,12 +2664,22 @@
 <url><loc>http://127.0.0.1/std/complex/conj.html</loc></url>
 <url><loc>http://127.0.0.1/std/complex/cos.html</loc></url>
 <url><loc>http://127.0.0.1/std/complex/coshisinh.html</loc></url>
+<url><loc>http://127.0.0.1/std/complex/exp.html</loc></url>
 <url><loc>http://127.0.0.1/std/complex/expi.html</loc></url>
 <url><loc>http://127.0.0.1/std/complex/from_polar.html</loc></url>
+<url><loc>http://127.0.0.1/std/complex/log.html</loc></url>
+<url><loc>http://127.0.0.1/std/complex/log10.html</loc></url>
+<url><loc>http://127.0.0.1/std/complex/norm.html</loc></url>
+<url><loc>http://127.0.0.1/std/complex/pow.html</loc></url>
+<url><loc>http://127.0.0.1/std/complex/pow.html</loc></url>
+<url><loc>http://127.0.0.1/std/complex/pow.html</loc></url>
+<url><loc>http://127.0.0.1/std/complex/pow.html</loc></url>
+<url><loc>http://127.0.0.1/std/complex/proj.html</loc></url>
 <url><loc>http://127.0.0.1/std/complex/sin.html</loc></url>
 <url><loc>http://127.0.0.1/std/complex/sq_abs.html</loc></url>
 <url><loc>http://127.0.0.1/std/complex/sq_abs.html</loc></url>
 <url><loc>http://127.0.0.1/std/complex/sqrt.html</loc></url>
+<url><loc>http://127.0.0.1/std/complex/tan.html</loc></url>
 <url><loc>http://127.0.0.1/std/concurrency.html</loc></url>
 <url><loc>http://127.0.0.1/std/concurrency/fiber_scheduler.html</loc></url>
 <url><loc>http://127.0.0.1/std/concurrency/fiber_scheduler.new_condition.html</loc></url>
@@ -7089,9 +7099,9 @@
 <url><loc>http://127.0.0.1/core/stdc/stdarg.html</loc></url>
 <url><loc>http://127.0.0.1/core/stdc/stdarg/va_arg.html</loc></url>
 <url><loc>http://127.0.0.1/core/stdc/stdarg/va_arg.html</loc></url>
-<url><loc>http://127.0.0.1/core/stdc/stdarg/va_arg.html</loc></url>
 <url><loc>http://127.0.0.1/core/stdc/stdarg/va_copy.html</loc></url>
 <url><loc>http://127.0.0.1/core/stdc/stdarg/va_end.html</loc></url>
+<url><loc>http://127.0.0.1/core/stdc/stdarg/va_list.html</loc></url>
 <url><loc>http://127.0.0.1/core/stdc/stdarg/va_start.html</loc></url>
 <url><loc>http://127.0.0.1/core/stdc/stddef.html</loc></url>
 <url><loc>http://127.0.0.1/core/stdc/stddef/nullptr_t.html</loc></url>
@@ -7573,8 +7583,6 @@
 <url><loc>http://127.0.0.1/core/stdc/tgmath/trunc.html</loc></url>
 <url><loc>http://127.0.0.1/core/stdc/time.html</loc></url>
 <url><loc>http://127.0.0.1/core/stdc/time/asctime.html</loc></url>
-<url><loc>http://127.0.0.1/core/stdc/time/clock.html</loc></url>
-<url><loc>http://127.0.0.1/core/stdc/time/clock_s_pe_r_sec.html</loc></url>
 <url><loc>http://127.0.0.1/core/stdc/time/ctime.html</loc></url>
 <url><loc>http://127.0.0.1/core/stdc/time/difftime.html</loc></url>
 <url><loc>http://127.0.0.1/core/stdc/time/gmtime.html</loc></url>
@@ -7582,20 +7590,6 @@
 <url><loc>http://127.0.0.1/core/stdc/time/mktime.html</loc></url>
 <url><loc>http://127.0.0.1/core/stdc/time/strftime.html</loc></url>
 <url><loc>http://127.0.0.1/core/stdc/time/time.html</loc></url>
-<url><loc>http://127.0.0.1/core/stdc/time/tm.html</loc></url>
-<url><loc>http://127.0.0.1/core/stdc/time/tm.tm_gmtoff.html</loc></url>
-<url><loc>http://127.0.0.1/core/stdc/time/tm.tm_hour.html</loc></url>
-<url><loc>http://127.0.0.1/core/stdc/time/tm.tm_isdst.html</loc></url>
-<url><loc>http://127.0.0.1/core/stdc/time/tm.tm_mday.html</loc></url>
-<url><loc>http://127.0.0.1/core/stdc/time/tm.tm_min.html</loc></url>
-<url><loc>http://127.0.0.1/core/stdc/time/tm.tm_mon.html</loc></url>
-<url><loc>http://127.0.0.1/core/stdc/time/tm.tm_sec.html</loc></url>
-<url><loc>http://127.0.0.1/core/stdc/time/tm.tm_wday.html</loc></url>
-<url><loc>http://127.0.0.1/core/stdc/time/tm.tm_yday.html</loc></url>
-<url><loc>http://127.0.0.1/core/stdc/time/tm.tm_year.html</loc></url>
-<url><loc>http://127.0.0.1/core/stdc/time/tm.tm_zone.html</loc></url>
-<url><loc>http://127.0.0.1/core/stdc/time/tzname.html</loc></url>
-<url><loc>http://127.0.0.1/core/stdc/time/tzset.html</loc></url>
 <url><loc>http://127.0.0.1/core/stdc/wchar_.html</loc></url>
 <url><loc>http://127.0.0.1/core/stdc/wchar_/btowc.html</loc></url>
 <url><loc>http://127.0.0.1/core/stdc/wchar_/fgetwc.html</loc></url>
@@ -7895,6 +7889,12 @@
 <url><loc>http://127.0.0.1/core/stdcpp/type_traits/is_empty.value_type.html</loc></url>
 <url><loc>http://127.0.0.1/core/stdcpp/type_traits/true_type.html</loc></url>
 <url><loc>http://127.0.0.1/core/stdcpp/typeinfo.html</loc></url>
+<url><loc>http://127.0.0.1/core/stdcpp/utility.html</loc></url>
+<url><loc>http://127.0.0.1/core/stdcpp/utility/pair.html</loc></url>
+<url><loc>http://127.0.0.1/core/stdcpp/utility/pair.first.html</loc></url>
+<url><loc>http://127.0.0.1/core/stdcpp/utility/pair.first_type.html</loc></url>
+<url><loc>http://127.0.0.1/core/stdcpp/utility/pair.second.html</loc></url>
+<url><loc>http://127.0.0.1/core/stdcpp/utility/pair.second_type.html</loc></url>
 <url><loc>http://127.0.0.1/core/stdcpp/vector.html</loc></url>
 <url><loc>http://127.0.0.1/core/stdcpp/vector/default.html</loc></url>
 <url><loc>http://127.0.0.1/core/stdcpp/xutility.html</loc></url>
@@ -7988,12 +7988,14 @@
 <url><loc>http://127.0.0.1/core/sync/rwmutex/read_write_mutex.reader.lock.html</loc></url>
 <url><loc>http://127.0.0.1/core/sync/rwmutex/read_write_mutex.reader.this.html</loc></url>
 <url><loc>http://127.0.0.1/core/sync/rwmutex/read_write_mutex.reader.try_lock.html</loc></url>
+<url><loc>http://127.0.0.1/core/sync/rwmutex/read_write_mutex.reader.try_lock.html</loc></url>
 <url><loc>http://127.0.0.1/core/sync/rwmutex/read_write_mutex.reader.unlock.html</loc></url>
 <url><loc>http://127.0.0.1/core/sync/rwmutex/read_write_mutex.this.html</loc></url>
 <url><loc>http://127.0.0.1/core/sync/rwmutex/read_write_mutex.writer.html</loc></url>
 <url><loc>http://127.0.0.1/core/sync/rwmutex/read_write_mutex.writer.html</loc></url>
 <url><loc>http://127.0.0.1/core/sync/rwmutex/read_write_mutex.writer.lock.html</loc></url>
 <url><loc>http://127.0.0.1/core/sync/rwmutex/read_write_mutex.writer.this.html</loc></url>
+<url><loc>http://127.0.0.1/core/sync/rwmutex/read_write_mutex.writer.try_lock.html</loc></url>
 <url><loc>http://127.0.0.1/core/sync/rwmutex/read_write_mutex.writer.try_lock.html</loc></url>
 <url><loc>http://127.0.0.1/core/sync/rwmutex/read_write_mutex.writer.unlock.html</loc></url>
 <url><loc>http://127.0.0.1/object/object.factory.html</loc></url>
@@ -8015,6 +8017,7 @@
 <url><loc>http://127.0.0.1/object/object.to_string.html</loc></url>
 <url><loc>http://127.0.0.1/core/sync/semaphore/semaphore.handle.html</loc></url>
 <url><loc>http://127.0.0.1/core/sync/semaphore/semaphore.m_hndl.html</loc></url>
+<url><loc>http://127.0.0.1/core/thread/context.html</loc></url>
 <url><loc>http://127.0.0.1/core/thread/fiber.html</loc></url>
 <url><loc>http://127.0.0.1/core/thread/fiber/fiber.html</loc></url>
 <url><loc>http://127.0.0.1/core/thread/fiber/fiber.call.html</loc></url>
@@ -8436,11 +8439,23 @@
 <url><loc>http://127.0.0.1/object/throwable.to_string.html</loc></url>
 <url><loc>http://127.0.0.1/core/math.html</loc></url>
 <url><loc>http://127.0.0.1/core/math/cos.html</loc></url>
+<url><loc>http://127.0.0.1/core/math/cos.html</loc></url>
+<url><loc>http://127.0.0.1/core/math/cos.html</loc></url>
+<url><loc>http://127.0.0.1/core/math/fabs.html</loc></url>
+<url><loc>http://127.0.0.1/core/math/fabs.html</loc></url>
 <url><loc>http://127.0.0.1/core/math/fabs.html</loc></url>
 <url><loc>http://127.0.0.1/core/math/ldexp.html</loc></url>
+<url><loc>http://127.0.0.1/core/math/ldexp.html</loc></url>
+<url><loc>http://127.0.0.1/core/math/ldexp.html</loc></url>
+<url><loc>http://127.0.0.1/core/math/rint.html</loc></url>
+<url><loc>http://127.0.0.1/core/math/rint.html</loc></url>
 <url><loc>http://127.0.0.1/core/math/rint.html</loc></url>
 <url><loc>http://127.0.0.1/core/math/rndtol.html</loc></url>
+<url><loc>http://127.0.0.1/core/math/rndtol.html</loc></url>
+<url><loc>http://127.0.0.1/core/math/rndtol.html</loc></url>
 <url><loc>http://127.0.0.1/core/math/rndtonl.html</loc></url>
+<url><loc>http://127.0.0.1/core/math/sin.html</loc></url>
+<url><loc>http://127.0.0.1/core/math/sin.html</loc></url>
 <url><loc>http://127.0.0.1/core/math/sin.html</loc></url>
 <url><loc>http://127.0.0.1/core/math/sqrt.html</loc></url>
 <url><loc>http://127.0.0.1/core/math/sqrt.html</loc></url>
@@ -8455,6 +8470,10 @@
 <url><loc>http://127.0.0.1/core/math/to_prec.html</loc></url>
 <url><loc>http://127.0.0.1/core/math/to_prec.html</loc></url>
 <url><loc>http://127.0.0.1/core/math/yl2x.html</loc></url>
+<url><loc>http://127.0.0.1/core/math/yl2x.html</loc></url>
+<url><loc>http://127.0.0.1/core/math/yl2x.html</loc></url>
+<url><loc>http://127.0.0.1/core/math/yl2xp1.html</loc></url>
+<url><loc>http://127.0.0.1/core/math/yl2xp1.html</loc></url>
 <url><loc>http://127.0.0.1/core/memory.html</loc></url>
 <url><loc>http://127.0.0.1/core/memory/gc.html</loc></url>
 <url><loc>http://127.0.0.1/core/memory/gc.add_range.html</loc></url>
@@ -8670,6 +8689,8 @@
 <url><loc>http://127.0.0.1/core/time/usecs.html</loc></url>
 <url><loc>http://127.0.0.1/core/time/weeks.html</loc></url>
 <url><loc>http://127.0.0.1/core/vararg.html</loc></url>
+<url><loc>http://127.0.0.1/core/vararg/va_arg.html</loc></url>
+<url><loc>http://127.0.0.1/core/vararg/va_arg.html</loc></url>
 <url><loc>http://127.0.0.1/core/volatile.html</loc></url>
 <url><loc>http://127.0.0.1/core/volatile/volatile_load.html</loc></url>
 <url><loc>http://127.0.0.1/core/volatile/volatile_load.html</loc></url>
@@ -8700,9 +8721,16 @@
 <url><loc>http://127.0.0.1/dmd/backend/backend.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/barray.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/barray/barray.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/backend/barray/barray.dtor.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/backend/barray/barray.push.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/barray/barray.push.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/barray/barray.remove.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/backend/barray/barray.reset.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/barray/barray.set_length.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/backend/barray/rarray.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/backend/barray/rarray.dtor.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/backend/barray/rarray.push.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/backend/barray/rarray.reset.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/bcomplex.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/blockopt.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/blockopt/bc_goal.html</loc></url>
@@ -9202,6 +9230,7 @@
 <url><loc>http://127.0.0.1/dmd/backend/dvec/vec_orass.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/dvec/vec_println.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/dvec/vec_realloc.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/backend/dvec/vec_recycle.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/dvec/vec_set.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/dvec/vec_setbit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/dvec/vec_sub.html</loc></url>
@@ -9402,8 +9431,8 @@
 <url><loc>http://127.0.0.1/dmd/backend/gloop/el_length.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/gloop/fill_ind_nunambig.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/gloop/loop.html</loc></url>
-<url><loc>http://127.0.0.1/dmd/backend/gloop/loop.mycalloc.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/gloop/loop.print.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/backend/gloop/loop.reset.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/gloop/loopopt.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/gloop/unroll_walker.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/gloop/unroll_walker.walker.html</loc></url>
@@ -9419,9 +9448,9 @@
 <url><loc>http://127.0.0.1/dmd/backend/gother/constprop.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/gother/copyprop.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/gother/deadvar.html</loc></url>
-<url><loc>http://127.0.0.1/dmd/backend/gother/elemdata.html</loc></url>
-<url><loc>http://127.0.0.1/dmd/backend/gother/elemdata.find.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/backend/gother/elemdatas.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/gother/elimass.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/backend/gother/find.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/gother/listrds.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/gsroa.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/backend/gsroa/notslice.html</loc></url>
@@ -9558,6 +9587,7 @@
 <url><loc>http://127.0.0.1/dmd/root/filename.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/root/filename/file_name.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/root/filename/file_name.absolute.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/root/filename/file_name.absolute.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/root/filename/file_name.add_ext.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/root/filename/file_name.canonical_name.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/root/filename/file_name.canonical_name.html</loc></url>
@@ -9574,6 +9604,7 @@
 <url><loc>http://127.0.0.1/dmd/root/filename/file_name.equals_ext.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/root/filename/file_name.exists.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/root/filename/file_name.exists.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/root/filename/file_name.ext.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/root/filename/file_name.ext.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/root/filename/file_name.force_ext.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/root/filename/file_name.force_ext.html</loc></url>
@@ -9743,6 +9774,9 @@
 <url><loc>http://127.0.0.1/dmd/apply/apply.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/argtypes.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/argtypes/to_arg_types.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/argtypes_aarch64.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/argtypes_aarch64/is_hfva.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/argtypes_aarch64/to_arg_types_aarch64.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/argtypes_sysv_x64.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/argtypes_sysv_x64/to_arg_types_sysv_x64.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/arrayop.html</loc></url>
@@ -10409,7 +10443,6 @@
 <url><loc>http://127.0.0.1/dmd/blockexit/be.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/blockexit/block_exit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/builtin.html</loc></url>
-<url><loc>http://127.0.0.1/dmd/builtin/builtin_deinitialize.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/builtin/eval_builtin.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/builtin/is_builtin.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/canthrow.html</loc></url>
@@ -12596,6 +12629,8 @@
 <url><loc>http://127.0.0.1/dmd/dtemplate/template_declaration.get_constraint_eval_error.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/dtemplate/template_declaration.inuse.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/dtemplate/template_declaration.is_overloadable.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/dtemplate/template_declaration.is_trivial_alias.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/dtemplate/template_declaration.is_trivial_alias_seq.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/dtemplate/template_declaration.is_variadic.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/dtemplate/template_declaration.least_as_specialized.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/dtemplate/template_declaration.match_with_instance.html</loc></url>
@@ -12650,6 +12685,7 @@
 <url><loc>http://127.0.0.1/dmd/dtemplate/template_instance.gen_ident.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/dtemplate/template_instance.get_ident.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/dtemplate/template_instance.has_nested_args.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/dtemplate/template_instance.is_discardable.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/dtemplate/template_instance.needs_codegen.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/dtemplate/template_instance.needs_type_inference.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/dtemplate/template_instance.print_instantiation_trace.html</loc></url>
@@ -12718,6 +12754,7 @@
 <url><loc>http://127.0.0.1/dmd/dsymbol/dsymbol.has_pointers.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/dsymbol/scope_dsymbol.has_static_ctor_or_dtor.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/dsymbol/dsymbol.in_non_root.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/dtemplate/template_instance.is_discardable.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/dsymbol/dsymbol.is_member.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/dsymbol/dsymbol.is_member2.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/dsymbol/dsymbol.is_member_decl.html</loc></url>
@@ -12758,6 +12795,9 @@
 <url><loc>http://127.0.0.1/object/object.to_hash.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/root/rootobject/root_object.to_string.html</loc></url>
 <url><loc>http://127.0.0.1/object/object.to_string.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/dtemplate/template_stats.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/dtemplate/template_stats.inc_instance.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/dtemplate/template_stats.inc_unique.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/dtemplate/template_this_parameter.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/ast_node/ast_node.accept.html</loc></url>
 <url><loc>http://127.0.0.1/object/object.factory.html</loc></url>
@@ -16332,6 +16372,7 @@
 <url><loc>http://127.0.0.1/dmd/expressionsem.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/expressionsem/array_expression_semantic.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/expressionsem/bin_semantic.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/expressionsem/check_address_var.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/expressionsem/check_shared_access.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/expressionsem/expressions_to_string.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/expressionsem/get_this_skip_nested_funcs.html</loc></url>
@@ -16485,6 +16526,7 @@
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this2.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_unique.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.labtab.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.least_as_specialized.html</loc></url>
@@ -16613,6 +16655,7 @@
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_return_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this2.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_unique.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.labtab.html</loc></url>
@@ -16745,6 +16788,7 @@
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this2.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_unique.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.labtab.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.least_as_specialized.html</loc></url>
@@ -16857,6 +16901,7 @@
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_return_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this2.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_unique.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.labtab.html</loc></url>
@@ -17004,6 +17049,7 @@
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this2.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_unique.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.labtab.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.least_as_specialized.html</loc></url>
@@ -17136,6 +17182,7 @@
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this2.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_unique.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.labtab.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.least_as_specialized.html</loc></url>
@@ -17265,6 +17312,7 @@
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_return_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this2.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_unique.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.labtab.html</loc></url>
@@ -17396,6 +17444,7 @@
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this2.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_unique.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.labtab.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.least_as_specialized.html</loc></url>
@@ -17526,6 +17575,7 @@
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this2.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_unique.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.labtab.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.least_as_specialized.html</loc></url>
@@ -17654,6 +17704,7 @@
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_return_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this2.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_unique.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.labtab.html</loc></url>
@@ -17784,6 +17835,7 @@
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this2.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_unique.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.labtab.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.least_as_specialized.html</loc></url>
@@ -17913,6 +17965,7 @@
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this2.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_unique.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.labtab.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.least_as_specialized.html</loc></url>
@@ -18041,6 +18094,7 @@
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_return_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_this2.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_type_isolated.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.is_unique.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/func/func_declaration.labtab.html</loc></url>
@@ -18243,6 +18297,7 @@
 <url><loc>http://127.0.0.1/dmd/mars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mars/__dmain.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mars/add_default_version_identifiers.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mars/create_module.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mars/create_modules.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mars/flush_mixins.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mars/getenv_setargv.html</loc></url>
@@ -18310,6 +18365,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.next_of.html</loc></url>
@@ -18359,6 +18415,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type_next.next_of.html</loc></url>
@@ -18406,6 +18463,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type_next.next_of.html</loc></url>
@@ -18453,6 +18511,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.next_of.html</loc></url>
@@ -18500,6 +18559,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.next_of.html</loc></url>
@@ -18547,6 +18607,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type_next.next_of.html</loc></url>
@@ -18594,6 +18655,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type_next.next_of.html</loc></url>
@@ -18641,6 +18703,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.next_of.html</loc></url>
@@ -18688,6 +18751,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.next_of.html</loc></url>
@@ -18741,6 +18805,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type_next.next_of.html</loc></url>
@@ -18789,6 +18854,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.next_of.html</loc></url>
@@ -18836,6 +18902,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.next_of.html</loc></url>
@@ -18883,6 +18950,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.next_of.html</loc></url>
@@ -18931,6 +18999,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.null_attributes.html</loc></url>
@@ -18977,6 +19046,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.next_of.html</loc></url>
@@ -19024,6 +19094,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type_next.next_of.html</loc></url>
@@ -19071,6 +19142,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.next_of.html</loc></url>
@@ -19118,6 +19190,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type_next.next_of.html</loc></url>
@@ -19165,6 +19238,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.next_of.html</loc></url>
@@ -19213,6 +19287,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type_next.next_of.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.null_attributes.html</loc></url>
@@ -19259,6 +19334,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type_next.next_of.html</loc></url>
@@ -19306,6 +19382,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.next_of.html</loc></url>
@@ -19355,6 +19432,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.next_of.html</loc></url>
@@ -19404,6 +19482,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.next_of.html</loc></url>
@@ -19451,6 +19530,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.next_of.html</loc></url>
@@ -19498,6 +19578,7 @@
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_buffer.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mod_to_chars.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.mutable_of.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/mtype/type.needs_copy_or_postblit.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_destruction.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.needs_nested.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/mtype/type.next_of.html</loc></url>
@@ -19659,7 +19740,7 @@
 <url><loc>http://127.0.0.1/dmd/parse/parser.parse_mixin.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/parse/parser.parse_new.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/parse/parser.parse_new_exp.html</loc></url>
-<url><loc>http://127.0.0.1/dmd/parse/parser.parse_parameters.html</loc></url>
+<url><loc>http://127.0.0.1/dmd/parse/parser.parse_parameter_list.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/parse/parser.parse_postfix.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/parse/parser.parse_primary_exp.html</loc></url>
 <url><loc>http://127.0.0.1/dmd/parse/parser.parse_qualified_identifier.html</loc></url>

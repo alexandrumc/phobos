@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2954,135 +2969,177 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="attributesApply" class="public" href="../dmd/mtype/attributes_apply.html">attributesApply</a><span class="decoration">(tf, dg, trustFormat)</span>
+									<a id="attributesApply" class="public" href="../dmd/mtype/attributes_apply.html">attributesApply</a><span class="tableEntryAnnotation">(tf, dg, trustFormat)</span>
 								</code>
 							</td>
 							<td>For each active attribute (ref/const/nogc/etc) call <code class="lang-d"><span class="pln">fp</span></code> with a void* for the
  work param and a string representation of the attribute.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isAggregate" class="public" href="../dmd/mtype/is_aggregate.html">isAggregate</a><span class="decoration">(t)</span>
+									<a id="isAggregate" class="public" href="../dmd/mtype/is_aggregate.html">isAggregate</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>If the type is a class or struct, returns the symbol for it,
  else null.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isCopyable" class="public" href="../dmd/mtype/is_copyable.html">isCopyable</a><span class="decoration">(t)</span>
+									<a id="isCopyable" class="public" href="../dmd/mtype/is_copyable.html">isCopyable</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Determine if type t is copyable.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isIndexableNonAggregate" class="public" href="../dmd/mtype/is_indexable_non_aggregate.html">isIndexableNonAggregate</a><span class="decoration">(t)</span>
+									<a id="isIndexableNonAggregate" class="public" href="../dmd/mtype/is_indexable_non_aggregate.html">isIndexableNonAggregate</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Determine if type t can be indexed or sliced given that it is not an
  aggregate with operator overloads.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isSomeChar" class="public" href="../dmd/mtype/is_some_char.html">isSomeChar</a><span class="decoration">(ty)</span>
+									<a id="isSomeChar" class="public" href="../dmd/mtype/is_some_char.html">isSomeChar</a><span class="tableEntryAnnotation">(ty)</span>
 								</code>
 							</td>
 							<td>Returns true if ty is char, wchar, or dchar
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="modifiersApply" class="public" href="../dmd/mtype/modifiers_apply.html">modifiersApply</a><span class="decoration">(tf, dg)</span>
+									<a id="modifiersApply" class="public" href="../dmd/mtype/modifiers_apply.html">modifiersApply</a><span class="tableEntryAnnotation">(tf, dg)</span>
 								</code>
 							</td>
 							<td>For each active modifier (MODFlags.const_, MODFlags.immutable_, etc) call <code class="lang-d"><span class="pln">fp</span></code> with a
  void* for the work param and a string representation of the attribute.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="MODimplicitConv" class="public" href="../dmd/mtype/mo_dimplicit_conv.html">MODimplicitConv</a><span class="decoration">(modfrom, modto)</span>
+									<a id="MODimplicitConv" class="public" href="../dmd/mtype/mo_dimplicit_conv.html">MODimplicitConv</a><span class="tableEntryAnnotation">(modfrom, modto)</span>
 								</code>
 							</td>
 							<td>Return !=0 if modfrom can be implicitly converted to modto
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="MODmerge" class="public" href="../dmd/mtype/mo_dmerge.html">MODmerge</a><span class="decoration">(mod1, mod2)</span>
+									<a id="MODmerge" class="public" href="../dmd/mtype/mo_dmerge.html">MODmerge</a><span class="tableEntryAnnotation">(mod1, mod2)</span>
 								</code>
 							</td>
 							<td>Merge mod bits to form common mod.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="MODmethodConv" class="public" href="../dmd/mtype/mo_dmethod_conv.html">MODmethodConv</a><span class="decoration">(modfrom, modto)</span>
+									<a id="MODmethodConv" class="public" href="../dmd/mtype/mo_dmethod_conv.html">MODmethodConv</a><span class="tableEntryAnnotation">(modfrom, modto)</span>
 								</code>
 							</td>
 							<td>Return MATCH.exact or MATCH.constant if a method of type '() modfrom' can call a method of type '() modto'.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="MODtoBuffer" class="public" href="../dmd/mtype/mo_dto_buffer.html">MODtoBuffer</a><span class="decoration">(buf, mod)</span>
+									<a id="MODtoBuffer" class="public" href="../dmd/mtype/mo_dto_buffer.html">MODtoBuffer</a><span class="tableEntryAnnotation">(buf, mod)</span>
 								</code>
 							</td>
 							<td>Store modifier name into buf.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="MODtoChars" class="public" href="../dmd/mtype/mo_dto_chars.html">MODtoChars</a><span class="decoration">(mod)</span>
+									<a id="MODtoChars" class="public" href="../dmd/mtype/mo_dto_chars.html">MODtoChars</a><span class="tableEntryAnnotation">(mod)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="ModToStc" class="public" href="../dmd/mtype/mod_to_stc.html">ModToStc</a><span class="decoration">(mod)</span>
+									<a id="ModToStc" class="public" href="../dmd/mtype/mod_to_stc.html">ModToStc</a><span class="tableEntryAnnotation">(mod)</span>
 								</code>
 							</td>
 							<td>Convert MODxxxx to STCxxx
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="MODtoString" class="public" href="../dmd/mtype/mo_dto_string.html">MODtoString</a><span class="decoration">(mod)</span>
+									<a id="MODtoString" class="public" href="../dmd/mtype/mo_dto_string.html">MODtoString</a><span class="tableEntryAnnotation">(mod)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toAutoQualChars" class="public" href="../dmd/mtype/to_auto_qual_chars.html">toAutoQualChars</a><span class="decoration">(t1, t2)</span>
+									<a id="toAutoQualChars" class="public" href="../dmd/mtype/to_auto_qual_chars.html">toAutoQualChars</a><span class="tableEntryAnnotation">(t1, t2)</span>
 								</code>
 							</td>
 							<td>For printing two types with qualification when necessary.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3091,7 +3148,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3100,6 +3157,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3108,6 +3167,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3116,6 +3177,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3124,6 +3187,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3132,6 +3197,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3140,6 +3207,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3149,6 +3218,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Dynamic array, no dimension
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3157,6 +3228,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3165,6 +3238,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3173,6 +3248,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3181,6 +3258,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3189,6 +3268,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3198,6 +3279,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Similar to TypeIdentifier, but with a TemplateInstance as the root
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3207,6 +3290,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Implements mixin types.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3215,6 +3300,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3223,6 +3310,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3231,6 +3320,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3239,6 +3330,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3247,6 +3340,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3255,6 +3350,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3264,6 +3361,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Static array, one with a fixed dimension
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3273,6 +3372,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>This is so we can slice a TypeTuple
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3281,6 +3382,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3291,6 +3394,8 @@ $('#symbolSearchPane').show();</script>
 							<td>This is a shell containing a TraitsExp that can be
  either resolved to a type or to a symbol.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3299,6 +3404,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3307,6 +3414,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3319,6 +3428,8 @@ $('#symbolSearchPane').show();</script>
  For AVX:
    byte[32],ubyte[32],short[16],ushort[16],int[8],uint[8],long[4],ulong[4],float[8],double[4]
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3327,7 +3438,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3337,6 +3448,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Encapsulate Parameters* so .length and [i] can be used on it.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3345,7 +3458,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3355,6 +3468,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>dotExp() bit flags
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3364,6 +3479,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Variadic argument lists
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,14 +2952,14 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../std/parallelism.html">std.parallelism</a>.scopedTask</code></h1><p>These functions allow the creation of <code class="lang-d"><a href="../std/parallelism/task.html"><span class="typ"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></span></a></code> objects on the stack rather
-than the GC heap.  The lifetime of a <code class="lang-d"><a href="../std/parallelism/task.html"><span class="typ"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></span></a></code> created by <code class="lang-d"><span class="pln"><span class="pln">scopedTask</span></span></code>
+				</div><h1>Function <code><a href="../../std/parallelism.html">std.parallelism</a>.scopedTask</code></h1><p>These functions allow the creation of <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></code> objects on the stack rather
+than the GC heap.  The lifetime of a <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></code> created by <code class="lang-d"><span class="pln">scopedTask</span></code>
 cannot exceed the lifetime of the scope it was created in.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">scopedTask</span>(alias fun, Args...)
+				<span class="kwd">auto</span> <span class="pln">scopedTask</span>(alias fun, Args...)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">Args</span> <span class="pln">args</span>
@@ -2952,7 +2967,7 @@ cannot exceed the lifetime of the scope it was created in.
 				<span class="pun">)</span><span class="pun">;</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">scopedTask</span>(F, Args...)
+				<span class="kwd">auto</span> <span class="pln">scopedTask</span>(F, Args...)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="kwd">scope </span><span class="pln">F</span> <span class="pln">delegateOrFp</span><span class="pun">,</span>
@@ -2964,7 +2979,7 @@ cannot exceed the lifetime of the scope it was created in.
 				<span class="kwd">if</span> <span class="pun">(</span><span class="kwd">is</span><span class="pun">(</span><span class="kwd">typeof</span><span class="pun">(</span><span class="pln">delegateOrFp</span><span class="pun">(</span><span class="pln">args</span><span class="pun">))) &amp;&amp; !</span><span class="pln">isSafeTask</span><span class="pun">!</span><span class="pln">F</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">scopedTask</span>(F, Args...)
+				<span class="kwd">auto</span> <span class="pln">scopedTask</span>(F, Args...)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">F</span> <span class="pln">fun</span><span class="pun">,</span>

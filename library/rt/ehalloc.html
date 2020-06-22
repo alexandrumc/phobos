@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2946,12 +2961,12 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_delThrowable" class="public" href="../rt/ehalloc/_d_del_throwable.html">_d_delThrowable</a><span class="decoration">(t)</span>
+									<a id="_d_delThrowable" class="public" href="../rt/ehalloc/_d_del_throwable.html">_d_delThrowable</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Delete exception instance <code class="lang-d"><a href="../rt/ehalloc/_d_del_throwable.html#t"><span class="pln">t</span></a></code> from the exception pool.
@@ -2960,11 +2975,14 @@ $('#symbolSearchPane').show();</script>
  It's nothrow because otherwise any function with a catch block could
  not be nothrow.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_newThrowable" class="public" href="../rt/ehalloc/_d_new_throwable.html">_d_newThrowable</a><span class="decoration">(ci)</span>
+									<a id="_d_newThrowable" class="public" href="../rt/ehalloc/_d_new_throwable.html">_d_newThrowable</a><span class="tableEntryAnnotation">(ci)</span>
 								</code>
 							</td>
 							<td>Allocate an exception of type <code class="lang-d"><a href="../rt/ehalloc/_d_new_throwable.html#ci"><span class="pln">ci</span></a></code> from the exception pool.
@@ -2973,6 +2991,9 @@ $('#symbolSearchPane').show();</script>
  and cannot be a COM or C++ class. The compiler must enforce
  this.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

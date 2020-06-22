@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2954,97 +2969,124 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="allocDeps" class="public" href="../dmd/ob/alloc_deps.html">allocDeps</a><span class="decoration">(pvss)</span>
+									<a id="allocDeps" class="public" href="../dmd/ob/alloc_deps.html">allocDeps</a><span class="tableEntryAnnotation">(pvss)</span>
 								</code>
 							</td>
 							<td>Allocate BitArrays in PtrVarState.
  Can be allocated much more efficiently by subdividing a single
  large array of bits
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="allocStates" class="public" href="../dmd/ob/alloc_states.html">allocStates</a><span class="decoration">(obstate)</span>
+									<a id="allocStates" class="public" href="../dmd/ob/alloc_states.html">allocStates</a><span class="tableEntryAnnotation">(obstate)</span>
 								</code>
 							</td>
 							<td>Allocate state variables foreach node.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="checkObErrors" class="public" href="../dmd/ob/check_ob_errors.html">checkObErrors</a><span class="decoration">(obstate)</span>
+									<a id="checkObErrors" class="public" href="../dmd/ob/check_ob_errors.html">checkObErrors</a><span class="tableEntryAnnotation">(obstate)</span>
 								</code>
 							</td>
 							<td>Check for Ownership/Borrowing errors.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="collectVars" class="public" href="../dmd/ob/collect_vars.html">collectVars</a><span class="decoration">(funcdecl, vars)</span>
+									<a id="collectVars" class="public" href="../dmd/ob/collect_vars.html">collectVars</a><span class="tableEntryAnnotation">(funcdecl, vars)</span>
 								</code>
 							</td>
 							<td>Find the pointer variable declarations in this function,
  and fill <code class="lang-d"><a href="../dmd/ob/collect_vars.html#vars"><span class="pln">vars</span></a></code> with them.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="computePreds" class="public" href="../dmd/ob/compute_preds.html">computePreds</a><span class="decoration">(obnodes)</span>
+									<a id="computePreds" class="public" href="../dmd/ob/compute_preds.html">computePreds</a><span class="tableEntryAnnotation">(obnodes)</span>
 								</code>
 							</td>
 							<td>Compute predecessors.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="doDataFlowAnalysis" class="public" href="../dmd/ob/do_data_flow_analysis.html">doDataFlowAnalysis</a><span class="decoration">(obstate)</span>
+									<a id="doDataFlowAnalysis" class="public" href="../dmd/ob/do_data_flow_analysis.html">doDataFlowAnalysis</a><span class="tableEntryAnnotation">(obstate)</span>
 								</code>
 							</td>
 							<td>Do the data flow analysis (i.e. compute the input[]
  and output[] vectors for each ObNode).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="genKill" class="public" href="../dmd/ob/gen_kill.html">genKill</a><span class="decoration">(obstate, ob)</span>
+									<a id="genKill" class="public" href="../dmd/ob/gen_kill.html">genKill</a><span class="tableEntryAnnotation">(obstate, ob)</span>
 								</code>
 							</td>
 							<td>Compute the gen vector for ob.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="hasMutableFields" class="public" href="../dmd/ob/has_mutable_fields.html">hasMutableFields</a><span class="decoration">(t)</span>
+									<a id="hasMutableFields" class="public" href="../dmd/ob/has_mutable_fields.html">hasMutableFields</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Does type <code class="lang-d"><a href="../dmd/ob/has_mutable_fields.html#t"><span class="pln">t</span></a></code> have any mutable fields?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="hasPointersToMutableFields" class="public" href="../dmd/ob/has_pointers_to_mutable_fields.html">hasPointersToMutableFields</a><span class="decoration">(t)</span>
+									<a id="hasPointersToMutableFields" class="public" href="../dmd/ob/has_pointers_to_mutable_fields.html">hasPointersToMutableFields</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Does type <code class="lang-d"><a href="../dmd/ob/has_pointers_to_mutable_fields.html#t"><span class="pln">t</span></a></code> contain any pointers to mutable?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="insertFinallyBlockCalls" class="public" href="../dmd/ob/insert_finally_block_calls.html">insertFinallyBlockCalls</a><span class="decoration">(obnodes)</span>
+									<a id="insertFinallyBlockCalls" class="public" href="../dmd/ob/insert_finally_block_calls.html">insertFinallyBlockCalls</a><span class="tableEntryAnnotation">(obnodes)</span>
 								</code>
 							</td>
 							<td>Insert finally block calls when doing a goto from
@@ -3052,103 +3094,136 @@ $('#symbolSearchPane').show();</script>
  Done after blocks are generated because then we know all
  the edges of the graph, but before the pred's are computed.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="insertFinallyBlockGotos" class="public" href="../dmd/ob/insert_finally_block_gotos.html">insertFinallyBlockGotos</a><span class="decoration">(obnodes)</span>
+									<a id="insertFinallyBlockGotos" class="public" href="../dmd/ob/insert_finally_block_gotos.html">insertFinallyBlockGotos</a><span class="tableEntryAnnotation">(obnodes)</span>
 								</code>
 							</td>
 							<td>Remove try-finally scaffolding.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isBorrowedPtr" class="public" href="../dmd/ob/is_borrowed_ptr.html">isBorrowedPtr</a><span class="decoration">(v)</span>
+									<a id="isBorrowedPtr" class="public" href="../dmd/ob/is_borrowed_ptr.html">isBorrowedPtr</a><span class="tableEntryAnnotation">(v)</span>
 								</code>
 							</td>
 							<td>Does v meet the definiton of a <code class="lang-d"><span class="typ">Borrowed</span></code> pointer?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isMutableRef" class="public" href="../dmd/ob/is_mutable_ref.html">isMutableRef</a><span class="decoration">(t)</span>
+									<a id="isMutableRef" class="public" href="../dmd/ob/is_mutable_ref.html">isMutableRef</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Is type <code class="lang-d"><a href="../dmd/ob/is_mutable_ref.html#t"><span class="pln">t</span></a></code> a reference to a const or a reference to a mutable?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isReadonlyPtr" class="public" href="../dmd/ob/is_readonly_ptr.html">isReadonlyPtr</a><span class="decoration">(v)</span>
+									<a id="isReadonlyPtr" class="public" href="../dmd/ob/is_readonly_ptr.html">isReadonlyPtr</a><span class="tableEntryAnnotation">(v)</span>
 								</code>
 							</td>
 							<td>Does v meet the definiton of a <code class="lang-d"><span class="typ">Readonly</span></code> pointer?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isTrackableVar" class="public" href="../dmd/ob/is_trackable_var.html">isTrackableVar</a><span class="decoration">(v)</span>
+									<a id="isTrackableVar" class="public" href="../dmd/ob/is_trackable_var.html">isTrackableVar</a><span class="tableEntryAnnotation">(v)</span>
 								</code>
 							</td>
 							<td>Are we interested in tracking variable <code class="lang-d"><a href="../dmd/ob/is_trackable_var.html#v"><span class="pln">v</span></a></code>?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isTrackableVarExp" class="public" href="../dmd/ob/is_trackable_var_exp.html">isTrackableVarExp</a><span class="decoration">(e)</span>
+									<a id="isTrackableVarExp" class="public" href="../dmd/ob/is_trackable_var_exp.html">isTrackableVarExp</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>Are we interested in tracking this expression?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="makeChildrenUndefined" class="public" href="../dmd/ob/make_children_undefined.html">makeChildrenUndefined</a><span class="decoration">(vi, gen)</span>
+									<a id="makeChildrenUndefined" class="public" href="../dmd/ob/make_children_undefined.html">makeChildrenUndefined</a><span class="tableEntryAnnotation">(vi, gen)</span>
 								</code>
 							</td>
 							<td>Recursively make Undefined all who list vi as a dependency
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="makeUndefined" class="public" href="../dmd/ob/make_undefined.html">makeUndefined</a><span class="decoration">(vi, gen)</span>
+									<a id="makeUndefined" class="public" href="../dmd/ob/make_undefined.html">makeUndefined</a><span class="tableEntryAnnotation">(vi, gen)</span>
 								</code>
 							</td>
 							<td>Recursively make Undefined vi undefined and all who list vi as a dependency
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="numberNodes" class="public" href="../dmd/ob/number_nodes.html">numberNodes</a><span class="decoration">(obnodes)</span>
+									<a id="numberNodes" class="public" href="../dmd/ob/number_nodes.html">numberNodes</a><span class="tableEntryAnnotation">(obnodes)</span>
 								</code>
 							</td>
 							<td>Set the <code class="lang-d"><span class="pln">index</span></code> field of each ObNode
  to its index in the <code class="lang-d"><a href="../dmd/ob/number_nodes.html#obnodes"><span class="pln">obnodes</span></a><span class="pun">[]</span></code> array.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="oblive" class="public" href="../dmd/ob/oblive.html">oblive</a><span class="decoration">(funcdecl)</span>
+									<a id="oblive" class="public" href="../dmd/ob/oblive.html">oblive</a><span class="tableEntryAnnotation">(funcdecl)</span>
 								</code>
 							</td>
 							<td>Perform ownership/borrowing checks for funcdecl.
  Does not modify the AST, just checks for errors.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="readVar" class="public" href="../dmd/ob/read_var.html">readVar</a><span class="decoration">(ob, vi, mutable, gen)</span>
+									<a id="readVar" class="public" href="../dmd/ob/read_var.html">readVar</a><span class="tableEntryAnnotation">(ob, vi, mutable, gen)</span>
 								</code>
 							</td>
 							<td>Read from variable vi.
@@ -3156,52 +3231,70 @@ $('#symbolSearchPane').show();</script>
  Hence, when a read is done, instead of when assignment to the variable is done, the O/B rules are enforced.
  (Also called "non-lexical scoping".)
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="removeUnreachable" class="public" href="../dmd/ob/remove_unreachable.html">removeUnreachable</a><span class="decoration">(obnodes)</span>
+									<a id="removeUnreachable" class="public" href="../dmd/ob/remove_unreachable.html">removeUnreachable</a><span class="tableEntryAnnotation">(obnodes)</span>
 								</code>
 							</td>
 							<td>Remove unreachable nodes and compress
  them out of obnodes[].
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="setLabelStatementExtraFields" class="public" href="../dmd/ob/set_label_statement_extra_fields.html">setLabelStatementExtraFields</a><span class="decoration">(labtab)</span>
+									<a id="setLabelStatementExtraFields" class="public" href="../dmd/ob/set_label_statement_extra_fields.html">setLabelStatementExtraFields</a><span class="tableEntryAnnotation">(labtab)</span>
 								</code>
 							</td>
 							<td>Set the <code class="lang-d"><wbr/><span class="pun">.</span><span class="pln">extra</span></code> field for LabelStatements in labtab[].
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toChars" class="public" href="../dmd/ob/to_chars.html">toChars</a><span class="decoration">(state)</span>
+									<a id="toChars" class="public" href="../dmd/ob/to_chars.html">toChars</a><span class="tableEntryAnnotation">(state)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toObNodes" class="public" href="../dmd/ob/to_ob_nodes.html">toObNodes</a><span class="decoration">(obnodes, s)</span>
+									<a id="toObNodes" class="public" href="../dmd/ob/to_ob_nodes.html">toObNodes</a><span class="tableEntryAnnotation">(obnodes, s)</span>
 								</code>
 							</td>
 							<td>Convert statement into ObNodes.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toPtrState" class="public" href="../dmd/ob/to_ptr_state.html">toPtrState</a><span class="decoration">(v)</span>
+									<a id="toPtrState" class="public" href="../dmd/ob/to_ptr_state.html">toPtrState</a><span class="tableEntryAnnotation">(v)</span>
 								</code>
 							</td>
 							<td>Determine the state of a variable based on
  its type and storage class.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3210,7 +3303,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3220,6 +3313,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>A node in the function's expression graph, and its edges to predecessors and successors.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3229,6 +3324,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Collect the state information.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3238,6 +3335,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Carries the state of a pointer variable.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3246,7 +3345,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3256,6 +3355,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Pointer variable states:
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="./core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="./core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="./core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="./core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="./dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="./dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2961,7 +2976,7 @@ $('#symbolSearchPane').show();</script>
 <p><span class="dlang_runnable"></span>
 </p>
 <pre class="code"><code class="lang-d"><span class="kwd">import </span><span class="pln">std</span><span class="pun">;
-</span><span class="pln">writeln</span><span class="pun">(</span><span class="lit">10<wbr/></span><span class="pun">.</span><span class="pln">iota<wbr/></span><span class="pun">.</span><span class="pln">map</span><span class="pun">!(</span><span class="pln">partial</span><span class="pun">!(</span><span class="pln">pow</span><span class="pun">, </span><span class="lit">2</span><span class="pun">))<wbr/>.</span><span class="pln">sum</span><span class="pun">); </span><span class="com">// 1023
+</span><span class="pln">writeln</span><span class="pun">(</span><span class="lit">10<wbr/></span><span class="pun">.</span><span class="pln">iota<wbr/></span><span class="pun">.</span><span class="pln">map</span><span class="pun">!(</span><span class="pln">a </span><span class="pun">=&gt; </span><span class="pln">pow</span><span class="pun">(</span><span class="lit">2</span><span class="pun">, </span><span class="pln">a</span><span class="pun">))<wbr/>.</span><span class="pln">sum</span><span class="pun">); </span><span class="com">// 1023
 </span></code></pre>
 </section>
 </section>

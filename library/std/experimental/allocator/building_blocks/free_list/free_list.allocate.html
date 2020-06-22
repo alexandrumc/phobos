@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2938,11 +2953,11 @@ $('#symbolSearchPane').show();</script>
 						</div>
 					</div>
 				</div><h1>Function <code><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html">std.experimental.allocator.building_blocks.free_list.FreeList</a>.allocate</code></h1><p>Allocates memory either off of the free list or from the parent allocator.
-    If <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.allocate.html#n"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.allocate.html#n"><span class="pln">n</span></a></span></a></code> is within <code class="lang-d"><span class="pun">[<a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.min.html"></span><span class="pln">min</span></a><span class="pun">, <a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.max.html"></span><span class="pln">max</span></a><span class="pun">]</span></code> or if the free list is unchecked
+    If <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.allocate.html#n"><span class="pln">n</span></a></code> is within <code class="lang-d"><span class="pun">[<a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.min.html"></span><span class="pln">min</span></a><span class="pun">, <a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.max.html"></span><span class="pln">max</span></a><span class="pun">]</span></code> or if the free list is unchecked
     (<code class="lang-d"><span class="pln">minSize </span><span class="pun">== </span><span class="lit">0 </span><span class="pun">&amp;&amp; </span><span class="pln">maxSize </span><span class="pun">== </span><span class="pln">size_t<wbr/></span><span class="pun">.</span><span class="pln">max</span></code>), then the free list is
     consulted first. If not empty (hit), the block at the front of the free
     list is removed from the list and returned. Otherwise (miss), a new block
-    of <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.max.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.max.html"><span class="pln">max</span></a></span></a></code> bytes is allocated, truncated to <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.allocate.html#n"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.allocate.html#n"><span class="pln">n</span></a></span></a></code> bytes, and returned.
+    of <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.max.html"><span class="pln">max</span></a></code> bytes is allocated, truncated to <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.allocate.html#n"><span class="pln">n</span></a></code> bytes, and returned.
 </p>
 				<div class="prototype">
 					<code class="lang-d">

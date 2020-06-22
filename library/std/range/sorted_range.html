@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/range/package.d#L10693">
+							<a href="https://github.com/dlang/phobos/blob/master/std/range/package.d#L10695">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/range/package.d#L10693">
+							<a href="https://github.com/dlang/phobos/edit/master/std/range/package.d#L10695">
 								Improve this page
 							</a>
 							<div>
@@ -2941,7 +2956,7 @@ $('#symbolSearchPane').show();</script>
    primitives, supports additional operations that take advantage of the
    ordering, such as merge and binary search. To obtain a <code class="lang-d"><span class="pln">   </span><span class="typ">SortedRange</span></code> from an unsorted range <code class="lang-d"><span class="pln">r</span></code>, use
    <code class="lang-d"><a href="../../std/algorithm/sorting/sort.html" title="std.algorithm.sorting.sort"><span class="pln">sort</span></a></code> which sorts <code class="lang-d"><span class="pln">r</span></code> in place and returns the
-   corresponding <code class="lang-d"><span class="typ"><span class="typ"><span class="typ">SortedRange</span></span></span></code>. To construct a <code class="lang-d"><span class="typ"><span class="typ"><span class="typ">SortedRange</span></span></span></code> from a range
+   corresponding <code class="lang-d"><span class="typ">SortedRange</span></code>. To construct a <code class="lang-d"><span class="typ">SortedRange</span></code> from a range
    <code class="lang-d"><span class="pln">r</span></code> that is known to be already sorted, use <code class="lang-d"><a href="../../std/range/assume_sorted.html"><span class="pln">assumeSorted</span></a></code>.
 </p>
 				<div class="prototype">
@@ -3015,8 +3030,9 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/sorted_range.contains.html" class="public">
 									<code>contains</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
-							<td>Returns <code class="lang-d"><span class="kwd">true</span></code> if and only if <code class="lang-d"><a href="../../std/range/sorted_range.contains.html#value"><span class="pln"><a href="../../std/range/sorted_range.contains.html#value"><span class="pln">value</span></a></span></a></code> can be found in <code class="lang-d"><span class="pln">range</span></code>, which is assumed to be sorted. Performs <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">log</span><span class="pun">(</span><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code>)</span>
+							<td>Returns <code class="lang-d"><span class="kwd">true</span></code> if and only if <code class="lang-d"><a href="../../std/range/sorted_range.contains.html#value"><span class="pln">value</span></a></code> can be found in <code class="lang-d"><span class="pln">range</span></code>, which is assumed to be sorted. Performs <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">log</span><span class="pun">(</span><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code>)</span>
 evaluations of <code class="lang-d"><span class="pln">pred</span></code>.
 </td>
 						</tr>
@@ -3025,13 +3041,14 @@ evaluations of <code class="lang-d"><span class="pln">pred</span></code>.
 								<a href="../../std/range/sorted_range.equal_range.html" class="public">
 									<code>equalRange</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
 							<td>Returns the subrange containing all elements <code class="lang-d"><span class="pln">e</span></code> for which both <code class="lang-d"><span class="pln">   pred</span><span class="pun">(</span><span class="pln">e</span><span class="pun">, <a href="../../std/range/sorted_range.equal_range.html#value"></span><span class="pln">value</span></a><span class="pun">)</span></code> and <code class="lang-d"><span class="pln">pred</span><span class="pun">(<a href="../../std/range/sorted_range.equal_range.html#value"></span><span class="pln">value</span></a><span class="pun">, </span><span class="pln">e</span><span class="pun">)</span></code> evaluate to <code class="lang-d"><span class="kwd">false</span></code> (e.g.,
    if <code class="lang-d"><span class="pln">pred</span></code> is "less than", returns the portion of the range with
-   elements equal to <code class="lang-d"><a href="../../std/range/sorted_range.equal_range.html#value"><span class="pln"><a href="../../std/range/sorted_range.equal_range.html#value"><span class="pln">value</span></a></span></a></code>). Uses a classic binary search with
+   elements equal to <code class="lang-d"><a href="../../std/range/sorted_range.equal_range.html#value"><span class="pln">value</span></a></code>). Uses a classic binary search with
    interval halving until it finds a value that satisfies the condition,
-   then uses <code class="lang-d"><a href="../../std/range/search_policy.html#gallopBackwards"><span class="typ"><a href="../../std/range/search_policy.html"><span class="typ">SearchPolicy</span></a><wbr/></span><span class="pun">.</span><span class="pln">gallopBackwards</span></a></code> to find the left boundary
-   and <code class="lang-d"><a href="../../std/range/search_policy.html#gallop"><span class="typ"><a href="../../std/range/search_policy.html"><span class="typ">SearchPolicy</span></a><wbr/></span><span class="pun">.</span><span class="pln">gallop</span></a></code> to find the right boundary. These
+   then uses <code class="lang-d"><a href="../../std/range/search_policy.html#gallopBackwards"><span class="typ">SearchPolicy<wbr/></span><span class="pun">.</span><span class="pln">gallopBackwards</span></a></code> to find the left boundary
+   and <code class="lang-d"><a href="../../std/range/search_policy.html#gallop"><span class="typ">SearchPolicy<wbr/></span><span class="pun">.</span><span class="pln">gallop</span></a></code> to find the right boundary. These
    policies are justified by the fact that the two boundaries are likely
    to be near the first found value (i.e., equal ranges are relatively
    small). Completes the entire search in <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">log</span><span class="pun">(</span><span class="pln">n</span><span class="pun">)</span></code>)</span> time.
@@ -3042,6 +3059,7 @@ evaluations of <code class="lang-d"><span class="pln">pred</span></code>.
 								<a href="../../std/range/sorted_range.group_by.html" class="public">
 									<code>groupBy</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns a range of subranges of elements that are equivalent according to the
 sorting relation.
@@ -3052,11 +3070,12 @@ sorting relation.
 								<a href="../../std/range/sorted_range.lower_bound.html" class="public">
 									<code>lowerBound</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
 							<td>This function uses a search with policy <code class="lang-d"><span class="pln">sp</span></code> to find the
    largest left subrange on which <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">x</span><span class="pun">, <a href="../../std/range/sorted_range.lower_bound.html#value"></span><span class="pln">value</span></a><span class="pun">)</span></code> is <code class="lang-d"><span class="kwd">true</span></code> for
    all <code class="lang-d"><span class="pln">x</span></code> (e.g., if <code class="lang-d"><span class="pln">pred</span></code> is "less than", returns the portion of
-   the range with elements strictly smaller than <code class="lang-d"><a href="../../std/range/sorted_range.lower_bound.html#value"><span class="pln"><a href="../../std/range/sorted_range.lower_bound.html#value"><span class="pln">value</span></a></span></a></code>). The search
+   the range with elements strictly smaller than <code class="lang-d"><a href="../../std/range/sorted_range.lower_bound.html#value"><span class="pln">value</span></a></code>). The search
    schedule and its complexity are documented in
    <code class="lang-d"><a href="../../std/range/search_policy.html"><span class="typ">SearchPolicy</span></a></code>.
 </td>
@@ -3066,8 +3085,9 @@ sorting relation.
 								<a href="../../std/range/sorted_range.op_binary_right.html" class="public">
 									<code>opBinaryRight</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
-							<td>Like <code class="lang-d"><a href="../../std/range/sorted_range.contains.html"><span class="pln"><a href="../../std/range/sorted_range.contains.html"><span class="pln">contains</span></a></span></a></code>, but the value is specified before the range.
+							<td>Like <code class="lang-d"><a href="../../std/range/sorted_range.contains.html"><span class="pln">contains</span></a></code>, but the value is specified before the range.
 </td>
 						</tr>
 						<tr>
@@ -3075,6 +3095,7 @@ sorting relation.
 								<a href="../../std/range/sorted_range.op_index.html" class="public">
 									<code>opIndex</code>
 								</a>
+								<span class="tableEntryAnnotation">(i)</span>
 							</td>
 							<td>Range primitives.
 </td>
@@ -3084,6 +3105,7 @@ sorting relation.
 								<a href="../../std/range/sorted_range.op_slice.html" class="public">
 									<code>opSlice</code>
 								</a>
+								<span class="tableEntryAnnotation">(a, b)</span>
 							</td>
 							<td>Range primitives.
 </td>
@@ -3093,6 +3115,7 @@ sorting relation.
 								<a href="../../std/range/sorted_range.pop_back.html" class="public">
 									<code>popBack</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Range primitives.
 </td>
@@ -3102,6 +3125,7 @@ sorting relation.
 								<a href="../../std/range/sorted_range.pop_front.html" class="public">
 									<code>popFront</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Range primitives.
 </td>
@@ -3111,6 +3135,7 @@ sorting relation.
 								<a href="../../std/range/sorted_range.release.html" class="public">
 									<code>release</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Releases the controlled range and returns it.
 </td>
@@ -3120,9 +3145,10 @@ sorting relation.
 								<a href="../../std/range/sorted_range.trisect.html" class="public">
 									<code>trisect</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
 							<td>Returns a tuple <code class="lang-d"><span class="pln">r</span></code> such that <code class="lang-d"><span class="pln">r</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span></code> is the same as the result
-of <code class="lang-d"><a href="../../std/range/sorted_range.lower_bound.html"><span class="pln"><a href="../../std/range/sorted_range.lower_bound.html"><span class="pln">lowerBound</span></a></span></a><span class="pun">(<a href="../../std/range/sorted_range.trisect.html#value"></span><span class="pln"><a href="../../std/range/sorted_range.trisect.html#value"><span class="pln">value</span></a></span></a><span class="pun">)</span></code>, <code class="lang-d"><span class="pln">r</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span></code> is the same as the result of <code class="lang-d"><a href="../../std/range/sorted_range.equal_range.html"><span class="pln">equalRange</span></a><span class="pun">(<a href="../../std/range/sorted_range.trisect.html#value"></span><span class="pln">value</span></a><span class="pun">)</span></code>, and <code class="lang-d"><span class="pln">r</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]</span></code> is the same as the result of <code class="lang-d"><a href="../../std/range/sorted_range.upper_bound.html"><span class="pln">upperBound</span></a><span class="pun">(<a href="../../std/range/sorted_range.trisect.html#value"></span><span class="pln">value</span></a><span class="pun">)</span></code>. The call is faster than computing all three
+of <code class="lang-d"><a href="../../std/range/sorted_range.lower_bound.html"><span class="pln">lowerBound</span></a><span class="pun">(<a href="../../std/range/sorted_range.trisect.html#value"></span><span class="pln">value</span></a><span class="pun">)</span></code>, <code class="lang-d"><span class="pln">r</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span></code> is the same as the result of <code class="lang-d"><a href="../../std/range/sorted_range.equal_range.html"><span class="pln">equalRange</span></a><span class="pun">(<a href="../../std/range/sorted_range.trisect.html#value"></span><span class="pln">value</span></a><span class="pun">)</span></code>, and <code class="lang-d"><span class="pln">r</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]</span></code> is the same as the result of <code class="lang-d"><a href="../../std/range/sorted_range.upper_bound.html"><span class="pln">upperBound</span></a><span class="pun">(<a href="../../std/range/sorted_range.trisect.html#value"></span><span class="pln">value</span></a><span class="pun">)</span></code>. The call is faster than computing all three
 separately. Uses a search schedule similar to <code class="lang-d"><a href="../../std/range/sorted_range.equal_range.html"><span class="pln">equalRange</span></a></code>. Completes the entire search in <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">log</span><span class="pun">(</span><span class="pln">n</span><span class="pun">)</span></code>)</span> time.
 </td>
 						</tr>
@@ -3131,11 +3157,12 @@ separately. Uses a search schedule similar to <code class="lang-d"><a href="../.
 								<a href="../../std/range/sorted_range.upper_bound.html" class="public">
 									<code>upperBound</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
 							<td>This function searches with policy <code class="lang-d"><span class="pln">sp</span></code> to find the largest right
 subrange on which <code class="lang-d"><span class="pln">pred</span><span class="pun">(<a href="../../std/range/sorted_range.upper_bound.html#value"></span><span class="pln">value</span></a><span class="pun">, </span><span class="pln">x</span><span class="pun">)</span></code> is <code class="lang-d"><span class="kwd">true</span></code> for all <code class="lang-d"><span class="pln">x</span></code>
 (e.g., if <code class="lang-d"><span class="pln">pred</span></code> is "less than", returns the portion of the range
-with elements strictly greater than <code class="lang-d"><a href="../../std/range/sorted_range.upper_bound.html#value"><span class="pln"><a href="../../std/range/sorted_range.upper_bound.html#value"><span class="pln">value</span></a></span></a></code>). The search schedule
+with elements strictly greater than <code class="lang-d"><a href="../../std/range/sorted_range.upper_bound.html#value"><span class="pln">value</span></a></code>). The search schedule
 and its complexity are documented in <code class="lang-d"><a href="../../std/range/search_policy.html"><span class="typ">SearchPolicy</span></a></code>.
 </td>
 						</tr>

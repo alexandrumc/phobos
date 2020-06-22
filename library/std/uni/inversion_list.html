@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,7 +2952,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Struct <code><a href="../../std/uni.html">std.uni</a>.InversionList</code></h1><p><p>    <code class="lang-d"><span class="typ"><span class="typ">InversionList</span></span></code> is a set of <a href="#Code point">code points</a>
+				</div><h1>Struct <code><a href="../../std/uni.html">std.uni</a>.InversionList</code></h1><p><p>    <code class="lang-d"><span class="typ">InversionList</span></code> is a set of <a href="#Code point">code points</a>
     represented as an array of open-right [a, b)
     intervals (see <code class="lang-d"><a href="../../std/uni/codepoint_interval.html"><span class="typ">CodepointInterval</span></a></code> above).
     The name comes from the way the representation reads left to right.
@@ -2985,6 +3000,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/uni/inversion_list.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(set)</span>
 							</td>
 							<td>Construct from another code point set of any type.
 </td>
@@ -2994,6 +3010,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/uni/inversion_list.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(intervals)</span>
 							</td>
 							<td>Construct a set from a forward range of code point intervals.
 </td>
@@ -3003,6 +3020,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/uni/inversion_list.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Construct a set from plain values of code point intervals.
 </td>
@@ -3063,6 +3081,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/uni/inversion_list.add.html" class="public">
 									<code>add</code>
 								</a>
+								<span class="tableEntryAnnotation">(a, b)</span>
 							</td>
 							<td>Add an interval [a, b) to this set.
 </td>
@@ -3072,6 +3091,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/uni/inversion_list.op_binary.html" class="public">
 									<code>opBinary</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td><p>Sets support natural syntax for set algebra, namely: </p>
         <table class="book"><caption></caption>            <tr><th scope="col">Operator</th> <th scope="col">Math notation</th> <th scope="col">Description</th> </tr>
@@ -3087,6 +3107,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/uni/inversion_list.op_binary_right.html" class="public">
 									<code>opBinaryRight</code>
 								</a>
+								<span class="tableEntryAnnotation">(ch)</span>
 							</td>
 							<td>Tests the presence of codepoint <code class="lang-d"><a href="../../std/uni/inversion_list.op_binary_right.html#ch"><span class="pln">ch</span></a></code> in this set,
         the same as <code class="lang-d"><a href="../../std/uni/inversion_list.op_index.html"><span class="pln">opIndex</span></a></code>.
@@ -3097,8 +3118,9 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/uni/inversion_list.op_index.html" class="public">
 									<code>opIndex</code>
 								</a>
+								<span class="tableEntryAnnotation">(val)</span>
 							</td>
-							<td>Tests the presence of code point <code class="lang-d"><a href="../../std/uni/inversion_list.op_index.html#val"><span class="pln"><a href="../../std/uni/inversion_list.op_index.html#val"><span class="pln">val</span></a></span></a></code> in this set.
+							<td>Tests the presence of code point <code class="lang-d"><a href="../../std/uni/inversion_list.op_index.html#val"><span class="pln">val</span></a></code> in this set.
 </td>
 						</tr>
 						<tr>
@@ -3106,6 +3128,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/uni/inversion_list.op_op_assign.html" class="public">
 									<code>opOpAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td>The 'op=' versions of the above overloaded operators.
 </td>
@@ -3115,6 +3138,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/uni/inversion_list.op_unary.html" class="public">
 									<code>opUnary</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Obtains a set that is the inversion of this set.
 </td>
@@ -3124,9 +3148,10 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/uni/inversion_list.to_source_code.html" class="public">
 									<code>toSourceCode</code>
 								</a>
+								<span class="tableEntryAnnotation">(funcName)</span>
 							</td>
 							<td>Generates string with D source code of unary function with name of
-        <code class="lang-d"><a href="../../std/uni/inversion_list.to_source_code.html#funcName"><span class="pln"><a href="../../std/uni/inversion_list.to_source_code.html#funcName"><span class="pln">funcName</span></a></span></a></code> taking a single <code class="lang-d"><span class="typ">dchar</span></code> argument. If <code class="lang-d"><a href="../../std/uni/inversion_list.to_source_code.html#funcName"><span class="pln"><a href="../../std/uni/inversion_list.to_source_code.html#funcName"><span class="pln">funcName</span></a></span></a></code> is empty
+        <code class="lang-d"><a href="../../std/uni/inversion_list.to_source_code.html#funcName"><span class="pln">funcName</span></a></code> taking a single <code class="lang-d"><span class="typ">dchar</span></code> argument. If <code class="lang-d"><a href="../../std/uni/inversion_list.to_source_code.html#funcName"><span class="pln">funcName</span></a></code> is empty
         the code is adjusted to be a lambda function.
 </td>
 						</tr>
@@ -3135,6 +3160,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/uni/inversion_list.to_string.html" class="public">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">(sink, fmt)</span>
 							</td>
 							<td>Obtain a textual representation of this InversionList
  in form of open-right intervals.

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/range/package.d#L12209">
+							<a href="https://github.com/dlang/phobos/blob/master/std/range/package.d#L12211">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/range/package.d#L12209">
+							<a href="https://github.com/dlang/phobos/edit/master/std/range/package.d#L12211">
 								Improve this page
 							</a>
 							<div>
@@ -2962,7 +2977,7 @@ $('#symbolSearchPane').show();</script>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">refRange</span>(R)
+				<span class="kwd">auto</span> <span class="pln">refRange</span>(R)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">R</span><span class="pun">*</span> <span class="pln">range</span>
@@ -3096,6 +3111,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/ref_range.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(range)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3160,6 +3176,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/ref_range.move_at.html" class="public">
 									<code>moveAt</code>
 								</a>
+								<span class="tableEntryAnnotation">(index)</span>
 							</td>
 							<td>Only defined if <code class="lang-d"><span class="pln">hasMobileElements</span><span class="pun">!</span><span class="pln">R</span></code> and <code class="lang-d"><span class="pln">isRandomAccessRange</span><span class="pun">!</span><span class="pln">R</span></code>
         are <code class="lang-d"><span class="kwd">true</span></code>.
@@ -3170,6 +3187,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/ref_range.move_back.html" class="public">
 									<code>moveBack</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Only defined if <code class="lang-d"><span class="pln">hasMobileElements</span><span class="pun">!</span><span class="pln">R</span></code> and <code class="lang-d"><span class="pln">isBidirectionalRange</span><span class="pun">!</span><span class="pln">R</span></code>
         are <code class="lang-d"><span class="kwd">true</span></code>.
@@ -3180,6 +3198,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/ref_range.move_front.html" class="public">
 									<code>moveFront</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Only defined if <code class="lang-d"><span class="pln">hasMobileElements</span><span class="pun">!</span><span class="pln">R</span></code> and <code class="lang-d"><span class="pln">isForwardRange</span><span class="pun">!</span><span class="pln">R</span></code> are
         <code class="lang-d"><span class="kwd">true</span></code>.
@@ -3190,6 +3209,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/ref_range.op_assign.html" class="public">
 									<code>opAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td>This does not assign the pointer of <code class="lang-d"><a href="../../std/range/ref_range.op_assign.html#rhs"><span class="pln">rhs</span></a></code> to this <code class="lang-d"><a href="../../std/range/ref_range.html"><span class="typ">RefRange</span></a></code>.
         Rather it assigns the range pointed to by <code class="lang-d"><a href="../../std/range/ref_range.op_assign.html#rhs"><span class="pln">rhs</span></a></code> to the range pointed
@@ -3205,6 +3225,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/ref_range.op_assign.html" class="public">
 									<code>opAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3213,6 +3234,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/ref_range.op_index.html" class="public">
 									<code>opIndex</code>
 								</a>
+								<span class="tableEntryAnnotation">(index)</span>
 							</td>
 							<td>Only defined if <code class="lang-d"><span class="pln">isRandomAccesRange</span><span class="pun">!</span><span class="pln">R</span></code> is <code class="lang-d"><span class="kwd">true</span></code>.
 </td>
@@ -3222,6 +3244,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/ref_range.op_slice.html" class="public">
 									<code>opSlice</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Only defined if <code class="lang-d"><span class="pln">isForwardRange</span><span class="pun">!</span><span class="pln">R</span></code> is <code class="lang-d"><span class="kwd">true</span></code>.
 </td>
@@ -3231,6 +3254,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/ref_range.op_slice.html" class="public">
 									<code>opSlice</code>
 								</a>
+								<span class="tableEntryAnnotation">(begin, end)</span>
 							</td>
 							<td>Only defined if <code class="lang-d"><span class="pln">hasSlicing</span><span class="pun">!</span><span class="pln">R</span></code> is <code class="lang-d"><span class="kwd">true</span></code>.
 </td>
@@ -3240,6 +3264,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/ref_range.pop_back.html" class="public">
 									<code>popBack</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Only defined if <code class="lang-d"><span class="pln">isBidirectionalRange</span><span class="pun">!</span><span class="pln">R</span></code> is <code class="lang-d"><span class="kwd">true</span></code>.
 </td>
@@ -3249,6 +3274,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/ref_range.pop_front.html" class="public">
 									<code>popFront</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3272,20 +3298,20 @@ $('#symbolSearchPane').show();</script>
 					</table>
 				</section>
 				<section><h3>Note</h3>
-<p><code class="lang-d"><span class="pln"><a href="../../std/range/ref_range.save.html"><span class="pln">save</span></a></span></code> works as normal and operates on a new range, so if
-        <code class="lang-d"><span class="pln"><a href="../../std/range/ref_range.save.html"><span class="pln">save</span></a></span></code> is ever called on the <code class="lang-d"><a href="../../std/range/ref_range.html"><span class="typ"><span class="typ">RefRange</span></span></a></code>, then no operations on the
+<p><code class="lang-d"><a href="../../std/range/ref_range.save.html"><span class="pln">save</span></a></code> works as normal and operates on a new range, so if
+        <code class="lang-d"><a href="../../std/range/ref_range.save.html"><span class="pln">save</span></a></code> is ever called on the <code class="lang-d"><span class="typ">RefRange</span></code>, then no operations on the
         saved range will affect the original.
 </p>
 </section>
 <section><h3>Parameters</h3>
 <table><col class="caption"><tr><th>Name</th><th>Description</th></tr>
-<tr><td id="range">range</td><td> the range to construct the <code class="lang-d"><a href="../../std/range/ref_range.html"><span class="typ"><span class="typ">RefRange</span></span></a></code> from</td></tr>
+<tr><td id="range">range</td><td> the range to construct the <code class="lang-d"><span class="typ">RefRange</span></code> from</td></tr>
 </table>
 </section>
 <section><h3>Returns</h3>
-<p>A <code class="lang-d"><a href="../../std/range/ref_range.html"><span class="typ"><span class="typ">RefRange</span></span></a></code>. If the given range is a class type
+<p>A <code class="lang-d"><span class="typ">RefRange</span></code>. If the given range is a class type
         (and thus is already a reference type), then the original
-        range is returned rather than a <code class="lang-d"><a href="../../std/range/ref_range.html"><span class="typ"><span class="typ">RefRange</span></span></a></code>.
+        range is returned rather than a <code class="lang-d"><span class="typ">RefRange</span></code>.
 </p>
 </section>
 <section><h3>Example</h3>

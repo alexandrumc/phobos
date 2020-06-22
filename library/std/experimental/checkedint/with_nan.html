@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2938,8 +2953,8 @@ $('#symbolSearchPane').show();</script>
 						</div>
 					</div>
 				</div><h1>Struct <code><a href="../../../std/experimental/checkedint.html">std.experimental.checkedint</a>.WithNaN</code></h1><p>Hook that reserves a special value as a "Not a Number" representative. For
-signed integrals, the reserved value is <code class="lang-d"><span class="pln">T<wbr/></span><span class="pun">.</span><span class="pln"><a href="../../../std/experimental/checkedint/with_nan.min.html"><span class="pln">min</span></a></span></code>. For signed integrals, the
-reserved value is <code class="lang-d"><span class="pln">T<wbr/></span><span class="pun">.</span><span class="pln"><a href="../../../std/experimental/checkedint/with_nan.max.html"><span class="pln">max</span></a></span></code>.
+signed integrals, the reserved value is <code class="lang-d"><span class="pln">T<wbr/></span><span class="pun">.</span><span class="pln">min</span></code>. For signed integrals, the
+reserved value is <code class="lang-d"><span class="pln">T<wbr/></span><span class="pun">.</span><span class="pln">max</span></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2967,9 +2982,10 @@ operation involving at least on NaN becomes NaN itself. All of <code class="lang
 								<a href="../../../std/experimental/checkedint/with_nan.hook_op_binary.html" class="public">
 									<code>hookOpBinary</code>
 								</a>
+								<span class="tableEntryAnnotation">(lhs, rhs)</span>
 							</td>
 							<td>Defines hooks for binary operators <code class="lang-d"><span class="pun">+</span></code>, <code class="lang-d"><span class="pun">-</span></code>, <code class="lang-d"><span class="pun">*</span></code>, <code class="lang-d"><span class="pun">/</span></code>, <code class="lang-d"><span class="pun">%</span></code>, <code class="lang-d"><span class="pun">^^</span></code>, <code class="lang-d"><span class="pun">&amp;</span></code>, <code class="lang-d"><span class="pun">|</span></code>,
-     <code class="lang-d"><span class="pun">^</span></code>, <code class="lang-d"><span class="pun">&lt;&lt;</span></code>, <code class="lang-d"><span class="pun">&gt;&gt;</span></code>, and <code class="lang-d"><span class="pun">&gt;&gt;&gt;</span></code> for cases where a <code class="lang-d"><a href="../../../std/experimental/checkedint/checked.html"><span class="typ"><a href="../../../std/experimental/checkedint/checked.html"><span class="typ">Checked</span></a></span></a></code> object is the
+     <code class="lang-d"><span class="pun">^</span></code>, <code class="lang-d"><span class="pun">&lt;&lt;</span></code>, <code class="lang-d"><span class="pun">&gt;&gt;</span></code>, and <code class="lang-d"><span class="pun">&gt;&gt;&gt;</span></code> for cases where a <code class="lang-d"><a href="../../../std/experimental/checkedint/checked.html"><span class="typ">Checked</span></a></code> object is the
     left-hand side operand. If <code class="lang-d"><a href="../../../std/experimental/checkedint/with_nan.hook_op_binary.html#lhs"><span class="pln">lhs</span></a><span class="pln"> </span><span class="pun">== <a href="../../../std/experimental/checkedint/with_nan.default_value.html"></span><span class="typ">WithNaN<wbr/></span><span class="pun">.</span><span class="pln">defaultValue</span></a><span class="pun">!</span><span class="typ">Lhs</span></code>, returns
     <code class="lang-d"><a href="../../../std/experimental/checkedint/with_nan.default_value.html"><span class="typ">WithNaN<wbr/></span><span class="pun">.</span><span class="pln">defaultValue</span></a><span class="pun">!(</span><span class="kwd">typeof</span><span class="pun">(<a href="../../../std/experimental/checkedint/with_nan.hook_op_binary.html#lhs"></span><span class="pln">lhs</span></a><span class="pln"> </span><span class="pun">+ <a href="../../../std/experimental/checkedint/with_nan.hook_op_binary.html#rhs"></span><span class="pln">rhs</span></a><span class="pun">))</span></code> without evaluating the
     operand. Otherwise, evaluates the operand. If evaluation does not overflow,
@@ -2982,6 +2998,7 @@ operation involving at least on NaN becomes NaN itself. All of <code class="lang
 								<a href="../../../std/experimental/checkedint/with_nan.hook_op_binary_right.html" class="public">
 									<code>hookOpBinaryRight</code>
 								</a>
+								<span class="tableEntryAnnotation">(lhs, rhs)</span>
 							</td>
 							<td>Defines hooks for binary operators <code class="lang-d"><span class="pun">+</span></code>, <code class="lang-d"><span class="pun">-</span></code>, <code class="lang-d"><span class="pun">*</span></code>, <code class="lang-d"><span class="pun">/</span></code>, <code class="lang-d"><span class="pun">%</span></code>, <code class="lang-d"><span class="pun">^^</span></code>, <code class="lang-d"><span class="pun">&amp;</span></code>, <code class="lang-d"><span class="pun">|</span></code>,
      <code class="lang-d"><span class="pun">^</span></code>, <code class="lang-d"><span class="pun">&lt;&lt;</span></code>, <code class="lang-d"><span class="pun">&gt;&gt;</span></code>, and <code class="lang-d"><span class="pun">&gt;&gt;&gt;</span></code> for cases where a <code class="lang-d"><a href="../../../std/experimental/checkedint/checked.html"><span class="typ">Checked</span></a></code> object is the
@@ -2997,9 +3014,10 @@ operation involving at least on NaN becomes NaN itself. All of <code class="lang
 								<a href="../../../std/experimental/checkedint/with_nan.hook_op_cast.html" class="public">
 									<code>hookOpCast</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
-							<td>If <code class="lang-d"><a href="../../../std/experimental/checkedint/with_nan.hook_op_cast.html#rhs"><span class="pln"><a href="../../../std/experimental/checkedint/with_nan.hook_op_cast.html#rhs"><span class="pln">rhs</span></a></span></a></code> is <code class="lang-d"><a href="../../../std/experimental/checkedint/with_nan.default_value.html"><span class="typ"><a href="../../../std/experimental/checkedint/with_nan.html"><span class="typ">WithNaN</span></a><wbr/></span><span class="pun">.</span><span class="pln"><a href="../../../std/experimental/checkedint/with_nan.default_value.html"><span class="pln">defaultValue</span></a></span></a><span class="pun">!</span><span class="typ">Rhs</span></code>, returns
-    <code class="lang-d"><a href="../../../std/experimental/checkedint/with_nan.default_value.html"><span class="typ"><a href="../../../std/experimental/checkedint/with_nan.html"><span class="typ">WithNaN</span></a><wbr/></span><span class="pun">.</span><span class="pln"><a href="../../../std/experimental/checkedint/with_nan.default_value.html"><span class="pln">defaultValue</span></a></span></a><span class="pun">!</span><span class="typ">Lhs</span></code>. Otherwise, returns <code class="lang-d"><span class="kwd">cast</span><span class="pun">(</span><span class="typ">Lhs</span><span class="pun">) <a href="../../../std/experimental/checkedint/with_nan.hook_op_cast.html#rhs"></span><span class="pln">rhs</span></a></code>.
+							<td>If <code class="lang-d"><a href="../../../std/experimental/checkedint/with_nan.hook_op_cast.html#rhs"><span class="pln">rhs</span></a></code> is <code class="lang-d"><a href="../../../std/experimental/checkedint/with_nan.default_value.html"><span class="typ">WithNaN<wbr/></span><span class="pun">.</span><span class="pln">defaultValue</span></a><span class="pun">!</span><span class="typ">Rhs</span></code>, returns
+    <code class="lang-d"><a href="../../../std/experimental/checkedint/with_nan.default_value.html"><span class="typ">WithNaN<wbr/></span><span class="pun">.</span><span class="pln">defaultValue</span></a><span class="pun">!</span><span class="typ">Lhs</span></code>. Otherwise, returns <code class="lang-d"><span class="kwd">cast</span><span class="pun">(</span><span class="typ">Lhs</span><span class="pun">) <a href="../../../std/experimental/checkedint/with_nan.hook_op_cast.html#rhs"></span><span class="pln">rhs</span></a></code>.
 </td>
 						</tr>
 						<tr>
@@ -3007,6 +3025,7 @@ operation involving at least on NaN becomes NaN itself. All of <code class="lang
 								<a href="../../../std/experimental/checkedint/with_nan.hook_op_cmp.html" class="public">
 									<code>hookOpCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(lhs, rhs)</span>
 							</td>
 							<td>If <code class="lang-d"><a href="../../../std/experimental/checkedint/with_nan.hook_op_cmp.html#lhs"><span class="pln">lhs</span></a><span class="pln"> </span><span class="pun">== <a href="../../../std/experimental/checkedint/with_nan.default_value.html"></span><span class="typ">WithNaN<wbr/></span><span class="pun">.</span><span class="pln">defaultValue</span></a><span class="pun">!</span><span class="typ">Lhs</span></code>, returns <code class="lang-d"><span class="typ">double<wbr/></span><span class="pun">.</span><span class="pln">init</span></code>. Otherwise,
     has the same semantics as the default comparison.
@@ -3017,6 +3036,7 @@ operation involving at least on NaN becomes NaN itself. All of <code class="lang
 								<a href="../../../std/experimental/checkedint/with_nan.hook_op_equals.html" class="public">
 									<code>hookOpEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(lhs, rhs)</span>
 							</td>
 							<td>Returns <code class="lang-d"><span class="kwd">false</span></code> if <code class="lang-d"><a href="../../../std/experimental/checkedint/with_nan.hook_op_equals.html#lhs"><span class="pln">lhs</span></a><span class="pln"> </span><span class="pun">== <a href="../../../std/experimental/checkedint/with_nan.default_value.html"></span><span class="typ">WithNaN<wbr/></span><span class="pun">.</span><span class="pln">defaultValue</span></a><span class="pun">!</span><span class="typ">Lhs</span></code>, <code class="lang-d"><a href="../../../std/experimental/checkedint/with_nan.hook_op_equals.html#lhs"><span class="pln">lhs</span></a><span class="pln"> </span><span class="pun">== <a href="../../../std/experimental/checkedint/with_nan.hook_op_equals.html#rhs"></span><span class="pln">rhs</span></a></code>
     otherwise.
@@ -3027,6 +3047,7 @@ operation involving at least on NaN becomes NaN itself. All of <code class="lang
 								<a href="../../../std/experimental/checkedint/with_nan.hook_op_op_assign.html" class="public">
 									<code>hookOpOpAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(lhs, rhs)</span>
 							</td>
 							<td>Defines hooks for binary operators <code class="lang-d"><span class="pun">+=</span></code>, <code class="lang-d"><span class="pun">-=</span></code>, <code class="lang-d"><span class="pun">*=</span></code>, <code class="lang-d"><span class="pun">/=</span></code>, <code class="lang-d"><span class="pun">%=</span></code>, <code class="lang-d"><span class="pun">^^=</span></code>,
     <code class="lang-d"><span class="pun">&amp;=</span></code>, <code class="lang-d"><span class="pun">|=</span></code>, <code class="lang-d"><span class="pun">^=</span></code>, <code class="lang-d"><span class="pun">&lt;&lt;=</span></code>, <code class="lang-d"><span class="pun">&gt;&gt;=</span></code>, and <code class="lang-d"><span class="pun">&gt;&gt;&gt;=</span></code> for cases where a <code class="lang-d"><a href="../../../std/experimental/checkedint/checked.html"><span class="typ">Checked</span></a></code>
@@ -3042,6 +3063,7 @@ operation involving at least on NaN becomes NaN itself. All of <code class="lang
 								<a href="../../../std/experimental/checkedint/with_nan.hook_op_unary.html" class="public">
 									<code>hookOpUnary</code>
 								</a>
+								<span class="tableEntryAnnotation">(v)</span>
 							</td>
 							<td>Defines hooks for unary operators <code class="lang-d"><span class="pun">-</span></code>, <code class="lang-d"><span class="pun">~</span></code>, <code class="lang-d"><span class="pun">++</span></code>, and <code class="lang-d"><span class="pun">--</span></code>.
 </td>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,13 +2952,13 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Template <code><a href="../../std/conv.html">std.conv</a>.to</code></h1><p>The <code class="lang-d"><a href="../std/conv/to.to.html"><span class="pln"><a href="../../std/conv/to.to.html"><span class="pln">to</span></a></span></a></code> template converts a value from one type to another.
+				</div><h1>Template <code><a href="../../std/conv.html">std.conv</a>.to</code></h1><p>The <code class="lang-d"><a href="../../std/conv/to.to.html"><span class="pln">to</span></a></code> template converts a value from one type to another.
 The source type is deduced and the target type must be specified, for example the
-expression <code class="lang-d"><a href="../std/conv/to.to.html"><span class="pln"><a href="../../std/conv/to.to.html"><span class="pln">to</span></a></span></a><span class="pun">!</span><span class="typ">int</span><span class="pun">(</span><span class="lit">42.0</span><span class="pun">)</span></code> converts the number 42 from
+expression <code class="lang-d"><a href="../../std/conv/to.to.html"><span class="pln">to</span></a><span class="pun">!</span><span class="typ">int</span><span class="pun">(</span><span class="lit">42.0</span><span class="pun">)</span></code> converts the number 42 from
 <code class="lang-d"><span class="typ">double</span></code> to <code class="lang-d"><span class="typ">int</span></code>. The conversion is "safe", i.e.,
-it checks for overflow; <code class="lang-d"><a href="../std/conv/to.to.html"><span class="pln"><a href="../../std/conv/to.to.html"><span class="pln">to</span></a></span></a><span class="pun">!</span><span class="typ">int</span><span class="pun">(</span><span class="lit">4.2e10</span><span class="pun">)</span></code> would throw the
-<code class="lang-d"><a href="../std/conv/conv_overflow_exception.html"><span class="typ"><a href="../../std/conv/conv_overflow_exception.html"><span class="typ">ConvOverflowException</span></a></span></a></code> exception. Overflow checks are only
-inserted when necessary, e.g., <code class="lang-d"><a href="../std/conv/to.to.html"><span class="pln"><a href="../../std/conv/to.to.html"><span class="pln">to</span></a></span></a><span class="pun">!</span><span class="typ">double</span><span class="pun">(</span><span class="lit">42</span><span class="pun">)</span></code> does not do
+it checks for overflow; <code class="lang-d"><a href="../../std/conv/to.to.html"><span class="pln">to</span></a><span class="pun">!</span><span class="typ">int</span><span class="pun">(</span><span class="lit">4.2e10</span><span class="pun">)</span></code> would throw the
+<code class="lang-d"><a href="../../std/conv/conv_overflow_exception.html"><span class="typ">ConvOverflowException</span></a></code> exception. Overflow checks are only
+inserted when necessary, e.g., <code class="lang-d"><a href="../../std/conv/to.to.html"><span class="pln">to</span></a><span class="pun">!</span><span class="typ">double</span><span class="pun">(</span><span class="lit">42</span><span class="pun">)</span></code> does not do
 any checking because any <code class="lang-d"><span class="typ">int</span></code> fits in a <code class="lang-d"><span class="typ">double</span></code>.
 </p>
 				<div class="prototype">

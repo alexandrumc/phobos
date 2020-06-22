@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2952,7 +2967,7 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function fft</h2><p>Convenience functions that create an <code class="lang-d"><a href="../std/numeric/fft.html"><span class="typ"><a href="../std/numeric/fft.html"><span class="typ"><a href="../../std/numeric/fft.html"><span class="typ">Fft</span></a></span></a></span></a></code> object, run the FFT or inverse
+				</nav><h2 id="0">Function fft</h2><p>Convenience functions that create an <code class="lang-d"><a href="../../std/numeric/fft.html"><span class="typ">Fft</span></a></code> object, run the FFT or inverse
  FFT and return the result.  Useful for one-off FFTs.
 </p>
 				<div class="prototype">
@@ -3015,9 +3030,10 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/numeric/fft.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(size)</span>
 							</td>
-							<td>Create an <code class="lang-d"><a href="../../std/numeric/fft.html"><span class="typ"><a href="../../std/numeric/fft.html"><span class="typ">Fft</span></a></span></a></code> object for computing fast Fourier transforms of
- power of two sizes of <code class="lang-d"><a href="../../std/numeric/fft.this.html#size"><span class="pln"><a href="../../std/numeric/fft.this.html#size"><span class="pln">size</span></a></span></a></code> or smaller.  <code class="lang-d"><a href="../../std/numeric/fft.this.html#size"><span class="pln"><a href="../../std/numeric/fft.this.html#size"><span class="pln">size</span></a></span></a></code> must be a
+							<td>Create an <code class="lang-d"><a href="../../std/numeric/fft.html"><span class="typ">Fft</span></a></code> object for computing fast Fourier transforms of
+ power of two sizes of <code class="lang-d"><a href="../../std/numeric/fft.this.html#size"><span class="pln">size</span></a></code> or smaller.  <code class="lang-d"><a href="../../std/numeric/fft.this.html#size"><span class="pln">size</span></a></code> must be a
  power of two.
 </td>
 						</tr>
@@ -3034,9 +3050,10 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/numeric/fft.fft.html" class="public">
 									<code>fft</code>
 								</a>
+								<span class="tableEntryAnnotation">(range)</span>
 							</td>
 							<td>Compute the Fourier transform of range using the <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">N log N</span></code>)</span>
- Cooley-Tukey Algorithm.  <code class="lang-d"><a href="../../std/numeric/fft.fft.html#range"><span class="pln"><a href="../../std/numeric/fft.fft.html#range"><span class="pln">range</span></a></span></a></code> must be a random-access range with
+ Cooley-Tukey Algorithm.  <code class="lang-d"><a href="../../std/numeric/fft.fft.html#range"><span class="pln">range</span></a></code> must be a random-access range with
  slicing and a length equal to <code class="lang-d"><span class="pln">size</span></code> as provided at the construction of
  this object.  The contents of range can be either  numeric types,
  which will be interpreted as pure real values, or complex types with
@@ -3048,6 +3065,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/numeric/fft.fft.html" class="public">
 									<code>fft</code>
 								</a>
+								<span class="tableEntryAnnotation">(range, buf)</span>
 							</td>
 							<td>Same as the overload, but allows for the results to be stored in a user-
  provided buffer.  The buffer must be of the same length as range, must be
@@ -3061,6 +3079,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/numeric/fft.inverse_fft.html" class="public">
 									<code>inverseFft</code>
 								</a>
+								<span class="tableEntryAnnotation">(range)</span>
 							</td>
 							<td>Computes the inverse Fourier transform of a range.  The range must be a
  random access range with slicing, have a length equal to the size
@@ -3074,6 +3093,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/numeric/fft.inverse_fft.html" class="public">
 									<code>inverseFft</code>
 								</a>
+								<span class="tableEntryAnnotation">(range, buf)</span>
 							</td>
 							<td>Inverse FFT that allows a user-supplied buffer to be provided.  The buffer
  must be a random access range with slicing, and its elements
@@ -3085,6 +3105,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.factory.html" class="public inherited">
 									<code>factory</code>
 								</a>
+								<span class="tableEntryAnnotation">(classname)</span>
 							</td>
 							<td>Create instance of class specified by the fully qualified name
  classname.
@@ -3097,6 +3118,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.op_cmp.html" class="public inherited">
 									<code>opCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Compare with another Object obj.
 </td>
@@ -3106,6 +3128,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.op_equals.html" class="public inherited">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Test whether <code class="lang-d"><span class="kwd">this</span></code> is equal to <code class="lang-d"><a href="../../object/object.op_equals.html#o"><span class="pln">o</span></a></code>.
  The default implementation only compares by identity (using the <code class="lang-d"><span class="kwd">is</span></code> operator).
@@ -3117,6 +3140,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.to_hash.html" class="public inherited">
 									<code>toHash</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Compute hash function for Object.
 </td>
@@ -3126,6 +3150,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Convert Object to a human readable string.
 </td>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,8 +2952,8 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Class <code><a href="../../../std/experimental/allocator.html">std.experimental.allocator</a>.CSharedAllocatorImpl</code></h1><p>Implementation of <code class="lang-d"><a href="../../std/experimental/allocator/i_shared_allocator.html"><span class="typ"><a href="../../../std/experimental/allocator/i_shared_allocator.html"><span class="typ">ISharedAllocator</span></a></span></a></code> using <code class="lang-d"><span class="typ">Allocator</span></code>. This adapts a
-statically-built, shareable across threads, allocator type to <code class="lang-d"><a href="../../std/experimental/allocator/i_shared_allocator.html"><span class="typ"><a href="../../../std/experimental/allocator/i_shared_allocator.html"><span class="typ">ISharedAllocator</span></a></span></a></code>
+				</div><h1>Class <code><a href="../../../std/experimental/allocator.html">std.experimental.allocator</a>.CSharedAllocatorImpl</code></h1><p>Implementation of <code class="lang-d"><a href="../../../std/experimental/allocator/i_shared_allocator.html"><span class="typ">ISharedAllocator</span></a></code> using <code class="lang-d"><span class="typ">Allocator</span></code>. This adapts a
+statically-built, shareable across threads, allocator type to <code class="lang-d"><a href="../../../std/experimental/allocator/i_shared_allocator.html"><span class="typ">ISharedAllocator</span></a></code>
 that is directly usable by non-templated code.
 </p>
 				<div class="prototype">
@@ -2965,6 +2980,7 @@ that is directly usable by non-templated code.
 								<a href="../../../std/experimental/allocator/c_shared_allocator_impl.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(pa)</span>
 							</td>
 							<td>The implementation is available as a public member.
 </td>
@@ -3012,8 +3028,9 @@ that is directly usable by non-templated code.
 								<a href="../../../std/experimental/allocator/c_shared_allocator_impl.aligned_allocate.html" class="public">
 									<code>alignedAllocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(s, a)</span>
 							</td>
-							<td>If <code class="lang-d"><span class="pln"><a href="../../../std/experimental/allocator/c_shared_allocator_impl.impl.html"><span class="pln">impl</span></a><wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">alignedAllocate</span></span></code> exists, calls it and returns the result.
+							<td>If <code class="lang-d"><span class="pln">impl<wbr/></span><span class="pun">.</span><span class="pln">alignedAllocate</span></code> exists, calls it and returns the result.
     Otherwise, always returns <code class="lang-d"><span class="kwd">null</span></code>.
 </td>
 						</tr>
@@ -3022,8 +3039,9 @@ that is directly usable by non-templated code.
 								<a href="../../../std/experimental/allocator/c_shared_allocator_impl.aligned_reallocate.html" class="public">
 									<code>alignedReallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, s, a)</span>
 							</td>
-							<td>Forwards to <code class="lang-d"><span class="pln"><a href="../../../std/experimental/allocator/c_shared_allocator_impl.impl.html"><span class="pln">impl</span></a><wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">alignedReallocate</span></span></code> if defined, <code class="lang-d"><span class="kwd">false</span></code> otherwise.
+							<td>Forwards to <code class="lang-d"><span class="pln">impl<wbr/></span><span class="pun">.</span><span class="pln">alignedReallocate</span></code> if defined, <code class="lang-d"><span class="kwd">false</span></code> otherwise.
 </td>
 						</tr>
 						<tr>
@@ -3031,8 +3049,9 @@ that is directly usable by non-templated code.
 								<a href="../../../std/experimental/allocator/c_shared_allocator_impl.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(s, ti)</span>
 							</td>
-							<td>Returns <code class="lang-d"><span class="pln"><a href="../../../std/experimental/allocator/c_shared_allocator_impl.impl.html"><span class="pln">impl</span></a><wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">allocate</span></span><span class="pun">(<a href="../../../std/experimental/allocator/c_shared_allocator_impl.allocate.html#s"></span><span class="pln"><a href="../../../std/experimental/allocator/c_shared_allocator_impl.allocate.html#s"><span class="pln">s</span></a></span></a><span class="pun">)</span></code>.
+							<td>Returns <code class="lang-d"><span class="pln">impl<wbr/></span><span class="pun">.</span><span class="pln">allocate</span><span class="pun">(<a href="../../../std/experimental/allocator/c_shared_allocator_impl.allocate.html#s"></span><span class="pln">s</span></a><span class="pun">)</span></code>.
 </td>
 						</tr>
 						<tr>
@@ -3040,8 +3059,9 @@ that is directly usable by non-templated code.
 								<a href="../../../std/experimental/allocator/c_shared_allocator_impl.allocate_all.html" class="public">
 									<code>allocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
-							<td>Returns <code class="lang-d"><span class="pln"><a href="../../../std/experimental/allocator/c_shared_allocator_impl.impl.html"><span class="pln">impl</span></a><wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">allocateAll</span></span><span class="pun">()</span></code> if present, <code class="lang-d"><span class="kwd">null</span></code> otherwise.
+							<td>Returns <code class="lang-d"><span class="pln">impl<wbr/></span><span class="pun">.</span><span class="pln">allocateAll</span><span class="pun">()</span></code> if present, <code class="lang-d"><span class="kwd">null</span></code> otherwise.
 </td>
 						</tr>
 						<tr>
@@ -3049,8 +3069,9 @@ that is directly usable by non-templated code.
 								<a href="../../../std/experimental/allocator/c_shared_allocator_impl.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
-							<td>If <code class="lang-d"><span class="pln"><a href="../../../std/experimental/allocator/c_shared_allocator_impl.impl.html"><span class="pln">impl</span></a><wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">deallocate</span></span></code> is not defined, returns <code class="lang-d"><span class="kwd">false</span></code>. Otherwise it forwards
+							<td>If <code class="lang-d"><span class="pln">impl<wbr/></span><span class="pun">.</span><span class="pln">deallocate</span></code> is not defined, returns <code class="lang-d"><span class="kwd">false</span></code>. Otherwise it forwards
     the call.
 </td>
 						</tr>
@@ -3059,8 +3080,9 @@ that is directly usable by non-templated code.
 								<a href="../../../std/experimental/allocator/c_shared_allocator_impl.deallocate_all.html" class="public">
 									<code>deallocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
-							<td>Calls <code class="lang-d"><span class="pln"><a href="../../../std/experimental/allocator/c_shared_allocator_impl.impl.html"><span class="pln">impl</span></a><wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">deallocateAll</span></span><span class="pun">()</span></code> and returns the result if defined,
+							<td>Calls <code class="lang-d"><span class="pln">impl<wbr/></span><span class="pun">.</span><span class="pln">deallocateAll</span><span class="pun">()</span></code> and returns the result if defined,
     otherwise returns <code class="lang-d"><span class="kwd">false</span></code>.
 </td>
 						</tr>
@@ -3069,8 +3091,9 @@ that is directly usable by non-templated code.
 								<a href="../../../std/experimental/allocator/c_shared_allocator_impl.empty.html" class="public">
 									<code>empty</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
-							<td>Forwards to <code class="lang-d"><span class="pln"><a href="../../../std/experimental/allocator/c_shared_allocator_impl.impl.html"><span class="pln">impl</span></a><wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">empty</span></span><span class="pun">()</span></code> if defined, otherwise returns <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">unknown</span></code>.
+							<td>Forwards to <code class="lang-d"><span class="pln">impl<wbr/></span><span class="pun">.</span><span class="pln">empty</span><span class="pun">()</span></code> if defined, otherwise returns <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">unknown</span></code>.
 </td>
 						</tr>
 						<tr>
@@ -3078,6 +3101,7 @@ that is directly usable by non-templated code.
 								<a href="../../../std/experimental/allocator/c_shared_allocator_impl.expand.html" class="public">
 									<code>expand</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, s)</span>
 							</td>
 							<td>Returns <code class="lang-d"><span class="pln">impl<wbr/></span><span class="pun">.</span><span class="pln">expand</span><span class="pun">(<a href="../../../std/experimental/allocator/c_shared_allocator_impl.expand.html#b"></span><span class="pln">b</span></a><span class="pun">, <a href="../../../std/experimental/allocator/c_shared_allocator_impl.expand.html#s"></span><span class="pln">s</span></a><span class="pun">)</span></code> if defined, <code class="lang-d"><span class="kwd">false</span></code> otherwise.
 </td>
@@ -3087,8 +3111,9 @@ that is directly usable by non-templated code.
 								<a href="../../../std/experimental/allocator/c_shared_allocator_impl.good_alloc_size.html" class="public">
 									<code>goodAllocSize</code>
 								</a>
+								<span class="tableEntryAnnotation">(s)</span>
 							</td>
-							<td>Returns <code class="lang-d"><span class="pln"><a href="../../../std/experimental/allocator/c_shared_allocator_impl.impl.html"><span class="pln">impl</span></a><wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">goodAllocSize</span></span><span class="pun">(<a href="../../../std/experimental/allocator/c_shared_allocator_impl.good_alloc_size.html#s"></span><span class="pln"><a href="../../../std/experimental/allocator/c_shared_allocator_impl.good_alloc_size.html#s"><span class="pln">s</span></a></span></a><span class="pun">)</span></code>.
+							<td>Returns <code class="lang-d"><span class="pln">impl<wbr/></span><span class="pun">.</span><span class="pln">goodAllocSize</span><span class="pun">(<a href="../../../std/experimental/allocator/c_shared_allocator_impl.good_alloc_size.html#s"></span><span class="pln">s</span></a><span class="pun">)</span></code>.
 </td>
 						</tr>
 						<tr>
@@ -3096,6 +3121,7 @@ that is directly usable by non-templated code.
 								<a href="../../../std/experimental/allocator/c_shared_allocator_impl.impl.html" class="public">
 									<code>impl</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>The implementation is available as a public member.
 </td>
@@ -3105,8 +3131,9 @@ that is directly usable by non-templated code.
 								<a href="../../../std/experimental/allocator/c_shared_allocator_impl.owns.html" class="public">
 									<code>owns</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
-							<td>If <code class="lang-d"><span class="typ">Allocator</span></code> implements <code class="lang-d"><span class="pln"><span class="pln">owns</span></span></code>, forwards to it. Otherwise, returns
+							<td>If <code class="lang-d"><span class="typ">Allocator</span></code> implements <code class="lang-d"><span class="pln">owns</span></code>, forwards to it. Otherwise, returns
     <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">unknown</span></code>.
 </td>
 						</tr>
@@ -3115,6 +3142,7 @@ that is directly usable by non-templated code.
 								<a href="../../../std/experimental/allocator/c_shared_allocator_impl.reallocate.html" class="public">
 									<code>reallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, s)</span>
 							</td>
 							<td>Returns <code class="lang-d"><span class="pln">impl<wbr/></span><span class="pun">.</span><span class="pln">reallocate</span><span class="pun">(<a href="../../../std/experimental/allocator/c_shared_allocator_impl.reallocate.html#b"></span><span class="pln">b</span></a><span class="pun">, <a href="../../../std/experimental/allocator/c_shared_allocator_impl.reallocate.html#s"></span><span class="pln">s</span></a><span class="pun">)</span></code>.
 </td>
@@ -3124,6 +3152,7 @@ that is directly usable by non-templated code.
 								<a href="../../../object/object.factory.html" class="public inherited">
 									<code>factory</code>
 								</a>
+								<span class="tableEntryAnnotation">(classname)</span>
 							</td>
 							<td>Create instance of class specified by the fully qualified name
  classname.
@@ -3136,6 +3165,7 @@ that is directly usable by non-templated code.
 								<a href="../../../object/object.op_cmp.html" class="public inherited">
 									<code>opCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Compare with another Object obj.
 </td>
@@ -3145,6 +3175,7 @@ that is directly usable by non-templated code.
 								<a href="../../../object/object.op_equals.html" class="public inherited">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Test whether <code class="lang-d"><span class="kwd">this</span></code> is equal to <code class="lang-d"><a href="../../../object/object.op_equals.html#o"><span class="pln">o</span></a></code>.
  The default implementation only compares by identity (using the <code class="lang-d"><span class="kwd">is</span></code> operator).
@@ -3156,6 +3187,7 @@ that is directly usable by non-templated code.
 								<a href="../../../object/object.to_hash.html" class="public inherited">
 									<code>toHash</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Compute hash function for Object.
 </td>
@@ -3165,6 +3197,7 @@ that is directly usable by non-templated code.
 								<a href="../../../object/object.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Convert Object to a human readable string.
 </td>

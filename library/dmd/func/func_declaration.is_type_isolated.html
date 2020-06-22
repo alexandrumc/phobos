@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/dmd/blob/master/src/dmd/func.d#L1464">
+							<a href="https://github.com/dlang/dmd/blob/master/src/dmd/func.d#L1497">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/dmd/edit/master/src/dmd/func.d#L1464">
+							<a href="https://github.com/dlang/dmd/edit/master/src/dmd/func.d#L1497">
 								Improve this page
 							</a>
 							<div>
@@ -2938,7 +2953,7 @@ $('#symbolSearchPane').show();</script>
 						</div>
 					</div>
 				</div><h1>Function <code><a href="../../dmd/func/func_declaration.html">dmd.func.FuncDeclaration</a>.isTypeIsolated</code></h1><p>See if pointers from function parameters, mutable globals, or uplevel functions
- could leak into type <code class="lang-d"><a href="../../dmd/func/func_declaration.is_type_isolated.html#t"><span class="pln"><a href="../../dmd/func/func_declaration.is_type_isolated.html#t"><span class="pln">t</span></a></span></a></code>.
+ could leak into type <code class="lang-d"><a href="../../dmd/func/func_declaration.is_type_isolated.html#t"><span class="pln">t</span></a></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2947,6 +2962,16 @@ $('#symbolSearchPane').show();</script>
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<a href="../../dmd/mtype/type.html"><span class="typ">Type</span></a> <span class="pln">t</span>
+				<br/>
+				<span class="pun">)</span><span class="pun">;</span>
+				<br/>
+				<br/>
+				<span class="kwd">final </span><span class="typ">bool</span> <span class="pln">isTypeIsolated</span>
+				<span class="pun">(</span>
+				<br/>
+				&nbsp;&nbsp;<a href="../../dmd/mtype/type.html"><span class="typ">Type</span></a> <span class="pln">t</span><span class="pun">,</span>
+				<br/>
+				&nbsp;&nbsp;<span class="kwd">ref </span><span class="pln">dmd<wbr/></span><span class="pun">.</span><span class="pln">root<wbr/></span><span class="pun">.</span><span class="pln">stringtable<wbr/></span><span class="pun">.</span><span class="typ">StringTable</span>!(dmd.mtype.Type) <span class="pln">parentTypes</span>
 				<br/>
 				<span class="pun">)</span><span class="pun">;</span>
 						</div>

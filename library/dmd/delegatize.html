@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2958,12 +2973,12 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="ensureStaticLinkTo" class="public" href="../dmd/delegatize/ensure_static_link_to.html">ensureStaticLinkTo</a><span class="decoration">(s, p)</span>
+									<a id="ensureStaticLinkTo" class="public" href="../dmd/delegatize/ensure_static_link_to.html">ensureStaticLinkTo</a><span class="tableEntryAnnotation">(s, p)</span>
 								</code>
 							</td>
 							<td>See if context <code class="lang-d"><a href="../dmd/delegatize/ensure_static_link_to.html#s"><span class="pln">s</span></a></code> is nested within context <code class="lang-d"><a href="../dmd/delegatize/ensure_static_link_to.html#p"><span class="pln">p</span></a></code>, meaning
@@ -2971,24 +2986,33 @@ $('#symbolSearchPane').show();</script>
  If any of the intervening contexts are function literals,
  make sure they are delegates.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="lambdaCheckForNestedRef" class="public" href="../dmd/delegatize/lambda_check_for_nested_ref.html">lambdaCheckForNestedRef</a><span class="decoration">(e, sc)</span>
+									<a id="lambdaCheckForNestedRef" class="public" href="../dmd/delegatize/lambda_check_for_nested_ref.html">lambdaCheckForNestedRef</a><span class="tableEntryAnnotation">(e, sc)</span>
 								</code>
 							</td>
 							<td>Look for references to variables in a scope enclosing the new function literal.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toDelegate" class="public" href="../dmd/delegatize/to_delegate.html">toDelegate</a><span class="decoration">(e, t, sc)</span>
+									<a id="toDelegate" class="public" href="../dmd/delegatize/to_delegate.html">toDelegate</a><span class="tableEntryAnnotation">(e, t, sc)</span>
 								</code>
 							</td>
 							<td>Convert expression into a delegate.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

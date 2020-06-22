@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2995,22 +3010,25 @@ functions are helpful when constructing predicates for the algorithms in
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curry" class="public" href="../std/functional/curry.html">curry</a><span class="decoration">()</span>
+									<a id="curry" class="public" href="../std/functional/curry.html">curry</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Takes a function of (potentially) many arguments, and returns a function taking
 one argument and returns a callable taking the rest.  f(x, y) == curry(f)(x)(y)
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="memoize" class="public" href="../std/functional/memoize.html">memoize</a><span class="decoration">(args)</span>
+									<a id="memoize" class="public" href="../std/functional/memoize.html">memoize</a><span class="tableEntryAnnotation">(args)</span>
 								</code>
 							</td>
 							<td><a href="https://en.wikipedia.org/wiki/Memoization">Memoizes</a> a function so as
@@ -3019,16 +3037,22 @@ one argument and returns a callable taking the rest.  f(x, y) == curry(f)(x)(y)
  function is repeatedly called with the same arguments and is more
  expensive than a hash table lookup. For more information on memoization, refer to <a href="http://docs.google.com/viewer?url=http%3A%2F%2Fhop.perl.plover.com%2Fbook%2Fpdf%2F03CachingAndMemoization.pdf">this book chapter</a>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toDelegate" class="public" href="../std/functional/to_delegate.html">toDelegate</a><span class="decoration">(fp)</span>
+									<a id="toDelegate" class="public" href="../std/functional/to_delegate.html">toDelegate</a><span class="tableEntryAnnotation">(fp)</span>
 								</code>
 							</td>
 							<td>Convert a callable to a delegate with the same parameter list and
  return type, avoiding heap allocations and use of auxiliary storage.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3037,7 +3061,7 @@ one argument and returns a callable taking the rest.  f(x, y) == curry(f)(x)(y)
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3047,6 +3071,8 @@ one argument and returns a callable taking the rest.  f(x, y) == curry(f)(x)(y)
 							</td>
 							<td>Takes multiple functions and adjoins them together.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3058,6 +3084,8 @@ one argument and returns a callable taking the rest.  f(x, y) == curry(f)(x)(y)
 <code class="lang-d"><span class="typ">string</span></code> must either use symbol names <code class="lang-d"><span class="pln">a</span></code> and <code class="lang-d"><span class="pln">b</span></code> as the parameters or
 provide the symbols via the <code class="lang-d"><span class="pln">parm1Name</span></code> and <code class="lang-d"><span class="pln">parm2Name</span></code> arguments.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3067,6 +3095,8 @@ provide the symbols via the <code class="lang-d"><span class="pln">parm1Name</sp
 							</td>
 							<td>Negates predicate <code class="lang-d"><span class="pln">pred</span></code>.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3077,6 +3107,8 @@ provide the symbols via the <code class="lang-d"><span class="pln">parm1Name</sp
 							<td><a href="http://en.wikipedia.org/wiki/Partial_application">Partially
 applies</a> <span class="d_param">fun</span> by tying its first argument to <span class="d_param">arg</span>.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3087,6 +3119,8 @@ applies</a> <span class="d_param">fun</span> by tying its first argument to <spa
 							<td>N-ary predicate that reverses the order of arguments, e.g., given
 <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">a</span><span class="pun">, </span><span class="pln">b</span><span class="pun">, </span><span class="pln">c</span><span class="pun">)</span></code>, returns <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">c</span><span class="pun">, </span><span class="pln">b</span><span class="pun">, </span><span class="pln">a</span><span class="pun">)</span></code>.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3098,6 +3132,8 @@ applies</a> <span class="d_param">fun</span> by tying its first argument to <spa
 function. The <code class="lang-d"><span class="typ">string</span></code> must either use symbol name <code class="lang-d"><span class="pln">a</span></code> as
 the parameter or provide the symbol via the <code class="lang-d"><span class="pln">parmName</span></code> argument.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 					</table>
 				</section>

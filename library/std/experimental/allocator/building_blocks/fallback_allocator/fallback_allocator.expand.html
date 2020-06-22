@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,11 +2952,11 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.html">std.experimental.allocator.building_blocks.fallback_allocator.FallbackAllocator</a>.expand</code></h1><p><code class="lang-d"><span class="pln"><span class="pln">expand</span></span></code> is defined if and only if at least one of the allocators
-    defines <code class="lang-d"><span class="pln"><span class="pln">expand</span></span></code>. It works as follows. If <code class="lang-d"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.primary.html"><span class="pln">primary</span></a><wbr/></span><span class="pun">.</span><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.owns.html"><span class="pln">owns</span></a></span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.expand.html#b"></span><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.expand.html#b"><span class="pln">b</span></a></span></a><span class="pun">)</span></code>, then the
-    request is forwarded to <code class="lang-d"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.primary.html"><span class="pln">primary</span></a><wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">expand</span></span></code> if it is defined, or fails
-    (returning <code class="lang-d"><span class="kwd">false</span></code>) otherwise. If <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.primary.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.primary.html"><span class="pln">primary</span></a></span></a></code> does not own <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.expand.html#b"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.expand.html#b"><span class="pln">b</span></a></span></a></code>, then
-    the request is forwarded to <code class="lang-d"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.fallback.html"><span class="pln">fallback</span></a><wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">expand</span></span></code> if it is defined, or fails
+				</div><h1>Function <code><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.html">std.experimental.allocator.building_blocks.fallback_allocator.FallbackAllocator</a>.expand</code></h1><p><code class="lang-d"><span class="pln">expand</span></code> is defined if and only if at least one of the allocators
+    defines <code class="lang-d"><span class="pln">expand</span></code>. It works as follows. If <code class="lang-d"><span class="pln">primary<wbr/></span><span class="pun">.</span><span class="pln">owns</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.expand.html#b"></span><span class="pln">b</span></a><span class="pun">)</span></code>, then the
+    request is forwarded to <code class="lang-d"><span class="pln">primary<wbr/></span><span class="pun">.</span><span class="pln">expand</span></code> if it is defined, or fails
+    (returning <code class="lang-d"><span class="kwd">false</span></code>) otherwise. If <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.primary.html"><span class="pln">primary</span></a></code> does not own <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.expand.html#b"><span class="pln">b</span></a></code>, then
+    the request is forwarded to <code class="lang-d"><span class="pln">fallback<wbr/></span><span class="pun">.</span><span class="pln">expand</span></code> if it is defined, or fails
     (returning <code class="lang-d"><span class="kwd">false</span></code>) otherwise.
 </p>
 				<div class="prototype">

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2951,119 +2966,155 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdabs" class="public" href="../../dmd/backend/cod2/cdabs.html">cdabs</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdabs" class="public" href="../../dmd/backend/cod2/cdabs.html">cdabs</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Absolute value operator
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdbswap" class="public" href="../../dmd/backend/cod2/cdbswap.html">cdbswap</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdbswap" class="public" href="../../dmd/backend/cod2/cdbswap.html">cdbswap</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Bswap operator
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdcom" class="public" href="../../dmd/backend/cod2/cdcom.html">cdcom</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdcom" class="public" href="../../dmd/backend/cod2/cdcom.html">cdcom</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Complement operator
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdcomma" class="public" href="../../dmd/backend/cod2/cdcomma.html">cdcomma</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdcomma" class="public" href="../../dmd/backend/cod2/cdcomma.html">cdcomma</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Comma operator OPcomma
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdcond" class="public" href="../../dmd/backend/cod2/cdcond.html">cdcond</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdcond" class="public" href="../../dmd/backend/cod2/cdcond.html">cdcond</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>?: operator
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdctor" class="public" href="../../dmd/backend/cod2/cdctor.html">cdctor</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdctor" class="public" href="../../dmd/backend/cod2/cdctor.html">cdctor</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>C++ constructor.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cddctor" class="public" href="../../dmd/backend/cod2/cddctor.html">cddctor</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cddctor" class="public" href="../../dmd/backend/cod2/cddctor.html">cddctor</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>D constructor.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdddtor" class="public" href="../../dmd/backend/cod2/cdddtor.html">cdddtor</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdddtor" class="public" href="../../dmd/backend/cod2/cdddtor.html">cdddtor</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>D destructor.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdhalt" class="public" href="../../dmd/backend/cod2/cdhalt.html">cdhalt</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdhalt" class="public" href="../../dmd/backend/cod2/cdhalt.html">cdhalt</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdind" class="public" href="../../dmd/backend/cod2/cdind.html">cdind</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdind" class="public" href="../../dmd/backend/cod2/cdind.html">cdind</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Perform a 'star' reference (indirection).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdloglog" class="public" href="../../dmd/backend/cod2/cdloglog.html">cdloglog</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdloglog" class="public" href="../../dmd/backend/cod2/cdloglog.html">cdloglog</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Do &amp;&amp; and || operators.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdmemcmp" class="public" href="../../dmd/backend/cod2/cdmemcmp.html">cdmemcmp</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdmemcmp" class="public" href="../../dmd/backend/cod2/cdmemcmp.html">cdmemcmp</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for memcmp(s1,s2,n) intrinsic.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdmemcpy" class="public" href="../../dmd/backend/cod2/cdmemcpy.html">cdmemcpy</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdmemcpy" class="public" href="../../dmd/backend/cod2/cdmemcpy.html">cdmemcpy</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for memcpy(s1,s2,n) intrinsic.
@@ -3073,156 +3124,207 @@ $('#symbolSearchPane').show();</script>
        /   \
       s2    n
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdmemset" class="public" href="../../dmd/backend/cod2/cdmemset.html">cdmemset</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdmemset" class="public" href="../../dmd/backend/cod2/cdmemset.html">cdmemset</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for memset(s,val,n) intrinsic.
       (s OPmemset (n OPparam val))
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdmul" class="public" href="../../dmd/backend/cod2/cdmul.html">cdmul</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdmul" class="public" href="../../dmd/backend/cod2/cdmul.html">cdmul</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Handle multiply, divide, modulo and remquo.
  Note that modulo isn't defined for doubles.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdneg" class="public" href="../../dmd/backend/cod2/cdneg.html">cdneg</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdneg" class="public" href="../../dmd/backend/cod2/cdneg.html">cdneg</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>OPneg, OPsqrt, OPsin, OPcos, OPrint
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdnot" class="public" href="../../dmd/backend/cod2/cdnot.html">cdnot</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdnot" class="public" href="../../dmd/backend/cod2/cdnot.html">cdnot</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Handle OPnot and OPbool.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdorth" class="public" href="../../dmd/backend/cod2/cdorth.html">cdorth</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdorth" class="public" href="../../dmd/backend/cod2/cdorth.html">cdorth</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Handle operators which are more or less orthogonal
  ( + - &amp; | ^ )
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdpost" class="public" href="../../dmd/backend/cod2/cdpost.html">cdpost</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdpost" class="public" href="../../dmd/backend/cod2/cdpost.html">cdpost</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Post increment and post decrement.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdrelconst" class="public" href="../../dmd/backend/cod2/cdrelconst.html">cdrelconst</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdrelconst" class="public" href="../../dmd/backend/cod2/cdrelconst.html">cdrelconst</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Get the address of.
  Is also called by cdstreq() to set up pointer to a structure.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdshift" class="public" href="../../dmd/backend/cod2/cdshift.html">cdshift</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdshift" class="public" href="../../dmd/backend/cod2/cdshift.html">cdshift</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for shift left or shift right (OPshl,OPshr,OPashr,OProl,OPror).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdstrcmp" class="public" href="../../dmd/backend/cod2/cdstrcmp.html">cdstrcmp</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdstrcmp" class="public" href="../../dmd/backend/cod2/cdstrcmp.html">cdstrcmp</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for strcmp(s1,s2) intrinsic.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdstrcpy" class="public" href="../../dmd/backend/cod2/cdstrcpy.html">cdstrcpy</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdstrcpy" class="public" href="../../dmd/backend/cod2/cdstrcpy.html">cdstrcpy</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for strcpy(s1,s2) intrinsic.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdstreq" class="public" href="../../dmd/backend/cod2/cdstreq.html">cdstreq</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdstreq" class="public" href="../../dmd/backend/cod2/cdstreq.html">cdstreq</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Do structure assignments.
  This should be fixed so that (s1 = s2) is rewritten to (&s1 = &s2).
  Mebbe call cdstreq() for double assignments???
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdstrlen" class="public" href="../../dmd/backend/cod2/cdstrlen.html">cdstrlen</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdstrlen" class="public" href="../../dmd/backend/cod2/cdstrlen.html">cdstrlen</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for intrinsic strlen().
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdvoid" class="public" href="../../dmd/backend/cod2/cdvoid.html">cdvoid</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdvoid" class="public" href="../../dmd/backend/cod2/cdvoid.html">cdvoid</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getoffset" class="public" href="../../dmd/backend/cod2/getoffset.html">getoffset</a><span class="decoration">(cdb, e, reg)</span>
+									<a id="getoffset" class="public" href="../../dmd/backend/cod2/getoffset.html">getoffset</a><span class="tableEntryAnnotation">(cdb, e, reg)</span>
 								</code>
 							</td>
 							<td>Load the offset portion of the address represented by e into
  reg.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="idxregm" class="public" href="../../dmd/backend/cod2/idxregm.html">idxregm</a><span class="decoration">(c)</span>
+									<a id="idxregm" class="public" href="../../dmd/backend/cod2/idxregm.html">idxregm</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Determine index registers used by addressing mode.
  Index is rm of modregrm field.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="movOnly" class="public" href="../../dmd/backend/cod2/mov_only.html">movOnly</a><span class="decoration">(e)</span>
+									<a id="movOnly" class="public" href="../../dmd/backend/cod2/mov_only.html">movOnly</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

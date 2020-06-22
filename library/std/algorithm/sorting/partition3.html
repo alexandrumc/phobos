@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,18 +2952,18 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../../std/algorithm/sorting.html">std.algorithm.sorting</a>.partition3</code></h1><p>Rearranges elements in <code class="lang-d"><a href="../../std/algorithm/sorting/partition3.html#r"><span class="pln"><a href="../../../std/algorithm/sorting/partition3.html#r"><span class="pln">r</span></a></span></a></code> in three adjacent ranges and returns
-them. The first and leftmost range only contains elements in <code class="lang-d"><a href="../../std/algorithm/sorting/partition3.html#r"><span class="pln"><a href="../../../std/algorithm/sorting/partition3.html#r"><span class="pln">r</span></a></span></a></code>
-less than <code class="lang-d"><a href="../../std/algorithm/sorting/partition3.html#pivot"><span class="pln"><a href="../../../std/algorithm/sorting/partition3.html#pivot"><span class="pln">pivot</span></a></span></a></code>. The second and middle range only contains
-elements in <code class="lang-d"><a href="../../std/algorithm/sorting/partition3.html#r"><span class="pln"><a href="../../../std/algorithm/sorting/partition3.html#r"><span class="pln">r</span></a></span></a></code> that are equal to <code class="lang-d"><a href="../../std/algorithm/sorting/partition3.html#pivot"><span class="pln"><a href="../../../std/algorithm/sorting/partition3.html#pivot"><span class="pln">pivot</span></a></span></a></code>. Finally, the third
-and rightmost range only contains elements in <code class="lang-d"><a href="../../std/algorithm/sorting/partition3.html#r"><span class="pln"><a href="../../../std/algorithm/sorting/partition3.html#r"><span class="pln">r</span></a></span></a></code> that are greater
-than <code class="lang-d"><a href="../../std/algorithm/sorting/partition3.html#pivot"><span class="pln"><a href="../../../std/algorithm/sorting/partition3.html#pivot"><span class="pln">pivot</span></a></span></a></code>. The less-than test is defined by the binary function
+				</div><h1>Function <code><a href="../../../std/algorithm/sorting.html">std.algorithm.sorting</a>.partition3</code></h1><p>Rearranges elements in <code class="lang-d"><a href="../../../std/algorithm/sorting/partition3.html#r"><span class="pln">r</span></a></code> in three adjacent ranges and returns
+them. The first and leftmost range only contains elements in <code class="lang-d"><a href="../../../std/algorithm/sorting/partition3.html#r"><span class="pln">r</span></a></code>
+less than <code class="lang-d"><a href="../../../std/algorithm/sorting/partition3.html#pivot"><span class="pln">pivot</span></a></code>. The second and middle range only contains
+elements in <code class="lang-d"><a href="../../../std/algorithm/sorting/partition3.html#r"><span class="pln">r</span></a></code> that are equal to <code class="lang-d"><a href="../../../std/algorithm/sorting/partition3.html#pivot"><span class="pln">pivot</span></a></code>. Finally, the third
+and rightmost range only contains elements in <code class="lang-d"><a href="../../../std/algorithm/sorting/partition3.html#r"><span class="pln">r</span></a></code> that are greater
+than <code class="lang-d"><a href="../../../std/algorithm/sorting/partition3.html#pivot"><span class="pln">pivot</span></a></code>. The less-than test is defined by the binary function
 <code class="lang-d"><span class="pln">less</span></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">partition3</span>(alias less, <a href="../../../std/algorithm/mutation/swap_strategy.html"><span class="typ">SwapStrategy</span></a> ss<span class="pln"> </span><span class="pun">= </span><span class="typ">SwapStrategy<wbr/></span><span class="pun">.</span><span class="pln">unstable</span>, Range, E)
+				<span class="kwd">auto</span> <span class="pln">partition3</span>(alias less, <a href="../../../std/algorithm/mutation/swap_strategy.html"><span class="typ">SwapStrategy</span></a> ss<span class="pln"> </span><span class="pun">= </span><span class="typ">SwapStrategy<wbr/></span><span class="pun">.</span><span class="pln">unstable</span>, Range, E)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">Range</span> <span class="pln">r</span><span class="pun">,</span>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2953,9 +2968,9 @@ $('#symbolSearchPane').show();</script>
 						</li>
 					</ul>
 				</nav><h2 id="0">Struct Tuple</h2><p>Tuple of values, for example <code class="lang-d"><span class="typ">Tuple</span><span class="pun">!(</span><span class="typ">int</span><span class="pun">, </span><span class="typ">string</span><span class="pun">)</span></code> is a record that
-stores an <code class="lang-d"><span class="typ">int</span></code> and a <code class="lang-d"><span class="typ">string</span></code>. <code class="lang-d"><span class="typ"><span class="typ">Tuple</span></span></code> can be used to bundle
+stores an <code class="lang-d"><span class="typ">int</span></code> and a <code class="lang-d"><span class="typ">string</span></code>. <code class="lang-d"><span class="typ">Tuple</span></code> can be used to bundle
 values together, notably when returning multiple values from a
-function. If <code class="lang-d"><span class="pln">obj</span></code> is a <code class="lang-d"><span class="typ"><span class="typ">Tuple</span></span></code>, the individual members are
+function. If <code class="lang-d"><span class="pln">obj</span></code> is a <code class="lang-d"><span class="typ">Tuple</span></code>, the individual members are
 accessible with the syntax <code class="lang-d"><span class="pln">obj</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span></code> for the first field, <code class="lang-d"><span class="pln">obj</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span></code>
 for the second, and so on.
 </p>
@@ -2983,6 +2998,7 @@ for the second, and so on.
 								<a href="../../std/typecons/tuple.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(values)</span>
 							</td>
 							<td>Constructor taking one value for each field.
 </td>
@@ -2992,6 +3008,7 @@ for the second, and so on.
 								<a href="../../std/typecons/tuple.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(values)</span>
 							</td>
 							<td>Constructor taking a compatible array.
 </td>
@@ -3001,8 +3018,9 @@ for the second, and so on.
 								<a href="../../std/typecons/tuple.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(another)</span>
 							</td>
-							<td>Constructor taking a compatible <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></span></a></code>. Two <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></span></a></code>s are compatible
+							<td>Constructor taking a compatible <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></code>. Two <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></code>s are compatible
  <b>iff</b> they are both of the same length, and, for each type <code class="lang-d"><span class="pln">T</span></code> on the
  left-hand side, the corresponding type <code class="lang-d"><span class="pln">U</span></code> on the right-hand side can
  implicitly convert to <code class="lang-d"><span class="pln">T</span></code>.
@@ -3020,9 +3038,9 @@ for the second, and so on.
 							<td>
 								<a href="../../std/typecons/tuple.expand.html" class="public"><code>expand</code></a>
 							</td>
-							<td class="typecol"><code class="prettyprint lang-d"><a href="../../std/typecons/tuple.types.html"><span class="typ">Tuple<wbr/></span><span class="pun">.<wbr/></span><span class="typ">Types</span></a></code></td><td>Use <code class="lang-d"><span class="pln">t<wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">expand</span></span></code> for a <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></span></a></code> <code class="lang-d"><span class="pln">t</span></code> to expand it into its
- components. The result of <code class="lang-d"><span class="pln"><span class="pln">expand</span></span></code> acts as if the <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></span></a></code>'s components
- were listed as a list of values. (Ordinarily, a <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></span></a></code> acts as a
+							<td class="typecol"><code class="prettyprint lang-d"><a href="../../std/typecons/tuple.types.html"><span class="typ">Tuple<wbr/></span><span class="pun">.<wbr/></span><span class="typ">Types</span></a></code></td><td>Use <code class="lang-d"><span class="pln">t<wbr/></span><span class="pun">.</span><span class="pln">expand</span></code> for a <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></code> <code class="lang-d"><span class="pln">t</span></code> to expand it into its
+ components. The result of <code class="lang-d"><span class="pln">expand</span></code> acts as if the <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></code>'s components
+ were listed as a list of values. (Ordinarily, a <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></code> acts as a
  single value.)
 </td>
 						</tr>
@@ -3038,7 +3056,7 @@ for the second, and so on.
 							<td>
 								<a href="../../std/typecons/tuple.slice.html" class="public property"><code>slice</code></a><span class="tableEntryAnnotation">[get]</span>
 							</td>
-							<td class="typecol"><code class="prettyprint lang-d"><span class="kwd">inout</span><span class="pun">(</span><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a>!(sliceSpecs!(from,to))<span class="pun">)</span></code></td><td>Takes a slice by-reference of this <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></span></a></code>.
+							<td class="typecol"><code class="prettyprint lang-d"><span class="kwd">inout</span><span class="pun">(</span><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a>!(sliceSpecs!(from,to))<span class="pun">)</span></code></td><td>Takes a slice by-reference of this <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></code>.
 </td>
 						</tr>
 					</table>
@@ -3054,8 +3072,9 @@ for the second, and so on.
 								<a href="../../std/typecons/tuple.op_assign.html" class="public">
 									<code>opAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
-							<td>Assignment from another <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></span></a></code>.
+							<td>Assignment from another <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></code>.
 </td>
 						</tr>
 						<tr>
@@ -3063,10 +3082,11 @@ for the second, and so on.
 								<a href="../../std/typecons/tuple.op_binary.html" class="public">
 									<code>opBinary</code>
 								</a>
+								<span class="tableEntryAnnotation">(t)</span>
 							</td>
 							<td>Concatenate Tuples.
-         Tuple concatenation is only allowed if all named fields are distinct (no named field of this tuple occurs in <code class="lang-d"><a href="../../std/typecons/tuple.op_binary.html#t"><span class="pln"><a href="../../std/typecons/tuple.op_binary_right.html#t"><span class="pln"><a href="../../std/typecons/tuple.op_binary.html#t"><span class="pln">t</span></a></span></a></span></a></code>
-         and no named field of <code class="lang-d"><a href="../../std/typecons/tuple.op_binary.html#t"><span class="pln"><a href="../../std/typecons/tuple.op_binary_right.html#t"><span class="pln"><a href="../../std/typecons/tuple.op_binary.html#t"><span class="pln">t</span></a></span></a></span></a></code> occurs in this tuple).
+         Tuple concatenation is only allowed if all named fields are distinct (no named field of this tuple occurs in <code class="lang-d"><a href="../../std/typecons/tuple.op_binary.html#t"><span class="pln">t</span></a></code>
+         and no named field of <code class="lang-d"><a href="../../std/typecons/tuple.op_binary.html#t"><span class="pln">t</span></a></code> occurs in this tuple).
 </td>
 						</tr>
 						<tr>
@@ -3074,10 +3094,11 @@ for the second, and so on.
 								<a href="../../std/typecons/tuple.op_binary_right.html" class="public">
 									<code>opBinaryRight</code>
 								</a>
+								<span class="tableEntryAnnotation">(t)</span>
 							</td>
 							<td>Concatenate Tuples.
-         Tuple concatenation is only allowed if all named fields are distinct (no named field of this tuple occurs in <code class="lang-d"><a href="../../std/typecons/tuple.op_binary.html#t"><span class="pln"><a href="../../std/typecons/tuple.op_binary_right.html#t"><span class="pln"><a href="../../std/typecons/tuple.op_binary.html#t"><span class="pln"><a href="../../std/typecons/tuple.op_binary_right.html#t"><span class="pln">t</span></a></span></a></span></a></span></a></code>
-         and no named field of <code class="lang-d"><a href="../../std/typecons/tuple.op_binary.html#t"><span class="pln"><a href="../../std/typecons/tuple.op_binary_right.html#t"><span class="pln"><a href="../../std/typecons/tuple.op_binary.html#t"><span class="pln"><a href="../../std/typecons/tuple.op_binary_right.html#t"><span class="pln">t</span></a></span></a></span></a></span></a></code> occurs in this tuple).
+         Tuple concatenation is only allowed if all named fields are distinct (no named field of this tuple occurs in <code class="lang-d"><a href="../../std/typecons/tuple.op_binary_right.html#t"><span class="pln">t</span></a></code>
+         and no named field of <code class="lang-d"><a href="../../std/typecons/tuple.op_binary_right.html#t"><span class="pln">t</span></a></code> occurs in this tuple).
 </td>
 						</tr>
 						<tr>
@@ -3085,6 +3106,7 @@ for the second, and so on.
 								<a href="../../std/typecons/tuple.op_cmp.html" class="public">
 									<code>opCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td>Comparison for ordering.
 </td>
@@ -3094,8 +3116,9 @@ for the second, and so on.
 								<a href="../../std/typecons/tuple.op_equals.html" class="public">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
-							<td>Comparison for equality. Two <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></span></a></code>s are considered equal
+							<td>Comparison for equality. Two <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></code>s are considered equal
  <b>iff</b> they fulfill the following criteria:
 </td>
 						</tr>
@@ -3104,6 +3127,7 @@ for the second, and so on.
 								<a href="../../std/typecons/tuple.rename.html" class="public">
 									<code>rename</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Renames the elements of a <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></code>.
 </td>
@@ -3113,6 +3137,7 @@ for the second, and so on.
 								<a href="../../std/typecons/tuple.rename.html" class="public">
 									<code>rename</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Overload of <code class="lang-d"><a href="../../std/typecons/tuple.rename.html"><span class="pln">rename</span></a></code> that takes an associative array
  <code class="lang-d"><span class="pln">translate</span></code> as a template parameter, where the keys are
@@ -3129,8 +3154,9 @@ for the second, and so on.
 								<a href="../../std/typecons/tuple.to_hash.html" class="public">
 									<code>toHash</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
-							<td>Creates a hash of this <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></span></a></code>.
+							<td>Creates a hash of this <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></code>.
 </td>
 						</tr>
 						<tr>
@@ -3138,6 +3164,7 @@ for the second, and so on.
 								<a href="../../std/typecons/tuple.to_string.html" class="public">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Converts to string.
 </td>
@@ -3147,8 +3174,9 @@ for the second, and so on.
 								<a href="../../std/typecons/tuple.to_string.html" class="public">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">(sink)</span>
 							</td>
-							<td>Formats <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></span></a></code> with either <code class="lang-d"><span class="pun">%</span><span class="pln">s</span></code>, <code class="lang-d"><span class="pun">%(</span><span class="pln">inner</span><span class="pun">%)</span></code> or <code class="lang-d"><span class="pun">%(</span><span class="pln">inner</span><span class="pun">%|</span><span class="pln">sep</span><span class="pun">%)</span></code>.
+							<td>Formats <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></code> with either <code class="lang-d"><span class="pun">%</span><span class="pln">s</span></code>, <code class="lang-d"><span class="pun">%(</span><span class="pln">inner</span><span class="pun">%)</span></code> or <code class="lang-d"><span class="pun">%(</span><span class="pln">inner</span><span class="pun">%|</span><span class="pln">sep</span><span class="pun">%)</span></code>.
 </td>
 						</tr>
 					</table>
@@ -3165,7 +3193,7 @@ for the second, and so on.
 									<code>fieldNames</code>
 								</a>
 							</td>
-							<td>The names of the <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></span></a></code>'s components. Unnamed fields have empty names.
+							<td>The names of the <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></code>'s components. Unnamed fields have empty names.
 </td>
 						</tr>
 						<tr>
@@ -3174,7 +3202,7 @@ for the second, and so on.
 									<code>Types</code>
 								</a>
 							</td>
-							<td>The types of the <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></span></a></code>'s components.
+							<td>The types of the <code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></code>'s components.
 </td>
 						</tr>
 					</table>

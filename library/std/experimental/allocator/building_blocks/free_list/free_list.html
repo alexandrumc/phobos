@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2938,8 +2953,8 @@ $('#symbolSearchPane').show();</script>
 						</div>
 					</div>
 				</div><h1>Struct <code><a href="../../../../../std/experimental/allocator/building_blocks/free_list.html">std.experimental.allocator.building_blocks.free_list</a>.FreeList</code></h1><p><a href="http://en.wikipedia.org/wiki/Free_list">Free list allocator</a>, stackable on top of
-another allocator. Allocation requests between <code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/free_list/free_list.min.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.min.html"><span class="pln">min</span></a></span></a></code> and <code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/free_list/free_list.max.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.max.html"><span class="pln">max</span></a></span></a></code> bytes are
-rounded up to <code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/free_list/free_list.max.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.max.html"><span class="pln">max</span></a></span></a></code> and served from a singly-linked list of buffers
+another allocator. Allocation requests between <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.min.html"><span class="pln">min</span></a></code> and <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.max.html"><span class="pln">max</span></a></code> bytes are
+rounded up to <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.max.html"><span class="pln">max</span></a></code> and served from a singly-linked list of buffers
 deallocated in the past. All other allocations are directed to <code class="lang-d"><span class="typ">ParentAllocator</span></code>. Due to the simplicity of free list management, allocations
 from the free list are fast. If <code class="lang-d"><span class="pln">adaptive</span></code> is set to <code class="lang-d"><span class="typ">Yes<wbr/></span><span class="pun">.</span><span class="pln">adaptive</span></code>,
 the free list gradually reduces its size if allocations tend to use the parent
@@ -3041,6 +3056,7 @@ forward to it: <code class="lang-d"><span class="pln">expand</span></code>, <cod
 								<a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
 							<td>Allocates memory either off of the free list or from the parent allocator.
     If <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.allocate.html#n"><span class="pln">n</span></a></code> is within <code class="lang-d"><span class="pun">[<a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.min.html"></span><span class="pln">min</span></a><span class="pun">, <a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.max.html"></span><span class="pln">max</span></a><span class="pun">]</span></code> or if the free list is unchecked
@@ -3055,6 +3071,7 @@ forward to it: <code class="lang-d"><span class="pln">expand</span></code>, <cod
 								<a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(block)</span>
 							</td>
 							<td>If <code class="lang-d"><span class="pln">block<wbr/></span><span class="pun">.</span><span class="pln">length</span></code> is within <code class="lang-d"><span class="pun">[<a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.min.html"></span><span class="pln">min</span></a><span class="pun">, <a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.max.html"></span><span class="pln">max</span></a><span class="pun">]</span></code> or if the free list is
     unchecked (<code class="lang-d"><span class="pln">minSize </span><span class="pun">== </span><span class="lit">0 </span><span class="pun">&amp;&amp; </span><span class="pln">maxSize </span><span class="pun">== </span><span class="pln">size_t<wbr/></span><span class="pun">.</span><span class="pln">max</span></code>), then inserts the
@@ -3066,6 +3083,7 @@ forward to it: <code class="lang-d"><span class="pln">expand</span></code>, <cod
 								<a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.deallocate_all.html" class="public">
 									<code>deallocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Defined only if <code class="lang-d"><span class="typ">ParentAllocator</span></code> defines <code class="lang-d"><span class="pln">deallocateAll</span></code>. If so,
     forwards to it and resets the freelist.
@@ -3076,10 +3094,11 @@ forward to it: <code class="lang-d"><span class="pln">expand</span></code>, <cod
 								<a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.good_alloc_size.html" class="public">
 									<code>goodAllocSize</code>
 								</a>
+								<span class="tableEntryAnnotation">(bytes)</span>
 							</td>
-							<td>If <code class="lang-d"><span class="pln">maxSize </span><span class="pun">== </span><span class="pln">unbounded</span></code>, returns  <code class="lang-d"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.parent.html"><span class="pln">parent</span></a><wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">goodAllocSize</span></span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.good_alloc_size.html#bytes"></span><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.good_alloc_size.html#bytes"><span class="pln">bytes</span></a></span></a><span class="pun">)</span></code>.
-    Otherwise, returns <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.max.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.max.html"><span class="pln">max</span></a></span></a></code> for sizes in the interval <code class="lang-d"><span class="pun">[<a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.min.html"></span><span class="pln">min</span></a><span class="pun">, <a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.max.html"></span><span class="pln">max</span></a><span class="pun">]</span></code>, and
-    <code class="lang-d"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.parent.html"><span class="pln">parent</span></a><wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">goodAllocSize</span></span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.good_alloc_size.html#bytes"></span><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.good_alloc_size.html#bytes"><span class="pln">bytes</span></a></span></a><span class="pun">)</span></code> otherwise.
+							<td>If <code class="lang-d"><span class="pln">maxSize </span><span class="pun">== </span><span class="pln">unbounded</span></code>, returns  <code class="lang-d"><span class="pln">parent<wbr/></span><span class="pun">.</span><span class="pln">goodAllocSize</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.good_alloc_size.html#bytes"></span><span class="pln">bytes</span></a><span class="pun">)</span></code>.
+    Otherwise, returns <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.max.html"><span class="pln">max</span></a></code> for sizes in the interval <code class="lang-d"><span class="pun">[<a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.min.html"></span><span class="pln">min</span></a><span class="pun">, <a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.max.html"></span><span class="pln">max</span></a><span class="pun">]</span></code>, and
+    <code class="lang-d"><span class="pln">parent<wbr/></span><span class="pun">.</span><span class="pln">goodAllocSize</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.good_alloc_size.html#bytes"></span><span class="pln">bytes</span></a><span class="pun">)</span></code> otherwise.
 </td>
 						</tr>
 						<tr>
@@ -3087,6 +3106,7 @@ forward to it: <code class="lang-d"><span class="pln">expand</span></code>, <cod
 								<a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.minimize.html" class="public">
 									<code>minimize</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Nonstandard function that minimizes the memory usage of the freelist by
     freeing each element in turn. Defined only if <code class="lang-d"><span class="typ">ParentAllocator</span></code> defines

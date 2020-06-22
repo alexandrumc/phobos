@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/typecons.d#L3036">
+							<a href="https://github.com/dlang/phobos/blob/master/std/typecons.d#L3045">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/typecons.d#L3036">
+							<a href="https://github.com/dlang/phobos/edit/master/std/typecons.d#L3045">
 								Improve this page
 							</a>
 							<div>
@@ -2964,12 +2979,12 @@ $('#symbolSearchPane').show();</script>
 					</ul>
 				</nav><h2 id="0">Function nullable</h2><p>Defines a value paired with a distinctive "null" state that denotes
 the absence of a value. If default constructed, a <code class="lang-d"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!</span><span class="pln">T</span></code> object starts in the null state. Assigning it renders it
-non-null. Calling <code class="lang-d"><span class="pln"><a href="../std/typecons/nullable.nullify.html"><span class="pln">nullify</span></a></span></code> can nullify it again.
+non-null. Calling <code class="lang-d"><span class="pln">nullify</span></code> can nullify it again.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">nullable</span>(T)
+				<span class="kwd">auto</span> <span class="pln">nullable</span>(T)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">T</span> <span class="pln">t</span>
@@ -3028,7 +3043,7 @@ non-null. Calling <code class="lang-d"><span class="pln"><a href="../std/typecon
 </span><span class="pln">assertThrown</span><span class="pun">!</span><span class="typ">Throwable</span><span class="pun">(</span><span class="pln">a<wbr/></span><span class="pun">.</span><span class="pln">get</span><span class="pun">);
 </span></code></pre>
 </section>
-<h2 id="1">Function nullable</h2><p>Just like <code class="lang-d"><a href="../std/typecons/nullable.html"><span class="typ"><a href="../std/typecons/nullable.html"><span class="typ"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a></span></a></span></a><span class="pun">!</span><span class="pln">T</span></code>, except that the null state is defined as a
+<h2 id="1">Function nullable</h2><p>Just like <code class="lang-d"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!</span><span class="pln">T</span></code>, except that the null state is defined as a
 particular value. For example, <code class="lang-d"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!(</span><span class="typ">uint</span><span class="pun">, </span><span class="typ">uint<wbr/></span><span class="pun">.</span><span class="pln">max</span><span class="pun">)</span></code> is an
 <code class="lang-d"><span class="typ">uint</span></code> that sets aside the value <code class="lang-d"><span class="typ">uint<wbr/></span><span class="pun">.</span><span class="pln">max</span></code> to denote a null
 state. <code class="lang-d"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!(</span><span class="pln">T</span><span class="pun">, </span><span class="pln">nullValue</span><span class="pun">)</span></code> is more storage-efficient than <code class="lang-d"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!</span><span class="pln">T</span></code> because it does not need to store an extra <code class="lang-d"><span class="typ">bool</span></code>.
@@ -3036,7 +3051,7 @@ state. <code class="lang-d"><a href="../../std/typecons/nullable.html"><span cla
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">nullable</span>(alias nullValue, T)
+				<span class="kwd">auto</span> <span class="pln">nullable</span>(alias nullValue, T)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">T</span> <span class="pln">t</span>
@@ -3113,7 +3128,7 @@ state. <code class="lang-d"><a href="../../std/typecons/nullable.html"><span cla
 </section>
 <h2 id="2">Struct Nullable</h2><p>Defines a value paired with a distinctive "null" state that denotes
 the absence of a value. If default constructed, a <code class="lang-d"><span class="typ">Nullable</span><span class="pun">!</span><span class="pln">T</span></code> object starts in the null state. Assigning it renders it
-non-null. Calling <code class="lang-d"><span class="pln"><a href="../std/typecons/nullable.nullify.html"><span class="pln"><a href="../../std/typecons/nullable.nullify.html"><span class="pln">nullify</span></a></span></a></span></code> can nullify it again.
+non-null. Calling <code class="lang-d"><a href="../../std/typecons/nullable.nullify.html"><span class="pln">nullify</span></a></code> can nullify it again.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -3123,7 +3138,7 @@ non-null. Calling <code class="lang-d"><span class="pln"><a href="../std/typecon
 						</div>
 					</code>
 				</div>
-				<section><p>Practically <code class="lang-d"><a href="../../std/typecons/nullable.html"><span class="typ"><span class="typ">Nullable</span></span></a><span class="pun">!</span><span class="pln">T</span></code> stores a <code class="lang-d"><span class="pln">T</span></code> and a <code class="lang-d"><span class="typ">bool</span></code>.
+				<section><p>Practically <code class="lang-d"><span class="typ">Nullable</span><span class="pun">!</span><span class="pln">T</span></code> stores a <code class="lang-d"><span class="pln">T</span></code> and a <code class="lang-d"><span class="typ">bool</span></code>.
 </p>
 </section>
 
@@ -3138,6 +3153,7 @@ non-null. Calling <code class="lang-d"><span class="pln"><a href="../std/typecon
 								<a href="../../std/typecons/nullable.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
 							<td>Constructor initializing <code class="lang-d"><span class="kwd">this</span></code> with <code class="lang-d"><a href="../../std/typecons/nullable.this.html#value"><span class="pln">value</span></a></code>.
 </td>
@@ -3155,8 +3171,8 @@ non-null. Calling <code class="lang-d"><span class="pln"><a href="../std/typecon
 								<a href="../../std/typecons/nullable.get.html" class="public property"><code>get</code></a><span class="tableEntryAnnotation">[get, set]</span>
 							</td>
 							<td class="typecol"><code class="prettyprint lang-d"><span class="kwd">inout</span><span class="pun">(</span><span class="pln">T</span><span class="pun">)</span></code></td><td>Gets the value if not null. If <code class="lang-d"><span class="kwd">this</span></code> is in the null state, and the optional
-parameter <code class="lang-d"><a href="../../std/typecons/nullable.get.html#fallback"><span class="pln">fallback</span></a></code> was provided, it will be returned. Without <code class="lang-d"><a href="../../std/typecons/nullable.get.html#fallback"><span class="pln">fallback</span></a></code>,
-calling <code class="lang-d"><span class="pln">get</span></code> with a null state is invalid.
+ parameter <code class="lang-d"><a href="../../std/typecons/nullable.get.html#fallback"><span class="pln">fallback</span></a></code> was provided, it will be returned. Without <code class="lang-d"><a href="../../std/typecons/nullable.get.html#fallback"><span class="pln">fallback</span></a></code>,
+ calling <code class="lang-d"><span class="pln">get</span></code> with a null state is invalid.
 </td>
 						</tr>
 						<tr>
@@ -3179,6 +3195,7 @@ calling <code class="lang-d"><span class="pln">get</span></code> with a null sta
 								<a href="../../std/typecons/nullable.nullify.html" class="public">
 									<code>nullify</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Forces <code class="lang-d"><span class="kwd">this</span></code> to the null state.
 </td>
@@ -3188,9 +3205,10 @@ calling <code class="lang-d"><span class="pln">get</span></code> with a null sta
 								<a href="../../std/typecons/nullable.op_assign.html" class="public">
 									<code>opAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
 							<td>Assigns <code class="lang-d"><a href="../../std/typecons/nullable.op_assign.html#value"><span class="pln">value</span></a></code> to the internally-held state. If the assignment
-succeeds, <code class="lang-d"><span class="kwd">this</span></code> becomes non-null.
+ succeeds, <code class="lang-d"><span class="kwd">this</span></code> becomes non-null.
 </td>
 						</tr>
 						<tr>
@@ -3198,10 +3216,11 @@ succeeds, <code class="lang-d"><span class="kwd">this</span></code> becomes non-
 								<a href="../../std/typecons/nullable.op_equals.html" class="public">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td>If they are both null, then they are equal. If one is null and the other
-      is not, then they are not equal. If they are both non-null, then they are
-      equal if their values are equal.
+ is not, then they are not equal. If they are both non-null, then they are
+ equal if their values are equal.
 </td>
 						</tr>
 						<tr>
@@ -3209,6 +3228,7 @@ succeeds, <code class="lang-d"><span class="kwd">this</span></code> becomes non-
 								<a href="../../std/typecons/nullable.to_string.html" class="public">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Gives the string <code class="lang-d"><span class="str">"Nullable.null"</span></code> if <code class="lang-d"><a href="../../std/typecons/nullable.is_null.html"><span class="pln">isNull</span></a></code> is <code class="lang-d"><span class="kwd">true</span></code>. Otherwise, the
  result is equivalent to calling <code class="lang-d"><a href="../../std/format/formatted_write.html" title="std.format.formattedWrite"><span class="pln">formattedWrite</span></a></code> on the
@@ -3263,7 +3283,7 @@ succeeds, <code class="lang-d"><span class="kwd">this</span></code> becomes non-
 </span><span class="pln">assertThrown</span><span class="pun">!</span><span class="typ">Throwable</span><span class="pun">(</span><span class="pln">a<wbr/></span><span class="pun">.</span><span class="pln">get</span><span class="pun">);
 </span></code></pre>
 </section>
-<h2 id="3">Struct Nullable</h2><p>Just like <code class="lang-d"><a href="../std/typecons/nullable.html"><span class="typ"><a href="../std/typecons/nullable.html"><span class="typ"><a href="../../std/typecons/nullable.html"><span class="typ"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a></span></a></span></a></span></a><span class="pun">!</span><span class="pln">T</span></code>, except that the null state is defined as a
+<h2 id="3">Struct Nullable</h2><p>Just like <code class="lang-d"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!</span><span class="pln">T</span></code>, except that the null state is defined as a
 particular value. For example, <code class="lang-d"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!(</span><span class="typ">uint</span><span class="pun">, </span><span class="typ">uint<wbr/></span><span class="pun">.</span><span class="pln">max</span><span class="pun">)</span></code> is an
 <code class="lang-d"><span class="typ">uint</span></code> that sets aside the value <code class="lang-d"><span class="typ">uint<wbr/></span><span class="pun">.</span><span class="pln">max</span></code> to denote a null
 state. <code class="lang-d"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!(</span><span class="pln">T</span><span class="pun">, </span><span class="pln">nullValue</span><span class="pun">)</span></code> is more storage-efficient than <code class="lang-d"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!</span><span class="pln">T</span></code> because it does not need to store an extra <code class="lang-d"><span class="typ">bool</span></code>.
@@ -3289,6 +3309,7 @@ state. <code class="lang-d"><a href="../../std/typecons/nullable.html"><span cla
 								<a href="../../std/typecons/nullable.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
 							<td>Constructor initializing <code class="lang-d"><span class="kwd">this</span></code> with <code class="lang-d"><a href="../../std/typecons/nullable.this.html#value"><span class="pln">value</span></a></code>.
 </td>
@@ -3329,6 +3350,7 @@ This function is also called for the implicit conversion to <code class="lang-d"
 								<a href="../../std/typecons/nullable.nullify.html" class="public">
 									<code>nullify</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Forces <code class="lang-d"><span class="kwd">this</span></code> to the null state.
 </td>
@@ -3338,6 +3360,7 @@ This function is also called for the implicit conversion to <code class="lang-d"
 								<a href="../../std/typecons/nullable.op_assign.html" class="public">
 									<code>opAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
 							<td>Assigns <code class="lang-d"><a href="../../std/typecons/nullable.op_assign.html#value"><span class="pln">value</span></a></code> to the internally-held state. If the assignment
 succeeds, <code class="lang-d"><span class="kwd">this</span></code> becomes non-null. No null checks are made. Note
@@ -3351,7 +3374,7 @@ that the assignment may leave <code class="lang-d"><span class="kwd">this</span>
 <tr><td id="T">T</td><td> The wrapped type for which Nullable provides a null value.
 </td></tr>
 <tr><td id="nullValue">nullValue</td><td> The null value which denotes the null state of this
-                <code class="lang-d"><a href="../../std/typecons/nullable.html"><span class="typ"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a></span></a></code>. Must be of type <code class="lang-d"><span class="pln">T</span></code>.</td></tr>
+                <code class="lang-d"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a></code>. Must be of type <code class="lang-d"><span class="pln">T</span></code>.</td></tr>
 </table>
 </section>
 <section><h3>Example</h3>

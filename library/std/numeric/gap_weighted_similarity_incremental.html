@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2952,7 +2967,7 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function gapWeightedSimilarityIncremental</h2><p>Similar to <code class="lang-d"><a href="../std/numeric/gap_weighted_similarity.html"><span class="pln"><a href="../std/numeric/gap_weighted_similarity.html"><span class="pln"><a href="../../std/numeric/gap_weighted_similarity.html"><span class="pln">gapWeightedSimilarity</span></a></span></a></span></a></code>, just works in an incremental
+				</nav><h2 id="0">Function gapWeightedSimilarityIncremental</h2><p>Similar to <code class="lang-d"><a href="../../std/numeric/gap_weighted_similarity.html"><span class="pln">gapWeightedSimilarity</span></a></code>, just works in an incremental
 manner by first revealing the matches of length 1, then gapped matches
 of length 2, and so on. The memory requirement is <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">s<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">*
 </span><span class="pln">t<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>)</span>. The time complexity is <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">s<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">* </span><span class="pln">t<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>)</span> time
@@ -2996,7 +3011,7 @@ optimizations.
 </span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">simIter<wbr/></span><span class="pun">.</span><span class="pln">empty</span><span class="pun">);     </span><span class="com">// no more match
 </span></code></pre>
 </section>
-<h2 id="1">Struct GapWeightedSimilarityIncremental</h2><p>Similar to <code class="lang-d"><a href="../std/numeric/gap_weighted_similarity.html"><span class="pln"><a href="../std/numeric/gap_weighted_similarity.html"><span class="pln"><a href="../../std/numeric/gap_weighted_similarity.html"><span class="pln"><a href="../../std/numeric/gap_weighted_similarity.html"><span class="pln">gapWeightedSimilarity</span></a></span></a></span></a></span></a></code>, just works in an incremental
+<h2 id="1">Struct GapWeightedSimilarityIncremental</h2><p>Similar to <code class="lang-d"><a href="../../std/numeric/gap_weighted_similarity.html"><span class="pln">gapWeightedSimilarity</span></a></code>, just works in an incremental
 manner by first revealing the matches of length 1, then gapped matches
 of length 2, and so on. The memory requirement is <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">s<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">*
 </span><span class="pln">t<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>)</span>. The time complexity is <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">s<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">* </span><span class="pln">t<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>)</span> time
@@ -3031,6 +3046,7 @@ optimizations.
 								<a href="../../std/numeric/gap_weighted_similarity_incremental.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(s, t, lambda)</span>
 							</td>
 							<td>Constructs an object given two ranges <code class="lang-d"><a href="../../std/numeric/gap_weighted_similarity_incremental.this.html#s"><span class="pln">s</span></a></code> and <code class="lang-d"><a href="../../std/numeric/gap_weighted_similarity_incremental.this.html#t"><span class="pln">t</span></a></code> and a penalty
 <code class="lang-d"><a href="../../std/numeric/gap_weighted_similarity_incremental.this.html#lambda"><span class="pln">lambda</span></a></code>. Constructor completes in <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">s<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">* </span><span class="pln">t<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>)</span>
@@ -3070,6 +3086,7 @@ time and computes all matches of length 1.
 								<a href="../../std/numeric/gap_weighted_similarity_incremental.op_slice.html" class="public">
 									<code>opSlice</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3078,6 +3095,7 @@ time and computes all matches of length 1.
 								<a href="../../std/numeric/gap_weighted_similarity_incremental.pop_front.html" class="public">
 									<code>popFront</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Computes the match of the popFront length. Completes in <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">s<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">*
     </span><span class="pln">t<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>)</span> time.

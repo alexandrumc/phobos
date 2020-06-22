@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2947,149 +2962,194 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="addSegmentToComdat" class="public" href="../../dmd/backend/elfobj/add_segment_to_comdat.html">addSegmentToComdat</a><span class="decoration">(seg, comdatseg)</span>
+									<a id="addSegmentToComdat" class="public" href="../../dmd/backend/elfobj/add_segment_to_comdat.html">addSegmentToComdat</a><span class="tableEntryAnnotation">(seg, comdatseg)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dwarf_reftoident" class="public" href="../../dmd/backend/elfobj/dwarf_reftoident.html">dwarf_reftoident</a><span class="decoration">(seg, offset, s, val)</span>
+									<a id="dwarf_reftoident" class="public" href="../../dmd/backend/elfobj/dwarf_reftoident.html">dwarf_reftoident</a><span class="tableEntryAnnotation">(seg, offset, s, val)</span>
 								</code>
 							</td>
 							<td>Generate fixup specific to .eh_frame and .gcc_except_table sections.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="elf_align" class="public" href="../../dmd/backend/elfobj/elf_align.html">elf_align</a><span class="decoration">(size, foffset)</span>
+									<a id="elf_align" class="public" href="../../dmd/backend/elfobj/elf_align.html">elf_align</a><span class="tableEntryAnnotation">(size, foffset)</span>
 								</code>
 							</td>
 							<td>Write to the object file
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="elf_renumbersyms" class="public" href="../../dmd/backend/elfobj/elf_renumbersyms.html">elf_renumbersyms</a><span class="decoration">()</span>
+									<a id="elf_renumbersyms" class="public" href="../../dmd/backend/elfobj/elf_renumbersyms.html">elf_renumbersyms</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Renumber symbols so they are
  ordered as locals, weak and then global
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_addstr" class="public" href="../../dmd/backend/elfobj/obj_addstr.html">Obj_addstr</a><span class="decoration">(strtab, str)</span>
+									<a id="Obj_addstr" class="public" href="../../dmd/backend/elfobj/obj_addstr.html">Obj_addstr</a><span class="tableEntryAnnotation">(strtab, str)</span>
 								</code>
 							</td>
 							<td>Output a string into a string table
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_alias" class="public" href="../../dmd/backend/elfobj/obj_alias.html">Obj_alias</a><span class="decoration">(n1, n2)</span>
+									<a id="Obj_alias" class="public" href="../../dmd/backend/elfobj/obj_alias.html">Obj_alias</a><span class="tableEntryAnnotation">(n1, n2)</span>
 								</code>
 							</td>
 							<td>Output an alias definition record.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_allowZeroSize" class="public" href="../../dmd/backend/elfobj/obj_allow_zero_size.html">Obj_allowZeroSize</a><span class="decoration">()</span>
+									<a id="Obj_allowZeroSize" class="public" href="../../dmd/backend/elfobj/obj_allow_zero_size.html">Obj_allowZeroSize</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Do we allow zero sized objects?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_byte" class="public" href="../../dmd/backend/elfobj/obj_byte.html">Obj_byte</a><span class="decoration">(seg, offset, byte_)</span>
+									<a id="Obj_byte" class="public" href="../../dmd/backend/elfobj/obj_byte.html">Obj_byte</a><span class="tableEntryAnnotation">(seg, offset, byte_)</span>
 								</code>
 							</td>
 							<td>Output byte to object file.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_bytes" class="public" href="../../dmd/backend/elfobj/obj_bytes.html">Obj_bytes</a><span class="decoration">(seg, offset, nbytes, p)</span>
+									<a id="Obj_bytes" class="public" href="../../dmd/backend/elfobj/obj_bytes.html">Obj_bytes</a><span class="tableEntryAnnotation">(seg, offset, nbytes, p)</span>
 								</code>
 							</td>
 							<td>Output bytes to object file.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_codeseg" class="public" href="../../dmd/backend/elfobj/obj_codeseg.html">Obj_codeseg</a><span class="decoration">(name, suffix)</span>
+									<a id="Obj_codeseg" class="public" href="../../dmd/backend/elfobj/obj_codeseg.html">Obj_codeseg</a><span class="tableEntryAnnotation">(name, suffix)</span>
 								</code>
 							</td>
 							<td>Define a new code segment.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_common_block" class="public" href="../../dmd/backend/elfobj/obj_common_block.html">Obj_common_block</a><span class="decoration">(s, size, count)</span>
+									<a id="Obj_common_block" class="public" href="../../dmd/backend/elfobj/obj_common_block.html">Obj_common_block</a><span class="tableEntryAnnotation">(s, size, count)</span>
 								</code>
 							</td>
 							<td>Output a common block definition.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_compiler" class="public" href="../../dmd/backend/elfobj/obj_compiler.html">Obj_compiler</a><span class="decoration">()</span>
+									<a id="Obj_compiler" class="public" href="../../dmd/backend/elfobj/obj_compiler.html">Obj_compiler</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Embed compiler version in .obj file.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_data_readonly" class="public" href="../../dmd/backend/elfobj/obj_data_readonly.html">Obj_data_readonly</a><span class="decoration">(p, len, pseg)</span>
+									<a id="Obj_data_readonly" class="public" href="../../dmd/backend/elfobj/obj_data_readonly.html">Obj_data_readonly</a><span class="tableEntryAnnotation">(p, len, pseg)</span>
 								</code>
 							</td>
 							<td>Ouput read only data for data.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_data_start" class="public" href="../../dmd/backend/elfobj/obj_data_start.html">Obj_data_start</a><span class="decoration">(sdata, datasize, seg)</span>
+									<a id="Obj_data_start" class="public" href="../../dmd/backend/elfobj/obj_data_start.html">Obj_data_start</a><span class="tableEntryAnnotation">(sdata, datasize, seg)</span>
 								</code>
 							</td>
 							<td>Update data information about symbol
       align for output and assign segment
       if not already specified.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_ehsections" class="public" href="../../dmd/backend/elfobj/obj_ehsections.html">Obj_ehsections</a><span class="decoration">()</span>
+									<a id="Obj_ehsections" class="public" href="../../dmd/backend/elfobj/obj_ehsections.html">Obj_ehsections</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Don't need to generate section brackets, use _start_SEC/_stop_SEC instead.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_ehtables" class="public" href="../../dmd/backend/elfobj/obj_ehtables.html">Obj_ehtables</a><span class="decoration">(sfunc, size, ehsym)</span>
+									<a id="Obj_ehtables" class="public" href="../../dmd/backend/elfobj/obj_ehtables.html">Obj_ehtables</a><span class="tableEntryAnnotation">(sfunc, size, ehsym)</span>
 								</code>
 							</td>
 							<td>Stuff the following data in a separate segment:
@@ -3097,317 +3157,419 @@ $('#symbolSearchPane').show();</script>
       pointer to ehsym
       length of function
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_exestr" class="public" href="../../dmd/backend/elfobj/obj_exestr.html">Obj_exestr</a><span class="decoration">(p)</span>
+									<a id="Obj_exestr" class="public" href="../../dmd/backend/elfobj/obj_exestr.html">Obj_exestr</a><span class="tableEntryAnnotation">(p)</span>
 								</code>
 							</td>
 							<td>Embed string in executable.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_export_symbol" class="public" href="../../dmd/backend/elfobj/obj_export_symbol.html">Obj_export_symbol</a><span class="decoration">(s, argsize)</span>
+									<a id="Obj_export_symbol" class="public" href="../../dmd/backend/elfobj/obj_export_symbol.html">Obj_export_symbol</a><span class="tableEntryAnnotation">(s, argsize)</span>
 								</code>
 							</td>
 							<td>Export a function name.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_external" class="public" href="../../dmd/backend/elfobj/obj_external.html">Obj_external</a><span class="decoration">(s)</span>
+									<a id="Obj_external" class="public" href="../../dmd/backend/elfobj/obj_external.html">Obj_external</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Output an external for existing symbol.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_external_def" class="public" href="../../dmd/backend/elfobj/obj_external_def.html">Obj_external_def</a><span class="decoration">(name)</span>
+									<a id="Obj_external_def" class="public" href="../../dmd/backend/elfobj/obj_external_def.html">Obj_external_def</a><span class="tableEntryAnnotation">(name)</span>
 								</code>
 							</td>
 							<td>Output an external symbol for name.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_far16thunk" class="public" href="../../dmd/backend/elfobj/obj_far16thunk.html">Obj_far16thunk</a><span class="decoration">(s)</span>
+									<a id="Obj_far16thunk" class="public" href="../../dmd/backend/elfobj/obj_far16thunk.html">Obj_far16thunk</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Generate far16 thunk.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="obj_filename" class="public" href="../../dmd/backend/elfobj/obj_filename.html">obj_filename</a><span class="decoration">(modname)</span>
+									<a id="obj_filename" class="public" href="../../dmd/backend/elfobj/obj_filename.html">obj_filename</a><span class="tableEntryAnnotation">(modname)</span>
 								</code>
 							</td>
 							<td>Output file name record.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_fltused" class="public" href="../../dmd/backend/elfobj/obj_fltused.html">Obj_fltused</a><span class="decoration">()</span>
+									<a id="Obj_fltused" class="public" href="../../dmd/backend/elfobj/obj_fltused.html">Obj_fltused</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Mark object file as using floating point.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_func_start" class="public" href="../../dmd/backend/elfobj/obj_func_start.html">Obj_func_start</a><span class="decoration">(sfunc)</span>
+									<a id="Obj_func_start" class="public" href="../../dmd/backend/elfobj/obj_func_start.html">Obj_func_start</a><span class="tableEntryAnnotation">(sfunc)</span>
 								</code>
 							</td>
 							<td>Update function info before codgen
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_func_term" class="public" href="../../dmd/backend/elfobj/obj_func_term.html">Obj_func_term</a><span class="decoration">(sfunc)</span>
+									<a id="Obj_func_term" class="public" href="../../dmd/backend/elfobj/obj_func_term.html">Obj_func_term</a><span class="tableEntryAnnotation">(sfunc)</span>
 								</code>
 							</td>
 							<td>Update function info after codgen
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_getsegment" class="public" href="../../dmd/backend/elfobj/obj_getsegment.html">Obj_getsegment</a><span class="decoration">(name, suffix, type, flags, align_)</span>
+									<a id="Obj_getsegment" class="public" href="../../dmd/backend/elfobj/obj_getsegment.html">Obj_getsegment</a><span class="tableEntryAnnotation">(name, suffix, type, flags, align_)</span>
 								</code>
 							</td>
 							<td>Get corresponding seg_data entry for an existing or newly added section.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_gotref" class="public" href="../../dmd/backend/elfobj/obj_gotref.html">Obj_gotref</a><span class="decoration">(s)</span>
+									<a id="Obj_gotref" class="public" href="../../dmd/backend/elfobj/obj_gotref.html">Obj_gotref</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_includelib" class="public" href="../../dmd/backend/elfobj/obj_includelib.html">Obj_includelib</a><span class="decoration">(name)</span>
+									<a id="Obj_includelib" class="public" href="../../dmd/backend/elfobj/obj_includelib.html">Obj_includelib</a><span class="tableEntryAnnotation">(name)</span>
 								</code>
 							</td>
 							<td>Output library name.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_init" class="public" href="../../dmd/backend/elfobj/obj_init.html">Obj_init</a><span class="decoration">(objbuf, filename, csegname)</span>
+									<a id="Obj_init" class="public" href="../../dmd/backend/elfobj/obj_init.html">Obj_init</a><span class="tableEntryAnnotation">(objbuf, filename, csegname)</span>
 								</code>
 							</td>
 							<td>Perform initialization that applies to all .o output files.
       Called before any other obj_xxx routines
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_initfile" class="public" href="../../dmd/backend/elfobj/obj_initfile.html">Obj_initfile</a><span class="decoration">(filename, csegname, modname)</span>
+									<a id="Obj_initfile" class="public" href="../../dmd/backend/elfobj/obj_initfile.html">Obj_initfile</a><span class="tableEntryAnnotation">(filename, csegname, modname)</span>
 								</code>
 							</td>
 							<td>Initialize the start of object output for this particular .o file.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_lidata" class="public" href="../../dmd/backend/elfobj/obj_lidata.html">Obj_lidata</a><span class="decoration">(seg, offset, count)</span>
+									<a id="Obj_lidata" class="public" href="../../dmd/backend/elfobj/obj_lidata.html">Obj_lidata</a><span class="tableEntryAnnotation">(seg, offset, count)</span>
 								</code>
 							</td>
 							<td>Output an iterated data block of 0s.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_linkerdirective" class="public" href="../../dmd/backend/elfobj/obj_linkerdirective.html">Obj_linkerdirective</a><span class="decoration">(name)</span>
+									<a id="Obj_linkerdirective" class="public" href="../../dmd/backend/elfobj/obj_linkerdirective.html">Obj_linkerdirective</a><span class="tableEntryAnnotation">(name)</span>
 								</code>
 							</td>
 							<td>Output linker directive.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_linnum" class="public" href="../../dmd/backend/elfobj/obj_linnum.html">Obj_linnum</a><span class="decoration">(srcpos, seg, offset)</span>
+									<a id="Obj_linnum" class="public" href="../../dmd/backend/elfobj/obj_linnum.html">Obj_linnum</a><span class="tableEntryAnnotation">(srcpos, seg, offset)</span>
 								</code>
 							</td>
 							<td>Line number support.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="obj_mangle2" class="public" href="../../dmd/backend/elfobj/obj_mangle2.html">obj_mangle2</a><span class="decoration">(s, dest, destlen)</span>
+									<a id="obj_mangle2" class="public" href="../../dmd/backend/elfobj/obj_mangle2.html">obj_mangle2</a><span class="tableEntryAnnotation">(s, dest, destlen)</span>
 								</code>
 							</td>
 							<td>Mangle a name.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_moduleinfo" class="public" href="../../dmd/backend/elfobj/obj_moduleinfo.html">Obj_moduleinfo</a><span class="decoration">(scc)</span>
+									<a id="Obj_moduleinfo" class="public" href="../../dmd/backend/elfobj/obj_moduleinfo.html">Obj_moduleinfo</a><span class="tableEntryAnnotation">(scc)</span>
 								</code>
 							</td>
 							<td>Stuff pointer to ModuleInfo into its own section (minfo).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_pubdef" class="public" href="../../dmd/backend/elfobj/obj_pubdef.html">Obj_pubdef</a><span class="decoration">(seg, s, offset)</span>
+									<a id="Obj_pubdef" class="public" href="../../dmd/backend/elfobj/obj_pubdef.html">Obj_pubdef</a><span class="tableEntryAnnotation">(seg, s, offset)</span>
 								</code>
 							</td>
 							<td>Output a public definition.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_pubdefsize" class="public" href="../../dmd/backend/elfobj/obj_pubdefsize.html">Obj_pubdefsize</a><span class="decoration">(seg, s, offset, symsize)</span>
+									<a id="Obj_pubdefsize" class="public" href="../../dmd/backend/elfobj/obj_pubdefsize.html">Obj_pubdefsize</a><span class="tableEntryAnnotation">(seg, s, offset, symsize)</span>
 								</code>
 							</td>
 							<td>Output a public definition.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_reftocodeseg" class="public" href="../../dmd/backend/elfobj/obj_reftocodeseg.html">Obj_reftocodeseg</a><span class="decoration">(seg, offset, val)</span>
+									<a id="Obj_reftocodeseg" class="public" href="../../dmd/backend/elfobj/obj_reftocodeseg.html">Obj_reftocodeseg</a><span class="tableEntryAnnotation">(seg, offset, val)</span>
 								</code>
 							</td>
 							<td>Refer to address that is in the code segment.
  Only offsets are output, regardless of the memory model.
  Used to put values in switch address tables.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_reftodatseg" class="public" href="../../dmd/backend/elfobj/obj_reftodatseg.html">Obj_reftodatseg</a><span class="decoration">(seg, offset, val, targetdatum, flags)</span>
+									<a id="Obj_reftodatseg" class="public" href="../../dmd/backend/elfobj/obj_reftodatseg.html">Obj_reftodatseg</a><span class="tableEntryAnnotation">(seg, offset, val, targetdatum, flags)</span>
 								</code>
 							</td>
 							<td>Refer to address that is in the data segment.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_reftoident" class="public" href="../../dmd/backend/elfobj/obj_reftoident.html">Obj_reftoident</a><span class="decoration">(seg, offset, s, val, flags)</span>
+									<a id="Obj_reftoident" class="public" href="../../dmd/backend/elfobj/obj_reftoident.html">Obj_reftoident</a><span class="tableEntryAnnotation">(seg, offset, s, val, flags)</span>
 								</code>
 							</td>
 							<td>Refer to an identifier.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_setcodeseg" class="public" href="../../dmd/backend/elfobj/obj_setcodeseg.html">Obj_setcodeseg</a><span class="decoration">(seg)</span>
+									<a id="Obj_setcodeseg" class="public" href="../../dmd/backend/elfobj/obj_setcodeseg.html">Obj_setcodeseg</a><span class="tableEntryAnnotation">(seg)</span>
 								</code>
 							</td>
 							<td>Reset code seg to existing seg.
  Used after a COMDAT for a function is done.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_setModuleCtorDtor" class="public" href="../../dmd/backend/elfobj/obj_set_module_ctor_dtor.html">Obj_setModuleCtorDtor</a><span class="decoration">(sfunc, isCtor)</span>
+									<a id="Obj_setModuleCtorDtor" class="public" href="../../dmd/backend/elfobj/obj_set_module_ctor_dtor.html">Obj_setModuleCtorDtor</a><span class="tableEntryAnnotation">(sfunc, isCtor)</span>
 								</code>
 							</td>
 							<td>Stuff pointer to function in its own segment.
  Used for static ctor and dtor lists.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_startaddress" class="public" href="../../dmd/backend/elfobj/obj_startaddress.html">Obj_startaddress</a><span class="decoration">(s)</span>
+									<a id="Obj_startaddress" class="public" href="../../dmd/backend/elfobj/obj_startaddress.html">Obj_startaddress</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Set start address
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_staticctor" class="public" href="../../dmd/backend/elfobj/obj_staticctor.html">Obj_staticctor</a><span class="decoration">(s, _param_1, _param_2)</span>
+									<a id="Obj_staticctor" class="public" href="../../dmd/backend/elfobj/obj_staticctor.html">Obj_staticctor</a><span class="tableEntryAnnotation">(s, _param_1, _param_2)</span>
 								</code>
 							</td>
 							<td>Symbol is the function that calls the static constructors.
  Put a pointer to it into a special segment that the startup code
  looks at.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_staticdtor" class="public" href="../../dmd/backend/elfobj/obj_staticdtor.html">Obj_staticdtor</a><span class="decoration">(s)</span>
+									<a id="Obj_staticdtor" class="public" href="../../dmd/backend/elfobj/obj_staticdtor.html">Obj_staticdtor</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Symbol is the function that calls the static destructors.
  Put a pointer to it into a special segment that the exit code
  looks at.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_string_literal_segment" class="public" href="../../dmd/backend/elfobj/obj_string_literal_segment.html">Obj_string_literal_segment</a><span class="decoration">(sz)</span>
+									<a id="Obj_string_literal_segment" class="public" href="../../dmd/backend/elfobj/obj_string_literal_segment.html">Obj_string_literal_segment</a><span class="tableEntryAnnotation">(sz)</span>
 								</code>
 							</td>
 							<td>Get segment for readonly string literals.
  The linker will pool strings in this section.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_sym_cdata" class="public" href="../../dmd/backend/elfobj/obj_sym_cdata.html">Obj_sym_cdata</a><span class="decoration">(ty, p, len)</span>
+									<a id="Obj_sym_cdata" class="public" href="../../dmd/backend/elfobj/obj_sym_cdata.html">Obj_sym_cdata</a><span class="tableEntryAnnotation">(ty, p, len)</span>
 								</code>
 							</td>
 							<td>Ouput read only data and generate a symbol for it.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_term" class="public" href="../../dmd/backend/elfobj/obj_term.html">Obj_term</a><span class="decoration">(objfilename)</span>
+									<a id="Obj_term" class="public" href="../../dmd/backend/elfobj/obj_term.html">Obj_term</a><span class="tableEntryAnnotation">(objfilename)</span>
 								</code>
 							</td>
 							<td>Terminate package.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_termfile" class="public" href="../../dmd/backend/elfobj/obj_termfile.html">Obj_termfile</a><span class="decoration">()</span>
+									<a id="Obj_termfile" class="public" href="../../dmd/backend/elfobj/obj_termfile.html">Obj_termfile</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Fixup and terminate object file.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_tlsseg" class="public" href="../../dmd/backend/elfobj/obj_tlsseg.html">Obj_tlsseg</a><span class="decoration">()</span>
+									<a id="Obj_tlsseg" class="public" href="../../dmd/backend/elfobj/obj_tlsseg.html">Obj_tlsseg</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Define segments for Thread Local Storage.
@@ -3437,88 +3599,118 @@ $('#symbolSearchPane').show();</script>
  Don't care about sections emitted by other languages, as we presume they
  won't be storing D gc roots in their tls.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_tlsseg_bss" class="public" href="../../dmd/backend/elfobj/obj_tlsseg_bss.html">Obj_tlsseg_bss</a><span class="decoration">()</span>
+									<a id="Obj_tlsseg_bss" class="public" href="../../dmd/backend/elfobj/obj_tlsseg_bss.html">Obj_tlsseg_bss</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Define segments for Thread Local Storage.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_user" class="public" href="../../dmd/backend/elfobj/obj_user.html">Obj_user</a><span class="decoration">(p)</span>
+									<a id="Obj_user" class="public" href="../../dmd/backend/elfobj/obj_user.html">Obj_user</a><span class="tableEntryAnnotation">(p)</span>
 								</code>
 							</td>
 							<td>Embed string in obj.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_wkext" class="public" href="../../dmd/backend/elfobj/obj_wkext.html">Obj_wkext</a><span class="decoration">(s1, s2)</span>
+									<a id="Obj_wkext" class="public" href="../../dmd/backend/elfobj/obj_wkext.html">Obj_wkext</a><span class="tableEntryAnnotation">(s1, s2)</span>
 								</code>
 							</td>
 							<td>Output a weak extern record.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_write_byte" class="public" href="../../dmd/backend/elfobj/obj_write_byte.html">Obj_write_byte</a><span class="decoration">(pseg, byte_)</span>
+									<a id="Obj_write_byte" class="public" href="../../dmd/backend/elfobj/obj_write_byte.html">Obj_write_byte</a><span class="tableEntryAnnotation">(pseg, byte_)</span>
 								</code>
 							</td>
 							<td>Append byte to segment.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_write_bytes" class="public" href="../../dmd/backend/elfobj/obj_write_bytes.html">Obj_write_bytes</a><span class="decoration">(pseg, nbytes, p)</span>
+									<a id="Obj_write_bytes" class="public" href="../../dmd/backend/elfobj/obj_write_bytes.html">Obj_write_bytes</a><span class="tableEntryAnnotation">(pseg, nbytes, p)</span>
 								</code>
 							</td>
 							<td>Append bytes to segment.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_write_zeros" class="public" href="../../dmd/backend/elfobj/obj_write_zeros.html">Obj_write_zeros</a><span class="decoration">(pseg, count)</span>
+									<a id="Obj_write_zeros" class="public" href="../../dmd/backend/elfobj/obj_write_zeros.html">Obj_write_zeros</a><span class="tableEntryAnnotation">(pseg, count)</span>
 								</code>
 							</td>
 							<td>Append an iterated data block of 0s.
  (uninitialized data only)
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Obj_writerel" class="public" href="../../dmd/backend/elfobj/obj_writerel.html">Obj_writerel</a><span class="decoration">(targseg, offset, reltype, symidx, val)</span>
+									<a id="Obj_writerel" class="public" href="../../dmd/backend/elfobj/obj_writerel.html">Obj_writerel</a><span class="tableEntryAnnotation">(targseg, offset, reltype, symidx, val)</span>
 								</code>
 							</td>
 							<td>Write/Append a relocatable value to the given segment and offset.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="objfile_delete" class="public" href="../../dmd/backend/elfobj/objfile_delete.html">objfile_delete</a><span class="decoration">()</span>
+									<a id="objfile_delete" class="public" href="../../dmd/backend/elfobj/objfile_delete.html">objfile_delete</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Close and delete .OBJ file.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="objfile_term" class="public" href="../../dmd/backend/elfobj/objfile_term.html">objfile_term</a><span class="decoration">()</span>
+									<a id="objfile_term" class="public" href="../../dmd/backend/elfobj/objfile_term.html">objfile_term</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Terminate.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

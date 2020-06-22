@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,14 +2952,14 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../std/path.html">std.path</a>.dirName</code></h1><p>Returns the parent directory of <code class="lang-d"><a href="../std/path/dir_name.html#path"><span class="pln"><a href="../../std/path/dir_name.html#path"><span class="pln">path</span></a></span></a></code>. On Windows, this
-    includes the drive letter if present. If <code class="lang-d"><a href="../std/path/dir_name.html#path"><span class="pln"><a href="../../std/path/dir_name.html#path"><span class="pln">path</span></a></span></a></code> is a relative path and
+				</div><h1>Function <code><a href="../../std/path.html">std.path</a>.dirName</code></h1><p>Returns the parent directory of <code class="lang-d"><a href="../../std/path/dir_name.html#path"><span class="pln">path</span></a></code>. On Windows, this
+    includes the drive letter if present. If <code class="lang-d"><a href="../../std/path/dir_name.html#path"><span class="pln">path</span></a></code> is a relative path and
     the parent directory is the current working directory, returns <code class="lang-d"><span class="str">"."</span></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">dirName</span>(R)
+				<span class="kwd">auto</span> <span class="pln">dirName</span>(R)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">R</span> <span class="pln">path</span>
@@ -2954,7 +2969,7 @@ $('#symbolSearchPane').show();</script>
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isRandomAccessRange</span><span class="pun">!</span><span class="pln">R </span><span class="pun">&amp;&amp; </span><span class="pln">hasSlicing</span><span class="pun">!</span><span class="pln">R </span><span class="pun">&amp;&amp; </span><span class="pln">hasLength</span><span class="pun">!</span><span class="pln">R </span><span class="pun">&amp;&amp; </span><span class="pln">isSomeChar</span><span class="pun">!(</span><span class="typ">ElementType</span><span class="pun">!</span><span class="pln">R</span><span class="pun">) &amp;&amp; !</span><span class="pln">isSomeString</span><span class="pun">!</span><span class="pln">R</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">dirName</span>(C)
+				<span class="kwd">auto</span> <span class="pln">dirName</span>(C)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">C</span><span class="pun">[]</span> <span class="pln">path</span>

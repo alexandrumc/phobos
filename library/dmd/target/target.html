@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/dmd/blob/master/src/dmd/target.d#L891">
+							<a href="https://github.com/dlang/dmd/blob/master/src/dmd/target.d#L901">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/dmd/edit/master/src/dmd/target.d#L891">
+							<a href="https://github.com/dlang/dmd/edit/master/src/dmd/target.d#L901">
 								Improve this page
 							</a>
 							<div>
@@ -3094,6 +3109,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/target/target._init.html" class="public">
 									<code>_init</code>
 								</a>
+								<span class="tableEntryAnnotation">(params)</span>
 							</td>
 							<td>Initialize the Target
 </td>
@@ -3103,6 +3119,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/target/target.alignsize.html" class="public">
 									<code>alignsize</code>
 								</a>
+								<span class="tableEntryAnnotation">(type)</span>
 							</td>
 							<td>Requested target memory alignment size of the given type.
 </td>
@@ -3112,6 +3129,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/target/target.critsecsize.html" class="public">
 									<code>critsecsize</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Size of the target OS critical section.
 </td>
@@ -3121,6 +3139,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/target/target.deinitialize.html" class="public">
 									<code>deinitialize</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Deinitializes the global state of the compiler.
 </td>
@@ -3130,6 +3149,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/target/target.fieldalign.html" class="public">
 									<code>fieldalign</code>
 								</a>
+								<span class="tableEntryAnnotation">(type)</span>
 							</td>
 							<td>Requested target field alignment size of the given type.
 </td>
@@ -3139,6 +3159,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/target/target.get_target_info.html" class="public">
 									<code>getTargetInfo</code>
 								</a>
+								<span class="tableEntryAnnotation">(name, loc)</span>
 							</td>
 							<td>Get targetInfo by key
 </td>
@@ -3148,6 +3169,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/target/target.is_return_on_stack.html" class="public">
 									<code>isReturnOnStack</code>
 								</a>
+								<span class="tableEntryAnnotation">(tf, needsThis)</span>
 							</td>
 							<td>Determine return style of function - whether in registers or
  through a hidden pointer to the caller's stack.
@@ -3158,6 +3180,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/target/target.is_vector_op_supported.html" class="public">
 									<code>isVectorOpSupported</code>
 								</a>
+								<span class="tableEntryAnnotation">(type, op, t2)</span>
 							</td>
 							<td>Checks whether the target supports the given operation for vectors.
 </td>
@@ -3167,6 +3190,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/target/target.is_vector_type_supported.html" class="public">
 									<code>isVectorTypeSupported</code>
 								</a>
+								<span class="tableEntryAnnotation">(sz, type)</span>
 							</td>
 							<td>Checks whether the target supports a vector type.
 </td>
@@ -3176,6 +3200,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/target/target.is_xmm_supported.html" class="public">
 									<code>isXmmSupported</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3184,6 +3209,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/target/target.parameter_size.html" class="public">
 									<code>parameterSize</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc, t)</span>
 							</td>
 							<td>Determine the size a value of type <code class="lang-d"><a href="../../dmd/target/target.parameter_size.html#t"><span class="pln">t</span></a></code> will be when it
  is passed on the function parameter stack.
@@ -3194,6 +3220,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/target/target.system_linkage.html" class="public">
 									<code>systemLinkage</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Default system linkage for the target.
 </td>
@@ -3203,6 +3230,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/target/target.to_arg_types.html" class="public">
 									<code>toArgTypes</code>
 								</a>
+								<span class="tableEntryAnnotation">(t)</span>
 							</td>
 							<td>Describes how an argument type is passed to a function on target.
 </td>
@@ -3212,8 +3240,10 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/target/target.va_list_type.html" class="public">
 									<code>va_listType</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc, sc)</span>
 							</td>
-							<td>Type for the <code class="lang-d"><span class="pln">va_list</span></code> type for the target.
+							<td>Type for the <code class="lang-d"><span class="pln">va_list</span></code> type for the target; e.g., required for <code class="lang-d"><span class="pln">_argptr</span></code>
+ declarations.
 </td>
 						</tr>
 					</table>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2954,115 +2969,151 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="aaGetSymbol" class="public" href="../dmd/tocsym/aa_get_symbol.html">aaGetSymbol</a><span class="decoration">(taa, func, flags)</span>
+									<a id="aaGetSymbol" class="public" href="../dmd/tocsym/aa_get_symbol.html">aaGetSymbol</a><span class="tableEntryAnnotation">(taa, func, flags)</span>
 								</code>
 							</td>
 							<td>Determine the right symbol to look up
  an associative array element.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fake_classsym" class="public" href="../dmd/tocsym/fake_classsym.html">fake_classsym</a><span class="decoration">(id)</span>
+									<a id="fake_classsym" class="public" href="../dmd/tocsym/fake_classsym.html">fake_classsym</a><span class="tableEntryAnnotation">(id)</span>
 								</code>
 							</td>
 							<td>Fake a struct symbol.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toImport" class="public" href="../dmd/tocsym/to_import.html">toImport</a><span class="decoration">(sym)</span>
+									<a id="toImport" class="public" href="../dmd/tocsym/to_import.html">toImport</a><span class="tableEntryAnnotation">(sym)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toImport" class="public" href="../dmd/tocsym/to_import.html">toImport</a><span class="decoration">(ds)</span>
+									<a id="toImport" class="public" href="../dmd/tocsym/to_import.html">toImport</a><span class="tableEntryAnnotation">(ds)</span>
 								</code>
 							</td>
 							<td>Generate import symbol from symbol.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toInitializer" class="public" href="../dmd/tocsym/to_initializer.html">toInitializer</a><span class="decoration">(ad)</span>
+									<a id="toInitializer" class="public" href="../dmd/tocsym/to_initializer.html">toInitializer</a><span class="tableEntryAnnotation">(ad)</span>
 								</code>
 							</td>
 							<td>Create the static initializer for the struct/class.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toSymbol" class="public" href="../dmd/tocsym/to_symbol.html">toSymbol</a><span class="decoration">(s)</span>
+									<a id="toSymbol" class="public" href="../dmd/tocsym/to_symbol.html">toSymbol</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toSymbol" class="public" href="../dmd/tocsym/to_symbol.html">toSymbol</a><span class="decoration">(sle)</span>
+									<a id="toSymbol" class="public" href="../dmd/tocsym/to_symbol.html">toSymbol</a><span class="tableEntryAnnotation">(sle)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toSymbolCpp" class="public" href="../dmd/tocsym/to_symbol_cpp.html">toSymbolCpp</a><span class="decoration">(cd)</span>
+									<a id="toSymbolCpp" class="public" href="../dmd/tocsym/to_symbol_cpp.html">toSymbolCpp</a><span class="tableEntryAnnotation">(cd)</span>
 								</code>
 							</td>
 							<td>For C++ class cd, generate an instance of _cpp_type_info_ptr
  and populate it with a pointer to the C++ type info.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toSymbolCppTypeInfo" class="public" href="../dmd/tocsym/to_symbol_cpp_type_info.html">toSymbolCppTypeInfo</a><span class="decoration">(cd)</span>
+									<a id="toSymbolCppTypeInfo" class="public" href="../dmd/tocsym/to_symbol_cpp_type_info.html">toSymbolCppTypeInfo</a><span class="tableEntryAnnotation">(cd)</span>
 								</code>
 							</td>
 							<td>Generate Symbol of C++ type info for C++ class cd.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toSymbolX" class="public" href="../dmd/tocsym/to_symbol_x.html">toSymbolX</a><span class="decoration">(ds, prefix, sclass, t, suffix)</span>
+									<a id="toSymbolX" class="public" href="../dmd/tocsym/to_symbol_x.html">toSymbolX</a><span class="tableEntryAnnotation">(ds, prefix, sclass, t, suffix)</span>
 								</code>
 							</td>
 							<td>Helper
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toThunkSymbol" class="public" href="../dmd/tocsym/to_thunk_symbol.html">toThunkSymbol</a><span class="decoration">(fd, offset)</span>
+									<a id="toThunkSymbol" class="public" href="../dmd/tocsym/to_thunk_symbol.html">toThunkSymbol</a><span class="tableEntryAnnotation">(fd, offset)</span>
 								</code>
 							</td>
 							<td>Thunks adjust the incoming 'this' pointer by 'offset'.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toVtblSymbol" class="public" href="../dmd/tocsym/to_vtbl_symbol.html">toVtblSymbol</a><span class="decoration">(cd)</span>
+									<a id="toVtblSymbol" class="public" href="../dmd/tocsym/to_vtbl_symbol.html">toVtblSymbol</a><span class="tableEntryAnnotation">(cd)</span>
 								</code>
 							</td>
 							<td>This is accessible via the ClassData, but since it is frequently
  needed directly (like for rtti comparisons), make it directly accessible.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

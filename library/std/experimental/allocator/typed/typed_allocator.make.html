@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2938,17 +2953,17 @@ $('#symbolSearchPane').show();</script>
 						</div>
 					</div>
 				</div><h1>Function <code><a href="../../../../std/experimental/allocator/typed/typed_allocator.html">std.experimental.allocator.typed.TypedAllocator</a>.make</code></h1><p>Dynamically allocates (using the appropriate allocator chosen with
-    <code class="lang-d"><a href="../../../../std/experimental/allocator/typed/typed_allocator.allocator_for.html"><span class="pln"><a href="../../../../std/experimental/allocator/typed/typed_allocator.allocator_for.html"><span class="pln">allocatorFor</span></a></span></a><span class="pun">!</span><span class="pln">T</span></code>) and then creates in the memory allocated an object of
-    type <code class="lang-d"><span class="pln">T</span></code>, using <code class="lang-d"><a href="../../../../std/experimental/allocator/typed/typed_allocator.make.html#args"><span class="pln"><a href="../../../../std/experimental/allocator/typed/typed_allocator.make.html#args"><span class="pln">args</span></a></span></a></code> (if any) for its initialization. Initialization
+    <code class="lang-d"><a href="../../../../std/experimental/allocator/typed/typed_allocator.allocator_for.html"><span class="pln">allocatorFor</span></a><span class="pun">!</span><span class="pln">T</span></code>) and then creates in the memory allocated an object of
+    type <code class="lang-d"><span class="pln">T</span></code>, using <code class="lang-d"><a href="../../../../std/experimental/allocator/typed/typed_allocator.make.html#args"><span class="pln">args</span></a></code> (if any) for its initialization. Initialization
     occurs in the memory allocated and is otherwise semantically the same as
-    <code class="lang-d"><span class="pln">T</span><span class="pun">(<a href="../../../../std/experimental/allocator/typed/typed_allocator.make.html#args"></span><span class="pln"><a href="../../../../std/experimental/allocator/typed/typed_allocator.make.html#args"><span class="pln">args</span></a></span></a><span class="pun">)</span></code>. (Note that using <code class="lang-d"><span class="pln"><span class="pln">make</span></span><span class="pun">!(</span><span class="pln">T</span><span class="pun">[])</span></code> creates a pointer to an
+    <code class="lang-d"><span class="pln">T</span><span class="pun">(<a href="../../../../std/experimental/allocator/typed/typed_allocator.make.html#args"></span><span class="pln">args</span></a><span class="pun">)</span></code>. (Note that using <code class="lang-d"><span class="pln">make</span><span class="pun">!(</span><span class="pln">T</span><span class="pun">[])</span></code> creates a pointer to an
     (empty) array of <code class="lang-d"><span class="pln">T</span></code>s, not an array. To allocate and initialize an
-    array, use <code class="lang-d"><a href="../../../../std/experimental/allocator/typed/typed_allocator.make_array.html"><span class="pln"><a href="../../../../std/experimental/allocator/typed/typed_allocator.make_array.html"><span class="pln">makeArray</span></a></span></a><span class="pun">!</span><span class="pln">T</span></code> described below.)
+    array, use <code class="lang-d"><a href="../../../../std/experimental/allocator/typed/typed_allocator.make_array.html"><span class="pln">makeArray</span></a><span class="pun">!</span><span class="pln">T</span></code> described below.)
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">make</span>(T, A...)
+				<span class="kwd">auto</span> <span class="pln">make</span>(T, A...)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="kwd">auto ref </span><span class="pln">A</span> <span class="pln">args</span>

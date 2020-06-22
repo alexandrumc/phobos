@@ -8,7 +8,7 @@
 		<meta charset="utf-8"/>
 		<meta name="keywords" content="D programming language"/>
 		<meta name="description" content="D Programming Language"/>
-		<title>Function builtinDeinitialize - D Programming Language</title>
+		<title>Function exp - D Programming Language</title>
 		<link rel="stylesheet" href="../../../css/codemirror.css"/>
 		<link rel="stylesheet" href="../../../css/style.css"/>
 		<link rel="stylesheet" href="../../../css/print.css" media="print"/>
@@ -18,7 +18,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.1, maximum-scale=10.0"/>
 	</head>
-	<body class="std" id="dmd.builtin">
+	<body class="std" id="std.complex">
 		<script type="text/javascript">document.body.className += ' have-javascript';</script>
 		<div id="top">
 			<div class="helper">
@@ -208,7 +208,7 @@ $('#symbolSearchPane').show();</script>
 					<a href="../../../library-prerelease/index.html">overview</a>
 				</p>
 				<ul>
-					<li class="expand-container">
+					<li class="expand-container open">
 						<a class="package expand-toggle" href="#">
 							<span>std</span>
 						</a>
@@ -646,7 +646,7 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
-						<a class="module " href="../../std/complex.html">
+						<a class="module selected" href="../../std/complex.html">
 							<span>complex</span>
 						</a>
 					</li>
@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1184,7 +1194,7 @@ $('#symbolSearchPane').show();</script>
 					</li>
 						</ul>
 					</li>
-					<li class="expand-container open">
+					<li class="expand-container">
 						<a class="package expand-toggle" href="#">
 							<span>dmd</span>
 						</a>
@@ -1734,6 +1744,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../dmd/argtypes_sysv_x64.html">
 							<span>argtypes_sysv_x64</span>
 						</a>
@@ -1779,7 +1794,7 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
-						<a class="module selected" href="../../dmd/builtin.html">
+						<a class="module " href="../../dmd/builtin.html">
 							<span>builtin</span>
 						</a>
 					</li>
@@ -2910,23 +2925,23 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/dmd/blob/master/src/dmd/builtin.d#L477">
+							<a href="https://github.com/dlang/phobos/blob/master/std/complex.d#L1158">
 								View source code
 							</a>
 							<div>
-								Display the source code in dmd/builtin.d from which this
+								Display the source code in std/complex.d from which this
 								page was generated on github.
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://issues.dlang.org/enter_bug.cgi?bug_file_loc=http%3A%2F%2Fdlang.org/library-prerelease/src/dmd/builtin.html&amp;bug_severity=enhancement&amp;component=dmd&amp;op_sys=All&amp;priority=P3&amp;product=D&amp;rep_platform=All&amp;short_desc=%5BFunction builtinDeinitialize%5D&amp;version=D2">Report a bug</a>
+							<a href="https://issues.dlang.org/enter_bug.cgi?bug_file_loc=http%3A%2F%2Fdlang.org/library-prerelease/std/complex.html&amp;bug_severity=enhancement&amp;component=phobos&amp;op_sys=All&amp;priority=P3&amp;product=D&amp;rep_platform=All&amp;short_desc=%5BFunction exp%5D&amp;version=D2">Report a bug</a>
 							<div>
 								If you spot a problem with this page, click here to create a
 								Bugzilla issue.
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/dmd/edit/master/src/dmd/builtin.d#L477">
+							<a href="https://github.com/dlang/phobos/edit/master/std/complex.d#L1158">
 								Improve this page
 							</a>
 							<div>
@@ -2937,28 +2952,71 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../dmd/builtin.html">dmd.builtin</a>.builtinDeinitialize</code></h1><p>Deinitializes the global state of the compiler.
+				</div><h1>Function <code><a href="../../std/complex.html">std.complex</a>.exp</code></h1><p>Calculates e<sup>x</sup>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="typ">void</span> <span class="pln">builtinDeinitialize</span><span class="pun">(</span><span class="pun">)</span><span class="pun">;</span>
+				<a href="../../std/complex/complex.html"><span class="typ">Complex</span></a>!T <span class="pln">exp</span>(T)
+				<span class="pun">(</span>
+				<br/>
+				&nbsp;&nbsp;<a href="../../std/complex/complex.html"><span class="typ">Complex</span></a>!T <span class="pln">x</span>
+				<br/>
+				<span class="pun">)</span><span class="pln"> </span><span class="kwd">pure nothrow @nogc @trusted</span><span class="pun">;</span>
 						</div>
 					</code>
 				</div>
-				<section><p>This can be used to restore the state set by <code class="lang-d"><span class="pln">builtin_init</span></code> to its original
- state.
+				
+				<section><h2>Parameters</h2>
+<table><col class="caption"><tr><th>Name</th><th>Description</th></tr>
+<tr><td id="x">x</td><td> A complex number</td></tr>
+</table>
+</section>
+<section><h2>Returns</h2>
+<p>The complex base e exponential of <code class="lang-d"><a href="../../std/complex/exp.html#x"><span class="pln">x</span></a></code>
+</p>
+
+<p>      <table border="1" cellpadding="4" cellspacing="0">
+                <caption>Special Values</caption>
+                      <tr><th scope="col">x</th>                           <th scope="col">exp(x)</th></tr>
+      <tr><td>(&plusmn;0, +0)</td>            <td>(1, +0)</td></tr>
+      <tr><td>(any, +&infin;)</td>            <td>(<span class="red">NAN</span>, <span class="red">NAN</span>)</td></tr>
+      <tr><td>(any, <span class="red">NAN</span>)                <td>(<span class="red">NAN</span>, <span class="red">NAN</span>)</td></td></tr>
+      <tr><td>(+&infin;, +0)</td>             <td>(+&infin;, +0)</td></tr>
+      <tr><td>(-&infin;, any)</td>            <td>(&plusmn;0, cis(x.im))</td></tr>
+      <tr><td>(+&infin;, any)</td>            <td>(&plusmn;&infin;, cis(x.im))</td></tr>
+      <tr><td>(-&infin;, +&infin;)</td>      <td>(&plusmn;0, &plusmn;0)</td></tr>
+      <tr><td>(+&infin;, +&infin;)</td>      <td>(&plusmn;&infin;, <span class="red">NAN</span>)</td></tr>
+      <tr><td>(-&infin;, <span class="red">NAN</span>)</td>         <td>(&plusmn;0, &plusmn;0)</td></tr>
+      <tr><td>(+&infin;, <span class="red">NAN</span>)</td>         <td>(&plusmn;&infin;, <span class="red">NAN</span>)</td></tr>
+      <tr><td>(<span class="red">NAN</span>, +0)</td>                <td>(<span class="red">NAN</span>, +0)</td></tr>
+      <tr><td>(<span class="red">NAN</span>, any)</td>               <td>(<span class="red">NAN</span>, <span class="red">NAN</span>)</td></tr>
+      <tr><td>(<span class="red">NAN</span>, <span class="red">NAN</span>)</td>            <td>(<span class="red">NAN</span>, <span class="red">NAN</span>)</td></tr>
+      </table>
 </p>
 </section>
+<section><h2>Example</h2>
+<p><span class="dlang_runnable"></span>
+</p>
+<pre class="code"><code class="lang-d"><span class="kwd">import <a href="../../std/math.html"></span><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">math</span></a><span class="pln"> </span><span class="pun">: </span><span class="pln">isClose</span><span class="pun">, </span><span class="pln">PI</span><span class="pun">;
 
-				
+</span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">exp</span><span class="pun">(<a href="../../std/complex/complex.html"></span><span class="pln">complex</span></a><span class="pun">(</span><span class="lit">0.0</span><span class="pun">, </span><span class="lit">0.0</span><span class="pun">))); </span><span class="com">// complex(1.0, 0.0)
+
+</span><span class="kwd">auto </span><span class="pln">a </span><span class="pun">= <a href="../../std/complex/complex.html"></span><span class="pln">complex</span></a><span class="pun">(</span><span class="lit">2.0</span><span class="pun">, </span><span class="lit">1.0</span><span class="pun">);
+</span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">exp</span><span class="pun">(<a href="../../std/complex/conj.html"></span><span class="pln">conj</span></a><span class="pun">(</span><span class="pln">a</span><span class="pun">))); </span><span class="com">// conj(exp(a))
+
+</span><span class="kwd">auto </span><span class="pln">b </span><span class="pun">= </span><span class="pln">exp</span><span class="pun">(<a href="../../std/complex/complex.html"></span><span class="pln">complex</span></a><span class="pun">(</span><span class="lit">0.0L</span><span class="pun">, </span><span class="lit">1.0L</span><span class="pun">) * </span><span class="pln">PI</span><span class="pun">);
+</span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">isClose</span><span class="pun">(</span><span class="pln">b</span><span class="pun">, -</span><span class="lit">1.0L</span><span class="pun">, </span><span class="lit">0.0</span><span class="pun">, </span><span class="lit">1e-19</span><span class="pun">));
+</span></code></pre>
+</section>
+
 				<section>
-					<h2>Authors</h2><p><a href="http://www.digitalmars.com">Walter Bright</a>
+					<h2>Authors</h2><p>Lars Tandle Kyllingstad, Don Clugston
 </p>
 
 				</section>
 				<section>
-					<h2>License</h2><p><a href="http://www.boost.org/LICENSE_1_0.txt">Boost License 1.0</a>
+					<h2>License</h2><p><a href="http://boost.org/LICENSE_1_0.txt">Boost License 1.0</a>
 </p>
 
 				</section>

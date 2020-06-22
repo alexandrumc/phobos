@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2953,13 +2968,13 @@ It is equivalent to <code class="lang-d"><span class="kwd">final</span></code> v
 <code class="lang-d"><span class="pln">readonly</span></code> variables in C#.
 </p>
 
-<p>When <code class="lang-d"><span class="pln">T</span></code> is a <code class="lang-d"><span class="kwd">const</span></code> or <code class="lang-d"><span class="kwd">immutable</span></code> type, <code class="lang-d"><a href="../../../std/experimental/typecons/final.html"><span class="typ"><span class="typ">Final</span></span></a></code> aliases
+<p>When <code class="lang-d"><span class="pln">T</span></code> is a <code class="lang-d"><span class="kwd">const</span></code> or <code class="lang-d"><span class="kwd">immutable</span></code> type, <code class="lang-d"><span class="typ">Final</span></code> aliases
 to <code class="lang-d"><span class="pln">T</span></code>.
 </p>
 </section>
 
 				<section><h2>Example</h2>
-<p><code class="lang-d"><a href="../../../std/experimental/typecons/final.html"><span class="typ"><span class="typ">Final</span></span></a></code> can be used to create class references which cannot be rebound:<span class="dlang_runnable"></span>
+<p><code class="lang-d"><span class="typ">Final</span></code> can be used to create class references which cannot be rebound:<span class="dlang_runnable"></span>
 </p>
 <pre class="code"><code class="lang-d"><span class="kwd">static class </span><span class="pln">A
 </span><span class="pun">{
@@ -2981,7 +2996,7 @@ to <code class="lang-d"><span class="pln">T</span></code>.
 </span></code></pre>
 </section>
 <section><h2>Example</h2>
-<p><code class="lang-d"><a href="../../../std/experimental/typecons/final.html"><span class="typ"><span class="typ">Final</span></span></a></code> can also be used to create read-only data fields without using transitive immutability:<span class="dlang_runnable"></span>
+<p><code class="lang-d"><span class="typ">Final</span></code> can also be used to create read-only data fields without using transitive immutability:<span class="dlang_runnable"></span>
 </p>
 <pre class="code"><code class="lang-d"><span class="kwd">static class </span><span class="pln">A
 </span><span class="pun">{

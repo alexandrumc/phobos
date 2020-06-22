@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/conv.d#L5810">
+							<a href="https://github.com/dlang/phobos/blob/master/std/conv.d#L5816">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/conv.d#L5810">
+							<a href="https://github.com/dlang/phobos/edit/master/std/conv.d#L5816">
 								Improve this page
 							</a>
 							<div>
@@ -2937,15 +2952,15 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../std/conv.html">std.conv</a>.unsigned</code></h1><p>Returns the corresponding unsigned value for <code class="lang-d"><a href="../std/conv/unsigned.html#x"><span class="pln"><a href="../../std/conv/unsigned.html#x"><span class="pln">x</span></a></span></a></code> (e.g. if <code class="lang-d"><a href="../std/conv/unsigned.html#x"><span class="pln"><a href="../../std/conv/unsigned.html#x"><span class="pln">x</span></a></span></a></code> has type
+				</div><h1>Function <code><a href="../../std/conv.html">std.conv</a>.unsigned</code></h1><p>Returns the corresponding unsigned value for <code class="lang-d"><a href="../../std/conv/unsigned.html#x"><span class="pln">x</span></a></code> (e.g. if <code class="lang-d"><a href="../../std/conv/unsigned.html#x"><span class="pln">x</span></a></code> has type
     <code class="lang-d"><span class="typ">int</span></code>, it returns <code class="lang-d"><span class="kwd">cast</span><span class="pun">(</span><span class="typ">uint</span><span class="pun">) <a href="../../std/conv/unsigned.html#x"></span><span class="pln">x</span></a></code>). The advantage compared to the cast
-    is that you do not need to rewrite the cast if <code class="lang-d"><a href="../std/conv/unsigned.html#x"><span class="pln"><a href="../../std/conv/unsigned.html#x"><span class="pln">x</span></a></span></a></code> later changes type
+    is that you do not need to rewrite the cast if <code class="lang-d"><a href="../../std/conv/unsigned.html#x"><span class="pln">x</span></a></code> later changes type
     (e.g from <code class="lang-d"><span class="typ">int</span></code> to <code class="lang-d"><span class="typ">long</span></code>).
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">unsigned</span>(T)
+				<span class="kwd">auto</span> <span class="pln">unsigned</span>(T)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">T</span> <span class="pln">x</span>
@@ -2955,7 +2970,7 @@ $('#symbolSearchPane').show();</script>
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isIntegral</span><span class="pun">!</span><span class="pln">T</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">unsigned</span>(T)
+				<span class="kwd">auto</span> <span class="pln">unsigned</span>(T)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">T</span> <span class="pln">x</span>

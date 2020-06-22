@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2964,6 +2979,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../core/sync/mutex/mutex.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Initializes a mutex object.
 </td>
@@ -2973,8 +2989,9 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../core/sync/mutex/mutex.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(obj)</span>
 							</td>
-							<td>Initializes a mutex object and sets it as the monitor for <code class="lang-d"><a href="../../../core/sync/mutex/mutex.this.html#obj"><span class="pln"><a href="../../../core/sync/mutex/mutex.this.html#obj"><span class="pln">obj</span></a></span></a></code>.
+							<td>Initializes a mutex object and sets it as the monitor for <code class="lang-d"><a href="../../../core/sync/mutex/mutex.this.html#obj"><span class="pln">obj</span></a></code>.
 </td>
 						</tr>
 					</table>
@@ -2990,6 +3007,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../core/sync/mutex/mutex.lock.html" class="public">
 									<code>lock</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>If this lock is not already held by the caller, the lock is acquired,
  then the internal counter is incremented by one.
@@ -3000,6 +3018,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../core/sync/mutex/mutex.lock_nothrow.html" class="public">
 									<code>lock_nothrow</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>If this lock is not already held by the caller, the lock is acquired,
  then the internal counter is incremented by one.
@@ -3010,6 +3029,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../core/sync/mutex/mutex.try_lock.html" class="public">
 									<code>tryLock</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>If the lock is held by another caller, the method returns.  Otherwise,
  the lock is acquired if it is not already held, and then the internal
@@ -3021,6 +3041,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../core/sync/mutex/mutex.try_lock_nothrow.html" class="public">
 									<code>tryLock_nothrow</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>If the lock is held by another caller, the method returns.  Otherwise,
  the lock is acquired if it is not already held, and then the internal
@@ -3032,6 +3053,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../core/sync/mutex/mutex.unlock.html" class="public">
 									<code>unlock</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Decrements the internal lock count by one.  If this brings the count to
  zero, the lock is released.
@@ -3042,6 +3064,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../core/sync/mutex/mutex.unlock_nothrow.html" class="public">
 									<code>unlock_nothrow</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Decrements the internal lock count by one.  If this brings the count to
  zero, the lock is released.
@@ -3052,6 +3075,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../object/object.factory.html" class="public inherited">
 									<code>factory</code>
 								</a>
+								<span class="tableEntryAnnotation">(classname)</span>
 							</td>
 							<td>Create instance of class specified by the fully qualified name
  classname.
@@ -3064,6 +3088,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../object/object.op_cmp.html" class="public inherited">
 									<code>opCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Compare with another Object obj.
 </td>
@@ -3073,6 +3098,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../object/object.op_equals.html" class="public inherited">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Test whether <code class="lang-d"><span class="kwd">this</span></code> is equal to <code class="lang-d"><a href="../../../object/object.op_equals.html#o"><span class="pln">o</span></a></code>.
  The default implementation only compares by identity (using the <code class="lang-d"><span class="kwd">is</span></code> operator).
@@ -3084,6 +3110,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../object/object.to_hash.html" class="public inherited">
 									<code>toHash</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Compute hash function for Object.
 </td>
@@ -3093,6 +3120,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../object/object.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Convert Object to a human readable string.
 </td>

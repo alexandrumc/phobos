@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2938,7 +2953,7 @@ $('#symbolSearchPane').show();</script>
 						</div>
 					</div>
 				</div><h1>Struct <code><a href="../../std/variant.html">std.variant</a>.VariantN</code></h1><p>Back-end type seldom used directly by user
- code. Two commonly-used types using <code class="lang-d"><span class="typ"><span class="typ">VariantN</span></span></code> are:
+ code. Two commonly-used types using <code class="lang-d"><span class="typ">VariantN</span></code> are:
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2983,8 +2998,9 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/variant/variant_n.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
-							<td>Constructs a <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></span></a></code> value given an argument of a
+							<td>Constructs a <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></code> value given an argument of a
  generic type. Statically rejects disallowed types.
 </td>
 						</tr>
@@ -2993,6 +3009,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/variant/variant_n.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
 							<td>Allows assignment from a subset algebraic type
 </td>
@@ -3009,9 +3026,9 @@ $('#symbolSearchPane').show();</script>
 							<td>
 								<a href="../../std/variant/variant_n.coerce.html" class="public property"><code>coerce</code></a><span class="tableEntryAnnotation">[get]</span>
 							</td>
-							<td class="typecol"><code class="prettyprint lang-d"><span class="pln">T</span></code></td><td>Returns the value stored in the <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></span></a></code> object,
+							<td class="typecol"><code class="prettyprint lang-d"><span class="pln">T</span></code></td><td>Returns the value stored in the <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></code> object,
  explicitly converted (coerced) to the requested type <code class="lang-d"><span class="pln"> T</span></code>. If <code class="lang-d"><span class="pln">T</span></code> is a string type, the value is formatted as
- a string. If the <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></span></a></code> object is a string, a
+ a string. If the <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></code> object is a string, a
  parse of the string to type <code class="lang-d"><span class="pln">T</span></code> is attempted. If a
  conversion is not possible, throws a <code class="lang-d"><span class="pln"> <a href="../../std/variant/variant_exception.html"></span><span class="typ">VariantException</span></a></code>.
 </td>
@@ -3020,7 +3037,7 @@ $('#symbolSearchPane').show();</script>
 							<td>
 								<a href="../../std/variant/variant_n.converts_to.html" class="public property"><code>convertsTo</code></a><span class="tableEntryAnnotation">[get]</span>
 							</td>
-							<td class="typecol"><code class="prettyprint lang-d"><span class="typ">bool</span></code></td><td>Returns <code class="lang-d"><span class="kwd">true</span></code> if and only if the <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></span></a></code>
+							<td class="typecol"><code class="prettyprint lang-d"><span class="typ">bool</span></code></td><td>Returns <code class="lang-d"><span class="kwd">true</span></code> if and only if the <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></code>
  object holds an object implicitly convertible to type <code class="lang-d"><span class="pln">T</span></code>.
  Implicit convertibility is defined as per
  <a href="../../std/traits/implicit_conversion_targets.html" title="std.traits.ImplicitConversionTargets">ImplicitConversionTargets</a>.
@@ -3039,7 +3056,7 @@ $('#symbolSearchPane').show();</script>
 							<td>
 								<a href="../../std/variant/variant_n.has_value.html" class="public property"><code>hasValue</code></a><span class="tableEntryAnnotation">[get]</span>
 							</td>
-							<td class="typecol"><code class="prettyprint lang-d"><span class="typ">bool</span></code></td><td>Returns true if and only if the <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></span></a></code> object
+							<td class="typecol"><code class="prettyprint lang-d"><span class="typ">bool</span></code></td><td>Returns true if and only if the <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></code> object
  holds a valid value (has been initialized with, or assigned
  from, a valid value).
 </td>
@@ -3083,8 +3100,9 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/variant/variant_n.op_apply.html" class="public">
 									<code>opApply</code>
 								</a>
+								<span class="tableEntryAnnotation">(dg)</span>
 							</td>
-							<td>If the <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></span></a></code> contains an array, applies <code class="lang-d"><a href="../../std/variant/variant_n.op_apply.html#dg"><span class="pln"><a href="../../std/variant/variant_n.op_apply.html#dg"><span class="pln">dg</span></a></span></a></code> to each
+							<td>If the <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></code> contains an array, applies <code class="lang-d"><a href="../../std/variant/variant_n.op_apply.html#dg"><span class="pln">dg</span></a></code> to each
        element of the array in turn. Otherwise, throws an exception.
 </td>
 						</tr>
@@ -3093,6 +3111,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/variant/variant_n.op_assign.html" class="public">
 									<code>opAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td>Assigns a <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></code> from a generic
  argument. Statically rejects disallowed types.
@@ -3103,9 +3122,10 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/variant/variant_n.op_binary.html" class="public">
 									<code>opBinary</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
-							<td>Arithmetic between <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></span></a></code> objects and numeric
- values. All arithmetic operations return a <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></span></a></code>
+							<td>Arithmetic between <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></code> objects and numeric
+ values. All arithmetic operations return a <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></code>
  object typed depending on the types of both values
  involved. The conversion rules mimic D's built-in rules for
  arithmetic conversions.
@@ -3116,9 +3136,10 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/variant/variant_n.op_binary_right.html" class="public">
 									<code>opBinaryRight</code>
 								</a>
+								<span class="tableEntryAnnotation">(lhs)</span>
 							</td>
-							<td>Arithmetic between <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ"><a href="../../std/variant/variant_n.html"><span class="typ"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></span></a></span></a></code> objects and numeric
- values. All arithmetic operations return a <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ"><a href="../../std/variant/variant_n.html"><span class="typ"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></span></a></span></a></code>
+							<td>Arithmetic between <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></code> objects and numeric
+ values. All arithmetic operations return a <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></code>
  object typed depending on the types of both values
  involved. The conversion rules mimic D's built-in rules for
  arithmetic conversions.
@@ -3129,10 +3150,11 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/variant/variant_n.op_cmp.html" class="public">
 									<code>opCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td>Ordering comparison used by the "&lt;", "&lt;=", "&gt;", and "&gt;="
  operators. In case comparison is not sensible between the held
- value and <code class="lang-d"><a href="../../std/variant/variant_n.op_cmp.html#rhs"><span class="pln"><a href="../../std/variant/variant_n.op_cmp.html#rhs"><span class="pln">rhs</span></a></span></a></code>, an exception is thrown.
+ value and <code class="lang-d"><a href="../../std/variant/variant_n.op_cmp.html#rhs"><span class="pln">rhs</span></a></code>, an exception is thrown.
 </td>
 						</tr>
 						<tr>
@@ -3140,6 +3162,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/variant/variant_n.op_equals.html" class="public">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td>Comparison for equality used by the "==" and "!="  operators.
 </td>
@@ -3149,6 +3172,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/variant/variant_n.op_index.html" class="public">
 									<code>opIndex</code>
 								</a>
+								<span class="tableEntryAnnotation">(i)</span>
 							</td>
 							<td>Array and associative array operations. If a <code class="lang-d"><span class="pln"> <a href="../../std/variant/variant_n.html"></span><span class="typ">VariantN</span></a></code> contains an (associative) array, it can be indexed
  into. Otherwise, an exception is thrown.
@@ -3159,6 +3183,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/variant/variant_n.op_index_assign.html" class="public">
 									<code>opIndexAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(value, i)</span>
 							</td>
 							<td>Array and associative array operations. If a <code class="lang-d"><span class="pln"> <a href="../../std/variant/variant_n.html"></span><span class="typ">VariantN</span></a></code> contains an (associative) array, it can be indexed
  into. Otherwise, an exception is thrown.
@@ -3169,6 +3194,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/variant/variant_n.op_index_op_assign.html" class="public">
 									<code>opIndexOpAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(value, i)</span>
 							</td>
 							<td>Array and associative array operations. If a <code class="lang-d"><span class="pln"> <a href="../../std/variant/variant_n.html"></span><span class="typ">VariantN</span></a></code> contains an (associative) array, it can be indexed
  into. Otherwise, an exception is thrown.
@@ -3179,9 +3205,10 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/variant/variant_n.op_op_assign.html" class="public">
 									<code>opOpAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
-							<td>Arithmetic between <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ"><a href="../../std/variant/variant_n.html"><span class="typ"><a href="../../std/variant/variant_n.html"><span class="typ"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></span></a></span></a></span></a></code> objects and numeric
- values. All arithmetic operations return a <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ"><a href="../../std/variant/variant_n.html"><span class="typ"><a href="../../std/variant/variant_n.html"><span class="typ"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></span></a></span></a></span></a></code>
+							<td>Arithmetic between <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></code> objects and numeric
+ values. All arithmetic operations return a <code class="lang-d"><a href="../../std/variant/variant_n.html"><span class="typ">VariantN</span></a></code>
  object typed depending on the types of both values
  involved. The conversion rules mimic D's built-in rules for
  arithmetic conversions.
@@ -3192,6 +3219,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/variant/variant_n.to_hash.html" class="public">
 									<code>toHash</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Computes the hash of the held value.
 </td>
@@ -3201,6 +3229,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/variant/variant_n.to_string.html" class="public">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Formats the stored value as a string.
 </td>

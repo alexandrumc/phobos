@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2952,19 +2967,19 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function TaskPool.asyncBuf</h2><p>Given a <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html#source"><span class="pln"><a href="../../std/parallelism/task_pool.async_buf.html#source"><span class="pln">source</span></a></span></a></code> range that is expensive to iterate over, returns an
+				</nav><h2 id="0">Function TaskPool.asyncBuf</h2><p>Given a <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html#source"><span class="pln">source</span></a></code> range that is expensive to iterate over, returns an
     <a href="../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a> that
-    asynchronously buffers the contents of <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html#source"><span class="pln"><a href="../../std/parallelism/task_pool.async_buf.html#source"><span class="pln">source</span></a></span></a></code> into a buffer of <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html#bufSize"><span class="pln"><a href="../../std/parallelism/task_pool.async_buf.html#bufSize"><span class="pln">bufSize</span></a></span></a></code> elements in a worker thread,
+    asynchronously buffers the contents of <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html#source"><span class="pln">source</span></a></code> into a buffer of <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html#bufSize"><span class="pln">bufSize</span></a></code> elements in a worker thread,
     while making previously buffered elements from a second buffer, also of size
-    <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html#bufSize"><span class="pln"><a href="../../std/parallelism/task_pool.async_buf.html#bufSize"><span class="pln">bufSize</span></a></span></a></code>, available via the range interface of the returned
+    <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html#bufSize"><span class="pln">bufSize</span></a></code>, available via the range interface of the returned
     object.  The returned range has a length iff <code class="lang-d"><span class="pln">hasLength</span><span class="pun">!</span><span class="pln">S</span></code>.
-    <code class="lang-d"><span class="pln"><span class="pln">asyncBuf</span></span></code> is useful, for example, when performing expensive operations
+    <code class="lang-d"><span class="pln">asyncBuf</span></code> is useful, for example, when performing expensive operations
     on the elements of ranges that represent data on a disk or network.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">asyncBuf</span>(S)
+				<span class="kwd">auto</span> <span class="pln">asyncBuf</span>(S)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">S</span> <span class="pln">source</span><span class="pun">,</span>
@@ -3012,20 +3027,20 @@ $('#symbolSearchPane').show();</script>
     allowed to propagate to the caller.
 </p>
 </section>
-<h2 id="1">Function TaskPool.asyncBuf</h2><p>Given a callable object <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html#next"><span class="pln"><a href="../../std/parallelism/task_pool.async_buf.html#next"><span class="pln">next</span></a></span></a></code> that writes to a user-provided buffer and
-    a second callable object <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html#empty"><span class="pln"><a href="../../std/parallelism/task_pool.async_buf.html#empty"><span class="pln">empty</span></a></span></a></code> that determines whether more data is
-    available to write via <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html#next"><span class="pln"><a href="../../std/parallelism/task_pool.async_buf.html#next"><span class="pln">next</span></a></span></a></code>, returns an input range that
-    asynchronously calls <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html#next"><span class="pln"><a href="../../std/parallelism/task_pool.async_buf.html#next"><span class="pln">next</span></a></span></a></code> with a set of size <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html#nBuffers"><span class="pln"><a href="../../std/parallelism/task_pool.async_buf.html#nBuffers"><span class="pln">nBuffers</span></a></span></a></code> of buffers
+<h2 id="1">Function TaskPool.asyncBuf</h2><p>Given a callable object <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html#next"><span class="pln">next</span></a></code> that writes to a user-provided buffer and
+    a second callable object <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html#empty"><span class="pln">empty</span></a></code> that determines whether more data is
+    available to write via <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html#next"><span class="pln">next</span></a></code>, returns an input range that
+    asynchronously calls <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html#next"><span class="pln">next</span></a></code> with a set of size <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html#nBuffers"><span class="pln">nBuffers</span></a></code> of buffers
     and makes the results available in the order they were obtained via the
     input range interface of the returned object.  Similarly to the
-    input range overload of <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html"><span class="pln"><a href="../../std/parallelism/task_pool.async_buf.html"><span class="pln">asyncBuf</span></a></span></a></code>, the first half of the buffers
+    input range overload of <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html"><span class="pln">asyncBuf</span></a></code>, the first half of the buffers
     are made available via the range interface while the second half are
     filled and vice-versa.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">asyncBuf</span>(C1, C2)
+				<span class="kwd">auto</span> <span class="pln">asyncBuf</span>(C1, C2)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">C1</span> <span class="pln">next</span><span class="pun">,</span>

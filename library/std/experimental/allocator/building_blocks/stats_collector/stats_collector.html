@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -3155,11 +3170,12 @@ This data prefixes each allocation.
 								<a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.aligned_allocate.html" class="public">
 									<code>alignedAllocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(n, a)</span>
 							</td>
-							<td>Forwards to <code class="lang-d"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.parent.html"><span class="pln">parent</span></a><wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">alignedAllocate</span></span></code>. Affects per instance: <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_aligned_allocate.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_aligned_allocate.html"><span class="pln">numAlignedAllocate</span></a></span></a></code>,
-    <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_used.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_used.html"><span class="pln">bytesUsed</span></a></span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_allocated.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_allocated.html"><span class="pln">bytesAllocated</span></a></span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_slack.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_slack.html"><span class="pln">bytesSlack</span></a></span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_aligned_allocate_ok.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_aligned_allocate_ok.html"><span class="pln">numAlignedAllocateOk</span></a></span></a></code>,
-    and <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_high_tide.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_high_tide.html"><span class="pln">bytesHighTide</span></a></span></a></code>. Affects per call: <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_aligned_allocate.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_aligned_allocate.html"><span class="pln">numAlignedAllocate</span></a></span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_aligned_allocate_ok.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_aligned_allocate_ok.html"><span class="pln">numAlignedAllocateOk</span></a></span></a></code>,
-    and <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_allocated.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_allocated.html"><span class="pln">bytesAllocated</span></a></span></a></code>.
+							<td>Forwards to <code class="lang-d"><span class="pln">parent<wbr/></span><span class="pun">.</span><span class="pln">alignedAllocate</span></code>. Affects per instance: <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_aligned_allocate.html"><span class="pln">numAlignedAllocate</span></a></code>,
+    <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_used.html"><span class="pln">bytesUsed</span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_allocated.html"><span class="pln">bytesAllocated</span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_slack.html"><span class="pln">bytesSlack</span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_aligned_allocate_ok.html"><span class="pln">numAlignedAllocateOk</span></a></code>,
+    and <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_high_tide.html"><span class="pln">bytesHighTide</span></a></code>. Affects per call: <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_aligned_allocate.html"><span class="pln">numAlignedAllocate</span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_aligned_allocate_ok.html"><span class="pln">numAlignedAllocateOk</span></a></code>,
+    and <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_allocated.html"><span class="pln">bytesAllocated</span></a></code>.
 </td>
 						</tr>
 						<tr>
@@ -3167,10 +3183,11 @@ This data prefixes each allocation.
 								<a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
-							<td>Forwards to <code class="lang-d"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.parent.html"><span class="pln">parent</span></a><wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">allocate</span></span></code>. Affects per instance: <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_allocate.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_allocate.html"><span class="pln">numAllocate</span></a></span></a></code>,
-    <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_used.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_used.html"><span class="pln">bytesUsed</span></a></span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_allocated.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_allocated.html"><span class="pln">bytesAllocated</span></a></span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_slack.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_slack.html"><span class="pln">bytesSlack</span></a></span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_allocate_ok.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_allocate_ok.html"><span class="pln">numAllocateOK</span></a></span></a></code>,
-    and <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_high_tide.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_high_tide.html"><span class="pln">bytesHighTide</span></a></span></a></code>. Affects per call: <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_allocate.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_allocate.html"><span class="pln">numAllocate</span></a></span></a></code>, <code class="lang-d"><span class="pln">    <a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_allocate_ok.html"></span><span class="pln">numAllocateOK</span></a></code>, and <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_allocated.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_allocated.html"><span class="pln">bytesAllocated</span></a></span></a></code>.
+							<td>Forwards to <code class="lang-d"><span class="pln">parent<wbr/></span><span class="pun">.</span><span class="pln">allocate</span></code>. Affects per instance: <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_allocate.html"><span class="pln">numAllocate</span></a></code>,
+    <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_used.html"><span class="pln">bytesUsed</span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_allocated.html"><span class="pln">bytesAllocated</span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_slack.html"><span class="pln">bytesSlack</span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_allocate_ok.html"><span class="pln">numAllocateOK</span></a></code>,
+    and <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_high_tide.html"><span class="pln">bytesHighTide</span></a></code>. Affects per call: <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_allocate.html"><span class="pln">numAllocate</span></a></code>, <code class="lang-d"><span class="pln">    <a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_allocate_ok.html"></span><span class="pln">numAllocateOK</span></a></code>, and <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_allocated.html"><span class="pln">bytesAllocated</span></a></code>.
 </td>
 						</tr>
 						<tr>
@@ -3178,6 +3195,7 @@ This data prefixes each allocation.
 								<a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.by_file_line.html" class="public">
 									<code>byFileLine</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Defined if <code class="lang-d"><span class="pln">perCallFlags</span></code> is nonzero. Iterates all monitored
         file/line instances. The order of iteration is not meaningful (items
@@ -3190,10 +3208,11 @@ This data prefixes each allocation.
 								<a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
-							<td>Defined whether or not <code class="lang-d"><span class="typ">Allocator<wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">deallocate</span></span></code> is defined. Affects
-    per instance: <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_deallocate.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_deallocate.html"><span class="pln">numDeallocate</span></a></span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_used.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_used.html"><span class="pln">bytesUsed</span></a></span></a></code>, and <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_slack.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_slack.html"><span class="pln">bytesSlack</span></a></span></a></code>.
-    Affects per call: <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_deallocate.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_deallocate.html"><span class="pln">numDeallocate</span></a></span></a></code> and <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_contracted.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_contracted.html"><span class="pln">bytesContracted</span></a></span></a></code>.
+							<td>Defined whether or not <code class="lang-d"><span class="typ">Allocator<wbr/></span><span class="pun">.</span><span class="pln">deallocate</span></code> is defined. Affects
+    per instance: <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_deallocate.html"><span class="pln">numDeallocate</span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_used.html"><span class="pln">bytesUsed</span></a></code>, and <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_slack.html"><span class="pln">bytesSlack</span></a></code>.
+    Affects per call: <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_deallocate.html"><span class="pln">numDeallocate</span></a></code> and <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_contracted.html"><span class="pln">bytesContracted</span></a></code>.
 </td>
 						</tr>
 						<tr>
@@ -3201,9 +3220,10 @@ This data prefixes each allocation.
 								<a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.deallocate_all.html" class="public">
 									<code>deallocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
-							<td>Defined only if <code class="lang-d"><span class="typ">Allocator<wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">deallocateAll</span></span></code> is defined. Affects
-        per instance and per call <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_deallocate_all.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_deallocate_all.html"><span class="pln">numDeallocateAll</span></a></span></a></code>.
+							<td>Defined only if <code class="lang-d"><span class="typ">Allocator<wbr/></span><span class="pun">.</span><span class="pln">deallocateAll</span></code> is defined. Affects
+        per instance and per call <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_deallocate_all.html"><span class="pln">numDeallocateAll</span></a></code>.
 </td>
 						</tr>
 						<tr>
@@ -3211,8 +3231,9 @@ This data prefixes each allocation.
 								<a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.empty.html" class="public">
 									<code>empty</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
-							<td>Defined only if <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/options.html#bytesUsed"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/options.html"><span class="typ">Options</span></a><wbr/></span><span class="pun">.</span><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_used.html"><span class="pln">bytesUsed</span></a></span></a></code> is defined. Returns <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_used.html"><span class="pln">bytesUsed</span></a><span class="pln"> </span><span class="pun">==
+							<td>Defined only if <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/options.html#bytesUsed"><span class="typ">Options<wbr/></span><span class="pun">.</span><span class="pln">bytesUsed</span></a></code> is defined. Returns <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_used.html"><span class="pln">bytesUsed</span></a><span class="pln"> </span><span class="pun">==
     </span><span class="lit">0</span></code>.
 </td>
 						</tr>
@@ -3221,6 +3242,7 @@ This data prefixes each allocation.
 								<a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.expand.html" class="public">
 									<code>expand</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, delta)</span>
 							</td>
 							<td>Defined whether or not <code class="lang-d"><span class="typ">Allocator<wbr/></span><span class="pun">.</span><span class="pln">expand</span></code> is defined. Affects
     per instance: <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_expand.html"><span class="pln">numExpand</span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_expand_ok.html"><span class="pln">numExpandOK</span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_expanded.html"><span class="pln">bytesExpanded</span></a></code>,
@@ -3234,8 +3256,9 @@ This data prefixes each allocation.
 								<a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.owns.html" class="public">
 									<code>owns</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
-							<td>Increments <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_owns.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_owns.html"><span class="pln">numOwns</span></a></span></a></code> (per instance and and per call) and forwards to <code class="lang-d"><span class="pln">    parent<wbr/></span><span class="pun">.</span><span class="pln">owns</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.owns.html#b"></span><span class="pln">b</span></a><span class="pun">)</span></code>.
+							<td>Increments <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_owns.html"><span class="pln">numOwns</span></a></code> (per instance and and per call) and forwards to <code class="lang-d"><span class="pln">    parent<wbr/></span><span class="pun">.</span><span class="pln">owns</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.owns.html#b"></span><span class="pln">b</span></a><span class="pun">)</span></code>.
 </td>
 						</tr>
 						<tr>
@@ -3243,6 +3266,7 @@ This data prefixes each allocation.
 								<a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.reallocate.html" class="public">
 									<code>reallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, s)</span>
 							</td>
 							<td>Defined whether or not <code class="lang-d"><span class="typ">Allocator<wbr/></span><span class="pun">.</span><span class="pln">reallocate</span></code> is defined. Affects
     per instance: <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_reallocate.html"><span class="pln">numReallocate</span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_reallocate_ok.html"><span class="pln">numReallocateOK</span></a></code>, <code class="lang-d"><span class="pln">    <a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.num_reallocate_in_place.html"></span><span class="pln">numReallocateInPlace</span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_not_moved.html"><span class="pln">bytesNotMoved</span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_allocated.html"><span class="pln">bytesAllocated</span></a></code>, <code class="lang-d"><span class="pln">    <a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_slack.html"></span><span class="pln">bytesSlack</span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_expanded.html"><span class="pln">bytesExpanded</span></a></code>, and <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_contracted.html"><span class="pln">bytesContracted</span></a></code>. Affects per call:
@@ -3256,6 +3280,7 @@ This data prefixes each allocation.
 								<a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.report_per_call_statistics.html" class="public">
 									<code>reportPerCallStatistics</code>
 								</a>
+								<span class="tableEntryAnnotation">(output)</span>
 							</td>
 							<td>Defined if <code class="lang-d"><span class="pln">perCallFlags</span></code> is nonzero. Outputs (e.g. to a <code class="lang-d"><span class="typ">File</span></code>)
         a simple report of the collected per-call statistics.
@@ -3266,10 +3291,11 @@ This data prefixes each allocation.
 								<a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.report_statistics.html" class="public">
 									<code>reportStatistics</code>
 								</a>
+								<span class="tableEntryAnnotation">(output)</span>
 							</td>
-							<td>Reports per instance statistics to <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.report_statistics.html#output"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.report_statistics.html#output"><span class="pln">output</span></a></span></a></code> (e.g. <code class="lang-d"><span class="pln">stdout</span></code>). The
+							<td>Reports per instance statistics to <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.report_statistics.html#output"><span class="pln">output</span></a></code> (e.g. <code class="lang-d"><span class="pln">stdout</span></code>). The
     format is simple: one kind and value per line, separated by a colon, e.g.
-    <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_allocated.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_allocated.html"><span class="pln">bytesAllocated</span></a></span></a><span class="pun">:</span><span class="lit">7395404</span></code>
+    <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/stats_collector/stats_collector.bytes_allocated.html"><span class="pln">bytesAllocated</span></a><span class="pun">:</span><span class="lit">7395404</span></code>
 </td>
 						</tr>
 					</table>

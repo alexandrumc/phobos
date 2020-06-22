@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/dmd/blob/master/src/dmd/mtype.d#L6277">
+							<a href="https://github.com/dlang/dmd/blob/master/src/dmd/mtype.d#L6317">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/dmd/edit/master/src/dmd/mtype.d#L6277">
+							<a href="https://github.com/dlang/dmd/edit/master/src/dmd/mtype.d#L6317">
 								Improve this page
 							</a>
 							<div>
@@ -2960,6 +2975,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/ast_node/ast_node.accept.html" class="public inherited">
 									<code>accept</code>
 								</a>
+								<span class="tableEntryAnnotation">(v)</span>
 							</td>
 							<td>Visits this AST node using the given visitor.
 </td>
@@ -2969,6 +2985,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.add_mod.html" class="public inherited">
 									<code>addMod</code>
 								</a>
+								<span class="tableEntryAnnotation">(mod)</span>
 							</td>
 							<td>Add MODxxxx bits to existing type.
  We're adding, not replacing, so adding const to
@@ -2980,6 +2997,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.add_stc.html" class="public inherited">
 									<code>addSTC</code>
 								</a>
+								<span class="tableEntryAnnotation">(stc)</span>
 							</td>
 							<td>Apply STCxxxx bits to existing type.
  Use *before* semantic analysis is run.
@@ -2990,6 +3008,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.add_storage_class.html" class="public inherited">
 									<code>addStorageClass</code>
 								</a>
+								<span class="tableEntryAnnotation">(stc)</span>
 							</td>
 							<td>Add storage class modifiers to type.
 </td>
@@ -2999,6 +3018,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.alignment.html" class="public inherited">
 									<code>alignment</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Return alignment to use for this type.
 </td>
@@ -3008,6 +3028,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.base_elem_of.html" class="public inherited">
 									<code>baseElemOf</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>If this is a type of static array, return its base element type.
 </td>
@@ -3017,6 +3038,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.cast_mod.html" class="public inherited">
 									<code>castMod</code>
 								</a>
+								<span class="tableEntryAnnotation">(mod)</span>
 							</td>
 							<td>Apply MODxxxx bits to existing type.
 </td>
@@ -3026,6 +3048,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.check.html" class="public inherited">
 									<code>check</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Look for bugs in constructing types.
 </td>
@@ -3035,6 +3058,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.check_complex_transition.html" class="public inherited">
 									<code>checkComplexTransition</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc, sc)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3043,6 +3067,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.check_deprecated.html" class="public inherited">
 									<code>checkDeprecated</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc, sc)</span>
 							</td>
 							<td>Check type to see if it is based on a deprecated symbol.
 </td>
@@ -3052,6 +3077,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.const_conv.html" class="public inherited">
 									<code>constConv</code>
 								</a>
+								<span class="tableEntryAnnotation">(to)</span>
 							</td>
 							<td>Determine if converting 'this' to 'to' is an identity operation,
  a conversion to const operation, or the types aren't the same.
@@ -3062,6 +3088,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.const_of.html" class="public inherited">
 									<code>constOf</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Convert to 'const'.
 </td>
@@ -3071,6 +3098,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.covariant.html" class="public inherited">
 									<code>covariant</code>
 								</a>
+								<span class="tableEntryAnnotation">(t, pstc, fix17349)</span>
 							</td>
 							<td>Covariant means that 'this' can substitute for 't',
  i.e. a pure function is a match for an impure type.
@@ -3081,6 +3109,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.deduce_wild.html" class="public inherited">
 									<code>deduceWild</code>
 								</a>
+								<span class="tableEntryAnnotation">(t, isRef)</span>
 							</td>
 							<td>Compute MOD bits matching <code class="lang-d"><span class="kwd">this</span></code> argument type to wild parameter type.
 </td>
@@ -3090,6 +3119,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.default_init_literal.html" class="public inherited">
 									<code>defaultInitLiteral</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc)</span>
 							</td>
 							<td>Use when we prefer the default initializer to be a literal,
  rather than a global immutable variable.
@@ -3100,6 +3130,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.deinitialize.html" class="public inherited">
 									<code>deinitialize</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Deinitializes the global state of the compiler.
 </td>
@@ -3109,6 +3140,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.factory.html" class="public inherited">
 									<code>factory</code>
 								</a>
+								<span class="tableEntryAnnotation">(classname)</span>
 							</td>
 							<td>Create instance of class specified by the fully qualified name
  classname.
@@ -3121,6 +3153,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.fix_to.html" class="public inherited">
 									<code>fixTo</code>
 								</a>
+								<span class="tableEntryAnnotation">(t)</span>
 							</td>
 							<td>For our new type 'this', which is type-constructed from t,
  fill in the cto, ito, sto, scto, wto shortcuts.
@@ -3131,6 +3164,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.has_pointers.html" class="public inherited">
 									<code>hasPointers</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Return !=0 if type has pointers that need to
  be scanned by the GC during a collection cycle.
@@ -3141,6 +3175,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.has_void_init_pointers.html" class="public inherited">
 									<code>hasVoidInitPointers</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Detect if type has pointer fields that are initialized to void.
  Local stack variables with such void fields can remain uninitialized,
@@ -3152,6 +3187,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.has_wild.html" class="public inherited">
 									<code>hasWild</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Return !=0 if the type or any of its subtypes is wild.
 </td>
@@ -3161,6 +3197,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.immutable_of.html" class="public inherited">
 									<code>immutableOf</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Convert to 'immutable'.
 </td>
@@ -3170,6 +3207,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.implicit_conv_to.html" class="public inherited">
 									<code>implicitConvTo</code>
 								</a>
+								<span class="tableEntryAnnotation">(to)</span>
 							</td>
 							<td>Determine if 'this' can be implicitly converted
  to type 'to'.
@@ -3180,6 +3218,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.is_assignable.html" class="public inherited">
 									<code>isAssignable</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>When T is mutable,
 </td>
@@ -3189,6 +3228,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.is_boolean.html" class="public inherited">
 									<code>isBoolean</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns true if T can be converted to boolean value.
 </td>
@@ -3198,6 +3238,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.merge2.html" class="public inherited">
 									<code>merge2</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>This version does a merge even if the deco is already computed.
  Necessary for types that have a deco, but are not merged.
@@ -3208,6 +3249,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.mod_to_buffer.html" class="public inherited">
 									<code>modToBuffer</code>
 								</a>
+								<span class="tableEntryAnnotation">(buf)</span>
 							</td>
 							<td>Store this type's modifier name into buf.
 </td>
@@ -3217,6 +3259,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.mod_to_chars.html" class="public inherited">
 									<code>modToChars</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Return this type's modifier name.
 </td>
@@ -3226,8 +3269,20 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.mutable_of.html" class="public inherited">
 									<code>mutableOf</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Make type mutable.
+</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="../../dmd/mtype/type.needs_copy_or_postblit.html" class="public inherited">
+									<code>needsCopyOrPostblit</code>
+								</a>
+								<span class="tableEntryAnnotation">()</span>
+							</td>
+							<td>true if when type is copied, it needs a copy constructor or postblit
+ applied. Only applies to value types, not ref types.
 </td>
 						</tr>
 						<tr>
@@ -3235,6 +3290,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.needs_destruction.html" class="public inherited">
 									<code>needsDestruction</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>true if when type goes out of scope, it needs a destructor applied.
  Only applies to value types, not ref types.
@@ -3245,6 +3301,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.needs_nested.html" class="public inherited">
 									<code>needsNested</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3253,6 +3310,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type_next.next_of.html" class="public inherited">
 									<code>nextOf</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>For TypeFunction, nextOf() can return NULL if the function return
  type is meant to be inferred, and semantic() hasn't yet ben run
@@ -3264,6 +3322,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.null_attributes.html" class="public inherited">
 									<code>nullAttributes</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Return a copy of this type with all attributes null-initialized.
  Useful for creating a type with different modifiers.
@@ -3274,6 +3333,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.number_of_elems.html" class="public inherited">
 									<code>numberOfElems</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc)</span>
 							</td>
 							<td>Compute number of elements for a (possibly multidimensional) static array,
  or 1 for other types.
@@ -3284,6 +3344,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.op_cmp.html" class="public inherited">
 									<code>opCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Compare with another Object obj.
 </td>
@@ -3293,6 +3354,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.op_equals.html" class="public inherited">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Test whether <code class="lang-d"><span class="kwd">this</span></code> is equal to <code class="lang-d"><a href="../../object/object.op_equals.html#o"><span class="pln">o</span></a></code>.
  The default implementation only compares by identity (using the <code class="lang-d"><span class="kwd">is</span></code> operator).
@@ -3304,6 +3366,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.sizemask.html" class="public inherited">
 									<code>sizemask</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Return the mask that an integral type will
  fit into.
@@ -3314,6 +3377,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.to_basetype.html" class="public inherited">
 									<code>toBasetype</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>If this is a shell around another type,
  get that other type.
@@ -3324,6 +3388,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.to_chars.html" class="public inherited">
 									<code>toChars</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>For pretty-printing a type.
 </td>
@@ -3333,6 +3398,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.to_hash.html" class="public inherited">
 									<code>toHash</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Compute hash function for Object.
 </td>
@@ -3342,6 +3408,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.to_head_mutable.html" class="public inherited">
 									<code>toHeadMutable</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Return type with the top level of it being mutable.
 </td>
@@ -3351,6 +3418,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.to_pretty_chars.html" class="public inherited">
 									<code>toPrettyChars</code>
 								</a>
+								<span class="tableEntryAnnotation">(QualifyTypes)</span>
 							</td>
 							<td>For pretty-printing a type.
 </td>
@@ -3360,6 +3428,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/root/rootobject/root_object.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3368,6 +3437,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Convert Object to a human readable string.
 </td>
@@ -3377,6 +3447,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.un_shared_of.html" class="public inherited">
 									<code>unSharedOf</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Make type unshared.
       0            =&gt; 0
@@ -3395,6 +3466,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/mtype/type.wild_of.html" class="public inherited">
 									<code>wildOf</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Convert to 'wild'.
 </td>

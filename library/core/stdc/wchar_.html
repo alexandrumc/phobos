@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2955,479 +2970,656 @@ original C header.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="btowc" class="public" href="../../core/stdc/wchar_/btowc.html">btowc</a><span class="decoration">(c)</span>
+									<a id="btowc" class="public" href="../../core/stdc/wchar_/btowc.html">btowc</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fgetwc" class="public" href="../../core/stdc/wchar_/fgetwc.html">fgetwc</a><span class="decoration">(stream)</span>
+									<a id="fgetwc" class="public" href="../../core/stdc/wchar_/fgetwc.html">fgetwc</a><span class="tableEntryAnnotation">(stream)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fgetws" class="public" href="../../core/stdc/wchar_/fgetws.html">fgetws</a><span class="decoration">(s, n, stream)</span>
+									<a id="fgetws" class="public" href="../../core/stdc/wchar_/fgetws.html">fgetws</a><span class="tableEntryAnnotation">(s, n, stream)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fputwc" class="public" href="../../core/stdc/wchar_/fputwc.html">fputwc</a><span class="decoration">(c, stream)</span>
+									<a id="fputwc" class="public" href="../../core/stdc/wchar_/fputwc.html">fputwc</a><span class="tableEntryAnnotation">(c, stream)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fputws" class="public" href="../../core/stdc/wchar_/fputws.html">fputws</a><span class="decoration">(s, stream)</span>
+									<a id="fputws" class="public" href="../../core/stdc/wchar_/fputws.html">fputws</a><span class="tableEntryAnnotation">(s, stream)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fwide" class="public" href="../../core/stdc/wchar_/fwide.html">fwide</a><span class="decoration">(stream, mode)</span>
+									<a id="fwide" class="public" href="../../core/stdc/wchar_/fwide.html">fwide</a><span class="tableEntryAnnotation">(stream, mode)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fwprintf" class="public" href="../../core/stdc/wchar_/fwprintf.html">fwprintf</a><span class="decoration">(stream, format)</span>
+									<a id="fwprintf" class="public" href="../../core/stdc/wchar_/fwprintf.html">fwprintf</a><span class="tableEntryAnnotation">(stream, format)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fwscanf" class="public" href="../../core/stdc/wchar_/fwscanf.html">fwscanf</a><span class="decoration">(stream, format)</span>
+									<a id="fwscanf" class="public" href="../../core/stdc/wchar_/fwscanf.html">fwscanf</a><span class="tableEntryAnnotation">(stream, format)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getwc" class="public" href="../../core/stdc/wchar_/getwc.html">getwc</a><span class="decoration">(stream)</span>
+									<a id="getwc" class="public" href="../../core/stdc/wchar_/getwc.html">getwc</a><span class="tableEntryAnnotation">(stream)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getwchar" class="public" href="../../core/stdc/wchar_/getwchar.html">getwchar</a><span class="decoration">()</span>
+									<a id="getwchar" class="public" href="../../core/stdc/wchar_/getwchar.html">getwchar</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="mbrlen" class="public" href="../../core/stdc/wchar_/mbrlen.html">mbrlen</a><span class="decoration">(s, n, ps)</span>
+									<a id="mbrlen" class="public" href="../../core/stdc/wchar_/mbrlen.html">mbrlen</a><span class="tableEntryAnnotation">(s, n, ps)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="mbrtowc" class="public" href="../../core/stdc/wchar_/mbrtowc.html">mbrtowc</a><span class="decoration">(pwc, s, n, ps)</span>
+									<a id="mbrtowc" class="public" href="../../core/stdc/wchar_/mbrtowc.html">mbrtowc</a><span class="tableEntryAnnotation">(pwc, s, n, ps)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="mbsinit" class="public" href="../../core/stdc/wchar_/mbsinit.html">mbsinit</a><span class="decoration">(ps)</span>
+									<a id="mbsinit" class="public" href="../../core/stdc/wchar_/mbsinit.html">mbsinit</a><span class="tableEntryAnnotation">(ps)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="mbsrtowcs" class="public" href="../../core/stdc/wchar_/mbsrtowcs.html">mbsrtowcs</a><span class="decoration">(dst, src, len, ps)</span>
+									<a id="mbsrtowcs" class="public" href="../../core/stdc/wchar_/mbsrtowcs.html">mbsrtowcs</a><span class="tableEntryAnnotation">(dst, src, len, ps)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="putwc" class="public" href="../../core/stdc/wchar_/putwc.html">putwc</a><span class="decoration">(c, stream)</span>
+									<a id="putwc" class="public" href="../../core/stdc/wchar_/putwc.html">putwc</a><span class="tableEntryAnnotation">(c, stream)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="putwchar" class="public" href="../../core/stdc/wchar_/putwchar.html">putwchar</a><span class="decoration">(c)</span>
+									<a id="putwchar" class="public" href="../../core/stdc/wchar_/putwchar.html">putwchar</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="swprintf" class="public" href="../../core/stdc/wchar_/swprintf.html">swprintf</a><span class="decoration">(s, n, format)</span>
+									<a id="swprintf" class="public" href="../../core/stdc/wchar_/swprintf.html">swprintf</a><span class="tableEntryAnnotation">(s, n, format)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="swscanf" class="public" href="../../core/stdc/wchar_/swscanf.html">swscanf</a><span class="decoration">(s, format)</span>
+									<a id="swscanf" class="public" href="../../core/stdc/wchar_/swscanf.html">swscanf</a><span class="tableEntryAnnotation">(s, format)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="ungetwc" class="public" href="../../core/stdc/wchar_/ungetwc.html">ungetwc</a><span class="decoration">(c, stream)</span>
+									<a id="ungetwc" class="public" href="../../core/stdc/wchar_/ungetwc.html">ungetwc</a><span class="tableEntryAnnotation">(c, stream)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vfwprintf" class="public" href="../../core/stdc/wchar_/vfwprintf.html">vfwprintf</a><span class="decoration">(stream, format, arg)</span>
+									<a id="vfwprintf" class="public" href="../../core/stdc/wchar_/vfwprintf.html">vfwprintf</a><span class="tableEntryAnnotation">(stream, format, arg)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vfwscanf" class="public" href="../../core/stdc/wchar_/vfwscanf.html">vfwscanf</a><span class="decoration">(stream, format, arg)</span>
+									<a id="vfwscanf" class="public" href="../../core/stdc/wchar_/vfwscanf.html">vfwscanf</a><span class="tableEntryAnnotation">(stream, format, arg)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vswprintf" class="public" href="../../core/stdc/wchar_/vswprintf.html">vswprintf</a><span class="decoration">(s, n, format, arg)</span>
+									<a id="vswprintf" class="public" href="../../core/stdc/wchar_/vswprintf.html">vswprintf</a><span class="tableEntryAnnotation">(s, n, format, arg)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vswscanf" class="public" href="../../core/stdc/wchar_/vswscanf.html">vswscanf</a><span class="decoration">(s, format, arg)</span>
+									<a id="vswscanf" class="public" href="../../core/stdc/wchar_/vswscanf.html">vswscanf</a><span class="tableEntryAnnotation">(s, format, arg)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vwprintf" class="public" href="../../core/stdc/wchar_/vwprintf.html">vwprintf</a><span class="decoration">(format, arg)</span>
+									<a id="vwprintf" class="public" href="../../core/stdc/wchar_/vwprintf.html">vwprintf</a><span class="tableEntryAnnotation">(format, arg)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vwscanf" class="public" href="../../core/stdc/wchar_/vwscanf.html">vwscanf</a><span class="decoration">(format, arg)</span>
+									<a id="vwscanf" class="public" href="../../core/stdc/wchar_/vwscanf.html">vwscanf</a><span class="tableEntryAnnotation">(format, arg)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcrtomb" class="public" href="../../core/stdc/wchar_/wcrtomb.html">wcrtomb</a><span class="decoration">(s, wc, ps)</span>
+									<a id="wcrtomb" class="public" href="../../core/stdc/wchar_/wcrtomb.html">wcrtomb</a><span class="tableEntryAnnotation">(s, wc, ps)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcscat" class="public" href="../../core/stdc/wchar_/wcscat.html">wcscat</a><span class="decoration">(s1, s2)</span>
+									<a id="wcscat" class="public" href="../../core/stdc/wchar_/wcscat.html">wcscat</a><span class="tableEntryAnnotation">(s1, s2)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcschr" class="public" href="../../core/stdc/wchar_/wcschr.html">wcschr</a><span class="decoration">(s, c)</span>
+									<a id="wcschr" class="public" href="../../core/stdc/wchar_/wcschr.html">wcschr</a><span class="tableEntryAnnotation">(s, c)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcscmp" class="public" href="../../core/stdc/wchar_/wcscmp.html">wcscmp</a><span class="decoration">(s1, s2)</span>
+									<a id="wcscmp" class="public" href="../../core/stdc/wchar_/wcscmp.html">wcscmp</a><span class="tableEntryAnnotation">(s1, s2)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcscoll" class="public" href="../../core/stdc/wchar_/wcscoll.html">wcscoll</a><span class="decoration">(s1, s2)</span>
+									<a id="wcscoll" class="public" href="../../core/stdc/wchar_/wcscoll.html">wcscoll</a><span class="tableEntryAnnotation">(s1, s2)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcscpy" class="public" href="../../core/stdc/wchar_/wcscpy.html">wcscpy</a><span class="decoration">(s1, s2)</span>
+									<a id="wcscpy" class="public" href="../../core/stdc/wchar_/wcscpy.html">wcscpy</a><span class="tableEntryAnnotation">(s1, s2)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcscspn" class="public" href="../../core/stdc/wchar_/wcscspn.html">wcscspn</a><span class="decoration">(s1, s2)</span>
+									<a id="wcscspn" class="public" href="../../core/stdc/wchar_/wcscspn.html">wcscspn</a><span class="tableEntryAnnotation">(s1, s2)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcsftime" class="public" href="../../core/stdc/wchar_/wcsftime.html">wcsftime</a><span class="decoration">(s, maxsize, format, timeptr)</span>
+									<a id="wcsftime" class="public" href="../../core/stdc/wchar_/wcsftime.html">wcsftime</a><span class="tableEntryAnnotation">(s, maxsize, format, timeptr)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcslen" class="public" href="../../core/stdc/wchar_/wcslen.html">wcslen</a><span class="decoration">(s)</span>
+									<a id="wcslen" class="public" href="../../core/stdc/wchar_/wcslen.html">wcslen</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcsncat" class="public" href="../../core/stdc/wchar_/wcsncat.html">wcsncat</a><span class="decoration">(s1, s2, n)</span>
+									<a id="wcsncat" class="public" href="../../core/stdc/wchar_/wcsncat.html">wcsncat</a><span class="tableEntryAnnotation">(s1, s2, n)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcsncmp" class="public" href="../../core/stdc/wchar_/wcsncmp.html">wcsncmp</a><span class="decoration">(s1, s2, n)</span>
+									<a id="wcsncmp" class="public" href="../../core/stdc/wchar_/wcsncmp.html">wcsncmp</a><span class="tableEntryAnnotation">(s1, s2, n)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcsncpy" class="public" href="../../core/stdc/wchar_/wcsncpy.html">wcsncpy</a><span class="decoration">(s1, s2, n)</span>
+									<a id="wcsncpy" class="public" href="../../core/stdc/wchar_/wcsncpy.html">wcsncpy</a><span class="tableEntryAnnotation">(s1, s2, n)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcspbrk" class="public" href="../../core/stdc/wchar_/wcspbrk.html">wcspbrk</a><span class="decoration">(s1, s2)</span>
+									<a id="wcspbrk" class="public" href="../../core/stdc/wchar_/wcspbrk.html">wcspbrk</a><span class="tableEntryAnnotation">(s1, s2)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcsrchr" class="public" href="../../core/stdc/wchar_/wcsrchr.html">wcsrchr</a><span class="decoration">(s, c)</span>
+									<a id="wcsrchr" class="public" href="../../core/stdc/wchar_/wcsrchr.html">wcsrchr</a><span class="tableEntryAnnotation">(s, c)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcsrtombs" class="public" href="../../core/stdc/wchar_/wcsrtombs.html">wcsrtombs</a><span class="decoration">(dst, src, len, ps)</span>
+									<a id="wcsrtombs" class="public" href="../../core/stdc/wchar_/wcsrtombs.html">wcsrtombs</a><span class="tableEntryAnnotation">(dst, src, len, ps)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcsspn" class="public" href="../../core/stdc/wchar_/wcsspn.html">wcsspn</a><span class="decoration">(s1, s2)</span>
+									<a id="wcsspn" class="public" href="../../core/stdc/wchar_/wcsspn.html">wcsspn</a><span class="tableEntryAnnotation">(s1, s2)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcsstr" class="public" href="../../core/stdc/wchar_/wcsstr.html">wcsstr</a><span class="decoration">(s1, s2)</span>
+									<a id="wcsstr" class="public" href="../../core/stdc/wchar_/wcsstr.html">wcsstr</a><span class="tableEntryAnnotation">(s1, s2)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcstod" class="public" href="../../core/stdc/wchar_/wcstod.html">wcstod</a><span class="decoration">(nptr, endptr)</span>
+									<a id="wcstod" class="public" href="../../core/stdc/wchar_/wcstod.html">wcstod</a><span class="tableEntryAnnotation">(nptr, endptr)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcstof" class="public" href="../../core/stdc/wchar_/wcstof.html">wcstof</a><span class="decoration">(nptr, endptr)</span>
+									<a id="wcstof" class="public" href="../../core/stdc/wchar_/wcstof.html">wcstof</a><span class="tableEntryAnnotation">(nptr, endptr)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcstok" class="public" href="../../core/stdc/wchar_/wcstok.html">wcstok</a><span class="decoration">(s1, s2, ptr)</span>
+									<a id="wcstok" class="public" href="../../core/stdc/wchar_/wcstok.html">wcstok</a><span class="tableEntryAnnotation">(s1, s2, ptr)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcstol" class="public" href="../../core/stdc/wchar_/wcstol.html">wcstol</a><span class="decoration">(nptr, endptr, base)</span>
+									<a id="wcstol" class="public" href="../../core/stdc/wchar_/wcstol.html">wcstol</a><span class="tableEntryAnnotation">(nptr, endptr, base)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcstold" class="public" href="../../core/stdc/wchar_/wcstold.html">wcstold</a><span class="decoration">(nptr, endptr)</span>
+									<a id="wcstold" class="public" href="../../core/stdc/wchar_/wcstold.html">wcstold</a><span class="tableEntryAnnotation">(nptr, endptr)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcstoll" class="public" href="../../core/stdc/wchar_/wcstoll.html">wcstoll</a><span class="decoration">(nptr, endptr, base)</span>
+									<a id="wcstoll" class="public" href="../../core/stdc/wchar_/wcstoll.html">wcstoll</a><span class="tableEntryAnnotation">(nptr, endptr, base)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcstoul" class="public" href="../../core/stdc/wchar_/wcstoul.html">wcstoul</a><span class="decoration">(nptr, endptr, base)</span>
+									<a id="wcstoul" class="public" href="../../core/stdc/wchar_/wcstoul.html">wcstoul</a><span class="tableEntryAnnotation">(nptr, endptr, base)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcstoull" class="public" href="../../core/stdc/wchar_/wcstoull.html">wcstoull</a><span class="decoration">(nptr, endptr, base)</span>
+									<a id="wcstoull" class="public" href="../../core/stdc/wchar_/wcstoull.html">wcstoull</a><span class="tableEntryAnnotation">(nptr, endptr, base)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wcsxfrm" class="public" href="../../core/stdc/wchar_/wcsxfrm.html">wcsxfrm</a><span class="decoration">(s1, s2, n)</span>
+									<a id="wcsxfrm" class="public" href="../../core/stdc/wchar_/wcsxfrm.html">wcsxfrm</a><span class="tableEntryAnnotation">(s1, s2, n)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wctob" class="public" href="../../core/stdc/wchar_/wctob.html">wctob</a><span class="decoration">(c)</span>
+									<a id="wctob" class="public" href="../../core/stdc/wchar_/wctob.html">wctob</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wmemchr" class="public" href="../../core/stdc/wchar_/wmemchr.html">wmemchr</a><span class="decoration">(s, c, n)</span>
+									<a id="wmemchr" class="public" href="../../core/stdc/wchar_/wmemchr.html">wmemchr</a><span class="tableEntryAnnotation">(s, c, n)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wmemcmp" class="public" href="../../core/stdc/wchar_/wmemcmp.html">wmemcmp</a><span class="decoration">(s1, s2, n)</span>
+									<a id="wmemcmp" class="public" href="../../core/stdc/wchar_/wmemcmp.html">wmemcmp</a><span class="tableEntryAnnotation">(s1, s2, n)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wmemcpy" class="public" href="../../core/stdc/wchar_/wmemcpy.html">wmemcpy</a><span class="decoration">(s1, s2, n)</span>
+									<a id="wmemcpy" class="public" href="../../core/stdc/wchar_/wmemcpy.html">wmemcpy</a><span class="tableEntryAnnotation">(s1, s2, n)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wmemmove" class="public" href="../../core/stdc/wchar_/wmemmove.html">wmemmove</a><span class="decoration">(s1, s2, n)</span>
+									<a id="wmemmove" class="public" href="../../core/stdc/wchar_/wmemmove.html">wmemmove</a><span class="tableEntryAnnotation">(s1, s2, n)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wmemset" class="public" href="../../core/stdc/wchar_/wmemset.html">wmemset</a><span class="decoration">(s, c, n)</span>
+									<a id="wmemset" class="public" href="../../core/stdc/wchar_/wmemset.html">wmemset</a><span class="tableEntryAnnotation">(s, c, n)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wprintf" class="public" href="../../core/stdc/wchar_/wprintf.html">wprintf</a><span class="decoration">(format)</span>
+									<a id="wprintf" class="public" href="../../core/stdc/wchar_/wprintf.html">wprintf</a><span class="tableEntryAnnotation">(format)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wscanf" class="public" href="../../core/stdc/wchar_/wscanf.html">wscanf</a><span class="decoration">(format)</span>
+									<a id="wscanf" class="public" href="../../core/stdc/wchar_/wscanf.html">wscanf</a><span class="tableEntryAnnotation">(format)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3436,7 +3628,7 @@ original C header.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3445,6 +3637,8 @@ original C header.
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

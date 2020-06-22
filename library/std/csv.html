@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -3038,26 +3053,32 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="csvNextToken" class="public" href="../std/csv/csv_next_token.html">csvNextToken</a><span class="decoration">(input, ans, sep, quote, startQuoted)</span>
+									<a id="csvNextToken" class="public" href="../std/csv/csv_next_token.html">csvNextToken</a><span class="tableEntryAnnotation">(input, ans, sep, quote, startQuoted)</span>
 								</code>
 							</td>
 							<td>Lower level control over parsing CSV
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="csvReader" class="public" href="../std/csv/csv_reader.html">csvReader</a><span class="decoration">(input, header, delimiter, quote)</span>
+									<a id="csvReader" class="public" href="../std/csv/csv_reader.html">csvReader</a><span class="tableEntryAnnotation">(input, header, delimiter, quote)</span>
 								</code>
 							</td>
 							<td>Returns an <a href="../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>
 for iterating over records found in <code class="lang-d"><a href="../std/csv/csv_reader.html#input"><span class="pln">input</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3066,7 +3087,7 @@ for iterating over records found in <code class="lang-d"><a href="../std/csv/csv
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3076,6 +3097,8 @@ for iterating over records found in <code class="lang-d"><a href="../std/csv/csv
 							</td>
 							<td>Exception containing the row and column for when an exception was thrown.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3085,6 +3108,8 @@ for iterating over records found in <code class="lang-d"><a href="../std/csv/csv
 							</td>
 							<td>Exception thrown under different conditions based on the type of <code class="lang-d"><span class="pln"> </span><span class="typ">Contents</span></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3096,6 +3121,8 @@ for iterating over records found in <code class="lang-d"><a href="../std/csv/csv
  found in an unquoted field, data continues after a closing quote, or the
  quoted field was not closed before data was empty.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3104,7 +3131,7 @@ for iterating over records found in <code class="lang-d"><a href="../std/csv/csv
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3114,6 +3141,8 @@ for iterating over records found in <code class="lang-d"><a href="../std/csv/csv
 							</td>
 							<td>Determines the behavior for when an error is detected.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

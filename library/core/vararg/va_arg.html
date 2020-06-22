@@ -8,7 +8,7 @@
 		<meta charset="utf-8"/>
 		<meta name="keywords" content="D programming language"/>
 		<meta name="description" content="D Programming Language"/>
-		<title>Function Parser.parseParameters - D Programming Language</title>
+		<title>va_arg - multiple declarations - D Programming Language</title>
 		<link rel="stylesheet" href="../../../css/codemirror.css"/>
 		<link rel="stylesheet" href="../../../css/style.css"/>
 		<link rel="stylesheet" href="../../../css/print.css" media="print"/>
@@ -18,7 +18,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.1, maximum-scale=10.0"/>
 	</head>
-	<body class="std" id="dmd.parse">
+	<body class="std" id="core.vararg">
 		<script type="text/javascript">document.body.className += ' have-javascript';</script>
 		<div id="top">
 			<div class="helper">
@@ -842,7 +842,7 @@ $('#symbolSearchPane').show();</script>
 					</li>
 						</ul>
 					</li>
-					<li class="expand-container">
+					<li class="expand-container open">
 						<a class="package expand-toggle" href="#">
 							<span>core</span>
 						</a>
@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1173,7 +1183,7 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
-						<a class="module " href="../../core/vararg.html">
+						<a class="module selected" href="../../core/vararg.html">
 							<span>vararg</span>
 						</a>
 					</li>
@@ -1184,7 +1194,7 @@ $('#symbolSearchPane').show();</script>
 					</li>
 						</ul>
 					</li>
-					<li class="expand-container open">
+					<li class="expand-container">
 						<a class="package expand-toggle" href="#">
 							<span>dmd</span>
 						</a>
@@ -1734,6 +1744,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../dmd/argtypes_sysv_x64.html">
 							<span>argtypes_sysv_x64</span>
 						</a>
@@ -2169,7 +2184,7 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
-						<a class="module selected" href="../../dmd/parse.html">
+						<a class="module " href="../../dmd/parse.html">
 							<span>parse</span>
 						</a>
 					</li>
@@ -2910,23 +2925,23 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/dmd/blob/master/src/dmd/parse.d#L2806">
+							<a href="https://github.com/dlang/druntime/blob/master/src/core/vararg.d#L54">
 								View source code
 							</a>
 							<div>
-								Display the source code in dmd/parse.d from which this
+								Display the source code in core/vararg.d from which this
 								page was generated on github.
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://issues.dlang.org/enter_bug.cgi?bug_file_loc=http%3A%2F%2Fdlang.org/library-prerelease/src/dmd/parse.html&amp;bug_severity=enhancement&amp;component=dmd&amp;op_sys=All&amp;priority=P3&amp;product=D&amp;rep_platform=All&amp;short_desc=%5BFunction Parser.parseParameters%5D&amp;version=D2">Report a bug</a>
+							<a href="https://issues.dlang.org/enter_bug.cgi?bug_file_loc=http%3A%2F%2Fdlang.org/library-prerelease/src/core/vararg.html&amp;bug_severity=enhancement&amp;component=druntime&amp;op_sys=All&amp;priority=P3&amp;product=D&amp;rep_platform=All&amp;short_desc=%5Bva_arg - multiple declarations%5D&amp;version=D2">Report a bug</a>
 							<div>
 								If you spot a problem with this page, click here to create a
 								Bugzilla issue.
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/dmd/edit/master/src/dmd/parse.d#L2806">
+							<a href="https://github.com/dlang/druntime/edit/master/src/core/vararg.d#L54">
 								Improve this page
 							</a>
 							<div>
@@ -2937,26 +2952,54 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../dmd/parse/parser.html">dmd.parse.Parser</a>.parseParameters</code></h1><p>Parse parameter list.
+				</div>
+				<h1><code><a href="../../core/vararg.html">core.vararg</a>.va_arg</code>  - multiple declarations</h1>
+				<nav class="page-nav">
+					<ul>
+						<li>
+							<a href="#0">
+								Function <code>va_arg</code>
+							</a>
+						</li>
+						<li>
+							<a href="#1">
+								Alias <code>va_arg</code>
+							</a>
+						</li>
+					</ul>
+				</nav><h2 id="0">Function va_arg</h2><p>Retrieve and store through parmn the next value that is of TypeInfo ti.
+ Used when the static type is not known.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="pln">AST<wbr/></span><span class="pun">.</span><span class="typ">Parameters</span><span class="pun">*</span> <span class="pln">parseParameters</span>
+				<span class="typ">void</span> <span class="pln">va_arg</span>
 				<span class="pun">(</span>
 				<br/>
-				&nbsp;&nbsp;<span class="pln">AST<wbr/></span><span class="pun">.</span><span class="typ">VarArg</span><span class="pun">*</span> <span class="pln">pvarargs</span><span class="pun">,</span>
+				&nbsp;&nbsp;<span class="kwd">ref </span><a href="../../core/stdc/stdarg/va_list.html"><span class="pln">va_list</span></a> <span class="pln">ap</span><span class="pun">,</span>
 				<br/>
-				&nbsp;&nbsp;<span class="pln">AST<wbr/></span><span class="pun">.</span><span class="typ">TemplateParameters</span><span class="pun">*</span><span class="pun">*</span> <span class="pln">tpl</span> <span class="pun">=</span> <span class="kwd">null</span>
+				&nbsp;&nbsp;<a href="../../object/type_info.html"><span class="typ">TypeInfo</span></a> <span class="pln">ti</span><span class="pun">,</span>
+				<br/>
+				&nbsp;&nbsp;<span class="typ">void</span><span class="pun">*</span> <span class="pln">parmn</span>
 				<br/>
 				<span class="pun">)</span><span class="pun">;</span>
 						</div>
 					</code>
 				</div>
 				
+				<h2 id="1">Alias va_arg</h2><p></p>
+				<div class="prototype">
+					<code class="lang-d">
+						<div class="single-prototype">
+				<span class="kwd">alias</span> <span class="pln">va_arg</span>
+				 <span class="pun">=</span> <span class="pln">core<wbr/></span><span class="pun">.</span><span class="pln">stdc<wbr/></span><span class="pun">.</span><span class="pln">stdarg<wbr/></span><span class="pun">.</span><span class="pln">va_arg</span><span class="pun">;</span>
+						</div>
+					</code>
+				</div>
+				
 				
 				<section>
-					<h2>Authors</h2><p><a href="http://www.digitalmars.com">Walter Bright</a>
+					<h2>Authors</h2><p>Walter Bright, Hauke Duden
 </p>
 
 				</section>

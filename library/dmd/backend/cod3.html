@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2951,22 +2966,25 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="assignaddr" class="public" href="../../dmd/backend/cod3/assignaddr.html">assignaddr</a><span class="decoration">(bl)</span>
+									<a id="assignaddr" class="public" href="../../dmd/backend/cod3/assignaddr.html">assignaddr</a><span class="tableEntryAnnotation">(bl)</span>
 								</code>
 							</td>
 							<td>Take symbol info in union ev and replace it with a real address
  in Vpointer.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="branch" class="public" href="../../dmd/backend/cod3/branch.html">branch</a><span class="decoration">(bl, flag)</span>
+									<a id="branch" class="public" href="../../dmd/backend/cod3/branch.html">branch</a><span class="tableEntryAnnotation">(bl, flag)</span>
 								</code>
 							</td>
 							<td>Replace JMPs in Bgotocode with JMP SHORTs whereever possible.
@@ -2975,207 +2993,273 @@ $('#symbolSearchPane').show();</script>
  BFLjmpoptdone is set to true if nothing more can be done
  with this block.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="calcblksize" class="public" href="../../dmd/backend/cod3/calcblksize.html">calcblksize</a><span class="decoration">(c)</span>
+									<a id="calcblksize" class="public" href="../../dmd/backend/cod3/calcblksize.html">calcblksize</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Calculate bl.Bsize.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="calccodsize" class="public" href="../../dmd/backend/cod3/calccodsize.html">calccodsize</a><span class="decoration">(c)</span>
+									<a id="calccodsize" class="public" href="../../dmd/backend/cod3/calccodsize.html">calccodsize</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Calculate and return code size of a code.
  Note that NOPs are sometimes used as markers, but are
  never output. LINNUMs are never output.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdframeptr" class="public" href="../../dmd/backend/cod3/cdframeptr.html">cdframeptr</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdframeptr" class="public" href="../../dmd/backend/cod3/cdframeptr.html">cdframeptr</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Gen code for OPframeptr
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdgot" class="public" href="../../dmd/backend/cod3/cdgot.html">cdgot</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdgot" class="public" href="../../dmd/backend/cod3/cdgot.html">cdgot</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Gen code for load of GLOBAL_OFFSET_TABLE_.
  This value gets cached in the local variable 'localgot'.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cgreg_dst_regs" class="public" href="../../dmd/backend/cod3/cgreg_dst_regs.html">cgreg_dst_regs</a><span class="decoration">(dst_integer_reg, dst_float_reg)</span>
+									<a id="cgreg_dst_regs" class="public" href="../../dmd/backend/cod3/cgreg_dst_regs.html">cgreg_dst_regs</a><span class="tableEntryAnnotation">(dst_integer_reg, dst_float_reg)</span>
 								</code>
 							</td>
 							<td>setup register allocator parameters with platform specific data
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cod3_adjSymOffsets" class="public" href="../../dmd/backend/cod3/cod3_adj_sym_offsets.html">cod3_adjSymOffsets</a><span class="decoration">()</span>
+									<a id="cod3_adjSymOffsets" class="public" href="../../dmd/backend/cod3/cod3_adj_sym_offsets.html">cod3_adjSymOffsets</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Adjust all Soffset's of stack variables so they
  are all relative to the frame pointer.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cod3_align" class="public" href="../../dmd/backend/cod3/cod3_align.html">cod3_align</a><span class="decoration">(seg)</span>
+									<a id="cod3_align" class="public" href="../../dmd/backend/cod3/cod3_align.html">cod3_align</a><span class="tableEntryAnnotation">(seg)</span>
 								</code>
 							</td>
 							<td>Align start of function.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cod3_align_bytes" class="public" href="../../dmd/backend/cod3/cod3_align_bytes.html">cod3_align_bytes</a><span class="decoration">(seg, nbytes)</span>
+									<a id="cod3_align_bytes" class="public" href="../../dmd/backend/cod3/cod3_align_bytes.html">cod3_align_bytes</a><span class="tableEntryAnnotation">(seg, nbytes)</span>
 								</code>
 							</td>
 							<td>Word or dword align start of function.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cod3_bpoffset" class="public" href="../../dmd/backend/cod3/cod3_bpoffset.html">cod3_bpoffset</a><span class="decoration">(s)</span>
+									<a id="cod3_bpoffset" class="public" href="../../dmd/backend/cod3/cod3_bpoffset.html">cod3_bpoffset</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Return offset from BP of symbol s.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cod3_EA" class="public" href="../../dmd/backend/cod3/cod3__ea.html">cod3_EA</a><span class="decoration">(c)</span>
+									<a id="cod3_EA" class="public" href="../../dmd/backend/cod3/cod3__ea.html">cod3_EA</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Determine if there is a modregrm byte for code.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cod3_initregs" class="public" href="../../dmd/backend/cod3/cod3_initregs.html">cod3_initregs</a><span class="decoration">()</span>
+									<a id="cod3_initregs" class="public" href="../../dmd/backend/cod3/cod3_initregs.html">cod3_initregs</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>setup ALLREGS and BYTEREGS
  called by: codgen
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cod3_ptrchk" class="public" href="../../dmd/backend/cod3/cod3_ptrchk.html">cod3_ptrchk</a><span class="decoration">(cdb, pcs, keepmsk)</span>
+									<a id="cod3_ptrchk" class="public" href="../../dmd/backend/cod3/cod3_ptrchk.html">cod3_ptrchk</a><span class="tableEntryAnnotation">(cdb, pcs, keepmsk)</span>
 								</code>
 							</td>
 							<td>Append code to cdb which validates pointer described by
  addressing mode in *pcs. Modify addressing mode in *pcs.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cod3_set32" class="public" href="../../dmd/backend/cod3/cod3_set32.html">cod3_set32</a><span class="decoration">()</span>
+									<a id="cod3_set32" class="public" href="../../dmd/backend/cod3/cod3_set32.html">cod3_set32</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Fix global variables for 386.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cod3_set64" class="public" href="../../dmd/backend/cod3/cod3_set64.html">cod3_set64</a><span class="decoration">()</span>
+									<a id="cod3_set64" class="public" href="../../dmd/backend/cod3/cod3_set64.html">cod3_set64</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Fix global variables for I64.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cod3_setdefault" class="public" href="../../dmd/backend/cod3/cod3_setdefault.html">cod3_setdefault</a><span class="decoration">()</span>
+									<a id="cod3_setdefault" class="public" href="../../dmd/backend/cod3/cod3_setdefault.html">cod3_setdefault</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>set initial global variable values
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cod3_spoff" class="public" href="../../dmd/backend/cod3/cod3_spoff.html">cod3_spoff</a><span class="decoration">()</span>
+									<a id="cod3_spoff" class="public" href="../../dmd/backend/cod3/cod3_spoff.html">cod3_spoff</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Return offset of SP from BP.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cod3_stackadj" class="public" href="../../dmd/backend/cod3/cod3_stackadj.html">cod3_stackadj</a><span class="decoration">(cdb, nbytes)</span>
+									<a id="cod3_stackadj" class="public" href="../../dmd/backend/cod3/cod3_stackadj.html">cod3_stackadj</a><span class="tableEntryAnnotation">(cdb, nbytes)</span>
 								</code>
 							</td>
 							<td>Generate code to adjust the stack pointer by <code class="lang-d"><a href="../../dmd/backend/cod3/cod3_stackadj.html#nbytes"><span class="pln">nbytes</span></a></code>
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cod3_stackalign" class="public" href="../../dmd/backend/cod3/cod3_stackalign.html">cod3_stackalign</a><span class="decoration">(cdb, nbytes)</span>
+									<a id="cod3_stackalign" class="public" href="../../dmd/backend/cod3/cod3_stackalign.html">cod3_stackalign</a><span class="tableEntryAnnotation">(cdb, nbytes)</span>
 								</code>
 							</td>
 							<td>Generate code to align the stack pointer at <code class="lang-d"><a href="../../dmd/backend/cod3/cod3_stackalign.html#nbytes"><span class="pln">nbytes</span></a></code>
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cod3_thunk" class="public" href="../../dmd/backend/cod3/cod3_thunk.html">cod3_thunk</a><span class="decoration">(sthunk, sfunc, p, thisty, d, i, d2)</span>
+									<a id="cod3_thunk" class="public" href="../../dmd/backend/cod3/cod3_thunk.html">cod3_thunk</a><span class="tableEntryAnnotation">(sthunk, sfunc, p, thisty, d, i, d2)</span>
 								</code>
 							</td>
 							<td>Generate code for, and output a thunk.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cod3_useBP" class="public" href="../../dmd/backend/cod3/cod3_use_bp.html">cod3_useBP</a><span class="decoration">()</span>
+									<a id="cod3_useBP" class="public" href="../../dmd/backend/cod3/cod3_use_bp.html">cod3_useBP</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Determine if BP can be used as a general purpose register.
  Note parallels between this routine and prolog().
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cse_simple" class="public" href="../../dmd/backend/cod3/cse_simple.html">cse_simple</a><span class="decoration">(c, e)</span>
+									<a id="cse_simple" class="public" href="../../dmd/backend/cod3/cse_simple.html">cse_simple</a><span class="tableEntryAnnotation">(c, e)</span>
 								</code>
 							</td>
 							<td>Generate code segment to be used later to restore a cse
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="doswitch" class="public" href="../../dmd/backend/cod3/doswitch.html">doswitch</a><span class="decoration">(cdb, b)</span>
+									<a id="doswitch" class="public" href="../../dmd/backend/cod3/doswitch.html">doswitch</a><span class="tableEntryAnnotation">(cdb, b)</span>
 								</code>
 							</td>
 							<td>Generate code for blocks ending in a switch statement.
@@ -3184,104 +3268,137 @@ $('#symbolSearchPane').show();</script>
       BCjmptab        index into jump table
       BCswitch        search table for match
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="epilog" class="public" href="../../dmd/backend/cod3/epilog.html">epilog</a><span class="decoration">(b)</span>
+									<a id="epilog" class="public" href="../../dmd/backend/cod3/epilog.html">epilog</a><span class="tableEntryAnnotation">(b)</span>
 								</code>
 							</td>
 							<td>Generate and return function epilog.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="gen_storecse" class="public" href="../../dmd/backend/cod3/gen_storecse.html">gen_storecse</a><span class="decoration">(cdb, tym, reg, slot)</span>
+									<a id="gen_storecse" class="public" href="../../dmd/backend/cod3/gen_storecse.html">gen_storecse</a><span class="tableEntryAnnotation">(cdb, tym, reg, slot)</span>
 								</code>
 							</td>
 							<td>Store <code class="lang-d"><a href="../../dmd/backend/cod3/gen_storecse.html#reg"><span class="pln">reg</span></a></code> to the common subexpression save area in index <code class="lang-d"><a href="../../dmd/backend/cod3/gen_storecse.html#slot"><span class="pln">slot</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="genjmp" class="public" href="../../dmd/backend/cod3/genjmp.html">genjmp</a><span class="decoration">(cdb, op, fltarg, targ)</span>
+									<a id="genjmp" class="public" href="../../dmd/backend/cod3/genjmp.html">genjmp</a><span class="tableEntryAnnotation">(cdb, op, fltarg, targ)</span>
 								</code>
 							</td>
 							<td>Generate a jump instruction.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="genmovreg" class="public" href="../../dmd/backend/cod3/genmovreg.html">genmovreg</a><span class="decoration">(to, from)</span>
+									<a id="genmovreg" class="public" href="../../dmd/backend/cod3/genmovreg.html">genmovreg</a><span class="tableEntryAnnotation">(to, from)</span>
 								</code>
 							</td>
 							<td>Generate a MOV to,from register instruction.
  Smart enough to dump redundant register moves, and segment
  register moves.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="genmulimm" class="public" href="../../dmd/backend/cod3/genmulimm.html">genmulimm</a><span class="decoration">(cdb, r1, r2, imm)</span>
+									<a id="genmulimm" class="public" href="../../dmd/backend/cod3/genmulimm.html">genmulimm</a><span class="tableEntryAnnotation">(cdb, r1, r2, imm)</span>
 								</code>
 							</td>
 							<td>Generate immediate multiply instruction for r1=r2*imm.
  Optimize it into LEA's if we can.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="genshift" class="public" href="../../dmd/backend/cod3/genshift.html">genshift</a><span class="decoration">(cdb)</span>
+									<a id="genshift" class="public" href="../../dmd/backend/cod3/genshift.html">genshift</a><span class="tableEntryAnnotation">(cdb)</span>
 								</code>
 							</td>
 							<td>Load CX with the value of AHSHIFT.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="jmpaddr" class="public" href="../../dmd/backend/cod3/jmpaddr.html">jmpaddr</a><span class="decoration">(c)</span>
+									<a id="jmpaddr" class="public" href="../../dmd/backend/cod3/jmpaddr.html">jmpaddr</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Compute jump addresses for FLcode.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="jmpopcode" class="public" href="../../dmd/backend/cod3/jmpopcode.html">jmpopcode</a><span class="decoration">(e)</span>
+									<a id="jmpopcode" class="public" href="../../dmd/backend/cod3/jmpopcode.html">jmpopcode</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>Return a jump opcode relevant to the elem for a JMP true.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="load_localgot" class="public" href="../../dmd/backend/cod3/load_localgot.html">load_localgot</a><span class="decoration">(cdb)</span>
+									<a id="load_localgot" class="public" href="../../dmd/backend/cod3/load_localgot.html">load_localgot</a><span class="tableEntryAnnotation">(cdb)</span>
 								</code>
 							</td>
 							<td>Load contents of localgot into EBX.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="makeitextern" class="public" href="../../dmd/backend/cod3/makeitextern.html">makeitextern</a><span class="decoration">(s)</span>
+									<a id="makeitextern" class="public" href="../../dmd/backend/cod3/makeitextern.html">makeitextern</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Assume symbol s is extern.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="movregconst" class="public" href="../../dmd/backend/cod3/movregconst.html">movregconst</a><span class="decoration">(cdb, reg, value, flags)</span>
+									<a id="movregconst" class="public" href="../../dmd/backend/cod3/movregconst.html">movregconst</a><span class="tableEntryAnnotation">(cdb, reg, value, flags)</span>
 								</code>
 							</td>
 							<td>Move constant value into reg.
@@ -3298,42 +3415,54 @@ $('#symbolSearchPane').show();</script>
  If flags &amp; 16 then reg is a byte register AL..BH
  If flags &amp; 64 (0x40) then 64 bit move (I64 only)
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="outblkexitcode" class="public" href="../../dmd/backend/cod3/outblkexitcode.html">outblkexitcode</a><span class="decoration">(cdb, bl, anyspill, sflsave, retsym, mfuncregsave)</span>
+									<a id="outblkexitcode" class="public" href="../../dmd/backend/cod3/outblkexitcode.html">outblkexitcode</a><span class="tableEntryAnnotation">(cdb, bl, anyspill, sflsave, retsym, mfuncregsave)</span>
 								</code>
 							</td>
 							<td>Generate block exit code
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="outjmptab" class="public" href="../../dmd/backend/cod3/outjmptab.html">outjmptab</a><span class="decoration">(b)</span>
+									<a id="outjmptab" class="public" href="../../dmd/backend/cod3/outjmptab.html">outjmptab</a><span class="tableEntryAnnotation">(b)</span>
 								</code>
 							</td>
 							<td>Output data block for a jump table (BCjmptab).
  The 'holes' in the table get filled with the
  default label.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="outswitab" class="public" href="../../dmd/backend/cod3/outswitab.html">outswitab</a><span class="decoration">(b)</span>
+									<a id="outswitab" class="public" href="../../dmd/backend/cod3/outswitab.html">outswitab</a><span class="tableEntryAnnotation">(b)</span>
 								</code>
 							</td>
 							<td>Output data block for a switch table.
  Two consecutive tables, the first is the case value table, the
  second is the address table.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="pinholeopt" class="public" href="../../dmd/backend/cod3/pinholeopt.html">pinholeopt</a><span class="decoration">(c, b)</span>
+									<a id="pinholeopt" class="public" href="../../dmd/backend/cod3/pinholeopt.html">pinholeopt</a><span class="tableEntryAnnotation">(c, b)</span>
 								</code>
 							</td>
 							<td>Find shorter versions of the same instructions.
@@ -3346,108 +3475,144 @@ $('#symbolSearchPane').show();</script>
       short versions for reg EA
  Code is neither removed nor added.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="prolog_frame" class="public" href="../../dmd/backend/cod3/prolog_frame.html">prolog_frame</a><span class="decoration">(cdb, farfunc, xlocalsize, enter, cfa_offset)</span>
+									<a id="prolog_frame" class="public" href="../../dmd/backend/cod3/prolog_frame.html">prolog_frame</a><span class="tableEntryAnnotation">(cdb, farfunc, xlocalsize, enter, cfa_offset)</span>
 								</code>
 							</td>
 							<td>Set up frame register.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="prolog_genvarargs" class="public" href="../../dmd/backend/cod3/prolog_genvarargs.html">prolog_genvarargs</a><span class="decoration">(cdb, sv, namedargs)</span>
+									<a id="prolog_genvarargs" class="public" href="../../dmd/backend/cod3/prolog_genvarargs.html">prolog_genvarargs</a><span class="tableEntryAnnotation">(cdb, sv, namedargs)</span>
 								</code>
 							</td>
 							<td>Generate special varargs prolog for Posix 64 bit systems.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="prolog_ifunc" class="public" href="../../dmd/backend/cod3/prolog_ifunc.html">prolog_ifunc</a><span class="decoration">(cdb, tyf)</span>
+									<a id="prolog_ifunc" class="public" href="../../dmd/backend/cod3/prolog_ifunc.html">prolog_ifunc</a><span class="tableEntryAnnotation">(cdb, tyf)</span>
 								</code>
 							</td>
 							<td>Generate first part of prolog for interrupt function.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="prolog_loadparams" class="public" href="../../dmd/backend/cod3/prolog_loadparams.html">prolog_loadparams</a><span class="decoration">(cdb, tyf, pushalloc, namedargs)</span>
+									<a id="prolog_loadparams" class="public" href="../../dmd/backend/cod3/prolog_loadparams.html">prolog_loadparams</a><span class="tableEntryAnnotation">(cdb, tyf, pushalloc, namedargs)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="prolog_saveregs" class="public" href="../../dmd/backend/cod3/prolog_saveregs.html">prolog_saveregs</a><span class="decoration">(cdb, topush, cfa_offset)</span>
+									<a id="prolog_saveregs" class="public" href="../../dmd/backend/cod3/prolog_saveregs.html">prolog_saveregs</a><span class="tableEntryAnnotation">(cdb, topush, cfa_offset)</span>
 								</code>
 							</td>
 							<td>Save registers that the function destroys,
  but that the ABI says should be preserved across
  function calls.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="prolog_stackalign" class="public" href="../../dmd/backend/cod3/prolog_stackalign.html">prolog_stackalign</a><span class="decoration">(cdb)</span>
+									<a id="prolog_stackalign" class="public" href="../../dmd/backend/cod3/prolog_stackalign.html">prolog_stackalign</a><span class="tableEntryAnnotation">(cdb)</span>
 								</code>
 							</td>
 							<td>Enforce stack alignment.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="regmask" class="public" href="../../dmd/backend/cod3/regmask.html">regmask</a><span class="decoration">(tym, tyf)</span>
+									<a id="regmask" class="public" href="../../dmd/backend/cod3/regmask.html">regmask</a><span class="tableEntryAnnotation">(tym, tyf)</span>
 								</code>
 							</td>
 							<td>Given a type, return a mask of
  registers to hold that type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="REGSAVE_restore" class="public" href="../../dmd/backend/cod3/regsav_e_restore.html">REGSAVE_restore</a><span class="decoration">(regsave, cdb, reg, idx)</span>
+									<a id="REGSAVE_restore" class="public" href="../../dmd/backend/cod3/regsav_e_restore.html">REGSAVE_restore</a><span class="tableEntryAnnotation">(regsave, cdb, reg, idx)</span>
 								</code>
 							</td>
 							<td>Restore <code class="lang-d"><a href="../../dmd/backend/cod3/regsav_e_restore.html#reg"><span class="pln">reg</span></a></code> from <code class="lang-d"><a href="../../dmd/backend/cod3/regsav_e_restore.html#regsave"><span class="pln">regsave</span></a></code> area.
  Complement REGSAVE_save().
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="REGSAVE_save" class="public" href="../../dmd/backend/cod3/regsav_e_save.html">REGSAVE_save</a><span class="decoration">(regsave, cdb, reg, idx)</span>
+									<a id="REGSAVE_save" class="public" href="../../dmd/backend/cod3/regsav_e_save.html">REGSAVE_save</a><span class="tableEntryAnnotation">(regsave, cdb, reg, idx)</span>
 								</code>
 							</td>
 							<td>Generate code to save <code class="lang-d"><a href="../../dmd/backend/cod3/regsav_e_save.html#reg"><span class="pln">reg</span></a></code> in <code class="lang-d"><a href="../../dmd/backend/cod3/regsav_e_save.html#regsave"><span class="pln">regsave</span></a></code> stack area.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vex_inssize" class="public" href="../../dmd/backend/cod3/vex_inssize.html">vex_inssize</a><span class="decoration">(c)</span>
+									<a id="vex_inssize" class="public" href="../../dmd/backend/cod3/vex_inssize.html">vex_inssize</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Size for vex encoded instruction.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="WRcodlst" class="public" href="../../dmd/backend/cod3/w_rcodlst.html">WRcodlst</a><span class="decoration">(c)</span>
+									<a id="WRcodlst" class="public" href="../../dmd/backend/cod3/w_rcodlst.html">WRcodlst</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Debug code to dump code structure.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

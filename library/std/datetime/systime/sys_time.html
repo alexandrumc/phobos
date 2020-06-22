@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,10 +2952,10 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Struct <code><a href="../../../std/datetime/systime.html">std.datetime.systime</a>.SysTime</code></h1><p><code class="lang-d"><span class="typ"><span class="typ">SysTime</span></span></code> is the type used to get the current time from the
+				</div><h1>Struct <code><a href="../../../std/datetime/systime.html">std.datetime.systime</a>.SysTime</code></h1><p><code class="lang-d"><span class="typ">SysTime</span></code> is the type used to get the current time from the
     system or doing anything that involves time zones. Unlike
     <code class="lang-d"><a href="../../../std/datetime/date/date_time.html" title="std.datetime.date.DateTime"><span class="typ">DateTime</span></a></code>, the time zone is an integral part of
-    <code class="lang-d"><span class="typ"><span class="typ">SysTime</span></span></code> (though for local time applications, time zones can be ignored
+    <code class="lang-d"><span class="typ">SysTime</span></code> (though for local time applications, time zones can be ignored
     and it will work, since it defaults to using the local time zone). It holds
     its internal time in std time (hnsecs since midnight, January 1st, 1 A.D.
     UTC), so it interfaces well with the system time. However, that means that,
@@ -3007,6 +3022,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(dateTime, tz)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3015,6 +3031,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(dateTime, fracSecs, tz)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3023,6 +3040,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(date, tz)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3031,6 +3049,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(stdTime, tz)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3332,6 +3351,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.add.html" class="public">
 									<code>add</code>
 								</a>
+								<span class="tableEntryAnnotation">(value, allowOverflow)</span>
 							</td>
 							<td>Adds the given number of years or months to this <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code>. A
         negative number will subtract.
@@ -3342,6 +3362,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.diff_months.html" class="public">
 									<code>diffMonths</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td>Returns the difference between the two <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code>s in months.
 </td>
@@ -3351,6 +3372,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.from_iso_ext_string.html" class="public">
 									<code>fromISOExtString</code>
 								</a>
+								<span class="tableEntryAnnotation">(isoExtString, tz)</span>
 							</td>
 							<td>Creates a <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code> from a string with the format
         YYYY-MM-DDTHH:MM:SS.FFFFFFFTZ (where F is fractional seconds is the
@@ -3362,6 +3384,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.from_iso_string.html" class="public">
 									<code>fromISOString</code>
 								</a>
+								<span class="tableEntryAnnotation">(isoString, tz)</span>
 							</td>
 							<td>Creates a <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code> from a string with the format
         YYYYMMDDTHHMMSS.FFFFFFFTZ (where F is fractional seconds is the time
@@ -3373,6 +3396,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.from_simple_string.html" class="public">
 									<code>fromSimpleString</code>
 								</a>
+								<span class="tableEntryAnnotation">(simpleString, tz)</span>
 							</td>
 							<td>Creates a <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code> from a string with the format
         YYYY-MM-DD HH:MM:SS.FFFFFFFTZ (where F is fractional seconds is the
@@ -3384,6 +3408,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.from_unix_time.html" class="public">
 									<code>fromUnixTime</code>
 								</a>
+								<span class="tableEntryAnnotation">(unixTime, tz)</span>
 							</td>
 							<td>Converts from unix time (i.e. seconds from midnight, January 1st, 1970
         in UTC) to a <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code>.
@@ -3394,6 +3419,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.op_assign.html" class="public">
 									<code>opAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3402,6 +3428,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.op_binary.html" class="public">
 									<code>opBinary</code>
 								</a>
+								<span class="tableEntryAnnotation">(duration)</span>
 							</td>
 							<td>Gives the result of adding or subtracting a <code class="lang-d"><a href="../../../core/time/duration.html" title="core.time.Duration"><span class="typ">Duration</span></a></code>
         from this <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code>.
@@ -3412,6 +3439,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.op_binary.html" class="public">
 									<code>opBinary</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td>Gives the difference between two <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code>s.
 </td>
@@ -3421,6 +3449,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.op_cast.html" class="public">
 									<code>opCast</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns a <code class="lang-d"><a href="../../../std/datetime/date/date.html" title="std.datetime.date.Date"><span class="typ">Date</span></a></code> equivalent to this <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code>.
 </td>
@@ -3430,6 +3459,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.op_cast.html" class="public">
 									<code>opCast</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns a <code class="lang-d"><a href="../../../std/datetime/date/date_time.html" title="std.datetime.date.DateTime"><span class="typ">DateTime</span></a></code> equivalent to this
         <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code>.
@@ -3440,6 +3470,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.op_cast.html" class="public">
 									<code>opCast</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns a <code class="lang-d"><a href="../../../std/datetime/date/time_of_day.html" title="std.datetime.date.TimeOfDay"><span class="typ">TimeOfDay</span></a></code> equivalent to this
         <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code>.
@@ -3450,6 +3481,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.op_cmp.html" class="public">
 									<code>opCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td>Compares this <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code> with the given <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code>.
 </td>
@@ -3459,6 +3491,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.op_equals.html" class="public">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td>Checks for equality between this <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code> and the given
         <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code>.
@@ -3469,6 +3502,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.op_op_assign.html" class="public">
 									<code>opOpAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(duration)</span>
 							</td>
 							<td>Gives the result of adding or subtracting a <code class="lang-d"><a href="../../../core/time/duration.html" title="core.time.Duration"><span class="typ">Duration</span></a></code> from
         this <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code>, as well as assigning the result to this
@@ -3480,6 +3514,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.roll.html" class="public">
 									<code>roll</code>
 								</a>
+								<span class="tableEntryAnnotation">(value, allowOverflow)</span>
 							</td>
 							<td>Adds the given number of years or months to this <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code>. A
         negative number will subtract.
@@ -3490,6 +3525,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.roll.html" class="public">
 									<code>roll</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
 							<td>Adds the given number of units to this <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code>. A negative number
         will subtract.
@@ -3500,6 +3536,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.to_hash.html" class="public">
 									<code>toHash</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3508,6 +3545,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.to_iso_ext_string.html" class="public">
 									<code>toISOExtString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Converts this <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code> to a string with the format
         YYYY-MM-DDTHH:MM:SS.FFFFFFFTZ (where F is fractional seconds and TZ
@@ -3519,6 +3557,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.to_iso_string.html" class="public">
 									<code>toISOString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Converts this <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code> to a string with the format
         YYYYMMDDTHHMMSS.FFFFFFFTZ (where F is fractional seconds and TZ is time
@@ -3530,6 +3569,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.to_local_time.html" class="public">
 									<code>toLocalTime</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns a <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code> with the same std time as this one, but with
         <code class="lang-d"><a href="../../../std/datetime/timezone/local_time.html" title="std.datetime.timezone.LocalTime"><span class="typ">LocalTime</span></a></code> as its time zone.
@@ -3540,6 +3580,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.to_other_tz.html" class="public">
 									<code>toOtherTZ</code>
 								</a>
+								<span class="tableEntryAnnotation">(tz)</span>
 							</td>
 							<td>Returns a <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code> with the same std time as this one, but with
         given time zone as its time zone.
@@ -3550,6 +3591,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.to_simple_string.html" class="public">
 									<code>toSimpleString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Converts this <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code> to a string with the format
         YYYY-Mon-DD HH:MM:SS.FFFFFFFTZ (where F is fractional seconds and TZ
@@ -3561,6 +3603,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.to_string.html" class="public">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Converts this <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code> to a string.
 </td>
@@ -3570,6 +3613,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.to_time_spec.html" class="public">
 									<code>toTimeSpec</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns a <code class="lang-d"><span class="pln">timespec</span></code> which represents this <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code>.
 </td>
@@ -3579,6 +3623,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.to_time_val.html" class="public">
 									<code>toTimeVal</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns a <code class="lang-d"><span class="pln">timeval</span></code> which represents this <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code>.
 </td>
@@ -3588,6 +3633,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.to_tm.html" class="public">
 									<code>toTM</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns a <code class="lang-d"><span class="pln">tm</span></code> which represents this <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code>.
 </td>
@@ -3597,6 +3643,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.to_unix_time.html" class="public">
 									<code>toUnixTime</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Converts this <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code> to unix time (i.e. seconds from midnight,
         January 1st, 1970 in UTC).
@@ -3607,6 +3654,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/systime/sys_time.to_utc.html" class="public">
 									<code>toUTC</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns a <code class="lang-d"><a href="../../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code> with the same std time as this one, but with
         <code class="lang-d"><span class="pln">UTC</span></code> as its time zone.

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/typecons.d#L4205">
+							<a href="https://github.com/dlang/phobos/blob/master/std/typecons.d#L4214">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/typecons.d#L4205">
+							<a href="https://github.com/dlang/phobos/edit/master/std/typecons.d#L4214">
 								Improve this page
 							</a>
 							<div>
@@ -2952,15 +2967,15 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function nullableRef</h2><p>Just like <code class="lang-d"><a href="../std/typecons/nullable.html"><span class="typ"><a href="../std/typecons/nullable.html"><span class="typ"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a></span></a></span></a><span class="pun">!</span><span class="pln">T</span></code>, except that the object refers to a value
+				</nav><h2 id="0">Function nullableRef</h2><p>Just like <code class="lang-d"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!</span><span class="pln">T</span></code>, except that the object refers to a value
 sitting elsewhere in memory. This makes assignments overwrite the
-initially assigned value. Internally <code class="lang-d"><a href="../std/typecons/nullable_ref.html"><span class="typ"><span class="typ"><a href="../../std/typecons/nullable_ref.html"><span class="typ">NullableRef</span></a></span></span></a><span class="pun">!</span><span class="pln">T</span></code> only stores a
+initially assigned value. Internally <code class="lang-d"><a href="../../std/typecons/nullable_ref.html"><span class="typ">NullableRef</span></a><span class="pun">!</span><span class="pln">T</span></code> only stores a
 pointer to <code class="lang-d"><span class="pln">T</span></code> (i.e., <code class="lang-d"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!</span><span class="pln">T<wbr/></span><span class="pun">.</span><span class="pln">sizeof </span><span class="pun">== (</span><span class="pln">T</span><span class="pun">*)<wbr/>.</span><span class="pln">sizeof</span></code>).
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">nullableRef</span>(T)
+				<span class="kwd">auto</span> <span class="pln">nullableRef</span>(T)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">T</span><span class="pun">*</span> <span class="pln">t</span>
@@ -2995,9 +3010,9 @@ pointer to <code class="lang-d"><span class="pln">T</span></code> (i.e., <code c
 </span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">a</span><span class="pun">); </span><span class="com">// 135
 </span></code></pre>
 </section>
-<h2 id="1">Struct NullableRef</h2><p>Just like <code class="lang-d"><a href="../std/typecons/nullable.html"><span class="typ"><a href="../std/typecons/nullable.html"><span class="typ"><a href="../../std/typecons/nullable.html"><span class="typ"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a></span></a></span></a></span></a><span class="pun">!</span><span class="pln">T</span></code>, except that the object refers to a value
+<h2 id="1">Struct NullableRef</h2><p>Just like <code class="lang-d"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!</span><span class="pln">T</span></code>, except that the object refers to a value
 sitting elsewhere in memory. This makes assignments overwrite the
-initially assigned value. Internally <code class="lang-d"><a href="../std/typecons/nullable_ref.html"><span class="typ"><span class="typ"><a href="../../std/typecons/nullable_ref.html"><span class="typ"><span class="typ">NullableRef</span></span></a></span></span></a><span class="pun">!</span><span class="pln">T</span></code> only stores a
+initially assigned value. Internally <code class="lang-d"><span class="typ">NullableRef</span><span class="pun">!</span><span class="pln">T</span></code> only stores a
 pointer to <code class="lang-d"><span class="pln">T</span></code> (i.e., <code class="lang-d"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!</span><span class="pln">T<wbr/></span><span class="pun">.</span><span class="pln">sizeof </span><span class="pun">== (</span><span class="pln">T</span><span class="pun">*)<wbr/>.</span><span class="pln">sizeof</span></code>).
 </p>
 				<div class="prototype">
@@ -3020,8 +3035,9 @@ pointer to <code class="lang-d"><span class="pln">T</span></code> (i.e., <code c
 								<a href="../../std/typecons/nullable_ref.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
-							<td>Constructor binding <code class="lang-d"><span class="kwd">this</span></code> to <code class="lang-d"><a href="../../std/typecons/nullable_ref.this.html#value"><span class="pln"><a href="../../std/typecons/nullable_ref.this.html#value"><span class="pln">value</span></a></span></a></code>.
+							<td>Constructor binding <code class="lang-d"><span class="kwd">this</span></code> to <code class="lang-d"><a href="../../std/typecons/nullable_ref.this.html#value"><span class="pln">value</span></a></code>.
 </td>
 						</tr>
 					</table>
@@ -3060,8 +3076,9 @@ This function is also called for the implicit conversion to <code class="lang-d"
 								<a href="../../std/typecons/nullable_ref.bind.html" class="public">
 									<code>bind</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
-							<td>Binds the internal state to <code class="lang-d"><a href="../../std/typecons/nullable_ref.bind.html#value"><span class="pln"><a href="../../std/typecons/nullable_ref.bind.html#value"><span class="pln">value</span></a></span></a></code>.
+							<td>Binds the internal state to <code class="lang-d"><a href="../../std/typecons/nullable_ref.bind.html#value"><span class="pln">value</span></a></code>.
 </td>
 						</tr>
 						<tr>
@@ -3069,6 +3086,7 @@ This function is also called for the implicit conversion to <code class="lang-d"
 								<a href="../../std/typecons/nullable_ref.nullify.html" class="public">
 									<code>nullify</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Forces <code class="lang-d"><span class="kwd">this</span></code> to the null state.
 </td>
@@ -3078,6 +3096,7 @@ This function is also called for the implicit conversion to <code class="lang-d"
 								<a href="../../std/typecons/nullable_ref.op_assign.html" class="public">
 									<code>opAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
 							<td>Assigns <code class="lang-d"><a href="../../std/typecons/nullable_ref.op_assign.html#value"><span class="pln">value</span></a></code> to the internally-held state.
 </td>

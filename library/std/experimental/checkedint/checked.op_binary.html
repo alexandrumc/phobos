@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2938,13 +2953,13 @@ $('#symbolSearchPane').show();</script>
 						</div>
 					</div>
 				</div><h1>Function <code><a href="../../../std/experimental/checkedint/checked.html">std.experimental.checkedint.Checked</a>.opBinary</code></h1><p>Defines binary operators <code class="lang-d"><span class="pun">+</span></code>, <code class="lang-d"><span class="pun">-</span></code>, <code class="lang-d"><span class="pun">*</span></code>, <code class="lang-d"><span class="pun">/</span></code>, <code class="lang-d"><span class="pun">%</span></code>, <code class="lang-d"><span class="pun">^^</span></code>, <code class="lang-d"><span class="pun">&amp;</span></code>, <code class="lang-d"><span class="pun">|</span></code>, <code class="lang-d"><span class="pun">^</span></code>, <code class="lang-d"><span class="pun">&lt;&lt;</span></code>, <code class="lang-d"><span class="pun">&gt;&gt;</span></code>,
-    and <code class="lang-d"><span class="pun">&gt;&gt;&gt;</span></code>. If <code class="lang-d"><span class="typ">Hook</span></code> defines <code class="lang-d"><span class="pln">hookOpBinary</span></code>, <code class="lang-d"><span class="pln"><span class="pln">opBinary</span></span></code> forwards to <code class="lang-d"><span class="pln">    <a href="../../../std/experimental/checkedint/checked.html"></span><span class="typ">Checked</span></a><span class="pun">!(</span><span class="kwd">typeof</span><span class="pun">(</span><span class="pln">hook<wbr/></span><span class="pun">.</span><span class="pln">hookOpBinary</span><span class="pun">!</span><span class="pln">op</span><span class="pun">(<a href="../../../std/experimental/checkedint/checked.get.html"></span><span class="pln">get</span></a><span class="pun">, <a href="../../../std/experimental/checkedint/checked.op_binary.html#rhs"></span><span class="pln">rhs</span></a><span class="pun">)),
+    and <code class="lang-d"><span class="pun">&gt;&gt;&gt;</span></code>. If <code class="lang-d"><span class="typ">Hook</span></code> defines <code class="lang-d"><span class="pln">hookOpBinary</span></code>, <code class="lang-d"><span class="pln">opBinary</span></code> forwards to <code class="lang-d"><span class="pln">    <a href="../../../std/experimental/checkedint/checked.html"></span><span class="typ">Checked</span></a><span class="pun">!(</span><span class="kwd">typeof</span><span class="pun">(</span><span class="pln">hook<wbr/></span><span class="pun">.</span><span class="pln">hookOpBinary</span><span class="pun">!</span><span class="pln">op</span><span class="pun">(<a href="../../../std/experimental/checkedint/checked.get.html"></span><span class="pln">get</span></a><span class="pun">, <a href="../../../std/experimental/checkedint/checked.op_binary.html#rhs"></span><span class="pln">rhs</span></a><span class="pun">)),
     </span><span class="typ">Hook</span><span class="pun">)(</span><span class="pln">hook<wbr/></span><span class="pun">.</span><span class="pln">hookOpBinary</span><span class="pun">!</span><span class="pln">op</span><span class="pun">(<a href="../../../std/experimental/checkedint/checked.get.html"></span><span class="pln">get</span></a><span class="pun">, <a href="../../../std/experimental/checkedint/checked.op_binary.html#rhs"></span><span class="pln">rhs</span></a><span class="pun">))</span></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">opBinary</span>(<span class="typ">string</span> op, Rhs)
+				<span class="kwd">auto</span> <span class="pln">opBinary</span>(<span class="typ">string</span> op, Rhs)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="kwd">const </span><span class="typ">Rhs</span> <span class="pln">rhs</span>
@@ -2954,7 +2969,7 @@ $('#symbolSearchPane').show();</script>
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isIntegral</span><span class="pun">!</span><span class="typ">Rhs </span><span class="pun">|| </span><span class="pln">isFloatingPoint</span><span class="pun">!</span><span class="typ">Rhs </span><span class="pun">|| </span><span class="kwd">is</span><span class="pun">(</span><span class="typ">Rhs </span><span class="pun">== </span><span class="typ">bool</span><span class="pun">)</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">opBinary</span>(<span class="typ">string</span> op, Rhs)
+				<span class="kwd">auto</span> <span class="pln">opBinary</span>(<span class="typ">string</span> op, Rhs)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="kwd">const </span><span class="typ">Rhs</span> <span class="pln">rhs</span>
@@ -2964,7 +2979,7 @@ $('#symbolSearchPane').show();</script>
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isIntegral</span><span class="pun">!</span><span class="typ">Rhs </span><span class="pun">|| </span><span class="pln">isFloatingPoint</span><span class="pun">!</span><span class="typ">Rhs </span><span class="pun">|| </span><span class="kwd">is</span><span class="pun">(</span><span class="typ">Rhs </span><span class="pun">== </span><span class="typ">bool</span><span class="pun">)</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">opBinary</span>(<span class="typ">string</span> op, U, Hook1)
+				<span class="kwd">auto</span> <span class="pln">opBinary</span>(<span class="typ">string</span> op, U, Hook1)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<a href="../../../std/experimental/checkedint/checked.html"><span class="typ">Checked</span></a>!(U,Hook1) <span class="pln">rhs</span>
@@ -2972,7 +2987,7 @@ $('#symbolSearchPane').show();</script>
 				<span class="pun">)</span><span class="pun">;</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">opBinary</span>(<span class="typ">string</span> op, U, Hook1)
+				<span class="kwd">auto</span> <span class="pln">opBinary</span>(<span class="typ">string</span> op, U, Hook1)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<a href="../../../std/experimental/checkedint/checked.html"><span class="typ">Checked</span></a>!(U,Hook1) <span class="pln">rhs</span>

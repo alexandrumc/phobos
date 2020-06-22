@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,9 +2952,9 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../../std/algorithm/searching.html">std.algorithm.searching</a>.maxPos</code></h1><p>Computes a subrange of <code class="lang-d"><a href="../../std/algorithm/searching/max_pos.html#range"><span class="pln"><a href="../../std/algorithm/searching/min_pos.html#range"><span class="pln"><a href="../../../std/algorithm/searching/min_pos.html#range"><span class="pln"><a href="../../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></span></a></span></a></span></a></code> starting at the first occurrence of <code class="lang-d"><a href="../../std/algorithm/searching/max_pos.html#range"><span class="pln"><a href="../../std/algorithm/searching/min_pos.html#range"><span class="pln"><a href="../../../std/algorithm/searching/min_pos.html#range"><span class="pln"><a href="../../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></span></a></span></a></span></a></code>'s
-minimum (respectively maximum) and with the same ending as <code class="lang-d"><a href="../../std/algorithm/searching/max_pos.html#range"><span class="pln"><a href="../../std/algorithm/searching/min_pos.html#range"><span class="pln"><a href="../../../std/algorithm/searching/min_pos.html#range"><span class="pln"><a href="../../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></span></a></span></a></span></a></code>, or the
-empty range if <code class="lang-d"><a href="../../std/algorithm/searching/max_pos.html#range"><span class="pln"><a href="../../std/algorithm/searching/min_pos.html#range"><span class="pln"><a href="../../../std/algorithm/searching/min_pos.html#range"><span class="pln"><a href="../../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></span></a></span></a></span></a></code> itself is empty.
+				</div><h1>Function <code><a href="../../../std/algorithm/searching.html">std.algorithm.searching</a>.maxPos</code></h1><p>Computes a subrange of <code class="lang-d"><a href="../../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></code> starting at the first occurrence of <code class="lang-d"><a href="../../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></code>'s
+minimum (respectively maximum) and with the same ending as <code class="lang-d"><a href="../../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></code>, or the
+empty range if <code class="lang-d"><a href="../../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></code> itself is empty.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2955,9 +2970,9 @@ empty range if <code class="lang-d"><a href="../../std/algorithm/searching/max_p
 						</div>
 					</code>
 				</div>
-				<section><p>Formally, the minimum is a value <code class="lang-d"><span class="pln">x</span></code> in <code class="lang-d"><a href="../../../std/algorithm/searching/min_pos.html#range"><span class="pln"><a href="../../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></span></a></code> such that <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">a</span><span class="pun">, </span><span class="pln">x</span><span class="pun">)</span></code> is
-<code class="lang-d"><span class="kwd">false</span></code> for all values <code class="lang-d"><span class="pln">a</span></code> in <code class="lang-d"><a href="../../../std/algorithm/searching/min_pos.html#range"><span class="pln"><a href="../../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></span></a></code>. Conversely, the maximum is a value <code class="lang-d"><span class="pln">x</span></code> in
-<code class="lang-d"><a href="../../../std/algorithm/searching/min_pos.html#range"><span class="pln"><a href="../../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></span></a></code> such that <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">x</span><span class="pun">, </span><span class="pln">a</span><span class="pun">)</span></code> is <code class="lang-d"><span class="kwd">false</span></code> for all values <code class="lang-d"><span class="pln">a</span></code> in <code class="lang-d"><a href="../../../std/algorithm/searching/min_pos.html#range"><span class="pln"><a href="../../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></span></a></code> (note
+				<section><p>Formally, the minimum is a value <code class="lang-d"><span class="pln">x</span></code> in <code class="lang-d"><a href="../../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></code> such that <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">a</span><span class="pun">, </span><span class="pln">x</span><span class="pun">)</span></code> is
+<code class="lang-d"><span class="kwd">false</span></code> for all values <code class="lang-d"><span class="pln">a</span></code> in <code class="lang-d"><a href="../../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></code>. Conversely, the maximum is a value <code class="lang-d"><span class="pln">x</span></code> in
+<code class="lang-d"><a href="../../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></code> such that <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">x</span><span class="pun">, </span><span class="pln">a</span><span class="pun">)</span></code> is <code class="lang-d"><span class="kwd">false</span></code> for all values <code class="lang-d"><span class="pln">a</span></code> in <code class="lang-d"><a href="../../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></code> (note
 the swapped arguments to <code class="lang-d"><span class="pln">pred</span></code>).
 </p>
 
@@ -2977,8 +2992,8 @@ irreflexive (<code class="lang-d"><span class="pln">pred</span><span class="pun"
 </section>
 <section><h2>Returns</h2>
 <p>The position of the minimum (respectively maximum) element of forward
-range <code class="lang-d"><a href="../../../std/algorithm/searching/min_pos.html#range"><span class="pln"><a href="../../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></span></a></code>, i.e. a subrange of <code class="lang-d"><a href="../../../std/algorithm/searching/min_pos.html#range"><span class="pln"><a href="../../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></span></a></code> starting at the position of  its
-smallest (respectively largest) element and with the same ending as <code class="lang-d"><a href="../../../std/algorithm/searching/min_pos.html#range"><span class="pln"><a href="../../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></span></a></code>.
+range <code class="lang-d"><a href="../../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></code>, i.e. a subrange of <code class="lang-d"><a href="../../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></code> starting at the position of  its
+smallest (respectively largest) element and with the same ending as <code class="lang-d"><a href="../../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></code>.
 </p>
 </section>
 <section><h2>Limitations</h2>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/string.d#L2848">
+							<a href="https://github.com/dlang/phobos/blob/master/std/string.d#L2857">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/string.d#L2848">
+							<a href="https://github.com/dlang/phobos/edit/master/std/string.d#L2857">
 								Improve this page
 							</a>
 							<div>
@@ -2938,7 +2953,7 @@ $('#symbolSearchPane').show();</script>
 						</div>
 					</div>
 				</div><h1>Function <code><a href="../../std/string.html">std.string</a>.lineSplitter</code></h1><p>Split an array or slicable range of characters into a range of lines
-    using <code class="lang-d"><span class="str">'\<a href="../../std/string/line_splitter.html#r"><span class="pln">r</span></a>'</span></code>, <code class="lang-d"><span class="str">'\n'</span></code>, <code class="lang-d"><span class="str">'\v'</span></code>, <code class="lang-d"><span class="str">'\f'</span></code>, <code class="lang-d"><span class="str">"\<a href="../../std/string/line_splitter.html#r"><span class="pln">r</span></a>\n"</span></code>,
+    using <code class="lang-d"><span class="str">'\r'</span></code>, <code class="lang-d"><span class="str">'\n'</span></code>, <code class="lang-d"><span class="str">'\v'</span></code>, <code class="lang-d"><span class="str">'\f'</span></code>, <code class="lang-d"><span class="str">"\r\n"</span></code>,
     <code class="lang-d"><a href="../../std/uni/line_sep.html" title="std.uni.lineSep"><span class="pln">lineSep</span></a></code>, <code class="lang-d"><a href="../../std/uni/para_sep.html" title="std.uni.paraSep"><span class="pln">paraSep</span></a></code> and <code class="lang-d"><span class="str">'\u0085'</span></code> (NEL)
     as delimiters. If <code class="lang-d"><span class="pln">keepTerm</span></code> is set to <code class="lang-d"><span class="typ">Yes<wbr/></span><span class="pun">.</span><span class="pln">keepTerminator</span></code>, then the
     delimiter is included in the slices returned.
@@ -2946,7 +2961,7 @@ $('#symbolSearchPane').show();</script>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">lineSplitter</span>(<a href="../../std/typecons/flag.html"><span class="typ">Flag</span></a>!("keepTerminator") keepTerm<span class="pln"> </span><span class="pun">= </span><span class="typ">No<wbr/></span><span class="pun">.</span><span class="pln">keepTerminator</span>, Range)
+				<span class="kwd">auto</span> <span class="pln">lineSplitter</span>(<a href="../../std/typecons/flag.html"><span class="typ">Flag</span></a>!("keepTerminator") keepTerm<span class="pln"> </span><span class="pun">= </span><span class="typ">No<wbr/></span><span class="pun">.</span><span class="pln">keepTerminator</span>, Range)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">Range</span> <span class="pln">r</span>
@@ -2956,7 +2971,7 @@ $('#symbolSearchPane').show();</script>
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">hasSlicing</span><span class="pun">!</span><span class="typ">Range </span><span class="pun">&amp;&amp; </span><span class="pln">hasLength</span><span class="pun">!</span><span class="typ">Range </span><span class="pun">&amp;&amp; </span><span class="pln">isSomeChar</span><span class="pun">!(</span><span class="typ">ElementType</span><span class="pun">!</span><span class="typ">Range</span><span class="pun">) &amp;&amp; !</span><span class="pln">isSomeString</span><span class="pun">!</span><span class="typ">Range</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">lineSplitter</span>(<a href="../../std/typecons/flag.html"><span class="typ">Flag</span></a>!("keepTerminator") keepTerm<span class="pln"> </span><span class="pun">= </span><span class="typ">No<wbr/></span><span class="pun">.</span><span class="pln">keepTerminator</span>, C)
+				<span class="kwd">auto</span> <span class="pln">lineSplitter</span>(<a href="../../std/typecons/flag.html"><span class="typ">Flag</span></a>!("keepTerminator") keepTerm<span class="pln"> </span><span class="pun">= </span><span class="typ">No<wbr/></span><span class="pun">.</span><span class="pln">keepTerminator</span>, C)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">C</span><span class="pun">[]</span> <span class="pln">r</span>

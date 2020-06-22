@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,12 +2952,12 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../std/numeric.html">std.numeric</a>.findLocalMin</code></h1><p>Find a real minimum of a real function <code class="lang-d"><a href="../std/numeric/find_local_min.html#f"><span class="pln"><a href="../../std/numeric/find_local_min.html#f"><span class="pln">f</span></a></span></a><span class="pun">(</span><span class="pln">x</span><span class="pun">)</span></code> via bracketing.
-Given a function <code class="lang-d"><a href="../std/numeric/find_local_min.html#f"><span class="pln"><a href="../../std/numeric/find_local_min.html#f"><span class="pln">f</span></a></span></a></code> and a range <code class="lang-d"><span class="pun">(<a href="../std/numeric/find_local_min.html#ax"></span><span class="pln"><a href="../../std/numeric/find_local_min.html#ax"><span class="pln">ax</span></a></span></a><span class="pln"> </span><span class="pun">.. <a href="../std/numeric/find_local_min.html#bx"></span><span class="pln"><a href="../../std/numeric/find_local_min.html#bx"><span class="pln">bx</span></a></span></a><span class="pun">)</span></code>,
-returns the value of <code class="lang-d"><span class="pln">x</span></code> in the range which is closest to a minimum of <code class="lang-d"><a href="../std/numeric/find_local_min.html#f"><span class="pln"><a href="../../std/numeric/find_local_min.html#f"><span class="pln">f</span></a></span></a><span class="pun">(</span><span class="pln">x</span><span class="pun">)</span></code>.
-<code class="lang-d"><a href="../std/numeric/find_local_min.html#f"><span class="pln"><a href="../../std/numeric/find_local_min.html#f"><span class="pln">f</span></a></span></a></code> is never evaluted at the endpoints of <code class="lang-d"><a href="../std/numeric/find_local_min.html#ax"><span class="pln"><a href="../../std/numeric/find_local_min.html#ax"><span class="pln">ax</span></a></span></a></code> and <code class="lang-d"><a href="../std/numeric/find_local_min.html#bx"><span class="pln"><a href="../../std/numeric/find_local_min.html#bx"><span class="pln">bx</span></a></span></a></code>.
-If <code class="lang-d"><a href="../std/numeric/find_local_min.html#f"><span class="pln"><a href="../../std/numeric/find_local_min.html#f"><span class="pln">f</span></a></span></a><span class="pun">(</span><span class="pln">x</span><span class="pun">)</span></code> has more than one minimum in the range, one will be chosen arbitrarily.
-If <code class="lang-d"><a href="../std/numeric/find_local_min.html#f"><span class="pln"><a href="../../std/numeric/find_local_min.html#f"><span class="pln">f</span></a></span></a><span class="pun">(</span><span class="pln">x</span><span class="pun">)</span></code> returns NaN or -Infinity, <code class="lang-d"><span class="pun">(</span><span class="pln">x</span><span class="pun">, <a href="../std/numeric/find_local_min.html#f"></span><span class="pln"><a href="../../std/numeric/find_local_min.html#f"><span class="pln">f</span></a></span></a><span class="pun">(</span><span class="pln">x</span><span class="pun">), </span><span class="typ">NaN</span><span class="pun">)</span></code> will be returned;
+				</div><h1>Function <code><a href="../../std/numeric.html">std.numeric</a>.findLocalMin</code></h1><p>Find a real minimum of a real function <code class="lang-d"><a href="../../std/numeric/find_local_min.html#f"><span class="pln">f</span></a><span class="pun">(</span><span class="pln">x</span><span class="pun">)</span></code> via bracketing.
+Given a function <code class="lang-d"><a href="../../std/numeric/find_local_min.html#f"><span class="pln">f</span></a></code> and a range <code class="lang-d"><span class="pun">(<a href="../../std/numeric/find_local_min.html#ax"></span><span class="pln">ax</span></a><span class="pln"> </span><span class="pun">.. <a href="../../std/numeric/find_local_min.html#bx"></span><span class="pln">bx</span></a><span class="pun">)</span></code>,
+returns the value of <code class="lang-d"><span class="pln">x</span></code> in the range which is closest to a minimum of <code class="lang-d"><a href="../../std/numeric/find_local_min.html#f"><span class="pln">f</span></a><span class="pun">(</span><span class="pln">x</span><span class="pun">)</span></code>.
+<code class="lang-d"><a href="../../std/numeric/find_local_min.html#f"><span class="pln">f</span></a></code> is never evaluted at the endpoints of <code class="lang-d"><a href="../../std/numeric/find_local_min.html#ax"><span class="pln">ax</span></a></code> and <code class="lang-d"><a href="../../std/numeric/find_local_min.html#bx"><span class="pln">bx</span></a></code>.
+If <code class="lang-d"><a href="../../std/numeric/find_local_min.html#f"><span class="pln">f</span></a><span class="pun">(</span><span class="pln">x</span><span class="pun">)</span></code> has more than one minimum in the range, one will be chosen arbitrarily.
+If <code class="lang-d"><a href="../../std/numeric/find_local_min.html#f"><span class="pln">f</span></a><span class="pun">(</span><span class="pln">x</span><span class="pun">)</span></code> returns NaN or -Infinity, <code class="lang-d"><span class="pun">(</span><span class="pln">x</span><span class="pun">, <a href="../../std/numeric/find_local_min.html#f"></span><span class="pln">f</span></a><span class="pun">(</span><span class="pln">x</span><span class="pun">), </span><span class="typ">NaN</span><span class="pun">)</span></code> will be returned;
 otherwise, this algorithm is guaranteed to succeed.
 </p>
 				<div class="prototype">

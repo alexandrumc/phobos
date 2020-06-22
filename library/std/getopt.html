@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2959,36 +2974,45 @@ enabled by default.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="defaultGetoptFormatter" class="public" href="../std/getopt/default_getopt_formatter.html">defaultGetoptFormatter</a><span class="decoration">(output, text, opt, style)</span>
+									<a id="defaultGetoptFormatter" class="public" href="../std/getopt/default_getopt_formatter.html">defaultGetoptFormatter</a><span class="tableEntryAnnotation">(output, text, opt, style)</span>
 								</code>
 							</td>
 							<td>This function writes the passed text and <code class="lang-d"><a href="../std/getopt/option.html"><span class="typ">Option</span></a></code> into an output range
 in the manner described in the documentation of function
 <code class="lang-d"><a href="../std/getopt/default_getopt_printer.html"><span class="pln">defaultGetoptPrinter</span></a></code>, unless the style option is used.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="defaultGetoptPrinter" class="public" href="../std/getopt/default_getopt_printer.html">defaultGetoptPrinter</a><span class="decoration">(text, opt)</span>
+									<a id="defaultGetoptPrinter" class="public" href="../std/getopt/default_getopt_printer.html">defaultGetoptPrinter</a><span class="tableEntryAnnotation">(text, opt)</span>
 								</code>
 							</td>
 							<td>This function prints the passed <code class="lang-d"><a href="../std/getopt/option.html"><span class="typ">Option</span></a></code>s and text in an aligned manner on <code class="lang-d"><span class="pln">stdout</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getopt" class="public" href="../std/getopt/getopt.html">getopt</a><span class="decoration">(args, opts)</span>
+									<a id="getopt" class="public" href="../std/getopt/getopt.html">getopt</a><span class="tableEntryAnnotation">(args, opts)</span>
 								</code>
 							</td>
 							<td>Parse and remove command line options from a string array.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -2997,7 +3021,7 @@ in the manner described in the documentation of function
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3012,6 +3036,8 @@ in the manner described in the documentation of function
        <code class="lang-d"><a href="../std/getopt/config.html#required" title="std.getopt.config.required"><span class="pln">config<wbr/></span><span class="pun">.</span><span class="pln">required</span></a></code> was present.</li>
 </ul>
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3020,7 +3046,7 @@ in the manner described in the documentation of function
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3030,6 +3056,8 @@ in the manner described in the documentation of function
 							</td>
 							<td>The result of the <code class="lang-d"><a href="../std/getopt/getopt.html"><span class="pln">getopt</span></a></code> function.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3039,6 +3067,8 @@ in the manner described in the documentation of function
 							</td>
 							<td>Information about an option.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3047,7 +3077,7 @@ in the manner described in the documentation of function
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3057,6 +3087,8 @@ in the manner described in the documentation of function
 							</td>
 							<td>Configuration options for <code class="lang-d"><a href="../std/getopt/getopt.html"><span class="pln">getopt</span></a></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -3183,32 +3198,38 @@ in a <code class="lang-d"><span class="typ">Hook</span></code>, otherwise the bu
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="checked" class="public" href="../../std/experimental/checkedint/checked.html">checked</a><span class="decoration">(value)</span>
+									<a id="checked" class="public" href="../../std/experimental/checkedint/checked.html">checked</a><span class="tableEntryAnnotation">(value)</span>
 								</code>
 							</td>
 							<td>Convenience function that turns an integral into the corresponding <code class="lang-d"><a href="../../std/experimental/checkedint/checked.html"><span class="typ">Checked</span></a></code>
 instance by using template argument deduction. The hook type may be specified
 (by default <code class="lang-d"><a href="../../std/experimental/checkedint/abort.html"><span class="typ">Abort</span></a></code>).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isNaN" class="public" href="../../std/experimental/checkedint/is_nan.html">isNaN</a><span class="decoration">(x)</span>
+									<a id="isNaN" class="public" href="../../std/experimental/checkedint/is_nan.html">isNaN</a><span class="tableEntryAnnotation">(x)</span>
 								</code>
 							</td>
 							<td>Queries whether a <code class="lang-d"><a href="../../std/experimental/checkedint/checked.html"><span class="typ">Checked</span></a><span class="pun">!(</span><span class="pln">T</span><span class="pun">, <a href="../../std/experimental/checkedint/with_nan.html"></span><span class="typ">WithNaN</span></a><span class="pun">)</span></code> object is not a number (NaN).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="opChecked" class="public" href="../../std/experimental/checkedint/op_checked.html">opChecked</a><span class="decoration">(lhs, rhs, overflow)</span>
+									<a id="opChecked" class="public" href="../../std/experimental/checkedint/op_checked.html">opChecked</a><span class="tableEntryAnnotation">(lhs, rhs, overflow)</span>
 								</code>
 							</td>
 							<td>Defines binary operations with overflow checking for any two integral types.
@@ -3217,6 +3238,9 @@ counterintuitive), and <code class="lang-d"><a href="../../std/experimental/chec
 inadvertent change of signedness, e.g. <code class="lang-d"><span class="pun">-</span><span class="lit">1</span></code> is converted to <code class="lang-d"><span class="typ">uint</span></code>).
 Conceptually the behavior is:
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3225,7 +3249,7 @@ Conceptually the behavior is:
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3236,6 +3260,8 @@ Conceptually the behavior is:
 							<td>Force all integral errors to fail by printing an error message to <code class="lang-d"><span class="pln">stderr</span></code> and
 then abort the program. <code class="lang-d"><span class="typ">Abort</span></code> is the default second argument for <code class="lang-d"><a href="../../std/experimental/checkedint/checked.html"><span class="typ">Checked</span></a></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3247,6 +3273,8 @@ then abort the program. <code class="lang-d"><span class="typ">Abort</span></cod
 help of a <code class="lang-d"><span class="typ">Hook</span></code> type. The type wrapped must be one of the predefined integrals
 (unqualified), or another instance of <code class="lang-d"><span class="typ">Checked</span></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3262,6 +3290,8 @@ signed to unsigned integral occur before the comparison. Using <code class="lang
 floating-point number makes sure the integral can be properly converted to the
 floating point type, thus making sure equality is transitive.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3273,6 +3303,8 @@ floating point type, thus making sure equality is transitive.
 overflow leaves the result at its extreme value (<code class="lang-d"><span class="pln">min</span></code> or <code class="lang-d"><span class="pln">max</span></code> depending on the
 direction of the overflow).
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3284,6 +3316,8 @@ direction of the overflow).
 <code class="lang-d"><a href="../../std/experimental/checkedint/throw.check_failure.html"><span class="typ">Throw<wbr/></span><span class="pun">.</span><span class="typ">CheckFailure</span></a></code>. The message coming with the error is similar to the one
 printed by <code class="lang-d"><a href="../../std/experimental/checkedint/warn.html"><span class="typ">Warn</span></a></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3294,6 +3328,8 @@ printed by <code class="lang-d"><a href="../../std/experimental/checkedint/warn.
 							<td>Hook that prints to <code class="lang-d"><span class="pln">stderr</span></code> a trace of all integral errors, without affecting
 default behavior.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3305,6 +3341,8 @@ default behavior.
 signed integrals, the reserved value is <code class="lang-d"><span class="pln">T<wbr/></span><span class="pun">.</span><span class="pln">min</span></code>. For signed integrals, the
 reserved value is <code class="lang-d"><span class="pln">T<wbr/></span><span class="pun">.</span><span class="pln">max</span></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

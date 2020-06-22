@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,16 +2952,16 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../std/numeric.html">std.numeric</a>.gapWeightedSimilarityNormalized</code></h1><p>The similarity per <code class="lang-d"><a href="../std/numeric/gap_weighted_similarity.html"><span class="pln"><a href="../../std/numeric/gap_weighted_similarity.html"><span class="pln">gapWeightedSimilarity</span></a></span></a></code> has an issue in that it
+				</div><h1>Function <code><a href="../../std/numeric.html">std.numeric</a>.gapWeightedSimilarityNormalized</code></h1><p>The similarity per <code class="lang-d"><a href="../../std/numeric/gap_weighted_similarity.html"><span class="pln">gapWeightedSimilarity</span></a></code> has an issue in that it
 grows with the lengths of the two strings, even though the strings are
 not actually very similar. For example, the range <code class="lang-d"><span class="pun">[</span><span class="str">"Hello"</span><span class="pun">,
 </span><span class="str">"world"</span><span class="pun">]</span></code> is increasingly similar with the range <code class="lang-d"><span class="pun">[</span><span class="str">"Hello"</span><span class="pun">,
 </span><span class="str">"world"</span><span class="pun">, </span><span class="str">"world"</span><span class="pun">, </span><span class="str">"world"</span><span class="pun">,...]</span></code> as more instances of <code class="lang-d"><span class="str">"world"</span></code> are
-appended. To prevent that, <code class="lang-d"><span class="pln"><span class="pln">gapWeightedSimilarityNormalized</span></span></code>
+appended. To prevent that, <code class="lang-d"><span class="pln">gapWeightedSimilarityNormalized</span></code>
 computes a normalized version of the similarity that is computed as
 <code class="lang-d"><a href="../../std/numeric/gap_weighted_similarity.html"><span class="pln">gapWeightedSimilarity</span></a><span class="pun">(<a href="../../std/numeric/gap_weighted_similarity_normalized.html#s"></span><span class="pln">s</span></a><span class="pun">, <a href="../../std/numeric/gap_weighted_similarity_normalized.html#t"></span><span class="pln">t</span></a><span class="pun">, <a href="../../std/numeric/gap_weighted_similarity_normalized.html#lambda"></span><span class="pln">lambda</span></a><span class="pun">) /
 </span><span class="pln">sqrt</span><span class="pun">(<a href="../../std/numeric/gap_weighted_similarity.html"></span><span class="pln">gapWeightedSimilarity</span></a><span class="pun">(<a href="../../std/numeric/gap_weighted_similarity_normalized.html#s"></span><span class="pln">s</span></a><span class="pun">, <a href="../../std/numeric/gap_weighted_similarity_normalized.html#t"></span><span class="pln">t</span></a><span class="pun">, <a href="../../std/numeric/gap_weighted_similarity_normalized.html#lambda"></span><span class="pln">lambda</span></a><span class="pun">) * <a href="../../std/numeric/gap_weighted_similarity.html"></span><span class="pln">gapWeightedSimilarity</span></a><span class="pun">(<a href="../../std/numeric/gap_weighted_similarity_normalized.html#s"></span><span class="pln">s</span></a><span class="pun">, <a href="../../std/numeric/gap_weighted_similarity_normalized.html#t"></span><span class="pln">t</span></a><span class="pun">,
-<a href="../../std/numeric/gap_weighted_similarity_normalized.html#lambda"></span><span class="pln">lambda</span></a><span class="pun">))</span></code>. The function <code class="lang-d"><span class="pln"><span class="pln">gapWeightedSimilarityNormalized</span></span></code> (a
+<a href="../../std/numeric/gap_weighted_similarity_normalized.html#lambda"></span><span class="pln">lambda</span></a><span class="pun">))</span></code>. The function <code class="lang-d"><span class="pln">gapWeightedSimilarityNormalized</span></code> (a
 so-called normalized kernel) is bounded in <code class="lang-d"><span class="pun">[</span><span class="lit">0</span><span class="pun">, </span><span class="lit">1</span><span class="pun">]</span></code>, reaches <code class="lang-d"><span class="lit">0</span></code>
 only for ranges that don't match in any position, and <code class="lang-d"><span class="lit">1</span></code> only for
 identical ranges.

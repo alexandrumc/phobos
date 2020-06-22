@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/typecons.d#L2967">
+							<a href="https://github.com/dlang/phobos/blob/master/std/typecons.d#L2976">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/typecons.d#L2967">
+							<a href="https://github.com/dlang/phobos/edit/master/std/typecons.d#L2976">
 								Improve this page
 							</a>
 							<div>
@@ -2953,8 +2968,8 @@ $('#symbolSearchPane').show();</script>
 						</li>
 					</ul>
 				</nav><h2 id="0">Function Nullable.get</h2><p>Gets the value if not null. If <code class="lang-d"><span class="kwd">this</span></code> is in the null state, and the optional
-parameter <code class="lang-d"><a href="../../std/typecons/nullable.get.html#fallback"><span class="pln"><a href="../../std/typecons/nullable.get.html#fallback"><span class="pln">fallback</span></a></span></a></code> was provided, it will be returned. Without <code class="lang-d"><a href="../../std/typecons/nullable.get.html#fallback"><span class="pln"><a href="../../std/typecons/nullable.get.html#fallback"><span class="pln">fallback</span></a></span></a></code>,
-calling <code class="lang-d"><span class="pln"><span class="pln">get</span></span></code> with a null state is invalid.
+ parameter <code class="lang-d"><a href="../../std/typecons/nullable.get.html#fallback"><span class="pln">fallback</span></a></code> was provided, it will be returned. Without <code class="lang-d"><a href="../../std/typecons/nullable.get.html#fallback"><span class="pln">fallback</span></a></code>,
+ calling <code class="lang-d"><span class="pln">get</span></code> with a null state is invalid.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2970,7 +2985,7 @@ calling <code class="lang-d"><span class="pln"><span class="pln">get</span></spa
 				<span class="pun">)</span><span class="pln"> </span><span class="kwd">pure nothrow @property @safe</span><span class="pun">;</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto inout </span><span class="kwd">auto</span> <span class="pln">get</span>(U)
+				<span class="kwd">inout </span><span class="kwd">auto</span> <span class="pln">get</span>(U)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="kwd">inout</span><span class="pun">(</span><span class="pln">U</span><span class="pun">)</span> <span class="pln">fallback</span>
@@ -2980,7 +2995,7 @@ calling <code class="lang-d"><span class="pln"><span class="pln">get</span></spa
 					</code>
 				</div>
 				<section><p>When the fallback type is different from the Nullable type, <code class="lang-d"><span class="pln">get</span><span class="pun">(</span><span class="pln">T</span><span class="pun">)</span></code> returns
-the common type.
+ the common type.
 </p>
 </section>
 
@@ -3004,6 +3019,7 @@ the common type.
 </span><span class="pln">ni </span><span class="pun">= </span><span class="lit">7</span><span class="pun">;
 </span><span class="pln">x </span><span class="pun">= </span><span class="pln">ni<wbr/></span><span class="pun">.</span><span class="pln">get</span><span class="pun">(</span><span class="pln">i</span><span class="pun">);
 </span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">x</span><span class="pun">); </span><span class="com">// 7
+
 </span></code></pre>
 </section>
 <h2 id="1">Function Nullable.get</h2><p>Gets the value. <code class="lang-d"><span class="kwd">this</span></code> must not be in the null state.

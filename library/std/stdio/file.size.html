@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/stdio.d#L3330">
+							<a href="https://github.com/dlang/phobos/blob/master/std/stdio.d#L3348">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/stdio.d#L3330">
+							<a href="https://github.com/dlang/phobos/edit/master/std/stdio.d#L3348">
 								Improve this page
 							</a>
 							<div>
@@ -2937,7 +2952,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../std/stdio/file.html">std.stdio.File</a>.size</code></h1><p>Get the size of the file, ulong.max if file is not searchable, but still throws if an actual error occurs.
+				</div><h1>Function <code><a href="../../std/stdio/file.html">std.stdio.File</a>.size</code></h1><p>Returns the size of the file in bytes, ulong.max if file is not searchable or throws if the operation fails.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2947,7 +2962,20 @@ $('#symbolSearchPane').show();</script>
 					</code>
 				</div>
 				
-				
+				<section><h2>Example</h2>
+<pre class="code"><code class="lang-d"><span class="kwd">import <a href="../../std/stdio.html"></span><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">stdio</span></a><span class="pun">, <a href="../../std/file.html"></span><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">file</span></a><span class="pun">;
+
+</span><span class="typ">void </span><span class="pln">main</span><span class="pun">()
+{
+    </span><span class="typ">string </span><span class="pln">deleteme </span><span class="pun">= </span><span class="str">"delete.me"</span><span class="pun">;
+    </span><span class="kwd">auto </span><span class="pln">file_handle </span><span class="pun">= <a href="../../std/stdio/file.html"></span><span class="typ">File</span></a><span class="pun">(</span><span class="pln">deleteme</span><span class="pun">, </span><span class="str">"w"</span><span class="pun">);
+    </span><span class="pln">file_handle<wbr/></span><span class="pun">.</span><span class="pln">write</span><span class="pun">(</span><span class="str">"abc"</span><span class="pun">); </span><span class="com">//create temporary file
+    </span><span class="kwd">scope</span><span class="pun">(</span><span class="pln">exit</span><span class="pun">) </span><span class="pln">deleteme<wbr/></span><span class="pun">.</span><span class="pln">remove</span><span class="pun">; </span><span class="com">//remove temporary file at scope exit
+
+    </span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">file_handle<wbr/></span><span class="pun">.</span><span class="pln">size</span><span class="pun">() == </span><span class="lit">3</span><span class="pun">); </span><span class="com">//check if file size is 3 bytes
+</span><span class="pun">}</span></code></pre>
+</section>
+
 				<section>
 					<h2>Authors</h2><p><a href="http://digitalmars.com">Walter Bright</a>,
            <a href="http://erdani.org">Andrei Alexandrescu</a>,

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -3002,11 +3017,12 @@ appropriate small object allocator.
 								<a href="../../../../../std/experimental/allocator/building_blocks/free_tree/free_tree.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
-							<td>Allocates <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_tree/free_tree.allocate.html#n"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/free_tree/free_tree.allocate.html#n"><span class="pln">n</span></a></span></a></code> bytes of memory. First consults the free tree, and returns
+							<td>Allocates <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_tree/free_tree.allocate.html#n"><span class="pln">n</span></a></code> bytes of memory. First consults the free tree, and returns
     from it if a suitably sized block is found. Otherwise, the parent allocator
     is tried. If allocation from the parent succeeds, the allocated block is
-    returned. Otherwise, the free tree tries an alternate strategy: If <code class="lang-d"><span class="pln">    </span><span class="typ">ParentAllocator</span></code> defines <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_tree/free_tree.deallocate.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/free_tree/free_tree.deallocate.html"><span class="pln">deallocate</span></a></span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_tree/free_tree.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/free_tree/free_tree.html"><span class="typ">FreeTree</span></a></span></a></code> releases all of its
+    returned. Otherwise, the free tree tries an alternate strategy: If <code class="lang-d"><span class="pln">    </span><span class="typ">ParentAllocator</span></code> defines <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_tree/free_tree.deallocate.html"><span class="pln">deallocate</span></a></code>, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_tree/free_tree.html"><span class="typ">FreeTree</span></a></code> releases all of its
     contents and tries again.
 </td>
 						</tr>
@@ -3015,8 +3031,9 @@ appropriate small object allocator.
 								<a href="../../../../../std/experimental/allocator/building_blocks/free_tree/free_tree.clear.html" class="public">
 									<code>clear</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
-							<td>Defined if <code class="lang-d"><span class="typ">ParentAllocator<wbr/></span><span class="pun">.</span><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/free_tree/free_tree.deallocate.html"><span class="pln">deallocate</span></a></span></code> exists, and returns to it
+							<td>Defined if <code class="lang-d"><span class="typ">ParentAllocator<wbr/></span><span class="pun">.</span><span class="pln">deallocate</span></code> exists, and returns to it
     all memory held in the free tree.
 </td>
 						</tr>
@@ -3025,8 +3042,9 @@ appropriate small object allocator.
 								<a href="../../../../../std/experimental/allocator/building_blocks/free_tree/free_tree.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
-							<td>Places <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_tree/free_tree.deallocate.html#b"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/free_tree/free_tree.deallocate.html#b"><span class="pln">b</span></a></span></a></code> into the free tree.
+							<td>Places <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_tree/free_tree.deallocate.html#b"><span class="pln">b</span></a></code> into the free tree.
 </td>
 						</tr>
 						<tr>
@@ -3034,8 +3052,9 @@ appropriate small object allocator.
 								<a href="../../../../../std/experimental/allocator/building_blocks/free_tree/free_tree.deallocate_all.html" class="public">
 									<code>deallocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
-							<td>Defined if <code class="lang-d"><span class="typ">ParentAllocator<wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">deallocateAll</span></span></code> exists, and forwards to it.
+							<td>Defined if <code class="lang-d"><span class="typ">ParentAllocator<wbr/></span><span class="pun">.</span><span class="pln">deallocateAll</span></code> exists, and forwards to it.
     Also nullifies the free tree (it's assumed the parent frees all memory
     stil managed by the free tree).
 </td>
@@ -3045,6 +3064,7 @@ appropriate small object allocator.
 								<a href="../../../../../std/experimental/allocator/building_blocks/free_tree/free_tree.good_alloc_size.html" class="public">
 									<code>goodAllocSize</code>
 								</a>
+								<span class="tableEntryAnnotation">(s)</span>
 							</td>
 							<td>Returns <code class="lang-d"><span class="pln">parent<wbr/></span><span class="pun">.</span><span class="pln">goodAllocSize</span><span class="pun">(</span><span class="pln">max</span><span class="pun">(</span><span class="typ">Node<wbr/></span><span class="pun">.</span><span class="pln">sizeof</span><span class="pun">, <a href="../../../../../std/experimental/allocator/building_blocks/free_tree/free_tree.good_alloc_size.html#s"></span><span class="pln">s</span></a><span class="pun">))</span></code>.
 </td>

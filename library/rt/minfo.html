@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2947,60 +2962,78 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="moduleinfos_apply" class="public" href="../rt/minfo/moduleinfos_apply.html">moduleinfos_apply</a><span class="decoration">(dg)</span>
+									<a id="moduleinfos_apply" class="public" href="../rt/minfo/moduleinfos_apply.html">moduleinfos_apply</a><span class="tableEntryAnnotation">(dg)</span>
 								</code>
 							</td>
 							<td>Iterate over all module infos.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rt_moduleCtor" class="public" href="../rt/minfo/rt_module_ctor.html">rt_moduleCtor</a><span class="decoration">()</span>
+									<a id="rt_moduleCtor" class="public" href="../rt/minfo/rt_module_ctor.html">rt_moduleCtor</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Module constructor and destructor routines.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rt_moduleDtor" class="public" href="../rt/minfo/rt_module_dtor.html">rt_moduleDtor</a><span class="decoration">()</span>
+									<a id="rt_moduleDtor" class="public" href="../rt/minfo/rt_module_dtor.html">rt_moduleDtor</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Module constructor and destructor routines.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rt_moduleTlsCtor" class="public" href="../rt/minfo/rt_module_tls_ctor.html">rt_moduleTlsCtor</a><span class="decoration">()</span>
+									<a id="rt_moduleTlsCtor" class="public" href="../rt/minfo/rt_module_tls_ctor.html">rt_moduleTlsCtor</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Module constructor and destructor routines.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rt_moduleTlsDtor" class="public" href="../rt/minfo/rt_module_tls_dtor.html">rt_moduleTlsDtor</a><span class="decoration">()</span>
+									<a id="rt_moduleTlsDtor" class="public" href="../rt/minfo/rt_module_tls_dtor.html">rt_moduleTlsDtor</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Module constructor and destructor routines.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="runModuleFuncs" class="public" href="../rt/minfo/run_module_funcs.html">runModuleFuncs</a><span class="decoration">(modules)</span>
+									<a id="runModuleFuncs" class="public" href="../rt/minfo/run_module_funcs.html">runModuleFuncs</a><span class="tableEntryAnnotation">(modules)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3009,7 +3042,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3022,6 +3055,8 @@ $('#symbolSearchPane').show();</script>
   1. all statically linked in D modules, either directely or as shared libraries
   2. each call to rt_loadLibrary()
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

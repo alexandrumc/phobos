@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2952,14 +2967,14 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function randomCover</h2><p>Covers a given range <code class="lang-d"><a href="../std/random/random_cover.html#r"><span class="pln"><a href="../../std/random/random_cover.html#r"><span class="pln">r</span></a></span></a></code> in a random manner, i.e. goes through each
-element of <code class="lang-d"><a href="../std/random/random_cover.html#r"><span class="pln"><a href="../../std/random/random_cover.html#r"><span class="pln">r</span></a></span></a></code> once and only once, just in a random order. <code class="lang-d"><a href="../std/random/random_cover.html#r"><span class="pln"><a href="../../std/random/random_cover.html#r"><span class="pln">r</span></a></span></a></code>
+				</nav><h2 id="0">Function randomCover</h2><p>Covers a given range <code class="lang-d"><a href="../../std/random/random_cover.html#r"><span class="pln">r</span></a></code> in a random manner, i.e. goes through each
+element of <code class="lang-d"><a href="../../std/random/random_cover.html#r"><span class="pln">r</span></a></code> once and only once, just in a random order. <code class="lang-d"><a href="../../std/random/random_cover.html#r"><span class="pln">r</span></a></code>
 must be a random-access range with length.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">randomCover</span>(Range, UniformRNG)
+				<span class="kwd">auto</span> <span class="pln">randomCover</span>(Range, UniformRNG)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">Range</span> <span class="pln">r</span><span class="pun">,</span>
@@ -2971,7 +2986,7 @@ must be a random-access range with length.
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isRandomAccessRange</span><span class="pun">!</span><span class="typ">Range </span><span class="pun">&amp;&amp; </span><span class="pln">isUniformRNG</span><span class="pun">!</span><span class="typ">UniformRNG</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">randomCover</span>(Range)
+				<span class="kwd">auto</span> <span class="pln">randomCover</span>(Range)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">Range</span> <span class="pln">r</span>
@@ -3012,8 +3027,8 @@ thread-global RNG rndGen will be used internally.
 </span><span class="kwd">assert</span><span class="pun">(</span><span class="lit">10<wbr/></span><span class="pun">.</span><span class="pln">iota<wbr/></span><span class="pun">.</span><span class="pln">randomCover</span><span class="pun">(</span><span class="pln">rnd</span><span class="pun">)<wbr/>.</span><span class="pln">equal</span><span class="pun">([</span><span class="lit">7</span><span class="pun">, </span><span class="lit">4</span><span class="pun">, </span><span class="lit">2</span><span class="pun">, </span><span class="lit">0</span><span class="pun">, </span><span class="lit">1</span><span class="pun">, </span><span class="lit">6</span><span class="pun">, </span><span class="lit">8</span><span class="pun">, </span><span class="lit">3</span><span class="pun">, </span><span class="lit">9</span><span class="pun">, </span><span class="lit">5</span><span class="pun">]));
 </span></code></pre>
 </section>
-<h2 id="1">Struct RandomCover</h2><p>Covers a given range <code class="lang-d"><a href="../std/random/random_cover.html#r"><span class="pln"><a href="../../std/random/random_cover.html#r"><span class="pln">r</span></a></span></a></code> in a random manner, i.e. goes through each
-element of <code class="lang-d"><a href="../std/random/random_cover.html#r"><span class="pln"><a href="../../std/random/random_cover.html#r"><span class="pln">r</span></a></span></a></code> once and only once, just in a random order. <code class="lang-d"><a href="../std/random/random_cover.html#r"><span class="pln"><a href="../../std/random/random_cover.html#r"><span class="pln">r</span></a></span></a></code>
+<h2 id="1">Struct RandomCover</h2><p>Covers a given range <code class="lang-d"><span class="pln">r</span></code> in a random manner, i.e. goes through each
+element of <code class="lang-d"><span class="pln">r</span></code> once and only once, just in a random order. <code class="lang-d"><span class="pln">r</span></code>
 must be a random-access range with length.
 </p>
 				<div class="prototype">
@@ -3027,7 +3042,7 @@ must be a random-access range with length.
 						</div>
 					</code>
 				</div>
-				<section><p>If no random number generator is passed to <code class="lang-d"><span class="pln"><a href="../../std/random/random_cover.html"><span class="pln">randomCover</span></a></span></code>, the
+				<section><p>If no random number generator is passed to <code class="lang-d"><a href="../../std/random/random_cover.html"><span class="pln">randomCover</span></a></code>, the
 thread-global RNG rndGen will be used internally.
 </p>
 </section>
@@ -3036,13 +3051,13 @@ thread-global RNG rndGen will be used internally.
 <table><col class="caption"><tr><th>Name</th><th>Description</th></tr>
 <tr><td id="r">r</td><td> random-access range to cover</td></tr>
 <tr><td id="rng">rng</td><td> (optional) random number generator to use;
-          if not specified, defaults to <code class="lang-d"><a href="../../std/random/rnd_gen.html"><span class="pln"><a href="../../std/random/rnd_gen.html"><span class="pln">rndGen</span></a></span></a></code></td></tr>
+          if not specified, defaults to <code class="lang-d"><a href="../../std/random/rnd_gen.html"><span class="pln">rndGen</span></a></code></td></tr>
 </table>
 </section>
 <section><h3>Returns</h3>
-<p>Range whose elements consist of the elements of <code class="lang-d"><a href="../../std/random/random_cover.html#r"><span class="pln">r</span></a></code>,
-    in random order.  Will be a forward range if both <code class="lang-d"><a href="../../std/random/random_cover.html#r"><span class="pln">r</span></a></code> and
-    <code class="lang-d"><a href="../../std/random/random_cover.html#rng"><span class="pln">rng</span></a></code> are forward ranges, an
+<p>Range whose elements consist of the elements of <code class="lang-d"><span class="pln">r</span></code>,
+    in random order.  Will be a forward range if both <code class="lang-d"><span class="pln">r</span></code> and
+    <code class="lang-d"><span class="pln">rng</span></code> are forward ranges, an
     <a href="../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a> otherwise.
 </p>
 </section>

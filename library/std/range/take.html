@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2952,7 +2967,7 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function take</h2><p>Lazily takes only up to <code class="lang-d"><a href="../std/range/take.html#n"><span class="pln"><a href="../../std/range/take.html#n"><span class="pln">n</span></a></span></a></code> elements of a range. This is
+				</nav><h2 id="0">Function take</h2><p>Lazily takes only up to <code class="lang-d"><a href="../../std/range/take.html#n"><span class="pln">n</span></a></code> elements of a range. This is
 particularly useful when using with infinite ranges.
 </p>
 				<div class="prototype">
@@ -3015,7 +3030,7 @@ length information.
 </span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">equal</span><span class="pun">(</span><span class="pln">t</span><span class="pun">, [ </span><span class="lit">1</span><span class="pun">, </span><span class="lit">2</span><span class="pun">, </span><span class="lit">3 </span><span class="pun">]));
 </span></code></pre>
 </section>
-<h2 id="1">Alias/Struct Take</h2><p>Lazily takes only up to <code class="lang-d"><a href="../std/range/take.html#n"><span class="pln"><a href="../../std/range/take.html#n"><span class="pln">n</span></a></span></a></code> elements of a range. This is
+<h2 id="1">Alias/Struct Take</h2><p>Lazily takes only up to <code class="lang-d"><span class="pln">n</span></code> elements of a range. This is
 particularly useful when using with infinite ranges.
 </p>
 				<div class="prototype">
@@ -3033,9 +3048,9 @@ particularly useful when using with infinite ranges.
 						</div>
 					</code>
 				</div>
-				<section><p>Unlike <code class="lang-d"><a href="../../std/range/take_exactly.html"><span class="pln">takeExactly</span></a></code>, <code class="lang-d"><span class="pln"><a href="../../std/range/take.html"><span class="pln">take</span></a></span></code> does not require that there
-are <code class="lang-d"><a href="../../std/range/take.html#n"><span class="pln">n</span></a></code> or more elements in <code class="lang-d"><a href="../../std/range/take.html#input"><span class="pln">input</span></a></code>. As a consequence, length
-information is not applied to the result unless <code class="lang-d"><a href="../../std/range/take.html#input"><span class="pln">input</span></a></code> also has
+				<section><p>Unlike <code class="lang-d"><a href="../../std/range/take_exactly.html"><span class="pln">takeExactly</span></a></code>, <code class="lang-d"><a href="../../std/range/take.html"><span class="pln">take</span></a></code> does not require that there
+are <code class="lang-d"><span class="pln">n</span></code> or more elements in <code class="lang-d"><span class="pln">input</span></code>. As a consequence, length
+information is not applied to the result unless <code class="lang-d"><span class="pln">input</span></code> also has
 length information.
 </p>
 </section>
@@ -3116,6 +3131,7 @@ length information.
 								<a href="../../std/range/take.move_at.html" class="public">
 									<code>moveAt</code>
 								</a>
+								<span class="tableEntryAnnotation">(index)</span>
 							</td>
 							<td>Range primitives
 </td>
@@ -3125,6 +3141,7 @@ length information.
 								<a href="../../std/range/take.move_back.html" class="public">
 									<code>moveBack</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Range primitives
 </td>
@@ -3134,6 +3151,7 @@ length information.
 								<a href="../../std/range/take.move_front.html" class="public">
 									<code>moveFront</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Range primitives
 </td>
@@ -3143,6 +3161,7 @@ length information.
 								<a href="../../std/range/take.op_index.html" class="public">
 									<code>opIndex</code>
 								</a>
+								<span class="tableEntryAnnotation">(index)</span>
 							</td>
 							<td>Range primitives
 </td>
@@ -3152,6 +3171,7 @@ length information.
 								<a href="../../std/range/take.op_index_assign.html" class="public">
 									<code>opIndexAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(v, index)</span>
 							</td>
 							<td>Range primitives
 </td>
@@ -3161,6 +3181,7 @@ length information.
 								<a href="../../std/range/take.op_slice.html" class="public">
 									<code>opSlice</code>
 								</a>
+								<span class="tableEntryAnnotation">(i, j)</span>
 							</td>
 							<td>Range primitives
 </td>
@@ -3170,6 +3191,7 @@ length information.
 								<a href="../../std/range/take.pop_back.html" class="public">
 									<code>popBack</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Range primitives
 </td>
@@ -3179,6 +3201,7 @@ length information.
 								<a href="../../std/range/take.pop_front.html" class="public">
 									<code>popFront</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Range primitives
 </td>
@@ -3205,13 +3228,13 @@ length information.
 				<section><h3>Parameters</h3>
 <table><col class="caption"><tr><th>Name</th><th>Description</th></tr>
 <tr><td id="input">input</td><td> an <a href="../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>
-    to iterate over up to <code class="lang-d"><a href="../../std/range/take.html#n"><span class="pln">n</span></a></code> times</td></tr>
+    to iterate over up to <code class="lang-d"><span class="pln">n</span></code> times</td></tr>
 <tr><td id="n">n</td><td> the number of elements to take</td></tr>
 </table>
 </section>
 <section><h3>Returns</h3>
 <p>At minimum, an input range. If the range offers random access
-    and <code class="lang-d"><span class="pln"><a href="../../std/range/take.length.html"><span class="pln">length</span></a></span></code>, <code class="lang-d"><span class="pln"><a href="../../std/range/take.html"><span class="pln">take</span></a></span></code> offers them as well.
+    and <code class="lang-d"><a href="../../std/range/take.length.html"><span class="pln">length</span></a></code>, <code class="lang-d"><a href="../../std/range/take.html"><span class="pln">take</span></a></code> offers them as well.
 </p>
 </section>
 <section><h3>Example</h3>
@@ -3227,7 +3250,7 @@ length information.
 </span></code></pre>
 </section>
 <section><h3>Example</h3>
-<p>If the range runs out before <code class="lang-d"><a href="../../std/range/take.html#n"><span class="pln">n</span></a></code> elements, <code class="lang-d"><span class="pln"><a href="../../std/range/take.html"><span class="pln">take</span></a></span></code> simply returns the entire
+<p>If the range runs out before <code class="lang-d"><span class="pln">n</span></code> elements, <code class="lang-d"><a href="../../std/range/take.html"><span class="pln">take</span></a></code> simply returns the entire
  range (unlike <code class="lang-d"><a href="../../std/range/take_exactly.html"><span class="pln">takeExactly</span></a></code>, which will cause an assertion failure if
  the range ends prematurely):<span class="dlang_runnable"></span>
 </p>

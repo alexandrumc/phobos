@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2963,24 +2978,30 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isEmail" class="public" href="../../std/net/isemail/is_email.html">isEmail</a><span class="decoration">(email, checkDNS, errorLevel)</span>
+									<a id="isEmail" class="public" href="../../std/net/isemail/is_email.html">isEmail</a><span class="tableEntryAnnotation">(email, checkDNS, errorLevel)</span>
 								</code>
 							</td>
 							<td>Check that an email address conforms to RFCs 5321, 5322 and others.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="statusCodeDescription" class="public" href="../../std/net/isemail/status_code_description.html">statusCodeDescription</a><span class="decoration">(statusCode)</span>
+									<a id="statusCodeDescription" class="public" href="../../std/net/isemail/status_code_description.html">statusCodeDescription</a><span class="tableEntryAnnotation">(statusCode)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -2989,7 +3010,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -2999,6 +3020,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Represents the status of an email address
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3007,7 +3030,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3018,6 +3041,8 @@ $('#symbolSearchPane').show();</script>
 							<td>An email status code, indicating if an email address is valid or not.
  If it is invalid it also indicates why.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

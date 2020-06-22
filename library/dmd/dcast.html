@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2954,12 +2969,12 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="arrayTypeCompatible" class="public" href="../dmd/dcast/array_type_compatible.html">arrayTypeCompatible</a><span class="decoration">(loc, t1, t2)</span>
+									<a id="arrayTypeCompatible" class="public" href="../dmd/dcast/array_type_compatible.html">arrayTypeCompatible</a><span class="tableEntryAnnotation">(loc, t1, t2)</span>
 								</code>
 							</td>
 							<td>See if both types are arrays that can be compared
@@ -2968,11 +2983,14 @@ $('#symbolSearchPane').show();</script>
  This is to enable comparing things like an immutable
  array with a mutable one.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="arrayTypeCompatibleWithoutCasting" class="public" href="../dmd/dcast/array_type_compatible_without_casting.html">arrayTypeCompatibleWithoutCasting</a><span class="decoration">(t1, t2)</span>
+									<a id="arrayTypeCompatibleWithoutCasting" class="public" href="../dmd/dcast/array_type_compatible_without_casting.html">arrayTypeCompatibleWithoutCasting</a><span class="tableEntryAnnotation">(t1, t2)</span>
 								</code>
 							</td>
 							<td>See if both types are arrays that can be compared
@@ -2980,102 +2998,135 @@ $('#symbolSearchPane').show();</script>
  This is to enable comparing things like an immutable
  array with a mutable one.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="castTo" class="public" href="../dmd/dcast/cast_to.html">castTo</a><span class="decoration">(e, sc, t)</span>
+									<a id="castTo" class="public" href="../dmd/dcast/cast_to.html">castTo</a><span class="tableEntryAnnotation">(e, sc, t)</span>
 								</code>
 							</td>
 							<td>Do an explicit cast.
  Assume that the 'this' expression does not have any indirections.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fix16997" class="public" href="../dmd/dcast/fix16997.html">fix16997</a><span class="decoration">(sc, ue)</span>
+									<a id="fix16997" class="public" href="../dmd/dcast/fix16997.html">fix16997</a><span class="tableEntryAnnotation">(sc, ue)</span>
 								</code>
 							</td>
 							<td>This provides a transition from the non-promoting behavior
  of unary + - ~ to the C-like integral promotion behavior.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getIntRange" class="public" href="../dmd/dcast/get_int_range.html">getIntRange</a><span class="decoration">(e)</span>
+									<a id="getIntRange" class="public" href="../dmd/dcast/get_int_range.html">getIntRange</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="implicitCastTo" class="public" href="../dmd/dcast/implicit_cast_to.html">implicitCastTo</a><span class="decoration">(e, sc, t)</span>
+									<a id="implicitCastTo" class="public" href="../dmd/dcast/implicit_cast_to.html">implicitCastTo</a><span class="tableEntryAnnotation">(e, sc, t)</span>
 								</code>
 							</td>
 							<td>Do an implicit cast.
  Issue error if it can't be done.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="implicitConvTo" class="public" href="../dmd/dcast/implicit_conv_to.html">implicitConvTo</a><span class="decoration">(e, t)</span>
+									<a id="implicitConvTo" class="public" href="../dmd/dcast/implicit_conv_to.html">implicitConvTo</a><span class="tableEntryAnnotation">(e, t)</span>
 								</code>
 							</td>
 							<td>Return MATCH level of implicitly converting e to type t.
  Don't do the actual cast; don't change e.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="inferType" class="public" href="../dmd/dcast/infer_type.html">inferType</a><span class="decoration">(e, t, flag)</span>
+									<a id="inferType" class="public" href="../dmd/dcast/infer_type.html">inferType</a><span class="tableEntryAnnotation">(e, t, flag)</span>
 								</code>
 							</td>
 							<td>Set type inference target
       t       Target type
       flag    1: don't put an error when inference fails
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="integralPromotions" class="public" href="../dmd/dcast/integral_promotions.html">integralPromotions</a><span class="decoration">(e, sc)</span>
+									<a id="integralPromotions" class="public" href="../dmd/dcast/integral_promotions.html">integralPromotions</a><span class="tableEntryAnnotation">(e, sc)</span>
 								</code>
 							</td>
 							<td>Do integral promotions (convertchk).
  Don't convert <array of> to <pointer to>
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="scaleFactor" class="public" href="../dmd/dcast/scale_factor.html">scaleFactor</a><span class="decoration">(be, sc)</span>
+									<a id="scaleFactor" class="public" href="../dmd/dcast/scale_factor.html">scaleFactor</a><span class="tableEntryAnnotation">(be, sc)</span>
 								</code>
 							</td>
 							<td>Scale addition/subtraction to/from pointer.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="typeCombine" class="public" href="../dmd/dcast/type_combine.html">typeCombine</a><span class="decoration">(be, sc)</span>
+									<a id="typeCombine" class="public" href="../dmd/dcast/type_combine.html">typeCombine</a><span class="tableEntryAnnotation">(be, sc)</span>
 								</code>
 							</td>
 							<td>Bring leaves to common type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="typeMerge" class="public" href="../dmd/dcast/type_merge.html">typeMerge</a><span class="decoration">(sc, op, pt, pe1, pe2)</span>
+									<a id="typeMerge" class="public" href="../dmd/dcast/type_merge.html">typeMerge</a><span class="tableEntryAnnotation">(sc, op, pt, pe1, pe2)</span>
 								</code>
 							</td>
 							<td>Combine types.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,23 +2952,23 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../std/range.html">std.range</a>.generate</code></h1><p>Given callable (<code class="lang-d"><a href="../../std/traits/is_callable.html" title="std.traits.isCallable"><span class="pln">isCallable</span></a></code>) <code class="lang-d"><a href="../std/range/generate.html#fun"><span class="pln"><a href="../../std/range/generate.html#fun"><span class="pln">fun</span></a></span></a></code>, create as a range
-whose front is defined by successive calls to <code class="lang-d"><a href="../std/range/generate.html#fun"><span class="pln"><a href="../../std/range/generate.html#fun"><span class="pln">fun</span></a></span></a><span class="pun">()</span></code>.
+				</div><h1>Function <code><a href="../../std/range.html">std.range</a>.generate</code></h1><p>Given callable (<code class="lang-d"><a href="../../std/traits/is_callable.html" title="std.traits.isCallable"><span class="pln">isCallable</span></a></code>) <code class="lang-d"><a href="../../std/range/generate.html#fun"><span class="pln">fun</span></a></code>, create as a range
+whose front is defined by successive calls to <code class="lang-d"><a href="../../std/range/generate.html#fun"><span class="pln">fun</span></a><span class="pun">()</span></code>.
 This is especially useful to call function with global side effects (random
 functions), or to create ranges expressed as a single delegate, rather than
 an entire <code class="lang-d"><span class="pln">front</span></code>/<code class="lang-d"><span class="pln">popFront</span></code>/<code class="lang-d"><span class="pln">empty</span></code> structure.
-<code class="lang-d"><a href="../std/range/generate.html#fun"><span class="pln"><a href="../../std/range/generate.html#fun"><span class="pln">fun</span></a></span></a></code> maybe be passed either a template alias parameter (existing
+<code class="lang-d"><a href="../../std/range/generate.html#fun"><span class="pln">fun</span></a></code> maybe be passed either a template alias parameter (existing
 function, delegate, struct type defining <code class="lang-d"><span class="kwd">static </span><span class="pln">opCall</span></code>) or
 a run-time value argument (delegate, function object).
 The result range models an InputRange
 (<code class="lang-d"><a href="../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange"><span class="pln">isInputRange</span></a></code>).
-The resulting range will call <code class="lang-d"><a href="../std/range/generate.html#fun"><span class="pln"><a href="../../std/range/generate.html#fun"><span class="pln">fun</span></a></span></a><span class="pun">()</span></code> on construction, and every call to
+The resulting range will call <code class="lang-d"><a href="../../std/range/generate.html#fun"><span class="pln">fun</span></a><span class="pun">()</span></code> on construction, and every call to
 <code class="lang-d"><span class="pln">popFront</span></code>, and the cached value will be returned when <code class="lang-d"><span class="pln">front</span></code> is called.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">generate</span>(Fun)
+				<span class="kwd">auto</span> <span class="pln">generate</span>(Fun)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">Fun</span> <span class="pln">fun</span>
@@ -2963,7 +2978,7 @@ The resulting range will call <code class="lang-d"><a href="../std/range/generat
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isCallable</span><span class="pun">!</span><span class="pln">fun</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">generate</span>(alias fun)<span class="pun">(</span><span class="pun">)</span>
+				<span class="kwd">auto</span> <span class="pln">generate</span>(alias fun)<span class="pun">(</span><span class="pun">)</span>
 				<br/>
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isCallable</span><span class="pun">!</span><span class="pln">fun</span><span class="pun">);</span>
 						</div>

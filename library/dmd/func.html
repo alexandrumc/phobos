@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2962,55 +2977,70 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="addInvariant" class="public" href="../dmd/func/add_invariant.html">addInvariant</a><span class="decoration">(loc, sc, ad, vthis)</span>
+									<a id="addInvariant" class="public" href="../dmd/func/add_invariant.html">addInvariant</a><span class="tableEntryAnnotation">(loc, sc, ad, vthis)</span>
 								</code>
 							</td>
 							<td>Generate Expression to call the invariant.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getIndirection" class="public" href="../dmd/func/get_indirection.html">getIndirection</a><span class="decoration">(t)</span>
+									<a id="getIndirection" class="public" href="../dmd/func/get_indirection.html">getIndirection</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Returns an indirect type one step from t.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="MODMatchToBuffer" class="public" href="../dmd/func/mod_match_to_buffer.html">MODMatchToBuffer</a><span class="decoration">(buf, lhsMod, rhsMod)</span>
+									<a id="MODMatchToBuffer" class="public" href="../dmd/func/mod_match_to_buffer.html">MODMatchToBuffer</a><span class="tableEntryAnnotation">(buf, lhsMod, rhsMod)</span>
 								</code>
 							</td>
 							<td>Checks for mismatching modifiers between <code class="lang-d"><a href="../dmd/func/mod_match_to_buffer.html#lhsMod"><span class="pln">lhsMod</span></a></code> and <code class="lang-d"><a href="../dmd/func/mod_match_to_buffer.html#rhsMod"><span class="pln">rhsMod</span></a></code> and prints the
 mismatching modifiers to <code class="lang-d"><a href="../dmd/func/mod_match_to_buffer.html#buf"><span class="pln">buf</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="overloadApply" class="public" href="../dmd/func/overload_apply.html">overloadApply</a><span class="decoration">(fstart, dg, sc)</span>
+									<a id="overloadApply" class="public" href="../dmd/func/overload_apply.html">overloadApply</a><span class="tableEntryAnnotation">(fstart, dg, sc)</span>
 								</code>
 							</td>
 							<td>Visit each overloaded function/template in turn, and call dg(s) on it.
  Exit when no more, or dg(s) returns nonzero.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="resolveFuncCall" class="public" href="../dmd/func/resolve_func_call.html">resolveFuncCall</a><span class="decoration">(loc, sc, s, tiargs, tthis, fargs, flags)</span>
+									<a id="resolveFuncCall" class="public" href="../dmd/func/resolve_func_call.html">resolveFuncCall</a><span class="tableEntryAnnotation">(loc, sc, s, tiargs, tthis, fargs, flags)</span>
 								</code>
 							</td>
 							<td>Given a symbol that could be either a FuncDeclaration or
  a function template, resolve it to a function symbol.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3019,7 +3049,7 @@ mismatching modifiers to <code class="lang-d"><a href="../dmd/func/mod_match_to_
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3028,6 +3058,8 @@ mismatching modifiers to <code class="lang-d"><a href="../dmd/func/mod_match_to_
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3036,6 +3068,8 @@ mismatching modifiers to <code class="lang-d"><a href="../dmd/func/mod_match_to_
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3045,6 +3079,8 @@ mismatching modifiers to <code class="lang-d"><a href="../dmd/func/mod_match_to_
 							</td>
 							<td>Used as a way to import a set of functions from another scope into this one.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3053,6 +3089,8 @@ mismatching modifiers to <code class="lang-d"><a href="../dmd/func/mod_match_to_
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3061,6 +3099,8 @@ mismatching modifiers to <code class="lang-d"><a href="../dmd/func/mod_match_to_
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3069,6 +3109,8 @@ mismatching modifiers to <code class="lang-d"><a href="../dmd/func/mod_match_to_
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3077,6 +3119,8 @@ mismatching modifiers to <code class="lang-d"><a href="../dmd/func/mod_match_to_
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3085,6 +3129,8 @@ mismatching modifiers to <code class="lang-d"><a href="../dmd/func/mod_match_to_
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3093,6 +3139,8 @@ mismatching modifiers to <code class="lang-d"><a href="../dmd/func/mod_match_to_
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3101,6 +3149,8 @@ mismatching modifiers to <code class="lang-d"><a href="../dmd/func/mod_match_to_
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3109,6 +3159,8 @@ mismatching modifiers to <code class="lang-d"><a href="../dmd/func/mod_match_to_
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3117,6 +3169,8 @@ mismatching modifiers to <code class="lang-d"><a href="../dmd/func/mod_match_to_
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3125,6 +3179,8 @@ mismatching modifiers to <code class="lang-d"><a href="../dmd/func/mod_match_to_
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3133,7 +3189,7 @@ mismatching modifiers to <code class="lang-d"><a href="../dmd/func/mod_match_to_
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3144,6 +3200,8 @@ mismatching modifiers to <code class="lang-d"><a href="../dmd/func/mod_match_to_
 							<td>Tuple of result identifier (possibly null) and statement.
  This is used to store out contracts: out(id){ ensure }
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3152,7 +3210,7 @@ mismatching modifiers to <code class="lang-d"><a href="../dmd/func/mod_match_to_
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3162,6 +3220,8 @@ mismatching modifiers to <code class="lang-d"><a href="../dmd/func/mod_match_to_
 							</td>
 							<td>Flag used by <code class="lang-d"><a href="../dmd/func/resolve_func_call.html"><span class="pln">resolveFuncCall</span></a></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3171,6 +3231,8 @@ mismatching modifiers to <code class="lang-d"><a href="../dmd/func/mod_match_to_
 							</td>
 							<td>Inline Status
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

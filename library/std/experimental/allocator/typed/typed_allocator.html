@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,7 +2952,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Struct <code><a href="../../../../std/experimental/allocator/typed.html">std.experimental.allocator.typed</a>.TypedAllocator</code></h1><p><code class="lang-d"><span class="typ"><span class="typ">TypedAllocator</span></span></code> acts like a chassis on which several specialized allocators
+				</div><h1>Struct <code><a href="../../../../std/experimental/allocator/typed.html">std.experimental.allocator.typed</a>.TypedAllocator</code></h1><p><code class="lang-d"><span class="typ">TypedAllocator</span></code> acts like a chassis on which several specialized allocators
 can be assembled. To let the system make a choice about a particular kind of
 allocation, use <code class="lang-d"><span class="typ">Default</span></code> for the respective parameters.
 </p>
@@ -2994,6 +3009,7 @@ references.</td></tr>
 								<a href="../../../../std/experimental/allocator/typed/typed_allocator.allocator_for.html" class="public">
 									<code>allocatorFor</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Given <code class="lang-d"><span class="pln">flags</span></code> as a combination of <code class="lang-d"><a href="../../../../std/experimental/allocator/typed/alloc_flag.html"><span class="typ">AllocFlag</span></a></code> values, or a type <code class="lang-d"><span class="pln">T</span></code>, returns
     the allocator that's a closest fit in capabilities.
@@ -3004,6 +3020,7 @@ references.</td></tr>
 								<a href="../../../../std/experimental/allocator/typed/typed_allocator.dispose.html" class="public">
 									<code>dispose</code>
 								</a>
+								<span class="tableEntryAnnotation">(p)</span>
 							</td>
 							<td>Destroys and then deallocates (using <code class="lang-d"><a href="../../../../std/experimental/allocator/typed/typed_allocator.allocator_for.html"><span class="pln">allocatorFor</span></a><span class="pun">!</span><span class="pln">T</span></code>) the object pointed
     to by a pointer, the class object referred to by a <code class="lang-d"><span class="kwd">class</span></code> or <code class="lang-d"><span class="kwd">interface</span></code>
@@ -3016,6 +3033,7 @@ references.</td></tr>
 								<a href="../../../../std/experimental/allocator/typed/typed_allocator.expand_array.html" class="public">
 									<code>expandArray</code>
 								</a>
+								<span class="tableEntryAnnotation">(array, delta)</span>
 							</td>
 							<td>Grows <code class="lang-d"><a href="../../../../std/experimental/allocator/typed/typed_allocator.expand_array.html#array"><span class="pln">array</span></a></code> by appending <code class="lang-d"><a href="../../../../std/experimental/allocator/typed/typed_allocator.expand_array.html#delta"><span class="pln">delta</span></a></code> more elements. The needed memory is
     allocated using the same allocator that was used for the array type. The
@@ -3028,6 +3046,7 @@ references.</td></tr>
 								<a href="../../../../std/experimental/allocator/typed/typed_allocator.make.html" class="public">
 									<code>make</code>
 								</a>
+								<span class="tableEntryAnnotation">(args)</span>
 							</td>
 							<td>Dynamically allocates (using the appropriate allocator chosen with
     <code class="lang-d"><a href="../../../../std/experimental/allocator/typed/typed_allocator.allocator_for.html"><span class="pln">allocatorFor</span></a><span class="pun">!</span><span class="pln">T</span></code>) and then creates in the memory allocated an object of
@@ -3043,6 +3062,7 @@ references.</td></tr>
 								<a href="../../../../std/experimental/allocator/typed/typed_allocator.make_array.html" class="public">
 									<code>makeArray</code>
 								</a>
+								<span class="tableEntryAnnotation">(length)</span>
 							</td>
 							<td>Create an array of <code class="lang-d"><span class="pln">T</span></code> with <code class="lang-d"><a href="../../../../std/experimental/allocator/typed/typed_allocator.make_array.html#length"><span class="pln">length</span></a></code> elements. The array is either
     default-initialized, filled with copies of <code class="lang-d"><a href="../../../../std/experimental/allocator/typed/typed_allocator.make_array.html#init"><span class="pln">init</span></a></code>, or initialized with
@@ -3054,6 +3074,7 @@ references.</td></tr>
 								<a href="../../../../std/experimental/allocator/typed/typed_allocator.shrink_array.html" class="public">
 									<code>shrinkArray</code>
 								</a>
+								<span class="tableEntryAnnotation">(arr, delta)</span>
 							</td>
 							<td>Shrinks an array by <code class="lang-d"><a href="../../../../std/experimental/allocator/typed/typed_allocator.shrink_array.html#delta"><span class="pln">delta</span></a></code> elements using <code class="lang-d"><a href="../../../../std/experimental/allocator/typed/typed_allocator.allocator_for.html"><span class="pln">allocatorFor</span></a><span class="pun">!(</span><span class="pln">T</span><span class="pun">[])</span></code>.
 </td>
@@ -3063,6 +3084,7 @@ references.</td></tr>
 								<a href="../../../../std/experimental/allocator/typed/typed_allocator.type2flags.html" class="public">
 									<code>type2flags</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Given a type <code class="lang-d"><span class="pln">T</span></code>, returns its allocation-related flags as a combination of
     <code class="lang-d"><a href="../../../../std/experimental/allocator/typed/alloc_flag.html"><span class="typ">AllocFlag</span></a></code> values.

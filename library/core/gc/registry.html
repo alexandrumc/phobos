@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2946,26 +2961,32 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="createGCInstance" class="public" href="../../core/gc/registry/create_gc_instance.html">createGCInstance</a><span class="decoration">(name)</span>
+									<a id="createGCInstance" class="public" href="../../core/gc/registry/create_gc_instance.html">createGCInstance</a><span class="tableEntryAnnotation">(name)</span>
 								</code>
 							</td>
 							<td>Called during runtime initialization to initialize a GC instance of given <code class="lang-d"><a href="../../core/gc/registry/create_gc_instance.html#name"><span class="pln">name</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="registerGCFactory" class="public" href="../../core/gc/registry/register_gc_factory.html">registerGCFactory</a><span class="decoration">(name, factory)</span>
+									<a id="registerGCFactory" class="public" href="../../core/gc/registry/register_gc_factory.html">registerGCFactory</a><span class="tableEntryAnnotation">(name, factory)</span>
 								</code>
 							</td>
 							<td>Register a GC factory under the given <code class="lang-d"><a href="../../core/gc/registry/register_gc_factory.html#name"><span class="pln">name</span></a></code>.  This function must be called
  from a C constructor before druntime is initialized.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

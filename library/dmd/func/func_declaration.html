@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/dmd/blob/master/src/dmd/func.d#L208">
+							<a href="https://github.com/dlang/dmd/blob/master/src/dmd/func.d#L240">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/dmd/edit/master/src/dmd/func.d#L208">
+							<a href="https://github.com/dlang/dmd/edit/master/src/dmd/func.d#L240">
 								Improve this page
 							</a>
 							<div>
@@ -3332,6 +3347,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.build_ensure_require.html" class="public">
 									<code>buildEnsureRequire</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Rewrite contracts as statements.
 </td>
@@ -3341,6 +3357,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.build_result_var.html" class="public">
 									<code>buildResultVar</code>
 								</a>
+								<span class="tableEntryAnnotation">(sc, tret)</span>
 							</td>
 							<td>Declare result variable lazily.
 </td>
@@ -3350,6 +3367,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.can_infer_attributes.html" class="public">
 									<code>canInferAttributes</code>
 								</a>
+								<span class="tableEntryAnnotation">(sc)</span>
 							</td>
 							<td>Decide if attributes for this function can be inferred from examining
  the function body.
@@ -3360,6 +3378,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.check_closure.html" class="public">
 									<code>checkClosure</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Check that the function contains any closure.
  If it's @nogc, report suitable errors.
@@ -3371,6 +3390,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.check_dmain.html" class="public">
 									<code>checkDmain</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Check parameters and return type of D main() function.
  Issue error messages.
@@ -3381,6 +3401,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.check_forward_ref.html" class="public">
 									<code>checkForwardRef</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc)</span>
 							</td>
 							<td>Check that this function type is properly resolved.
  If not, report "forward reference error" and return true.
@@ -3391,6 +3412,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.check_nested_reference.html" class="public">
 									<code>checkNestedReference</code>
 								</a>
+								<span class="tableEntryAnnotation">(sc, loc)</span>
 							</td>
 							<td>In the current function, we are calling 'this' function.
  1. Check to see if the current function can call 'this' function, issue error if not.
@@ -3406,6 +3428,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.check_nrvo.html" class="public">
 									<code>checkNrvo</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Check all return statements for a function to verify that returning
  using NRVO is possible.
@@ -3416,6 +3439,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.declare_this.html" class="public">
 									<code>declareThis</code>
 								</a>
+								<span class="tableEntryAnnotation">(sc)</span>
 							</td>
 							<td>Creates and returns the hidden parameters for this function declaration.
 </td>
@@ -3425,6 +3449,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.find_template_decl_root.html" class="public">
 									<code>findTemplateDeclRoot</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>find function template root in overload list
 </td>
@@ -3434,6 +3459,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.find_vtbl_index.html" class="public">
 									<code>findVtblIndex</code>
 								</a>
+								<span class="tableEntryAnnotation">(vtbl, dim, fix17349)</span>
 							</td>
 							<td>Find index of function in vtbl[0..dim] that
  this function overrides.
@@ -3445,6 +3471,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.function_semantic.html" class="public">
 									<code>functionSemantic</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Resolve forward reference of function signature -
  parameter types, return type, and attributes.
@@ -3456,6 +3483,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.function_semantic3.html" class="public">
 									<code>functionSemantic3</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Resolve forward reference of function body.
  Returns false if any errors exist in the body.
@@ -3466,6 +3494,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.gen_cfunc.html" class="public">
 									<code>genCfunc</code>
 								</a>
+								<span class="tableEntryAnnotation">(fparams, treturn, name, stc)</span>
 							</td>
 							<td>Generate a FuncDeclaration for a runtime library function.
 </td>
@@ -3475,6 +3504,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.get_level.html" class="public">
 									<code>getLevel</code>
 								</a>
+								<span class="tableEntryAnnotation">(fd, intypeof)</span>
 							</td>
 							<td>Determine lexical level difference from <code class="lang-d"><span class="kwd">this</span></code> to nested function <code class="lang-d"><a href="../../dmd/func/func_declaration.get_level.html#fd"><span class="pln">fd</span></a></code>.
 </td>
@@ -3484,9 +3514,10 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.get_level_and_check.html" class="public">
 									<code>getLevelAndCheck</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc, sc, fd)</span>
 							</td>
-							<td>Determine lexical level difference from <code class="lang-d"><span class="kwd">this</span></code> to nested function <code class="lang-d"><a href="../../dmd/func/func_declaration.get_level_and_check.html#fd"><span class="pln"><a href="../../dmd/func/func_declaration.get_level_and_check.html#fd"><span class="pln">fd</span></a></span></a></code>.
- Issue error if <code class="lang-d"><span class="kwd">this</span></code> cannot call <code class="lang-d"><a href="../../dmd/func/func_declaration.get_level_and_check.html#fd"><span class="pln"><a href="../../dmd/func/func_declaration.get_level_and_check.html#fd"><span class="pln">fd</span></a></span></a></code>.
+							<td>Determine lexical level difference from <code class="lang-d"><span class="kwd">this</span></code> to nested function <code class="lang-d"><a href="../../dmd/func/func_declaration.get_level_and_check.html#fd"><span class="pln">fd</span></a></code>.
+ Issue error if <code class="lang-d"><span class="kwd">this</span></code> cannot call <code class="lang-d"><a href="../../dmd/func/func_declaration.get_level_and_check.html#fd"><span class="pln">fd</span></a></code>.
 </td>
 						</tr>
 						<tr>
@@ -3494,6 +3525,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.get_parameter_list.html" class="public">
 									<code>getParameterList</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3502,6 +3534,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.has_nested_frame_refs.html" class="public">
 									<code>hasNestedFrameRefs</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Determine if function's variables are referenced by a function
  nested within it.
@@ -3512,6 +3545,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.init_infer_attributes.html" class="public">
 									<code>initInferAttributes</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Initialize for inferring the attributes of this function.
 </td>
@@ -3521,6 +3555,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.in_unittest.html" class="public">
 									<code>inUnittest</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns true if function was declared
  directly or indirectly in a unittest block
@@ -3531,6 +3566,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.is_abstract.html" class="public">
 									<code>isAbstract</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Override so it can work even if semantic() hasn't yet
  been run.
@@ -3541,6 +3577,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.is_nested.html" class="public">
 									<code>isNested</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Determine if function needs a static frame pointer.
 </td>
@@ -3550,6 +3587,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.is_return_isolated.html" class="public">
 									<code>isReturnIsolated</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>See if pointers from function parameters, mutable globals, or uplevel functions
  could leak into return value.
@@ -3560,6 +3598,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.is_this.html" class="public">
 									<code>isThis</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Determine if function is a non-static member function
  that has an implicit 'this' expression.
@@ -3570,6 +3609,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.is_type_isolated.html" class="public">
 									<code>isTypeIsolated</code>
 								</a>
+								<span class="tableEntryAnnotation">(t)</span>
 							</td>
 							<td>See if pointers from function parameters, mutable globals, or uplevel functions
  could leak into type <code class="lang-d"><a href="../../dmd/func/func_declaration.is_type_isolated.html#t"><span class="pln">t</span></a></code>.
@@ -3580,6 +3620,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.is_unique.html" class="public">
 									<code>isUnique</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3588,6 +3629,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.least_as_specialized.html" class="public">
 									<code>leastAsSpecialized</code>
 								</a>
+								<span class="tableEntryAnnotation">(g)</span>
 							</td>
 							<td>Determine partial specialization order of 'this' vs g.
  This is very similar to TemplateDeclaration::leastAsSpecialized().
@@ -3598,6 +3640,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.merge_fensure.html" class="public">
 									<code>mergeFensure</code>
 								</a>
+								<span class="tableEntryAnnotation">(sf, oid, params)</span>
 							</td>
 							<td>Merge into this function the 'out' contracts of all it overrides.
  'out's are AND'd together, i.e. all of them need to pass.
@@ -3608,6 +3651,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.merge_frequire.html" class="public">
 									<code>mergeFrequire</code>
 								</a>
+								<span class="tableEntryAnnotation">(sf, params)</span>
 							</td>
 							<td>Merge into this function the 'in' contracts of all it overrides.
  'in's are OR'd together, i.e. only one of them needs to pass.
@@ -3618,6 +3662,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.needs_closure.html" class="public">
 									<code>needsClosure</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Look at all the variables in this function that are referenced
  by nested functions, and determine if a closure needs to be
@@ -3629,6 +3674,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.needs_fensure.html" class="public">
 									<code>needsFensure</code>
 								</a>
+								<span class="tableEntryAnnotation">(fd)</span>
 							</td>
 							<td>Determine whether an 'out' contract is declared inside
  the given function or any of its overrides.
@@ -3639,6 +3685,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.overload_exact_match.html" class="public">
 									<code>overloadExactMatch</code>
 								</a>
+								<span class="tableEntryAnnotation">(t)</span>
 							</td>
 							<td>Find function in overload list that exactly matches t.
 </td>
@@ -3648,6 +3695,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.overload_insert.html" class="public">
 									<code>overloadInsert</code>
 								</a>
+								<span class="tableEntryAnnotation">(s)</span>
 							</td>
 							<td>Overload this FuncDeclaration with the new one f.
  Return true if successful; i.e. no conflict.
@@ -3658,6 +3706,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.overload_mod_match.html" class="public">
 									<code>overloadModMatch</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc, tthis, hasOverloads)</span>
 							</td>
 							<td>Find function in overload list that matches to the 'this' modifier.
  There's four result types.
@@ -3668,6 +3717,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.override_interface.html" class="public">
 									<code>overrideInterface</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>If function a function in a base class,
  return that base class.
@@ -3678,6 +3728,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.overrides.html" class="public">
 									<code>overrides</code>
 								</a>
+								<span class="tableEntryAnnotation">(fd)</span>
 							</td>
 							<td>Determine if 'this' overrides fd.
  Return !=0 if it does.
@@ -3688,6 +3739,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.search_label.html" class="public">
 									<code>searchLabel</code>
 								</a>
+								<span class="tableEntryAnnotation">(ident)</span>
 							</td>
 							<td>Labels are in a separate scope, one per function.
 </td>
@@ -3697,6 +3749,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.set_gc.html" class="public">
 									<code>setGC</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>The function is doing something that may allocate with the GC,
  so mark it as not nogc (not no-how).
@@ -3707,6 +3760,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.set_impure.html" class="public">
 									<code>setImpure</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>The function is doing something impure,
  so mark it as impure.
@@ -3718,6 +3772,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.set_unsafe.html" class="public">
 									<code>setUnsafe</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>The function is doing something unsafe,
  so mark it as unsafe.
@@ -3729,6 +3784,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/func/func_declaration.to_full_signature.html" class="public">
 									<code>toFullSignature</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>for diagnostics, e.g. 'int foo(int x, int y) pure'
 </td>
@@ -3738,6 +3794,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.accept.html" class="public inherited">
 									<code>accept</code>
 								</a>
+								<span class="tableEntryAnnotation">(v)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3746,6 +3803,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.add_comment.html" class="public inherited">
 									<code>addComment</code>
 								</a>
+								<span class="tableEntryAnnotation">(comment)</span>
 							</td>
 							<td>Add documentation comment to Dsymbol.
  Ignore NULL comments.
@@ -3756,6 +3814,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.array_syntax_copy.html" class="public inherited">
 									<code>arraySyntaxCopy</code>
 								</a>
+								<span class="tableEntryAnnotation">(a)</span>
 							</td>
 							<td>Do syntax copy of an array of Dsymbol's.
 </td>
@@ -3765,6 +3824,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/declaration/declaration.check_disabled.html" class="public inherited">
 									<code>checkDisabled</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc, sc, isAliasedDeclaration)</span>
 							</td>
 							<td>Issue an error if an attempt to call a disabled method is made
 </td>
@@ -3774,6 +3834,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/declaration/declaration.check_modify.html" class="public inherited">
 									<code>checkModify</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc, sc, e1, flag)</span>
 							</td>
 							<td>Check to see if declaration can be modified in this context (sc).
  Issue error if not.
@@ -3784,6 +3845,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.factory.html" class="public inherited">
 									<code>factory</code>
 								</a>
+								<span class="tableEntryAnnotation">(classname)</span>
 							</td>
 							<td>Create instance of class specified by the fully qualified name
  classname.
@@ -3796,6 +3858,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.follow_instantiation_context.html" class="public inherited">
 									<code>followInstantiationContext</code>
 								</a>
+								<span class="tableEntryAnnotation">(p1, p2)</span>
 							</td>
 							<td>Returns true if any of the symbols <code class="lang-d"><a href="../../dmd/dsymbol/dsymbol.follow_instantiation_context.html#p1"><span class="pln">p1</span></a></code> or <code class="lang-d"><a href="../../dmd/dsymbol/dsymbol.follow_instantiation_context.html#p2"><span class="pln">p2</span></a></code> resides in the enclosing
  instantiation scope of <code class="lang-d"><span class="kwd">this</span></code>.
@@ -3806,6 +3869,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.get_access_module.html" class="public inherited">
 									<code>getAccessModule</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Determine which Module a Dsymbol is in, as far as access rights go.
 </td>
@@ -3815,6 +3879,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.get_module.html" class="public inherited">
 									<code>getModule</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Determine which Module a Dsymbol is in.
 </td>
@@ -3824,6 +3889,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.has_pointers.html" class="public inherited">
 									<code>hasPointers</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Is Dsymbol a variable that contains pointers?
 </td>
@@ -3833,6 +3899,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.in_non_root.html" class="public inherited">
 									<code>inNonRoot</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns true if this symbol is defined in a non-root module without instantiation.
 </td>
@@ -3842,6 +3909,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.is_member.html" class="public inherited">
 									<code>isMember</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns an AggregateDeclaration when toParent() is that.
 </td>
@@ -3851,6 +3919,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.is_member2.html" class="public inherited">
 									<code>isMember2</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns an AggregateDeclaration when toParent2() is that.
 </td>
@@ -3860,6 +3929,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.is_member_decl.html" class="public inherited">
 									<code>isMemberDecl</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns an AggregateDeclaration when toParentDecl() is that.
 </td>
@@ -3869,6 +3939,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.is_member_local.html" class="public inherited">
 									<code>isMemberLocal</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns an AggregateDeclaration when toParentLocal() is that.
 </td>
@@ -3878,6 +3949,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.one_member.html" class="public inherited">
 									<code>oneMember</code>
 								</a>
+								<span class="tableEntryAnnotation">(ps, ident)</span>
 							</td>
 							<td>Determine if this symbol is only one.
 </td>
@@ -3887,6 +3959,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.one_members.html" class="public inherited">
 									<code>oneMembers</code>
 								</a>
+								<span class="tableEntryAnnotation">(members, ps, ident)</span>
 							</td>
 							<td>Same as Dsymbol::oneMember(), but look at an array of Dsymbols.
 </td>
@@ -3896,6 +3969,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.op_cmp.html" class="public inherited">
 									<code>opCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Compare with another Object obj.
 </td>
@@ -3905,6 +3979,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.op_equals.html" class="public inherited">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Test whether <code class="lang-d"><span class="kwd">this</span></code> is equal to <code class="lang-d"><a href="../../object/object.op_equals.html#o"><span class="pln">o</span></a></code>.
  The default implementation only compares by identity (using the <code class="lang-d"><span class="kwd">is</span></code> operator).
@@ -3916,6 +3991,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.past_mixin.html" class="public inherited">
 									<code>pastMixin</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td><code class="lang-d"><a href="../../dmd/dsymbol/dsymbol.past_mixin.html"><span class="pln">pastMixin</span></a></code> returns the enclosing symbol if this is a template mixin.
 </td>
@@ -3925,6 +4001,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.prot.html" class="public inherited">
 									<code>prot</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3933,6 +4010,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.search.html" class="public inherited">
 									<code>search</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc, ident, flags)</span>
 							</td>
 							<td>Search for ident as member of s.
 </td>
@@ -3942,6 +4020,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.search_x.html" class="public inherited">
 									<code>searchX</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc, sc, id, flags)</span>
 							</td>
 							<td>Search for identifier id as a member of <code class="lang-d"><span class="kwd">this</span></code>.
  <code class="lang-d"><a href="../../dmd/dsymbol/dsymbol.search_x.html#id"><span class="pln">id</span></a></code> may be a template instance.
@@ -3952,6 +4031,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.set_scope.html" class="public inherited">
 									<code>setScope</code>
 								</a>
+								<span class="tableEntryAnnotation">(sc)</span>
 							</td>
 							<td>Set scope for future semantic analysis so we can
  deal better with forward references.
@@ -3962,6 +4042,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.size.html" class="public inherited">
 									<code>size</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3970,6 +4051,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.syntax_copy.html" class="public inherited">
 									<code>syntaxCopy</code>
 								</a>
+								<span class="tableEntryAnnotation">(s)</span>
 							</td>
 							<td>Copy the syntax.
  Used for template instantiations.
@@ -3981,6 +4063,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.to_alias.html" class="public inherited">
 									<code>toAlias</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>If this symbol is really an alias for another,
  return that other.
@@ -3992,6 +4075,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.to_alias2.html" class="public inherited">
 									<code>toAlias2</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Resolve recursive tuple expansion in eponymous template.
 </td>
@@ -4001,6 +4085,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.to_hash.html" class="public inherited">
 									<code>toHash</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Compute hash function for Object.
 </td>
@@ -4010,6 +4095,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.to_parent.html" class="public inherited">
 									<code>toParent</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td><code class="lang-d"><span class="pln">parent</span></code> field returns a lexically enclosing scope symbol this is a member of.
 </td>
@@ -4019,6 +4105,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.to_parent2.html" class="public inherited">
 									<code>toParent2</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td><code class="lang-d"><span class="pln">parent</span></code> field returns a lexically enclosing scope symbol this is a member of.
 </td>
@@ -4028,6 +4115,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.to_parent_decl.html" class="public inherited">
 									<code>toParentDecl</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td><code class="lang-d"><span class="pln">parent</span></code> field returns a lexically enclosing scope symbol this is a member of.
 </td>
@@ -4037,6 +4125,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.to_parent_local.html" class="public inherited">
 									<code>toParentLocal</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td><code class="lang-d"><span class="pln">parent</span></code> field returns a lexically enclosing scope symbol this is a member of.
 </td>
@@ -4046,6 +4135,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.to_parent_p.html" class="public inherited">
 									<code>toParentP</code>
 								</a>
+								<span class="tableEntryAnnotation">(p1, p2)</span>
 							</td>
 							<td>Returns the declaration scope scope of <code class="lang-d"><span class="kwd">this</span></code> unless any of the symbols
  <code class="lang-d"><a href="../../dmd/dsymbol/dsymbol.to_parent_p.html#p1"><span class="pln">p1</span></a></code> or <code class="lang-d"><a href="../../dmd/dsymbol/dsymbol.to_parent_p.html#p2"><span class="pln">p2</span></a></code> resides in its enclosing instantiation scope then the
@@ -4057,6 +4147,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/root/rootobject/root_object.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -4065,6 +4156,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Convert Object to a human readable string.
 </td>

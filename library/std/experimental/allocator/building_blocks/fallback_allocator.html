@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2944,18 +2959,21 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fallbackAllocator" class="public" href="../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.html">fallbackAllocator</a><span class="decoration">(p, f)</span>
+									<a id="fallbackAllocator" class="public" href="../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.html">fallbackAllocator</a><span class="tableEntryAnnotation">(p, f)</span>
 								</code>
 							</td>
 							<td>Convenience function that uses type deduction to return the appropriate
 <code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/fallback_allocator/fallback_allocator.html"><span class="typ">FallbackAllocator</span></a></code> instance. To initialize with allocators that don't have
 state, use their <code class="lang-d"><span class="pln">it</span></code> static member.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -2964,7 +2982,7 @@ state, use their <code class="lang-d"><span class="pln">it</span></code> static 
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -2977,6 +2995,8 @@ algebra. An allocation request is first attempted with the <code class="lang-d">
 allocator. If that returns <code class="lang-d"><span class="kwd">null</span></code>, the request is forwarded to the <code class="lang-d"><span class="typ">Fallback</span></code> allocator. All other requests are dispatched appropriately to one of
 the two allocators.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

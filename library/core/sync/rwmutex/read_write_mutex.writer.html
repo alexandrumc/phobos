@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2991,6 +3006,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../core/sync/rwmutex/read_write_mutex.writer.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Initializes a read/write mutex writer proxy object.
 </td>
@@ -3008,6 +3024,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../core/sync/rwmutex/read_write_mutex.writer.lock.html" class="public">
 									<code>lock</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Acquires a write lock on the enclosing mutex.
 </td>
@@ -3017,6 +3034,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../core/sync/rwmutex/read_write_mutex.writer.try_lock.html" class="public">
 									<code>tryLock</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Attempts to acquire a write lock on the enclosing mutex.  If one can
  be obtained without blocking, the lock is acquired and true is
@@ -3025,9 +3043,24 @@ $('#symbolSearchPane').show();</script>
 						</tr>
 						<tr>
 							<td>
+								<a href="../../../core/sync/rwmutex/read_write_mutex.writer.try_lock.html" class="public">
+									<code>tryLock</code>
+								</a>
+								<span class="tableEntryAnnotation">(timeout)</span>
+							</td>
+							<td>Attempts to acquire a write lock on the enclosing mutex. If one can
+ be obtained without blocking, the lock is acquired and true is
+ returned. If not, the function blocks until either the lock can be
+ obtained or the time elapsed exceeds <span class="d_param">timeout</span>, returning
+ true if the lock was acquired and false if the function timed out.
+</td>
+						</tr>
+						<tr>
+							<td>
 								<a href="../../../core/sync/rwmutex/read_write_mutex.writer.unlock.html" class="public">
 									<code>unlock</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Releases a write lock on the enclosing mutex.
 </td>

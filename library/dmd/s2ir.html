@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2954,12 +2969,12 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="insertFinallyBlockCalls" class="public" href="../dmd/s2ir/insert_finally_block_calls.html">insertFinallyBlockCalls</a><span class="decoration">(startblock)</span>
+									<a id="insertFinallyBlockCalls" class="public" href="../dmd/s2ir/insert_finally_block_calls.html">insertFinallyBlockCalls</a><span class="tableEntryAnnotation">(startblock)</span>
 								</code>
 							</td>
 							<td>Insert finally block calls when doing a goto from
@@ -2968,11 +2983,14 @@ $('#symbolSearchPane').show();</script>
  the edges of the graph, but before the Bpred's are computed.
  Only for EH_DWARF exception unwinding.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="insertFinallyBlockGotos" class="public" href="../dmd/s2ir/insert_finally_block_gotos.html">insertFinallyBlockGotos</a><span class="decoration">(startblock)</span>
+									<a id="insertFinallyBlockGotos" class="public" href="../dmd/s2ir/insert_finally_block_gotos.html">insertFinallyBlockGotos</a><span class="tableEntryAnnotation">(startblock)</span>
 								</code>
 							</td>
 							<td>Insert gotos to finally blocks when doing a return or goto from
@@ -2982,6 +3000,9 @@ $('#symbolSearchPane').show();</script>
  Only for functions with no exception handling.
  Very similar to insertFinallyBlockCalls().
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

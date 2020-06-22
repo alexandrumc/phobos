@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,8 +2952,8 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Struct <code><a href="../../../../../std/experimental/allocator/building_blocks/scoped_allocator.html">std.experimental.allocator.building_blocks.scoped_allocator</a>.ScopedAllocator</code></h1><p><code class="lang-d"><span class="typ"><span class="typ">ScopedAllocator</span></span></code> delegates all allocation requests to <code class="lang-d"><span class="typ">ParentAllocator</span></code>.
-When destroyed, the <code class="lang-d"><span class="typ"><span class="typ">ScopedAllocator</span></span></code> object automatically calls <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/scoped_allocator/scoped_allocator.deallocate.html"><span class="pln">deallocate</span></a></code> for all memory allocated through its lifetime. (The <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/scoped_allocator/scoped_allocator.deallocate_all.html"><span class="pln">deallocateAll</span></a></code> function is also implemented with the same semantics.)
+				</div><h1>Struct <code><a href="../../../../../std/experimental/allocator/building_blocks/scoped_allocator.html">std.experimental.allocator.building_blocks.scoped_allocator</a>.ScopedAllocator</code></h1><p><code class="lang-d"><span class="typ">ScopedAllocator</span></code> delegates all allocation requests to <code class="lang-d"><span class="typ">ParentAllocator</span></code>.
+When destroyed, the <code class="lang-d"><span class="typ">ScopedAllocator</span></code> object automatically calls <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/scoped_allocator/scoped_allocator.deallocate.html"><span class="pln">deallocate</span></a></code> for all memory allocated through its lifetime. (The <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/scoped_allocator/scoped_allocator.deallocate_all.html"><span class="pln">deallocateAll</span></a></code> function is also implemented with the same semantics.)
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2981,6 +2996,7 @@ simpler design combining <code class="lang-d"><span class="typ">AllocatorList</s
 								<a href="../../../../../std/experimental/allocator/building_blocks/scoped_allocator/scoped_allocator.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
 							<td>Allocates memory. For management it actually allocates extra memory from
     the parent.
@@ -2991,6 +3007,7 @@ simpler design combining <code class="lang-d"><span class="typ">AllocatorList</s
 								<a href="../../../../../std/experimental/allocator/building_blocks/scoped_allocator/scoped_allocator.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>Deallocates <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/scoped_allocator/scoped_allocator.deallocate.html#b"><span class="pln">b</span></a></code>.
 </td>
@@ -3000,6 +3017,7 @@ simpler design combining <code class="lang-d"><span class="typ">AllocatorList</s
 								<a href="../../../../../std/experimental/allocator/building_blocks/scoped_allocator/scoped_allocator.deallocate_all.html" class="public">
 									<code>deallocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Deallocates all memory allocated.
 </td>
@@ -3009,6 +3027,7 @@ simpler design combining <code class="lang-d"><span class="typ">AllocatorList</s
 								<a href="../../../../../std/experimental/allocator/building_blocks/scoped_allocator/scoped_allocator.empty.html" class="public">
 									<code>empty</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">yes</span></code> if this allocator is not responsible for any memory,
     <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">no</span></code> otherwise. (Never returns <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">unknown</span></code>.)
@@ -3019,6 +3038,7 @@ simpler design combining <code class="lang-d"><span class="typ">AllocatorList</s
 								<a href="../../../../../std/experimental/allocator/building_blocks/scoped_allocator/scoped_allocator.expand.html" class="public">
 									<code>expand</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, delta)</span>
 							</td>
 							<td>Forwards to <code class="lang-d"><span class="pln">parent<wbr/></span><span class="pun">.</span><span class="pln">expand</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/scoped_allocator/scoped_allocator.expand.html#b"></span><span class="pln">b</span></a><span class="pun">, <a href="../../../../../std/experimental/allocator/building_blocks/scoped_allocator/scoped_allocator.expand.html#delta"></span><span class="pln">delta</span></a><span class="pun">)</span></code>.
 </td>
@@ -3028,6 +3048,7 @@ simpler design combining <code class="lang-d"><span class="typ">AllocatorList</s
 								<a href="../../../../../std/experimental/allocator/building_blocks/scoped_allocator/scoped_allocator.good_alloc_size.html" class="public">
 									<code>goodAllocSize</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
 							<td>Forwards to <code class="lang-d"><span class="pln">parent<wbr/></span><span class="pun">.</span><span class="pln">goodAllocSize</span></code> (which accounts for the management
     overhead).
@@ -3038,6 +3059,7 @@ simpler design combining <code class="lang-d"><span class="typ">AllocatorList</s
 								<a href="../../../../../std/experimental/allocator/building_blocks/scoped_allocator/scoped_allocator.owns.html" class="public">
 									<code>owns</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>Forwards to <code class="lang-d"><span class="pln">parent<wbr/></span><span class="pun">.</span><span class="pln">owns</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/scoped_allocator/scoped_allocator.owns.html#b"></span><span class="pln">b</span></a><span class="pun">)</span></code>.
 </td>
@@ -3047,6 +3069,7 @@ simpler design combining <code class="lang-d"><span class="typ">AllocatorList</s
 								<a href="../../../../../std/experimental/allocator/building_blocks/scoped_allocator/scoped_allocator.reallocate.html" class="public">
 									<code>reallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, s)</span>
 							</td>
 							<td>Reallocates <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/scoped_allocator/scoped_allocator.reallocate.html#b"><span class="pln">b</span></a></code> to new size <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/scoped_allocator/scoped_allocator.reallocate.html#s"><span class="pln">s</span></a></code>.
 </td>

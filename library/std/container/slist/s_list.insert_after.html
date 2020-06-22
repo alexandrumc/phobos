@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2952,11 +2967,11 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function SList.insertAfter</h2><p>Inserts <code class="lang-d"><a href="../../../std/container/slist/s_list.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/slist/s_list.insert_after.html#stuff"><span class="pln">stuff</span></a></span></a></code> after range <code class="lang-d"><a href="../../../std/container/slist/s_list.insert_after.html#r"><span class="pln"><a href="../../../std/container/slist/s_list.insert_after.html#r"><span class="pln">r</span></a></span></a></code>, which must be a range
+				</nav><h2 id="0">Function SList.insertAfter</h2><p>Inserts <code class="lang-d"><a href="../../../std/container/slist/s_list.insert_after.html#stuff"><span class="pln">stuff</span></a></code> after range <code class="lang-d"><a href="../../../std/container/slist/s_list.insert_after.html#r"><span class="pln">r</span></a></code>, which must be a range
 previously extracted from this container. Given that all ranges for a
 list end at the end of the list, this function essentially appends to
-the list and uses <code class="lang-d"><a href="../../../std/container/slist/s_list.insert_after.html#r"><span class="pln"><a href="../../../std/container/slist/s_list.insert_after.html#r"><span class="pln">r</span></a></span></a></code> as a potentially fast way to reach the last
-node in the list. Ideally <code class="lang-d"><a href="../../../std/container/slist/s_list.insert_after.html#r"><span class="pln"><a href="../../../std/container/slist/s_list.insert_after.html#r"><span class="pln">r</span></a></span></a></code> is positioned near or at the last
+the list and uses <code class="lang-d"><a href="../../../std/container/slist/s_list.insert_after.html#r"><span class="pln">r</span></a></code> as a potentially fast way to reach the last
+node in the list. Ideally <code class="lang-d"><a href="../../../std/container/slist/s_list.insert_after.html#r"><span class="pln">r</span></a></code> is positioned near or at the last
 element of the list.
 </p>
 				<div class="prototype">
@@ -2998,11 +3013,11 @@ invalidated.
 </span><span class="pln">sl<wbr/></span><span class="pun">.</span><span class="pln">insertAfter</span><span class="pun">(</span><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">range<wbr/></span><span class="pun">.</span><span class="pln">take</span><span class="pun">(</span><span class="pln">sl</span><span class="pun">[], </span><span class="lit">2</span><span class="pun">), </span><span class="str">"c"</span><span class="pun">); </span><span class="com">// insert after "b"
 </span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">algorithm<wbr/></span><span class="pun">.</span><span class="pln">equal</span><span class="pun">(</span><span class="pln">sl</span><span class="pun">[], [</span><span class="str">"a"</span><span class="pun">, </span><span class="str">"b"</span><span class="pun">, </span><span class="str">"c"</span><span class="pun">, </span><span class="str">"d"</span><span class="pun">, </span><span class="str">"e"</span><span class="pun">]));</span></code></pre>
 </section>
-<h2 id="1">Function SList.insertAfter</h2><p>Similar to <code class="lang-d"><a href="../../../std/container/slist/s_list.insert_after.html"><span class="pln"><a href="../../../std/container/slist/s_list.insert_after.html"><span class="pln"><a href="../../../std/container/slist/s_list.insert_after.html"><span class="pln"><a href="../../../std/container/slist/s_list.insert_after.html"><span class="pln">insertAfter</span></a></span></a></span></a></span></a></code> above, but accepts a range bounded in
+<h2 id="1">Function SList.insertAfter</h2><p>Similar to <code class="lang-d"><a href="../../../std/container/slist/s_list.insert_after.html"><span class="pln">insertAfter</span></a></code> above, but accepts a range bounded in
 count. This is important for ensuring fast insertions in the middle of
-the list.  For fast insertions after a specified position <code class="lang-d"><a href="../../../std/container/slist/s_list.insert_after.html#r"><span class="pln"><a href="../../../std/container/slist/s_list.insert_after.html#r"><span class="pln">r</span></a></span></a></code>, use
+the list.  For fast insertions after a specified position <code class="lang-d"><a href="../../../std/container/slist/s_list.insert_after.html#r"><span class="pln">r</span></a></code>, use
 <code class="lang-d"><a href="../../../std/container/slist/s_list.insert_after.html"><span class="pln">insertAfter</span></a><span class="pun">(</span><span class="pln">take</span><span class="pun">(<a href="../../../std/container/slist/s_list.insert_after.html#r"></span><span class="pln">r</span></a><span class="pun">, </span><span class="lit">1</span><span class="pun">), <a href="../../../std/container/slist/s_list.insert_after.html#stuff"></span><span class="pln">stuff</span></a><span class="pun">)</span></code>. The complexity of that operation
-only depends on the number of elements in <code class="lang-d"><a href="../../../std/container/slist/s_list.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/slist/s_list.insert_after.html#stuff"><span class="pln">stuff</span></a></span></a></code>.
+only depends on the number of elements in <code class="lang-d"><a href="../../../std/container/slist/s_list.insert_after.html#stuff"><span class="pln">stuff</span></a></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -3032,7 +3047,7 @@ only depends on the number of elements in <code class="lang-d"><a href="../../..
 </section>
 <section><h3>Complexity</h3>
 <p><span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">k </span><span class="pun">+ </span><span class="pln">m</span></code>)</span>, where <code class="lang-d"><span class="pln">k</span></code> is the number of elements in
-<code class="lang-d"><span class="pln"><a href="../../../std/container/slist/s_list.insert_after.html#r"><span class="pln">r</span></a></span></code> and <code class="lang-d"><span class="pln">m</span></code> is the length of <code class="lang-d"><span class="pln"><a href="../../../std/container/slist/s_list.insert_after.html#stuff"><span class="pln">stuff</span></a></span></code>.
+<code class="lang-d"><a href="../../../std/container/slist/s_list.insert_after.html#r"><span class="pln">r</span></a></code> and <code class="lang-d"><span class="pln">m</span></code> is the length of <code class="lang-d"><a href="../../../std/container/slist/s_list.insert_after.html#stuff"><span class="pln">stuff</span></a></code>.
 </p>
 </section>
 

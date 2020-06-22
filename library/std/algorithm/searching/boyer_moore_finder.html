@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2952,7 +2967,7 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function boyerMooreFinder</h2><p>Sets up Boyer-Moore matching for use with <code class="lang-d"><a href="../../std/algorithm/searching/find.html"><span class="pln"><a href="../../std/algorithm/searching/find.html"><span class="pln"><a href="../../../std/algorithm/searching/find.html"><span class="pln">find</span></a></span></a></span></a></code> below.
+				</nav><h2 id="0">Function boyerMooreFinder</h2><p>Sets up Boyer-Moore matching for use with <code class="lang-d"><a href="../../../std/algorithm/searching/find.html"><span class="pln">find</span></a></code> below.
  By default, elements are compared for equality.
 </p>
 				<div class="prototype">
@@ -3000,7 +3015,7 @@ $('#symbolSearchPane').show();</script>
 </span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">r</span><span class="pun">); </span><span class="com">// "TGA"
 </span></code></pre>
 </section>
-<h2 id="1">Struct BoyerMooreFinder</h2><p>Sets up Boyer-Moore matching for use with <code class="lang-d"><a href="../../std/algorithm/searching/find.html"><span class="pln"><a href="../../std/algorithm/searching/find.html"><span class="pln"><a href="../../../std/algorithm/searching/find.html"><span class="pln"><a href="../../../std/algorithm/searching/find.html"><span class="pln">find</span></a></span></a></span></a></span></a></code> below.
+<h2 id="1">Struct BoyerMooreFinder</h2><p>Sets up Boyer-Moore matching for use with <code class="lang-d"><a href="../../../std/algorithm/searching/find.html"><span class="pln">find</span></a></code> below.
  By default, elements are compared for equality.
 </p>
 				<div class="prototype">
@@ -3011,7 +3026,7 @@ $('#symbolSearchPane').show();</script>
 						</div>
 					</code>
 				</div>
-				<section><p><code class="lang-d"><a href="../../../std/algorithm/searching/boyer_moore_finder.html"><span class="typ"><span class="typ">BoyerMooreFinder</span></span></a></code> allocates GC memory.
+				<section><p><code class="lang-d"><span class="typ">BoyerMooreFinder</span></code> allocates GC memory.
 </p>
 </section>
 
@@ -3026,6 +3041,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/algorithm/searching/boyer_moore_finder.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(needle)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3056,6 +3072,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/algorithm/searching/boyer_moore_finder.be_found.html" class="public">
 									<code>beFound</code>
 								</a>
+								<span class="tableEntryAnnotation">(haystack)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3084,8 +3101,8 @@ $('#symbolSearchPane').show();</script>
 </table>
 </section>
 <section><h3>Returns</h3>
-<p>An instance of <code class="lang-d"><a href="../../../std/algorithm/searching/boyer_moore_finder.html"><span class="typ"><span class="typ">BoyerMooreFinder</span></span></a></code> that can be used with <code class="lang-d"><a href="../../../std/algorithm/searching/find.html"><span class="pln"><a href="../../../std/algorithm/searching/find.html"><span class="pln">find</span></a></span></a><span class="pun">()</span></code> to
- invoke the Boyer-Moore matching algorithm for finding of <code class="lang-d"><a href="../../../std/algorithm/searching/boyer_moore_finder.html#needle"><span class="pln">needle</span></a></code> in a
+<p>An instance of <code class="lang-d"><span class="typ">BoyerMooreFinder</span></code> that can be used with <code class="lang-d"><a href="../../../std/algorithm/searching/find.html"><span class="pln">find</span></a><span class="pun">()</span></code> to
+ invoke the Boyer-Moore matching algorithm for finding of <code class="lang-d"><span class="pln">needle</span></code> in a
  given haystack.
 </p>
 </section>

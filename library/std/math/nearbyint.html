@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/math.d#L5193">
+							<a href="https://github.com/dlang/phobos/blob/master/std/math.d#L4598">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/math.d#L5193">
+							<a href="https://github.com/dlang/phobos/edit/master/std/math.d#L4598">
 								Improve this page
 							</a>
 							<div>
@@ -2957,26 +2972,18 @@ $('#symbolSearchPane').show();</script>
 </p>
 </section>
 
-				<section><h2>Note</h2>
-<p>Not implemented for Microsoft C Runtime
-</p>
-</section>
-<section><h2>Example</h2>
+				<section><h2>Example</h2>
 <p><span class="dlang_runnable"></span>
 </p>
-<pre class="code"><code class="lang-d"><span class="kwd">version </span><span class="pun">(</span><span class="typ">CRuntime_Microsoft</span><span class="pun">) {}
-</span><span class="kwd">else
-</span><span class="pun">{
-    </span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">nearbyint</span><span class="pun">(</span><span class="lit">0.4</span><span class="pun">)); </span><span class="com">// 0
-    </span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">nearbyint</span><span class="pun">(</span><span class="lit">0.5</span><span class="pun">)); </span><span class="com">// 0
-    </span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">nearbyint</span><span class="pun">(</span><span class="lit">0.6</span><span class="pun">)); </span><span class="com">// 1
-    </span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">nearbyint</span><span class="pun">(</span><span class="lit">100.0</span><span class="pun">)); </span><span class="com">// 100
+<pre class="code"><code class="lang-d"><span class="pln">writeln</span><span class="pun">(</span><span class="pln">nearbyint</span><span class="pun">(</span><span class="lit">0.4</span><span class="pun">)); </span><span class="com">// 0
+</span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">nearbyint</span><span class="pun">(</span><span class="lit">0.5</span><span class="pun">)); </span><span class="com">// 0
+</span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">nearbyint</span><span class="pun">(</span><span class="lit">0.6</span><span class="pun">)); </span><span class="com">// 1
+</span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">nearbyint</span><span class="pun">(</span><span class="lit">100.0</span><span class="pun">)); </span><span class="com">// 100
 
-    </span><span class="kwd">assert</span><span class="pun">(<a href="../../std/math/is_nan.html"></span><span class="pln">isNaN</span></a><span class="pun">(</span><span class="pln">nearbyint</span><span class="pun">(</span><span class="typ">real<wbr/></span><span class="pun">.</span><span class="pln">nan</span><span class="pun">)));
-    </span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">nearbyint</span><span class="pun">(</span><span class="typ">real<wbr/></span><span class="pun">.</span><span class="pln">infinity</span><span class="pun">)); </span><span class="com">// real.infinity
-    </span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">nearbyint</span><span class="pun">(-</span><span class="typ">real<wbr/></span><span class="pun">.</span><span class="pln">infinity</span><span class="pun">)); </span><span class="com">// -real.infinity
+</span><span class="kwd">assert</span><span class="pun">(<a href="../../std/math/is_nan.html"></span><span class="pln">isNaN</span></a><span class="pun">(</span><span class="pln">nearbyint</span><span class="pun">(</span><span class="typ">real<wbr/></span><span class="pun">.</span><span class="pln">nan</span><span class="pun">)));
+</span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">nearbyint</span><span class="pun">(</span><span class="typ">real<wbr/></span><span class="pun">.</span><span class="pln">infinity</span><span class="pun">)); </span><span class="com">// real.infinity
+</span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">nearbyint</span><span class="pun">(-</span><span class="typ">real<wbr/></span><span class="pun">.</span><span class="pln">infinity</span><span class="pun">)); </span><span class="com">// -real.infinity
 </span><span class="pun">}
-}
 
 </span><span class="com">/**********************************
 * Rounds x to the nearest integer value, using the current rounding

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,7 +2952,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Struct <code><a href="../../../../../std/experimental/allocator/building_blocks/bucketizer.html">std.experimental.allocator.building_blocks.bucketizer</a>.Bucketizer</code></h1><p>A <code class="lang-d"><span class="typ"><span class="typ">Bucketizer</span></span></code> uses distinct allocators for handling allocations of sizes in
+				</div><h1>Struct <code><a href="../../../../../std/experimental/allocator/building_blocks/bucketizer.html">std.experimental.allocator.building_blocks.bucketizer</a>.Bucketizer</code></h1><p>A <code class="lang-d"><span class="typ">Bucketizer</span></code> uses distinct allocators for handling allocations of sizes in
 the intervals <code class="lang-d"><span class="pun">[</span><span class="pln">min</span><span class="pun">, </span><span class="pln">min </span><span class="pun">+ </span><span class="pln">step </span><span class="pun">- </span><span class="lit">1</span><span class="pun">]</span></code>, <code class="lang-d"><span class="pun">[</span><span class="pln">min </span><span class="pun">+ </span><span class="pln">step</span><span class="pun">, </span><span class="pln">min </span><span class="pun">+ </span><span class="lit">2 </span><span class="pun">* </span><span class="pln">step </span><span class="pun">- </span><span class="lit">1</span><span class="pun">]</span></code>,
 <code class="lang-d"><span class="pun">[</span><span class="pln">min </span><span class="pun">+ </span><span class="lit">2 </span><span class="pun">* </span><span class="pln">step</span><span class="pun">, </span><span class="pln">min </span><span class="pun">+ </span><span class="lit">3 </span><span class="pun">* </span><span class="pln">step </span><span class="pun">- </span><span class="lit">1</span><span class="pun">]</span></code>, <code class="lang-d"><span class="pun">...</span></code>, <code class="lang-d"><span class="pun">[</span><span class="pln">max </span><span class="pun">- </span><span class="pln">step </span><span class="pun">+ </span><span class="lit">1</span><span class="pun">, </span><span class="pln">max</span><span class="pun">]</span></code>.
 </p>
@@ -2986,6 +3001,7 @@ for <code class="lang-d"><span class="typ">Bucketizer</span></code>. To handle t
 								<a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.aligned_allocate.html" class="public">
 									<code>alignedAllocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(bytes, alignment)</span>
 							</td>
 							<td>Allocates the requested <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.aligned_allocate.html#bytes"><span class="pln">bytes</span></a></code> of memory with specified <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.aligned_allocate.html#alignment"><span class="pln">alignment</span></a></code>.
     Directs the call to either one of the <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.buckets.html"><span class="pln">buckets</span></a></code> allocators. Defined only
@@ -2997,6 +3013,7 @@ for <code class="lang-d"><span class="typ">Bucketizer</span></code>. To handle t
 								<a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.aligned_reallocate.html" class="public">
 									<code>alignedReallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, size, a)</span>
 							</td>
 							<td>Similar to <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.reallocate.html"><span class="pln">reallocate</span></a></code>, with alignment. Defined only if <code class="lang-d"><span class="typ">Allocator</span></code>
     defines <code class="lang-d"><span class="pln">alignedReallocate</span></code>.
@@ -3007,8 +3024,9 @@ for <code class="lang-d"><span class="typ">Bucketizer</span></code>. To handle t
 								<a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(bytes)</span>
 							</td>
-							<td>Directs the call to either one of the <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.buckets.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.buckets.html"><span class="pln">buckets</span></a></span></a></code> allocators.
+							<td>Directs the call to either one of the <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.buckets.html"><span class="pln">buckets</span></a></code> allocators.
 </td>
 						</tr>
 						<tr>
@@ -3016,6 +3034,7 @@ for <code class="lang-d"><span class="typ">Bucketizer</span></code>. To handle t
 								<a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>This method is only defined if <code class="lang-d"><span class="typ">Allocator</span></code> defines <code class="lang-d"><span class="pln">deallocate</span></code>.
 </td>
@@ -3025,6 +3044,7 @@ for <code class="lang-d"><span class="typ">Bucketizer</span></code>. To handle t
 								<a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.deallocate_all.html" class="public">
 									<code>deallocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>This method is only defined if all allocators involved define <code class="lang-d"><span class="pln">    deallocateAll</span></code>, and calls it for each bucket in turn. Returns <code class="lang-d"><span class="kwd">true</span></code> if all
     allocators could deallocate all.
@@ -3035,6 +3055,7 @@ for <code class="lang-d"><span class="typ">Bucketizer</span></code>. To handle t
 								<a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.expand.html" class="public">
 									<code>expand</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, delta)</span>
 							</td>
 							<td>This method allows expansion within the respective bucket range. It succeeds
     if both <code class="lang-d"><span class="pln">b<wbr/></span><span class="pun">.</span><span class="pln">length</span></code> and <code class="lang-d"><span class="pln">b<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">+ <a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.expand.html#delta"></span><span class="pln">delta</span></a></code> fall in a range of the form
@@ -3046,8 +3067,9 @@ for <code class="lang-d"><span class="typ">Bucketizer</span></code>. To handle t
 								<a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.good_alloc_size.html" class="public">
 									<code>goodAllocSize</code>
 								</a>
+								<span class="tableEntryAnnotation">(bytes)</span>
 							</td>
-							<td>Rounds up to the maximum size of the bucket in which <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.good_alloc_size.html#bytes"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.good_alloc_size.html#bytes"><span class="pln">bytes</span></a></span></a></code> falls.
+							<td>Rounds up to the maximum size of the bucket in which <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.good_alloc_size.html#bytes"><span class="pln">bytes</span></a></code> falls.
 </td>
 						</tr>
 						<tr>
@@ -3055,8 +3077,9 @@ for <code class="lang-d"><span class="typ">Bucketizer</span></code>. To handle t
 								<a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.owns.html" class="public">
 									<code>owns</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
-							<td>Defined only if <code class="lang-d"><span class="typ">Allocator</span></code> defines <code class="lang-d"><span class="pln"><span class="pln">owns</span></span></code>. Finds the owner of <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.owns.html#b"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.owns.html#b"><span class="pln">b</span></a></span></a></code> and forwards the call to it.
+							<td>Defined only if <code class="lang-d"><span class="typ">Allocator</span></code> defines <code class="lang-d"><span class="pln">owns</span></code>. Finds the owner of <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.owns.html#b"><span class="pln">b</span></a></code> and forwards the call to it.
 </td>
 						</tr>
 						<tr>
@@ -3064,9 +3087,10 @@ for <code class="lang-d"><span class="typ">Bucketizer</span></code>. To handle t
 								<a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.reallocate.html" class="public">
 									<code>reallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, size)</span>
 							</td>
 							<td>This method allows reallocation within the respective bucket range. If both
-    <code class="lang-d"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.reallocate.html#b"><span class="pln">b</span></a><wbr/></span><span class="pun">.</span><span class="pln">length</span></code> and <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.reallocate.html#size"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.reallocate.html#size"><span class="pln">size</span></a></span></a></code> fall in a range of the form <code class="lang-d"><span class="pun">[</span><span class="pln">min </span><span class="pun">+ </span><span class="pln">k </span><span class="pun">*
+    <code class="lang-d"><span class="pln">b<wbr/></span><span class="pun">.</span><span class="pln">length</span></code> and <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.reallocate.html#size"><span class="pln">size</span></a></code> fall in a range of the form <code class="lang-d"><span class="pun">[</span><span class="pln">min </span><span class="pun">+ </span><span class="pln">k </span><span class="pun">*
     </span><span class="pln">step</span><span class="pun">, </span><span class="pln">min </span><span class="pun">+ (</span><span class="pln">k </span><span class="pun">+ </span><span class="lit">1</span><span class="pun">) * </span><span class="pln">step </span><span class="pun">- </span><span class="lit">1</span><span class="pun">]</span></code>, then reallocation is in place. Otherwise,
     reallocation with moving is attempted.
 </td>
@@ -3076,6 +3100,7 @@ for <code class="lang-d"><span class="typ">Bucketizer</span></code>. To handle t
 								<a href="../../../../../std/experimental/allocator/building_blocks/bucketizer/bucketizer.resolve_internal_pointer.html" class="public">
 									<code>resolveInternalPointer</code>
 								</a>
+								<span class="tableEntryAnnotation">(p, result)</span>
 							</td>
 							<td>This method is only defined if all allocators involved define <code class="lang-d"><span class="pln">    resolveInternalPointer</span></code>, and tries it for each bucket in turn.
 </td>

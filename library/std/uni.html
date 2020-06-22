@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,7 +2952,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Module <code>std.uni</code></h1><p><p>The <code class="lang-d"><span class="pln"><a href="../std.html"><span class="pln">std</span></a><wbr/></span><span class="pun">.</span><span class="pln">uni</span></code> module provides an implementation
+				</div><h1>Module <code>std.uni</code></h1><p><p>The <code class="lang-d"><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">uni</span></code> module provides an implementation
     of fundamental Unicode algorithms and data structures.
     This doesn't include UTF encoding and decoding primitives,
     see <code class="lang-d"><a href="../std/utf/decode.html" title="std.utf.decode"><span class="pln">decode</span></a></code> and <code class="lang-d"><a href="../std/utf/encode.html" title="std.utf.encode"><span class="pln">encode</span></a></code> in <code class="lang-d"><a href="../std/utf.html"><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">utf</span></a></code>
@@ -3594,110 +3609,140 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="allowedIn" class="public" href="../std/uni/allowed_in.html">allowedIn</a><span class="decoration">(ch)</span>
+									<a id="allowedIn" class="public" href="../std/uni/allowed_in.html">allowedIn</a><span class="tableEntryAnnotation">(ch)</span>
 								</code>
 							</td>
 							<td>Tests if dchar <code class="lang-d"><a href="../std/uni/allowed_in.html#ch"><span class="pln">ch</span></a></code> is always allowed (Quick_Check=YES) in normalization
     form <code class="lang-d"><span class="pln">norm</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="asCapitalized" class="public" href="../std/uni/as_capitalized.html">asCapitalized</a><span class="decoration">(str)</span>
+									<a id="asCapitalized" class="public" href="../std/uni/as_capitalized.html">asCapitalized</a><span class="tableEntryAnnotation">(str)</span>
 								</code>
 							</td>
 							<td>Capitalize an <a href="../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>
  or string, meaning convert the first
  character to upper case and subsequent characters to lower case.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="asLowerCase" class="public" href="../std/uni/as_lower_case.html">asLowerCase</a><span class="decoration">(str)</span>
+									<a id="asLowerCase" class="public" href="../std/uni/as_lower_case.html">asLowerCase</a><span class="tableEntryAnnotation">(str)</span>
 								</code>
 							</td>
 							<td>Convert an <a href="../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>
  or a string to upper or lower case.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="asUpperCase" class="public" href="../std/uni/as_upper_case.html">asUpperCase</a><span class="decoration">(str)</span>
+									<a id="asUpperCase" class="public" href="../std/uni/as_upper_case.html">asUpperCase</a><span class="tableEntryAnnotation">(str)</span>
 								</code>
 							</td>
 							<td>Convert an <a href="../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>
  or a string to upper or lower case.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="byCodePoint" class="public" href="../std/uni/by_code_point.html">byCodePoint</a><span class="decoration">(range)</span>
+									<a id="byCodePoint" class="public" href="../std/uni/by_code_point.html">byCodePoint</a><span class="tableEntryAnnotation">(range)</span>
 								</code>
 							</td>
 							<td><p>Lazily transform a range of <code class="lang-d"><a href="../std/uni/grapheme.html"><span class="typ">Grapheme</span></a></code>s to a range of code points.</p>
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="byGrapheme" class="public" href="../std/uni/by_grapheme.html">byGrapheme</a><span class="decoration">(range)</span>
+									<a id="byGrapheme" class="public" href="../std/uni/by_grapheme.html">byGrapheme</a><span class="tableEntryAnnotation">(range)</span>
 								</code>
 							</td>
 							<td><p>Iterate a string by <code class="lang-d"><a href="../std/uni/grapheme.html"><span class="typ">Grapheme</span></a></code>.</p>
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="combiningClass" class="public" href="../std/uni/combining_class.html">combiningClass</a><span class="decoration">(ch)</span>
+									<a id="combiningClass" class="public" href="../std/uni/combining_class.html">combiningClass</a><span class="tableEntryAnnotation">(ch)</span>
 								</code>
 							</td>
 							<td><p>Returns the <a href="#Combining class">combining class</a> of <code class="lang-d"><a href="../std/uni/combining_class.html#ch"><span class="pln">ch</span></a></code>.</p>
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="compose" class="public" href="../std/uni/compose.html">compose</a><span class="decoration">(first, second)</span>
+									<a id="compose" class="public" href="../std/uni/compose.html">compose</a><span class="tableEntryAnnotation">(first, second)</span>
 								</code>
 							</td>
 							<td>Try to canonically compose 2 <a href="#Character">characters</a>.
     Returns the composed <a href="#Character">character</a> if they do compose and dchar.init otherwise.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="composeJamo" class="public" href="../std/uni/compose_jamo.html">composeJamo</a><span class="decoration">(lead, vowel, trailing)</span>
+									<a id="composeJamo" class="public" href="../std/uni/compose_jamo.html">composeJamo</a><span class="tableEntryAnnotation">(lead, vowel, trailing)</span>
 								</code>
 							</td>
 							<td>Try to compose hangul syllable out of a leading consonant (<code class="lang-d"><a href="../std/uni/compose_jamo.html#lead"><span class="pln">lead</span></a></code>),
     a <code class="lang-d"><a href="../std/uni/compose_jamo.html#vowel"><span class="pln">vowel</span></a></code> and optional <code class="lang-d"><a href="../std/uni/compose_jamo.html#trailing"><span class="pln">trailing</span></a></code> consonant jamos.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="decodeGrapheme" class="public" href="../std/uni/decode_grapheme.html">decodeGrapheme</a><span class="decoration">(inp)</span>
+									<a id="decodeGrapheme" class="public" href="../std/uni/decode_grapheme.html">decodeGrapheme</a><span class="tableEntryAnnotation">(inp)</span>
 								</code>
 							</td>
 							<td>Reads one full grapheme cluster from an
     <a href="../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a> of dchar <code class="lang-d"><a href="../std/uni/decode_grapheme.html#inp"><span class="pln">inp</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="decompose" class="public" href="../std/uni/decompose.html">decompose</a><span class="decoration">(ch)</span>
+									<a id="decompose" class="public" href="../std/uni/decompose.html">decompose</a><span class="tableEntryAnnotation">(ch)</span>
 								</code>
 							</td>
 							<td>Returns a full <a href="#Canonical decomposition">Canonical</a>
@@ -3706,32 +3751,41 @@ $('#symbolSearchPane').show();</script>
     If no decomposition is available returns a <code class="lang-d"><a href="../std/uni/grapheme.html"><span class="typ">Grapheme</span></a></code>
     with the <code class="lang-d"><a href="../std/uni/decompose.html#ch"><span class="pln">ch</span></a></code> itself.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="decomposeHangul" class="public" href="../std/uni/decompose_hangul.html">decomposeHangul</a><span class="decoration">(ch)</span>
+									<a id="decomposeHangul" class="public" href="../std/uni/decompose_hangul.html">decomposeHangul</a><span class="tableEntryAnnotation">(ch)</span>
 								</code>
 							</td>
 							<td>Decomposes a Hangul syllable. If <code class="lang-d"><a href="../std/uni/decompose_hangul.html#ch"><span class="pln">ch</span></a></code> is not a composed syllable
     then this function returns <code class="lang-d"><a href="../std/uni/grapheme.html"><span class="typ">Grapheme</span></a></code> containing only <code class="lang-d"><a href="../std/uni/decompose_hangul.html#ch"><span class="pln">ch</span></a></code> as is.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="graphemeStride" class="public" href="../std/uni/grapheme_stride.html">graphemeStride</a><span class="decoration">(input, index)</span>
+									<a id="graphemeStride" class="public" href="../std/uni/grapheme_stride.html">graphemeStride</a><span class="tableEntryAnnotation">(input, index)</span>
 								</code>
 							</td>
 							<td>Computes the length of grapheme cluster starting at <code class="lang-d"><a href="../std/uni/grapheme_stride.html#index"><span class="pln">index</span></a></code>.
     Both the resulting length and the <code class="lang-d"><a href="../std/uni/grapheme_stride.html#index"><span class="pln">index</span></a></code> are measured
     in <a href="#Code unit">code units</a>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="icmp" class="public" href="../std/uni/icmp.html">icmp</a><span class="decoration">(r1, r2)</span>
+									<a id="icmp" class="public" href="../std/uni/icmp.html">icmp</a><span class="tableEntryAnnotation">(r1, r2)</span>
 								</code>
 							</td>
 							<td>Does case insensitive comparison of <code class="lang-d"><a href="../std/uni/icmp.html#r1"><span class="pln">r1</span></a></code> and <code class="lang-d"><a href="../std/uni/icmp.html#r2"><span class="pln">r2</span></a></code>.
@@ -3741,231 +3795,300 @@ $('#symbolSearchPane').show();</script>
     The cost of <code class="lang-d"><span class="pln">icmp</span></code> being pedantically correct is
     slightly worse performance.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isAlpha" class="public" href="../std/uni/is_alpha.html">isAlpha</a><span class="decoration">(c)</span>
+									<a id="isAlpha" class="public" href="../std/uni/is_alpha.html">isAlpha</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns whether <code class="lang-d"><a href="../std/uni/is_alpha.html#c"><span class="pln">c</span></a></code> is a Unicode alphabetic <a href="#Character">character</a>
     (general Unicode category: Alphabetic).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isAlphaNum" class="public" href="../std/uni/is_alpha_num.html">isAlphaNum</a><span class="decoration">(c)</span>
+									<a id="isAlphaNum" class="public" href="../std/uni/is_alpha_num.html">isAlphaNum</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns whether <code class="lang-d"><a href="../std/uni/is_alpha_num.html#c"><span class="pln">c</span></a></code> is a Unicode alphabetic <a href="#Character">character</a> or number.
     (general Unicode category: Alphabetic, Nd, Nl, No).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isControl" class="public" href="../std/uni/is_control.html">isControl</a><span class="decoration">(c)</span>
+									<a id="isControl" class="public" href="../std/uni/is_control.html">isControl</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns whether <code class="lang-d"><a href="../std/uni/is_control.html#c"><span class="pln">c</span></a></code> is a Unicode control <a href="#Character">character</a>
     (general Unicode category: Cc).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isFormat" class="public" href="../std/uni/is_format.html">isFormat</a><span class="decoration">(c)</span>
+									<a id="isFormat" class="public" href="../std/uni/is_format.html">isFormat</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns whether <code class="lang-d"><a href="../std/uni/is_format.html#c"><span class="pln">c</span></a></code> is a Unicode formatting <a href="#Character">character</a>
     (general Unicode category: Cf).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isGraphical" class="public" href="../std/uni/is_graphical.html">isGraphical</a><span class="decoration">(c)</span>
+									<a id="isGraphical" class="public" href="../std/uni/is_graphical.html">isGraphical</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns whether <code class="lang-d"><a href="../std/uni/is_graphical.html#c"><span class="pln">c</span></a></code> is a Unicode graphical <a href="#Character">character</a>
     (general Unicode category: L, M, N, P, S, Zs).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isLower" class="public" href="../std/uni/is_lower.html">isLower</a><span class="decoration">(c)</span>
+									<a id="isLower" class="public" href="../std/uni/is_lower.html">isLower</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Return whether <code class="lang-d"><a href="../std/uni/is_lower.html#c"><span class="pln">c</span></a></code> is a Unicode lowercase <a href="#Character">character</a>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isMark" class="public" href="../std/uni/is_mark.html">isMark</a><span class="decoration">(c)</span>
+									<a id="isMark" class="public" href="../std/uni/is_mark.html">isMark</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns whether <code class="lang-d"><a href="../std/uni/is_mark.html#c"><span class="pln">c</span></a></code> is a Unicode mark
     (general Unicode category: Mn, Me, Mc).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isNonCharacter" class="public" href="../std/uni/is_non_character.html">isNonCharacter</a><span class="decoration">(c)</span>
+									<a id="isNonCharacter" class="public" href="../std/uni/is_non_character.html">isNonCharacter</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns whether <code class="lang-d"><a href="../std/uni/is_non_character.html#c"><span class="pln">c</span></a></code> is a Unicode non-character i.e.
     a <a href="#Code point">code point</a> with no assigned abstract character.
     (general Unicode category: Cn)
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isNumber" class="public" href="../std/uni/is_number.html">isNumber</a><span class="decoration">(c)</span>
+									<a id="isNumber" class="public" href="../std/uni/is_number.html">isNumber</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns whether <code class="lang-d"><a href="../std/uni/is_number.html#c"><span class="pln">c</span></a></code> is a Unicode numerical <a href="#Character">character</a>
     (general Unicode category: Nd, Nl, No).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isPrivateUse" class="public" href="../std/uni/is_private_use.html">isPrivateUse</a><span class="decoration">(c)</span>
+									<a id="isPrivateUse" class="public" href="../std/uni/is_private_use.html">isPrivateUse</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns whether <code class="lang-d"><a href="../std/uni/is_private_use.html#c"><span class="pln">c</span></a></code> is a Unicode Private Use <a href="#Code point">code point</a>
     (general Unicode category: Co).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isPunctuation" class="public" href="../std/uni/is_punctuation.html">isPunctuation</a><span class="decoration">(c)</span>
+									<a id="isPunctuation" class="public" href="../std/uni/is_punctuation.html">isPunctuation</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns whether <code class="lang-d"><a href="../std/uni/is_punctuation.html#c"><span class="pln">c</span></a></code> is a Unicode punctuation <a href="#Character">character</a>
     (general Unicode category: Pd, Ps, Pe, Pc, Po, Pi, Pf).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isSpace" class="public" href="../std/uni/is_space.html">isSpace</a><span class="decoration">(c)</span>
+									<a id="isSpace" class="public" href="../std/uni/is_space.html">isSpace</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns whether <code class="lang-d"><a href="../std/uni/is_space.html#c"><span class="pln">c</span></a></code> is a Unicode space <a href="#Character">character</a>
     (general Unicode category: Zs)
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isSurrogate" class="public" href="../std/uni/is_surrogate.html">isSurrogate</a><span class="decoration">(c)</span>
+									<a id="isSurrogate" class="public" href="../std/uni/is_surrogate.html">isSurrogate</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns whether <code class="lang-d"><a href="../std/uni/is_surrogate.html#c"><span class="pln">c</span></a></code> is a Unicode surrogate <a href="#Code point">code point</a>
     (general Unicode category: Cs).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isSurrogateHi" class="public" href="../std/uni/is_surrogate_hi.html">isSurrogateHi</a><span class="decoration">(c)</span>
+									<a id="isSurrogateHi" class="public" href="../std/uni/is_surrogate_hi.html">isSurrogateHi</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns whether <code class="lang-d"><a href="../std/uni/is_surrogate_hi.html#c"><span class="pln">c</span></a></code> is a Unicode high surrogate (lead surrogate).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isSurrogateLo" class="public" href="../std/uni/is_surrogate_lo.html">isSurrogateLo</a><span class="decoration">(c)</span>
+									<a id="isSurrogateLo" class="public" href="../std/uni/is_surrogate_lo.html">isSurrogateLo</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns whether <code class="lang-d"><a href="../std/uni/is_surrogate_lo.html#c"><span class="pln">c</span></a></code> is a Unicode low surrogate (trail surrogate).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isSymbol" class="public" href="../std/uni/is_symbol.html">isSymbol</a><span class="decoration">(c)</span>
+									<a id="isSymbol" class="public" href="../std/uni/is_symbol.html">isSymbol</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns whether <code class="lang-d"><a href="../std/uni/is_symbol.html#c"><span class="pln">c</span></a></code> is a Unicode symbol <a href="#Character">character</a>
     (general Unicode category: Sm, Sc, Sk, So).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isUpper" class="public" href="../std/uni/is_upper.html">isUpper</a><span class="decoration">(c)</span>
+									<a id="isUpper" class="public" href="../std/uni/is_upper.html">isUpper</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Return whether <code class="lang-d"><a href="../std/uni/is_upper.html#c"><span class="pln">c</span></a></code> is a Unicode uppercase <a href="#Character">character</a>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isWhite" class="public" href="../std/uni/is_white.html">isWhite</a><span class="decoration">(c)</span>
+									<a id="isWhite" class="public" href="../std/uni/is_white.html">isWhite</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Whether or not <code class="lang-d"><a href="../std/uni/is_white.html#c"><span class="pln">c</span></a></code> is a Unicode whitespace <a href="#Character">character</a>.
     (general Unicode category: Part of C0(tab, vertical tab, form feed,
     carriage return, and linefeed characters), Zs, Zl, Zp, and NEL(U+0085))
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="normalize" class="public" href="../std/uni/normalize.html">normalize</a><span class="decoration">(input)</span>
+									<a id="normalize" class="public" href="../std/uni/normalize.html">normalize</a><span class="tableEntryAnnotation">(input)</span>
 								</code>
 							</td>
 							<td>Returns <code class="lang-d"><a href="../std/uni/normalize.html#input"><span class="pln">input</span></a></code> string normalized to the chosen form.
     Form C is used by default.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="sicmp" class="public" href="../std/uni/sicmp.html">sicmp</a><span class="decoration">(r1, r2)</span>
+									<a id="sicmp" class="public" href="../std/uni/sicmp.html">sicmp</a><span class="tableEntryAnnotation">(r1, r2)</span>
 								</code>
 							</td>
 							<td><p>Does basic case-insensitive comparison of <code class="lang-d"><a href="../std/uni/sicmp.html#r1"><span class="pln">r1</span></a></code> and <code class="lang-d"><a href="../std/uni/sicmp.html#r2"><span class="pln">r2</span></a></code>.
     This function uses simpler comparison rule thus achieving better performance
     than <code class="lang-d"><a href="../std/uni/icmp.html"><span class="pln">icmp</span></a></code>. However keep in mind the warning below.</p>
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toDelegate" class="public" href="../std/uni/to_delegate.html">toDelegate</a><span class="decoration">(set)</span>
+									<a id="toDelegate" class="public" href="../std/uni/to_delegate.html">toDelegate</a><span class="tableEntryAnnotation">(set)</span>
 								</code>
 							</td>
 							<td><p>Builds a <code class="lang-d"><span class="typ">Trie</span></code> with typically optimal speed-size trade-off
     and wraps it into a delegate of the following type:
     <code class="lang-d"><span class="typ">bool </span><span class="kwd">delegate</span><span class="pun">(</span><span class="typ">dchar </span><span class="pln">ch</span><span class="pun">)</span></code>. </p>
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toLower" class="public" href="../std/uni/to_lower.html">toLower</a><span class="decoration">(c)</span>
+									<a id="toLower" class="public" href="../std/uni/to_lower.html">toLower</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>If <code class="lang-d"><a href="../std/uni/to_lower.html#c"><span class="pln">c</span></a></code> is a Unicode uppercase <a href="#Character">character</a>, then its lowercase equivalent
     is returned. Otherwise <code class="lang-d"><a href="../std/uni/to_lower.html#c"><span class="pln">c</span></a></code> is returned.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toLower" class="public" href="../std/uni/to_lower.html">toLower</a><span class="decoration">(s)</span>
+									<a id="toLower" class="public" href="../std/uni/to_lower.html">toLower</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Creates a new array which is identical to <code class="lang-d"><a href="../std/uni/to_lower.html#s"><span class="pln">s</span></a></code> except that all of its
@@ -3973,11 +4096,14 @@ $('#symbolSearchPane').show();</script>
     If none of <code class="lang-d"><a href="../std/uni/to_lower.html#s"><span class="pln">s</span></a></code> characters were affected, then <code class="lang-d"><a href="../std/uni/to_lower.html#s"><span class="pln">s</span></a></code> itself is returned if <code class="lang-d"><a href="../std/uni/to_lower.html#s"><span class="pln">s</span></a></code> is a
     <code class="lang-d"><span class="typ">string</span></code>-like type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toLowerInPlace" class="public" href="../std/uni/to_lower_in_place.html">toLowerInPlace</a><span class="decoration">(s)</span>
+									<a id="toLowerInPlace" class="public" href="../std/uni/to_lower_in_place.html">toLowerInPlace</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Converts <code class="lang-d"><a href="../std/uni/to_lower_in_place.html#s"><span class="pln">s</span></a></code> to lowercase (by performing Unicode lowercase mapping) in place.
@@ -3985,31 +4111,40 @@ $('#symbolSearchPane').show();</script>
     in such a case the function reallocates exactly once.
     If <code class="lang-d"><a href="../std/uni/to_lower_in_place.html#s"><span class="pln">s</span></a></code> does not have any uppercase characters, then <code class="lang-d"><a href="../std/uni/to_lower_in_place.html#s"><span class="pln">s</span></a></code> is unaltered.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toTrie" class="public" href="../std/uni/to_trie.html">toTrie</a><span class="decoration">(set)</span>
+									<a id="toTrie" class="public" href="../std/uni/to_trie.html">toTrie</a><span class="tableEntryAnnotation">(set)</span>
 								</code>
 							</td>
 							<td>Convenience function to construct optimal configurations for
     packed Trie from any <code class="lang-d"><a href="../std/uni/to_trie.html#set"><span class="pln">set</span></a></code> of <a href="#Code point">code points</a>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toUpper" class="public" href="../std/uni/to_upper.html">toUpper</a><span class="decoration">(c)</span>
+									<a id="toUpper" class="public" href="../std/uni/to_upper.html">toUpper</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>If <code class="lang-d"><a href="../std/uni/to_upper.html#c"><span class="pln">c</span></a></code> is a Unicode lowercase <a href="#Character">character</a>, then its uppercase equivalent
     is returned. Otherwise <code class="lang-d"><a href="../std/uni/to_upper.html#c"><span class="pln">c</span></a></code> is returned.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toUpper" class="public" href="../std/uni/to_upper.html">toUpper</a><span class="decoration">(s)</span>
+									<a id="toUpper" class="public" href="../std/uni/to_upper.html">toUpper</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Allocates a new array which is identical to <code class="lang-d"><a href="../std/uni/to_upper.html#s"><span class="pln">s</span></a></code> except that all of its
@@ -4017,11 +4152,14 @@ $('#symbolSearchPane').show();</script>
     If none of <code class="lang-d"><a href="../std/uni/to_upper.html#s"><span class="pln">s</span></a></code> characters were affected, then <code class="lang-d"><a href="../std/uni/to_upper.html#s"><span class="pln">s</span></a></code> itself is returned if <code class="lang-d"><a href="../std/uni/to_upper.html#s"><span class="pln">s</span></a></code>
     is a <code class="lang-d"><span class="typ">string</span></code>-like type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toUpperInPlace" class="public" href="../std/uni/to_upper_in_place.html">toUpperInPlace</a><span class="decoration">(s)</span>
+									<a id="toUpperInPlace" class="public" href="../std/uni/to_upper_in_place.html">toUpperInPlace</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Converts <code class="lang-d"><a href="../std/uni/to_upper_in_place.html#s"><span class="pln">s</span></a></code> to uppercase  (by performing Unicode uppercase mapping) in place.
@@ -4029,17 +4167,23 @@ $('#symbolSearchPane').show();</script>
     in such a case the function reallocates exactly once.
     If <code class="lang-d"><a href="../std/uni/to_upper_in_place.html#s"><span class="pln">s</span></a></code> does not have any lowercase characters, then <code class="lang-d"><a href="../std/uni/to_upper_in_place.html#s"><span class="pln">s</span></a></code> is unaltered.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="utfMatcher" class="public" href="../std/uni/utf_matcher.html">utfMatcher</a><span class="decoration">(set)</span>
+									<a id="utfMatcher" class="public" href="../std/uni/utf_matcher.html">utfMatcher</a><span class="tableEntryAnnotation">(set)</span>
 								</code>
 							</td>
 							<td>Constructs a matcher object
     to classify <a href="#Code point">code points</a> from the <code class="lang-d"><a href="../std/uni/utf_matcher.html#set"><span class="pln">set</span></a></code> for encoding
     that has <code class="lang-d"><span class="typ">Char</span></code> as code unit.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -4048,7 +4192,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -4060,6 +4204,8 @@ $('#symbolSearchPane').show();</script>
     to represent [a, b) intervals of <a href="#Code point">code points</a>. As used in <code class="lang-d"><a href="../std/uni/inversion_list.html"><span class="typ">InversionList</span></a></code>.
     Any interval type should pass <code class="lang-d"><a href="../std/uni/is_integral_pair.html"><span class="pln">isIntegralPair</span></a></code> trait.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -4071,6 +4217,8 @@ $('#symbolSearchPane').show();</script>
     of a <a href="#Grapheme cluster">grapheme cluster</a>.
     </p>
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -4086,6 +4234,8 @@ $('#symbolSearchPane').show();</script>
     plus a singular value 60 looks like this:
     </p>
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -4095,6 +4245,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Conceptual type that outlines the common properties of all UTF Matchers.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -4105,6 +4257,8 @@ $('#symbolSearchPane').show();</script>
 							<td>A single entry point to lookup Unicode <a href="#Code point">code point</a> sets by name or alias of
     a block, script or general category.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -4113,7 +4267,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -4124,6 +4278,8 @@ $('#symbolSearchPane').show();</script>
 							<td>Enumeration type for normalization forms,
     passed as template parameter for functions like <code class="lang-d"><a href="../std/uni/normalize.html"><span class="pln">normalize</span></a></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -4133,6 +4289,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Unicode character decomposition type.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -4141,7 +4299,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -4153,6 +4311,8 @@ $('#symbolSearchPane').show();</script>
     from a <code class="lang-d"><a href="../std/uni/codepoint_set.html"><span class="typ">CodepointSet</span></a></code>. <code class="lang-d"><span class="pln">sizes</span></code> are numbers of bits per level,
     with the most significant bits used first.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -4163,6 +4323,8 @@ $('#symbolSearchPane').show();</script>
 							<td>A slightly more general tool for building fixed <code class="lang-d"><span class="typ">Trie</span></code>
     for the Unicode data.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 					</table>
 				</section>

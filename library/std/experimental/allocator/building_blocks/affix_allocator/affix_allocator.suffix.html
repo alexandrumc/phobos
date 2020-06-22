@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2938,13 +2953,13 @@ $('#symbolSearchPane').show();</script>
 						</div>
 					</div>
 				</div><h1>Function <code><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.html">std.experimental.allocator.building_blocks.affix_allocator.AffixAllocator</a>.suffix</code></h1><p>Affix access functions offering references to the affixes of a
-        block <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.prefix.html#b"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.suffix.html#b"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.prefix.html#b"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.suffix.html#b"><span class="pln">b</span></a></span></a></span></a></span></a></code> previously allocated with this allocator. <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.prefix.html#b"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.suffix.html#b"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.prefix.html#b"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.suffix.html#b"><span class="pln">b</span></a></span></a></span></a></span></a></code> may not be null.
+        block <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.suffix.html#b"><span class="pln">b</span></a></code> previously allocated with this allocator. <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.suffix.html#b"><span class="pln">b</span></a></code> may not be null.
         They are defined if and only if the corresponding affix is not <code class="lang-d"><span class="typ">void</span></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto ref </span><span class="kwd">auto</span> <span class="pln">suffix</span>(T)
+				<span class="kwd">ref </span><span class="kwd">auto</span> <span class="pln">suffix</span>(T)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">T</span><span class="pun">[]</span> <span class="pln">b</span>
@@ -2956,11 +2971,11 @@ $('#symbolSearchPane').show();</script>
 				<section><p>The qualifiers of the affix are not always the same as the qualifiers
         of the argument. This is because the affixes are not part of the data
         itself, but instead are just <i>associated</i> with the data and known
-        to the allocator. The table below documents the type of <code class="lang-d"><span class="pln">preffix</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.prefix.html#b"></span><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.suffix.html#b"><span class="pln">b</span></a></span></a><span class="pun">)</span></code> and
-        <code class="lang-d"><span class="pln">affix</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.prefix.html#b"></span><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.suffix.html#b"><span class="pln">b</span></a></span></a><span class="pun">)</span></code> depending on the type of <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.prefix.html#b"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.suffix.html#b"><span class="pln">b</span></a></span></a></code>.
+        to the allocator. The table below documents the type of <code class="lang-d"><span class="pln">preffix</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.suffix.html#b"></span><span class="pln">b</span></a><span class="pun">)</span></code> and
+        <code class="lang-d"><span class="pln">affix</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.suffix.html#b"></span><span class="pln">b</span></a><span class="pun">)</span></code> depending on the type of <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.suffix.html#b"><span class="pln">b</span></a></code>.
 </p>
 
-<p>        <table class="book"><caption>Result of <code class="lang-d"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.prefix.html"><span class="pln">prefix</span></a></span></code>/<code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.suffix.html"><span class="pln"><span class="pln">suffix</span></span></a></code> depending on argument (<code class="lang-d"><span class="pln">U</span></code> is
+<p>        <table class="book"><caption>Result of <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.prefix.html"><span class="pln">prefix</span></a></code>/<code class="lang-d"><span class="pln">suffix</span></code> depending on argument (<code class="lang-d"><span class="pln">U</span></code> is
         any unqualified type, <code class="lang-d"><span class="typ">Affix</span></code> is <code class="lang-d"><span class="typ">Prefix</span></code> or <code class="lang-d"><span class="typ">Suffix</span></code>)</caption><code class="lang-d"><span class="typ">Affix</span></code> is <code class="lang-d"><span class="typ">Prefix</span></code> or <code class="lang-d"><span class="typ">Suffix</span></code>),
             <tr><th scope="col">Argument&nbsp;Type</th> <th scope="col">Return</th> <th scope="col">Comments</th></tr>
             <tr><td><code class="lang-d"><span class="kwd">shared</span><span class="pun">(</span><span class="pln">U</span><span class="pun">)[]</span></code></td> <td><code class="lang-d"><span class="kwd">ref shared </span><span class="typ">Affix</span></code></td>
@@ -2989,7 +3004,7 @@ $('#symbolSearchPane').show();</script>
 </section>
 
 				<section><h2>Precondition</h2>
-<p><code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.prefix.html#b"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.suffix.html#b"><span class="pln">b</span></a></span></a><span class="pln"> </span><span class="pun">!</span><span class="kwd">is null</span></code> and <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.prefix.html#b"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.suffix.html#b"><span class="pln">b</span></a></span></a></code> must have been allocated with
+<p><code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.suffix.html#b"><span class="pln">b</span></a><span class="pln"> </span><span class="pun">!</span><span class="kwd">is null</span></code> and <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.suffix.html#b"><span class="pln">b</span></a></code> must have been allocated with
         this allocator.
 </p>
 </section>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/typecons.d#L8834">
+							<a href="https://github.com/dlang/phobos/blob/master/std/typecons.d#L8843">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/typecons.d#L8834">
+							<a href="https://github.com/dlang/phobos/edit/master/std/typecons.d#L8843">
 								Improve this page
 							</a>
 							<div>
@@ -2938,8 +2953,8 @@ $('#symbolSearchPane').show();</script>
 						</div>
 					</div>
 				</div><h1>Alias <code><a href="../../std/typecons.html">std.typecons</a>.ReplaceType</code></h1><p>Replaces all occurrences of <code class="lang-d"><span class="typ">From</span></code> into <code class="lang-d"><span class="typ">To</span></code>, in one or more types <code class="lang-d"><span class="pln">T</span></code>. For
-example, <code class="lang-d"><span class="typ"><span class="typ">ReplaceType</span></span><span class="pun">!(</span><span class="typ">int</span><span class="pun">, </span><span class="typ">uint</span><span class="pun">, <a href="../std/typecons/tuple.html"></span><span class="typ"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></span></a><span class="pun">!(</span><span class="typ">int</span><span class="pun">, </span><span class="typ">float</span><span class="pun">)[</span><span class="typ">string</span><span class="pun">])</span></code> yields
-<code class="lang-d"><a href="../std/typecons/tuple.html"><span class="typ"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a></span></a><span class="pun">!(</span><span class="typ">uint</span><span class="pun">, </span><span class="typ">float</span><span class="pun">)[</span><span class="typ">string</span><span class="pun">]</span></code>. The types in which replacement is performed
+example, <code class="lang-d"><span class="typ">ReplaceType</span><span class="pun">!(</span><span class="typ">int</span><span class="pun">, </span><span class="typ">uint</span><span class="pun">, <a href="../../std/typecons/tuple.html"></span><span class="typ">Tuple</span></a><span class="pun">!(</span><span class="typ">int</span><span class="pun">, </span><span class="typ">float</span><span class="pun">)[</span><span class="typ">string</span><span class="pun">])</span></code> yields
+<code class="lang-d"><a href="../../std/typecons/tuple.html"><span class="typ">Tuple</span></a><span class="pun">!(</span><span class="typ">uint</span><span class="pun">, </span><span class="typ">float</span><span class="pun">)[</span><span class="typ">string</span><span class="pun">]</span></code>. The types in which replacement is performed
 may be arbitrarily complex, including qualifiers, built-in type constructors
 (pointers, arrays, associative arrays, functions, and delegates), and template
 instantiations; replacement proceeds transitively through the type definition.

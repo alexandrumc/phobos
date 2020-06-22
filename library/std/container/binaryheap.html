@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,7 +2952,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Module <code>std.container.binaryheap</code></h1><p>This module provides a <code class="lang-d"><a href="./std/container/binaryheap/binary_heap.html"><span class="typ"><a href="../../std/container/binaryheap/binary_heap.html"><span class="typ">BinaryHeap</span></a></span></a></code> (aka priority queue)
+				</div><h1>Module <code>std.container.binaryheap</code></h1><p>This module provides a <code class="lang-d"><a href="../../std/container/binaryheap/binary_heap.html"><span class="typ">BinaryHeap</span></a></code> (aka priority queue)
 adaptor that makes a binary heap out of any user-provided random-access range.
 </p><section><p>This module is a submodule of <code class="lang-d"><a href="../../std/container.html"><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">container</span></a></code>.
 </p>
@@ -2961,17 +2976,20 @@ adaptor that makes a binary heap out of any user-provided random-access range.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="heapify" class="public" href="../../std/container/binaryheap/heapify.html">heapify</a><span class="decoration">(s, initialSize)</span>
+									<a id="heapify" class="public" href="../../std/container/binaryheap/heapify.html">heapify</a><span class="tableEntryAnnotation">(s, initialSize)</span>
 								</code>
 							</td>
 							<td>Convenience function that returns a <code class="lang-d"><a href="../../std/container/binaryheap/binary_heap.html"><span class="typ">BinaryHeap</span></a><span class="pun">!</span><span class="typ">Store</span></code> object
 initialized with <code class="lang-d"><a href="../../std/container/binaryheap/heapify.html#s"><span class="pln">s</span></a></code> and <code class="lang-d"><a href="../../std/container/binaryheap/heapify.html#initialSize"><span class="pln">initialSize</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -2980,7 +2998,7 @@ initialized with <code class="lang-d"><a href="../../std/container/binaryheap/he
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -2993,6 +3011,8 @@ container on top of a given random-access range type (usually <code class="lang-
 documentation of <code class="lang-d"><span class="typ">BinaryHeap</span></code> will refer to the underlying range or
 container as the <i>store</i> of the heap.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2970,61 +2985,76 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cmpTimeUnits" class="public" href="../../std/datetime/date/cmp_time_units.html">cmpTimeUnits</a><span class="decoration">(lhs, rhs)</span>
+									<a id="cmpTimeUnits" class="public" href="../../std/datetime/date/cmp_time_units.html">cmpTimeUnits</a><span class="tableEntryAnnotation">(lhs, rhs)</span>
 								</code>
 							</td>
 							<td>Compares two time unit strings. <code class="lang-d"><span class="str">"years"</span></code> are the largest units and
     <code class="lang-d"><span class="str">"hnsecs"</span></code> are the smallest.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="daysToDayOfWeek" class="public" href="../../std/datetime/date/days_to_day_of_week.html">daysToDayOfWeek</a><span class="decoration">(currDoW, dow)</span>
+									<a id="daysToDayOfWeek" class="public" href="../../std/datetime/date/days_to_day_of_week.html">daysToDayOfWeek</a><span class="tableEntryAnnotation">(currDoW, dow)</span>
 								</code>
 							</td>
 							<td>Returns the number of days from the current day of the week to the given
     day of the week. If they are the same, then the result is 0.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="enforceValid" class="public" href="../../std/datetime/date/enforce_valid.html">enforceValid</a><span class="decoration">(value, file, line)</span>
+									<a id="enforceValid" class="public" href="../../std/datetime/date/enforce_valid.html">enforceValid</a><span class="tableEntryAnnotation">(value, file, line)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="enforceValid" class="public" href="../../std/datetime/date/enforce_valid.html">enforceValid</a><span class="decoration">(year, month, day, file, line)</span>
+									<a id="enforceValid" class="public" href="../../std/datetime/date/enforce_valid.html">enforceValid</a><span class="tableEntryAnnotation">(year, month, day, file, line)</span>
 								</code>
 							</td>
 							<td>Because the validity of the day number depends on both on the year
     and month of which the day is occurring, take all three variables
     to validate the day.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="monthsToMonth" class="public" href="../../std/datetime/date/months_to_month.html">monthsToMonth</a><span class="decoration">(currMonth, month)</span>
+									<a id="monthsToMonth" class="public" href="../../std/datetime/date/months_to_month.html">monthsToMonth</a><span class="tableEntryAnnotation">(currMonth, month)</span>
 								</code>
 							</td>
 							<td>Returns the number of months from the current months of the year to the
     given month of the year. If they are the same, then the result is 0.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="valid" class="public" href="../../std/datetime/date/valid.html">valid</a><span class="decoration">(value)</span>
+									<a id="valid" class="public" href="../../std/datetime/date/valid.html">valid</a><span class="tableEntryAnnotation">(value)</span>
 								</code>
 							</td>
 							<td>Returns whether the given value is valid for the given unit type when in a
@@ -3032,33 +3062,45 @@ $('#symbolSearchPane').show();</script>
     the values in a time point are (e.g. a month must be in the range of
     1 - 12 inclusive).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="valid" class="public" href="../../std/datetime/date/valid.html">valid</a><span class="decoration">(year, month, day)</span>
+									<a id="valid" class="public" href="../../std/datetime/date/valid.html">valid</a><span class="tableEntryAnnotation">(year, month, day)</span>
 								</code>
 							</td>
 							<td>Returns whether the given day is valid for the given year and month.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="validTimeUnits" class="public" href="../../std/datetime/date/valid_time_units.html">validTimeUnits</a><span class="decoration">(units)</span>
+									<a id="validTimeUnits" class="public" href="../../std/datetime/date/valid_time_units.html">validTimeUnits</a><span class="tableEntryAnnotation">(units)</span>
 								</code>
 							</td>
 							<td>Whether all of the given strings are valid units of time.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="yearIsLeapYear" class="public" href="../../std/datetime/date/year_is_leap_year.html">yearIsLeapYear</a><span class="decoration">(year)</span>
+									<a id="yearIsLeapYear" class="public" href="../../std/datetime/date/year_is_leap_year.html">yearIsLeapYear</a><span class="tableEntryAnnotation">(year)</span>
 								</code>
 							</td>
 							<td>Whether the given Gregorian Year is a leap year.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3067,7 +3109,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3080,6 +3122,8 @@ $('#symbolSearchPane').show();</script>
     Gregorian Calendar</a> ranging from 32,768 B.C. to 32,767 A.D. Positive years
     are A.D. Non-positive years are B.C.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3097,6 +3141,8 @@ $('#symbolSearchPane').show();</script>
     is intended primarily for calendar-based uses rather than precise time
     operations.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3107,6 +3153,8 @@ $('#symbolSearchPane').show();</script>
 							<td>Represents a time of day with hours, minutes, and seconds. It uses 24 hour
     time.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3115,7 +3163,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3125,6 +3173,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Represents the 7 days of the Gregorian week (Sunday is 0).
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3134,6 +3184,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Represents the 12 months of the Gregorian year (January is 1).
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2996,433 +3011,574 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="aes" class="public property" href="../core/cpuid/aes.html">aes</a><span class="decoration">()</span>
+									<a id="aes" class="public property" href="../core/cpuid/aes.html">aes</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is AES supported
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="amd3dnow" class="public property" href="../core/cpuid/amd3dnow.html">amd3dnow</a><span class="decoration">()</span>
+									<a id="amd3dnow" class="public property" href="../core/cpuid/amd3dnow.html">amd3dnow</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is AMD 3DNOW supported?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="amd3dnowExt" class="public property" href="../core/cpuid/amd3dnow_ext.html">amd3dnowExt</a><span class="decoration">()</span>
+									<a id="amd3dnowExt" class="public property" href="../core/cpuid/amd3dnow_ext.html">amd3dnowExt</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is AMD 3DNOW Ext supported?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="amdMmx" class="public property" href="../core/cpuid/amd_mmx.html">amdMmx</a><span class="decoration">()</span>
+									<a id="amdMmx" class="public property" href="../core/cpuid/amd_mmx.html">amdMmx</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Are AMD extensions to MMX supported?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="avx" class="public property" href="../core/cpuid/avx.html">avx</a><span class="decoration">()</span>
+									<a id="avx" class="public property" href="../core/cpuid/avx.html">avx</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is AVX supported
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="avx2" class="public property" href="../core/cpuid/avx2.html">avx2</a><span class="decoration">()</span>
+									<a id="avx2" class="public property" href="../core/cpuid/avx2.html">avx2</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is AVX2 supported
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cacheLevels" class="public property" href="../core/cpuid/cache_levels.html">cacheLevels</a><span class="decoration">()</span>
+									<a id="cacheLevels" class="public property" href="../core/cpuid/cache_levels.html">cacheLevels</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>The number of cache levels in the CPU.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="coresPerCPU" class="public property" href="../core/cpuid/cores_per_cpu.html">coresPerCPU</a><span class="decoration">()</span>
+									<a id="coresPerCPU" class="public property" href="../core/cpuid/cores_per_cpu.html">coresPerCPU</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Returns number of cores in CPU
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dataCaches" class="public property" href="../core/cpuid/data_caches.html">dataCaches</a><span class="decoration">()</span>
+									<a id="dataCaches" class="public property" href="../core/cpuid/data_caches.html">dataCaches</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>The data caches. If there are fewer than 5 physical caches levels,
 the remaining levels are set to size_t.max (== entire memory space)
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fma" class="public property" href="../core/cpuid/fma.html">fma</a><span class="decoration">()</span>
+									<a id="fma" class="public property" href="../core/cpuid/fma.html">fma</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is FMA supported
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fp16c" class="public property" href="../core/cpuid/fp16c.html">fp16c</a><span class="decoration">()</span>
+									<a id="fp16c" class="public property" href="../core/cpuid/fp16c.html">fp16c</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is FP16C supported
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="has3dnowPrefetch" class="public property" href="../core/cpuid/has3dnow_prefetch.html">has3dnowPrefetch</a><span class="decoration">()</span>
+									<a id="has3dnowPrefetch" class="public property" href="../core/cpuid/has3dnow_prefetch.html">has3dnowPrefetch</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is 3DNow prefetch supported?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="hasCmov" class="public property" href="../core/cpuid/has_cmov.html">hasCmov</a><span class="decoration">()</span>
+									<a id="hasCmov" class="public property" href="../core/cpuid/has_cmov.html">hasCmov</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is cmov supported?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="hasCmpxchg16b" class="public property" href="../core/cpuid/has_cmpxchg16b.html">hasCmpxchg16b</a><span class="decoration">()</span>
+									<a id="hasCmpxchg16b" class="public property" href="../core/cpuid/has_cmpxchg16b.html">hasCmpxchg16b</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is cmpxchg8b supported?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="hasCmpxchg8b" class="public property" href="../core/cpuid/has_cmpxchg8b.html">hasCmpxchg8b</a><span class="decoration">()</span>
+									<a id="hasCmpxchg8b" class="public property" href="../core/cpuid/has_cmpxchg8b.html">hasCmpxchg8b</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is cmpxchg8b supported?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="hasFxsr" class="public property" href="../core/cpuid/has_fxsr.html">hasFxsr</a><span class="decoration">()</span>
+									<a id="hasFxsr" class="public property" href="../core/cpuid/has_fxsr.html">hasFxsr</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is fxsave/fxrstor supported?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="hasLahfSahf" class="public property" href="../core/cpuid/has_lahf_sahf.html">hasLahfSahf</a><span class="decoration">()</span>
+									<a id="hasLahfSahf" class="public property" href="../core/cpuid/has_lahf_sahf.html">hasLahfSahf</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Are LAHF and SAHF supported in 64-bit mode?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="hasLzcnt" class="public property" href="../core/cpuid/has_lzcnt.html">hasLzcnt</a><span class="decoration">()</span>
+									<a id="hasLzcnt" class="public property" href="../core/cpuid/has_lzcnt.html">hasLzcnt</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is LZCNT supported?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="hasPclmulqdq" class="public property" href="../core/cpuid/has_pclmulqdq.html">hasPclmulqdq</a><span class="decoration">()</span>
+									<a id="hasPclmulqdq" class="public property" href="../core/cpuid/has_pclmulqdq.html">hasPclmulqdq</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is pclmulqdq supported
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="hasPopcnt" class="public property" href="../core/cpuid/has_popcnt.html">hasPopcnt</a><span class="decoration">()</span>
+									<a id="hasPopcnt" class="public property" href="../core/cpuid/has_popcnt.html">hasPopcnt</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is POPCNT supported?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="hasRdrand" class="public property" href="../core/cpuid/has_rdrand.html">hasRdrand</a><span class="decoration">()</span>
+									<a id="hasRdrand" class="public property" href="../core/cpuid/has_rdrand.html">hasRdrand</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is rdrand supported
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="hasRdseed" class="public property" href="../core/cpuid/has_rdseed.html">hasRdseed</a><span class="decoration">()</span>
+									<a id="hasRdseed" class="public property" href="../core/cpuid/has_rdseed.html">hasRdseed</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is rdseed supported
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="hasRdtsc" class="public property" href="../core/cpuid/has_rdtsc.html">hasRdtsc</a><span class="decoration">()</span>
+									<a id="hasRdtsc" class="public property" href="../core/cpuid/has_rdtsc.html">hasRdtsc</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is rdtsc supported?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="hasSha" class="public property" href="../core/cpuid/has_sha.html">hasSha</a><span class="decoration">()</span>
+									<a id="hasSha" class="public property" href="../core/cpuid/has_sha.html">hasSha</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is SHA supported
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="hasSysEnterSysExit" class="public property" href="../core/cpuid/has_sys_enter_sys_exit.html">hasSysEnterSysExit</a><span class="decoration">()</span>
+									<a id="hasSysEnterSysExit" class="public property" href="../core/cpuid/has_sys_enter_sys_exit.html">hasSysEnterSysExit</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is SYSENTER/SYSEXIT supported?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="hasVpclmulqdq" class="public property" href="../core/cpuid/has_vpclmulqdq.html">hasVpclmulqdq</a><span class="decoration">()</span>
+									<a id="hasVpclmulqdq" class="public property" href="../core/cpuid/has_vpclmulqdq.html">hasVpclmulqdq</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is vpclmulqdq supported
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="hle" class="public property" href="../core/cpuid/hle.html">hle</a><span class="decoration">()</span>
+									<a id="hle" class="public property" href="../core/cpuid/hle.html">hle</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is HLE (hardware lock elision) supported
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="hyperThreading" class="public property" href="../core/cpuid/hyper_threading.html">hyperThreading</a><span class="decoration">()</span>
+									<a id="hyperThreading" class="public property" href="../core/cpuid/hyper_threading.html">hyperThreading</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is hyperthreading supported?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isItanium" class="public property" href="../core/cpuid/is_itanium.html">isItanium</a><span class="decoration">()</span>
+									<a id="isItanium" class="public property" href="../core/cpuid/is_itanium.html">isItanium</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is this an IA64 (Itanium) processor?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isX86_64" class="public property" href="../core/cpuid/is_x86_64.html">isX86_64</a><span class="decoration">()</span>
+									<a id="isX86_64" class="public property" href="../core/cpuid/is_x86_64.html">isX86_64</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is this an Intel64 or AMD 64?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="mmx" class="public property" href="../core/cpuid/mmx.html">mmx</a><span class="decoration">()</span>
+									<a id="mmx" class="public property" href="../core/cpuid/mmx.html">mmx</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is MMX supported?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="preferAthlon" class="public property" href="../core/cpuid/prefer_athlon.html">preferAthlon</a><span class="decoration">()</span>
+									<a id="preferAthlon" class="public property" href="../core/cpuid/prefer_athlon.html">preferAthlon</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Optimisation hints for assembly code.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="preferPentium1" class="public property" href="../core/cpuid/prefer_pentium1.html">preferPentium1</a><span class="decoration">()</span>
+									<a id="preferPentium1" class="public property" href="../core/cpuid/prefer_pentium1.html">preferPentium1</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Does this CPU perform better on Pentium I code than Pentium Pro code?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="preferPentium4" class="public property" href="../core/cpuid/prefer_pentium4.html">preferPentium4</a><span class="decoration">()</span>
+									<a id="preferPentium4" class="public property" href="../core/cpuid/prefer_pentium4.html">preferPentium4</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Does this CPU perform better on Pentium4 code than PentiumPro..Core2 code?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="processor" class="public property" href="../core/cpuid/processor.html">processor</a><span class="decoration">()</span>
+									<a id="processor" class="public property" href="../core/cpuid/processor.html">processor</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Returns processor string, for display purposes only
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rtm" class="public property" href="../core/cpuid/rtm.html">rtm</a><span class="decoration">()</span>
+									<a id="rtm" class="public property" href="../core/cpuid/rtm.html">rtm</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is RTM (restricted transactional memory) supported
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="sse" class="public property" href="../core/cpuid/sse.html">sse</a><span class="decoration">()</span>
+									<a id="sse" class="public property" href="../core/cpuid/sse.html">sse</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is SSE supported?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="sse2" class="public property" href="../core/cpuid/sse2.html">sse2</a><span class="decoration">()</span>
+									<a id="sse2" class="public property" href="../core/cpuid/sse2.html">sse2</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is SSE2 supported?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="sse3" class="public property" href="../core/cpuid/sse3.html">sse3</a><span class="decoration">()</span>
+									<a id="sse3" class="public property" href="../core/cpuid/sse3.html">sse3</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is SSE3 supported?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="sse41" class="public property" href="../core/cpuid/sse41.html">sse41</a><span class="decoration">()</span>
+									<a id="sse41" class="public property" href="../core/cpuid/sse41.html">sse41</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is SSE4.1 supported?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="sse42" class="public property" href="../core/cpuid/sse42.html">sse42</a><span class="decoration">()</span>
+									<a id="sse42" class="public property" href="../core/cpuid/sse42.html">sse42</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is SSE4.2 supported?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="sse4a" class="public property" href="../core/cpuid/sse4a.html">sse4a</a><span class="decoration">()</span>
+									<a id="sse4a" class="public property" href="../core/cpuid/sse4a.html">sse4a</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is SSE4a supported?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="ssse3" class="public property" href="../core/cpuid/ssse3.html">ssse3</a><span class="decoration">()</span>
+									<a id="ssse3" class="public property" href="../core/cpuid/ssse3.html">ssse3</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is SSSE3 supported?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="threadsPerCPU" class="public property" href="../core/cpuid/threads_per_cpu.html">threadsPerCPU</a><span class="decoration">()</span>
+									<a id="threadsPerCPU" class="public property" href="../core/cpuid/threads_per_cpu.html">threadsPerCPU</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Returns number of threads per CPU
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vaes" class="public property" href="../core/cpuid/vaes.html">vaes</a><span class="decoration">()</span>
+									<a id="vaes" class="public property" href="../core/cpuid/vaes.html">vaes</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Is VEX-Encoded AES supported
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="vendor" class="public property" href="../core/cpuid/vendor.html">vendor</a><span class="decoration">()</span>
+									<a id="vendor" class="public property" href="../core/cpuid/vendor.html">vendor</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Returns vendor string, for display purposes only.
 Do NOT use this to determine features!
 Note that some CPUs have programmable vendorIDs.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="x87onChip" class="public property" href="../core/cpuid/x87on_chip.html">x87onChip</a><span class="decoration">()</span>
+									<a id="x87onChip" class="public property" href="../core/cpuid/x87on_chip.html">x87onChip</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Does it have an x87 FPU on-chip?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3431,7 +3587,7 @@ Note that some CPUs have programmable vendorIDs.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3441,6 +3597,8 @@ Note that some CPUs have programmable vendorIDs.
 							</td>
 							<td>Cache size and behaviour
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2955,72 +2970,101 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="constprop" class="public" href="../../dmd/backend/gother/constprop.html">constprop</a><span class="decoration">()</span>
+									<a id="constprop" class="public" href="../../dmd/backend/gother/constprop.html">constprop</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Constant Propagation
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="copyprop" class="public" href="../../dmd/backend/gother/copyprop.html">copyprop</a><span class="decoration">()</span>
+									<a id="copyprop" class="public" href="../../dmd/backend/gother/copyprop.html">copyprop</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Do copy propagation.
  Copy propagation elems are of the form OPvar=OPvar, and they are
  in go.expnod[].
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="deadvar" class="public" href="../../dmd/backend/gother/deadvar.html">deadvar</a><span class="decoration">()</span>
+									<a id="deadvar" class="public" href="../../dmd/backend/gother/deadvar.html">deadvar</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Mark all dead variables. Only worry about register candidates.
  Compute live ranges for register candidates.
  Be careful not to compute live ranges for members of structures (CLMOS).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="elimass" class="public" href="../../dmd/backend/gother/elimass.html">elimass</a><span class="decoration">(n)</span>
+									<a id="elimass" class="public" href="../../dmd/backend/gother/elimass.html">elimass</a><span class="tableEntryAnnotation">(n)</span>
 								</code>
 							</td>
 							<td>Remove side effect of assignment elem.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="listrds" class="public" href="../../dmd/backend/gother/listrds.html">listrds</a><span class="decoration">(IN, e, f)</span>
+									<a id="find" class="public" href="../../dmd/backend/gother/find.html">find</a><span class="tableEntryAnnotation">(eds, e)</span>
+								</code>
+							</td>
+							<td>Find <code class="lang-d"><a href="../../dmd/backend/gother/find.html#e"><span class="pln">e</span></a></code> in Elemdata list.
+</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>
+									<a id="listrds" class="public" href="../../dmd/backend/gother/listrds.html">listrds</a><span class="tableEntryAnnotation">(IN, e, f, rdlist)</span>
 								</code>
 							</td>
 							<td>Find all the reaching defs of OPvar e.
- Put into a linked list, or just set the RD bits in a vector.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
 				<section>
-					<h2>Structs</h2>
+					<h2>Aliases</h2>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Type</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
-								<code>
-									<a id="Elemdata" class="public" href="../../dmd/backend/gother/elemdata.html">Elemdata</a>
-								</code>
+								<a id="Elemdatas" class="public" href="../../dmd/backend/gother/elemdatas.html">
+									<code>Elemdatas</code>
+								</a>
+							</td>
+							<td>
+								<code class="prettyprint lang-d"><a href="../../dmd/backend/barray/rarray.html"><span class="typ">Rarray</span></a>!(dmd.backend.gother.Elemdata)</code>
 							</td>
 							<td></td>
 						</tr>

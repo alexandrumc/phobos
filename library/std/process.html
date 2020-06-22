@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -3010,221 +3025,287 @@ and watchOS. The only functions available on those platforms are:
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="browse" class="public" href="../std/process/browse.html">browse</a><span class="decoration">(url)</span>
+									<a id="browse" class="public" href="../std/process/browse.html">browse</a><span class="tableEntryAnnotation">(url)</span>
 								</code>
 							</td>
 							<td>Start up the browser and set it to viewing the page at url.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="escapeShellCommand" class="public" href="../std/process/escape_shell_command.html">escapeShellCommand</a><span class="decoration">(args)</span>
+									<a id="escapeShellCommand" class="public" href="../std/process/escape_shell_command.html">escapeShellCommand</a><span class="tableEntryAnnotation">(args)</span>
 								</code>
 							</td>
 							<td>Escapes an argv-style argument array to be used with <code class="lang-d"><a href="../std/process/spawn_shell.html"><span class="pln">spawnShell</span></a></code>,
 <code class="lang-d"><a href="../std/process/pipe_shell.html"><span class="pln">pipeShell</span></a></code> or <code class="lang-d"><a href="../std/process/execute_shell.html"><span class="pln">executeShell</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="escapeShellFileName" class="public" href="../std/process/escape_shell_file_name.html">escapeShellFileName</a><span class="decoration">(fileName)</span>
+									<a id="escapeShellFileName" class="public" href="../std/process/escape_shell_file_name.html">escapeShellFileName</a><span class="tableEntryAnnotation">(fileName)</span>
 								</code>
 							</td>
 							<td>Escapes a filename to be used for shell redirection with <code class="lang-d"><a href="../std/process/spawn_shell.html"><span class="pln">spawnShell</span></a></code>,
 <code class="lang-d"><a href="../std/process/pipe_shell.html"><span class="pln">pipeShell</span></a></code> or <code class="lang-d"><a href="../std/process/execute_shell.html"><span class="pln">executeShell</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="escapeWindowsArgument" class="public" href="../std/process/escape_windows_argument.html">escapeWindowsArgument</a><span class="decoration">(arg)</span>
+									<a id="escapeWindowsArgument" class="public" href="../std/process/escape_windows_argument.html">escapeWindowsArgument</a><span class="tableEntryAnnotation">(arg)</span>
 								</code>
 							</td>
 							<td>Quotes a command-line argument in a manner conforming to the behavior of
 <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/bb776391(v=vs.85).aspx">CommandLineToArgvW</a>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="execute" class="public" href="../std/process/execute.html">execute</a><span class="decoration">(args, env, config, maxOutput, workDir)</span>
+									<a id="execute" class="public" href="../std/process/execute.html">execute</a><span class="tableEntryAnnotation">(args, env, config, maxOutput, workDir)</span>
 								</code>
 							</td>
 							<td>Executes the given program or shell command and returns its exit
 code and output.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="executeShell" class="public" href="../std/process/execute_shell.html">executeShell</a><span class="decoration">(command, env, config, maxOutput, workDir, shellPath)</span>
+									<a id="executeShell" class="public" href="../std/process/execute_shell.html">executeShell</a><span class="tableEntryAnnotation">(command, env, config, maxOutput, workDir, shellPath)</span>
 								</code>
 							</td>
 							<td>Executes the given program or shell command and returns its exit
 code and output.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="execv" class="public" href="../std/process/execv.html">execv</a><span class="decoration">(pathname, argv)</span>
+									<a id="execv" class="public" href="../std/process/execv.html">execv</a><span class="tableEntryAnnotation">(pathname, argv)</span>
 								</code>
 							</td>
 							<td>Replaces the current process by executing a command, <code class="lang-d"><a href="../std/process/execv.html#pathname"><span class="pln">pathname</span></a></code>, with
     the arguments in <code class="lang-d"><a href="../std/process/execv.html#argv"><span class="pln">argv</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="execve" class="public" href="../std/process/execve.html">execve</a><span class="decoration">(pathname, argv, envp)</span>
+									<a id="execve" class="public" href="../std/process/execve.html">execve</a><span class="tableEntryAnnotation">(pathname, argv, envp)</span>
 								</code>
 							</td>
-							<td>Replaces the current process by executing a command, <code class="lang-d"><a href="../std/process/execv.html#pathname"><span class="pln"><a href="../std/process/execve.html#pathname"><span class="pln">pathname</span></a></span></a></code>, with
-    the arguments in <code class="lang-d"><a href="../std/process/execv.html#argv"><span class="pln"><a href="../std/process/execve.html#argv"><span class="pln">argv</span></a></span></a></code>.
+							<td>Replaces the current process by executing a command, <code class="lang-d"><a href="../std/process/execve.html#pathname"><span class="pln">pathname</span></a></code>, with
+    the arguments in <code class="lang-d"><a href="../std/process/execve.html#argv"><span class="pln">argv</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="execvp" class="public" href="../std/process/execvp.html">execvp</a><span class="decoration">(pathname, argv)</span>
+									<a id="execvp" class="public" href="../std/process/execvp.html">execvp</a><span class="tableEntryAnnotation">(pathname, argv)</span>
 								</code>
 							</td>
-							<td>Replaces the current process by executing a command, <code class="lang-d"><a href="../std/process/execv.html#pathname"><span class="pln"><a href="../std/process/execve.html#pathname"><span class="pln"><a href="../std/process/execvp.html#pathname"><span class="pln">pathname</span></a></span></a></span></a></code>, with
-    the arguments in <code class="lang-d"><a href="../std/process/execv.html#argv"><span class="pln"><a href="../std/process/execve.html#argv"><span class="pln"><a href="../std/process/execvp.html#argv"><span class="pln">argv</span></a></span></a></span></a></code>.
+							<td>Replaces the current process by executing a command, <code class="lang-d"><a href="../std/process/execvp.html#pathname"><span class="pln">pathname</span></a></code>, with
+    the arguments in <code class="lang-d"><a href="../std/process/execvp.html#argv"><span class="pln">argv</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="execvpe" class="public" href="../std/process/execvpe.html">execvpe</a><span class="decoration">(pathname, argv, envp)</span>
+									<a id="execvpe" class="public" href="../std/process/execvpe.html">execvpe</a><span class="tableEntryAnnotation">(pathname, argv, envp)</span>
 								</code>
 							</td>
-							<td>Replaces the current process by executing a command, <code class="lang-d"><a href="../std/process/execv.html#pathname"><span class="pln"><a href="../std/process/execve.html#pathname"><span class="pln"><a href="../std/process/execvp.html#pathname"><span class="pln"><a href="../std/process/execvpe.html#pathname"><span class="pln">pathname</span></a></span></a></span></a></span></a></code>, with
-    the arguments in <code class="lang-d"><a href="../std/process/execv.html#argv"><span class="pln"><a href="../std/process/execve.html#argv"><span class="pln"><a href="../std/process/execvp.html#argv"><span class="pln"><a href="../std/process/execvpe.html#argv"><span class="pln">argv</span></a></span></a></span></a></span></a></code>.
+							<td>Replaces the current process by executing a command, <code class="lang-d"><a href="../std/process/execvpe.html#pathname"><span class="pln">pathname</span></a></code>, with
+    the arguments in <code class="lang-d"><a href="../std/process/execvpe.html#argv"><span class="pln">argv</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="kill" class="public" href="../std/process/kill.html">kill</a><span class="decoration">(pid)</span>
+									<a id="kill" class="public" href="../std/process/kill.html">kill</a><span class="tableEntryAnnotation">(pid)</span>
 								</code>
 							</td>
 							<td>Attempts to terminate the process associated with <code class="lang-d"><a href="../std/process/kill.html#pid"><span class="pln">pid</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nativeShell" class="public property" href="../std/process/native_shell.html">nativeShell</a><span class="decoration">()</span>
+									<a id="nativeShell" class="public property" href="../std/process/native_shell.html">nativeShell</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>The platform-specific native shell path.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="pipe" class="public" href="../std/process/pipe.html">pipe</a><span class="decoration">()</span>
+									<a id="pipe" class="public" href="../std/process/pipe.html">pipe</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Creates a unidirectional pipe.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="pipeProcess" class="public" href="../std/process/pipe_process.html">pipeProcess</a><span class="decoration">(args, redirect, env, config, workDir)</span>
+									<a id="pipeProcess" class="public" href="../std/process/pipe_process.html">pipeProcess</a><span class="tableEntryAnnotation">(args, redirect, env, config, workDir)</span>
 								</code>
 							</td>
 							<td>Starts a new process, creating pipes to redirect its standard
 input, output and/or error streams.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="pipeShell" class="public" href="../std/process/pipe_shell.html">pipeShell</a><span class="decoration">(command, redirect, env, config, workDir, shellPath)</span>
+									<a id="pipeShell" class="public" href="../std/process/pipe_shell.html">pipeShell</a><span class="tableEntryAnnotation">(command, redirect, env, config, workDir, shellPath)</span>
 								</code>
 							</td>
 							<td>Starts a new process, creating pipes to redirect its standard
 input, output and/or error streams.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="spawnProcess" class="public" href="../std/process/spawn_process.html">spawnProcess</a><span class="decoration">(args, stdin, stdout, stderr, env, config, workDir)</span>
+									<a id="spawnProcess" class="public" href="../std/process/spawn_process.html">spawnProcess</a><span class="tableEntryAnnotation">(args, stdin, stdout, stderr, env, config, workDir)</span>
 								</code>
 							</td>
 							<td>Spawns a new process, optionally assigning it an arbitrary set of standard
 input, output, and error streams.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="spawnShell" class="public" href="../std/process/spawn_shell.html">spawnShell</a><span class="decoration">(command, stdin, stdout, stderr, env, config, workDir, shellPath)</span>
+									<a id="spawnShell" class="public" href="../std/process/spawn_shell.html">spawnShell</a><span class="tableEntryAnnotation">(command, stdin, stdout, stderr, env, config, workDir, shellPath)</span>
 								</code>
 							</td>
 							<td>A variation on <code class="lang-d"><a href="../std/process/spawn_process.html"><span class="pln">spawnProcess</span></a></code> that runs the given command through
 the current user's preferred command interpreter (aka. shell).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="thisProcessID" class="public property" href="../std/process/this_process_id.html">thisProcessID</a><span class="decoration">()</span>
+									<a id="thisProcessID" class="public property" href="../std/process/this_process_id.html">thisProcessID</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Returns the process ID of the current process,
  which is guaranteed to be unique on the system.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="thisThreadID" class="public property" href="../std/process/this_thread_id.html">thisThreadID</a><span class="decoration">()</span>
+									<a id="thisThreadID" class="public property" href="../std/process/this_thread_id.html">thisThreadID</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Returns the process ID of the current thread,
  which is guaranteed to be unique within the current process.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="tryWait" class="public" href="../std/process/try_wait.html">tryWait</a><span class="decoration">(pid)</span>
+									<a id="tryWait" class="public" href="../std/process/try_wait.html">tryWait</a><span class="tableEntryAnnotation">(pid)</span>
 								</code>
 							</td>
 							<td>A non-blocking version of <code class="lang-d"><a href="../std/process/wait.html"><span class="pln">wait</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="userShell" class="public property" href="../std/process/user_shell.html">userShell</a><span class="decoration">()</span>
+									<a id="userShell" class="public property" href="../std/process/user_shell.html">userShell</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Determines the path to the current user's preferred command interpreter.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wait" class="public" href="../std/process/wait.html">wait</a><span class="decoration">(pid)</span>
+									<a id="wait" class="public" href="../std/process/wait.html">wait</a><span class="tableEntryAnnotation">(pid)</span>
 								</code>
 							</td>
 							<td>Waits for the process associated with <code class="lang-d"><a href="../std/process/wait.html#pid"><span class="pln">pid</span></a></code> to terminate, and returns
 its exit status.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3233,7 +3314,7 @@ its exit status.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3244,6 +3325,8 @@ its exit status.
 							<td>Manipulates environment variables using an associative-array-like
 interface.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3253,6 +3336,8 @@ interface.
 							</td>
 							<td>A handle that corresponds to a spawned process.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3262,6 +3347,8 @@ interface.
 							</td>
 							<td>An exception that signals a problem with starting or waiting for a process.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3270,7 +3357,7 @@ interface.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3280,6 +3367,8 @@ interface.
 							</td>
 							<td>An interface to a pipe created by the <code class="lang-d"><a href="../std/process/pipe.html"><span class="pln">pipe</span></a></code> function.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3290,6 +3379,8 @@ interface.
 							<td>Object which contains <code class="lang-d"><a href="../std/stdio/file.html" title="std.stdio.File"><span class="typ">File</span></a></code> handles that allow communication
 with a child process through its standard streams.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3298,7 +3389,7 @@ with a child process through its standard streams.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3310,6 +3401,8 @@ with a child process through its standard streams.
 module. Most flags only apply to <code class="lang-d"><a href="../std/process/spawn_process.html"><span class="pln">spawnProcess</span></a></code> and
 <code class="lang-d"><a href="../std/process/spawn_shell.html"><span class="pln">spawnShell</span></a></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3321,6 +3414,8 @@ module. Most flags only apply to <code class="lang-d"><a href="../std/process/sp
 to specify which of the child process' standard streams are redirected.
 Use bitwise OR to combine flags.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

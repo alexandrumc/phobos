@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2954,22 +2969,25 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="checkArrayLiteralEscape" class="public" href="../dmd/escape/check_array_literal_escape.html">checkArrayLiteralEscape</a><span class="decoration">(sc, ae, gag)</span>
+									<a id="checkArrayLiteralEscape" class="public" href="../dmd/escape/check_array_literal_escape.html">checkArrayLiteralEscape</a><span class="tableEntryAnnotation">(sc, ae, gag)</span>
 								</code>
 							</td>
 							<td>Array literal is going to be allocated on the GC heap.
  Check its elements to see if any would escape by going on the heap.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="checkAssignEscape" class="public" href="../dmd/escape/check_assign_escape.html">checkAssignEscape</a><span class="decoration">(sc, e, gag)</span>
+									<a id="checkAssignEscape" class="public" href="../dmd/escape/check_assign_escape.html">checkAssignEscape</a><span class="tableEntryAnnotation">(sc, e, gag)</span>
 								</code>
 							</td>
 							<td>Given an <code class="lang-d"><span class="typ">AssignExp</span></code>, determine if the lvalue will cause
@@ -2978,32 +2996,41 @@ $('#symbolSearchPane').show();</script>
  Infer <code class="lang-d"><span class="kwd">scope</span></code> attribute for the lvalue where possible, in order
  to eliminate the error.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="checkAssocArrayLiteralEscape" class="public" href="../dmd/escape/check_assoc_array_literal_escape.html">checkAssocArrayLiteralEscape</a><span class="decoration">(sc, ae, gag)</span>
+									<a id="checkAssocArrayLiteralEscape" class="public" href="../dmd/escape/check_assoc_array_literal_escape.html">checkAssocArrayLiteralEscape</a><span class="tableEntryAnnotation">(sc, ae, gag)</span>
 								</code>
 							</td>
 							<td>Associative array literal is going to be allocated on the GC heap.
  Check its elements to see if any would escape by going on the heap.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="checkConstructorEscape" class="public" href="../dmd/escape/check_constructor_escape.html">checkConstructorEscape</a><span class="decoration">(sc, ce, gag)</span>
+									<a id="checkConstructorEscape" class="public" href="../dmd/escape/check_constructor_escape.html">checkConstructorEscape</a><span class="tableEntryAnnotation">(sc, ce, gag)</span>
 								</code>
 							</td>
 							<td>Check struct constructor of the form <code class="lang-d"><span class="pln">s<wbr/></span><span class="pun">.</span><span class="kwd">this</span><span class="pun">(</span><span class="pln">args</span><span class="pun">)</span></code>, by
  checking each <code class="lang-d"><span class="kwd">return</span></code> parameter to see if it gets
  assigned to <code class="lang-d"><span class="pln">s</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="checkMutableArguments" class="public" href="../dmd/escape/check_mutable_arguments.html">checkMutableArguments</a><span class="decoration">(sc, fd, tf, ethis, arguments, gag)</span>
+									<a id="checkMutableArguments" class="public" href="../dmd/escape/check_mutable_arguments.html">checkMutableArguments</a><span class="tableEntryAnnotation">(sc, fd, tf, ethis, arguments, gag)</span>
 								</code>
 							</td>
 							<td>Checks memory objects passed to a function.
@@ -3011,22 +3038,28 @@ $('#symbolSearchPane').show();</script>
  all of the refs or pointers are const, or there is only one mutable
  ref or pointer to it.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="checkNewEscape" class="public" href="../dmd/escape/check_new_escape.html">checkNewEscape</a><span class="decoration">(sc, e, gag)</span>
+									<a id="checkNewEscape" class="public" href="../dmd/escape/check_new_escape.html">checkNewEscape</a><span class="tableEntryAnnotation">(sc, e, gag)</span>
 								</code>
 							</td>
 							<td>Detect cases where pointers to the stack can escape the
  lifetime of the stack frame by being placed into a GC allocated object.
  Print error messages when these are detected.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="checkParamArgumentEscape" class="public" href="../dmd/escape/check_param_argument_escape.html">checkParamArgumentEscape</a><span class="decoration">(sc, fdc, par, arg, assertmsg, gag)</span>
+									<a id="checkParamArgumentEscape" class="public" href="../dmd/escape/check_param_argument_escape.html">checkParamArgumentEscape</a><span class="tableEntryAnnotation">(sc, fdc, par, arg, assertmsg, gag)</span>
 								</code>
 							</td>
 							<td>Function parameter <code class="lang-d"><a href="../dmd/escape/check_param_argument_escape.html#par"><span class="pln">par</span></a></code> is being initialized to <code class="lang-d"><a href="../dmd/escape/check_param_argument_escape.html#arg"><span class="pln">arg</span></a></code>,
@@ -3034,55 +3067,70 @@ $('#symbolSearchPane').show();</script>
  Detect if scoped values can escape this way.
  Print error messages when these are detected.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="checkParamArgumentReturn" class="public" href="../dmd/escape/check_param_argument_return.html">checkParamArgumentReturn</a><span class="decoration">(sc, firstArg, arg, gag)</span>
+									<a id="checkParamArgumentReturn" class="public" href="../dmd/escape/check_param_argument_return.html">checkParamArgumentReturn</a><span class="tableEntryAnnotation">(sc, firstArg, arg, gag)</span>
 								</code>
 							</td>
 							<td>Function argument initializes a <code class="lang-d"><span class="kwd">return</span></code> parameter,
  and that parameter gets assigned to <code class="lang-d"><a href="../dmd/escape/check_param_argument_return.html#firstArg"><span class="pln">firstArg</span></a></code>.
  Essentially, treat as <code class="lang-d"><a href="../dmd/escape/check_param_argument_return.html#firstArg"><span class="pln">firstArg</span></a><span class="pln"> </span><span class="pun">= <a href="../dmd/escape/check_param_argument_return.html#arg"></span><span class="pln">arg</span></a><span class="pun">;</span></code>
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="checkReturnEscape" class="public" href="../dmd/escape/check_return_escape.html">checkReturnEscape</a><span class="decoration">(sc, e, gag)</span>
+									<a id="checkReturnEscape" class="public" href="../dmd/escape/check_return_escape.html">checkReturnEscape</a><span class="tableEntryAnnotation">(sc, e, gag)</span>
 								</code>
 							</td>
 							<td>Detect cases where pointers to the stack can escape the
  lifetime of the stack frame by returning <code class="lang-d"><a href="../dmd/escape/check_return_escape.html#e"><span class="pln">e</span></a></code> by value.
  Print error messages when these are detected.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="checkReturnEscapeRef" class="public" href="../dmd/escape/check_return_escape_ref.html">checkReturnEscapeRef</a><span class="decoration">(sc, e, gag)</span>
+									<a id="checkReturnEscapeRef" class="public" href="../dmd/escape/check_return_escape_ref.html">checkReturnEscapeRef</a><span class="tableEntryAnnotation">(sc, e, gag)</span>
 								</code>
 							</td>
 							<td>Detect cases where returning <code class="lang-d"><a href="../dmd/escape/check_return_escape_ref.html#e"><span class="pln">e</span></a></code> by <code class="lang-d"><span class="kwd">ref</span></code> can result in a reference to the stack
  being returned.
  Print error messages when these are detected.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="checkThrowEscape" class="public" href="../dmd/escape/check_throw_escape.html">checkThrowEscape</a><span class="decoration">(sc, e, gag)</span>
+									<a id="checkThrowEscape" class="public" href="../dmd/escape/check_throw_escape.html">checkThrowEscape</a><span class="tableEntryAnnotation">(sc, e, gag)</span>
 								</code>
 							</td>
 							<td>Detect cases where pointers to the stack can escape the
  lifetime of the stack frame when throwing <code class="lang-d"><a href="../dmd/escape/check_throw_escape.html#e"><span class="pln">e</span></a></code>.
  Print error messages when these are detected.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="eliminateMaybeScopes" class="public" href="../dmd/escape/eliminate_maybe_scopes.html">eliminateMaybeScopes</a><span class="decoration">(array)</span>
+									<a id="eliminateMaybeScopes" class="public" href="../dmd/escape/eliminate_maybe_scopes.html">eliminateMaybeScopes</a><span class="tableEntryAnnotation">(array)</span>
 								</code>
 							</td>
 							<td>Have some variables that are maybescopes that were
@@ -3091,11 +3139,14 @@ $('#symbolSearchPane').show();</script>
  complete, we can finalize this by turning off
  maybescope for array elements that cannot be scope.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="escapeByRef" class="public" href="../dmd/escape/escape_by_ref.html">escapeByRef</a><span class="decoration">(e, er, live)</span>
+									<a id="escapeByRef" class="public" href="../dmd/escape/escape_by_ref.html">escapeByRef</a><span class="tableEntryAnnotation">(e, er, live)</span>
 								</code>
 							</td>
 							<td>e is an expression to be returned by 'ref'.
@@ -3108,11 +3159,14 @@ $('#symbolSearchPane').show();</script>
  Multiple variables can be inserted, because of expressions like this:
       ref int function(bool b, int i, int* p) { return b ? i : *p; }
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="escapeByValue" class="public" href="../dmd/escape/escape_by_value.html">escapeByValue</a><span class="decoration">(e, er, live)</span>
+									<a id="escapeByValue" class="public" href="../dmd/escape/escape_by_value.html">escapeByValue</a><span class="tableEntryAnnotation">(e, er, live)</span>
 								</code>
 							</td>
 							<td>e is an expression to be returned by value, and that value contains pointers.
@@ -3125,43 +3179,58 @@ $('#symbolSearchPane').show();</script>
  Multiple variables can be inserted, because of expressions like this:
       int function(bool b, int i, int* p) { return b ? &i : p; }
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="findAllOuterAccessedVariables" class="public" href="../dmd/escape/find_all_outer_accessed_variables.html">findAllOuterAccessedVariables</a><span class="decoration">(fd, vars)</span>
+									<a id="findAllOuterAccessedVariables" class="public" href="../dmd/escape/find_all_outer_accessed_variables.html">findAllOuterAccessedVariables</a><span class="tableEntryAnnotation">(fd, vars)</span>
 								</code>
 							</td>
 							<td>Find all variables accessed by this delegate that are
  in functions enclosing it.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isReferenceToMutable" class="public" href="../dmd/escape/is_reference_to_mutable.html">isReferenceToMutable</a><span class="decoration">(t)</span>
+									<a id="isReferenceToMutable" class="public" href="../dmd/escape/is_reference_to_mutable.html">isReferenceToMutable</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Is type a reference to a mutable value?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isReferenceToMutable" class="public" href="../dmd/escape/is_reference_to_mutable.html">isReferenceToMutable</a><span class="decoration">(p, t)</span>
+									<a id="isReferenceToMutable" class="public" href="../dmd/escape/is_reference_to_mutable.html">isReferenceToMutable</a><span class="tableEntryAnnotation">(p, t)</span>
 								</code>
 							</td>
 							<td>Is parameter a reference to a mutable value?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="notMaybeScope" class="public" href="../dmd/escape/not_maybe_scope.html">notMaybeScope</a><span class="decoration">(v)</span>
+									<a id="notMaybeScope" class="public" href="../dmd/escape/not_maybe_scope.html">notMaybeScope</a><span class="tableEntryAnnotation">(v)</span>
 								</code>
 							</td>
 							<td>Turn off <code class="lang-d"><span class="pln">STC<wbr/></span><span class="pun">.</span><span class="pln">maybescope</span></code> for variable <code class="lang-d"><a href="../dmd/escape/not_maybe_scope.html#v"><span class="pln">v</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3170,7 +3239,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3180,6 +3249,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Aggregate the data collected by the escapeBy??() functions.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

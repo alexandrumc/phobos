@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2947,80 +2962,104 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cgreg_gotoepilog" class="public" href="../../dmd/backend/cgreg/cgreg_gotoepilog.html">cgreg_gotoepilog</a><span class="decoration">(b, s)</span>
+									<a id="cgreg_gotoepilog" class="public" href="../../dmd/backend/cgreg/cgreg_gotoepilog.html">cgreg_gotoepilog</a><span class="tableEntryAnnotation">(b, s)</span>
 								</code>
 							</td>
 							<td>Determine if block gets symbol loaded by predecessor epilog (1),
  or by prolog (0).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cgreg_init" class="public" href="../../dmd/backend/cgreg/cgreg_init.html">cgreg_init</a><span class="decoration">()</span>
+									<a id="cgreg_init" class="public" href="../../dmd/backend/cgreg/cgreg_init.html">cgreg_init</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cgreg_reset" class="public" href="../../dmd/backend/cgreg/cgreg_reset.html">cgreg_reset</a><span class="decoration">()</span>
+									<a id="cgreg_reset" class="public" href="../../dmd/backend/cgreg/cgreg_reset.html">cgreg_reset</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cgreg_spillreg_epilog" class="public" href="../../dmd/backend/cgreg/cgreg_spillreg_epilog.html">cgreg_spillreg_epilog</a><span class="decoration">(b, s, cdbstore, cdbload)</span>
+									<a id="cgreg_spillreg_epilog" class="public" href="../../dmd/backend/cgreg/cgreg_spillreg_epilog.html">cgreg_spillreg_epilog</a><span class="tableEntryAnnotation">(b, s, cdbstore, cdbload)</span>
 								</code>
 							</td>
 							<td>Determine block epilog code - it's either
  assignments to register, or storing register back in memory.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cgreg_spillreg_prolog" class="public" href="../../dmd/backend/cgreg/cgreg_spillreg_prolog.html">cgreg_spillreg_prolog</a><span class="decoration">(b, s, cdbstore, cdbload)</span>
+									<a id="cgreg_spillreg_prolog" class="public" href="../../dmd/backend/cgreg/cgreg_spillreg_prolog.html">cgreg_spillreg_prolog</a><span class="tableEntryAnnotation">(b, s, cdbstore, cdbload)</span>
 								</code>
 							</td>
 							<td>Determine block prolog code for <code class="lang-d"><a href="../../dmd/backend/cgreg/cgreg_spillreg_prolog.html#s"><span class="pln">s</span></a></code> - it's either
  assignments to register, or storing register back in memory.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cgreg_term" class="public" href="../../dmd/backend/cgreg/cgreg_term.html">cgreg_term</a><span class="decoration">()</span>
+									<a id="cgreg_term" class="public" href="../../dmd/backend/cgreg/cgreg_term.html">cgreg_term</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cgreg_unregister" class="public" href="../../dmd/backend/cgreg/cgreg_unregister.html">cgreg_unregister</a><span class="decoration">(conflict)</span>
+									<a id="cgreg_unregister" class="public" href="../../dmd/backend/cgreg/cgreg_unregister.html">cgreg_unregister</a><span class="tableEntryAnnotation">(conflict)</span>
 								</code>
 							</td>
 							<td>The register variables in this mask can not be in registers.
  "Unregister" them.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cgreg_used" class="public" href="../../dmd/backend/cgreg/cgreg_used.html">cgreg_used</a><span class="decoration">(bi, used)</span>
+									<a id="cgreg_used" class="public" href="../../dmd/backend/cgreg/cgreg_used.html">cgreg_used</a><span class="tableEntryAnnotation">(bi, used)</span>
 								</code>
 							</td>
 							<td>Registers used in block bi.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3029,7 +3068,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3039,6 +3078,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Do register assignments.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

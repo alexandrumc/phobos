@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2974,8 +2989,8 @@ alignment with a small affix is needed, suffixes should be chosen.
 								<a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator._parent.html" class="public"><code>_parent</code></a>
 							</td>
 							<td class="typecol"><code class="prettyprint lang-d"><span class="typ">Allocator</span></code></td><td>If the parent allocator <code class="lang-d"><span class="typ">Allocator</span></code> is stateful, an instance of it is
-    stored as a member. Otherwise, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.html"><span class="typ">AffixAllocator</span></a></span></a></code> uses
-    <code class="lang-d"><span class="typ">Allocator<wbr/></span><span class="pun">.</span><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.instance.html"><span class="pln">instance</span></a></span></code>. In either case, the name <code class="lang-d"><span class="pln">parent</span></code> is uniformly
+    stored as a member. Otherwise, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.html"><span class="typ">AffixAllocator</span></a></code> uses
+    <code class="lang-d"><span class="typ">Allocator<wbr/></span><span class="pun">.</span><span class="pln">instance</span></code>. In either case, the name <code class="lang-d"><span class="pln">_parent</span></code> is uniformly
     used for accessing the parent allocator.
 </td>
 						</tr>
@@ -3000,9 +3015,10 @@ alignment with a small affix is needed, suffixes should be chosen.
 								<a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Standard allocator methods. Each is defined if and only if the parent
-        allocator defines the homonym method (except for <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln">goodAllocSize</span></a></span></a></code>,
+        allocator defines the homonym method (except for <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln">goodAllocSize</span></a></code>,
         which may use the global default). Also, the methods will be <code class="lang-d"><span class="pln">        </span><span class="kwd">shared</span></code> if the parent allocator defines them as such.
 </td>
 						</tr>
@@ -3011,9 +3027,10 @@ alignment with a small affix is needed, suffixes should be chosen.
 								<a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>Standard allocator methods. Each is defined if and only if the parent
-        allocator defines the homonym method (except for <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln">goodAllocSize</span></a></span></a></span></a></code>,
+        allocator defines the homonym method (except for <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln">goodAllocSize</span></a></code>,
         which may use the global default). Also, the methods will be <code class="lang-d"><span class="pln">        </span><span class="kwd">shared</span></code> if the parent allocator defines them as such.
 </td>
 						</tr>
@@ -3022,9 +3039,10 @@ alignment with a small affix is needed, suffixes should be chosen.
 								<a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.deallocate_all.html" class="public">
 									<code>deallocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Standard allocator methods. Each is defined if and only if the parent
-        allocator defines the homonym method (except for <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln">goodAllocSize</span></a></span></a></span></a></span></a></code>,
+        allocator defines the homonym method (except for <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln">goodAllocSize</span></a></code>,
         which may use the global default). Also, the methods will be <code class="lang-d"><span class="pln">        </span><span class="kwd">shared</span></code> if the parent allocator defines them as such.
 </td>
 						</tr>
@@ -3033,9 +3051,10 @@ alignment with a small affix is needed, suffixes should be chosen.
 								<a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.empty.html" class="public">
 									<code>empty</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Standard allocator methods. Each is defined if and only if the parent
-        allocator defines the homonym method (except for <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln">goodAllocSize</span></a></span></a></span></a></span></a></span></a></code>,
+        allocator defines the homonym method (except for <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln">goodAllocSize</span></a></code>,
         which may use the global default). Also, the methods will be <code class="lang-d"><span class="pln">        </span><span class="kwd">shared</span></code> if the parent allocator defines them as such.
 </td>
 						</tr>
@@ -3044,9 +3063,10 @@ alignment with a small affix is needed, suffixes should be chosen.
 								<a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.expand.html" class="public">
 									<code>expand</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, delta)</span>
 							</td>
 							<td>Standard allocator methods. Each is defined if and only if the parent
-        allocator defines the homonym method (except for <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln">goodAllocSize</span></a></span></a></span></a></span></a></span></a></span></a></code>,
+        allocator defines the homonym method (except for <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln">goodAllocSize</span></a></code>,
         which may use the global default). Also, the methods will be <code class="lang-d"><span class="pln">        </span><span class="kwd">shared</span></code> if the parent allocator defines them as such.
 </td>
 						</tr>
@@ -3055,9 +3075,10 @@ alignment with a small affix is needed, suffixes should be chosen.
 								<a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html" class="public">
 									<code>goodAllocSize</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Standard allocator methods. Each is defined if and only if the parent
-        allocator defines the homonym method (except for <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><span class="pln">goodAllocSize</span></span></a></span></a></span></a></span></a></span></a></span></a></code>,
+        allocator defines the homonym method (except for <code class="lang-d"><span class="pln">goodAllocSize</span></code>,
         which may use the global default). Also, the methods will be <code class="lang-d"><span class="pln">        </span><span class="kwd">shared</span></code> if the parent allocator defines them as such.
 </td>
 						</tr>
@@ -3066,9 +3087,10 @@ alignment with a small affix is needed, suffixes should be chosen.
 								<a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.owns.html" class="public">
 									<code>owns</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Standard allocator methods. Each is defined if and only if the parent
-        allocator defines the homonym method (except for <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln">goodAllocSize</span></a></span></span></a></span></a></span></a></span></a></span></a></span></a></code>,
+        allocator defines the homonym method (except for <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln">goodAllocSize</span></a></code>,
         which may use the global default). Also, the methods will be <code class="lang-d"><span class="pln">        </span><span class="kwd">shared</span></code> if the parent allocator defines them as such.
 </td>
 						</tr>
@@ -3077,10 +3099,11 @@ alignment with a small affix is needed, suffixes should be chosen.
 								<a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.parent.html" class="public">
 									<code>parent</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>If the parent allocator <code class="lang-d"><span class="typ">Allocator</span></code> is stateful, an instance of it is
-    stored as a member. Otherwise, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.html"><span class="typ">AffixAllocator</span></a></span></a></span></a></code> uses
-    <code class="lang-d"><span class="typ">Allocator<wbr/></span><span class="pun">.</span><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.instance.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.instance.html"><span class="pln">instance</span></a></span></a></span></code>. In either case, the name <code class="lang-d"><span class="pln"><span class="pln">parent</span></span></code> is uniformly
+    stored as a member. Otherwise, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.html"><span class="typ">AffixAllocator</span></a></code> uses
+    <code class="lang-d"><span class="typ">Allocator<wbr/></span><span class="pun">.</span><span class="pln">instance</span></code>. In either case, the name <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator._parent.html"><span class="pln">_parent</span></a></code> is uniformly
     used for accessing the parent allocator.
 </td>
 						</tr>
@@ -3089,6 +3112,7 @@ alignment with a small affix is needed, suffixes should be chosen.
 								<a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.prefix.html" class="public">
 									<code>prefix</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>Affix access functions offering references to the affixes of a
         block <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.prefix.html#b"><span class="pln">b</span></a></code> previously allocated with this allocator. <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.prefix.html#b"><span class="pln">b</span></a></code> may not be null.
@@ -3100,9 +3124,10 @@ alignment with a small affix is needed, suffixes should be chosen.
 								<a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.reallocate.html" class="public">
 									<code>reallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, s)</span>
 							</td>
 							<td>Standard allocator methods. Each is defined if and only if the parent
-        allocator defines the homonym method (except for <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln">goodAllocSize</span></a></span></a></span></span></a></span></a></span></a></span></a></span></a></span></a></code>,
+        allocator defines the homonym method (except for <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.good_alloc_size.html"><span class="pln">goodAllocSize</span></a></code>,
         which may use the global default). Also, the methods will be <code class="lang-d"><span class="pln">        </span><span class="kwd">shared</span></code> if the parent allocator defines them as such.
 </td>
 						</tr>
@@ -3111,9 +3136,10 @@ alignment with a small affix is needed, suffixes should be chosen.
 								<a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.suffix.html" class="public">
 									<code>suffix</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>Affix access functions offering references to the affixes of a
-        block <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.prefix.html#b"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.suffix.html#b"><span class="pln">b</span></a></span></a></code> previously allocated with this allocator. <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.prefix.html#b"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.suffix.html#b"><span class="pln">b</span></a></span></a></code> may not be null.
+        block <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.suffix.html#b"><span class="pln">b</span></a></code> previously allocated with this allocator. <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/affix_allocator/affix_allocator.suffix.html#b"><span class="pln">b</span></a></code> may not be null.
         They are defined if and only if the corresponding affix is not <code class="lang-d"><span class="typ">void</span></code>.
 </td>
 						</tr>

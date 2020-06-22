@@ -8,7 +8,7 @@
 		<meta charset="utf-8"/>
 		<meta name="keywords" content="D programming language"/>
 		<meta name="description" content="D Programming Language"/>
-		<title>Function clock - D Programming Language</title>
+		<title>Alias pair.second_type - D Programming Language</title>
 		<link rel="stylesheet" href="../../../../css/codemirror.css"/>
 		<link rel="stylesheet" href="../../../../css/style.css"/>
 		<link rel="stylesheet" href="../../../../css/print.css" media="print"/>
@@ -18,7 +18,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.1, maximum-scale=10.0"/>
 	</head>
-	<body class="std" id="core.stdc.time">
+	<body class="std" id="core.stdcpp.utility">
 		<script type="text/javascript">document.body.className += ' have-javascript';</script>
 		<div id="top">
 			<div class="helper">
@@ -869,7 +869,7 @@ $('#symbolSearchPane').show();</script>
 					</li>
 						</ul>
 					</li>
-					<li class="expand-container open">
+					<li class="expand-container">
 						<a class="package expand-toggle" href="#">
 							<span>stdc</span>
 						</a>
@@ -965,7 +965,7 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
-						<a class="module selected" href="../../../core/stdc/time.html">
+						<a class="module " href="../../../core/stdc/time.html">
 							<span>time</span>
 						</a>
 					</li>
@@ -981,7 +981,7 @@ $('#symbolSearchPane').show();</script>
 					</li>
 						</ul>
 					</li>
-					<li class="expand-container">
+					<li class="expand-container open">
 						<a class="package expand-toggle" href="#">
 							<span>stdcpp</span>
 						</a>
@@ -1029,6 +1029,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/stdcpp/typeinfo.html">
 							<span>typeinfo</span>
+						</a>
+					</li>
+					<li>
+						<a class="module selected" href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
 						</a>
 					</li>
 					<li>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,23 +2925,23 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/druntime/blob/master/src/core/stdc/time.d#L128">
+							<a href="https://github.com/dlang/druntime/blob/master/src/core/stdcpp/utility.d#L29">
 								View source code
 							</a>
 							<div>
-								Display the source code in core/stdc/time.d from which this
+								Display the source code in core/stdcpp/utility.d from which this
 								page was generated on github.
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://issues.dlang.org/enter_bug.cgi?bug_file_loc=http%3A%2F%2Fdlang.org/library-prerelease/src/core/stdc/time.html&amp;bug_severity=enhancement&amp;component=druntime&amp;op_sys=All&amp;priority=P3&amp;product=D&amp;rep_platform=All&amp;short_desc=%5BFunction clock%5D&amp;version=D2">Report a bug</a>
+							<a href="https://issues.dlang.org/enter_bug.cgi?bug_file_loc=http%3A%2F%2Fdlang.org/library-prerelease/src/core/stdcpp/utility.html&amp;bug_severity=enhancement&amp;component=druntime&amp;op_sys=All&amp;priority=P3&amp;product=D&amp;rep_platform=All&amp;short_desc=%5BAlias pair.second_type%5D&amp;version=D2">Report a bug</a>
 							<div>
 								If you spot a problem with this page, click here to create a
 								Bugzilla issue.
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/druntime/edit/master/src/core/stdc/time.d#L128">
+							<a href="https://github.com/dlang/druntime/edit/master/src/core/stdcpp/utility.d#L29">
 								Improve this page
 							</a>
 							<div>
@@ -2937,19 +2952,31 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../../core/stdc/time.html">core.stdc.time</a>.clock</code></h1><p></p>
+				</div><h1>Alias <code><a href="../../../core/stdcpp/utility/pair.html">core.stdcpp.utility.pair</a>.second_type</code></h1><p></p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">extern</span><span class="pun">(</span><span class="pln">C</span><span class="pun">) </span><span class="typ">long</span> <span class="pln">clock</span><span class="pun">(</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">nothrow @nogc @trusted</span><span class="pun">;</span>
+				<span class="kwd">struct</span> <a href="../../../core/stdcpp/utility/pair.html"><span class="typ">pair</span></a>
+				<br/>
+				<span class="pun">
+					{
+					<br/>
+				</span>
+				&nbsp;&nbsp;<span class="com">// ...</span>
+				<br/>
+				&nbsp;&nbsp;<span class="kwd">alias</span> <span class="pln">second_type</span>
+				 <span class="pun">=</span> <span class="pln">T2</span><span class="pun">;</span>
+				<br/>
+				&nbsp;&nbsp;<span class="com">// ...</span>
+				<br/>
+				<span class="pun">}</span>
 						</div>
 					</code>
 				</div>
 				
 				
 				<section>
-					<h2>Authors</h2><p>Sean Kelly,
-            Alex Rønne Petersen
+					<h2>Authors</h2><p>Manu Evans
 </p>
 
 				</section>

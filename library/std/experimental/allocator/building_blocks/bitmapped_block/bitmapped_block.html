@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,7 +2952,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Struct <code><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block.html">std.experimental.allocator.building_blocks.bitmapped_block</a>.BitmappedBlock</code></h1><p><code class="lang-d"><span class="typ"><span class="typ">BitmappedBlock</span></span></code> implements a simple heap consisting of one contiguous area
+				</div><h1>Struct <code><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block.html">std.experimental.allocator.building_blocks.bitmapped_block</a>.BitmappedBlock</code></h1><p><code class="lang-d"><span class="typ">BitmappedBlock</span></code> implements a simple heap consisting of one contiguous area
 of memory organized in blocks, each of size <code class="lang-d"><span class="pln">theBlockSize</span></code>. A block is a unit
 of allocation. A bitmap serves as bookkeeping data, more precisely one bit per
 block indicating whether that block is currently allocated or not.
@@ -3004,16 +3019,17 @@ block size to the constructor.
 								<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(data)</span>
 							</td>
 							<td>Constructs a block allocator given a hunk of memory, or a desired capacity
         in bytes.
         <ul>        <li>If <code class="lang-d"><span class="typ">ParentAllocator</span></code> is <a href="../../../../../std/experimental/allocator/building_blocks/null_allocator/null_allocator.html" title="std.experimental.allocator.building_blocks.null_allocator.NullAllocator"><code class="lang-d"><span class="typ">NullAllocator</span></code></a>,
-        only the constructor taking <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.this.html#data"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.this.html#data"><span class="pln">data</span></a></span></a></code> is defined and the user is responsible for freeing <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.this.html#data"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.this.html#data"><span class="pln">data</span></a></span></a></code> if desired.</li>
-        <li>Otherwise, both constructors are defined. The <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.this.html#data"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.this.html#data"><span class="pln">data</span></a></span></a></code>-based
+        only the constructor taking <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.this.html#data"><span class="pln">data</span></a></code> is defined and the user is responsible for freeing <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.this.html#data"><span class="pln">data</span></a></code> if desired.</li>
+        <li>Otherwise, both constructors are defined. The <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.this.html#data"><span class="pln">data</span></a></code>-based
         constructor assumes memory has been allocated with the parent allocator.
-        The <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.this.html#capacity"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.this.html#capacity"><span class="pln">capacity</span></a></span></a></code>-based constructor uses <code class="lang-d"><span class="typ">ParentAllocator</span></code> to allocate
+        The <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.this.html#capacity"><span class="pln">capacity</span></a></code>-based constructor uses <code class="lang-d"><span class="typ">ParentAllocator</span></code> to allocate
         an appropriate contiguous hunk of memory. Regardless of the constructor
-        used, the destructor releases the memory by using <code class="lang-d"><span class="typ">ParentAllocator<wbr/></span><span class="pun">.</span><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.deallocate.html"><span class="pln">deallocate</span></a></span></code>.</li>
+        used, the destructor releases the memory by using <code class="lang-d"><span class="typ">ParentAllocator<wbr/></span><span class="pun">.</span><span class="pln">deallocate</span></code>.</li>
         </ul>
 </td>
 						</tr>
@@ -3047,9 +3063,10 @@ block size to the constructor.
 								<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.aligned_allocate.html" class="public">
 									<code>alignedAllocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(n, a)</span>
 							</td>
-							<td>Allocates a block with specified alignment <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.aligned_allocate.html#a"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.aligned_allocate.html#a"><span class="pln">a</span></a></span></a></code>. The alignment must be a
-        power of 2. If <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.aligned_allocate.html#a"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.aligned_allocate.html#a"><span class="pln">a</span></a></span></a><span class="pln"> </span><span class="pun">&lt;= <a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.alignment.html"></span><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.alignment.html"><span class="pln">alignment</span></a></span></a></code>, function forwards to <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.allocate.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.allocate.html"><span class="pln">allocate</span></a></span></a></code>.
+							<td>Allocates a block with specified alignment <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.aligned_allocate.html#a"><span class="pln">a</span></a></code>. The alignment must be a
+        power of 2. If <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.aligned_allocate.html#a"><span class="pln">a</span></a><span class="pln"> </span><span class="pun">&lt;= <a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.alignment.html"></span><span class="pln">alignment</span></a></code>, function forwards to <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.allocate.html"><span class="pln">allocate</span></a></code>.
         Otherwise, it attempts to overallocate and then adjust the result for
         proper alignment. In the worst case the slack memory is around two blocks.
 </td>
@@ -3059,6 +3076,7 @@ block size to the constructor.
 								<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.aligned_reallocate.html" class="public">
 									<code>alignedReallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, newSize, a)</span>
 							</td>
 							<td>Reallocates a block previously allocated with <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.aligned_allocate.html"><span class="pln">alignedAllocate</span></a></code>. Contractions do not occur in place.
 </td>
@@ -3068,8 +3086,9 @@ block size to the constructor.
 								<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(s)</span>
 							</td>
-							<td>Allocates <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.allocate.html#s"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.allocate.html#s"><span class="pln">s</span></a></span></a></code> bytes of memory and returns it, or <code class="lang-d"><span class="kwd">null</span></code> if memory
+							<td>Allocates <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.allocate.html#s"><span class="pln">s</span></a></code> bytes of memory and returns it, or <code class="lang-d"><span class="kwd">null</span></code> if memory
         could not be allocated.
 </td>
 						</tr>
@@ -3078,8 +3097,9 @@ block size to the constructor.
 								<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.allocate_all.html" class="public">
 									<code>allocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
-							<td>If the <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.html"><span class="typ">BitmappedBlock</span></a></span></a></code> object is empty (has no active allocation), allocates
+							<td>If the <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.html"><span class="typ">BitmappedBlock</span></a></code> object is empty (has no active allocation), allocates
         all memory within and returns a slice to it. Otherwise, returns <code class="lang-d"><span class="kwd">null</span></code>
         (i.e. no attempt is made to allocate the largest available block).
 </td>
@@ -3089,6 +3109,7 @@ block size to the constructor.
 								<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.allocate_fresh.html" class="public">
 									<code>allocateFresh</code>
 								</a>
+								<span class="tableEntryAnnotation">(s)</span>
 							</td>
 							<td>Allocates s bytes of memory and returns it, or <code class="lang-d"><span class="kwd">null</span></code> if memory could not be allocated.
         <code class="lang-d"><span class="pln">allocateFresh</span></code> behaves just like allocate, the only difference being that this always
@@ -3101,6 +3122,7 @@ block size to the constructor.
 								<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>Deallocates a block previously allocated with this allocator.
 </td>
@@ -3110,6 +3132,7 @@ block size to the constructor.
 								<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.deallocate_all.html" class="public">
 									<code>deallocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Forcibly deallocates all memory allocated by this allocator, making it
         available for further allocations. Does not return memory to <code class="lang-d"><span class="typ">ParentAllocator</span></code>.
@@ -3120,6 +3143,7 @@ block size to the constructor.
 								<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.empty.html" class="public">
 									<code>empty</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">yes</span></code> if no memory is currently allocated with this
         allocator, otherwise <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">no</span></code>. This method never returns
@@ -3131,8 +3155,9 @@ block size to the constructor.
 								<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.expand.html" class="public">
 									<code>expand</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, delta)</span>
 							</td>
-							<td>Expands in place a buffer previously allocated by <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.html"><span class="typ">BitmappedBlock</span></a></span></a></code>.
+							<td>Expands in place a buffer previously allocated by <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.html"><span class="typ">BitmappedBlock</span></a></code>.
         If instantiated with <code class="lang-d"><span class="typ">No<wbr/></span><span class="pun">.</span><span class="pln">multiblock</span></code>, the expansion fails if the new length
         exceeds <code class="lang-d"><span class="pln">theBlockSize</span></code>.
 </td>
@@ -3142,9 +3167,10 @@ block size to the constructor.
 								<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.good_alloc_size.html" class="public">
 									<code>goodAllocSize</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
-							<td>Returns the actual bytes allocated when <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.good_alloc_size.html#n"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.good_alloc_size.html#n"><span class="pln">n</span></a></span></a></code> bytes are requested, i.e.
-        <code class="lang-d"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.good_alloc_size.html#n"><span class="pln">n</span></a><wbr/></span><span class="pun">.</span><span class="pln">roundUpToMultipleOf</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.block_size.html"></span><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.block_size.html"><span class="pln">blockSize</span></a></span></a><span class="pun">)</span></code>.
+							<td>Returns the actual bytes allocated when <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.good_alloc_size.html#n"><span class="pln">n</span></a></code> bytes are requested, i.e.
+        <code class="lang-d"><span class="pln">n<wbr/></span><span class="pun">.</span><span class="pln">roundUpToMultipleOf</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.block_size.html"></span><span class="pln">blockSize</span></a><span class="pun">)</span></code>.
 </td>
 						</tr>
 						<tr>
@@ -3152,8 +3178,9 @@ block size to the constructor.
 								<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.owns.html" class="public">
 									<code>owns</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
-							<td>Returns <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">yes</span></code> if <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.owns.html#b"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.owns.html#b"><span class="pln">b</span></a></span></a></code> belongs to the <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.html"><span class="typ">BitmappedBlock</span></a></span></a></code> object,
+							<td>Returns <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">yes</span></code> if <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.owns.html#b"><span class="pln">b</span></a></code> belongs to the <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.html"><span class="typ">BitmappedBlock</span></a></code> object,
         <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">no</span></code> otherwise. Never returns <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">unkown</span></code>. (This
         method is somewhat tolerant in that accepts an interior slice.)
 </td>
@@ -3163,6 +3190,7 @@ block size to the constructor.
 								<a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/bitmapped_block.reallocate.html" class="public">
 									<code>reallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, newSize)</span>
 							</td>
 							<td>Reallocates a previously-allocated block. Contractions occur in place.
 </td>

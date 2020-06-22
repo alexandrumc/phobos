@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -3021,30 +3036,36 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="absolutePath" class="public" href="../std/path/absolute_path.html">absolutePath</a><span class="decoration">(path, base)</span>
+									<a id="absolutePath" class="public" href="../std/path/absolute_path.html">absolutePath</a><span class="tableEntryAnnotation">(path, base)</span>
 								</code>
 							</td>
 							<td>Transforms <code class="lang-d"><a href="../std/path/absolute_path.html#path"><span class="pln">path</span></a></code> into an absolute path.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="asAbsolutePath" class="public" href="../std/path/as_absolute_path.html">asAbsolutePath</a><span class="decoration">(path)</span>
+									<a id="asAbsolutePath" class="public" href="../std/path/as_absolute_path.html">asAbsolutePath</a><span class="tableEntryAnnotation">(path)</span>
 								</code>
 							</td>
 							<td>Transforms <code class="lang-d"><a href="../std/path/as_absolute_path.html#path"><span class="pln">path</span></a></code> into an absolute path.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="asNormalizedPath" class="public" href="../std/path/as_normalized_path.html">asNormalizedPath</a><span class="decoration">(path)</span>
+									<a id="asNormalizedPath" class="public" href="../std/path/as_normalized_path.html">asNormalizedPath</a><span class="tableEntryAnnotation">(path)</span>
 								</code>
 							</td>
 							<td>Normalize a path by resolving current/parent directory
@@ -3053,28 +3074,37 @@ $('#symbolSearchPane').show();</script>
     It will return "." if the path leads to the starting directory.
     On Windows, slashes are replaced with backslashes.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="asRelativePath" class="public" href="../std/path/as_relative_path.html">asRelativePath</a><span class="decoration">(path, base)</span>
+									<a id="asRelativePath" class="public" href="../std/path/as_relative_path.html">asRelativePath</a><span class="tableEntryAnnotation">(path, base)</span>
 								</code>
 							</td>
 							<td>Transforms <code class="lang-d"><a href="../std/path/as_relative_path.html#path"><span class="pln">path</span></a></code> into a path relative to <code class="lang-d"><a href="../std/path/as_relative_path.html#base"><span class="pln">base</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="baseName" class="public" href="../std/path/base_name.html">baseName</a><span class="decoration">(path)</span>
+									<a id="baseName" class="public" href="../std/path/base_name.html">baseName</a><span class="tableEntryAnnotation">(path)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="buildNormalizedPath" class="public" href="../std/path/build_normalized_path.html">buildNormalizedPath</a><span class="decoration">()</span>
+									<a id="buildNormalizedPath" class="public" href="../std/path/build_normalized_path.html">buildNormalizedPath</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Performs the same task as <code class="lang-d"><a href="../std/path/build_path.html"><span class="pln">buildPath</span></a></code>,
@@ -3084,216 +3114,288 @@ $('#symbolSearchPane').show();</script>
     It will return "." if the path leads to the starting directory.
     On Windows, slashes are replaced with backslashes.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="buildPath" class="public" href="../std/path/build_path.html">buildPath</a><span class="decoration">(segments)</span>
+									<a id="buildPath" class="public" href="../std/path/build_path.html">buildPath</a><span class="tableEntryAnnotation">(segments)</span>
 								</code>
 							</td>
 							<td>Combines one or more path segments.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="chainPath" class="public" href="../std/path/chain_path.html">chainPath</a><span class="decoration">(r1, r2, ranges)</span>
+									<a id="chainPath" class="public" href="../std/path/chain_path.html">chainPath</a><span class="tableEntryAnnotation">(r1, r2, ranges)</span>
 								</code>
 							</td>
 							<td>Concatenate path segments together to form one path.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="defaultExtension" class="public" href="../std/path/default_extension.html">defaultExtension</a><span class="decoration">(path, ext)</span>
+									<a id="defaultExtension" class="public" href="../std/path/default_extension.html">defaultExtension</a><span class="tableEntryAnnotation">(path, ext)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dirName" class="public" href="../std/path/dir_name.html">dirName</a><span class="decoration">(path)</span>
+									<a id="dirName" class="public" href="../std/path/dir_name.html">dirName</a><span class="tableEntryAnnotation">(path)</span>
 								</code>
 							</td>
 							<td>Returns the parent directory of <code class="lang-d"><a href="../std/path/dir_name.html#path"><span class="pln">path</span></a></code>. On Windows, this
     includes the drive letter if present. If <code class="lang-d"><a href="../std/path/dir_name.html#path"><span class="pln">path</span></a></code> is a relative path and
     the parent directory is the current working directory, returns <code class="lang-d"><span class="str">"."</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="driveName" class="public" href="../std/path/drive_name.html">driveName</a><span class="decoration">(path)</span>
+									<a id="driveName" class="public" href="../std/path/drive_name.html">driveName</a><span class="tableEntryAnnotation">(path)</span>
 								</code>
 							</td>
 							<td>Get the drive portion of a path.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="expandTilde" class="public" href="../std/path/expand_tilde.html">expandTilde</a><span class="decoration">(inputPath)</span>
+									<a id="expandTilde" class="public" href="../std/path/expand_tilde.html">expandTilde</a><span class="tableEntryAnnotation">(inputPath)</span>
 								</code>
 							</td>
 							<td>Performs tilde expansion in paths on POSIX systems.
     On Windows, this function does nothing.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="extension" class="public" href="../std/path/extension.html">extension</a><span class="decoration">(path)</span>
+									<a id="extension" class="public" href="../std/path/extension.html">extension</a><span class="tableEntryAnnotation">(path)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="filenameCharCmp" class="public" href="../std/path/filename_char_cmp.html">filenameCharCmp</a><span class="decoration">(a, b)</span>
+									<a id="filenameCharCmp" class="public" href="../std/path/filename_char_cmp.html">filenameCharCmp</a><span class="tableEntryAnnotation">(a, b)</span>
 								</code>
 							</td>
 							<td>Compares filename characters.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="filenameCmp" class="public" href="../std/path/filename_cmp.html">filenameCmp</a><span class="decoration">(filename1, filename2)</span>
+									<a id="filenameCmp" class="public" href="../std/path/filename_cmp.html">filenameCmp</a><span class="tableEntryAnnotation">(filename1, filename2)</span>
 								</code>
 							</td>
 							<td>Compares file names and returns
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="globMatch" class="public" href="../std/path/glob_match.html">globMatch</a><span class="decoration">(path, pattern)</span>
+									<a id="globMatch" class="public" href="../std/path/glob_match.html">globMatch</a><span class="tableEntryAnnotation">(path, pattern)</span>
 								</code>
 							</td>
 							<td>Matches a pattern against a path.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isAbsolute" class="public" href="../std/path/is_absolute.html">isAbsolute</a><span class="decoration">(path)</span>
+									<a id="isAbsolute" class="public" href="../std/path/is_absolute.html">isAbsolute</a><span class="tableEntryAnnotation">(path)</span>
 								</code>
 							</td>
 							<td>Determines whether a path is absolute or not.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isDirSeparator" class="public" href="../std/path/is_dir_separator.html">isDirSeparator</a><span class="decoration">(c)</span>
+									<a id="isDirSeparator" class="public" href="../std/path/is_dir_separator.html">isDirSeparator</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Determines whether the given character is a directory separator.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isRooted" class="public" href="../std/path/is_rooted.html">isRooted</a><span class="decoration">(path)</span>
+									<a id="isRooted" class="public" href="../std/path/is_rooted.html">isRooted</a><span class="tableEntryAnnotation">(path)</span>
 								</code>
 							</td>
 							<td>Determines whether a path starts at a root directory.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isValidFilename" class="public" href="../std/path/is_valid_filename.html">isValidFilename</a><span class="decoration">(filename)</span>
+									<a id="isValidFilename" class="public" href="../std/path/is_valid_filename.html">isValidFilename</a><span class="tableEntryAnnotation">(filename)</span>
 								</code>
 							</td>
 							<td>Checks that the given file or directory name is valid.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isValidPath" class="public" href="../std/path/is_valid_path.html">isValidPath</a><span class="decoration">(path)</span>
+									<a id="isValidPath" class="public" href="../std/path/is_valid_path.html">isValidPath</a><span class="tableEntryAnnotation">(path)</span>
 								</code>
 							</td>
 							<td>Checks whether <code class="lang-d"><a href="../std/path/is_valid_path.html#path"><span class="pln">path</span></a></code> is a valid path.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="pathSplitter" class="public" href="../std/path/path_splitter.html">pathSplitter</a><span class="decoration">(path)</span>
+									<a id="pathSplitter" class="public" href="../std/path/path_splitter.html">pathSplitter</a><span class="tableEntryAnnotation">(path)</span>
 								</code>
 							</td>
 							<td>Slice up a path into its elements.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="relativePath" class="public" href="../std/path/relative_path.html">relativePath</a><span class="decoration">(path, base)</span>
+									<a id="relativePath" class="public" href="../std/path/relative_path.html">relativePath</a><span class="tableEntryAnnotation">(path, base)</span>
 								</code>
 							</td>
 							<td>Translates <code class="lang-d"><a href="../std/path/relative_path.html#path"><span class="pln">path</span></a></code> into a relative path.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rootName" class="public" href="../std/path/root_name.html">rootName</a><span class="decoration">(path)</span>
+									<a id="rootName" class="public" href="../std/path/root_name.html">rootName</a><span class="tableEntryAnnotation">(path)</span>
 								</code>
 							</td>
 							<td>Returns the root directory of the specified path, or <code class="lang-d"><span class="kwd">null</span></code> if the
     path is not rooted.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="setExtension" class="public" href="../std/path/set_extension.html">setExtension</a><span class="decoration">(path, ext)</span>
+									<a id="setExtension" class="public" href="../std/path/set_extension.html">setExtension</a><span class="tableEntryAnnotation">(path, ext)</span>
 								</code>
 							</td>
 							<td>Sets or replaces an extension.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="stripDrive" class="public" href="../std/path/strip_drive.html">stripDrive</a><span class="decoration">(path)</span>
+									<a id="stripDrive" class="public" href="../std/path/strip_drive.html">stripDrive</a><span class="tableEntryAnnotation">(path)</span>
 								</code>
 							</td>
 							<td>Strips the drive from a Windows path.  On POSIX, the path is returned
     unaltered.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="stripExtension" class="public" href="../std/path/strip_extension.html">stripExtension</a><span class="decoration">(path)</span>
+									<a id="stripExtension" class="public" href="../std/path/strip_extension.html">stripExtension</a><span class="tableEntryAnnotation">(path)</span>
 								</code>
 							</td>
 							<td>Remove extension from path.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="withDefaultExtension" class="public" href="../std/path/with_default_extension.html">withDefaultExtension</a><span class="decoration">(path, ext)</span>
+									<a id="withDefaultExtension" class="public" href="../std/path/with_default_extension.html">withDefaultExtension</a><span class="tableEntryAnnotation">(path, ext)</span>
 								</code>
 							</td>
 							<td>Set the extension of <code class="lang-d"><a href="../std/path/with_default_extension.html#path"><span class="pln">path</span></a></code> to <code class="lang-d"><a href="../std/path/with_default_extension.html#ext"><span class="pln">ext</span></a></code> if <code class="lang-d"><a href="../std/path/with_default_extension.html#path"><span class="pln">path</span></a></code> doesn't have one.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="withExtension" class="public" href="../std/path/with_extension.html">withExtension</a><span class="decoration">(path, ext)</span>
+									<a id="withExtension" class="public" href="../std/path/with_extension.html">withExtension</a><span class="tableEntryAnnotation">(path, ext)</span>
 								</code>
 							</td>
 							<td>Replace existing extension on filespec with new one.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3302,7 +3404,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3314,6 +3416,8 @@ $('#symbolSearchPane').show();</script>
     compare file names, and determines whether the comparison is
     case sensitive or not.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

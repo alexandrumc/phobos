@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,14 +2952,14 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../std/range.html">std.range</a>.takeExactly</code></h1><p>Similar to <code class="lang-d"><a href="../../std/range/take.html"><span class="pln">take</span></a></code>, but assumes that <code class="lang-d"><a href="../std/range/take_exactly.html#range"><span class="pln"><a href="../../std/range/take_exactly.html#range"><span class="pln">range</span></a></span></a></code> has at least <code class="lang-d"><a href="../../std/range/take_exactly.html#n"><span class="pln">n</span></a></code> elements. Consequently, the result of <code class="lang-d"><span class="pln">takeExactly</span><span class="pun">(<a href="../../std/range/take_exactly.html#range"></span><span class="pln">range</span></a><span class="pun">, <a href="../../std/range/take_exactly.html#n"></span><span class="pln">n</span></a><span class="pun">)</span></code>
-always defines the <code class="lang-d"><span class="pln">length</span></code> property (and initializes it to <code class="lang-d"><a href="../std/range/take_exactly.html#n"><span class="pln"><a href="../../std/range/take_exactly.html#n"><span class="pln">n</span></a></span></a></code>)
-even when <code class="lang-d"><a href="../std/range/take_exactly.html#range"><span class="pln"><a href="../../std/range/take_exactly.html#range"><span class="pln">range</span></a></span></a></code> itself does not define <code class="lang-d"><span class="pln">length</span></code>.
+				</div><h1>Function <code><a href="../../std/range.html">std.range</a>.takeExactly</code></h1><p>Similar to <code class="lang-d"><a href="../../std/range/take.html"><span class="pln">take</span></a></code>, but assumes that <code class="lang-d"><a href="../../std/range/take_exactly.html#range"><span class="pln">range</span></a></code> has at least <code class="lang-d"><a href="../../std/range/take_exactly.html#n"><span class="pln">n</span></a></code> elements. Consequently, the result of <code class="lang-d"><span class="pln">takeExactly</span><span class="pun">(<a href="../../std/range/take_exactly.html#range"></span><span class="pln">range</span></a><span class="pun">, <a href="../../std/range/take_exactly.html#n"></span><span class="pln">n</span></a><span class="pun">)</span></code>
+always defines the <code class="lang-d"><span class="pln">length</span></code> property (and initializes it to <code class="lang-d"><a href="../../std/range/take_exactly.html#n"><span class="pln">n</span></a></code>)
+even when <code class="lang-d"><a href="../../std/range/take_exactly.html#range"><span class="pln">range</span></a></code> itself does not define <code class="lang-d"><span class="pln">length</span></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">takeExactly</span>(R)
+				<span class="kwd">auto</span> <span class="pln">takeExactly</span>(R)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">R</span> <span class="pln">range</span><span class="pun">,</span>

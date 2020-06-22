@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2952,10 +2967,10 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function taskPool</h2><p>Returns a lazily initialized global instantiation of <code class="lang-d"><a href="../std/parallelism/task_pool.html"><span class="typ"><a href="../../std/parallelism/task_pool.html"><span class="typ">TaskPool</span></a></span></a></code>.
+				</nav><h2 id="0">Function taskPool</h2><p>Returns a lazily initialized global instantiation of <code class="lang-d"><a href="../../std/parallelism/task_pool.html"><span class="typ">TaskPool</span></a></code>.
 This function can safely be called concurrently from multiple non-worker
 threads.  The worker threads in this pool are daemon threads, meaning that it
-is not necessary to call <code class="lang-d"><a href="../std/parallelism/task_pool.stop.html"><span class="typ"><a href="../../std/parallelism/task_pool.html"><span class="typ">TaskPool</span></a><wbr/></span><span class="pun">.</span><span class="pln">stop</span></a></code> or <code class="lang-d"><a href="../std/parallelism/task_pool.finish.html"><span class="typ"><a href="../../std/parallelism/task_pool.html"><span class="typ">TaskPool</span></a><wbr/></span><span class="pun">.</span><span class="pln">finish</span></a></code> before
+is not necessary to call <code class="lang-d"><a href="../../std/parallelism/task_pool.stop.html"><span class="typ">TaskPool<wbr/></span><span class="pun">.</span><span class="pln">stop</span></a></code> or <code class="lang-d"><a href="../../std/parallelism/task_pool.finish.html"><span class="typ">TaskPool<wbr/></span><span class="pun">.</span><span class="pln">finish</span></a></code> before
 terminating the main thread.
 </p>
 				<div class="prototype">
@@ -2967,10 +2982,10 @@ terminating the main thread.
 				</div>
 				
 				<h2 id="1">Class TaskPool</h2><p>This class encapsulates a task queue and a set of worker threads.  Its purpose
-is to efficiently map a large number of <code class="lang-d"><a href="../std/parallelism/task.html"><span class="typ"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></span></a></code>s onto a smaller number of
-threads.  A task queue is a FIFO queue of <code class="lang-d"><a href="../std/parallelism/task.html"><span class="typ"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></span></a></code> objects that have been
-submitted to the <code class="lang-d"><span class="typ"><span class="typ">TaskPool</span></span></code> and are awaiting execution.  A worker thread is a
-thread that executes the <code class="lang-d"><a href="../std/parallelism/task.html"><span class="typ"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></span></a></code> at the front of the queue when one is
+is to efficiently map a large number of <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></code>s onto a smaller number of
+threads.  A task queue is a FIFO queue of <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></code> objects that have been
+submitted to the <code class="lang-d"><span class="typ">TaskPool</span></code> and are awaiting execution.  A worker thread is a
+thread that executes the <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></code> at the front of the queue when one is
 available and sleeps when the queue is empty.
 </p>
 				<div class="prototype">
@@ -3007,6 +3022,7 @@ Occasionally it is useful to explicitly instantiate a <code class="lang-d"><span
 								<a href="../../std/parallelism/task_pool.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Default constructor that initializes a <code class="lang-d"><a href="../../std/parallelism/task_pool.html"><span class="typ">TaskPool</span></a></code> with
     <code class="lang-d"><a href="../../std/parallelism/total_cp_us.html"><span class="pln">totalCPUs</span></a></code> - 1 worker threads.  The minus 1 is included because the
@@ -3018,6 +3034,7 @@ Occasionally it is useful to explicitly instantiate a <code class="lang-d"><span
 								<a href="../../std/parallelism/task_pool.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(nWorkers)</span>
 							</td>
 							<td>Allows for custom number of worker threads.
 </td>
@@ -3079,6 +3096,7 @@ Occasionally it is useful to explicitly instantiate a <code class="lang-d"><span
 								<a href="../../std/parallelism/task_pool.async_buf.html" class="public">
 									<code>asyncBuf</code>
 								</a>
+								<span class="tableEntryAnnotation">(source, bufSize)</span>
 							</td>
 							<td>Given a <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html#source"><span class="pln">source</span></a></code> range that is expensive to iterate over, returns an
     <a href="../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a> that
@@ -3095,6 +3113,7 @@ Occasionally it is useful to explicitly instantiate a <code class="lang-d"><span
 								<a href="../../std/parallelism/task_pool.async_buf.html" class="public">
 									<code>asyncBuf</code>
 								</a>
+								<span class="tableEntryAnnotation">(next, empty, initialBufSize, nBuffers)</span>
 							</td>
 							<td>Given a callable object <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html#next"><span class="pln">next</span></a></code> that writes to a user-provided buffer and
     a second callable object <code class="lang-d"><a href="../../std/parallelism/task_pool.async_buf.html#empty"><span class="pln">empty</span></a></code> that determines whether more data is
@@ -3112,6 +3131,7 @@ Occasionally it is useful to explicitly instantiate a <code class="lang-d"><span
 								<a href="../../std/parallelism/task_pool.finish.html" class="public">
 									<code>finish</code>
 								</a>
+								<span class="tableEntryAnnotation">(blocking)</span>
 							</td>
 							<td>Signals worker threads to terminate when the queue becomes empty.
 </td>
@@ -3121,6 +3141,7 @@ Occasionally it is useful to explicitly instantiate a <code class="lang-d"><span
 								<a href="../../std/parallelism/task_pool.parallel.html" class="public">
 									<code>parallel</code>
 								</a>
+								<span class="tableEntryAnnotation">(range, workUnitSize)</span>
 							</td>
 							<td>Implements a parallel foreach loop over a range.  This works by implicitly
     creating and submitting one <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></code> to the <code class="lang-d"><a href="../../std/parallelism/task_pool.html"><span class="typ">TaskPool</span></a></code> for each worker
@@ -3142,6 +3163,7 @@ Occasionally it is useful to explicitly instantiate a <code class="lang-d"><span
 								<a href="../../std/parallelism/task_pool.put.html" class="public">
 									<code>put</code>
 								</a>
+								<span class="tableEntryAnnotation">(task)</span>
 							</td>
 							<td>Put a <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></code> object on the back of the task queue.  The <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></code>
     object may be passed by pointer or reference.
@@ -3152,6 +3174,7 @@ Occasionally it is useful to explicitly instantiate a <code class="lang-d"><span
 								<a href="../../std/parallelism/task_pool.stop.html" class="public">
 									<code>stop</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Signals to all worker threads to terminate as soon as they are finished
     with their current <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></code>, or immediately if they are not executing a
@@ -3165,6 +3188,7 @@ Occasionally it is useful to explicitly instantiate a <code class="lang-d"><span
 								<a href="../../std/parallelism/task_pool.worker_local_storage.html" class="public">
 									<code>workerLocalStorage</code>
 								</a>
+								<span class="tableEntryAnnotation">(initialVal)</span>
 							</td>
 							<td>Creates an instance of worker-local storage, initialized with a given
     value.  The value is <code class="lang-d"><span class="kwd">lazy</span></code> so that you can, for example, easily
@@ -3177,6 +3201,7 @@ Occasionally it is useful to explicitly instantiate a <code class="lang-d"><span
 								<a href="../../object/object.factory.html" class="public inherited">
 									<code>factory</code>
 								</a>
+								<span class="tableEntryAnnotation">(classname)</span>
 							</td>
 							<td>Create instance of class specified by the fully qualified name
  classname.
@@ -3189,6 +3214,7 @@ Occasionally it is useful to explicitly instantiate a <code class="lang-d"><span
 								<a href="../../object/object.op_cmp.html" class="public inherited">
 									<code>opCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Compare with another Object obj.
 </td>
@@ -3198,6 +3224,7 @@ Occasionally it is useful to explicitly instantiate a <code class="lang-d"><span
 								<a href="../../object/object.op_equals.html" class="public inherited">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Test whether <code class="lang-d"><span class="kwd">this</span></code> is equal to <code class="lang-d"><a href="../../object/object.op_equals.html#o"><span class="pln">o</span></a></code>.
  The default implementation only compares by identity (using the <code class="lang-d"><span class="kwd">is</span></code> operator).
@@ -3209,6 +3236,7 @@ Occasionally it is useful to explicitly instantiate a <code class="lang-d"><span
 								<a href="../../object/object.to_hash.html" class="public inherited">
 									<code>toHash</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Compute hash function for Object.
 </td>
@@ -3218,6 +3246,7 @@ Occasionally it is useful to explicitly instantiate a <code class="lang-d"><span
 								<a href="../../object/object.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Convert Object to a human readable string.
 </td>

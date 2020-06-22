@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/string.d#L1871">
+							<a href="https://github.com/dlang/phobos/blob/master/std/string.d#L1880">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/string.d#L1871">
+							<a href="https://github.com/dlang/phobos/edit/master/std/string.d#L1880">
 								Improve this page
 							</a>
 							<div>
@@ -2937,10 +2952,10 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../std/string.html">std.string</a>.lastIndexOfAny</code></h1><p>Returns the index of the last occurrence of any of the elements in <code class="lang-d"><span class="pln">    <a href="../../std/string/last_index_of_any.html#needles"></span><span class="pln">needles</span></a></code> in <code class="lang-d"><a href="../std/string/last_index_of_any.html#haystack"><span class="pln"><a href="../../std/string/last_index_of_any.html#haystack"><span class="pln">haystack</span></a></span></a></code>. If no element of <code class="lang-d"><a href="../std/string/last_index_of_any.html#needles"><span class="pln"><a href="../../std/string/last_index_of_any.html#needles"><span class="pln">needles</span></a></span></a></code> is found,
-    then <code class="lang-d"><span class="pun">-</span><span class="lit">1</span></code> is returned. The <code class="lang-d"><a href="../std/string/last_index_of_any.html#stopIdx"><span class="pln"><a href="../../std/string/last_index_of_any.html#stopIdx"><span class="pln">stopIdx</span></a></span></a></code> slices <code class="lang-d"><a href="../std/string/last_index_of_any.html#haystack"><span class="pln"><a href="../../std/string/last_index_of_any.html#haystack"><span class="pln">haystack</span></a></span></a></code> in the
-    following way <code class="lang-d"><span class="pln">s</span><span class="pun">[</span><span class="lit">0 </span><span class="pun">.. <a href="../../std/string/last_index_of_any.html#stopIdx"></span><span class="pln">stopIdx</span></a><span class="pun">]</span></code>. <code class="lang-d"><a href="../std/string/last_index_of_any.html#stopIdx"><span class="pln"><a href="../../std/string/last_index_of_any.html#stopIdx"><span class="pln">stopIdx</span></a></span></a></code> represents a codeunit
-    index in <code class="lang-d"><a href="../std/string/last_index_of_any.html#haystack"><span class="pln"><a href="../../std/string/last_index_of_any.html#haystack"><span class="pln">haystack</span></a></span></a></code>. If the sequence ending at <code class="lang-d"><span class="pln">startIdx</span></code> does not
+				</div><h1>Function <code><a href="../../std/string.html">std.string</a>.lastIndexOfAny</code></h1><p>Returns the index of the last occurrence of any of the elements in <code class="lang-d"><span class="pln">    <a href="../../std/string/last_index_of_any.html#needles"></span><span class="pln">needles</span></a></code> in <code class="lang-d"><a href="../../std/string/last_index_of_any.html#haystack"><span class="pln">haystack</span></a></code>. If no element of <code class="lang-d"><a href="../../std/string/last_index_of_any.html#needles"><span class="pln">needles</span></a></code> is found,
+    then <code class="lang-d"><span class="pun">-</span><span class="lit">1</span></code> is returned. The <code class="lang-d"><a href="../../std/string/last_index_of_any.html#stopIdx"><span class="pln">stopIdx</span></a></code> slices <code class="lang-d"><a href="../../std/string/last_index_of_any.html#haystack"><span class="pln">haystack</span></a></code> in the
+    following way <code class="lang-d"><span class="pln">s</span><span class="pun">[</span><span class="lit">0 </span><span class="pun">.. <a href="../../std/string/last_index_of_any.html#stopIdx"></span><span class="pln">stopIdx</span></a><span class="pun">]</span></code>. <code class="lang-d"><a href="../../std/string/last_index_of_any.html#stopIdx"><span class="pln">stopIdx</span></a></code> represents a codeunit
+    index in <code class="lang-d"><a href="../../std/string/last_index_of_any.html#haystack"><span class="pln">haystack</span></a></code>. If the sequence ending at <code class="lang-d"><span class="pln">startIdx</span></code> does not
     represent a well formed codepoint, then a <code class="lang-d"><a href="../../std/utf/utf_exception.html" title="std.utf.UTFException"><span class="typ">UTFException</span></a></code> may be
     thrown.
 </p>

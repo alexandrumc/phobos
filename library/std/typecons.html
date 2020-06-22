@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -3024,34 +3039,40 @@ that allow construction of new, useful general-purpose types.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="alignForSize" class="public" href="../std/typecons/align_for_size.html">alignForSize</a><span class="decoration">()</span>
+									<a id="alignForSize" class="public" href="../std/typecons/align_for_size.html">alignForSize</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Order the provided members to minimize size while preserving alignment.
   Alignment is not always optimal for 80-bit reals, nor for structs declared
   as align(1).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nullable" class="public" href="../std/typecons/nullable.html">nullable</a><span class="decoration">(t)</span>
+									<a id="nullable" class="public" href="../std/typecons/nullable.html">nullable</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Defines a value paired with a distinctive "null" state that denotes
 the absence of a value. If default constructed, a <code class="lang-d"><a href="../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!</span><span class="pln">T</span></code> object starts in the null state. Assigning it renders it
 non-null. Calling <code class="lang-d"><span class="pln">nullify</span></code> can nullify it again.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nullable" class="public" href="../std/typecons/nullable.html">nullable</a><span class="decoration">(t)</span>
+									<a id="nullable" class="public" href="../std/typecons/nullable.html">nullable</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Just like <code class="lang-d"><a href="../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!</span><span class="pln">T</span></code>, except that the null state is defined as a
@@ -3059,11 +3080,14 @@ particular value. For example, <code class="lang-d"><a href="../std/typecons/nul
 <code class="lang-d"><span class="typ">uint</span></code> that sets aside the value <code class="lang-d"><span class="typ">uint<wbr/></span><span class="pun">.</span><span class="pln">max</span></code> to denote a null
 state. <code class="lang-d"><a href="../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!(</span><span class="pln">T</span><span class="pun">, </span><span class="pln">nullValue</span><span class="pun">)</span></code> is more storage-efficient than <code class="lang-d"><a href="../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!</span><span class="pln">T</span></code> because it does not need to store an extra <code class="lang-d"><span class="typ">bool</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nullableRef" class="public" href="../std/typecons/nullable_ref.html">nullableRef</a><span class="decoration">(t)</span>
+									<a id="nullableRef" class="public" href="../std/typecons/nullable_ref.html">nullableRef</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Just like <code class="lang-d"><a href="../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!</span><span class="pln">T</span></code>, except that the object refers to a value
@@ -3071,32 +3095,41 @@ sitting elsewhere in memory. This makes assignments overwrite the
 initially assigned value. Internally <code class="lang-d"><a href="../std/typecons/nullable_ref.html"><span class="typ">NullableRef</span></a><span class="pun">!</span><span class="pln">T</span></code> only stores a
 pointer to <code class="lang-d"><span class="pln">T</span></code> (i.e., <code class="lang-d"><a href="../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!</span><span class="pln">T<wbr/></span><span class="pun">.</span><span class="pln">sizeof </span><span class="pun">== (</span><span class="pln">T</span><span class="pun">*)<wbr/>.</span><span class="pln">sizeof</span></code>).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rebindable" class="public" href="../std/typecons/rebindable.html">rebindable</a><span class="decoration">(obj)</span>
+									<a id="rebindable" class="public" href="../std/typecons/rebindable.html">rebindable</a><span class="tableEntryAnnotation">(obj)</span>
 								</code>
 							</td>
 							<td>Convenience function for creating a <code class="lang-d"><a href="../std/typecons/rebindable.html"><span class="typ">Rebindable</span></a></code> using automatic type
 inference.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rebindable" class="public" href="../std/typecons/rebindable.html">rebindable</a><span class="decoration">(obj)</span>
+									<a id="rebindable" class="public" href="../std/typecons/rebindable.html">rebindable</a><span class="tableEntryAnnotation">(obj)</span>
 								</code>
 							</td>
 							<td>This function simply returns the <code class="lang-d"><a href="../std/typecons/rebindable.html"><span class="typ">Rebindable</span></a></code> object passed in.  It's useful
 in generic programming cases when a given object may be either a regular
 <code class="lang-d"><span class="kwd">class</span></code> or a <code class="lang-d"><a href="../std/typecons/rebindable.html"><span class="typ">Rebindable</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="refCounted" class="public" href="../std/typecons/ref_counted.html">refCounted</a><span class="decoration">(val)</span>
+									<a id="refCounted" class="public" href="../std/typecons/ref_counted.html">refCounted</a><span class="tableEntryAnnotation">(val)</span>
 								</code>
 							</td>
 							<td>Initializes a <code class="lang-d"><a href="../std/typecons/ref_counted.html"><span class="typ">RefCounted</span></a></code> with <code class="lang-d"><a href="../std/typecons/ref_counted.html#val"><span class="pln">val</span></a></code>. The template parameter
@@ -3104,15 +3137,21 @@ in generic programming cases when a given object may be either a regular
  This function can be used to move non-copyable values to the heap.
  It also disables the <code class="lang-d"><span class="pln">autoInit</span></code> option of <code class="lang-d"><a href="../std/typecons/ref_counted.html"><span class="typ">RefCounted</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="reverse" class="public" href="../std/typecons/reverse.html">reverse</a><span class="decoration">(t)</span>
+									<a id="reverse" class="public" href="../std/typecons/reverse.html">reverse</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Creates a copy of a <code class="lang-d"><a href="../std/typecons/tuple.html"><span class="typ">Tuple</span></a></code> with its fields in reverse order.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3121,7 +3160,7 @@ in generic programming cases when a given object may be either a regular
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3132,6 +3171,8 @@ in generic programming cases when a given object may be either a regular
 							<td><code class="lang-d"><span class="typ">AutoImplement</span></code> automatically implements (by default) all abstract member
 functions in the class or interface <code class="lang-d"><span class="typ">Base</span></code> in specified way.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3140,7 +3181,7 @@ functions in the class or interface <code class="lang-d"><span class="typ">Base<
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3150,6 +3191,8 @@ functions in the class or interface <code class="lang-d"><span class="typ">Base<
 							</td>
 							<td>A typesafe structure for storing combinations of enum values.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3160,6 +3203,8 @@ functions in the class or interface <code class="lang-d"><span class="typ">Base<
 							<td>Convenience names that allow using e.g. <code class="lang-d"><span class="typ">Yes<wbr/></span><span class="pun">.</span><span class="pln">encryption</span></code> instead of
 <code class="lang-d"><a href="../std/typecons/flag.html"><span class="typ">Flag</span></a><span class="pun">!</span><span class="str">"encryption"<wbr/></span><span class="pun">.</span><span class="pln">yes</span></code> and <code class="lang-d"><span class="typ">No<wbr/></span><span class="pun">.</span><span class="pln">encryption</span></code> instead of <code class="lang-d"><a href="../std/typecons/flag.html"><span class="typ">Flag</span></a><span class="pun">!</span><span class="str">"encryption"<wbr/></span><span class="pun">.</span><span class="pln">no</span></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3169,8 +3214,10 @@ functions in the class or interface <code class="lang-d"><span class="typ">Base<
 							</td>
 							<td>Defines a value paired with a distinctive "null" state that denotes
 the absence of a value. If default constructed, a <code class="lang-d"><span class="typ">Nullable</span><span class="pun">!</span><span class="pln">T</span></code> object starts in the null state. Assigning it renders it
-non-null. Calling <code class="lang-d"><span class="pln"><a href="../std/typecons/nullable.nullify.html"><span class="pln">nullify</span></a></span></code> can nullify it again.
+non-null. Calling <code class="lang-d"><a href="../std/typecons/nullable.nullify.html"><span class="pln">nullify</span></a></code> can nullify it again.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3178,11 +3225,13 @@ non-null. Calling <code class="lang-d"><span class="pln"><a href="../std/typecon
 									<a id="Nullable" class="public" href="../std/typecons/nullable.html">Nullable</a>
 								</code>
 							</td>
-							<td>Just like <code class="lang-d"><a href="../std/typecons/nullable.html"><span class="typ"><a href="../std/typecons/nullable.html"><span class="typ">Nullable</span></a></span></a><span class="pun">!</span><span class="pln">T</span></code>, except that the null state is defined as a
+							<td>Just like <code class="lang-d"><a href="../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!</span><span class="pln">T</span></code>, except that the null state is defined as a
 particular value. For example, <code class="lang-d"><a href="../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!(</span><span class="typ">uint</span><span class="pun">, </span><span class="typ">uint<wbr/></span><span class="pun">.</span><span class="pln">max</span><span class="pun">)</span></code> is an
 <code class="lang-d"><span class="typ">uint</span></code> that sets aside the value <code class="lang-d"><span class="typ">uint<wbr/></span><span class="pun">.</span><span class="pln">max</span></code> to denote a null
 state. <code class="lang-d"><a href="../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!(</span><span class="pln">T</span><span class="pun">, </span><span class="pln">nullValue</span><span class="pun">)</span></code> is more storage-efficient than <code class="lang-d"><a href="../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!</span><span class="pln">T</span></code> because it does not need to store an extra <code class="lang-d"><span class="typ">bool</span></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3190,11 +3239,13 @@ state. <code class="lang-d"><a href="../std/typecons/nullable.html"><span class=
 									<a id="NullableRef" class="public" href="../std/typecons/nullable_ref.html">NullableRef</a>
 								</code>
 							</td>
-							<td>Just like <code class="lang-d"><a href="../std/typecons/nullable.html"><span class="typ"><a href="../std/typecons/nullable.html"><span class="typ">Nullable</span></a></span></a><span class="pun">!</span><span class="pln">T</span></code>, except that the object refers to a value
+							<td>Just like <code class="lang-d"><a href="../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!</span><span class="pln">T</span></code>, except that the object refers to a value
 sitting elsewhere in memory. This makes assignments overwrite the
-initially assigned value. Internally <code class="lang-d"><a href="../std/typecons/nullable_ref.html"><span class="typ"><span class="typ">NullableRef</span></span></a><span class="pun">!</span><span class="pln">T</span></code> only stores a
+initially assigned value. Internally <code class="lang-d"><span class="typ">NullableRef</span><span class="pun">!</span><span class="pln">T</span></code> only stores a
 pointer to <code class="lang-d"><span class="pln">T</span></code> (i.e., <code class="lang-d"><a href="../std/typecons/nullable.html"><span class="typ">Nullable</span></a><span class="pun">!</span><span class="pln">T<wbr/></span><span class="pun">.</span><span class="pln">sizeof </span><span class="pun">== (</span><span class="pln">T</span><span class="pun">*)<wbr/>.</span><span class="pln">sizeof</span></code>).
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3205,6 +3256,8 @@ pointer to <code class="lang-d"><span class="pln">T</span></code> (i.e., <code c
 							<td>Defines a reference-counted object containing a <code class="lang-d"><span class="pln">T</span></code> value as
 payload.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3214,6 +3267,8 @@ payload.
 							</td>
 							<td>Ternary type with three truth values:
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3228,6 +3283,8 @@ function. If <code class="lang-d"><span class="pln">obj</span></code> is a <code
 accessible with the syntax <code class="lang-d"><span class="pln">obj</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span></code> for the first field, <code class="lang-d"><span class="pln">obj</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span></code>
 for the second, and so on.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3239,6 +3296,8 @@ for the second, and so on.
 based on an existing type. Unlike the <code class="lang-d"><span class="kwd">alias</span></code> feature,
 <b>Typedef</b> ensures the two types are not considered as equals.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3248,6 +3307,8 @@ based on an existing type. Unlike the <code class="lang-d"><span class="kwd">ali
 							</td>
 							<td>Encapsulates unique ownership of a resource.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3259,6 +3320,8 @@ based on an existing type. Unlike the <code class="lang-d"><span class="kwd">ali
     opposed to just constness / immutability. Primary intended use case is with
     shared (having thread-local reference to shared class data)
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3266,9 +3329,11 @@ based on an existing type. Unlike the <code class="lang-d"><span class="kwd">ali
 									<a id="Yes" class="public" href="../std/typecons/yes.html">Yes</a>
 								</code>
 							</td>
-							<td>Convenience names that allow using e.g. <code class="lang-d"><span class="typ"><span class="typ">Yes</span><wbr/></span><span class="pun">.</span><span class="pln">encryption</span></code> instead of
-<code class="lang-d"><a href="../std/typecons/flag.html"><span class="typ"><a href="../std/typecons/flag.html"><span class="typ">Flag</span></a></span></a><span class="pun">!</span><span class="str">"encryption"<wbr/></span><span class="pun">.</span><span class="pln">yes</span></code> and <code class="lang-d"><span class="typ"><a href="../std/typecons/no.html"><span class="typ">No</span></a><wbr/></span><span class="pun">.</span><span class="pln">encryption</span></code> instead of <code class="lang-d"><a href="../std/typecons/flag.html"><span class="typ">Flag</span></a><span class="pun">!</span><span class="str">"encryption"<wbr/></span><span class="pun">.</span><span class="pln">no</span></code>.
+							<td>Convenience names that allow using e.g. <code class="lang-d"><span class="typ">Yes<wbr/></span><span class="pun">.</span><span class="pln">encryption</span></code> instead of
+<code class="lang-d"><a href="../std/typecons/flag.html"><span class="typ">Flag</span></a><span class="pun">!</span><span class="str">"encryption"<wbr/></span><span class="pun">.</span><span class="pln">yes</span></code> and <code class="lang-d"><span class="typ">No<wbr/></span><span class="pun">.</span><span class="pln">encryption</span></code> instead of <code class="lang-d"><a href="../std/typecons/flag.html"><span class="typ">Flag</span></a><span class="pun">!</span><span class="str">"encryption"<wbr/></span><span class="pun">.</span><span class="pln">no</span></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3277,7 +3342,7 @@ based on an existing type. Unlike the <code class="lang-d"><span class="kwd">ali
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3290,6 +3355,8 @@ APIs to define functions accepting flags without resorting to <code class="lang-
 enumerated type separately. Using <code class="lang-d"><span class="typ">Flag</span><span class="pun">!</span><span class="str">"Name"</span></code> instead of <code class="lang-d"><span class="typ">bool</span></code> makes the flag's meaning visible in calls. Each yes/no flag has
 its own type, which makes confusions and mix-ups impossible.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3300,6 +3367,8 @@ its own type, which makes confusions and mix-ups impossible.
 							<td>Options regarding auto-initialization of a <code class="lang-d"><a href="../std/typecons/ref_counted.html"><span class="typ">RefCounted</span></a></code> object (see
 the definition of <code class="lang-d"><a href="../std/typecons/ref_counted.html"><span class="typ">RefCounted</span></a></code> below).
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3308,7 +3377,7 @@ the definition of <code class="lang-d"><a href="../std/typecons/ref_counted.html
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3318,6 +3387,8 @@ the definition of <code class="lang-d"><a href="../std/typecons/ref_counted.html
 							</td>
 							<td>Unpacks the content of a <code class="lang-d"><a href="../std/typecons/nullable.html"><span class="typ">Nullable</span></a></code>, performs an operation and packs it again. Does nothing if isNull.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3332,6 +3403,8 @@ the definition of <code class="lang-d"><a href="../std/typecons/ref_counted.html
     relationship; the new type is not related to the old type in any way,
     by design).
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3344,6 +3417,8 @@ therefore avoiding the overhead of <code class="lang-d"><span class="kwd">new</s
 it is the responsibility of the user to not escape a reference to the
 object outside the scope.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3354,6 +3429,8 @@ object outside the scope.
 							<td>Constructs a <code class="lang-d"><a href="../std/typecons/tuple.html"><span class="typ">Tuple</span></a></code> object instantiated and initialized according to
     the given arguments.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3363,6 +3440,8 @@ object outside the scope.
 							</td>
 							<td>Supports structural based typesafe conversion.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3372,6 +3451,8 @@ object outside the scope.
 							</td>
 							<td>Supports structural based typesafe conversion.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3402,8 +3483,8 @@ object outside the scope.
 							</td>
 							<td>
 							</td>
-							<td>Predefined how-policies for <code class="lang-d"><a href="../std/typecons/auto_implement.html"><span class="typ"><a href="../std/typecons/auto_implement.html"><span class="typ">AutoImplement</span></a></span></a></code>.  These templates are also used by
-<code class="lang-d"><a href="../std/typecons/black_hole.html"><span class="typ"><a href="../std/typecons/black_hole.html"><span class="typ">BlackHole</span></a></span></a></code> and <code class="lang-d"><a href="../std/typecons/white_hole.html"><span class="typ"><a href="../std/typecons/white_hole.html"><span class="typ">WhiteHole</span></a></span></a></code>, respectively.
+							<td>Predefined how-policies for <code class="lang-d"><a href="../std/typecons/auto_implement.html"><span class="typ">AutoImplement</span></a></code>.  These templates are also used by
+<code class="lang-d"><a href="../std/typecons/black_hole.html"><span class="typ">BlackHole</span></a></code> and <code class="lang-d"><a href="../std/typecons/white_hole.html"><span class="typ">WhiteHole</span></a></code>, respectively.
 </td>
 						</tr>
 						<tr>

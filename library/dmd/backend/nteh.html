@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2951,178 +2966,235 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cdsetjmp" class="public" href="../../dmd/backend/nteh/cdsetjmp.html">cdsetjmp</a><span class="decoration">(cdb, e, pretregs)</span>
+									<a id="cdsetjmp" class="public" href="../../dmd/backend/nteh/cdsetjmp.html">cdsetjmp</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
 							<td>Generate code for setjmp().
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nteh_context_string" class="public" href="../../dmd/backend/nteh/nteh_context_string.html">nteh_context_string</a><span class="decoration">()</span>
+									<a id="nteh_context_string" class="public" href="../../dmd/backend/nteh/nteh_context_string.html">nteh_context_string</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nteh_contextsym" class="public" href="../../dmd/backend/nteh/nteh_contextsym.html">nteh_contextsym</a><span class="decoration">()</span>
+									<a id="nteh_contextsym" class="public" href="../../dmd/backend/nteh/nteh_contextsym.html">nteh_contextsym</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Return pointer to context symbol.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nteh_contextsym_size" class="public" href="../../dmd/backend/nteh/nteh_contextsym_size.html">nteh_contextsym_size</a><span class="decoration">()</span>
+									<a id="nteh_contextsym_size" class="public" href="../../dmd/backend/nteh/nteh_contextsym_size.html">nteh_contextsym_size</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Return size of context symbol on stack.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nteh_declarvars" class="public" href="../../dmd/backend/nteh/nteh_declarvars.html">nteh_declarvars</a><span class="decoration">(bx)</span>
+									<a id="nteh_declarvars" class="public" href="../../dmd/backend/nteh/nteh_declarvars.html">nteh_declarvars</a><span class="tableEntryAnnotation">(bx)</span>
 								</code>
 							</td>
 							<td>Declare frame variables.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nteh_ecodesym" class="public" href="../../dmd/backend/nteh/nteh_ecodesym.html">nteh_ecodesym</a><span class="decoration">()</span>
+									<a id="nteh_ecodesym" class="public" href="../../dmd/backend/nteh/nteh_ecodesym.html">nteh_ecodesym</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Return pointer to ecode symbol.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nteh_epilog" class="public" href="../../dmd/backend/nteh/nteh_epilog.html">nteh_epilog</a><span class="decoration">(cdb)</span>
+									<a id="nteh_epilog" class="public" href="../../dmd/backend/nteh/nteh_epilog.html">nteh_epilog</a><span class="tableEntryAnnotation">(cdb)</span>
 								</code>
 							</td>
 							<td>Generate NT exception handling function epilog.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nteh_filltables" class="public" href="../../dmd/backend/nteh/nteh_filltables.html">nteh_filltables</a><span class="decoration">()</span>
+									<a id="nteh_filltables" class="public" href="../../dmd/backend/nteh/nteh_filltables.html">nteh_filltables</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nteh_filter" class="public" href="../../dmd/backend/nteh/nteh_filter.html">nteh_filter</a><span class="decoration">(cdb, b)</span>
+									<a id="nteh_filter" class="public" href="../../dmd/backend/nteh/nteh_filter.html">nteh_filter</a><span class="tableEntryAnnotation">(cdb, b)</span>
 								</code>
 							</td>
 							<td>Put out prolog for BC_filter block.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nteh_framehandler" class="public" href="../../dmd/backend/nteh/nteh_framehandler.html">nteh_framehandler</a><span class="decoration">(sfunc, scopetable)</span>
+									<a id="nteh_framehandler" class="public" href="../../dmd/backend/nteh/nteh_framehandler.html">nteh_framehandler</a><span class="tableEntryAnnotation">(sfunc, scopetable)</span>
 								</code>
 							</td>
 							<td>Generate C++ or D frame handler.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nteh_gentables" class="public" href="../../dmd/backend/nteh/nteh_gentables.html">nteh_gentables</a><span class="decoration">(sfunc)</span>
+									<a id="nteh_gentables" class="public" href="../../dmd/backend/nteh/nteh_gentables.html">nteh_gentables</a><span class="tableEntryAnnotation">(sfunc)</span>
 								</code>
 							</td>
 							<td>Generate and output scope table.
  Not called for NTEH C++ exceptions
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nteh_monitor_epilog" class="public" href="../../dmd/backend/nteh/nteh_monitor_epilog.html">nteh_monitor_epilog</a><span class="decoration">(cdb, retregs)</span>
+									<a id="nteh_monitor_epilog" class="public" href="../../dmd/backend/nteh/nteh_monitor_epilog.html">nteh_monitor_epilog</a><span class="tableEntryAnnotation">(cdb, retregs)</span>
 								</code>
 							</td>
 							<td>Release monitor, unhook monitor exception handler.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nteh_monitor_prolog" class="public" href="../../dmd/backend/nteh/nteh_monitor_prolog.html">nteh_monitor_prolog</a><span class="decoration">(cdb, shandle)</span>
+									<a id="nteh_monitor_prolog" class="public" href="../../dmd/backend/nteh/nteh_monitor_prolog.html">nteh_monitor_prolog</a><span class="tableEntryAnnotation">(cdb, shandle)</span>
 								</code>
 							</td>
 							<td>Set monitor, hook monitor exception handler.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nteh_patchindex" class="public" href="../../dmd/backend/nteh/nteh_patchindex.html">nteh_patchindex</a><span class="decoration">(c, sindex)</span>
+									<a id="nteh_patchindex" class="public" href="../../dmd/backend/nteh/nteh_patchindex.html">nteh_patchindex</a><span class="tableEntryAnnotation">(c, sindex)</span>
 								</code>
 							</td>
 							<td>Generate code to set scope index.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nteh_prolog" class="public" href="../../dmd/backend/nteh/nteh_prolog.html">nteh_prolog</a><span class="decoration">(cdb)</span>
+									<a id="nteh_prolog" class="public" href="../../dmd/backend/nteh/nteh_prolog.html">nteh_prolog</a><span class="tableEntryAnnotation">(cdb)</span>
 								</code>
 							</td>
 							<td>Generate NT exception handling function prolog.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nteh_setScopeTableIndex" class="public" href="../../dmd/backend/nteh/nteh_set_scope_table_index.html">nteh_setScopeTableIndex</a><span class="decoration">(blx, scope_index)</span>
+									<a id="nteh_setScopeTableIndex" class="public" href="../../dmd/backend/nteh/nteh_set_scope_table_index.html">nteh_setScopeTableIndex</a><span class="tableEntryAnnotation">(blx, scope_index)</span>
 								</code>
 							</td>
 							<td>Generate elem that sets the context index into the scope table.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nteh_setsp" class="public" href="../../dmd/backend/nteh/nteh_setsp.html">nteh_setsp</a><span class="decoration">(cdb, op)</span>
+									<a id="nteh_setsp" class="public" href="../../dmd/backend/nteh/nteh_setsp.html">nteh_setsp</a><span class="tableEntryAnnotation">(cdb, op)</span>
 								</code>
 							</td>
 							<td>Set/Reset ESP from context.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nteh_unwind" class="public" href="../../dmd/backend/nteh/nteh_unwind.html">nteh_unwind</a><span class="decoration">(cdb, saveregs, stop_index)</span>
+									<a id="nteh_unwind" class="public" href="../../dmd/backend/nteh/nteh_unwind.html">nteh_unwind</a><span class="tableEntryAnnotation">(cdb, saveregs, stop_index)</span>
 								</code>
 							</td>
 							<td>Call local_unwind(), which means call the _finally blocks until
  stop_index is reached.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nteh_usevars" class="public" href="../../dmd/backend/nteh/nteh_usevars.html">nteh_usevars</a><span class="decoration">()</span>
+									<a id="nteh_usevars" class="public" href="../../dmd/backend/nteh/nteh_usevars.html">nteh_usevars</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Mark EH variables as used so that they don't get optimized away.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

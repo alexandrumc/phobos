@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2972,12 +2987,12 @@ It contains generic comparison algorithms.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="among" class="public" href="../../std/algorithm/comparison/among.html">among</a><span class="decoration">(value, values)</span>
+									<a id="among" class="public" href="../../std/algorithm/comparison/among.html">among</a><span class="tableEntryAnnotation">(value, values)</span>
 								</code>
 							</td>
 							<td>Find <code class="lang-d"><a href="../../std/algorithm/comparison/among.html#value"><span class="pln">value</span></a></code> among <code class="lang-d"><a href="../../std/algorithm/comparison/among.html#values"><span class="pln">values</span></a></code>, returning the 1-based index
@@ -2985,30 +3000,39 @@ of the first matching value in <code class="lang-d"><a href="../../std/algorithm
 is not among <code class="lang-d"><a href="../../std/algorithm/comparison/among.html#values"><span class="pln">values</span></a></code>. The predicate <code class="lang-d"><span class="pln">pred</span></code> is used to
 compare values, and uses equality by default.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="castSwitch" class="public" href="../../std/algorithm/comparison/cast_switch.html">castSwitch</a><span class="decoration">(switchObject)</span>
+									<a id="castSwitch" class="public" href="../../std/algorithm/comparison/cast_switch.html">castSwitch</a><span class="tableEntryAnnotation">(switchObject)</span>
 								</code>
 							</td>
 							<td>Executes and returns one of a collection of handlers based on the type of the
 switch object.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="clamp" class="public" href="../../std/algorithm/comparison/clamp.html">clamp</a><span class="decoration">(val, lower, upper)</span>
+									<a id="clamp" class="public" href="../../std/algorithm/comparison/clamp.html">clamp</a><span class="tableEntryAnnotation">(val, lower, upper)</span>
 								</code>
 							</td>
 							<td>Clamps a value into the given bounds.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cmp" class="public" href="../../std/algorithm/comparison/cmp.html">cmp</a><span class="decoration">(r1, r2)</span>
+									<a id="cmp" class="public" href="../../std/algorithm/comparison/cmp.html">cmp</a><span class="tableEntryAnnotation">(r1, r2)</span>
 								</code>
 							</td>
 							<td>Performs a lexicographical comparison on two
@@ -3020,41 +3044,53 @@ if <code class="lang-d"><a href="../../std/algorithm/comparison/cmp.html#r1"><sp
 has more elements than <code class="lang-d"><a href="../../std/algorithm/comparison/cmp.html#r2"><span class="pln">r2</span></a></code>, and <code class="lang-d"><span class="lit">0</span></code> if the ranges have the same
 number of elements.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="either" class="public" href="../../std/algorithm/comparison/either.html">either</a><span class="decoration">(first, alternatives)</span>
+									<a id="either" class="public" href="../../std/algorithm/comparison/either.html">either</a><span class="tableEntryAnnotation">(first, alternatives)</span>
 								</code>
 							</td>
 							<td>Get the first argument <code class="lang-d"><span class="pln">a</span></code> that passes an <code class="lang-d"><span class="kwd">if </span><span class="pun">(</span><span class="pln">unaryFun</span><span class="pun">!</span><span class="pln">pred</span><span class="pun">(</span><span class="pln">a</span><span class="pun">))</span></code> test.  If
 no argument passes the test, return the last argument.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isPermutation" class="public" href="../../std/algorithm/comparison/is_permutation.html">isPermutation</a><span class="decoration">(r1, r2)</span>
+									<a id="isPermutation" class="public" href="../../std/algorithm/comparison/is_permutation.html">isPermutation</a><span class="tableEntryAnnotation">(r1, r2)</span>
 								</code>
 							</td>
 							<td>Checks if both ranges are permutations of each other.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isSameLength" class="public" href="../../std/algorithm/comparison/is_same_length.html">isSameLength</a><span class="decoration">(r1, r2)</span>
+									<a id="isSameLength" class="public" href="../../std/algorithm/comparison/is_same_length.html">isSameLength</a><span class="tableEntryAnnotation">(r1, r2)</span>
 								</code>
 							</td>
 							<td>Checks if the two ranges have the same number of elements. This function is
 optimized to always take advantage of the <code class="lang-d"><span class="pln">length</span></code> member of either range
 if it exists.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="levenshteinDistance" class="public" href="../../std/algorithm/comparison/levenshtein_distance.html">levenshteinDistance</a><span class="decoration">(s, t)</span>
+									<a id="levenshteinDistance" class="public" href="../../std/algorithm/comparison/levenshtein_distance.html">levenshteinDistance</a><span class="tableEntryAnnotation">(s, t)</span>
 								</code>
 							</td>
 							<td>Returns the <a href="http://wikipedia.org/wiki/Levenshtein_distance">Levenshtein
@@ -3062,39 +3098,51 @@ distance</a> between <code class="lang-d"><a href="../../std/algorithm/compariso
 the minimal amount of edit operations necessary to transform <code class="lang-d"><a href="../../std/algorithm/comparison/levenshtein_distance.html#s"><span class="pln">s</span></a></code>
 into <code class="lang-d"><a href="../../std/algorithm/comparison/levenshtein_distance.html#t"><span class="pln">t</span></a></code>.  Performs <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">s<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">* </span><span class="pln">t<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>)</span> evaluations of <code class="lang-d"><span class="pln">equals</span></code> and occupies <span class="bigoh">&Omicron;(<code class="lang-d"><a href="../../std/algorithm/comparison/min.html"><span class="pln">min</span></a><span class="pun">(</span><span class="pln">s<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">, </span><span class="pln">t<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code>)</span> storage.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="levenshteinDistanceAndPath" class="public" href="../../std/algorithm/comparison/levenshtein_distance_and_path.html">levenshteinDistanceAndPath</a><span class="decoration">(s, t)</span>
+									<a id="levenshteinDistanceAndPath" class="public" href="../../std/algorithm/comparison/levenshtein_distance_and_path.html">levenshteinDistanceAndPath</a><span class="tableEntryAnnotation">(s, t)</span>
 								</code>
 							</td>
 							<td>Returns the Levenshtein distance and the edit path between <code class="lang-d"><a href="../../std/algorithm/comparison/levenshtein_distance_and_path.html#s"><span class="pln">s</span></a></code> and
 <code class="lang-d"><a href="../../std/algorithm/comparison/levenshtein_distance_and_path.html#t"><span class="pln">t</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="max" class="public" href="../../std/algorithm/comparison/max.html">max</a><span class="decoration">(args)</span>
+									<a id="max" class="public" href="../../std/algorithm/comparison/max.html">max</a><span class="tableEntryAnnotation">(args)</span>
 								</code>
 							</td>
 							<td>Iterates the passed arguments and returns the maximum value.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="min" class="public" href="../../std/algorithm/comparison/min.html">min</a><span class="decoration">(args)</span>
+									<a id="min" class="public" href="../../std/algorithm/comparison/min.html">min</a><span class="tableEntryAnnotation">(args)</span>
 								</code>
 							</td>
 							<td>Iterates the passed arguments and returns the minimum value.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="mismatch" class="public" href="../../std/algorithm/comparison/mismatch.html">mismatch</a><span class="decoration">(r1, r2)</span>
+									<a id="mismatch" class="public" href="../../std/algorithm/comparison/mismatch.html">mismatch</a><span class="tableEntryAnnotation">(r1, r2)</span>
 								</code>
 							</td>
 							<td>Sequentially compares elements in <code class="lang-d"><a href="../../std/algorithm/comparison/mismatch.html#r1"><span class="pln">r1</span></a></code> and <code class="lang-d"><a href="../../std/algorithm/comparison/mismatch.html#r2"><span class="pln">r2</span></a></code> in lockstep, and
@@ -3103,16 +3151,22 @@ equality). Returns a tuple with the reduced ranges that start with the
 two mismatched values. Performs <span class="bigoh">&Omicron;(<code class="lang-d"><a href="../../std/algorithm/comparison/min.html"><span class="pln">min</span></a><span class="pun">(</span><span class="pln">r1<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">, </span><span class="pln">r2<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code>)</span>
 evaluations of <code class="lang-d"><span class="pln">pred</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="predSwitch" class="public" href="../../std/algorithm/comparison/pred_switch.html">predSwitch</a><span class="decoration">(switchExpression, choices)</span>
+									<a id="predSwitch" class="public" href="../../std/algorithm/comparison/pred_switch.html">predSwitch</a><span class="tableEntryAnnotation">(switchExpression, choices)</span>
 								</code>
 							</td>
 							<td>Returns one of a collection of expressions based on the value of the switch
 expression.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3121,7 +3175,7 @@ expression.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3140,6 +3194,8 @@ searches, diff-style programs that compute the difference between
 files, efficient encoding of patches, DNA sequence analysis, and
 plagiarism detection.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3148,7 +3204,7 @@ plagiarism detection.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3156,11 +3212,13 @@ plagiarism detection.
 									<a id="among" class="public" href="../../std/algorithm/comparison/among.html">among</a>
 								</code>
 							</td>
-							<td>Find <code class="lang-d"><a href="../../std/algorithm/comparison/among.html#value"><span class="pln"><a href="../../std/algorithm/comparison/among.html#value"><span class="pln">value</span></a></span></a></code> among <code class="lang-d"><a href="../../std/algorithm/comparison/among.html#values"><span class="pln"><a href="../../std/algorithm/comparison/among.html#values"><span class="pln">values</span></a></span></a></code>, returning the 1-based index
-of the first matching value in <code class="lang-d"><a href="../../std/algorithm/comparison/among.html#values"><span class="pln"><a href="../../std/algorithm/comparison/among.html#values"><span class="pln">values</span></a></span></a></code>, or <code class="lang-d"><span class="lit">0</span></code> if <code class="lang-d"><a href="../../std/algorithm/comparison/among.html#value"><span class="pln"><a href="../../std/algorithm/comparison/among.html#value"><span class="pln">value</span></a></span></a></code>
-is not among <code class="lang-d"><a href="../../std/algorithm/comparison/among.html#values"><span class="pln"><a href="../../std/algorithm/comparison/among.html#values"><span class="pln">values</span></a></span></a></code>. The predicate <code class="lang-d"><span class="pln">pred</span></code> is used to
+							<td>Find <code class="lang-d"><a href="../../std/algorithm/comparison/among.html#value"><span class="pln">value</span></a></code> among <code class="lang-d"><a href="../../std/algorithm/comparison/among.html#values"><span class="pln">values</span></a></code>, returning the 1-based index
+of the first matching value in <code class="lang-d"><a href="../../std/algorithm/comparison/among.html#values"><span class="pln">values</span></a></code>, or <code class="lang-d"><span class="lit">0</span></code> if <code class="lang-d"><a href="../../std/algorithm/comparison/among.html#value"><span class="pln">value</span></a></code>
+is not among <code class="lang-d"><a href="../../std/algorithm/comparison/among.html#values"><span class="pln">values</span></a></code>. The predicate <code class="lang-d"><span class="pln">pred</span></code> is used to
 compare values, and uses equality by default.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3171,6 +3229,8 @@ compare values, and uses equality by default.
 							<td>Compares two ranges for equality, as defined by predicate <code class="lang-d"><span class="pln">pred</span></code>
 (which is <code class="lang-d"><span class="pun">==</span></code> by default).
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 					</table>
 				</section>

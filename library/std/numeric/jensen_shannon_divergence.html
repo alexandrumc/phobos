@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,14 +2952,14 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../std/numeric.html">std.numeric</a>.jensenShannonDivergence</code></h1><p>Computes the <a href="https://en.wikipedia.org/wiki/Jensen%E2%80%93Shannon_divergence">Jensen-Shannon divergence</a> between <code class="lang-d"><a href="../std/numeric/jensen_shannon_divergence.html#a"><span class="pln"><a href="../../std/numeric/jensen_shannon_divergence.html#a"><span class="pln">a</span></a></span></a></code> and <code class="lang-d"><a href="../../std/numeric/jensen_shannon_divergence.html#b"><span class="pln">b</span></a></code>, which is the sum <code class="lang-d"><span class="pun">(</span><span class="pln">ai </span><span class="pun">* </span><span class="pln">log</span><span class="pun">(</span><span class="lit">2 </span><span class="pun">* </span><span class="pln">ai </span><span class="pun">/ (</span><span class="pln">ai </span><span class="pun">+ </span><span class="pln">bi</span><span class="pun">)) + </span><span class="pln">bi </span><span class="pun">* </span><span class="pln">log</span><span class="pun">(</span><span class="lit">2 </span><span class="pun">*
+				</div><h1>Function <code><a href="../../std/numeric.html">std.numeric</a>.jensenShannonDivergence</code></h1><p>Computes the <a href="https://en.wikipedia.org/wiki/Jensen%E2%80%93Shannon_divergence">Jensen-Shannon divergence</a> between <code class="lang-d"><a href="../../std/numeric/jensen_shannon_divergence.html#a"><span class="pln">a</span></a></code> and <code class="lang-d"><a href="../../std/numeric/jensen_shannon_divergence.html#b"><span class="pln">b</span></a></code>, which is the sum <code class="lang-d"><span class="pun">(</span><span class="pln">ai </span><span class="pun">* </span><span class="pln">log</span><span class="pun">(</span><span class="lit">2 </span><span class="pun">* </span><span class="pln">ai </span><span class="pun">/ (</span><span class="pln">ai </span><span class="pun">+ </span><span class="pln">bi</span><span class="pun">)) + </span><span class="pln">bi </span><span class="pun">* </span><span class="pln">log</span><span class="pun">(</span><span class="lit">2 </span><span class="pun">*
 </span><span class="pln">bi </span><span class="pun">/ (</span><span class="pln">ai </span><span class="pun">+ </span><span class="pln">bi</span><span class="pun">))) / </span><span class="lit">2</span></code>. The base of logarithm is 2. The ranges are
 assumed to contain elements in <code class="lang-d"><span class="pun">[</span><span class="lit">0</span><span class="pun">, </span><span class="lit">1</span><span class="pun">]</span></code>. Usually the ranges are
 normalized probability distributions, but this is not required or
-checked by <code class="lang-d"><span class="pln"><span class="pln">jensenShannonDivergence</span></span></code>. If the inputs are normalized,
+checked by <code class="lang-d"><span class="pln">jensenShannonDivergence</span></code>. If the inputs are normalized,
 the result is bounded within <code class="lang-d"><span class="pun">[</span><span class="lit">0</span><span class="pun">, </span><span class="lit">1</span><span class="pun">]</span></code>. The three-parameter version
 stops evaluations as soon as the intermediate result is greater than
-or equal to <code class="lang-d"><a href="../std/numeric/jensen_shannon_divergence.html#limit"><span class="pln"><a href="../../std/numeric/jensen_shannon_divergence.html#limit"><span class="pln">limit</span></a></span></a></code>.
+or equal to <code class="lang-d"><a href="../../std/numeric/jensen_shannon_divergence.html#limit"><span class="pln">limit</span></a></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -3118,76 +3133,97 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="digest" class="public" href="../std/digest/digest.html">digest</a><span class="decoration">(range)</span>
+									<a id="digest" class="public" href="../std/digest/digest.html">digest</a><span class="tableEntryAnnotation">(range)</span>
 								</code>
 							</td>
 							<td>This is a convenience function to calculate a hash using the template API.
  Every digest passing the <code class="lang-d"><a href="../std/digest/is_digest.html"><span class="pln">isDigest</span></a></code> test can be used with this function.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="digest" class="public" href="../std/digest/digest.html">digest</a><span class="decoration">(data)</span>
+									<a id="digest" class="public" href="../std/digest/digest.html">digest</a><span class="tableEntryAnnotation">(data)</span>
 								</code>
 							</td>
 							<td>This overload of the digest function handles arrays.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="hexDigest" class="public" href="../std/digest/hex_digest.html">hexDigest</a><span class="decoration">(range)</span>
+									<a id="hexDigest" class="public" href="../std/digest/hex_digest.html">hexDigest</a><span class="tableEntryAnnotation">(range)</span>
 								</code>
 							</td>
 							<td>This is a convenience function similar to <code class="lang-d"><a href="../std/digest/digest.html"><span class="pln">digest</span></a></code>, but it returns the string
  representation of the hash. Every digest passing the <code class="lang-d"><a href="../std/digest/is_digest.html"><span class="pln">isDigest</span></a></code> test can be used with this
  function.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="hexDigest" class="public" href="../std/digest/hex_digest.html">hexDigest</a><span class="decoration">(data)</span>
+									<a id="hexDigest" class="public" href="../std/digest/hex_digest.html">hexDigest</a><span class="tableEntryAnnotation">(data)</span>
 								</code>
 							</td>
 							<td>This overload of the hexDigest function handles arrays.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="makeDigest" class="public" href="../std/digest/make_digest.html">makeDigest</a><span class="decoration">()</span>
+									<a id="makeDigest" class="public" href="../std/digest/make_digest.html">makeDigest</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>This is a convenience function which returns an initialized digest, so it's not necessary to call
  start manually.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="secureEqual" class="public" href="../std/digest/secure_equal.html">secureEqual</a><span class="decoration">(r1, r2)</span>
+									<a id="secureEqual" class="public" href="../std/digest/secure_equal.html">secureEqual</a><span class="tableEntryAnnotation">(r1, r2)</span>
 								</code>
 							</td>
 							<td>Securely compares two digest representations while protecting against timing
  attacks. Do not use <code class="lang-d"><span class="pun">==</span></code> to compare digest representations.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toHexString" class="public" href="../std/digest/to_hex_string.html">toHexString</a><span class="decoration">(digest)</span>
+									<a id="toHexString" class="public" href="../std/digest/to_hex_string.html">toHexString</a><span class="tableEntryAnnotation">(digest)</span>
 								</code>
 							</td>
 							<td>Used to convert a hash value (a static or dynamic array of ubytes) to a string.
  Can be used with the OOP and with the template API.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3196,7 +3232,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3207,6 +3243,8 @@ $('#symbolSearchPane').show();</script>
 							<td>This describes the OOP API. To understand when to use the template API and when to use the OOP API,
  see the module documentation at the top of this page.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3215,7 +3253,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3227,6 +3265,8 @@ $('#symbolSearchPane').show();</script>
  Modules providing digest implementations will usually provide
  an alias for this template (e.g. MD5Digest, SHA1Digest, ...).
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3235,7 +3275,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3247,6 +3287,8 @@ $('#symbolSearchPane').show();</script>
  All digest implementations should implement the following members and therefore pass
  the <code class="lang-d"><a href="../std/digest/is_digest.html"><span class="pln">isDigest</span></a></code> test.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3255,7 +3297,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3265,6 +3307,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>See <code class="lang-d"><a href="../std/digest/to_hex_string.html"><span class="pln">toHexString</span></a></code>
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

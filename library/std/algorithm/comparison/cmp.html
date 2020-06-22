@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2939,17 +2954,17 @@ $('#symbolSearchPane').show();</script>
 					</div>
 				</div><h1>Function <code><a href="../../../std/algorithm/comparison.html">std.algorithm.comparison</a>.cmp</code></h1><p>Performs a lexicographical comparison on two
 <a href="../../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input ranges</a>.
-Iterating <code class="lang-d"><a href="../../std/algorithm/comparison/cmp.html#r1"><span class="pln"><a href="../../../std/algorithm/comparison/cmp.html#r1"><span class="pln">r1</span></a></span></a></code> and <code class="lang-d"><a href="../../std/algorithm/comparison/cmp.html#r2"><span class="pln"><a href="../../../std/algorithm/comparison/cmp.html#r2"><span class="pln">r2</span></a></span></a></code> in lockstep, <code class="lang-d"><span class="pln"><span class="pln">cmp</span></span></code> compares each element
-<code class="lang-d"><span class="pln">e1</span></code> of <code class="lang-d"><a href="../../std/algorithm/comparison/cmp.html#r1"><span class="pln"><a href="../../../std/algorithm/comparison/cmp.html#r1"><span class="pln">r1</span></a></span></a></code> with the corresponding element <code class="lang-d"><span class="pln">e2</span></code> in <code class="lang-d"><a href="../../std/algorithm/comparison/cmp.html#r2"><span class="pln"><a href="../../../std/algorithm/comparison/cmp.html#r2"><span class="pln">r2</span></a></span></a></code>. If one
-of the ranges has been finished, <code class="lang-d"><span class="pln"><span class="pln">cmp</span></span></code> returns a negative value
-if <code class="lang-d"><a href="../../std/algorithm/comparison/cmp.html#r1"><span class="pln"><a href="../../../std/algorithm/comparison/cmp.html#r1"><span class="pln">r1</span></a></span></a></code> has fewer elements than <code class="lang-d"><a href="../../std/algorithm/comparison/cmp.html#r2"><span class="pln"><a href="../../../std/algorithm/comparison/cmp.html#r2"><span class="pln">r2</span></a></span></a></code>, a positive value if <code class="lang-d"><a href="../../std/algorithm/comparison/cmp.html#r1"><span class="pln"><a href="../../../std/algorithm/comparison/cmp.html#r1"><span class="pln">r1</span></a></span></a></code>
-has more elements than <code class="lang-d"><a href="../../std/algorithm/comparison/cmp.html#r2"><span class="pln"><a href="../../../std/algorithm/comparison/cmp.html#r2"><span class="pln">r2</span></a></span></a></code>, and <code class="lang-d"><span class="lit">0</span></code> if the ranges have the same
+Iterating <code class="lang-d"><a href="../../../std/algorithm/comparison/cmp.html#r1"><span class="pln">r1</span></a></code> and <code class="lang-d"><a href="../../../std/algorithm/comparison/cmp.html#r2"><span class="pln">r2</span></a></code> in lockstep, <code class="lang-d"><span class="pln">cmp</span></code> compares each element
+<code class="lang-d"><span class="pln">e1</span></code> of <code class="lang-d"><a href="../../../std/algorithm/comparison/cmp.html#r1"><span class="pln">r1</span></a></code> with the corresponding element <code class="lang-d"><span class="pln">e2</span></code> in <code class="lang-d"><a href="../../../std/algorithm/comparison/cmp.html#r2"><span class="pln">r2</span></a></code>. If one
+of the ranges has been finished, <code class="lang-d"><span class="pln">cmp</span></code> returns a negative value
+if <code class="lang-d"><a href="../../../std/algorithm/comparison/cmp.html#r1"><span class="pln">r1</span></a></code> has fewer elements than <code class="lang-d"><a href="../../../std/algorithm/comparison/cmp.html#r2"><span class="pln">r2</span></a></code>, a positive value if <code class="lang-d"><a href="../../../std/algorithm/comparison/cmp.html#r1"><span class="pln">r1</span></a></code>
+has more elements than <code class="lang-d"><a href="../../../std/algorithm/comparison/cmp.html#r2"><span class="pln">r2</span></a></code>, and <code class="lang-d"><span class="lit">0</span></code> if the ranges have the same
 number of elements.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">cmp</span>(R1, R2)
+				<span class="kwd">auto</span> <span class="pln">cmp</span>(R1, R2)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">R1</span> <span class="pln">r1</span><span class="pun">,</span>

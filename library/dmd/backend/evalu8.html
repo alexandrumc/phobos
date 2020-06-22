@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2947,63 +2962,81 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_modulo" class="public" href="../../dmd/backend/evalu8/_modulo.html">_modulo</a><span class="decoration">(x, y)</span>
+									<a id="_modulo" class="public" href="../../dmd/backend/evalu8/_modulo.html">_modulo</a><span class="tableEntryAnnotation">(x, y)</span>
 								</code>
 							</td>
 							<td>Copy of modulo from fp.c. Here to help with linking problems.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="boolres" class="public" href="../../dmd/backend/evalu8/boolres.html">boolres</a><span class="decoration">(e)</span>
+									<a id="boolres" class="public" href="../../dmd/backend/evalu8/boolres.html">boolres</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>Return boolean result of constant elem.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="el_toldoubled" class="public" href="../../dmd/backend/evalu8/el_toldoubled.html">el_toldoubled</a><span class="decoration">(e)</span>
+									<a id="el_toldoubled" class="public" href="../../dmd/backend/evalu8/el_toldoubled.html">el_toldoubled</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>This is the same as the one in el.c, but uses native D reals
  instead of the soft long double ones.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="evalu8" class="public" href="../../dmd/backend/evalu8/evalu8.html">evalu8</a><span class="decoration">(e, goal)</span>
+									<a id="evalu8" class="public" href="../../dmd/backend/evalu8/evalu8.html">evalu8</a><span class="tableEntryAnnotation">(e, goal)</span>
 								</code>
 							</td>
 							<td>Evaluate a node with only constants as leaves.
  Return with the result.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="iffalse" class="public" href="../../dmd/backend/evalu8/iffalse.html">iffalse</a><span class="decoration">(e)</span>
+									<a id="iffalse" class="public" href="../../dmd/backend/evalu8/iffalse.html">iffalse</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>Return true if expression will always evaluate to false.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="iftrue" class="public" href="../../dmd/backend/evalu8/iftrue.html">iftrue</a><span class="decoration">(e)</span>
+									<a id="iftrue" class="public" href="../../dmd/backend/evalu8/iftrue.html">iftrue</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>Return true if expression will always evaluate to true.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2971,401 +2986,545 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_easy_cleanup" class="public" href="../../etc/c/curl/curl_easy_cleanup.html">curl_easy_cleanup</a><span class="decoration">(curl)</span>
+									<a id="curl_easy_cleanup" class="public" href="../../etc/c/curl/curl_easy_cleanup.html">curl_easy_cleanup</a><span class="tableEntryAnnotation">(curl)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_easy_duphandle" class="public" href="../../etc/c/curl/curl_easy_duphandle.html">curl_easy_duphandle</a><span class="decoration">(curl)</span>
+									<a id="curl_easy_duphandle" class="public" href="../../etc/c/curl/curl_easy_duphandle.html">curl_easy_duphandle</a><span class="tableEntryAnnotation">(curl)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_easy_escape" class="public" href="../../etc/c/curl/curl_easy_escape.html">curl_easy_escape</a><span class="decoration">(handle, string, length)</span>
+									<a id="curl_easy_escape" class="public" href="../../etc/c/curl/curl_easy_escape.html">curl_easy_escape</a><span class="tableEntryAnnotation">(handle, string, length)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_easy_getinfo" class="public" href="../../etc/c/curl/curl_easy_getinfo.html">curl_easy_getinfo</a><span class="decoration">(curl, info)</span>
+									<a id="curl_easy_getinfo" class="public" href="../../etc/c/curl/curl_easy_getinfo.html">curl_easy_getinfo</a><span class="tableEntryAnnotation">(curl, info)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_easy_init" class="public" href="../../etc/c/curl/curl_easy_init.html">curl_easy_init</a><span class="decoration">()</span>
+									<a id="curl_easy_init" class="public" href="../../etc/c/curl/curl_easy_init.html">curl_easy_init</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_easy_pause" class="public" href="../../etc/c/curl/curl_easy_pause.html">curl_easy_pause</a><span class="decoration">(handle, bitmask)</span>
+									<a id="curl_easy_pause" class="public" href="../../etc/c/curl/curl_easy_pause.html">curl_easy_pause</a><span class="tableEntryAnnotation">(handle, bitmask)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_easy_perform" class="public" href="../../etc/c/curl/curl_easy_perform.html">curl_easy_perform</a><span class="decoration">(curl)</span>
+									<a id="curl_easy_perform" class="public" href="../../etc/c/curl/curl_easy_perform.html">curl_easy_perform</a><span class="tableEntryAnnotation">(curl)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_easy_recv" class="public" href="../../etc/c/curl/curl_easy_recv.html">curl_easy_recv</a><span class="decoration">(curl, buffer, buflen, n)</span>
+									<a id="curl_easy_recv" class="public" href="../../etc/c/curl/curl_easy_recv.html">curl_easy_recv</a><span class="tableEntryAnnotation">(curl, buffer, buflen, n)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_easy_reset" class="public" href="../../etc/c/curl/curl_easy_reset.html">curl_easy_reset</a><span class="decoration">(curl)</span>
+									<a id="curl_easy_reset" class="public" href="../../etc/c/curl/curl_easy_reset.html">curl_easy_reset</a><span class="tableEntryAnnotation">(curl)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_easy_send" class="public" href="../../etc/c/curl/curl_easy_send.html">curl_easy_send</a><span class="decoration">(curl, buffer, buflen, n)</span>
+									<a id="curl_easy_send" class="public" href="../../etc/c/curl/curl_easy_send.html">curl_easy_send</a><span class="tableEntryAnnotation">(curl, buffer, buflen, n)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_easy_setopt" class="public" href="../../etc/c/curl/curl_easy_setopt.html">curl_easy_setopt</a><span class="decoration">(curl, option)</span>
+									<a id="curl_easy_setopt" class="public" href="../../etc/c/curl/curl_easy_setopt.html">curl_easy_setopt</a><span class="tableEntryAnnotation">(curl, option)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_easy_strerror" class="public" href="../../etc/c/curl/curl_easy_strerror.html">curl_easy_strerror</a><span class="decoration">()</span>
+									<a id="curl_easy_strerror" class="public" href="../../etc/c/curl/curl_easy_strerror.html">curl_easy_strerror</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_easy_unescape" class="public" href="../../etc/c/curl/curl_easy_unescape.html">curl_easy_unescape</a><span class="decoration">(handle, string, length, outlength)</span>
+									<a id="curl_easy_unescape" class="public" href="../../etc/c/curl/curl_easy_unescape.html">curl_easy_unescape</a><span class="tableEntryAnnotation">(handle, string, length, outlength)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_escape" class="public" href="../../etc/c/curl/curl_escape.html">curl_escape</a><span class="decoration">(string, length)</span>
+									<a id="curl_escape" class="public" href="../../etc/c/curl/curl_escape.html">curl_escape</a><span class="tableEntryAnnotation">(string, length)</span>
 								</code>
 							</td>
 							<td>the previous version:
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_formadd" class="public" href="../../etc/c/curl/curl_formadd.html">curl_formadd</a><span class="decoration">(httppost, last_post)</span>
+									<a id="curl_formadd" class="public" href="../../etc/c/curl/curl_formadd.html">curl_formadd</a><span class="tableEntryAnnotation">(httppost, last_post)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_formfree" class="public" href="../../etc/c/curl/curl_formfree.html">curl_formfree</a><span class="decoration">(form)</span>
+									<a id="curl_formfree" class="public" href="../../etc/c/curl/curl_formfree.html">curl_formfree</a><span class="tableEntryAnnotation">(form)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_formget" class="public" href="../../etc/c/curl/curl_formget.html">curl_formget</a><span class="decoration">(form, arg, append)</span>
+									<a id="curl_formget" class="public" href="../../etc/c/curl/curl_formget.html">curl_formget</a><span class="tableEntryAnnotation">(form, arg, append)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_free" class="public" href="../../etc/c/curl/curl_free.html">curl_free</a><span class="decoration">(p)</span>
+									<a id="curl_free" class="public" href="../../etc/c/curl/curl_free.html">curl_free</a><span class="tableEntryAnnotation">(p)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_getdate" class="public" href="../../etc/c/curl/curl_getdate.html">curl_getdate</a><span class="decoration">(p, unused)</span>
+									<a id="curl_getdate" class="public" href="../../etc/c/curl/curl_getdate.html">curl_getdate</a><span class="tableEntryAnnotation">(p, unused)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_getenv" class="public" href="../../etc/c/curl/curl_getenv.html">curl_getenv</a><span class="decoration">(variable)</span>
+									<a id="curl_getenv" class="public" href="../../etc/c/curl/curl_getenv.html">curl_getenv</a><span class="tableEntryAnnotation">(variable)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_global_cleanup" class="public" href="../../etc/c/curl/curl_global_cleanup.html">curl_global_cleanup</a><span class="decoration">()</span>
+									<a id="curl_global_cleanup" class="public" href="../../etc/c/curl/curl_global_cleanup.html">curl_global_cleanup</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_global_init" class="public" href="../../etc/c/curl/curl_global_init.html">curl_global_init</a><span class="decoration">(flags)</span>
+									<a id="curl_global_init" class="public" href="../../etc/c/curl/curl_global_init.html">curl_global_init</a><span class="tableEntryAnnotation">(flags)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_global_init_mem" class="public" href="../../etc/c/curl/curl_global_init_mem.html">curl_global_init_mem</a><span class="decoration">(flags, m, f, r, s, c)</span>
+									<a id="curl_global_init_mem" class="public" href="../../etc/c/curl/curl_global_init_mem.html">curl_global_init_mem</a><span class="tableEntryAnnotation">(flags, m, f, r, s, c)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_multi_add_handle" class="public" href="../../etc/c/curl/curl_multi_add_handle.html">curl_multi_add_handle</a><span class="decoration">(multi_handle, curl_handle)</span>
+									<a id="curl_multi_add_handle" class="public" href="../../etc/c/curl/curl_multi_add_handle.html">curl_multi_add_handle</a><span class="tableEntryAnnotation">(multi_handle, curl_handle)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_multi_assign" class="public" href="../../etc/c/curl/curl_multi_assign.html">curl_multi_assign</a><span class="decoration">(multi_handle, sockfd, sockp)</span>
+									<a id="curl_multi_assign" class="public" href="../../etc/c/curl/curl_multi_assign.html">curl_multi_assign</a><span class="tableEntryAnnotation">(multi_handle, sockfd, sockp)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_multi_cleanup" class="public" href="../../etc/c/curl/curl_multi_cleanup.html">curl_multi_cleanup</a><span class="decoration">(multi_handle)</span>
+									<a id="curl_multi_cleanup" class="public" href="../../etc/c/curl/curl_multi_cleanup.html">curl_multi_cleanup</a><span class="tableEntryAnnotation">(multi_handle)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_multi_fdset" class="public" href="../../etc/c/curl/curl_multi_fdset.html">curl_multi_fdset</a><span class="decoration">(multi_handle, read_fd_set, write_fd_set, exc_fd_set, max_fd)</span>
+									<a id="curl_multi_fdset" class="public" href="../../etc/c/curl/curl_multi_fdset.html">curl_multi_fdset</a><span class="tableEntryAnnotation">(multi_handle, read_fd_set, write_fd_set, exc_fd_set, max_fd)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_multi_info_read" class="public" href="../../etc/c/curl/curl_multi_info_read.html">curl_multi_info_read</a><span class="decoration">(multi_handle, msgs_in_queue)</span>
+									<a id="curl_multi_info_read" class="public" href="../../etc/c/curl/curl_multi_info_read.html">curl_multi_info_read</a><span class="tableEntryAnnotation">(multi_handle, msgs_in_queue)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_multi_init" class="public" href="../../etc/c/curl/curl_multi_init.html">curl_multi_init</a><span class="decoration">()</span>
+									<a id="curl_multi_init" class="public" href="../../etc/c/curl/curl_multi_init.html">curl_multi_init</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_multi_perform" class="public" href="../../etc/c/curl/curl_multi_perform.html">curl_multi_perform</a><span class="decoration">(multi_handle, running_handles)</span>
+									<a id="curl_multi_perform" class="public" href="../../etc/c/curl/curl_multi_perform.html">curl_multi_perform</a><span class="tableEntryAnnotation">(multi_handle, running_handles)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_multi_remove_handle" class="public" href="../../etc/c/curl/curl_multi_remove_handle.html">curl_multi_remove_handle</a><span class="decoration">(multi_handle, curl_handle)</span>
+									<a id="curl_multi_remove_handle" class="public" href="../../etc/c/curl/curl_multi_remove_handle.html">curl_multi_remove_handle</a><span class="tableEntryAnnotation">(multi_handle, curl_handle)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_multi_setopt" class="public" href="../../etc/c/curl/curl_multi_setopt.html">curl_multi_setopt</a><span class="decoration">(multi_handle, option)</span>
+									<a id="curl_multi_setopt" class="public" href="../../etc/c/curl/curl_multi_setopt.html">curl_multi_setopt</a><span class="tableEntryAnnotation">(multi_handle, option)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_multi_socket" class="public" href="../../etc/c/curl/curl_multi_socket.html">curl_multi_socket</a><span class="decoration">(multi_handle, s, running_handles)</span>
+									<a id="curl_multi_socket" class="public" href="../../etc/c/curl/curl_multi_socket.html">curl_multi_socket</a><span class="tableEntryAnnotation">(multi_handle, s, running_handles)</span>
 								</code>
 							</td>
 							<td>ditto
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_multi_socket_action" class="public" href="../../etc/c/curl/curl_multi_socket_action.html">curl_multi_socket_action</a><span class="decoration">(multi_handle, s, ev_bitmask, running_handles)</span>
+									<a id="curl_multi_socket_action" class="public" href="../../etc/c/curl/curl_multi_socket_action.html">curl_multi_socket_action</a><span class="tableEntryAnnotation">(multi_handle, s, ev_bitmask, running_handles)</span>
 								</code>
 							</td>
 							<td>ditto
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_multi_socket_all" class="public" href="../../etc/c/curl/curl_multi_socket_all.html">curl_multi_socket_all</a><span class="decoration">(multi_handle, running_handles)</span>
+									<a id="curl_multi_socket_all" class="public" href="../../etc/c/curl/curl_multi_socket_all.html">curl_multi_socket_all</a><span class="tableEntryAnnotation">(multi_handle, running_handles)</span>
 								</code>
 							</td>
 							<td>ditto
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_multi_strerror" class="public" href="../../etc/c/curl/curl_multi_strerror.html">curl_multi_strerror</a><span class="decoration">()</span>
+									<a id="curl_multi_strerror" class="public" href="../../etc/c/curl/curl_multi_strerror.html">curl_multi_strerror</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_multi_timeout" class="public" href="../../etc/c/curl/curl_multi_timeout.html">curl_multi_timeout</a><span class="decoration">(multi_handle, milliseconds)</span>
+									<a id="curl_multi_timeout" class="public" href="../../etc/c/curl/curl_multi_timeout.html">curl_multi_timeout</a><span class="tableEntryAnnotation">(multi_handle, milliseconds)</span>
 								</code>
 							</td>
 							<td>This macro below was added in 7.16.3 to push users who recompile to use
    the new curl_multi_socket_action() instead of the old curl_multi_socket()
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_share_cleanup" class="public" href="../../etc/c/curl/curl_share_cleanup.html">curl_share_cleanup</a><span class="decoration">()</span>
+									<a id="curl_share_cleanup" class="public" href="../../etc/c/curl/curl_share_cleanup.html">curl_share_cleanup</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_share_init" class="public" href="../../etc/c/curl/curl_share_init.html">curl_share_init</a><span class="decoration">()</span>
+									<a id="curl_share_init" class="public" href="../../etc/c/curl/curl_share_init.html">curl_share_init</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_share_setopt" class="public" href="../../etc/c/curl/curl_share_setopt.html">curl_share_setopt</a><span class="decoration">(, option)</span>
+									<a id="curl_share_setopt" class="public" href="../../etc/c/curl/curl_share_setopt.html">curl_share_setopt</a><span class="tableEntryAnnotation">(, option)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_share_strerror" class="public" href="../../etc/c/curl/curl_share_strerror.html">curl_share_strerror</a><span class="decoration">()</span>
+									<a id="curl_share_strerror" class="public" href="../../etc/c/curl/curl_share_strerror.html">curl_share_strerror</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_slist_append" class="public" href="../../etc/c/curl/curl_slist_append.html">curl_slist_append</a><span class="decoration">(, )</span>
+									<a id="curl_slist_append" class="public" href="../../etc/c/curl/curl_slist_append.html">curl_slist_append</a><span class="tableEntryAnnotation">(, )</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_slist_free_all" class="public" href="../../etc/c/curl/curl_slist_free_all.html">curl_slist_free_all</a><span class="decoration">()</span>
+									<a id="curl_slist_free_all" class="public" href="../../etc/c/curl/curl_slist_free_all.html">curl_slist_free_all</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_strequal" class="public" href="../../etc/c/curl/curl_strequal.html">curl_strequal</a><span class="decoration">(s1, s2)</span>
+									<a id="curl_strequal" class="public" href="../../etc/c/curl/curl_strequal.html">curl_strequal</a><span class="tableEntryAnnotation">(s1, s2)</span>
 								</code>
 							</td>
 							<td>curl_strequal() and curl_strnequal() are subject for removal in a future
    libcurl, see lib/README.curlx for details
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_strnequal" class="public" href="../../etc/c/curl/curl_strnequal.html">curl_strnequal</a><span class="decoration">(s1, s2, n)</span>
+									<a id="curl_strnequal" class="public" href="../../etc/c/curl/curl_strnequal.html">curl_strnequal</a><span class="tableEntryAnnotation">(s1, s2, n)</span>
 								</code>
 							</td>
 							<td>ditto
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_unescape" class="public" href="../../etc/c/curl/curl_unescape.html">curl_unescape</a><span class="decoration">(string, length)</span>
+									<a id="curl_unescape" class="public" href="../../etc/c/curl/curl_unescape.html">curl_unescape</a><span class="tableEntryAnnotation">(string, length)</span>
 								</code>
 							</td>
 							<td>the previous version
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_version" class="public" href="../../etc/c/curl/curl_version.html">curl_version</a><span class="decoration">()</span>
+									<a id="curl_version" class="public" href="../../etc/c/curl/curl_version.html">curl_version</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="curl_version_info" class="public" href="../../etc/c/curl/curl_version_info.html">curl_version_info</a><span class="decoration">()</span>
+									<a id="curl_version_info" class="public" href="../../etc/c/curl/curl_version_info.html">curl_version_info</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3374,7 +3533,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3387,6 +3546,8 @@ $('#symbolSearchPane').show();</script>
    page for callbacks returning this structure -- some fields are mandatory,
    some others are optional. The FLAG field has special meaning.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3395,6 +3556,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3405,6 +3568,8 @@ $('#symbolSearchPane').show();</script>
 							<td>info about the certificate chain, only for OpenSSL builds. Asked
    for with CURLOPT_CERTINFO / CURLINFO_CERTINFO
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3417,6 +3582,8 @@ $('#symbolSearchPane').show();</script>
    page for callbacks returning this structure -- some fields are mandatory,
    some others are optional. The FLAG field has special meaning.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3426,6 +3593,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>structure to be used as parameter for CURLFORM_ARRAY
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3434,6 +3603,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3442,6 +3613,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3451,6 +3624,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>linked-list structure for the CURLOPT_QUOTE option (and other)
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3461,6 +3636,8 @@ $('#symbolSearchPane').show();</script>
 							<td>addrlen was a socklen_t type before 7.18.0 but it turned really
    ugly and painful on the systems that lack this type
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3469,6 +3646,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3477,7 +3656,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3486,6 +3665,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3494,7 +3675,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3503,6 +3684,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3512,6 +3695,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>the kind of data that is passed to information_callback
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3521,6 +3706,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>return codes for CURLOPT_CHUNK_BGN_FUNCTION
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3530,6 +3717,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>return codes for CURLOPT_CHUNK_END_FUNCTION
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3538,6 +3727,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3546,6 +3737,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3556,6 +3749,8 @@ $('#symbolSearchPane').show();</script>
 							<td>All possible error codes from all sorts of curl functions. Future versions
    may return other values, stay prepared.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3565,6 +3760,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>enumeration of file types
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3573,6 +3770,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3582,6 +3781,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>return codes for FNMATCHFUNCTION
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3591,6 +3792,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Use this for multipart formpost building
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3600,6 +3803,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>parameter for the CURLOPT_FTP_CREATE_MISSING_DIRS option
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3609,6 +3814,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>parameter for the CURLOPT_FTPSSLAUTH option
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3618,6 +3825,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>parameter for the CURLOPT_FTP_FILEMETHOD option
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3627,6 +3836,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>parameter for the CURLOPT_FTP_SSL_CCC option
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3635,6 +3846,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3644,6 +3857,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>These enums are for use with the CURLOPT_HTTP_VERSION option.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3652,6 +3867,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3660,6 +3877,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3668,6 +3887,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3679,6 +3900,8 @@ $('#symbolSearchPane').show();</script>
    name resolves addresses using more than one IP protocol version, this
    option might be handy to force libcurl to use a specific IP version.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3688,6 +3911,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>this is the set of status codes pass in to the callback
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3698,6 +3923,8 @@ $('#symbolSearchPane').show();</script>
 							<td>this is the set of return values expected from the curl_sshkeycallback
    callback
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3708,6 +3935,8 @@ $('#symbolSearchPane').show();</script>
 							<td>points to a zero-terminated string encoded with base64
    if len is zero, otherwise to the "raw" data
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3717,6 +3946,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Different lock access types
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3726,6 +3957,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Setup defines, protos etc for the sharing stuff.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3734,6 +3967,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3742,6 +3977,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3750,6 +3987,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3759,6 +3998,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>These enums are for use with the CURLOPT_NETRC option.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3767,6 +4008,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3775,6 +4018,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3783,6 +4028,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3792,6 +4039,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>CURLPROTO_ defines are for the CURLOPT_*PROTOCOLS options
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3800,6 +4049,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3808,6 +4059,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3819,6 +4072,8 @@ $('#symbolSearchPane').show();</script>
    CURL_REDIR_POST_301 and CURL_REDIR_POST_302 can be bitwise ORed so that
    CURL_REDIR_POST_301 | CURL_REDIR_POST_302 == CURL_REDIR_POST_ALL
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3828,6 +4083,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Public API enums for RTSP requests
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3837,6 +4094,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>These are the return codes for the seek callbacks
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3846,6 +4105,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>seek whence...
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3854,6 +4115,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3864,6 +4127,8 @@ $('#symbolSearchPane').show();</script>
 							<td>pass in a user data pointer used in the lock/unlock callback
    functions
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3872,6 +4137,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3880,6 +4147,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3888,6 +4157,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3896,6 +4167,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3904,6 +4177,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3913,6 +4188,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>parameter for the CURLOPT_USE_SSL option
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3922,6 +4199,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Structures for querying information about the curl library at runtime.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3930,6 +4209,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

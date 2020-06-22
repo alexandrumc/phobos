@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,11 +2952,11 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../../std/algorithm/sorting.html">std.algorithm.sorting</a>.completeSort</code></h1><p>Sorts the random-access range <code class="lang-d"><span class="pln">chain</span><span class="pun">(<a href="../../std/algorithm/sorting/complete_sort.html#lhs"></span><span class="pln"><a href="../../../std/algorithm/sorting/complete_sort.html#lhs"><span class="pln">lhs</span></a></span></a><span class="pun">, <a href="../../std/algorithm/sorting/complete_sort.html#rhs"></span><span class="pln"><a href="../../../std/algorithm/sorting/complete_sort.html#rhs"><span class="pln">rhs</span></a></span></a><span class="pun">)</span></code> according to
-predicate <code class="lang-d"><span class="pln">less</span></code>. The left-hand side of the range <code class="lang-d"><a href="../../std/algorithm/sorting/complete_sort.html#lhs"><span class="pln"><a href="../../../std/algorithm/sorting/complete_sort.html#lhs"><span class="pln">lhs</span></a></span></a></code> is
-assumed to be already sorted; <code class="lang-d"><a href="../../std/algorithm/sorting/complete_sort.html#rhs"><span class="pln"><a href="../../../std/algorithm/sorting/complete_sort.html#rhs"><span class="pln">rhs</span></a></span></a></code> is assumed to be unsorted. The
-exact strategy chosen depends on the relative sizes of <code class="lang-d"><a href="../../std/algorithm/sorting/complete_sort.html#lhs"><span class="pln"><a href="../../../std/algorithm/sorting/complete_sort.html#lhs"><span class="pln">lhs</span></a></span></a></code> and
-<code class="lang-d"><a href="../../std/algorithm/sorting/complete_sort.html#rhs"><span class="pln"><a href="../../../std/algorithm/sorting/complete_sort.html#rhs"><span class="pln">rhs</span></a></span></a></code>.  Performs <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">lhs<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">+ </span><span class="pln">rhs<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">* </span><span class="pln">log</span><span class="pun">(</span><span class="pln">rhs<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code>)</span>
+				</div><h1>Function <code><a href="../../../std/algorithm/sorting.html">std.algorithm.sorting</a>.completeSort</code></h1><p>Sorts the random-access range <code class="lang-d"><span class="pln">chain</span><span class="pun">(<a href="../../../std/algorithm/sorting/complete_sort.html#lhs"></span><span class="pln">lhs</span></a><span class="pun">, <a href="../../../std/algorithm/sorting/complete_sort.html#rhs"></span><span class="pln">rhs</span></a><span class="pun">)</span></code> according to
+predicate <code class="lang-d"><span class="pln">less</span></code>. The left-hand side of the range <code class="lang-d"><a href="../../../std/algorithm/sorting/complete_sort.html#lhs"><span class="pln">lhs</span></a></code> is
+assumed to be already sorted; <code class="lang-d"><a href="../../../std/algorithm/sorting/complete_sort.html#rhs"><span class="pln">rhs</span></a></code> is assumed to be unsorted. The
+exact strategy chosen depends on the relative sizes of <code class="lang-d"><a href="../../../std/algorithm/sorting/complete_sort.html#lhs"><span class="pln">lhs</span></a></code> and
+<code class="lang-d"><a href="../../../std/algorithm/sorting/complete_sort.html#rhs"><span class="pln">rhs</span></a></code>.  Performs <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">lhs<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">+ </span><span class="pln">rhs<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">* </span><span class="pln">log</span><span class="pun">(</span><span class="pln">rhs<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code>)</span>
 (best case) to <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pun">(</span><span class="pln">lhs<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">+ </span><span class="pln">rhs<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">) * </span><span class="pln">log</span><span class="pun">(</span><span class="pln">lhs<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">+
 </span><span class="pln">rhs<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code>)</span> (worst-case) evaluations of <code class="lang-d"><span class="pln">swap</span></code>.
 </p>

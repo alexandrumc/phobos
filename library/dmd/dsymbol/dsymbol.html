@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/dmd/blob/master/src/dmd/dsymbol.d#L225">
+							<a href="https://github.com/dlang/dmd/blob/master/src/dmd/dsymbol.d#L226">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/dmd/edit/master/src/dmd/dsymbol.d#L225">
+							<a href="https://github.com/dlang/dmd/edit/master/src/dmd/dsymbol.d#L226">
 								Improve this page
 							</a>
 							<div>
@@ -2974,6 +2989,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.accept.html" class="public">
 									<code>accept</code>
 								</a>
+								<span class="tableEntryAnnotation">(v)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -2982,6 +2998,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.add_comment.html" class="public">
 									<code>addComment</code>
 								</a>
+								<span class="tableEntryAnnotation">(comment)</span>
 							</td>
 							<td>Add documentation comment to Dsymbol.
  Ignore NULL comments.
@@ -2992,6 +3009,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.array_syntax_copy.html" class="public">
 									<code>arraySyntaxCopy</code>
 								</a>
+								<span class="tableEntryAnnotation">(a)</span>
 							</td>
 							<td>Do syntax copy of an array of Dsymbol's.
 </td>
@@ -3001,8 +3019,9 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.follow_instantiation_context.html" class="public">
 									<code>followInstantiationContext</code>
 								</a>
+								<span class="tableEntryAnnotation">(p1, p2)</span>
 							</td>
-							<td>Returns true if any of the symbols <code class="lang-d"><a href="../../dmd/dsymbol/dsymbol.follow_instantiation_context.html#p1"><span class="pln"><a href="../../dmd/dsymbol/dsymbol.follow_instantiation_context.html#p1"><span class="pln">p1</span></a></span></a></code> or <code class="lang-d"><a href="../../dmd/dsymbol/dsymbol.follow_instantiation_context.html#p2"><span class="pln"><a href="../../dmd/dsymbol/dsymbol.follow_instantiation_context.html#p2"><span class="pln">p2</span></a></span></a></code> resides in the enclosing
+							<td>Returns true if any of the symbols <code class="lang-d"><a href="../../dmd/dsymbol/dsymbol.follow_instantiation_context.html#p1"><span class="pln">p1</span></a></code> or <code class="lang-d"><a href="../../dmd/dsymbol/dsymbol.follow_instantiation_context.html#p2"><span class="pln">p2</span></a></code> resides in the enclosing
  instantiation scope of <code class="lang-d"><span class="kwd">this</span></code>.
 </td>
 						</tr>
@@ -3011,6 +3030,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.get_access_module.html" class="public">
 									<code>getAccessModule</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Determine which Module a Dsymbol is in, as far as access rights go.
 </td>
@@ -3020,6 +3040,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.get_module.html" class="public">
 									<code>getModule</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Determine which Module a Dsymbol is in.
 </td>
@@ -3029,6 +3050,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.has_pointers.html" class="public">
 									<code>hasPointers</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Is Dsymbol a variable that contains pointers?
 </td>
@@ -3038,6 +3060,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.in_non_root.html" class="public">
 									<code>inNonRoot</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns true if this symbol is defined in a non-root module without instantiation.
 </td>
@@ -3047,6 +3070,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.is_member.html" class="public">
 									<code>isMember</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns an AggregateDeclaration when toParent() is that.
 </td>
@@ -3056,6 +3080,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.is_member2.html" class="public">
 									<code>isMember2</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns an AggregateDeclaration when toParent2() is that.
 </td>
@@ -3065,6 +3090,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.is_member_decl.html" class="public">
 									<code>isMemberDecl</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns an AggregateDeclaration when toParentDecl() is that.
 </td>
@@ -3074,6 +3100,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.is_member_local.html" class="public">
 									<code>isMemberLocal</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns an AggregateDeclaration when toParentLocal() is that.
 </td>
@@ -3083,6 +3110,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.one_member.html" class="public">
 									<code>oneMember</code>
 								</a>
+								<span class="tableEntryAnnotation">(ps, ident)</span>
 							</td>
 							<td>Determine if this symbol is only one.
 </td>
@@ -3092,6 +3120,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.one_members.html" class="public">
 									<code>oneMembers</code>
 								</a>
+								<span class="tableEntryAnnotation">(members, ps, ident)</span>
 							</td>
 							<td>Same as Dsymbol::oneMember(), but look at an array of Dsymbols.
 </td>
@@ -3101,6 +3130,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.past_mixin.html" class="public">
 									<code>pastMixin</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td><code class="lang-d"><span class="pln">pastMixin</span></code> returns the enclosing symbol if this is a template mixin.
 </td>
@@ -3110,6 +3140,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.prot.html" class="public">
 									<code>prot</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3118,6 +3149,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.search.html" class="public">
 									<code>search</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc, ident, flags)</span>
 							</td>
 							<td>Search for ident as member of s.
 </td>
@@ -3127,9 +3159,10 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.search_x.html" class="public">
 									<code>searchX</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc, sc, id, flags)</span>
 							</td>
 							<td>Search for identifier id as a member of <code class="lang-d"><span class="kwd">this</span></code>.
- <code class="lang-d"><a href="../../dmd/dsymbol/dsymbol.search_x.html#id"><span class="pln"><a href="../../dmd/dsymbol/dsymbol.search_x.html#id"><span class="pln">id</span></a></span></a></code> may be a template instance.
+ <code class="lang-d"><a href="../../dmd/dsymbol/dsymbol.search_x.html#id"><span class="pln">id</span></a></code> may be a template instance.
 </td>
 						</tr>
 						<tr>
@@ -3137,6 +3170,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.set_scope.html" class="public">
 									<code>setScope</code>
 								</a>
+								<span class="tableEntryAnnotation">(sc)</span>
 							</td>
 							<td>Set scope for future semantic analysis so we can
  deal better with forward references.
@@ -3147,6 +3181,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.size.html" class="public">
 									<code>size</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3155,6 +3190,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.syntax_copy.html" class="public">
 									<code>syntaxCopy</code>
 								</a>
+								<span class="tableEntryAnnotation">(s)</span>
 							</td>
 							<td>Copy the syntax.
  Used for template instantiations.
@@ -3166,6 +3202,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.to_alias.html" class="public">
 									<code>toAlias</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>If this symbol is really an alias for another,
  return that other.
@@ -3177,6 +3214,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.to_alias2.html" class="public">
 									<code>toAlias2</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Resolve recursive tuple expansion in eponymous template.
 </td>
@@ -3186,6 +3224,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.to_parent.html" class="public">
 									<code>toParent</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td><code class="lang-d"><span class="pln">parent</span></code> field returns a lexically enclosing scope symbol this is a member of.
 </td>
@@ -3195,6 +3234,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.to_parent2.html" class="public">
 									<code>toParent2</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td><code class="lang-d"><span class="pln">parent</span></code> field returns a lexically enclosing scope symbol this is a member of.
 </td>
@@ -3204,6 +3244,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.to_parent_decl.html" class="public">
 									<code>toParentDecl</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td><code class="lang-d"><span class="pln">parent</span></code> field returns a lexically enclosing scope symbol this is a member of.
 </td>
@@ -3213,6 +3254,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.to_parent_local.html" class="public">
 									<code>toParentLocal</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td><code class="lang-d"><span class="pln">parent</span></code> field returns a lexically enclosing scope symbol this is a member of.
 </td>
@@ -3222,9 +3264,10 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/dsymbol/dsymbol.to_parent_p.html" class="public">
 									<code>toParentP</code>
 								</a>
+								<span class="tableEntryAnnotation">(p1, p2)</span>
 							</td>
 							<td>Returns the declaration scope scope of <code class="lang-d"><span class="kwd">this</span></code> unless any of the symbols
- <code class="lang-d"><a href="../../dmd/dsymbol/dsymbol.to_parent_p.html#p1"><span class="pln"><a href="../../dmd/dsymbol/dsymbol.to_parent_p.html#p1"><span class="pln">p1</span></a></span></a></code> or <code class="lang-d"><a href="../../dmd/dsymbol/dsymbol.to_parent_p.html#p2"><span class="pln"><a href="../../dmd/dsymbol/dsymbol.to_parent_p.html#p2"><span class="pln">p2</span></a></span></a></code> resides in its enclosing instantiation scope then the
+ <code class="lang-d"><a href="../../dmd/dsymbol/dsymbol.to_parent_p.html#p1"><span class="pln">p1</span></a></code> or <code class="lang-d"><a href="../../dmd/dsymbol/dsymbol.to_parent_p.html#p2"><span class="pln">p2</span></a></code> resides in its enclosing instantiation scope then the
  latter is returned.
 </td>
 						</tr>
@@ -3233,6 +3276,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.factory.html" class="public inherited">
 									<code>factory</code>
 								</a>
+								<span class="tableEntryAnnotation">(classname)</span>
 							</td>
 							<td>Create instance of class specified by the fully qualified name
  classname.
@@ -3245,6 +3289,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.op_cmp.html" class="public inherited">
 									<code>opCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Compare with another Object obj.
 </td>
@@ -3254,6 +3299,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.op_equals.html" class="public inherited">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Test whether <code class="lang-d"><span class="kwd">this</span></code> is equal to <code class="lang-d"><a href="../../object/object.op_equals.html#o"><span class="pln">o</span></a></code>.
  The default implementation only compares by identity (using the <code class="lang-d"><span class="kwd">is</span></code> operator).
@@ -3265,6 +3311,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.to_hash.html" class="public inherited">
 									<code>toHash</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Compute hash function for Object.
 </td>
@@ -3274,6 +3321,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/root/rootobject/root_object.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3282,6 +3330,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Convert Object to a human readable string.
 </td>

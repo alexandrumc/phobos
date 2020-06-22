@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2954,9 +2969,9 @@ $('#symbolSearchPane').show();</script>
 					</ul>
 				</nav><h2 id="0">Function multiwayMerge</h2><p>Merges multiple sets. The input sets are passed as a
 range of ranges and each is assumed to be sorted by <code class="lang-d"><span class="pln">less</span></code>. Computation is done lazily, one union element at a time. The
-complexity of one <code class="lang-d"><span class="pln"><a href="../../std/algorithm/setops/multiway_merge.pop_front.html"><span class="pln">popFront</span></a></span></code> operation is <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">log</span><span class="pun">(</span><span class="pln">ror<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code>)</span>. However, the length of <code class="lang-d"><a href="../../std/algorithm/setops/multiway_merge.html#ror"><span class="pln"><a href="../../../std/algorithm/setops/multiway_merge.html#ror"><span class="pln">ror</span></a></span></a></code> decreases as ranges
+complexity of one <code class="lang-d"><span class="pln">popFront</span></code> operation is <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">log</span><span class="pun">(</span><span class="pln">ror<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code>)</span>. However, the length of <code class="lang-d"><a href="../../../std/algorithm/setops/multiway_merge.html#ror"><span class="pln">ror</span></a></code> decreases as ranges
 in it are exhausted, so the complexity of a full pass through <code class="lang-d"><a href="../../../std/algorithm/setops/multiway_merge.html"><span class="typ">MultiwayMerge</span></a></code> is dependent on the distribution of the lengths of ranges
-contained within <code class="lang-d"><a href="../../std/algorithm/setops/multiway_merge.html#ror"><span class="pln"><a href="../../../std/algorithm/setops/multiway_merge.html#ror"><span class="pln">ror</span></a></span></a></code>. If all ranges have the same length <code class="lang-d"><span class="pln">n</span></code>
+contained within <code class="lang-d"><a href="../../../std/algorithm/setops/multiway_merge.html#ror"><span class="pln">ror</span></a></code>. If all ranges have the same length <code class="lang-d"><span class="pln">n</span></code>
 (worst case scenario), the complexity of a full pass through <code class="lang-d"><a href="../../../std/algorithm/setops/multiway_merge.html"><span class="typ">MultiwayMerge</span></a></code> is <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">n </span><span class="pun">* </span><span class="pln">ror<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">* </span><span class="pln">log</span><span class="pun">(</span><span class="pln">ror<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code>)</span>, i.e., <code class="lang-d"><span class="pln">log</span><span class="pun">(</span><span class="pln">ror<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code> times worse than just spanning all ranges in
 turn. The output comes sorted (unstably) by <code class="lang-d"><span class="pln">less</span></code>.
 </p>
@@ -3041,9 +3056,9 @@ duplicate in between calls).
 </section>
 <h2 id="1">Struct MultiwayMerge</h2><p>Merges multiple sets. The input sets are passed as a
 range of ranges and each is assumed to be sorted by <code class="lang-d"><span class="pln">less</span></code>. Computation is done lazily, one union element at a time. The
-complexity of one <code class="lang-d"><span class="pln"><a href="../../std/algorithm/setops/multiway_merge.pop_front.html"><span class="pln"><a href="../../../std/algorithm/setops/multiway_merge.pop_front.html"><span class="pln">popFront</span></a></span></a></span></code> operation is <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">log</span><span class="pun">(</span><span class="pln">ror<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code>)</span>. However, the length of <code class="lang-d"><a href="../../std/algorithm/setops/multiway_merge.html#ror"><span class="pln"><a href="../../../std/algorithm/setops/multiway_merge.html#ror"><span class="pln">ror</span></a></span></a></code> decreases as ranges
+complexity of one <code class="lang-d"><a href="../../../std/algorithm/setops/multiway_merge.pop_front.html"><span class="pln">popFront</span></a></code> operation is <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">log</span><span class="pun">(</span><span class="pln">ror<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code>)</span>. However, the length of <code class="lang-d"><span class="pln">ror</span></code> decreases as ranges
 in it are exhausted, so the complexity of a full pass through <code class="lang-d"><span class="typ">MultiwayMerge</span></code> is dependent on the distribution of the lengths of ranges
-contained within <code class="lang-d"><a href="../../std/algorithm/setops/multiway_merge.html#ror"><span class="pln"><a href="../../../std/algorithm/setops/multiway_merge.html#ror"><span class="pln">ror</span></a></span></a></code>. If all ranges have the same length <code class="lang-d"><span class="pln">n</span></code>
+contained within <code class="lang-d"><span class="pln">ror</span></code>. If all ranges have the same length <code class="lang-d"><span class="pln">n</span></code>
 (worst case scenario), the complexity of a full pass through <code class="lang-d"><span class="typ">MultiwayMerge</span></code> is <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">n </span><span class="pun">* </span><span class="pln">ror<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">* </span><span class="pln">log</span><span class="pun">(</span><span class="pln">ror<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code>)</span>, i.e., <code class="lang-d"><span class="pln">log</span><span class="pun">(</span><span class="pln">ror<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code> times worse than just spanning all ranges in
 turn. The output comes sorted (unstably) by <code class="lang-d"><span class="pln">less</span></code>.
 </p>
@@ -3060,9 +3075,9 @@ the ranges passed as input. This means that all elements (duplicates
 included) are transferred to the resulting range.
 </p>
 
-<p>For backward compatibility, <code class="lang-d"><span class="pln"><a href="../../../std/algorithm/setops/multiway_merge.html"><span class="pln">multiwayMerge</span></a></span></code> is available under
-the name <code class="lang-d"><span class="pln">nWayUnion</span></code> and <code class="lang-d"><a href="../../../std/algorithm/setops/multiway_merge.html"><span class="typ"><span class="typ">MultiwayMerge</span></span></a></code> under the name of <code class="lang-d"><span class="typ">NWayUnion</span></code> .
-Future code should use <code class="lang-d"><span class="pln"><a href="../../../std/algorithm/setops/multiway_merge.html"><span class="pln">multiwayMerge</span></a></span></code> and <code class="lang-d"><a href="../../../std/algorithm/setops/multiway_merge.html"><span class="typ"><span class="typ">MultiwayMerge</span></span></a></code> as <code class="lang-d"><span class="pln">nWayUnion</span></code>
+<p>For backward compatibility, <code class="lang-d"><a href="../../../std/algorithm/setops/multiway_merge.html"><span class="pln">multiwayMerge</span></a></code> is available under
+the name <code class="lang-d"><span class="pln">nWayUnion</span></code> and <code class="lang-d"><span class="typ">MultiwayMerge</span></code> under the name of <code class="lang-d"><span class="typ">NWayUnion</span></code> .
+Future code should use <code class="lang-d"><a href="../../../std/algorithm/setops/multiway_merge.html"><span class="pln">multiwayMerge</span></a></code> and <code class="lang-d"><span class="typ">MultiwayMerge</span></code> as <code class="lang-d"><span class="pln">nWayUnion</span></code>
 and <code class="lang-d"><span class="typ">NWayUnion</span></code> will be deprecated.
 </p>
 </section>
@@ -3078,6 +3093,7 @@ and <code class="lang-d"><span class="typ">NWayUnion</span></code> will be depre
 								<a href="../../../std/algorithm/setops/multiway_merge.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(ror)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3114,6 +3130,7 @@ and <code class="lang-d"><span class="typ">NWayUnion</span></code> will be depre
 								<a href="../../../std/algorithm/setops/multiway_merge.comp_front.html" class="public">
 									<code>compFront</code>
 								</a>
+								<span class="tableEntryAnnotation">(a, b)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3122,6 +3139,7 @@ and <code class="lang-d"><span class="typ">NWayUnion</span></code> will be depre
 								<a href="../../../std/algorithm/setops/multiway_merge.pop_front.html" class="public">
 									<code>popFront</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3134,15 +3152,15 @@ and <code class="lang-d"><span class="typ">NWayUnion</span></code> will be depre
 </table>
 </section>
 <section><h3>Returns</h3>
-<p>A range of the union of the ranges in <code class="lang-d"><a href="../../../std/algorithm/setops/multiway_merge.html#ror"><span class="pln">ror</span></a></code>.
+<p>A range of the union of the ranges in <code class="lang-d"><span class="pln">ror</span></code>.
 </p>
 </section>
 <section><h3>Warning</h3>
-<p>Because <code class="lang-d"><a href="../../../std/algorithm/setops/multiway_merge.html"><span class="typ"><span class="typ">MultiwayMerge</span></span></a></code> does not allocate extra memory, it
-will leave <code class="lang-d"><a href="../../../std/algorithm/setops/multiway_merge.html#ror"><span class="pln">ror</span></a></code> modified. Namely, <code class="lang-d"><a href="../../../std/algorithm/setops/multiway_merge.html"><span class="typ"><span class="typ">MultiwayMerge</span></span></a></code> assumes ownership
-of <code class="lang-d"><a href="../../../std/algorithm/setops/multiway_merge.html#ror"><span class="pln">ror</span></a></code> and discretionarily swaps and advances elements of it. If
-you want <code class="lang-d"><a href="../../../std/algorithm/setops/multiway_merge.html#ror"><span class="pln">ror</span></a></code> to preserve its contents after the call, you may
-want to pass a duplicate to <code class="lang-d"><a href="../../../std/algorithm/setops/multiway_merge.html"><span class="typ"><span class="typ">MultiwayMerge</span></span></a></code> (and perhaps cache the
+<p>Because <code class="lang-d"><span class="typ">MultiwayMerge</span></code> does not allocate extra memory, it
+will leave <code class="lang-d"><span class="pln">ror</span></code> modified. Namely, <code class="lang-d"><span class="typ">MultiwayMerge</span></code> assumes ownership
+of <code class="lang-d"><span class="pln">ror</span></code> and discretionarily swaps and advances elements of it. If
+you want <code class="lang-d"><span class="pln">ror</span></code> to preserve its contents after the call, you may
+want to pass a duplicate to <code class="lang-d"><span class="typ">MultiwayMerge</span></code> (and perhaps cache the
 duplicate in between calls).
 </p>
 </section>

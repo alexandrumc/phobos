@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,8 +2952,8 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../../std/algorithm/sorting.html">std.algorithm.sorting</a>.ordered</code></h1><p>Like <code class="lang-d"><a href="../../std/algorithm/sorting/is_sorted.html"><span class="pln"><a href="../../std/algorithm/sorting/is_sorted.html"><span class="pln"><a href="../../../std/algorithm/sorting/is_sorted.html"><span class="pln"><a href="../../../std/algorithm/sorting/is_sorted.html"><span class="pln">isSorted</span></a></span></a></span></a></span></a></code>, returns <code class="lang-d"><span class="kwd">true</span></code> if the given <code class="lang-d"><a href="../../std/algorithm/sorting/ordered.html#values"><span class="pln"><a href="../../std/algorithm/sorting/strictly_ordered.html#values"><span class="pln"><a href="../../../std/algorithm/sorting/strictly_ordered.html#values"><span class="pln"><a href="../../../std/algorithm/sorting/ordered.html#values"><span class="pln">values</span></a></span></a></span></a></span></a></code> are ordered
-according to the comparison operation <code class="lang-d"><span class="pln">less</span></code>. Unlike <code class="lang-d"><a href="../../std/algorithm/sorting/is_sorted.html"><span class="pln"><a href="../../std/algorithm/sorting/is_sorted.html"><span class="pln"><a href="../../../std/algorithm/sorting/is_sorted.html"><span class="pln"><a href="../../../std/algorithm/sorting/is_sorted.html"><span class="pln">isSorted</span></a></span></a></span></a></span></a></code>, takes values
+				</div><h1>Function <code><a href="../../../std/algorithm/sorting.html">std.algorithm.sorting</a>.ordered</code></h1><p>Like <code class="lang-d"><a href="../../../std/algorithm/sorting/is_sorted.html"><span class="pln">isSorted</span></a></code>, returns <code class="lang-d"><span class="kwd">true</span></code> if the given <code class="lang-d"><a href="../../../std/algorithm/sorting/ordered.html#values"><span class="pln">values</span></a></code> are ordered
+according to the comparison operation <code class="lang-d"><span class="pln">less</span></code>. Unlike <code class="lang-d"><a href="../../../std/algorithm/sorting/is_sorted.html"><span class="pln">isSorted</span></a></code>, takes values
 directly instead of structured in a range.
 </p>
 				<div class="prototype">
@@ -2955,9 +2970,9 @@ directly instead of structured in a range.
 						</div>
 					</code>
 				</div>
-				<section><p><code class="lang-d"><a href="../../../std/algorithm/sorting/ordered.html"><span class="pln"><span class="pln">ordered</span></span></a></code> allows repeated values, e.g. <code class="lang-d"><a href="../../../std/algorithm/sorting/ordered.html"><span class="pln"><span class="pln">ordered</span></span></a><span class="pun">(</span><span class="lit">1</span><span class="pun">, </span><span class="lit">1</span><span class="pun">, </span><span class="lit">2</span><span class="pun">)</span></code> is <code class="lang-d"><span class="kwd">true</span></code>. To verify
-that the values are ordered strictly monotonically, use <code class="lang-d"><span class="pln"><a href="../../../std/algorithm/sorting/strictly_ordered.html"><span class="pln">strictlyOrdered</span></a></span></code>;
-<code class="lang-d"><span class="pln"><a href="../../../std/algorithm/sorting/strictly_ordered.html"><span class="pln">strictlyOrdered</span></a></span><span class="pun">(</span><span class="lit">1</span><span class="pun">, </span><span class="lit">1</span><span class="pun">, </span><span class="lit">2</span><span class="pun">)</span></code> is <code class="lang-d"><span class="kwd">false</span></code>.
+				<section><p><code class="lang-d"><span class="pln">ordered</span></code> allows repeated values, e.g. <code class="lang-d"><span class="pln">ordered</span><span class="pun">(</span><span class="lit">1</span><span class="pun">, </span><span class="lit">1</span><span class="pun">, </span><span class="lit">2</span><span class="pun">)</span></code> is <code class="lang-d"><span class="kwd">true</span></code>. To verify
+that the values are ordered strictly monotonically, use <code class="lang-d"><a href="../../../std/algorithm/sorting/strictly_ordered.html"><span class="pln">strictlyOrdered</span></a></code>;
+<code class="lang-d"><a href="../../../std/algorithm/sorting/strictly_ordered.html"><span class="pln">strictlyOrdered</span></a><span class="pun">(</span><span class="lit">1</span><span class="pun">, </span><span class="lit">1</span><span class="pun">, </span><span class="lit">2</span><span class="pun">)</span></code> is <code class="lang-d"><span class="kwd">false</span></code>.
 </p>
 
 <p>With either function, the predicate must be a strict ordering. For example,
@@ -2973,8 +2988,8 @@ assertions.
 </table>
 </section>
 <section><h2>Returns</h2>
-<p><code class="lang-d"><span class="kwd">true</span></code> if the values are ordered; <code class="lang-d"><a href="../../../std/algorithm/sorting/ordered.html"><span class="pln"><span class="pln">ordered</span></span></a></code> allows for duplicates,
-    <code class="lang-d"><span class="pln"><a href="../../../std/algorithm/sorting/strictly_ordered.html"><span class="pln">strictlyOrdered</span></a></span></code> does not.
+<p><code class="lang-d"><span class="kwd">true</span></code> if the values are ordered; <code class="lang-d"><span class="pln">ordered</span></code> allows for duplicates,
+    <code class="lang-d"><a href="../../../std/algorithm/sorting/strictly_ordered.html"><span class="pln">strictlyOrdered</span></a></code> does not.
 </p>
 </section>
 <section><h2>Example</h2>

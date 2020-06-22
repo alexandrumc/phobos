@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2954,45 +2969,57 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="inlineCostExpression" class="public" href="../dmd/inlinecost/inline_cost_expression.html">inlineCostExpression</a><span class="decoration">(e)</span>
+									<a id="inlineCostExpression" class="public" href="../dmd/inlinecost/inline_cost_expression.html">inlineCostExpression</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>Determine cost of inlining Expression
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="inlineCostFunction" class="public" href="../dmd/inlinecost/inline_cost_function.html">inlineCostFunction</a><span class="decoration">(fd, hasthis, hdrscan)</span>
+									<a id="inlineCostFunction" class="public" href="../dmd/inlinecost/inline_cost_function.html">inlineCostFunction</a><span class="tableEntryAnnotation">(fd, hasthis, hdrscan)</span>
 								</code>
 							</td>
 							<td>Determine cost of inlining function
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isInlinableNestedAggregate" class="public" href="../dmd/inlinecost/is_inlinable_nested_aggregate.html">isInlinableNestedAggregate</a><span class="decoration">(e)</span>
+									<a id="isInlinableNestedAggregate" class="public" href="../dmd/inlinecost/is_inlinable_nested_aggregate.html">isInlinableNestedAggregate</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>Indicates if a nested aggregate prevents or not a function to be inlined.
  It's used to compute the cost but also to avoid a copy of the aggregate
  while the inliner processes.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="tooCostly" class="public" href="../dmd/inlinecost/too_costly.html">tooCostly</a><span class="decoration">(cost)</span>
+									<a id="tooCostly" class="public" href="../dmd/inlinecost/too_costly.html">tooCostly</a><span class="tableEntryAnnotation">(cost)</span>
 								</code>
 							</td>
 							<td>Determine if too expensive to inline.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

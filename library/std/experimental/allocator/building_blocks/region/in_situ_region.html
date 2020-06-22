@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,7 +2952,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Struct <code><a href="../../../../../std/experimental/allocator/building_blocks/region.html">std.experimental.allocator.building_blocks.region</a>.InSituRegion</code></h1><p><code class="lang-d"><span class="typ"><span class="typ">InSituRegion</span></span></code> is a convenient region that carries its storage within itself
+				</div><h1>Struct <code><a href="../../../../../std/experimental/allocator/building_blocks/region.html">std.experimental.allocator.building_blocks.region</a>.InSituRegion</code></h1><p><code class="lang-d"><span class="typ">InSituRegion</span></code> is a convenient region that carries its storage within itself
 (in the form of a statically-sized array).
 </p>
 				<div class="prototype">
@@ -2972,8 +2987,9 @@ hot memory is used first.
 								<a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.aligned_allocate.html" class="public">
 									<code>alignedAllocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(n, a)</span>
 							</td>
-							<td>As above, but the memory allocated is aligned at <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.aligned_allocate.html#a"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.aligned_allocate.html#a"><span class="pln">a</span></a></span></a></code> bytes.
+							<td>As above, but the memory allocated is aligned at <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.aligned_allocate.html#a"><span class="pln">a</span></a></code> bytes.
 </td>
 						</tr>
 						<tr>
@@ -2981,6 +2997,7 @@ hot memory is used first.
 								<a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
 							<td>Allocates <code class="lang-d"><span class="pln">bytes</span></code> and returns them, or <code class="lang-d"><span class="kwd">null</span></code> if the region cannot
     accommodate the request. For efficiency reasons, if <code class="lang-d"><span class="pln">bytes </span><span class="pun">== </span><span class="lit">0</span></code> the
@@ -2992,6 +3009,7 @@ hot memory is used first.
 								<a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.allocate_all.html" class="public">
 									<code>allocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Allocates all memory available with this allocator.
 </td>
@@ -3001,6 +3019,7 @@ hot memory is used first.
 								<a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.available.html" class="public">
 									<code>available</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Nonstandard function that returns the bytes available for allocation.
 </td>
@@ -3010,11 +3029,12 @@ hot memory is used first.
 								<a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
-							<td>Deallocates <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.deallocate.html#b"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.deallocate.html#b"><span class="pln">b</span></a></span></a></code>. This works only if <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.deallocate.html#b"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.deallocate.html#b"><span class="pln">b</span></a></span></a></code> was obtained as the last call
-    to <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.allocate.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.allocate.html"><span class="pln">allocate</span></a></span></a></code>; otherwise (i.e. another allocation has occurred since) it
-    does nothing. This semantics is tricky and therefore <code class="lang-d"><span class="pln"><span class="pln">deallocate</span></span></code> is
-    defined only if <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/region/region.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/region/region.html"><span class="typ">Region</span></a></span></a></code> is instantiated with <code class="lang-d"><span class="typ">Yes<wbr/></span><span class="pun">.</span><span class="pln">defineDeallocate</span></code>
+							<td>Deallocates <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.deallocate.html#b"><span class="pln">b</span></a></code>. This works only if <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.deallocate.html#b"><span class="pln">b</span></a></code> was obtained as the last call
+    to <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.allocate.html"><span class="pln">allocate</span></a></code>; otherwise (i.e. another allocation has occurred since) it
+    does nothing. This semantics is tricky and therefore <code class="lang-d"><span class="pln">deallocate</span></code> is
+    defined only if <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/region/region.html"><span class="typ">Region</span></a></code> is instantiated with <code class="lang-d"><span class="typ">Yes<wbr/></span><span class="pun">.</span><span class="pln">defineDeallocate</span></code>
     as the third template argument.
 </td>
 						</tr>
@@ -3023,6 +3043,7 @@ hot memory is used first.
 								<a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.deallocate_all.html" class="public">
 									<code>deallocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Deallocates all memory allocated with this allocator.
 </td>
@@ -3032,6 +3053,7 @@ hot memory is used first.
 								<a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.expand.html" class="public">
 									<code>expand</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, delta)</span>
 							</td>
 							<td>Expands an allocated block in place. Expansion will succeed only if the
     block is the last allocated.
@@ -3042,8 +3064,9 @@ hot memory is used first.
 								<a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.owns.html" class="public">
 									<code>owns</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
-							<td>Returns <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">yes</span></code> if <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.owns.html#b"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.owns.html#b"><span class="pln">b</span></a></span></a></code> is the result of a previous allocation,
+							<td>Returns <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">yes</span></code> if <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/region/in_situ_region.owns.html#b"><span class="pln">b</span></a></code> is the result of a previous allocation,
     <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">no</span></code> otherwise.
 </td>
 						</tr>

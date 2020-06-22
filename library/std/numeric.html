@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2947,44 +2962,53 @@ header in Alexander Stepanov's <a href="https://en.wikipedia.org/wiki/Standard_T
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cosineSimilarity" class="public" href="../std/numeric/cosine_similarity.html">cosineSimilarity</a><span class="decoration">(a, b)</span>
+									<a id="cosineSimilarity" class="public" href="../std/numeric/cosine_similarity.html">cosineSimilarity</a><span class="tableEntryAnnotation">(a, b)</span>
 								</code>
 							</td>
 							<td>Computes the <a href="https://en.wikipedia.org/wiki/Cosine_similarity">cosine similarity</a> of input ranges <code class="lang-d"><a href="../std/numeric/cosine_similarity.html#a"><span class="pln">a</span></a></code> and <code class="lang-d"><a href="../std/numeric/cosine_similarity.html#b"><span class="pln">b</span></a></code>. The two ranges must have the same length. If both ranges define
 length, the check is done once; otherwise, it is done at each
 iteration. If either range has all-zero elements, return 0.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="decimalToFactorial" class="public" href="../std/numeric/decimal_to_factorial.html">decimalToFactorial</a><span class="decoration">(decimal, fac)</span>
+									<a id="decimalToFactorial" class="public" href="../std/numeric/decimal_to_factorial.html">decimalToFactorial</a><span class="tableEntryAnnotation">(decimal, fac)</span>
 								</code>
 							</td>
 							<td>This function transforms <code class="lang-d"><a href="../std/numeric/decimal_to_factorial.html#decimal"><span class="pln">decimal</span></a></code> value into a value in the factorial number
 system stored in <code class="lang-d"><a href="../std/numeric/decimal_to_factorial.html#fac"><span class="pln">fac</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dotProduct" class="public" href="../std/numeric/dot_product.html">dotProduct</a><span class="decoration">(a, b)</span>
+									<a id="dotProduct" class="public" href="../std/numeric/dot_product.html">dotProduct</a><span class="tableEntryAnnotation">(a, b)</span>
 								</code>
 							</td>
 							<td>Computes the <a href="https://en.wikipedia.org/wiki/Dot_product">dot product</a> of input ranges <code class="lang-d"><a href="../std/numeric/dot_product.html#a"><span class="pln">a</span></a></code> and <code class="lang-d"><a href="../std/numeric/dot_product.html#b"><span class="pln">b</span></a></code>. The two ranges must have the same length. If both ranges define
 length, the check is done once; otherwise, it is done at each
 iteration.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="entropy" class="public" href="../std/numeric/entropy.html">entropy</a><span class="decoration">(r)</span>
+									<a id="entropy" class="public" href="../std/numeric/entropy.html">entropy</a><span class="tableEntryAnnotation">(r)</span>
 								</code>
 							</td>
 							<td>Computes <a href="https://en.wikipedia.org/wiki/Entropy_(information_theory)">entropy</a> of input range <code class="lang-d"><a href="../std/numeric/entropy.html#r"><span class="pln">r</span></a></code> in bits. This
@@ -2994,11 +3018,14 @@ be normalized too (i.e., its values should sum to 1). The
 two-parameter version stops evaluating as soon as the intermediate
 result is greater than or equal to <code class="lang-d"><a href="../std/numeric/entropy.html#max"><span class="pln">max</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="euclideanDistance" class="public" href="../std/numeric/euclidean_distance.html">euclideanDistance</a><span class="decoration">(a, b)</span>
+									<a id="euclideanDistance" class="public" href="../std/numeric/euclidean_distance.html">euclideanDistance</a><span class="tableEntryAnnotation">(a, b)</span>
 								</code>
 							</td>
 							<td>Computes <a href="https://en.wikipedia.org/wiki/Euclidean_distance">Euclidean distance</a> between input ranges <code class="lang-d"><a href="../std/numeric/euclidean_distance.html#a"><span class="pln">a</span></a></code> and
@@ -3007,21 +3034,27 @@ version stops computation as soon as the distance is greater than or
 equal to <code class="lang-d"><a href="../std/numeric/euclidean_distance.html#limit"><span class="pln">limit</span></a></code> (this is useful to save computation if a small
 distance is sought).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fft" class="public" href="../std/numeric/fft.html">fft</a><span class="decoration">(range)</span>
+									<a id="fft" class="public" href="../std/numeric/fft.html">fft</a><span class="tableEntryAnnotation">(range)</span>
 								</code>
 							</td>
 							<td>Convenience functions that create an <code class="lang-d"><a href="../std/numeric/fft.html"><span class="typ">Fft</span></a></code> object, run the FFT or inverse
  FFT and return the result.  Useful for one-off FFTs.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="findLocalMin" class="public" href="../std/numeric/find_local_min.html">findLocalMin</a><span class="decoration">(f, ax, bx, relTolerance, absTolerance)</span>
+									<a id="findLocalMin" class="public" href="../std/numeric/find_local_min.html">findLocalMin</a><span class="tableEntryAnnotation">(f, ax, bx, relTolerance, absTolerance)</span>
 								</code>
 							</td>
 							<td>Find a real minimum of a real function <code class="lang-d"><a href="../std/numeric/find_local_min.html#f"><span class="pln">f</span></a><span class="pun">(</span><span class="pln">x</span><span class="pun">)</span></code> via bracketing.
@@ -3032,30 +3065,39 @@ If <code class="lang-d"><a href="../std/numeric/find_local_min.html#f"><span cla
 If <code class="lang-d"><a href="../std/numeric/find_local_min.html#f"><span class="pln">f</span></a><span class="pun">(</span><span class="pln">x</span><span class="pun">)</span></code> returns NaN or -Infinity, <code class="lang-d"><span class="pun">(</span><span class="pln">x</span><span class="pun">, <a href="../std/numeric/find_local_min.html#f"></span><span class="pln">f</span></a><span class="pun">(</span><span class="pln">x</span><span class="pun">), </span><span class="typ">NaN</span><span class="pun">)</span></code> will be returned;
 otherwise, this algorithm is guaranteed to succeed.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="findRoot" class="public" href="../std/numeric/find_root.html">findRoot</a><span class="decoration">(f, a, b, tolerance)</span>
+									<a id="findRoot" class="public" href="../std/numeric/find_root.html">findRoot</a><span class="tableEntryAnnotation">(f, a, b, tolerance)</span>
 								</code>
 							</td>
 							<td>Find a real root of a real function f(x) via bracketing.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="findRoot" class="public" href="../std/numeric/find_root.html">findRoot</a><span class="decoration">(f, ax, bx, fax, fbx, tolerance)</span>
+									<a id="findRoot" class="public" href="../std/numeric/find_root.html">findRoot</a><span class="tableEntryAnnotation">(f, ax, bx, fax, fbx, tolerance)</span>
 								</code>
 							</td>
 							<td>Find root of a real function f(x) by bracketing, allowing the
  termination condition to be specified.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="gapWeightedSimilarity" class="public" href="../std/numeric/gap_weighted_similarity.html">gapWeightedSimilarity</a><span class="decoration">(s, t, lambda)</span>
+									<a id="gapWeightedSimilarity" class="public" href="../std/numeric/gap_weighted_similarity.html">gapWeightedSimilarity</a><span class="tableEntryAnnotation">(s, t, lambda)</span>
 								</code>
 							</td>
 							<td>The so-called "all-lengths gap-weighted string kernel" computes a
@@ -3063,11 +3105,14 @@ similarity measure between <code class="lang-d"><a href="../std/numeric/gap_weig
 common subsequences of all lengths. Gapped subsequences are also
 included.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="gapWeightedSimilarityIncremental" class="public" href="../std/numeric/gap_weighted_similarity_incremental.html">gapWeightedSimilarityIncremental</a><span class="decoration">(r1, r2, penalty)</span>
+									<a id="gapWeightedSimilarityIncremental" class="public" href="../std/numeric/gap_weighted_similarity_incremental.html">gapWeightedSimilarityIncremental</a><span class="tableEntryAnnotation">(r1, r2, penalty)</span>
 								</code>
 							</td>
 							<td>Similar to <code class="lang-d"><a href="../std/numeric/gap_weighted_similarity.html"><span class="pln">gapWeightedSimilarity</span></a></code>, just works in an incremental
@@ -3076,11 +3121,14 @@ of length 2, and so on. The memory requirement is <span class="bigoh">&Omicron;(
 </span><span class="pln">t<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>)</span>. The time complexity is <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">s<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">* </span><span class="pln">t<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>)</span> time
 for computing each step. Continuing on the previous example:
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="gapWeightedSimilarityNormalized" class="public" href="../std/numeric/gap_weighted_similarity_normalized.html">gapWeightedSimilarityNormalized</a><span class="decoration">(s, t, lambda, sSelfSim, tSelfSim)</span>
+									<a id="gapWeightedSimilarityNormalized" class="public" href="../std/numeric/gap_weighted_similarity_normalized.html">gapWeightedSimilarityNormalized</a><span class="tableEntryAnnotation">(s, t, lambda, sSelfSim, tSelfSim)</span>
 								</code>
 							</td>
 							<td>The similarity per <code class="lang-d"><a href="../std/numeric/gap_weighted_similarity.html"><span class="pln">gapWeightedSimilarity</span></a></code> has an issue in that it
@@ -3097,32 +3145,41 @@ so-called normalized kernel) is bounded in <code class="lang-d"><span class="pun
 only for ranges that don't match in any position, and <code class="lang-d"><span class="lit">1</span></code> only for
 identical ranges.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="gcd" class="public" href="../std/numeric/gcd.html">gcd</a><span class="decoration">(a, b)</span>
+									<a id="gcd" class="public" href="../std/numeric/gcd.html">gcd</a><span class="tableEntryAnnotation">(a, b)</span>
 								</code>
 							</td>
 							<td>Computes the greatest common divisor of <code class="lang-d"><a href="../std/numeric/gcd.html#a"><span class="pln">a</span></a></code> and <code class="lang-d"><a href="../std/numeric/gcd.html#b"><span class="pln">b</span></a></code> by using
 an efficient algorithm such as <a href="https://en.wikipedia.org/wiki/Euclidean_algorithm">Euclid's</a>
 or <a href="https://en.wikipedia.org/wiki/Binary_GCD_algorithm">Stein's</a> algorithm.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="inverseFft" class="public" href="../std/numeric/inverse_fft.html">inverseFft</a><span class="decoration">(range)</span>
+									<a id="inverseFft" class="public" href="../std/numeric/inverse_fft.html">inverseFft</a><span class="tableEntryAnnotation">(range)</span>
 								</code>
 							</td>
-							<td>Convenience functions that create an <code class="lang-d"><a href="../std/numeric/fft.html"><span class="typ"><a href="../std/numeric/fft.html"><span class="typ">Fft</span></a></span></a></code> object, run the FFT or inverse
+							<td>Convenience functions that create an <code class="lang-d"><a href="../std/numeric/fft.html"><span class="typ">Fft</span></a></code> object, run the FFT or inverse
  FFT and return the result.  Useful for one-off FFTs.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="jensenShannonDivergence" class="public" href="../std/numeric/jensen_shannon_divergence.html">jensenShannonDivergence</a><span class="decoration">(a, b)</span>
+									<a id="jensenShannonDivergence" class="public" href="../std/numeric/jensen_shannon_divergence.html">jensenShannonDivergence</a><span class="tableEntryAnnotation">(a, b)</span>
 								</code>
 							</td>
 							<td>Computes the <a href="https://en.wikipedia.org/wiki/Jensen%E2%80%93Shannon_divergence">Jensen-Shannon divergence</a> between <code class="lang-d"><a href="../std/numeric/jensen_shannon_divergence.html#a"><span class="pln">a</span></a></code> and <code class="lang-d"><a href="../std/numeric/jensen_shannon_divergence.html#b"><span class="pln">b</span></a></code>, which is the sum <code class="lang-d"><span class="pun">(</span><span class="pln">ai </span><span class="pun">* </span><span class="pln">log</span><span class="pun">(</span><span class="lit">2 </span><span class="pun">* </span><span class="pln">ai </span><span class="pun">/ (</span><span class="pln">ai </span><span class="pun">+ </span><span class="pln">bi</span><span class="pun">)) + </span><span class="pln">bi </span><span class="pun">* </span><span class="pln">log</span><span class="pun">(</span><span class="lit">2 </span><span class="pun">*
@@ -3134,11 +3191,14 @@ the result is bounded within <code class="lang-d"><span class="pun">[</span><spa
 stops evaluations as soon as the intermediate result is greater than
 or equal to <code class="lang-d"><a href="../std/numeric/jensen_shannon_divergence.html#limit"><span class="pln">limit</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="kullbackLeiblerDivergence" class="public" href="../std/numeric/kullback_leibler_divergence.html">kullbackLeiblerDivergence</a><span class="decoration">(a, b)</span>
+									<a id="kullbackLeiblerDivergence" class="public" href="../std/numeric/kullback_leibler_divergence.html">kullbackLeiblerDivergence</a><span class="tableEntryAnnotation">(a, b)</span>
 								</code>
 							</td>
 							<td>Computes the <a href="https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence">Kullback-Leibler divergence</a> between input ranges
@@ -3150,11 +3210,14 @@ if <code class="lang-d"><span class="pln">ai </span><span class="pun">== </span>
 considered zero.) If the inputs are normalized, the result is
 positive.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="normalize" class="public" href="../std/numeric/normalize.html">normalize</a><span class="decoration">(range, sum)</span>
+									<a id="normalize" class="public" href="../std/numeric/normalize.html">normalize</a><span class="tableEntryAnnotation">(range, sum)</span>
 								</code>
 							</td>
 							<td>Normalizes values in <code class="lang-d"><a href="../std/numeric/normalize.html#range"><span class="pln">range</span></a></code> by multiplying each element with a
@@ -3162,16 +3225,22 @@ number chosen such that values sum up to <code class="lang-d"><a href="../std/nu
 all. Normalization makes sense only if all elements in <code class="lang-d"><a href="../std/numeric/normalize.html#range"><span class="pln">range</span></a></code> are
 positive. <code class="lang-d"><span class="pln">normalize</span></code> assumes that is the case without checking it.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="sumOfLog2s" class="public" href="../std/numeric/sum_of_log2s.html">sumOfLog2s</a><span class="decoration">(r)</span>
+									<a id="sumOfLog2s" class="public" href="../std/numeric/sum_of_log2s.html">sumOfLog2s</a><span class="tableEntryAnnotation">(r)</span>
 								</code>
 							</td>
 							<td>Compute the sum of binary logarithms of the input range <code class="lang-d"><a href="../std/numeric/sum_of_log2s.html#r"><span class="pln">r</span></a></code>.
 The error of this method is much smaller than with a naive sum of log2.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3180,7 +3249,7 @@ The error of this method is much smaller than with a naive sum of log2.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3196,6 +3265,8 @@ The error of this method is much smaller than with a naive sum of log2.
  a free function API is provided for convenience if you need to perform a
  one-off FFT.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3204,7 +3275,7 @@ The error of this method is much smaller than with a naive sum of log2.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3217,6 +3288,8 @@ The error of this method is much smaller than with a naive sum of log2.
  extracting them to <code class="lang-d"><span class="typ">real</span></code> first. After the operation is completed the
  result can be stored in a custom floating-point value via assignment.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3224,12 +3297,14 @@ The error of this method is much smaller than with a naive sum of log2.
 									<a id="GapWeightedSimilarityIncremental" class="public" href="../std/numeric/gap_weighted_similarity_incremental.html">GapWeightedSimilarityIncremental</a>
 								</code>
 							</td>
-							<td>Similar to <code class="lang-d"><a href="../std/numeric/gap_weighted_similarity.html"><span class="pln"><a href="../std/numeric/gap_weighted_similarity.html"><span class="pln">gapWeightedSimilarity</span></a></span></a></code>, just works in an incremental
+							<td>Similar to <code class="lang-d"><a href="../std/numeric/gap_weighted_similarity.html"><span class="pln">gapWeightedSimilarity</span></a></code>, just works in an incremental
 manner by first revealing the matches of length 1, then gapped matches
 of length 2, and so on. The memory requirement is <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">s<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">*
 </span><span class="pln">t<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>)</span>. The time complexity is <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">s<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">* </span><span class="pln">t<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>)</span> time
 for computing each step. Continuing on the previous example:
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3238,7 +3313,7 @@ for computing each step. Continuing on the previous example:
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3248,6 +3323,8 @@ for computing each step. Continuing on the previous example:
 							</td>
 							<td>Format flags for CustomFloat.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3256,7 +3333,7 @@ for computing each step. Continuing on the previous example:
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3269,6 +3346,8 @@ root of the function <code class="lang-d"><span class="pln">fun</span></code> st
 (ideally close to the root). <code class="lang-d"><span class="typ">Num</span></code> may be <code class="lang-d"><span class="typ">float</span></code>, <code class="lang-d"><span class="typ">double</span></code>,
 or <code class="lang-d"><span class="typ">real</span></code>.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 					</table>
 				</section>

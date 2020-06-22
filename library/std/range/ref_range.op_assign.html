@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/range/package.d#L11499">
+							<a href="https://github.com/dlang/phobos/blob/master/std/range/package.d#L11501">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/range/package.d#L11499">
+							<a href="https://github.com/dlang/phobos/edit/master/std/range/package.d#L11501">
 								Improve this page
 							</a>
 							<div>
@@ -2952,18 +2967,18 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function RefRange.opAssign</h2><p>This does not assign the pointer of <code class="lang-d"><a href="../../std/range/ref_range.op_assign.html#rhs"><span class="pln"><a href="../../std/range/ref_range.op_assign.html#rhs"><span class="pln">rhs</span></a></span></a></code> to this <code class="lang-d"><a href="../../std/range/ref_range.html"><span class="typ"><a href="../../std/range/ref_range.html"><span class="typ">RefRange</span></a></span></a></code>.
-        Rather it assigns the range pointed to by <code class="lang-d"><a href="../../std/range/ref_range.op_assign.html#rhs"><span class="pln"><a href="../../std/range/ref_range.op_assign.html#rhs"><span class="pln">rhs</span></a></span></a></code> to the range pointed
-        to by this <code class="lang-d"><a href="../../std/range/ref_range.html"><span class="typ"><a href="../../std/range/ref_range.html"><span class="typ">RefRange</span></a></span></a></code>. This is because <i>any</i> operation on a
-        <code class="lang-d"><a href="../../std/range/ref_range.html"><span class="typ"><a href="../../std/range/ref_range.html"><span class="typ">RefRange</span></a></span></a></code> is the same is if it occurred to the original range. The
-        one exception is when a <code class="lang-d"><a href="../../std/range/ref_range.html"><span class="typ"><a href="../../std/range/ref_range.html"><span class="typ">RefRange</span></a></span></a></code> is assigned <code class="lang-d"><span class="kwd">null</span></code> either
-        directly or because <code class="lang-d"><a href="../../std/range/ref_range.op_assign.html#rhs"><span class="pln"><a href="../../std/range/ref_range.op_assign.html#rhs"><span class="pln">rhs</span></a></span></a></code> is <code class="lang-d"><span class="kwd">null</span></code>. In that case, <code class="lang-d"><a href="../../std/range/ref_range.html"><span class="typ"><a href="../../std/range/ref_range.html"><span class="typ">RefRange</span></a></span></a></code>
+				</nav><h2 id="0">Function RefRange.opAssign</h2><p>This does not assign the pointer of <code class="lang-d"><a href="../../std/range/ref_range.op_assign.html#rhs"><span class="pln">rhs</span></a></code> to this <code class="lang-d"><a href="../../std/range/ref_range.html"><span class="typ">RefRange</span></a></code>.
+        Rather it assigns the range pointed to by <code class="lang-d"><a href="../../std/range/ref_range.op_assign.html#rhs"><span class="pln">rhs</span></a></code> to the range pointed
+        to by this <code class="lang-d"><a href="../../std/range/ref_range.html"><span class="typ">RefRange</span></a></code>. This is because <i>any</i> operation on a
+        <code class="lang-d"><a href="../../std/range/ref_range.html"><span class="typ">RefRange</span></a></code> is the same is if it occurred to the original range. The
+        one exception is when a <code class="lang-d"><a href="../../std/range/ref_range.html"><span class="typ">RefRange</span></a></code> is assigned <code class="lang-d"><span class="kwd">null</span></code> either
+        directly or because <code class="lang-d"><a href="../../std/range/ref_range.op_assign.html#rhs"><span class="pln">rhs</span></a></code> is <code class="lang-d"><span class="kwd">null</span></code>. In that case, <code class="lang-d"><a href="../../std/range/ref_range.html"><span class="typ">RefRange</span></a></code>
         no longer refers to the original range but is <code class="lang-d"><span class="kwd">null</span></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">opAssign</span>
+				<span class="kwd">auto</span> <span class="pln">opAssign</span>
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<a href="../../std/range/ref_range.html"><span class="typ">RefRange</span></a> <span class="pln">rhs</span>

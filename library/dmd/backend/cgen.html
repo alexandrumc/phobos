@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2947,147 +2962,192 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="addtofixlist" class="public" href="../../dmd/backend/cgen/addtofixlist.html">addtofixlist</a><span class="decoration">(s, offset, seg, val, flags)</span>
+									<a id="addtofixlist" class="public" href="../../dmd/backend/cgen/addtofixlist.html">addtofixlist</a><span class="tableEntryAnnotation">(s, offset, seg, val, flags)</span>
 								</code>
 							</td>
 							<td>Add to the fix list.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cat" class="public" href="../../dmd/backend/cgen/cat.html">cat</a><span class="decoration">(c1, c2)</span>
+									<a id="cat" class="public" href="../../dmd/backend/cgen/cat.html">cat</a><span class="tableEntryAnnotation">(c1, c2)</span>
 								</code>
 							</td>
 							<td>Concatenate two code lists together. Return pointer to result.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cgen_prelinnum" class="public" href="../../dmd/backend/cgen/cgen_prelinnum.html">cgen_prelinnum</a><span class="decoration">(pc, srcpos)</span>
+									<a id="cgen_prelinnum" class="public" href="../../dmd/backend/cgen/cgen_prelinnum.html">cgen_prelinnum</a><span class="tableEntryAnnotation">(pc, srcpos)</span>
 								</code>
 							</td>
 							<td>Prepend line number to existing code.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="code_last" class="public" href="../../dmd/backend/cgen/code_last.html">code_last</a><span class="decoration">(c)</span>
+									<a id="code_last" class="public" href="../../dmd/backend/cgen/code_last.html">code_last</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Find last code in list.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="code_orflag" class="public" href="../../dmd/backend/cgen/code_orflag.html">code_orflag</a><span class="decoration">(c, flag)</span>
+									<a id="code_orflag" class="public" href="../../dmd/backend/cgen/code_orflag.html">code_orflag</a><span class="tableEntryAnnotation">(c, flag)</span>
 								</code>
 							</td>
 							<td>Set flag bits on last code in list.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="code_orrex" class="public" href="../../dmd/backend/cgen/code_orrex.html">code_orrex</a><span class="decoration">(c, rex)</span>
+									<a id="code_orrex" class="public" href="../../dmd/backend/cgen/code_orrex.html">code_orrex</a><span class="tableEntryAnnotation">(c, rex)</span>
 								</code>
 							</td>
 							<td>Set rex bits on last code in list.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="gen" class="public" href="../../dmd/backend/cgen/gen.html">gen</a><span class="decoration">(c, cs)</span>
+									<a id="gen" class="public" href="../../dmd/backend/cgen/gen.html">gen</a><span class="tableEntryAnnotation">(c, cs)</span>
 								</code>
 							</td>
 							<td>Add code to end of linked list.
  Note that unused operands are garbage.
  gen1() and gen2() are shortcut routines.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="genadjfpu" class="public" href="../../dmd/backend/cgen/genadjfpu.html">genadjfpu</a><span class="decoration">(c, offset)</span>
+									<a id="genadjfpu" class="public" href="../../dmd/backend/cgen/genadjfpu.html">genadjfpu</a><span class="tableEntryAnnotation">(c, offset)</span>
 								</code>
 							</td>
 							<td>Generate 'instruction' which tells the scheduler that the fpu stack has
  changed.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="genc" class="public" href="../../dmd/backend/cgen/genc.html">genc</a><span class="decoration">(c, op, ea, FL1, EV1, FL2, EV2)</span>
+									<a id="genc" class="public" href="../../dmd/backend/cgen/genc.html">genc</a><span class="tableEntryAnnotation">(c, op, ea, FL1, EV1, FL2, EV2)</span>
 								</code>
 							</td>
 							<td>Generate code.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="gencodelem" class="public" href="../../dmd/backend/cgen/gencodelem.html">gencodelem</a><span class="decoration">(cdb, e, pretregs, constflag)</span>
+									<a id="gencodelem" class="public" href="../../dmd/backend/cgen/gencodelem.html">gencodelem</a><span class="tableEntryAnnotation">(cdb, e, pretregs, constflag)</span>
 								</code>
 							</td>
 							<td>Clean stack after call to codelem().
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="genlinnum" class="public" href="../../dmd/backend/cgen/genlinnum.html">genlinnum</a><span class="decoration">(c, srcpos)</span>
+									<a id="genlinnum" class="public" href="../../dmd/backend/cgen/genlinnum.html">genlinnum</a><span class="tableEntryAnnotation">(c, srcpos)</span>
 								</code>
 							</td>
 							<td>Generate 'instruction' which is actually a line number.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="gennop" class="public" href="../../dmd/backend/cgen/gennop.html">gennop</a><span class="decoration">(c)</span>
+									<a id="gennop" class="public" href="../../dmd/backend/cgen/gennop.html">gennop</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Generate 'nop'
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="outfixlist" class="public" href="../../dmd/backend/cgen/outfixlist.html">outfixlist</a><span class="decoration">()</span>
+									<a id="outfixlist" class="public" href="../../dmd/backend/cgen/outfixlist.html">outfixlist</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>End of module. Output fixups as references
  to external Symbols.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="reghasvalue" class="public" href="../../dmd/backend/cgen/reghasvalue.html">reghasvalue</a><span class="decoration">(regm, value, preg)</span>
+									<a id="reghasvalue" class="public" href="../../dmd/backend/cgen/reghasvalue.html">reghasvalue</a><span class="tableEntryAnnotation">(regm, value, preg)</span>
 								</code>
 							</td>
 							<td>Determine if one of the registers in regm has value in it.
  If so, return !=0 and set *preg to which register it is.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="regwithvalue" class="public" href="../../dmd/backend/cgen/regwithvalue.html">regwithvalue</a><span class="decoration">(cdb, regm, value, preg, flags)</span>
+									<a id="regwithvalue" class="public" href="../../dmd/backend/cgen/regwithvalue.html">regwithvalue</a><span class="tableEntryAnnotation">(cdb, regm, value, preg, flags)</span>
 								</code>
 							</td>
 							<td>Load a register from the mask regm with value.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3096,7 +3156,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3108,6 +3168,8 @@ $('#symbolSearchPane').show();</script>
  within this module, we stuff it in an array of references to be
  fixed up later.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

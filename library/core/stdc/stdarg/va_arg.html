@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/druntime/blob/master/src/core/stdc/stdarg.d#L215">
+							<a href="https://github.com/dlang/druntime/blob/master/src/core/stdc/stdarg.d#L266">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/druntime/edit/master/src/core/stdc/stdarg.d#L215">
+							<a href="https://github.com/dlang/druntime/edit/master/src/core/stdc/stdarg.d#L266">
 								Improve this page
 							</a>
 							<div>
@@ -2951,34 +2966,16 @@ $('#symbolSearchPane').show();</script>
 								Function <code>va_arg</code>
 							</a>
 						</li>
-						<li>
-							<a href="#2">
-								Function <code>va_arg</code>
-							</a>
-						</li>
 					</ul>
-				</nav><h2 id="0">Function va_arg</h2><p></p>
-				<div class="prototype">
-					<code class="lang-d">
-						<div class="single-prototype">
-				<span class="pln">T</span> <span class="pln">va_arg</span>(T)
-				<span class="pun">(</span>
-				<br/>
-				&nbsp;&nbsp;<span class="pln">va_list</span> <span class="pln">ap</span>
-				<br/>
-				<span class="pun">)</span><span class="pun">;</span>
-						</div>
-					</code>
-				</div>
-				
-				<h2 id="1">Function va_arg</h2><p></p>
+				</nav><h2 id="0">Function va_arg</h2><p>Retrieve and store in parmn the next value that is of type T.
+</p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
 				<span class="typ">void</span> <span class="pln">va_arg</span>(T)
 				<span class="pun">(</span>
 				<br/>
-				&nbsp;&nbsp;<span class="pln">va_list</span> <span class="pln">apx</span><span class="pun">,</span>
+				&nbsp;&nbsp;<span class="kwd">ref </span><a href="../../../core/stdc/stdarg/va_list.html"><span class="pln">va_list</span></a> <span class="pln">ap</span><span class="pun">,</span>
 				<br/>
 				&nbsp;&nbsp;<span class="kwd">ref </span><span class="pln">T</span> <span class="pln">parmn</span>
 				<br/>
@@ -2987,18 +2984,15 @@ $('#symbolSearchPane').show();</script>
 					</code>
 				</div>
 				
-				<h2 id="2">Function va_arg</h2><p></p>
+				<h2 id="1">Function va_arg</h2><p>Retrieve and return the next value that is of type T.
+</p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="typ">void</span> <span class="pln">va_arg</span>
+				<span class="pln">T</span> <span class="pln">va_arg</span>(T)
 				<span class="pun">(</span>
 				<br/>
-				&nbsp;&nbsp;<span class="pln">va_list</span> <span class="pln">apx</span><span class="pun">,</span>
-				<br/>
-				&nbsp;&nbsp;<a href="../../../object/type_info.html"><span class="typ">TypeInfo</span></a> <span class="pln">ti</span><span class="pun">,</span>
-				<br/>
-				&nbsp;&nbsp;<span class="typ">void</span><span class="pun">*</span> <span class="pln">parmn</span>
+				&nbsp;&nbsp;<span class="kwd">ref </span><a href="../../../core/stdc/stdarg/va_list.html"><span class="pln">va_list</span></a> <span class="pln">ap</span>
 				<br/>
 				<span class="pun">)</span><span class="pun">;</span>
 						</div>

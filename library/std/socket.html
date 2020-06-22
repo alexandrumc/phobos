@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2949,43 +2964,52 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getAddress" class="public" href="../std/socket/get_address.html">getAddress</a><span class="decoration">(hostname, service)</span>
+									<a id="getAddress" class="public" href="../std/socket/get_address.html">getAddress</a><span class="tableEntryAnnotation">(hostname, service)</span>
 								</code>
 							</td>
 							<td>Provides protocol-independent translation from host names to socket
  addresses. Uses <code class="lang-d"><a href="../std/socket/get_address_info.html"><span class="pln">getAddressInfo</span></a></code> if the current system supports it,
  and <code class="lang-d"><a href="../std/socket/internet_host.html"><span class="typ">InternetHost</span></a></code> otherwise.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getAddressInfo" class="public" href="../std/socket/get_address_info.html">getAddressInfo</a><span class="decoration">(node, options)</span>
+									<a id="getAddressInfo" class="public" href="../std/socket/get_address_info.html">getAddressInfo</a><span class="tableEntryAnnotation">(node, options)</span>
 								</code>
 							</td>
 							<td>Provides protocol-independent translation from host names to socket
  addresses. If advanced functionality is not required, consider using
  <code class="lang-d"><a href="../std/socket/get_address.html"><span class="pln">getAddress</span></a></code> for compatibility with older systems.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="lastSocketError" class="public property" href="../std/socket/last_socket_error.html">lastSocketError</a><span class="decoration">()</span>
+									<a id="lastSocketError" class="public property" href="../std/socket/last_socket_error.html">lastSocketError</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Retrieve the error message for the most recently encountered network error.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="parseAddress" class="public" href="../std/socket/parse_address.html">parseAddress</a><span class="decoration">(hostaddr, service)</span>
+									<a id="parseAddress" class="public" href="../std/socket/parse_address.html">parseAddress</a><span class="tableEntryAnnotation">(hostaddr, service)</span>
 								</code>
 							</td>
 							<td>Provides protocol-independent parsing of network addresses. Does not
@@ -2993,23 +3017,32 @@ $('#symbolSearchPane').show();</script>
  <code class="lang-d"><a href="../std/socket/address_info_flags.html#NUMERICHOST"><span class="typ">AddressInfoFlags<wbr/></span><span class="pun">.</span><span class="pln">NUMERICHOST</span></a></code> if the current system supports it, and
  <code class="lang-d"><a href="../std/socket/internet_address.html"><span class="typ">InternetAddress</span></a></code> otherwise.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="socketPair" class="public" href="../std/socket/socket_pair.html">socketPair</a><span class="decoration">()</span>
+									<a id="socketPair" class="public" href="../std/socket/socket_pair.html">socketPair</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Creates a pair of connected sockets.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wouldHaveBlocked" class="public" href="../std/socket/would_have_blocked.html">wouldHaveBlocked</a><span class="decoration">()</span>
+									<a id="wouldHaveBlocked" class="public" href="../std/socket/would_have_blocked.html">wouldHaveBlocked</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3018,7 +3051,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3028,6 +3061,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td><code class="lang-d"><span class="typ">Address</span></code> is an abstract class for representing a socket addresses.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3037,6 +3072,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Class for exceptions thrown from an <code class="lang-d"><a href="../std/socket/address.html"><span class="typ">Address</span></a></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3046,6 +3083,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Class for exceptions thrown from an <code class="lang-d"><a href="../std/socket/internet_host.html"><span class="typ">InternetHost</span></a></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3056,6 +3095,8 @@ $('#symbolSearchPane').show();</script>
 							<td><code class="lang-d"><span class="typ">Internet6Address</span></code> encapsulates an IPv6 (Internet Protocol version 6)
  socket address.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3066,6 +3107,8 @@ $('#symbolSearchPane').show();</script>
 							<td><code class="lang-d"><span class="typ">InternetAddress</span></code> encapsulates an IPv4 (Internet Protocol version 4)
  socket address.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3075,6 +3118,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td><code class="lang-d"><span class="typ">InternetHost</span></code> is a class for resolving IPv4 addresses.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3084,6 +3129,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td><code class="lang-d"><span class="typ">Protocol</span></code> is a class for retrieving protocol information.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3093,6 +3140,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td><code class="lang-d"><span class="typ">Service</span></code> is a class for retrieving service information.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3103,6 +3152,8 @@ $('#symbolSearchPane').show();</script>
 							<td><code class="lang-d"><span class="typ">Socket</span></code> is a class that creates a network communication endpoint using
  the Berkeley sockets interface.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3112,6 +3163,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Class for exceptions thrown by <code class="lang-d"><a href="../std/socket/socket.accept.html"><span class="typ">Socket<wbr/></span><span class="pun">.</span><span class="pln">accept</span></a></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3121,6 +3174,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Base exception thrown by <code class="lang-d"><a href="../std/socket.html"><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">socket</span></a></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3131,6 +3186,8 @@ $('#symbolSearchPane').show();</script>
 							<td>Socket exceptions representing attempts to use network capabilities not
  available on the current system.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3141,6 +3198,8 @@ $('#symbolSearchPane').show();</script>
 							<td>Socket exceptions representing network errors reported by the operating
  system.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3150,6 +3209,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Socket exceptions representing invalid parameters specified by user code.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3159,6 +3220,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>A collection of sockets for use with <code class="lang-d"><a href="../std/socket/socket.select.html"><span class="typ">Socket<wbr/></span><span class="pun">.</span><span class="pln">select</span></a></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3168,6 +3231,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td><code class="lang-d"><span class="typ">TcpSocket</span></code> is a shortcut class for a TCP Socket.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3177,6 +3242,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td><code class="lang-d"><span class="typ">UdpSocket</span></code> is a shortcut class for a UDP Socket.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3188,6 +3255,8 @@ $('#symbolSearchPane').show();</script>
  (<code class="lang-d"><span class="pln">AF_UNIX</span></code>), i.e. a socket bound to a path name in the file system.
  Available only on supported systems.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3197,6 +3266,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td><code class="lang-d"><span class="typ">UnknownAddress</span></code> encapsulates an unknown socket address.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3207,6 +3278,8 @@ $('#symbolSearchPane').show();</script>
 							<td><code class="lang-d"><span class="typ">UnknownAddressReference</span></code> encapsulates a reference to an arbitrary
  socket address.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3215,7 +3288,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3225,6 +3298,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Holds information about a socket address retrieved by <code class="lang-d"><a href="../std/socket/get_address_info.html"><span class="pln">getAddressInfo</span></a></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3234,6 +3309,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Linger information for use with SocketOption.LINGER.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3243,6 +3320,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Duration timeout value.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3251,7 +3330,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3261,6 +3340,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>The communication domain used to resolve an address.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3271,6 +3352,8 @@ $('#symbolSearchPane').show();</script>
 							<td>A subset of flags supported on all platforms with getaddrinfo.
  Specifies option flags for <code class="lang-d"><a href="../std/socket/get_address_info.html"><span class="pln">getAddressInfo</span></a></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3280,6 +3363,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Protocol
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3289,6 +3374,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Flags may be OR'ed together:
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3298,6 +3385,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Specifies a socket option:
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3307,6 +3396,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>The level at which a socket option is defined:
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3316,6 +3407,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>How a socket is shutdown:
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3325,6 +3418,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Communication semantics
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

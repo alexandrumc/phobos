@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2955,9 +2970,9 @@ $('#symbolSearchPane').show();</script>
 				</nav><h2 id="0">Function FreeList.max</h2><p>Returns the largest allocation size eligible for allocation from the
         freelist. (If <code class="lang-d"><span class="pln">maxSize </span><span class="pun">!= </span><span class="pln">chooseAtRuntime</span></code>, this is simply an alias
         for <code class="lang-d"><span class="pln">maxSize</span></code>.) All allocation requests for sizes greater than or
-        equal to <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.min.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.min.html"><span class="pln">min</span></a></span></a></code> and less than or equal to <code class="lang-d"><span class="pln"><span class="pln">max</span></span></code> are rounded to <code class="lang-d"><span class="pln">        max</span></code> and forwarded to the parent allocator. When the block fitting the
+        equal to <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.min.html"><span class="pln">min</span></a></code> and less than or equal to <code class="lang-d"><span class="pln">max</span></code> are rounded to <code class="lang-d"><span class="pln">        max</span></code> and forwarded to the parent allocator. When the block fitting the
         same constraint gets deallocated, it is put in the freelist with the
-        allocated size assumed to be <code class="lang-d"><span class="pln"><span class="pln">max</span></span></code>.
+        allocated size assumed to be <code class="lang-d"><span class="pln">max</span></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2967,8 +2982,8 @@ $('#symbolSearchPane').show();</script>
 					</code>
 				</div>
 				
-				<h2 id="1">Function FreeList.max</h2><p>If <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ">FreeList</span></a></span></a></code> has been instantiated with <code class="lang-d"><span class="pln">maxSize </span><span class="pun">==
-        </span><span class="pln">chooseAtRuntime</span></code>, then the <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.max.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.max.html"><span class="pln">max</span></a></span></a></code> property is writable. Setting it
+				<h2 id="1">Function FreeList.max</h2><p>If <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ">FreeList</span></a></code> has been instantiated with <code class="lang-d"><span class="pln">maxSize </span><span class="pun">==
+        </span><span class="pln">chooseAtRuntime</span></code>, then the <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.max.html"><span class="pln">max</span></a></code> property is writable. Setting it
         must precede any allocation.
 </p>
 				<div class="prototype">

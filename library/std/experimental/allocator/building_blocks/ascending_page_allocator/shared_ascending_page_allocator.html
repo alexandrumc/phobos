@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,7 +2952,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Struct <code><a href="../../../../../std/experimental/allocator/building_blocks/ascending_page_allocator.html">std.experimental.allocator.building_blocks.ascending_page_allocator</a>.SharedAscendingPageAllocator</code></h1><p><code class="lang-d"><span class="typ"><span class="typ">SharedAscendingPageAllocator</span></span></code> is the threadsafe version of <code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/ascending_page_allocator/ascending_page_allocator.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/ascending_page_allocator/ascending_page_allocator.html"><span class="typ">AscendingPageAllocator</span></a></span></a></code>.
+				</div><h1>Struct <code><a href="../../../../../std/experimental/allocator/building_blocks/ascending_page_allocator.html">std.experimental.allocator.building_blocks.ascending_page_allocator</a>.SharedAscendingPageAllocator</code></h1><p><code class="lang-d"><span class="typ">SharedAscendingPageAllocator</span></code> is the threadsafe version of <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/ascending_page_allocator/ascending_page_allocator.html"><span class="typ">AscendingPageAllocator</span></a></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2959,6 +2974,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../../../std/experimental/allocator/building_blocks/ascending_page_allocator/shared_ascending_page_allocator.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
 							<td>Rounds the mapping size to the next multiple of the page size and calls
         the OS primitive responsible for creating memory mappings: <code class="lang-d"><span class="pln">mmap</span></code> on POSIX and
@@ -2978,6 +2994,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../../../std/experimental/allocator/building_blocks/ascending_page_allocator/shared_ascending_page_allocator.aligned_allocate.html" class="public">
 									<code>alignedAllocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(n, a)</span>
 							</td>
 							<td>Rounds the allocation size to the next multiple of the page size.
     The allocation only reserves a range of virtual pages but the actual
@@ -2989,6 +3006,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../../../std/experimental/allocator/building_blocks/ascending_page_allocator/shared_ascending_page_allocator.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
 							<td>Rounds the allocation size to the next multiple of the page size.
     The allocation only reserves a range of virtual pages but the actual
@@ -3000,6 +3018,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../../../std/experimental/allocator/building_blocks/ascending_page_allocator/shared_ascending_page_allocator.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>Decommit all physical memory associated with the buffer given as parameter,
         but keep the range of virtual addresses.
@@ -3010,6 +3029,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../../../std/experimental/allocator/building_blocks/ascending_page_allocator/shared_ascending_page_allocator.deallocate_all.html" class="public">
 									<code>deallocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Removes the memory mapping causing all physical memory to be decommited and
         the virtual address space to be reclaimed.
@@ -3020,6 +3040,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../../../std/experimental/allocator/building_blocks/ascending_page_allocator/shared_ascending_page_allocator.expand.html" class="public">
 									<code>expand</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, delta)</span>
 							</td>
 							<td>If the passed buffer is not the last allocation, then <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/ascending_page_allocator/shared_ascending_page_allocator.expand.html#delta"><span class="pln">delta</span></a></code> can be
     at most the number of bytes left on the last page.
@@ -3032,6 +3053,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../../../std/experimental/allocator/building_blocks/ascending_page_allocator/shared_ascending_page_allocator.get_available_size.html" class="public">
 									<code>getAvailableSize</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns the available size for further allocations in bytes.
 </td>
@@ -3041,6 +3063,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../../../std/experimental/allocator/building_blocks/ascending_page_allocator/shared_ascending_page_allocator.good_alloc_size.html" class="public">
 									<code>goodAllocSize</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
 							<td>Rounds the requested size to the next multiple of the page size.
 </td>
@@ -3050,6 +3073,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../../../std/experimental/allocator/building_blocks/ascending_page_allocator/shared_ascending_page_allocator.owns.html" class="public">
 									<code>owns</code>
 								</a>
+								<span class="tableEntryAnnotation">(buf)</span>
 							</td>
 							<td>Returns <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">yes</span></code> if the passed buffer is inside the range of virtual adresses.
         Does not guarantee that the passed buffer is still valid.

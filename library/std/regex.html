@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -3222,95 +3237,119 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="bmatch" class="public" href="../std/regex/bmatch.html">bmatch</a><span class="decoration">(input, re)</span>
+									<a id="bmatch" class="public" href="../std/regex/bmatch.html">bmatch</a><span class="tableEntryAnnotation">(input, re)</span>
 								</code>
 							</td>
 							<td>Start matching of <code class="lang-d"><a href="../std/regex/bmatch.html#input"><span class="pln">input</span></a></code> to regex pattern <code class="lang-d"><a href="../std/regex/bmatch.html#re"><span class="pln">re</span></a></code>,
     using traditional <a href="https://en.wikipedia.org/wiki/Backtracking">    backtracking</a> matching scheme.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="escaper" class="public" href="../std/regex/escaper.html">escaper</a><span class="decoration">(r)</span>
+									<a id="escaper" class="public" href="../std/regex/escaper.html">escaper</a><span class="tableEntryAnnotation">(r)</span>
 								</code>
 							</td>
 							<td>A range that lazily produces a string output escaped
   to be used inside of a regular expression.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="match" class="public" href="../std/regex/match.html">match</a><span class="decoration">(input, re)</span>
+									<a id="match" class="public" href="../std/regex/match.html">match</a><span class="tableEntryAnnotation">(input, re)</span>
 								</code>
 							</td>
 							<td>Start matching <code class="lang-d"><a href="../std/regex/match.html#input"><span class="pln">input</span></a></code> to regex pattern <code class="lang-d"><a href="../std/regex/match.html#re"><span class="pln">re</span></a></code>,
     using Thompson NFA matching scheme.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="matchAll" class="public" href="../std/regex/match_all.html">matchAll</a><span class="decoration">(input, re)</span>
+									<a id="matchAll" class="public" href="../std/regex/match_all.html">matchAll</a><span class="tableEntryAnnotation">(input, re)</span>
 								</code>
 							</td>
 							<td>Initiate a search for all non-overlapping matches to the pattern <code class="lang-d"><a href="../std/regex/match_all.html#re"><span class="pln">re</span></a></code>
     in the given <code class="lang-d"><a href="../std/regex/match_all.html#input"><span class="pln">input</span></a></code>. The result is a lazy range of matches generated
     as they are encountered in the input going left to right.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="matchFirst" class="public" href="../std/regex/match_first.html">matchFirst</a><span class="decoration">(input, re)</span>
+									<a id="matchFirst" class="public" href="../std/regex/match_first.html">matchFirst</a><span class="tableEntryAnnotation">(input, re)</span>
 								</code>
 							</td>
 							<td>Find the first (leftmost) slice of the <code class="lang-d"><a href="../std/regex/match_first.html#input"><span class="pln">input</span></a></code> that
     matches the pattern <code class="lang-d"><a href="../std/regex/match_first.html#re"><span class="pln">re</span></a></code>. This function picks the most suitable
     regular expression engine depending on the pattern properties.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="regex" class="public" href="../std/regex/regex.html">regex</a><span class="decoration">(patterns, flags)</span>
+									<a id="regex" class="public" href="../std/regex/regex.html">regex</a><span class="tableEntryAnnotation">(patterns, flags)</span>
 								</code>
 							</td>
 							<td>Compile regular expression pattern for the later execution.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="replace" class="public" href="../std/regex/replace.html">replace</a><span class="decoration">(input, re, format)</span>
+									<a id="replace" class="public" href="../std/regex/replace.html">replace</a><span class="tableEntryAnnotation">(input, re, format)</span>
 								</code>
 							</td>
 							<td>Old API for replacement, operation depends on flags of pattern <code class="lang-d"><a href="../std/regex/replace.html#re"><span class="pln">re</span></a></code>.
     With "g" flag it performs the equivalent of <code class="lang-d"><a href="../std/regex/replace_all.html"><span class="pln">replaceAll</span></a></code> otherwise it
     works the same as <code class="lang-d"><a href="../std/regex/replace_first.html"><span class="pln">replaceFirst</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="replaceAll" class="public" href="../std/regex/replace_all.html">replaceAll</a><span class="decoration">(input, re, format)</span>
+									<a id="replaceAll" class="public" href="../std/regex/replace_all.html">replaceAll</a><span class="tableEntryAnnotation">(input, re, format)</span>
 								</code>
 							</td>
 							<td>Construct a new string from <code class="lang-d"><a href="../std/regex/replace_all.html#input"><span class="pln">input</span></a></code> by replacing all of the
     fragments that match a pattern <code class="lang-d"><a href="../std/regex/replace_all.html#re"><span class="pln">re</span></a></code> with a string generated
     from the match according to the <code class="lang-d"><a href="../std/regex/replace_all.html#format"><span class="pln">format</span></a></code> specifier.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="replaceAll" class="public" href="../std/regex/replace_all.html">replaceAll</a><span class="decoration">(input, re)</span>
+									<a id="replaceAll" class="public" href="../std/regex/replace_all.html">replaceAll</a><span class="tableEntryAnnotation">(input, re)</span>
 								</code>
 							</td>
 							<td>This is a general replacement tool that construct a new string by replacing
@@ -3319,32 +3358,41 @@ $('#symbolSearchPane').show();</script>
     to a user-defined functor <code class="lang-d"><span class="pln">fun</span></code> that returns a new string
     to use as replacement.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="replaceAllInto" class="public" href="../std/regex/replace_all_into.html">replaceAllInto</a><span class="decoration">(sink, input, re, format)</span>
+									<a id="replaceAllInto" class="public" href="../std/regex/replace_all_into.html">replaceAllInto</a><span class="tableEntryAnnotation">(sink, input, re, format)</span>
 								</code>
 							</td>
 							<td>A variation on <code class="lang-d"><a href="../std/regex/replace_all.html"><span class="pln">replaceAll</span></a></code> that instead of allocating a new string
     on each call outputs the result piece-wise to the <code class="lang-d"><a href="../std/regex/replace_all_into.html#sink"><span class="pln">sink</span></a></code>. In particular
     this enables efficient construction of a final output incrementally.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="replaceFirst" class="public" href="../std/regex/replace_first.html">replaceFirst</a><span class="decoration">(input, re, format)</span>
+									<a id="replaceFirst" class="public" href="../std/regex/replace_first.html">replaceFirst</a><span class="tableEntryAnnotation">(input, re, format)</span>
 								</code>
 							</td>
 							<td>Construct a new string from <code class="lang-d"><a href="../std/regex/replace_first.html#input"><span class="pln">input</span></a></code> by replacing the first match with
     a string generated from it according to the <code class="lang-d"><a href="../std/regex/replace_first.html#format"><span class="pln">format</span></a></code> specifier.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="replaceFirst" class="public" href="../std/regex/replace_first.html">replaceFirst</a><span class="decoration">(input, re)</span>
+									<a id="replaceFirst" class="public" href="../std/regex/replace_first.html">replaceFirst</a><span class="tableEntryAnnotation">(input, re)</span>
 								</code>
 							</td>
 							<td>This is a general replacement tool that construct a new string by replacing
@@ -3353,35 +3401,47 @@ $('#symbolSearchPane').show();</script>
     to a user-defined functor <code class="lang-d"><span class="pln">fun</span></code> that returns a new string
     to use as replacement.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="replaceFirstInto" class="public" href="../std/regex/replace_first_into.html">replaceFirstInto</a><span class="decoration">(sink, input, re, format)</span>
+									<a id="replaceFirstInto" class="public" href="../std/regex/replace_first_into.html">replaceFirstInto</a><span class="tableEntryAnnotation">(sink, input, re, format)</span>
 								</code>
 							</td>
 							<td>A variation on <code class="lang-d"><a href="../std/regex/replace_first.html"><span class="pln">replaceFirst</span></a></code> that instead of allocating a new string
     on each call outputs the result piece-wise to the <code class="lang-d"><a href="../std/regex/replace_first_into.html#sink"><span class="pln">sink</span></a></code>. In particular
     this enables efficient construction of a final output incrementally.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="split" class="public" href="../std/regex/split.html">split</a><span class="decoration">(input, rx)</span>
+									<a id="split" class="public" href="../std/regex/split.html">split</a><span class="tableEntryAnnotation">(input, rx)</span>
 								</code>
 							</td>
 							<td>An eager version of <code class="lang-d"><a href="../std/regex/splitter.html"><span class="pln">splitter</span></a></code> that creates an array with splitted slices of <code class="lang-d"><a href="../std/regex/split.html#input"><span class="pln">input</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="splitter" class="public" href="../std/regex/splitter.html">splitter</a><span class="decoration">(r, pat)</span>
+									<a id="splitter" class="public" href="../std/regex/splitter.html">splitter</a><span class="tableEntryAnnotation">(r, pat)</span>
 								</code>
 							</td>
 							<td>Splits a string <code class="lang-d"><a href="../std/regex/splitter.html#r"><span class="pln">r</span></a></code> using a regular expression <code class="lang-d"><a href="../std/regex/splitter.html#pat"><span class="pln">pat</span></a></code> as a separator.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3390,7 +3450,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3401,6 +3461,8 @@ $('#symbolSearchPane').show();</script>
 							<td><code class="lang-d"><span class="typ">Captures</span></code> object contains submatches captured during a call
     to <code class="lang-d"><a href="../std/regex/match.html"><span class="pln">match</span></a></code> or iteration over <code class="lang-d"><a href="../std/regex/regex_match.html"><span class="typ">RegexMatch</span></a></code> range.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3410,6 +3472,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>A regex engine state, as returned by <code class="lang-d"><a href="../std/regex/match.html"><span class="pln">match</span></a></code> family of functions.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3417,8 +3481,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="Splitter" class="public" href="../std/regex/splitter.html">Splitter</a>
 								</code>
 							</td>
-							<td>Splits a string <code class="lang-d"><a href="../std/regex/splitter.html#r"><span class="pln">r</span></a></code> using a regular expression <code class="lang-d"><a href="../std/regex/splitter.html#pat"><span class="pln">pat</span></a></code> as a separator.
+							<td>Splits a string <code class="lang-d"><span class="pln">r</span></code> using a regular expression <code class="lang-d"><span class="pln">pat</span></code> as a separator.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

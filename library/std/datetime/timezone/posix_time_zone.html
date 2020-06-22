@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2940,9 +2955,9 @@ $('#symbolSearchPane').show();</script>
 				</div><h1>Class <code><a href="../../../std/datetime/timezone.html">std.datetime.timezone</a>.PosixTimeZone</code></h1><p>Represents a time zone from a TZ Database time zone file. Files from the TZ
     Database are how Posix systems hold their time zone information.
     Unfortunately, Windows does not use the TZ Database. To use the TZ Database,
-    use <code class="lang-d"><span class="typ"><span class="typ">PosixTimeZone</span></span></code> (which reads its information from the TZ Database
+    use <code class="lang-d"><span class="typ">PosixTimeZone</span></code> (which reads its information from the TZ Database
     files on disk) on Windows by providing the TZ Database files and telling
-    <code class="lang-d"><a href="../../std/datetime/timezone/posix_time_zone.get_time_zone.html"><span class="typ"><span class="typ">PosixTimeZone</span><wbr/></span><span class="pun">.</span><span class="pln"><a href="../../../std/datetime/timezone/posix_time_zone.get_time_zone.html"><span class="pln">getTimeZone</span></a></span></a></code> where the directory holding them is.
+    <code class="lang-d"><a href="../../../std/datetime/timezone/posix_time_zone.get_time_zone.html"><span class="typ">PosixTimeZone<wbr/></span><span class="pun">.</span><span class="pln">getTimeZone</span></a></code> where the directory holding them is.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2970,7 +2985,7 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td class="typecol"><code class="prettyprint lang-d"><span class="typ">bool</span></code></td><td>Whether this time zone has Daylight Savings Time at any point in time.
         Note that for some time zone types it may not have DST for current
-        dates but will still return true for <code class="lang-d"><span class="pln"><span class="pln">hasDST</span></span></code> because the time zone
+        dates but will still return true for <code class="lang-d"><span class="pln">hasDST</span></code> because the time zone
         did at some point have DST.
 </td>
 						</tr>
@@ -3016,6 +3031,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/timezone/posix_time_zone.dst_in_effect.html" class="public">
 									<code>dstInEffect</code>
 								</a>
+								<span class="tableEntryAnnotation">(stdTime)</span>
 							</td>
 							<td>Takes the number of hnsecs (100 ns) since midnight, January 1st, 1 A.D.
         in UTC time (i.e. std time) and returns whether DST is in effect in this
@@ -3027,6 +3043,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/timezone/posix_time_zone.get_installed_tz_names.html" class="public">
 									<code>getInstalledTZNames</code>
 								</a>
+								<span class="tableEntryAnnotation">(subName, tzDatabaseDir)</span>
 							</td>
 							<td>Returns a list of the names of the time zones installed on the system.
 </td>
@@ -3036,6 +3053,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/timezone/posix_time_zone.get_time_zone.html" class="public">
 									<code>getTimeZone</code>
 								</a>
+								<span class="tableEntryAnnotation">(name, tzDatabaseDir)</span>
 							</td>
 							<td>Returns a <code class="lang-d"><a href="../../../std/datetime/timezone/time_zone.html"><span class="typ">TimeZone</span></a></code> with the give name per the TZ Database. The
         time zone information is fetched from the TZ Database time zone files in
@@ -3047,6 +3065,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/timezone/posix_time_zone.tz_toutc.html" class="public">
 									<code>tzToUTC</code>
 								</a>
+								<span class="tableEntryAnnotation">(adjTime)</span>
 							</td>
 							<td>Takes the number of hnsecs (100 ns) since midnight, January 1st, 1 A.D.
         in this time zone's time and converts it to UTC (i.e. std time).
@@ -3057,6 +3076,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/timezone/posix_time_zone.utc_totz.html" class="public">
 									<code>utcToTZ</code>
 								</a>
+								<span class="tableEntryAnnotation">(stdTime)</span>
 							</td>
 							<td>Takes the number of hnsecs (100 ns) since midnight, January 1st, 1 A.D.
         in UTC time (i.e. std time) and converts it to this time zone's time.
@@ -3067,6 +3087,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../object/object.factory.html" class="public inherited">
 									<code>factory</code>
 								</a>
+								<span class="tableEntryAnnotation">(classname)</span>
 							</td>
 							<td>Create instance of class specified by the fully qualified name
  classname.
@@ -3079,6 +3100,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../object/object.op_cmp.html" class="public inherited">
 									<code>opCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Compare with another Object obj.
 </td>
@@ -3088,6 +3110,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../object/object.op_equals.html" class="public inherited">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Test whether <code class="lang-d"><span class="kwd">this</span></code> is equal to <code class="lang-d"><a href="../../../object/object.op_equals.html#o"><span class="pln">o</span></a></code>.
  The default implementation only compares by identity (using the <code class="lang-d"><span class="kwd">is</span></code> operator).
@@ -3099,6 +3122,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../object/object.to_hash.html" class="public inherited">
 									<code>toHash</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Compute hash function for Object.
 </td>
@@ -3108,6 +3132,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../object/object.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Convert Object to a human readable string.
 </td>
@@ -3117,6 +3142,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/timezone/time_zone.utc_offset_at.html" class="public inherited">
 									<code>utcOffsetAt</code>
 								</a>
+								<span class="tableEntryAnnotation">(stdTime)</span>
 							</td>
 							<td>Returns what the offset from UTC is at the given std time.
         It includes the DST offset in effect at that time (if any).

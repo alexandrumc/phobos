@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2939,7 +2954,7 @@ $('#symbolSearchPane').show();</script>
 					</div>
 				</div><h1>Struct <code><a href="../../../std/container/binaryheap.html">std.container.binaryheap</a>.BinaryHeap</code></h1><p>Implements a <a href="http://en.wikipedia.org/wiki/Binary_heap">binary heap</a>
 container on top of a given random-access range type (usually <code class="lang-d"><span class="pln">T</span><span class="pun">[]</span></code>) or a random-access container type (usually <code class="lang-d"><span class="typ">Array</span><span class="pun">!</span><span class="pln">T</span></code>). The
-documentation of <code class="lang-d"><span class="typ"><span class="typ">BinaryHeap</span></span></code> will refer to the underlying range or
+documentation of <code class="lang-d"><span class="typ">BinaryHeap</span></code> will refer to the underlying range or
 container as the <i>store</i> of the heap.
 </p>
 				<div class="prototype">
@@ -2988,11 +3003,12 @@ container.
 								<a href="../../../std/container/binaryheap/binary_heap.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(s, initialSize)</span>
 							</td>
-							<td>Converts the store <code class="lang-d"><a href="../../../std/container/binaryheap/binary_heap.this.html#s"><span class="pln"><a href="../../../std/container/binaryheap/binary_heap.this.html#s"><span class="pln">s</span></a></span></a></code> into a heap. If <code class="lang-d"><a href="../../../std/container/binaryheap/binary_heap.this.html#initialSize"><span class="pln"><a href="../../../std/container/binaryheap/binary_heap.this.html#initialSize"><span class="pln">initialSize</span></a></span></a></code> is
-       specified, only the first <code class="lang-d"><a href="../../../std/container/binaryheap/binary_heap.this.html#initialSize"><span class="pln"><a href="../../../std/container/binaryheap/binary_heap.this.html#initialSize"><span class="pln">initialSize</span></a></span></a></code> elements in <code class="lang-d"><a href="../../../std/container/binaryheap/binary_heap.this.html#s"><span class="pln"><a href="../../../std/container/binaryheap/binary_heap.this.html#s"><span class="pln">s</span></a></span></a></code>
+							<td>Converts the store <code class="lang-d"><a href="../../../std/container/binaryheap/binary_heap.this.html#s"><span class="pln">s</span></a></code> into a heap. If <code class="lang-d"><a href="../../../std/container/binaryheap/binary_heap.this.html#initialSize"><span class="pln">initialSize</span></a></code> is
+       specified, only the first <code class="lang-d"><a href="../../../std/container/binaryheap/binary_heap.this.html#initialSize"><span class="pln">initialSize</span></a></code> elements in <code class="lang-d"><a href="../../../std/container/binaryheap/binary_heap.this.html#s"><span class="pln">s</span></a></code>
        are transformed into a heap, after which the heap can grow up
-       to <code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln"><a href="../../../std/container/binaryheap/binary_heap.length.html"><span class="pln">length</span></a></span></code> (if <code class="lang-d"><span class="typ">Store</span></code> is a range) or indefinitely (if
+       to <code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length</span></code> (if <code class="lang-d"><span class="typ">Store</span></code> is a range) or indefinitely (if
        <code class="lang-d"><span class="typ">Store</span></code> is a container with <code class="lang-d"><span class="pln">insertBack</span></code>). Performs
        <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">min</span><span class="pun">(</span><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">, <a href="../../../std/container/binaryheap/binary_heap.this.html#initialSize"></span><span class="pln">initialSize</span></a><span class="pun">)</span></code>)</span> evaluations of <code class="lang-d"><span class="pln">less</span></code>.
 </td>
@@ -3018,7 +3034,7 @@ underlying store (if the store is a container).
 							<td>
 								<a href="../../../std/container/binaryheap/binary_heap.dup.html" class="public property"><code>dup</code></a><span class="tableEntryAnnotation">[get]</span>
 							</td>
-							<td class="typecol"><code class="prettyprint lang-d"><a href="../../../std/container/binaryheap/binary_heap.html"><span class="typ">BinaryHeap</span></a></code></td><td>Returns a duplicate of the heap. The <code class="lang-d"><span class="pln"><span class="pln">dup</span></span></code> method is available only if the
+							<td class="typecol"><code class="prettyprint lang-d"><a href="../../../std/container/binaryheap/binary_heap.html"><span class="typ">BinaryHeap</span></a></code></td><td>Returns a duplicate of the heap. The <code class="lang-d"><span class="pln">dup</span></code> method is available only if the
 underlying store supports it.
 </td>
 						</tr>
@@ -3057,6 +3073,7 @@ according to <code class="lang-d"><span class="pln">less</span></code>.
 								<a href="../../../std/container/binaryheap/binary_heap.acquire.html" class="public">
 									<code>acquire</code>
 								</a>
+								<span class="tableEntryAnnotation">(s, initialSize)</span>
 							</td>
 							<td>Takes ownership of a store. After this, manipulating <code class="lang-d"><a href="../../../std/container/binaryheap/binary_heap.acquire.html#s"><span class="pln">s</span></a></code> may make
 the heap work incorrectly.
@@ -3067,6 +3084,7 @@ the heap work incorrectly.
 								<a href="../../../std/container/binaryheap/binary_heap.assume.html" class="public">
 									<code>assume</code>
 								</a>
+								<span class="tableEntryAnnotation">(s, initialSize)</span>
 							</td>
 							<td>Takes ownership of a store assuming it already was organized as a
 heap.
@@ -3077,6 +3095,7 @@ heap.
 								<a href="../../../std/container/binaryheap/binary_heap.clear.html" class="public">
 									<code>clear</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Clears the heap by detaching it from the underlying store.
 </td>
@@ -3086,6 +3105,7 @@ heap.
 								<a href="../../../std/container/binaryheap/binary_heap.conditional_insert.html" class="public">
 									<code>conditionalInsert</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
 							<td>If the heap has room to grow, inserts <code class="lang-d"><a href="../../../std/container/binaryheap/binary_heap.conditional_insert.html#value"><span class="pln">value</span></a></code> into the store and
 returns <code class="lang-d"><span class="kwd">true</span></code>. Otherwise, if <code class="lang-d"><span class="pln">less</span><span class="pun">(<a href="../../../std/container/binaryheap/binary_heap.conditional_insert.html#value"></span><span class="pln">value</span></a><span class="pun">, <a href="../../../std/container/binaryheap/binary_heap.front.html"></span><span class="pln">front</span></a><span class="pun">)</span></code>, calls <code class="lang-d"><a href="../../../std/container/binaryheap/binary_heap.replace_front.html"><span class="pln">replaceFront</span></a><span class="pun">(<a href="../../../std/container/binaryheap/binary_heap.conditional_insert.html#value"></span><span class="pln">value</span></a><span class="pun">)</span></code> and returns again <code class="lang-d"><span class="kwd">true</span></code>. Otherwise, leaves
@@ -3099,6 +3119,7 @@ must be collected.
 								<a href="../../../std/container/binaryheap/binary_heap.conditional_swap.html" class="public">
 									<code>conditionalSwap</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
 							<td>Swapping is allowed if the heap is full. If <code class="lang-d"><span class="pln">less</span><span class="pun">(<a href="../../../std/container/binaryheap/binary_heap.conditional_swap.html#value"></span><span class="pln">value</span></a><span class="pun">, <a href="../../../std/container/binaryheap/binary_heap.front.html"></span><span class="pln">front</span></a><span class="pun">)</span></code>, the
 method exchanges store.front and value and returns <code class="lang-d"><span class="kwd">true</span></code>. Otherwise, it
@@ -3110,8 +3131,9 @@ leaves the heap unaffected and returns <code class="lang-d"><span class="kwd">fa
 								<a href="../../../std/container/binaryheap/binary_heap.insert.html" class="public">
 									<code>insert</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
-							<td>Inserts <code class="lang-d"><a href="../../../std/container/binaryheap/binary_heap.insert.html#value"><span class="pln"><a href="../../../std/container/binaryheap/binary_heap.insert.html#value"><span class="pln">value</span></a></span></a></code> into the store. If the underlying store is a range
+							<td>Inserts <code class="lang-d"><a href="../../../std/container/binaryheap/binary_heap.insert.html#value"><span class="pln">value</span></a></code> into the store. If the underlying store is a range
 and <code class="lang-d"><a href="../../../std/container/binaryheap/binary_heap.length.html"><span class="pln">length</span></a><span class="pln"> </span><span class="pun">== <a href="../../../std/container/binaryheap/binary_heap.capacity.html"></span><span class="pln">capacity</span></a></code>, throws an exception.
 </td>
 						</tr>
@@ -3120,9 +3142,10 @@ and <code class="lang-d"><a href="../../../std/container/binaryheap/binary_heap.
 								<a href="../../../std/container/binaryheap/binary_heap.release.html" class="public">
 									<code>release</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Clears the heap. Returns the portion of the store from <code class="lang-d"><span class="lit">0</span></code> up to
-<code class="lang-d"><a href="../../../std/container/binaryheap/binary_heap.length.html"><span class="pln"><a href="../../../std/container/binaryheap/binary_heap.length.html"><span class="pln">length</span></a></span></a></code>, which satisfies the <a href="https://en.wikipedia.org/wiki/Heap_(data_structure)">heap property</a>.
+<code class="lang-d"><a href="../../../std/container/binaryheap/binary_heap.length.html"><span class="pln">length</span></a></code>, which satisfies the <a href="https://en.wikipedia.org/wiki/Heap_(data_structure)">heap property</a>.
 </td>
 						</tr>
 						<tr>
@@ -3130,6 +3153,7 @@ and <code class="lang-d"><a href="../../../std/container/binaryheap/binary_heap.
 								<a href="../../../std/container/binaryheap/binary_heap.remove_any.html" class="public">
 									<code>removeAny</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Removes the largest element from the heap and returns a copy of
 it. The element still resides in the heap's store. For performance
@@ -3142,6 +3166,7 @@ that are expensive to copy.
 								<a href="../../../std/container/binaryheap/binary_heap.remove_front.html" class="public">
 									<code>removeFront</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Removes the largest element from the heap.
 </td>
@@ -3151,8 +3176,9 @@ that are expensive to copy.
 								<a href="../../../std/container/binaryheap/binary_heap.replace_front.html" class="public">
 									<code>replaceFront</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
-							<td>Replaces the largest element in the store with <code class="lang-d"><a href="../../../std/container/binaryheap/binary_heap.replace_front.html#value"><span class="pln"><a href="../../../std/container/binaryheap/binary_heap.replace_front.html#value"><span class="pln">value</span></a></span></a></code>.
+							<td>Replaces the largest element in the store with <code class="lang-d"><a href="../../../std/container/binaryheap/binary_heap.replace_front.html#value"><span class="pln">value</span></a></code>.
 </td>
 						</tr>
 					</table>

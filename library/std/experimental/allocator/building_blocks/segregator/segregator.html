@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2979,6 +2994,7 @@ dispatched to <code class="lang-d"><span class="typ">SmallAllocator</span></code
 								<a href="../../../../../std/experimental/allocator/building_blocks/segregator/segregator.aligned_allocate.html" class="public">
 									<code>alignedAllocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(, )</span>
 							</td>
 							<td>This method is defined if both allocators define it, and forwards to
         <code class="lang-d"><span class="typ">SmallAllocator</span></code> or <code class="lang-d"><span class="typ">LargeAllocator</span></code> appropriately.
@@ -2989,6 +3005,7 @@ dispatched to <code class="lang-d"><span class="typ">SmallAllocator</span></code
 								<a href="../../../../../std/experimental/allocator/building_blocks/segregator/segregator.aligned_reallocate.html" class="public">
 									<code>alignedReallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, s, a)</span>
 							</td>
 							<td>This method is defined only if at least one of the allocators defines
         it, and work similarly to <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/segregator/segregator.reallocate.html"><span class="pln">reallocate</span></a></code>.
@@ -2999,6 +3016,7 @@ dispatched to <code class="lang-d"><span class="typ">SmallAllocator</span></code
 								<a href="../../../../../std/experimental/allocator/building_blocks/segregator/segregator.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>The memory is obtained from <code class="lang-d"><span class="typ">SmallAllocator</span></code> if <code class="lang-d"><span class="pln">s </span><span class="pun">&lt;= </span><span class="pln">threshold</span></code>,
         or <code class="lang-d"><span class="typ">LargeAllocator</span></code> otherwise.
@@ -3009,6 +3027,7 @@ dispatched to <code class="lang-d"><span class="typ">SmallAllocator</span></code
 								<a href="../../../../../std/experimental/allocator/building_blocks/segregator/segregator.allocator_for_size.html" class="public">
 									<code>allocatorForSize</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Composite allocators involving nested instantiations of <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/segregator/segregator.html"><span class="typ">Segregator</span></a></code> make
     it difficult to access individual sub-allocators stored within. <code class="lang-d"><span class="pln">    allocatorForSize</span></code> simplifies the task by supplying the allocator nested
@@ -3020,9 +3039,10 @@ dispatched to <code class="lang-d"><span class="typ">SmallAllocator</span></code
 								<a href="../../../../../std/experimental/allocator/building_blocks/segregator/segregator.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>This function is defined only if both allocators define it, and forwards
-        appropriately depending on <code class="lang-d"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/segregator/segregator.deallocate.html#b"><span class="pln">b</span></a><wbr/></span><span class="pun">.</span><span class="pln">length</span></code>.
+        appropriately depending on <code class="lang-d"><span class="pln">b<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>.
 </td>
 						</tr>
 						<tr>
@@ -3030,6 +3050,7 @@ dispatched to <code class="lang-d"><span class="typ">SmallAllocator</span></code
 								<a href="../../../../../std/experimental/allocator/building_blocks/segregator/segregator.deallocate_all.html" class="public">
 									<code>deallocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>This function is defined only if both allocators define it, and calls
         <code class="lang-d"><span class="pln">deallocateAll</span></code> for them in turn.
@@ -3040,6 +3061,7 @@ dispatched to <code class="lang-d"><span class="typ">SmallAllocator</span></code
 								<a href="../../../../../std/experimental/allocator/building_blocks/segregator/segregator.empty.html" class="public">
 									<code>empty</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>This function is defined only if both allocators define it, and returns
         the conjunction of <code class="lang-d"><span class="pln">empty</span></code> calls for the two.
@@ -3050,6 +3072,7 @@ dispatched to <code class="lang-d"><span class="typ">SmallAllocator</span></code
 								<a href="../../../../../std/experimental/allocator/building_blocks/segregator/segregator.expand.html" class="public">
 									<code>expand</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, delta)</span>
 							</td>
 							<td>This method is defined only if at least one of the allocators defines
         it. If <code class="lang-d"><span class="typ">SmallAllocator</span></code> defines <code class="lang-d"><span class="pln">expand</span></code> and <code class="lang-d"><span class="pln">b<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">+
@@ -3063,10 +3086,11 @@ dispatched to <code class="lang-d"><span class="typ">SmallAllocator</span></code
 								<a href="../../../../../std/experimental/allocator/building_blocks/segregator/segregator.good_alloc_size.html" class="public">
 									<code>goodAllocSize</code>
 								</a>
+								<span class="tableEntryAnnotation">(s)</span>
 							</td>
 							<td>This method is defined only if at least one of the allocators defines
         it. The good allocation size is obtained from <code class="lang-d"><span class="typ">SmallAllocator</span></code> if <code class="lang-d"><span class="pln">        <a href="../../../../../std/experimental/allocator/building_blocks/segregator/segregator.good_alloc_size.html#s"></span><span class="pln">s</span></a><span class="pln"> </span><span class="pun">&lt;= </span><span class="pln">threshold</span></code>, or <code class="lang-d"><span class="typ">LargeAllocator</span></code> otherwise. (If one of the
-        allocators does not define <code class="lang-d"><span class="pln"><span class="pln">goodAllocSize</span></span></code>, the default
+        allocators does not define <code class="lang-d"><span class="pln">goodAllocSize</span></code>, the default
         implementation in this module applies.)
 </td>
 						</tr>
@@ -3075,6 +3099,7 @@ dispatched to <code class="lang-d"><span class="typ">SmallAllocator</span></code
 								<a href="../../../../../std/experimental/allocator/building_blocks/segregator/segregator.owns.html" class="public">
 									<code>owns</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>This method is defined only if both allocators define it. The call is
         forwarded to <code class="lang-d"><span class="typ">SmallAllocator</span></code> if <code class="lang-d"><span class="pln">b<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">&lt;= </span><span class="pln">threshold</span></code>, or <code class="lang-d"><span class="pln">        </span><span class="typ">LargeAllocator</span></code> otherwise.
@@ -3085,6 +3110,7 @@ dispatched to <code class="lang-d"><span class="typ">SmallAllocator</span></code
 								<a href="../../../../../std/experimental/allocator/building_blocks/segregator/segregator.reallocate.html" class="public">
 									<code>reallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, s)</span>
 							</td>
 							<td>This method is defined only if at least one of the allocators defines
         it. If <code class="lang-d"><span class="typ">SmallAllocator</span></code> defines <code class="lang-d"><span class="pln">reallocate</span></code> and <code class="lang-d"><span class="pln">b<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">&lt;=
@@ -3115,8 +3141,8 @@ dispatched to <code class="lang-d"><span class="typ">SmallAllocator</span></code
 </span><span class="pln">a<wbr/></span><span class="pun">.</span><span class="pln">deallocate</span><span class="pun">(</span><span class="pln">b</span><span class="pun">);
 </span></code></pre>
 </section>
-<h2 id="1">Alias Segregator</h2><p>A <code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/segregator/segregator.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/segregator/segregator.html"><span class="typ">Segregator</span></a></span></a></code> with more than three arguments expands to a composition of
-elemental <code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/segregator/segregator.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/segregator/segregator.html"><span class="typ">Segregator</span></a></span></a></code>s, as illustrated by the following example:
+<h2 id="1">Alias Segregator</h2><p>A <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/segregator/segregator.html"><span class="typ">Segregator</span></a></code> with more than three arguments expands to a composition of
+elemental <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/segregator/segregator.html"><span class="typ">Segregator</span></a></code>s, as illustrated by the following example:
 </p>
 				<div class="prototype">
 					<code class="lang-d">

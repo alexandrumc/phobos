@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2940,7 +2955,7 @@ $('#symbolSearchPane').show();</script>
 				</div><h1>Struct <code><a href="../../../../../std/experimental/allocator/building_blocks/region.html">std.experimental.allocator.building_blocks.region</a>.SbrkRegion</code></h1><p>Allocator backed by <code class="lang-d"><a href="https://en.wikipedia.org/wiki/Sbrk"><span class="pln">sbrk</span></a></code>
 for Posix systems. Due to the fact that <code class="lang-d"><span class="pln">sbrk</span></code> is not thread-safe
 <a href="http://lifecs.likai.org/2010/02/sbrk-is-not-thread-safe.html">by design</a>,
-<code class="lang-d"><span class="typ"><span class="typ">SbrkRegion</span></span></code> uses a mutex internally. This implies
+<code class="lang-d"><span class="typ">SbrkRegion</span></code> uses a mutex internally. This implies
 that uncontrolled calls to <code class="lang-d"><span class="pln">brk</span></code> and <code class="lang-d"><span class="pln">sbrk</span></code> may affect the workings of <code class="lang-d"><span class="typ">SbrkRegion</span></code> adversely.
 </p>
 				<div class="prototype">
@@ -2979,8 +2994,9 @@ that uncontrolled calls to <code class="lang-d"><span class="pln">brk</span></co
 								<a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.aligned_allocate.html" class="public">
 									<code>alignedAllocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(bytes, a)</span>
 							</td>
-							<td>Rounds the given size to a multiple of thew <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.alignment.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.alignment.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.alignment.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.alignment.html"><span class="pln">alignment</span></a></span></a></span></a></span></a></code>
+							<td>Rounds the given size to a multiple of thew <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.alignment.html"><span class="pln">alignment</span></a></code>
 </td>
 						</tr>
 						<tr>
@@ -2988,8 +3004,9 @@ that uncontrolled calls to <code class="lang-d"><span class="pln">brk</span></co
 								<a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(bytes)</span>
 							</td>
-							<td>Rounds the given size to a multiple of thew <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.alignment.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.alignment.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.alignment.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.alignment.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.alignment.html"><span class="pln">alignment</span></a></span></a></span></a></span></a></span></a></code>
+							<td>Rounds the given size to a multiple of thew <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.alignment.html"><span class="pln">alignment</span></a></code>
 </td>
 						</tr>
 						<tr>
@@ -2997,8 +3014,9 @@ that uncontrolled calls to <code class="lang-d"><span class="pln">brk</span></co
 								<a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
-							<td>The <code class="lang-d"><span class="pln"><span class="pln">deallocate</span></span></code> method only works (and returns <code class="lang-d"><span class="kwd">true</span></code>)  on systems
+							<td>The <code class="lang-d"><span class="pln">deallocate</span></code> method only works (and returns <code class="lang-d"><span class="kwd">true</span></code>)  on systems
     that support reducing the  break address (i.e. accept calls to <code class="lang-d"><span class="pln">sbrk</span></code>
     with negative offsets). OSX does not accept such. In addition the argument
     must be the last block allocated.
@@ -3009,8 +3027,9 @@ that uncontrolled calls to <code class="lang-d"><span class="pln">brk</span></co
 								<a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.deallocate_all.html" class="public">
 									<code>deallocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
-							<td>The <code class="lang-d"><span class="pln"><span class="pln">deallocateAll</span></span></code> method only works (and returns <code class="lang-d"><span class="kwd">true</span></code>) on systems
+							<td>The <code class="lang-d"><span class="pln">deallocateAll</span></code> method only works (and returns <code class="lang-d"><span class="kwd">true</span></code>) on systems
     that support reducing the  break address (i.e. accept calls to <code class="lang-d"><span class="pln">sbrk</span></code>
     with negative offsets). OSX does not accept such.
 </td>
@@ -3020,6 +3039,7 @@ that uncontrolled calls to <code class="lang-d"><span class="pln">brk</span></co
 								<a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.empty.html" class="public">
 									<code>empty</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Standard allocator API.
 </td>
@@ -3029,9 +3049,10 @@ that uncontrolled calls to <code class="lang-d"><span class="pln">brk</span></co
 								<a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.expand.html" class="public">
 									<code>expand</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, delta)</span>
 							</td>
-							<td>The <code class="lang-d"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.expand.html"><span class="pln"><span class="pln">expand</span></span></a></span></code> method may only succeed if the argument is the last block
-    allocated. In that case, <code class="lang-d"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.expand.html"><span class="pln"><span class="pln">expand</span></span></a></span></code> attempts to push the break pointer to
+							<td>The <code class="lang-d"><span class="pln">expand</span></code> method may only succeed if the argument is the last block
+    allocated. In that case, <code class="lang-d"><span class="pln">expand</span></code> attempts to push the break pointer to
     the right.
 </td>
 						</tr>
@@ -3040,8 +3061,9 @@ that uncontrolled calls to <code class="lang-d"><span class="pln">brk</span></co
 								<a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.good_alloc_size.html" class="public">
 									<code>goodAllocSize</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
-							<td>Rounds the given size to a multiple of thew <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.alignment.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.alignment.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.alignment.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.alignment.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.alignment.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.alignment.html"><span class="pln">alignment</span></a></span></a></span></a></span></a></span></a></span></a></code>
+							<td>Rounds the given size to a multiple of thew <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.alignment.html"><span class="pln">alignment</span></a></code>
 </td>
 						</tr>
 						<tr>
@@ -3049,9 +3071,10 @@ that uncontrolled calls to <code class="lang-d"><span class="pln">brk</span></co
 								<a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.owns.html" class="public">
 									<code>owns</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
-							<td>The <code class="lang-d"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.expand.html"><span class="pln"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.expand.html"><span class="pln">expand</span></a></span></span></a></span></code> method may only succeed if the argument is the last block
-    allocated. In that case, <code class="lang-d"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.expand.html"><span class="pln"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.expand.html"><span class="pln">expand</span></a></span></span></a></span></code> attempts to push the break pointer to
+							<td>The <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.expand.html"><span class="pln">expand</span></a></code> method may only succeed if the argument is the last block
+    allocated. In that case, <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/region/sbrk_region.expand.html"><span class="pln">expand</span></a></code> attempts to push the break pointer to
     the right.
 </td>
 						</tr>

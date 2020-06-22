@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2954,26 +2969,32 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="foreachDsymbol" class="public" href="../dmd/dsymbol/foreach_dsymbol.html">foreachDsymbol</a><span class="decoration">(symbols, dg)</span>
+									<a id="foreachDsymbol" class="public" href="../dmd/dsymbol/foreach_dsymbol.html">foreachDsymbol</a><span class="tableEntryAnnotation">(symbols, dg)</span>
 								</code>
 							</td>
 							<td>Calls dg(Dsymbol *sym) for each Dsymbol.
  If dg returns !=0, stops and returns that value else returns 0.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="foreachDsymbol" class="public" href="../dmd/dsymbol/foreach_dsymbol.html">foreachDsymbol</a><span class="decoration">(symbols, dg)</span>
+									<a id="foreachDsymbol" class="public" href="../dmd/dsymbol/foreach_dsymbol.html">foreachDsymbol</a><span class="tableEntryAnnotation">(symbols, dg)</span>
 								</code>
 							</td>
 							<td>Calls dg(Dsymbol *sym) for each Dsymbol.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -2982,7 +3003,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -2992,6 +3013,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Array Index/Slice scope
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3000,6 +3023,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3009,6 +3034,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Table of Dsymbol's
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3020,6 +3047,8 @@ $('#symbolSearchPane').show();</script>
  This is not an AST node, but a class used to pass
  an expression as a function parameter of type Dsymbol.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3032,6 +3061,8 @@ $('#symbolSearchPane').show();</script>
  scope.  See <code class="lang-d"><a href="../dmd/attrib/forwarding_attrib_declaration.html" title="dmd.attrib.ForwardingAttribDeclaration"><span class="typ">ForwardingAttribDeclaration</span></a></code> for more
  details.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3041,6 +3072,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Overload Sets
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3050,6 +3083,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Dsymbol that generates a scope
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3059,6 +3094,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>With statement scope
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

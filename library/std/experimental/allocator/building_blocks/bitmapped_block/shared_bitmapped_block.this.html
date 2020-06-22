@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2940,12 +2955,12 @@ $('#symbolSearchPane').show();</script>
 				</div><h1>Function <code><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/shared_bitmapped_block.html">std.experimental.allocator.building_blocks.bitmapped_block.SharedBitmappedBlock</a>.this</code></h1><p>Constructs a block allocator given a hunk of memory, or a desired capacity
         in bytes.
         <ul>        <li>If <code class="lang-d"><span class="typ">ParentAllocator</span></code> is <a href="../../../../../std/experimental/allocator/building_blocks/null_allocator/null_allocator.html" title="std.experimental.allocator.building_blocks.null_allocator.NullAllocator"><code class="lang-d"><span class="typ">NullAllocator</span></code></a>,
-        only the constructor taking <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/shared_bitmapped_block.this.html#data"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/shared_bitmapped_block.this.html#data"><span class="pln">data</span></a></span></a></code> is defined and the user is responsible for freeing <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/shared_bitmapped_block.this.html#data"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/shared_bitmapped_block.this.html#data"><span class="pln">data</span></a></span></a></code> if desired.</li>
-        <li>Otherwise, both constructors are defined. The <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/shared_bitmapped_block.this.html#data"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/shared_bitmapped_block.this.html#data"><span class="pln">data</span></a></span></a></code>-based
+        only the constructor taking <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/shared_bitmapped_block.this.html#data"><span class="pln">data</span></a></code> is defined and the user is responsible for freeing <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/shared_bitmapped_block.this.html#data"><span class="pln">data</span></a></code> if desired.</li>
+        <li>Otherwise, both constructors are defined. The <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/shared_bitmapped_block.this.html#data"><span class="pln">data</span></a></code>-based
         constructor assumes memory has been allocated with the parent allocator.
-        The <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/shared_bitmapped_block.this.html#capacity"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/shared_bitmapped_block.this.html#capacity"><span class="pln">capacity</span></a></span></a></code>-based constructor uses <code class="lang-d"><span class="typ">ParentAllocator</span></code> to allocate
+        The <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/shared_bitmapped_block.this.html#capacity"><span class="pln">capacity</span></a></code>-based constructor uses <code class="lang-d"><span class="typ">ParentAllocator</span></code> to allocate
         an appropriate contiguous hunk of memory. Regardless of the constructor
-        used, the destructor releases the memory by using <code class="lang-d"><span class="typ">ParentAllocator<wbr/></span><span class="pun">.</span><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/bitmapped_block/shared_bitmapped_block.deallocate.html"><span class="pln">deallocate</span></a></span></code>.</li>
+        used, the destructor releases the memory by using <code class="lang-d"><span class="typ">ParentAllocator<wbr/></span><span class="pun">.</span><span class="pln">deallocate</span></code>.</li>
         </ul>
 </p>
 				<div class="prototype">

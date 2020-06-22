@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2947,24 +2962,30 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="ehmethod" class="public" href="../../dmd/backend/cc/ehmethod.html">ehmethod</a><span class="decoration">(f)</span>
+									<a id="ehmethod" class="public" href="../../dmd/backend/cc/ehmethod.html">ehmethod</a><span class="tableEntryAnnotation">(f)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="list_symbol" class="public" href="../../dmd/backend/cc/list_symbol.html">list_symbol</a><span class="decoration">(lst)</span>
+									<a id="list_symbol" class="public" href="../../dmd/backend/cc/list_symbol.html">list_symbol</a><span class="tableEntryAnnotation">(lst)</span>
 								</code>
 							</td>
 							<td>Symbol Table
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -2973,7 +2994,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -2983,6 +3004,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Base classes are a list of these.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2992,6 +3015,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Range for blocks.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3001,6 +3026,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Global variables.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3027,6 +3054,8 @@ $('#symbolSearchPane').show();</script>
                       a = offset
       DTcoff          offset into code segment
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3036,6 +3065,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>This is to support compiling expressions within the context of a function.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3045,6 +3076,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Item in list for member initializer.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3056,6 +3089,8 @@ $('#symbolSearchPane').show();</script>
  Used to gather together most global variables.
  This struct is saved/restored during function body parsing.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3065,6 +3100,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Position in source file
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3074,6 +3111,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Functions
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3083,6 +3122,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Special information for class templates.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3092,6 +3133,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Information gathered about primary member template explicit specialization.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3102,6 +3145,8 @@ $('#symbolSearchPane').show();</script>
 							<td>Information gathered about externally defined template member functions,
  member data, and member classes.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3111,6 +3156,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Information gathered about nested explicit specializations.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3120,6 +3167,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Information gathered about nested class friends.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

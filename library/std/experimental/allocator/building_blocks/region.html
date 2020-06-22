@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2944,7 +2959,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -2955,6 +2970,8 @@ $('#symbolSearchPane').show();</script>
 							<td><code class="lang-d"><span class="typ">InSituRegion</span></code> is a convenient region that carries its storage within itself
 (in the form of a statically-sized array).
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2968,6 +2985,8 @@ return <code class="lang-d"><span class="kwd">null</span></code>. Therefore, <co
 more sophisticated allocators; or (b) for batch-style very fast allocations
 that deallocate everything at once.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2981,6 +3000,8 @@ for Posix systems. Due to the fact that <code class="lang-d"><span class="pln">s
 <code class="lang-d"><span class="typ">SbrkRegion</span></code> uses a mutex internally. This implies
 that uncontrolled calls to <code class="lang-d"><span class="pln">brk</span></code> and <code class="lang-d"><span class="pln">sbrk</span></code> may affect the workings of <code class="lang-d"><span class="typ">SbrkRegion</span></code> adversely.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2991,6 +3012,8 @@ that uncontrolled calls to <code class="lang-d"><span class="pln">brk</span></co
 							<td>The threadsafe version of the <code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/region/region.html"><span class="typ">Region</span></a></code> allocator.
 Allocations and deallocations are lock-free based using <code class="lang-d"><a href="../../../../core/atomic/cas.html" title="core.atomic.cas"><span class="pln">cas</span></a></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

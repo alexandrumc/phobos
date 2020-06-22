@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2981,6 +2996,7 @@ as a reference to a <code class="lang-d"><span class="pln">T</span></code>.
 								<a href="../../std/typecons/unique.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(p)</span>
 							</td>
 							<td>Constructor that takes an rvalue.
     It will ensure uniqueness, as long as the rvalue
@@ -2993,6 +3009,7 @@ as a reference to a <code class="lang-d"><span class="pln">T</span></code>.
 								<a href="../../std/typecons/unique.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(p)</span>
 							</td>
 							<td>Constructor that takes an lvalue. It nulls its source.
     The nulling will ensure uniqueness as long as there
@@ -3004,6 +3021,7 @@ as a reference to a <code class="lang-d"><span class="pln">T</span></code>.
 								<a href="../../std/typecons/unique.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(u)</span>
 							</td>
 							<td>Constructor that takes a <code class="lang-d"><a href="../../std/typecons/unique.html"><span class="typ">Unique</span></a></code> of a type that is convertible to our type.
 </td>
@@ -3036,6 +3054,7 @@ as a reference to a <code class="lang-d"><span class="pln">T</span></code>.
 								<a href="../../std/typecons/unique.create.html" class="public">
 									<code>create</code>
 								</a>
+								<span class="tableEntryAnnotation">(args)</span>
 							</td>
 							<td>Allows safe construction of <code class="lang-d"><a href="../../std/typecons/unique.html"><span class="typ">Unique</span></a></code>. It creates the resource and
     guarantees unique ownership of it (unless <code class="lang-d"><span class="pln">T</span></code> publishes aliases of
@@ -3047,6 +3066,7 @@ as a reference to a <code class="lang-d"><span class="pln">T</span></code>.
 								<a href="../../std/typecons/unique.op_assign.html" class="public">
 									<code>opAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(u)</span>
 							</td>
 							<td>Transfer ownership from a <code class="lang-d"><a href="../../std/typecons/unique.html"><span class="typ">Unique</span></a></code> of a type that is convertible to our type.
 </td>
@@ -3056,6 +3076,7 @@ as a reference to a <code class="lang-d"><span class="pln">T</span></code>.
 								<a href="../../std/typecons/unique.release.html" class="public">
 									<code>release</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Transfer ownership to a <code class="lang-d"><a href="../../std/typecons/unique.html"><span class="typ">Unique</span></a></code> rvalue. Nullifies the current contents.
     Same as calling std.algorithm.move on it.

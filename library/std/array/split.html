@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,7 +2952,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../std/array.html">std.array</a>.split</code></h1><p>Eagerly splits <code class="lang-d"><a href="../std/array/split.html#range"><span class="pln"><a href="../../std/array/split.html#range"><span class="pln">range</span></a></span></a></code> into an array, using <code class="lang-d"><a href="../std/array/split.html#sep"><span class="pln"><a href="../../std/array/split.html#sep"><span class="pln">sep</span></a></span></a></code> as the delimiter.
+				</div><h1>Function <code><a href="../../std/array.html">std.array</a>.split</code></h1><p>Eagerly splits <code class="lang-d"><a href="../../std/array/split.html#range"><span class="pln">range</span></a></code> into an array, using <code class="lang-d"><a href="../../std/array/split.html#sep"><span class="pln">sep</span></a></code> as the delimiter.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2952,7 +2967,7 @@ $('#symbolSearchPane').show();</script>
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isSomeString</span><span class="pun">!</span><span class="pln">S</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">split</span>(Range, Separator)
+				<span class="kwd">auto</span> <span class="pln">split</span>(Range, Separator)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">Range</span> <span class="pln">range</span><span class="pun">,</span>
@@ -2964,7 +2979,7 @@ $('#symbolSearchPane').show();</script>
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isForwardRange</span><span class="pun">!</span><span class="typ">Range </span><span class="pun">&amp;&amp; (</span><span class="kwd">is</span><span class="pun">(</span><span class="kwd">typeof</span><span class="pun">(</span><span class="typ">ElementType</span><span class="pun">!</span><span class="typ">Range<wbr/></span><span class="pun">.</span><span class="pln">init </span><span class="pun">== </span><span class="typ">Separator<wbr/></span><span class="pun">.</span><span class="pln">init</span><span class="pun">)) || </span><span class="kwd">is</span><span class="pun">(</span><span class="kwd">typeof</span><span class="pun">(</span><span class="typ">ElementType</span><span class="pun">!</span><span class="typ">Range<wbr/></span><span class="pun">.</span><span class="pln">init </span><span class="pun">== </span><span class="typ">ElementType</span><span class="pun">!</span><span class="typ">Separator<wbr/></span><span class="pun">.</span><span class="pln">init</span><span class="pun">)) &amp;&amp; </span><span class="pln">isForwardRange</span><span class="pun">!</span><span class="typ">Separator</span><span class="pun">)</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">split</span>(alias isTerminator, Range)
+				<span class="kwd">auto</span> <span class="pln">split</span>(alias isTerminator, Range)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">Range</span> <span class="pln">range</span>

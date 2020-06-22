@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2955,55 +2970,89 @@ original C header.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="va_arg" class="public" href="../../core/stdc/stdarg/va_arg.html">va_arg</a><span class="decoration">(ap)</span>
+									<a id="va_arg" class="public" href="../../core/stdc/stdarg/va_arg.html">va_arg</a><span class="tableEntryAnnotation">(ap, parmn)</span>
 								</code>
 							</td>
-							<td></td>
+							<td>Retrieve and store in parmn the next value that is of type T.
+</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="va_arg" class="public" href="../../core/stdc/stdarg/va_arg.html">va_arg</a><span class="decoration">(apx, parmn)</span>
+									<a id="va_arg" class="public" href="../../core/stdc/stdarg/va_arg.html">va_arg</a><span class="tableEntryAnnotation">(ap)</span>
 								</code>
 							</td>
-							<td></td>
+							<td>Retrieve and return the next value that is of type T.
+</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="va_arg" class="public" href="../../core/stdc/stdarg/va_arg.html">va_arg</a><span class="decoration">(apx, ti, parmn)</span>
+									<a id="va_copy" class="public" href="../../core/stdc/stdarg/va_copy.html">va_copy</a><span class="tableEntryAnnotation">(dest, src, storage)</span>
 								</code>
 							</td>
-							<td></td>
+							<td>Make a copy of ap.
+</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="va_copy" class="public" href="../../core/stdc/stdarg/va_copy.html">va_copy</a><span class="decoration">(dest, src, storage)</span>
+									<a id="va_end" class="public" href="../../core/stdc/stdarg/va_end.html">va_end</a><span class="tableEntryAnnotation">(ap)</span>
 								</code>
 							</td>
-							<td></td>
+							<td>End use of ap.
+</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="va_end" class="public" href="../../core/stdc/stdarg/va_end.html">va_end</a><span class="decoration">(ap)</span>
+									<a id="va_start" class="public" href="../../core/stdc/stdarg/va_start.html">va_start</a><span class="tableEntryAnnotation">(ap, parmn)</span>
 								</code>
 							</td>
-							<td></td>
+							<td>Initialize ap.
+ parmn should be the last named parameter.
+</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<h2>Aliases</h2>
+					<table>
+						<col class="caption"/>
+						<tr>
+							<th>Name</th><th>Type</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
-								<code>
-									<a id="va_start" class="public" href="../../core/stdc/stdarg/va_start.html">va_start</a><span class="decoration">(ap, parmn)</span>
-								</code>
+								<a id="va_list" class="public" href="../../core/stdc/stdarg/va_list.html">
+									<code>va_list</code>
+								</a>
 							</td>
-							<td></td>
+							<td>
+								<code class="prettyprint lang-d"><span class="pln">core<wbr/></span><span class="pun">.</span><span class="pln">internal<wbr/></span><span class="pun">.</span><span class="pln">vararg<wbr/></span><span class="pun">.</span><span class="pln">sysv_x64<wbr/></span><span class="pun">.</span><span class="pln">__va_list_tag</span><span class="pun">*</span></code>
+							</td>
+							<td>The argument pointer type.
+</td>
 						</tr>
 					</table>
 				</section>

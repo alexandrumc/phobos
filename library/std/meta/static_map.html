@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/meta.d#L790">
+							<a href="https://github.com/dlang/phobos/blob/master/std/meta.d#L817">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/meta.d#L790">
+							<a href="https://github.com/dlang/phobos/edit/master/std/meta.d#L817">
 								Improve this page
 							</a>
 							<div>
@@ -2952,8 +2967,8 @@ $('#symbolSearchPane').show();</script>
 <p><span class="dlang_runnable"></span>
 </p>
 <pre class="code"><code class="lang-d"><span class="kwd">import <a href="../../std/traits.html"></span><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">traits</span></a><span class="pln"> </span><span class="pun">: </span><span class="typ">Unqual</span><span class="pun">;
-</span><span class="kwd">alias </span><span class="pln">TL </span><span class="pun">= </span><span class="pln">staticMap</span><span class="pun">!(</span><span class="typ">Unqual</span><span class="pun">, </span><span class="typ">int</span><span class="pun">, </span><span class="kwd">const </span><span class="typ">int</span><span class="pun">, </span><span class="kwd">immutable </span><span class="typ">int</span><span class="pun">);
-</span><span class="kwd">static assert</span><span class="pun">(</span><span class="kwd">is</span><span class="pun">(</span><span class="pln">TL </span><span class="pun">== <a href="../../std/meta/alias_seq.html"></span><span class="typ">AliasSeq</span></a><span class="pun">!(</span><span class="typ">int</span><span class="pun">, </span><span class="typ">int</span><span class="pun">, </span><span class="typ">int</span><span class="pun">)));
+</span><span class="kwd">alias </span><span class="pln">TL </span><span class="pun">= </span><span class="pln">staticMap</span><span class="pun">!(</span><span class="typ">Unqual</span><span class="pun">, </span><span class="typ">int</span><span class="pun">, </span><span class="kwd">const </span><span class="typ">int</span><span class="pun">, </span><span class="kwd">immutable </span><span class="typ">int</span><span class="pun">, </span><span class="typ">uint</span><span class="pun">, </span><span class="typ">ubyte</span><span class="pun">, </span><span class="typ">byte</span><span class="pun">, </span><span class="typ">short</span><span class="pun">, </span><span class="typ">ushort</span><span class="pun">);
+</span><span class="kwd">static assert</span><span class="pun">(</span><span class="kwd">is</span><span class="pun">(</span><span class="pln">TL </span><span class="pun">== <a href="../../std/meta/alias_seq.html"></span><span class="typ">AliasSeq</span></a><span class="pun">!(</span><span class="typ">int</span><span class="pun">, </span><span class="typ">int</span><span class="pun">, </span><span class="typ">int</span><span class="pun">, </span><span class="typ">uint</span><span class="pun">, </span><span class="typ">ubyte</span><span class="pun">, </span><span class="typ">byte</span><span class="pun">, </span><span class="typ">short</span><span class="pun">, </span><span class="typ">ushort</span><span class="pun">)));
 </span></code></pre>
 </section>
 

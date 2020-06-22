@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2947,370 +2962,487 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="param_append_type" class="public" href="../../dmd/backend/dtype/param_append_type.html">param_append_type</a><span class="decoration">(pp, t)</span>
+									<a id="param_append_type" class="public" href="../../dmd/backend/dtype/param_append_type.html">param_append_type</a><span class="tableEntryAnnotation">(pp, t)</span>
 								</code>
 							</td>
 							<td>Allocate a param_t of type t, and append it to parameter list.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="param_calloc" class="public" href="../../dmd/backend/dtype/param_calloc.html">param_calloc</a><span class="decoration">()</span>
+									<a id="param_calloc" class="public" href="../../dmd/backend/dtype/param_calloc.html">param_calloc</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Allocate a param_t.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="param_free" class="public" href="../../dmd/backend/dtype/param_free.html">param_free</a><span class="decoration">(pparamlst)</span>
+									<a id="param_free" class="public" href="../../dmd/backend/dtype/param_free.html">param_free</a><span class="tableEntryAnnotation">(pparamlst)</span>
 								</code>
 							</td>
 							<td>Free parameter list.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="param_free_l" class="public" href="../../dmd/backend/dtype/param_free_l.html">param_free_l</a><span class="decoration">(p)</span>
+									<a id="param_free_l" class="public" href="../../dmd/backend/dtype/param_free_l.html">param_free_l</a><span class="tableEntryAnnotation">(p)</span>
 								</code>
 							</td>
 							<td>Version of param_free() suitable for list_free().
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="param_search" class="public" href="../../dmd/backend/dtype/param_search.html">param_search</a><span class="decoration">(name, pp)</span>
+									<a id="param_search" class="public" href="../../dmd/backend/dtype/param_search.html">param_search</a><span class="tableEntryAnnotation">(name, pp)</span>
 								</code>
 							</td>
 							<td>Search for member, create symbol as needed.
  Used for symbol tables for VLA's such as:
       void func(int n, int a[n]);
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="param_t_createTal" class="public" href="../../dmd/backend/dtype/param_t_create_tal.html">param_t_createTal</a><span class="decoration">(p, ptali)</span>
+									<a id="param_t_createTal" class="public" href="../../dmd/backend/dtype/param_t_create_tal.html">param_t_createTal</a><span class="tableEntryAnnotation">(p, ptali)</span>
 								</code>
 							</td>
 							<td>Create template-argument-list blank from
  template-parameter-list
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="param_t_length" class="public" href="../../dmd/backend/dtype/param_t_length.html">param_t_length</a><span class="decoration">(p)</span>
+									<a id="param_t_length" class="public" href="../../dmd/backend/dtype/param_t_length.html">param_t_length</a><span class="tableEntryAnnotation">(p)</span>
 								</code>
 							</td>
 							<td>Compute number of parameters
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="param_t_print" class="public" href="../../dmd/backend/dtype/param_t_print.html">param_t_print</a><span class="decoration">(p)</span>
+									<a id="param_t_print" class="public" href="../../dmd/backend/dtype/param_t_print.html">param_t_print</a><span class="tableEntryAnnotation">(p)</span>
 								</code>
 							</td>
 							<td>Pretty-print a param_t
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="param_t_search" class="public" href="../../dmd/backend/dtype/param_t_search.html">param_t_search</a><span class="decoration">(p, id)</span>
+									<a id="param_t_search" class="public" href="../../dmd/backend/dtype/param_t_search.html">param_t_search</a><span class="tableEntryAnnotation">(p, id)</span>
 								</code>
 							</td>
 							<td>Look for Pident matching id
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="param_t_searchn" class="public" href="../../dmd/backend/dtype/param_t_searchn.html">param_t_searchn</a><span class="decoration">(p, id)</span>
+									<a id="param_t_searchn" class="public" href="../../dmd/backend/dtype/param_t_searchn.html">param_t_searchn</a><span class="tableEntryAnnotation">(p, id)</span>
 								</code>
 							</td>
 							<td>Look for Pident matching id
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_alignsize" class="public" href="../../dmd/backend/dtype/type_alignsize.html">type_alignsize</a><span class="decoration">(t)</span>
+									<a id="type_alignsize" class="public" href="../../dmd/backend/dtype/type_alignsize.html">type_alignsize</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Return the size of a type for alignment purposes.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_alloc" class="public" href="../../dmd/backend/dtype/type_alloc.html">type_alloc</a><span class="decoration">(ty)</span>
+									<a id="type_alloc" class="public" href="../../dmd/backend/dtype/type_alloc.html">type_alloc</a><span class="tableEntryAnnotation">(ty)</span>
 								</code>
 							</td>
 							<td>Create a type &amp; initialize it.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_allocn" class="public" href="../../dmd/backend/dtype/type_allocn.html">type_allocn</a><span class="decoration">(ty, tn)</span>
+									<a id="type_allocn" class="public" href="../../dmd/backend/dtype/type_allocn.html">type_allocn</a><span class="tableEntryAnnotation">(ty, tn)</span>
 								</code>
 							</td>
 							<td>Allocate a type of ty with a Tnext of tn.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_assoc_array" class="public" href="../../dmd/backend/dtype/type_assoc_array.html">type_assoc_array</a><span class="decoration">(tkey, tvalue)</span>
+									<a id="type_assoc_array" class="public" href="../../dmd/backend/dtype/type_assoc_array.html">type_assoc_array</a><span class="tableEntryAnnotation">(tkey, tvalue)</span>
 								</code>
 							</td>
 							<td>Allocate an associative array type,
  which are key=value pairs
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_copy" class="public" href="../../dmd/backend/dtype/type_copy.html">type_copy</a><span class="decoration">(t)</span>
+									<a id="type_copy" class="public" href="../../dmd/backend/dtype/type_copy.html">type_copy</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Type type information.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_delegate" class="public" href="../../dmd/backend/dtype/type_delegate.html">type_delegate</a><span class="decoration">(tnext)</span>
+									<a id="type_delegate" class="public" href="../../dmd/backend/dtype/type_delegate.html">type_delegate</a><span class="tableEntryAnnotation">(tnext)</span>
 								</code>
 							</td>
 							<td>Allocate a delegate type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_dyn_array" class="public" href="../../dmd/backend/dtype/type_dyn_array.html">type_dyn_array</a><span class="decoration">(tnext)</span>
+									<a id="type_dyn_array" class="public" href="../../dmd/backend/dtype/type_dyn_array.html">type_dyn_array</a><span class="tableEntryAnnotation">(tnext)</span>
 								</code>
 							</td>
 							<td>Allocate a dynamic array type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_embed" class="public" href="../../dmd/backend/dtype/type_embed.html">type_embed</a><span class="decoration">(t, u)</span>
+									<a id="type_embed" class="public" href="../../dmd/backend/dtype/type_embed.html">type_embed</a><span class="tableEntryAnnotation">(t, u)</span>
 								</code>
 							</td>
 							<td>Recursively check if type u is embedded in type t.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_enum" class="public" href="../../dmd/backend/dtype/type_enum.html">type_enum</a><span class="decoration">(name, tbase)</span>
+									<a id="type_enum" class="public" href="../../dmd/backend/dtype/type_enum.html">type_enum</a><span class="tableEntryAnnotation">(name, tbase)</span>
 								</code>
 							</td>
 							<td>Create an enum type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_fake" class="public" href="../../dmd/backend/dtype/type_fake.html">type_fake</a><span class="decoration">(ty)</span>
+									<a id="type_fake" class="public" href="../../dmd/backend/dtype/type_fake.html">type_fake</a><span class="tableEntryAnnotation">(ty)</span>
 								</code>
 							</td>
 							<td>Fake a type &amp; initialize it.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_free" class="public" href="../../dmd/backend/dtype/type_free.html">type_free</a><span class="decoration">(t)</span>
+									<a id="type_free" class="public" href="../../dmd/backend/dtype/type_free.html">type_free</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Free up data type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_function" class="public" href="../../dmd/backend/dtype/type_function.html">type_function</a><span class="decoration">(tyf, ptypes, variadic, tret)</span>
+									<a id="type_function" class="public" href="../../dmd/backend/dtype/type_function.html">type_function</a><span class="tableEntryAnnotation">(tyf, ptypes, variadic, tret)</span>
 								</code>
 							</td>
 							<td>Allocation a function type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_isdependent" class="public" href="../../dmd/backend/dtype/type_isdependent.html">type_isdependent</a><span class="decoration">(t)</span>
+									<a id="type_isdependent" class="public" href="../../dmd/backend/dtype/type_isdependent.html">type_isdependent</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Determine if type t is a dependent type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_isvla" class="public" href="../../dmd/backend/dtype/type_isvla.html">type_isvla</a><span class="decoration">(t)</span>
+									<a id="type_isvla" class="public" href="../../dmd/backend/dtype/type_isvla.html">type_isvla</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Determine if type is a VLA.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_parameterSize" class="public" href="../../dmd/backend/dtype/type_parameter_size.html">type_parameterSize</a><span class="decoration">(t, tyf)</span>
+									<a id="type_parameterSize" class="public" href="../../dmd/backend/dtype/type_parameter_size.html">type_parameterSize</a><span class="tableEntryAnnotation">(t, tyf)</span>
 								</code>
 							</td>
 							<td>Compute the size of a single parameter.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_paramsize" class="public" href="../../dmd/backend/dtype/type_paramsize.html">type_paramsize</a><span class="decoration">(t)</span>
+									<a id="type_paramsize" class="public" href="../../dmd/backend/dtype/type_paramsize.html">type_paramsize</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Compute the total size of parameters for function call.
  Used for stdcall name mangling.
  Note that hidden parameters do not contribute to size.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_pointer" class="public" href="../../dmd/backend/dtype/type_pointer.html">type_pointer</a><span class="decoration">(tnext)</span>
+									<a id="type_pointer" class="public" href="../../dmd/backend/dtype/type_pointer.html">type_pointer</a><span class="tableEntryAnnotation">(tnext)</span>
 								</code>
 							</td>
 							<td>Allocate a pointer type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_print" class="public" href="../../dmd/backend/dtype/type_print.html">type_print</a><span class="decoration">(t)</span>
+									<a id="type_print" class="public" href="../../dmd/backend/dtype/type_print.html">type_print</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Pretty-print a type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_setcv" class="public" href="../../dmd/backend/dtype/type_setcv.html">type_setcv</a><span class="decoration">(pt, cv)</span>
+									<a id="type_setcv" class="public" href="../../dmd/backend/dtype/type_setcv.html">type_setcv</a><span class="tableEntryAnnotation">(pt, cv)</span>
 								</code>
 							</td>
 							<td>Set/clear const and volatile bits in *pt according to the settings
  in cv.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_setdependent" class="public" href="../../dmd/backend/dtype/type_setdependent.html">type_setdependent</a><span class="decoration">(t)</span>
+									<a id="type_setdependent" class="public" href="../../dmd/backend/dtype/type_setdependent.html">type_setdependent</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Create a 'dependent' version of type t.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_setdim" class="public" href="../../dmd/backend/dtype/type_setdim.html">type_setdim</a><span class="decoration">(pt, dim)</span>
+									<a id="type_setdim" class="public" href="../../dmd/backend/dtype/type_setdim.html">type_setdim</a><span class="tableEntryAnnotation">(pt, dim)</span>
 								</code>
 							</td>
 							<td>Set dimension of array.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_setmangle" class="public" href="../../dmd/backend/dtype/type_setmangle.html">type_setmangle</a><span class="decoration">(pt, mangle)</span>
+									<a id="type_setmangle" class="public" href="../../dmd/backend/dtype/type_setmangle.html">type_setmangle</a><span class="tableEntryAnnotation">(pt, mangle)</span>
 								</code>
 							</td>
 							<td>Modify the Tmangle field of a type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_setty" class="public" href="../../dmd/backend/dtype/type_setty.html">type_setty</a><span class="decoration">(pt, newty)</span>
+									<a id="type_setty" class="public" href="../../dmd/backend/dtype/type_setty.html">type_setty</a><span class="tableEntryAnnotation">(pt, newty)</span>
 								</code>
 							</td>
 							<td>Modify the tym_t field of a type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_settype" class="public" href="../../dmd/backend/dtype/type_settype.html">type_settype</a><span class="decoration">(pt, t)</span>
+									<a id="type_settype" class="public" href="../../dmd/backend/dtype/type_settype.html">type_settype</a><span class="tableEntryAnnotation">(pt, t)</span>
 								</code>
 							</td>
 							<td>Set type field of some object to t.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_size" class="public" href="../../dmd/backend/dtype/type_size.html">type_size</a><span class="decoration">(t)</span>
+									<a id="type_size" class="public" href="../../dmd/backend/dtype/type_size.html">type_size</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Compute size of type in bytes.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_static_array" class="public" href="../../dmd/backend/dtype/type_static_array.html">type_static_array</a><span class="decoration">(dim, tnext)</span>
+									<a id="type_static_array" class="public" href="../../dmd/backend/dtype/type_static_array.html">type_static_array</a><span class="tableEntryAnnotation">(dim, tnext)</span>
 								</code>
 							</td>
 							<td>Allocate a static array type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_struct_class" class="public" href="../../dmd/backend/dtype/type_struct_class.html">type_struct_class</a><span class="decoration">(name, alignsize, structsize, arg1type, arg2type, isUnion, isClass, isPOD, is0size)</span>
+									<a id="type_struct_class" class="public" href="../../dmd/backend/dtype/type_struct_class.html">type_struct_class</a><span class="tableEntryAnnotation">(name, alignsize, structsize, arg1type, arg2type, isUnion, isClass, isPOD, is0size)</span>
 								</code>
 							</td>
 							<td>Create a struct/union/class type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_term" class="public" href="../../dmd/backend/dtype/type_term.html">type_term</a><span class="decoration">()</span>
+									<a id="type_term" class="public" href="../../dmd/backend/dtype/type_term.html">type_term</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Free type_list.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="type_zeroSize" class="public" href="../../dmd/backend/dtype/type_zero_size.html">type_zeroSize</a><span class="decoration">(t, tyf)</span>
+									<a id="type_zeroSize" class="public" href="../../dmd/backend/dtype/type_zero_size.html">type_zeroSize</a><span class="tableEntryAnnotation">(t, tyf)</span>
 								</code>
 							</td>
 							<td>Compute special zero sized struct.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="typematch" class="public" href="../../dmd/backend/dtype/typematch.html">typematch</a><span class="decoration">(t1, t2, relax)</span>
+									<a id="typematch" class="public" href="../../dmd/backend/dtype/typematch.html">typematch</a><span class="tableEntryAnnotation">(t1, t2, relax)</span>
 								</code>
 							</td>
 							<td>A cheap version of exp2.typematch() and exp2.paramlstmatch(),
@@ -3318,6 +3450,9 @@ $('#symbolSearchPane').show();</script>
  It's less complex because it doesn't do templates and
  can rely on strict typechecking.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

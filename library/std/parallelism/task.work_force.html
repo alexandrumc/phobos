@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,13 +2952,13 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../std/parallelism/task.html">std.parallelism.Task</a>.workForce</code></h1><p>If this <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></span></a></code> was not started yet, execute it in the current
+				</div><h1>Function <code><a href="../../std/parallelism/task.html">std.parallelism.Task</a>.workForce</code></h1><p>If this <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></code> was not started yet, execute it in the current
     thread.  If it is finished, return its result.  If it is in progress,
-    execute any other <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></span></a></code> from the <code class="lang-d"><a href="../../std/parallelism/task_pool.html"><span class="typ"><a href="../../std/parallelism/task_pool.html"><span class="typ">TaskPool</span></a></span></a></code> instance that
-    this <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></span></a></code> was submitted to until this one
+    execute any other <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></code> from the <code class="lang-d"><a href="../../std/parallelism/task_pool.html"><span class="typ">TaskPool</span></a></code> instance that
+    this <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></code> was submitted to until this one
     is finished.  If it threw an exception, rethrow that exception.
-    If no other tasks are available or this <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></span></a></code> was executed using
-    <code class="lang-d"><a href="../../std/parallelism/task.execute_in_new_thread.html"><span class="pln"><a href="../../std/parallelism/task.execute_in_new_thread.html"><span class="pln">executeInNewThread</span></a></span></a></code>, wait on a condition variable.
+    If no other tasks are available or this <code class="lang-d"><a href="../../std/parallelism/task.html"><span class="typ">Task</span></a></code> was executed using
+    <code class="lang-d"><a href="../../std/parallelism/task.execute_in_new_thread.html"><span class="pln">executeInNewThread</span></a></code>, wait on a condition variable.
 </p>
 				<div class="prototype">
 					<code class="lang-d">

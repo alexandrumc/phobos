@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2947,26 +2962,32 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cgsched_block" class="public" href="../../dmd/backend/cgsched/cgsched_block.html">cgsched_block</a><span class="decoration">(b)</span>
+									<a id="cgsched_block" class="public" href="../../dmd/backend/cgsched/cgsched_block.html">cgsched_block</a><span class="tableEntryAnnotation">(b)</span>
 								</code>
 							</td>
 							<td>Entry point
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="simpleops" class="public" href="../../dmd/backend/cgsched/simpleops.html">simpleops</a><span class="decoration">(c, scratch)</span>
+									<a id="simpleops" class="public" href="../../dmd/backend/cgsched/simpleops.html">simpleops</a><span class="tableEntryAnnotation">(c, scratch)</span>
 								</code>
 							</td>
 							<td>Replace complex instructions with simple ones more conducive
  to scheduling.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

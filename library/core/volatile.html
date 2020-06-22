@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2946,25 +2961,31 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="volatileLoad" class="public" href="../core/volatile/volatile_load.html">volatileLoad</a><span class="decoration">(ptr)</span>
+									<a id="volatileLoad" class="public" href="../core/volatile/volatile_load.html">volatileLoad</a><span class="tableEntryAnnotation">(ptr)</span>
 								</code>
 							</td>
 							<td>Read/write value from/to the memory location indicated by ptr.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="volatileStore" class="public" href="../core/volatile/volatile_store.html">volatileStore</a><span class="decoration">(ptr, value)</span>
+									<a id="volatileStore" class="public" href="../core/volatile/volatile_store.html">volatileStore</a><span class="tableEntryAnnotation">(ptr, value)</span>
 								</code>
 							</td>
 							<td>Read/write value from/to the memory location indicated by ptr.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

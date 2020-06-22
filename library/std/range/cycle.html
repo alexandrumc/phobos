@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2953,18 +2968,18 @@ $('#symbolSearchPane').show();</script>
 						</li>
 					</ul>
 				</nav><h2 id="0">Function cycle</h2><p>Repeats the given forward range ad infinitum. If the original range is
-infinite (fact that would make <code class="lang-d"><a href="../std/range/cycle.html"><span class="typ"><span class="typ"><span class="typ"><a href="../../std/range/cycle.html"><span class="typ">Cycle</span></a></span></span></span></a></code> the identity application),
-<code class="lang-d"><a href="../std/range/cycle.html"><span class="typ"><span class="typ"><span class="typ"><a href="../../std/range/cycle.html"><span class="typ">Cycle</span></a></span></span></span></a></code> detects that and aliases itself to the range type
+infinite (fact that would make <code class="lang-d"><a href="../../std/range/cycle.html"><span class="typ">Cycle</span></a></code> the identity application),
+<code class="lang-d"><a href="../../std/range/cycle.html"><span class="typ">Cycle</span></a></code> detects that and aliases itself to the range type
 itself. That works for non-forward ranges too.
-If the original range has random access, <code class="lang-d"><a href="../std/range/cycle.html"><span class="typ"><span class="typ"><span class="typ"><a href="../../std/range/cycle.html"><span class="typ">Cycle</span></a></span></span></span></a></code> offers
+If the original range has random access, <code class="lang-d"><a href="../../std/range/cycle.html"><span class="typ">Cycle</span></a></code> offers
 random access and also offers a constructor taking an initial position
-<code class="lang-d"><a href="../std/range/cycle.html#index"><span class="pln"><a href="../../std/range/cycle.html#index"><span class="pln">index</span></a></span></a></code>. <code class="lang-d"><a href="../std/range/cycle.html"><span class="typ"><span class="typ"><span class="typ"><a href="../../std/range/cycle.html"><span class="typ">Cycle</span></a></span></span></span></a></code> works with static arrays in addition to ranges,
+<code class="lang-d"><a href="../../std/range/cycle.html#index"><span class="pln">index</span></a></code>. <code class="lang-d"><a href="../../std/range/cycle.html"><span class="typ">Cycle</span></a></code> works with static arrays in addition to ranges,
 mostly for performance reasons.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">cycle</span>(R)
+				<span class="kwd">auto</span> <span class="pln">cycle</span>(R)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="pln">R</span> <span class="pln">input</span>
@@ -3023,12 +3038,12 @@ mostly for performance reasons.
 </span></code></pre>
 </section>
 <h2 id="1">Alias/Struct Cycle</h2><p>Repeats the given forward range ad infinitum. If the original range is
-infinite (fact that would make <code class="lang-d"><a href="../std/range/cycle.html"><span class="typ"><span class="typ"><span class="typ"><a href="../../std/range/cycle.html"><span class="typ"><span class="typ">Cycle</span></span></a></span></span></span></a></code> the identity application),
-<code class="lang-d"><a href="../std/range/cycle.html"><span class="typ"><span class="typ"><span class="typ"><a href="../../std/range/cycle.html"><span class="typ"><span class="typ">Cycle</span></span></a></span></span></span></a></code> detects that and aliases itself to the range type
+infinite (fact that would make <code class="lang-d"><span class="typ">Cycle</span></code> the identity application),
+<code class="lang-d"><span class="typ">Cycle</span></code> detects that and aliases itself to the range type
 itself. That works for non-forward ranges too.
-If the original range has random access, <code class="lang-d"><a href="../std/range/cycle.html"><span class="typ"><span class="typ"><span class="typ"><a href="../../std/range/cycle.html"><span class="typ"><span class="typ">Cycle</span></span></a></span></span></span></a></code> offers
+If the original range has random access, <code class="lang-d"><span class="typ">Cycle</span></code> offers
 random access and also offers a constructor taking an initial position
-<code class="lang-d"><a href="../std/range/cycle.html#index"><span class="pln"><a href="../../std/range/cycle.html#index"><span class="pln">index</span></a></span></a></code>. <code class="lang-d"><a href="../std/range/cycle.html"><span class="typ"><span class="typ"><span class="typ"><a href="../../std/range/cycle.html"><span class="typ"><span class="typ">Cycle</span></span></a></span></span></span></a></code> works with static arrays in addition to ranges,
+<code class="lang-d"><span class="pln">index</span></code>. <code class="lang-d"><span class="typ">Cycle</span></code> works with static arrays in addition to ranges,
 mostly for performance reasons.
 </p>
 				<div class="prototype">
@@ -3066,6 +3081,7 @@ mostly for performance reasons.
 								<a href="../../std/range/cycle.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(input, index)</span>
 							</td>
 							<td>Range primitives
 </td>
@@ -3105,6 +3121,7 @@ mostly for performance reasons.
 								<a href="../../std/range/cycle.op_index.html" class="public">
 									<code>opIndex</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
 							<td>Range primitives
 </td>
@@ -3114,6 +3131,7 @@ mostly for performance reasons.
 								<a href="../../std/range/cycle.op_index_assign.html" class="public">
 									<code>opIndexAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(val, n)</span>
 							</td>
 							<td>Range primitives
 </td>
@@ -3123,6 +3141,7 @@ mostly for performance reasons.
 								<a href="../../std/range/cycle.op_slice.html" class="public">
 									<code>opSlice</code>
 								</a>
+								<span class="tableEntryAnnotation">(i, j)</span>
 							</td>
 							<td>Range primitives
 </td>
@@ -3132,6 +3151,7 @@ mostly for performance reasons.
 								<a href="../../std/range/cycle.pop_front.html" class="public">
 									<code>popFront</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Range primitives
 </td>
@@ -3149,6 +3169,7 @@ mostly for performance reasons.
 								<a href="../../std/range/cycle.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(input, index)</span>
 							</td>
 							<td>Range primitives
 </td>
@@ -3188,6 +3209,7 @@ mostly for performance reasons.
 								<a href="../../std/range/cycle.op_index.html" class="public">
 									<code>opIndex</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
 							<td>Range primitives
 </td>
@@ -3197,6 +3219,7 @@ mostly for performance reasons.
 								<a href="../../std/range/cycle.op_slice.html" class="public">
 									<code>opSlice</code>
 								</a>
+								<span class="tableEntryAnnotation">(i, j)</span>
 							</td>
 							<td>Range primitives
 </td>
@@ -3206,6 +3229,7 @@ mostly for performance reasons.
 								<a href="../../std/range/cycle.pop_front.html" class="public">
 									<code>popFront</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Range primitives
 </td>

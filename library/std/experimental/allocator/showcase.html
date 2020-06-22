@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2948,12 +2963,12 @@ facilities, or import individual heap building blocks and assemble them.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="mmapRegionList" class="public" href="../../../std/experimental/allocator/showcase/mmap_region_list.html">mmapRegionList</a><span class="decoration">(bytesPerRegion)</span>
+									<a id="mmapRegionList" class="public" href="../../../std/experimental/allocator/showcase/mmap_region_list.html">mmapRegionList</a><span class="tableEntryAnnotation">(bytesPerRegion)</span>
 								</code>
 							</td>
 							<td>Creates a scalable <code class="lang-d"><span class="typ">AllocatorList</span></code> of <code class="lang-d"><span class="typ">Regions</span></code>, each having at least
@@ -2961,6 +2976,9 @@ facilities, or import individual heap building blocks and assemble them.
 <code class="lang-d"><span class="pln">deallocate</span></code> but does free all regions in its destructor. It is recommended for
 short-lived batch applications that count on never running out of memory.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

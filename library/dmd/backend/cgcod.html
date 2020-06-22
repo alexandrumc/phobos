@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2951,12 +2966,12 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="alignsection" class="public" href="../../dmd/backend/cgcod/alignsection.html">alignsection</a><span class="decoration">(base, alignment, bias)</span>
+									<a id="alignsection" class="public" href="../../dmd/backend/cgcod/alignsection.html">alignsection</a><span class="tableEntryAnnotation">(base, alignment, bias)</span>
 								</code>
 							</td>
 							<td>Align sections on the stack.
@@ -2965,49 +2980,64 @@ $('#symbolSearchPane').show();</script>
   bias        difference between where frame pointer points and the STACKALIGNed
               part of the stack
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="allocreg" class="public" href="../../dmd/backend/cgcod/allocreg.html">allocreg</a><span class="decoration">(cdb, pretregs, preg, tym)</span>
+									<a id="allocreg" class="public" href="../../dmd/backend/cgcod/allocreg.html">allocreg</a><span class="tableEntryAnnotation">(cdb, pretregs, preg, tym)</span>
 								</code>
 							</td>
 							<td>Allocate some registers.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="andregcon" class="public" href="../../dmd/backend/cgcod/andregcon.html">andregcon</a><span class="decoration">(pregconsave)</span>
+									<a id="andregcon" class="public" href="../../dmd/backend/cgcod/andregcon.html">andregcon</a><span class="tableEntryAnnotation">(pregconsave)</span>
 								</code>
 							</td>
 							<td>For elems in regcon that don't match regconsave,
  clear the corresponding bit in regcon.cse.mval.
  Do same for regcon.immed.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="autosort_cmp" class="public" href="../../dmd/backend/cgcod/autosort_cmp.html">autosort_cmp</a><span class="decoration">(ps1, ps2)</span>
+									<a id="autosort_cmp" class="public" href="../../dmd/backend/cgcod/autosort_cmp.html">autosort_cmp</a><span class="tableEntryAnnotation">(ps1, ps2)</span>
 								</code>
 							</td>
 							<td>Predicate for sorting auto symbols for qsort().
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="callcdxxx" class="public" href="../../dmd/backend/cgcod/callcdxxx.html">callcdxxx</a><span class="decoration">(cdb, e, pretregs, op)</span>
+									<a id="callcdxxx" class="public" href="../../dmd/backend/cgcod/callcdxxx.html">callcdxxx</a><span class="tableEntryAnnotation">(cdb, e, pretregs, op)</span>
 								</code>
 							</td>
 							<td>Generate code sequence for an elem.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="codgen" class="public" href="../../dmd/backend/cgcod/codgen.html">codgen</a><span class="decoration">(sfunc)</span>
+									<a id="codgen" class="public" href="../../dmd/backend/cgcod/codgen.html">codgen</a><span class="tableEntryAnnotation">(sfunc)</span>
 								</code>
 							</td>
 							<td>Generate code for a function.
@@ -3015,57 +3045,75 @@ $('#symbolSearchPane').show();</script>
  of registers not affected by the function. Some minor optimization
  possibilities are here.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cse_flush" class="public" href="../../dmd/backend/cgcod/cse_flush.html">cse_flush</a><span class="decoration">(cdb, do87)</span>
+									<a id="cse_flush" class="public" href="../../dmd/backend/cgcod/cse_flush.html">cse_flush</a><span class="tableEntryAnnotation">(cdb, do87)</span>
 								</code>
 							</td>
 							<td>Flush all CSE's out of registers and into memory.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cssave" class="public" href="../../dmd/backend/cgcod/cssave.html">cssave</a><span class="decoration">(e, regm, opsflag)</span>
+									<a id="cssave" class="public" href="../../dmd/backend/cgcod/cssave.html">cssave</a><span class="tableEntryAnnotation">(e, regm, opsflag)</span>
 								</code>
 							</td>
 							<td>Common subexpressions exist in registers. Note this in regcon.cse.mval.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="docommas" class="public" href="../../dmd/backend/cgcod/docommas.html">docommas</a><span class="decoration">(cdb, pe)</span>
+									<a id="docommas" class="public" href="../../dmd/backend/cgcod/docommas.html">docommas</a><span class="tableEntryAnnotation">(cdb, pe)</span>
 								</code>
 							</td>
 							<td>Scan down comma-expressions.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="evalinregister" class="public" href="../../dmd/backend/cgcod/evalinregister.html">evalinregister</a><span class="decoration">(e)</span>
+									<a id="evalinregister" class="public" href="../../dmd/backend/cgcod/evalinregister.html">evalinregister</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>Determine if a computation should be done into a register.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="findreg" class="public" href="../../dmd/backend/cgcod/findreg.html">findreg</a><span class="decoration">(regm)</span>
+									<a id="findreg" class="public" href="../../dmd/backend/cgcod/findreg.html">findreg</a><span class="tableEntryAnnotation">(regm)</span>
 								</code>
 							</td>
 							<td>Given a register mask, find and return the number
  of the first register that fits.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="freenode" class="public" href="../../dmd/backend/cgcod/freenode.html">freenode</a><span class="decoration">(e)</span>
+									<a id="freenode" class="public" href="../../dmd/backend/cgcod/freenode.html">freenode</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>Free element (but not it's leaves! (assume they are already freed))
@@ -3074,49 +3122,64 @@ $('#symbolSearchPane').show();</script>
  If common subexpression is not required anymore, eliminate
  references to it.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getregs" class="public" href="../../dmd/backend/cgcod/getregs.html">getregs</a><span class="decoration">(cdb, r)</span>
+									<a id="getregs" class="public" href="../../dmd/backend/cgcod/getregs.html">getregs</a><span class="tableEntryAnnotation">(cdb, r)</span>
 								</code>
 							</td>
 							<td>We are going to use the registers in mask r.
  Generate any code necessary to save any regs.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getregs_imm" class="public" href="../../dmd/backend/cgcod/getregs_imm.html">getregs_imm</a><span class="decoration">(cdb, r)</span>
+									<a id="getregs_imm" class="public" href="../../dmd/backend/cgcod/getregs_imm.html">getregs_imm</a><span class="tableEntryAnnotation">(cdb, r)</span>
 								</code>
 							</td>
 							<td>Getregs without marking immediate register values as gone.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getregsNoSave" class="public" href="../../dmd/backend/cgcod/getregs_no_save.html">getregsNoSave</a><span class="decoration">(r)</span>
+									<a id="getregsNoSave" class="public" href="../../dmd/backend/cgcod/getregs_no_save.html">getregsNoSave</a><span class="tableEntryAnnotation">(r)</span>
 								</code>
 							</td>
 							<td>We are going to use the registers in mask r.
  Same as getregs(), but assert if code is needed to be generated.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getscratch" class="public" href="../../dmd/backend/cgcod/getscratch.html">getscratch</a><span class="decoration">()</span>
+									<a id="getscratch" class="public" href="../../dmd/backend/cgcod/getscratch.html">getscratch</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Return mask of scratch registers.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isregvar" class="public" href="../../dmd/backend/cgcod/isregvar.html">isregvar</a><span class="decoration">(e, pregm, preg)</span>
+									<a id="isregvar" class="public" href="../../dmd/backend/cgcod/isregvar.html">isregvar</a><span class="tableEntryAnnotation">(e, pregm, preg)</span>
 								</code>
 							</td>
 							<td>Determine if elem e is a register variable.
@@ -3127,72 +3190,96 @@ $('#symbolSearchPane').show();</script>
  Else
       returns false
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="lpadregs" class="public" href="../../dmd/backend/cgcod/lpadregs.html">lpadregs</a><span class="decoration">()</span>
+									<a id="lpadregs" class="public" href="../../dmd/backend/cgcod/lpadregs.html">lpadregs</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Determine registers that should be destroyed upon arrival
  to code entry point for exception handling.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="numbitsset" class="public" href="../../dmd/backend/cgcod/numbitsset.html">numbitsset</a><span class="decoration">(regm)</span>
+									<a id="numbitsset" class="public" href="../../dmd/backend/cgcod/numbitsset.html">numbitsset</a><span class="tableEntryAnnotation">(regm)</span>
 								</code>
 							</td>
 							<td>Count the number of bits set in a register mask.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="prolog" class="public" href="../../dmd/backend/cgcod/prolog.html">prolog</a><span class="decoration">(cdb)</span>
+									<a id="prolog" class="public" href="../../dmd/backend/cgcod/prolog.html">prolog</a><span class="tableEntryAnnotation">(cdb)</span>
 								</code>
 							</td>
 							<td>Generate code for a function start.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="regm_str" class="public" href="../../dmd/backend/cgcod/regm_str.html">regm_str</a><span class="decoration">(rm)</span>
+									<a id="regm_str" class="public" href="../../dmd/backend/cgcod/regm_str.html">regm_str</a><span class="tableEntryAnnotation">(rm)</span>
 								</code>
 							</td>
 							<td>Turn register mask into a string suitable for printing.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="scodelem" class="public" href="../../dmd/backend/cgcod/scodelem.html">scodelem</a><span class="decoration">(cdb, e, pretregs, keepmsk, constflag)</span>
+									<a id="scodelem" class="public" href="../../dmd/backend/cgcod/scodelem.html">scodelem</a><span class="tableEntryAnnotation">(cdb, e, pretregs, keepmsk, constflag)</span>
 								</code>
 							</td>
 							<td>Same as codelem(), but do not destroy the registers in keepmsk.
  Use scratch registers as much as possible, then use stack.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="stackoffsets" class="public" href="../../dmd/backend/cgcod/stackoffsets.html">stackoffsets</a><span class="decoration">(flags)</span>
+									<a id="stackoffsets" class="public" href="../../dmd/backend/cgcod/stackoffsets.html">stackoffsets</a><span class="tableEntryAnnotation">(flags)</span>
 								</code>
 							</td>
 							<td>Compute offsets for remaining tmp, automatic and register variables
  that did not make it into registers.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="useregs" class="public" href="../../dmd/backend/cgcod/useregs.html">useregs</a><span class="decoration">(regm)</span>
+									<a id="useregs" class="public" href="../../dmd/backend/cgcod/useregs.html">useregs</a><span class="tableEntryAnnotation">(regm)</span>
 								</code>
 							</td>
 							<td>Mark registers as used.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2973,33 +2988,42 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cppTypeInfoMangleItanium" class="public" href="../dmd/cppmangle/cpp_type_info_mangle_itanium.html">cppTypeInfoMangleItanium</a><span class="decoration">(s)</span>
+									<a id="cppTypeInfoMangleItanium" class="public" href="../dmd/cppmangle/cpp_type_info_mangle_itanium.html">cppTypeInfoMangleItanium</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isPrimaryDtor" class="public" href="../dmd/cppmangle/is_primary_dtor.html">isPrimaryDtor</a><span class="decoration">(sym)</span>
+									<a id="isPrimaryDtor" class="public" href="../dmd/cppmangle/is_primary_dtor.html">isPrimaryDtor</a><span class="tableEntryAnnotation">(sym)</span>
 								</code>
 							</td>
 							<td>Determine if sym is the 'primary' destructor, that is,
  the most-aggregate destructor (the one that is defined as _xdtor)
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toCppMangleItanium" class="public" href="../dmd/cppmangle/to_cpp_mangle_itanium.html">toCppMangleItanium</a><span class="decoration">(s)</span>
+									<a id="toCppMangleItanium" class="public" href="../dmd/cppmangle/to_cpp_mangle_itanium.html">toCppMangleItanium</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2947,53 +2962,65 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="atomicExchange" class="public" href="../core/atomic/atomic_exchange.html">atomicExchange</a><span class="decoration">(here, exchangeWith)</span>
+									<a id="atomicExchange" class="public" href="../core/atomic/atomic_exchange.html">atomicExchange</a><span class="tableEntryAnnotation">(here, exchangeWith)</span>
 								</code>
 							</td>
 							<td>Exchange <code class="lang-d"><a href="../core/atomic/atomic_exchange.html#exchangeWith"><span class="pln">exchangeWith</span></a></code> with the memory referenced by <code class="lang-d"><a href="../core/atomic/atomic_exchange.html#here"><span class="pln">here</span></a></code>.
  This operation is both lock-free and atomic.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="atomicFence" class="public" href="../core/atomic/atomic_fence.html">atomicFence</a><span class="decoration">()</span>
+									<a id="atomicFence" class="public" href="../core/atomic/atomic_fence.html">atomicFence</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Inserts a full load/store memory fence (on platforms that need it). This ensures
  that all loads and stores before a call to this function are executed before any
  loads and stores after the call.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="atomicFetchAdd" class="public" href="../core/atomic/atomic_fetch_add.html">atomicFetchAdd</a><span class="decoration">(val, mod)</span>
+									<a id="atomicFetchAdd" class="public" href="../core/atomic/atomic_fetch_add.html">atomicFetchAdd</a><span class="tableEntryAnnotation">(val, mod)</span>
 								</code>
 							</td>
 							<td>Atomically adds <code class="lang-d"><a href="../core/atomic/atomic_fetch_add.html#mod"><span class="pln">mod</span></a></code> to the value referenced by <code class="lang-d"><a href="../core/atomic/atomic_fetch_add.html#val"><span class="pln">val</span></a></code> and returns the value <code class="lang-d"><a href="../core/atomic/atomic_fetch_add.html#val"><span class="pln">val</span></a></code> held previously.
  This operation is both lock-free and atomic.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="atomicFetchSub" class="public" href="../core/atomic/atomic_fetch_sub.html">atomicFetchSub</a><span class="decoration">(val, mod)</span>
+									<a id="atomicFetchSub" class="public" href="../core/atomic/atomic_fetch_sub.html">atomicFetchSub</a><span class="tableEntryAnnotation">(val, mod)</span>
 								</code>
 							</td>
 							<td>Atomically subtracts <code class="lang-d"><a href="../core/atomic/atomic_fetch_sub.html#mod"><span class="pln">mod</span></a></code> from the value referenced by <code class="lang-d"><a href="../core/atomic/atomic_fetch_sub.html#val"><span class="pln">val</span></a></code> and returns the value <code class="lang-d"><a href="../core/atomic/atomic_fetch_sub.html#val"><span class="pln">val</span></a></code> held previously.
  This operation is both lock-free and atomic.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="atomicLoad" class="public" href="../core/atomic/atomic_load.html">atomicLoad</a><span class="decoration">(val)</span>
+									<a id="atomicLoad" class="public" href="../core/atomic/atomic_load.html">atomicLoad</a><span class="tableEntryAnnotation">(val)</span>
 								</code>
 							</td>
 							<td>Loads 'val' from memory and returns it.  The memory barrier specified
@@ -3001,20 +3028,26 @@ $('#symbolSearchPane').show();</script>
  default.  Valid memory orders are MemoryOrder.raw, MemoryOrder.acq,
  and MemoryOrder.seq.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="atomicOp" class="public" href="../core/atomic/atomic_op.html">atomicOp</a><span class="decoration">(val, mod)</span>
+									<a id="atomicOp" class="public" href="../core/atomic/atomic_op.html">atomicOp</a><span class="tableEntryAnnotation">(val, mod)</span>
 								</code>
 							</td>
 							<td>Performs the binary operation 'op' on val using 'mod' as the modifier.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="atomicStore" class="public" href="../core/atomic/atomic_store.html">atomicStore</a><span class="decoration">(val, newval)</span>
+									<a id="atomicStore" class="public" href="../core/atomic/atomic_store.html">atomicStore</a><span class="tableEntryAnnotation">(val, newval)</span>
 								</code>
 							</td>
 							<td>Writes 'newval' into 'val'.  The memory barrier specified by 'ms' is
@@ -3022,22 +3055,28 @@ $('#symbolSearchPane').show();</script>
  Valid memory orders are MemoryOrder.raw, MemoryOrder.rel, and
  MemoryOrder.seq.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cas" class="public" href="../core/atomic/cas.html">cas</a><span class="decoration">(here, ifThis, writeThis)</span>
+									<a id="cas" class="public" href="../core/atomic/cas.html">cas</a><span class="tableEntryAnnotation">(here, ifThis, writeThis)</span>
 								</code>
 							</td>
 							<td>Stores 'writeThis' to the memory referenced by 'here' if the value
  referenced by 'here' is equal to 'ifThis'.  This operation is both
  lock-free and atomic.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="cas" class="public" href="../core/atomic/cas.html">cas</a><span class="decoration">(here, ifThis, writeThis)</span>
+									<a id="cas" class="public" href="../core/atomic/cas.html">cas</a><span class="tableEntryAnnotation">(here, ifThis, writeThis)</span>
 								</code>
 							</td>
 							<td>Stores 'writeThis' to the memory referenced by 'here' if the value
@@ -3045,11 +3084,14 @@ $('#symbolSearchPane').show();</script>
  The prior value referenced by 'here' is written to <code class="lang-d"><a href="../core/atomic/cas.html#ifThis"><span class="pln">ifThis</span></a></code> and
  returned to the user.  This operation is both lock-free and atomic.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="casWeak" class="public" href="../core/atomic/cas_weak.html">casWeak</a><span class="decoration">(here, ifThis, writeThis)</span>
+									<a id="casWeak" class="public" href="../core/atomic/cas_weak.html">casWeak</a><span class="tableEntryAnnotation">(here, ifThis, writeThis)</span>
 								</code>
 							</td>
 							<td>Stores 'writeThis' to the memory referenced by 'here' if the value
@@ -3059,11 +3101,14 @@ $('#symbolSearchPane').show();</script>
  This operation is both
  lock-free and atomic.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="casWeak" class="public" href="../core/atomic/cas_weak.html">casWeak</a><span class="decoration">(here, ifThis, writeThis)</span>
+									<a id="casWeak" class="public" href="../core/atomic/cas_weak.html">casWeak</a><span class="tableEntryAnnotation">(here, ifThis, writeThis)</span>
 								</code>
 							</td>
 							<td>Stores 'writeThis' to the memory referenced by 'here' if the value
@@ -3074,16 +3119,22 @@ $('#symbolSearchPane').show();</script>
  use <code class="lang-d"><a href="../core/atomic/cas_weak.html"><span class="pln">casWeak</span></a></code> only when <code class="lang-d"><a href="../core/atomic/cas.html"><span class="pln">cas</span></a></code> would be used in a loop.
  This operation is both lock-free and atomic.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="pause" class="public" href="../core/atomic/pause.html">pause</a><span class="decoration">()</span>
+									<a id="pause" class="public" href="../core/atomic/pause.html">pause</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Gives a hint to the processor that the calling thread is in a 'spin-wait' loop,
  allowing to more efficiently allocate resources.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3092,7 +3143,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3102,6 +3153,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Specifies the memory ordering semantics of an atomic operation.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

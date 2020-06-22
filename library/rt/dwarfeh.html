@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2946,59 +2961,74 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_eh_swapContextDwarf" class="public" href="../rt/dwarfeh/_d_eh_swap_context_dwarf.html">_d_eh_swapContextDwarf</a><span class="decoration">(newContext)</span>
+									<a id="_d_eh_swapContextDwarf" class="public" href="../rt/dwarfeh/_d_eh_swap_context_dwarf.html">_d_eh_swapContextDwarf</a><span class="tableEntryAnnotation">(newContext)</span>
 								</code>
 							</td>
 							<td>Called when fibers switch contexts.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_throwdwarf" class="public" href="../rt/dwarfeh/_d_throwdwarf.html">_d_throwdwarf</a><span class="decoration">(o)</span>
+									<a id="_d_throwdwarf" class="public" href="../rt/dwarfeh/_d_throwdwarf.html">_d_throwdwarf</a><span class="tableEntryAnnotation">(o)</span>
 								</code>
 							</td>
 							<td>Called by D code to throw an exception via
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="actionTableLookup" class="public" href="../rt/dwarfeh/action_table_lookup.html">actionTableLookup</a><span class="decoration">(exceptionObject, actionRecordPtr, pActionTable, tt, TType, exceptionClass, lsda)</span>
+									<a id="actionTableLookup" class="public" href="../rt/dwarfeh/action_table_lookup.html">actionTableLookup</a><span class="tableEntryAnnotation">(exceptionObject, actionRecordPtr, pActionTable, tt, TType, exceptionClass, lsda)</span>
 								</code>
 							</td>
 							<td>Look up classType in Action Table.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getClassInfo" class="public" href="../rt/dwarfeh/get_class_info.html">getClassInfo</a><span class="decoration">(exceptionObject, currentLsd)</span>
+									<a id="getClassInfo" class="public" href="../rt/dwarfeh/get_class_info.html">getClassInfo</a><span class="tableEntryAnnotation">(exceptionObject, currentLsd)</span>
 								</code>
 							</td>
 							<td>Look at the chain of inflight exceptions and pick the class type that'll
  be looked for in catch clauses.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getCppPtrToThrownObject" class="public" href="../rt/dwarfeh/get_cpp_ptr_to_thrown_object.html">getCppPtrToThrownObject</a><span class="decoration">(exceptionObject, sti)</span>
+									<a id="getCppPtrToThrownObject" class="public" href="../rt/dwarfeh/get_cpp_ptr_to_thrown_object.html">getCppPtrToThrownObject</a><span class="tableEntryAnnotation">(exceptionObject, sti)</span>
 								</code>
 							</td>
 							<td>Get Pointer to Thrown Object if type of thrown object is implicitly
  convertible to the catch type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="scanLSDA" class="public" href="../rt/dwarfeh/scan_lsda.html">scanLSDA</a><span class="decoration">(lsda, ip, exceptionClass, cleanupsOnly, preferHandler, exceptionObject, landingPad, handler)</span>
+									<a id="scanLSDA" class="public" href="../rt/dwarfeh/scan_lsda.html">scanLSDA</a><span class="tableEntryAnnotation">(lsda, ip, exceptionClass, cleanupsOnly, preferHandler, exceptionObject, landingPad, handler)</span>
 								</code>
 							</td>
 							<td>Read and extract information from the LSDA (aka gcc_except_table section).
@@ -3007,24 +3037,33 @@ $('#symbolSearchPane').show();</script>
  nested candidate is selected when searched. Other implementations have one candidate
  per ip.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="sLEB128" class="public" href="../rt/dwarfeh/sle_b128.html">sLEB128</a><span class="decoration">(p)</span>
+									<a id="sLEB128" class="public" href="../rt/dwarfeh/sle_b128.html">sLEB128</a><span class="tableEntryAnnotation">(p)</span>
 								</code>
 							</td>
 							<td>Decode Signed LEB128.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="uLEB128" class="public" href="../rt/dwarfeh/ule_b128.html">uLEB128</a><span class="decoration">(p)</span>
+									<a id="uLEB128" class="public" href="../rt/dwarfeh/ule_b128.html">uLEB128</a><span class="tableEntryAnnotation">(p)</span>
 								</code>
 							</td>
 							<td>Decode Unsigned LEB128.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3033,7 +3072,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3046,6 +3085,8 @@ $('#symbolSearchPane').show();</script>
  or interfere with core.stdcpp.typeinfo.
  So, give it a different name.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3054,7 +3095,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3064,6 +3105,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>The C++ version of D's ExceptionHeader wrapper
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3074,6 +3117,8 @@ $('#symbolSearchPane').show();</script>
 							<td>Wrap the unwinder's data with our own compiler specific struct
  with our own data.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

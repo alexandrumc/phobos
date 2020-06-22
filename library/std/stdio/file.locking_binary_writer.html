@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/stdio.d#L3242">
+							<a href="https://github.com/dlang/phobos/blob/master/std/stdio.d#L3245">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/stdio.d#L3242">
+							<a href="https://github.com/dlang/phobos/edit/master/std/stdio.d#L3245">
 								Improve this page
 							</a>
 							<div>
@@ -2942,7 +2957,7 @@ $('#symbolSearchPane').show();</script>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">stdio<wbr/></span><span class="pun">.</span><span class="typ">File<wbr/></span><span class="pun">.</span><span class="typ">BinaryWriterImpl</span>!(true) <span class="pln">lockingBinaryWriter</span><span class="pun">(</span><span class="pun">)</span><span class="pun">;</span>
+				<span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">stdio<wbr/></span><span class="pun">.</span><span class="typ">File<wbr/></span><span class="pun">.</span><span class="typ">BinaryWriterImpl</span>!(true) <span class="pln">lockingBinaryWriter</span><span class="pun">(</span><span class="pun">)</span><span class="pun">;</span>
 						</div>
 					</code>
 				</div>
@@ -2952,7 +2967,7 @@ $('#symbolSearchPane').show();</script>
 <p>Produce a grayscale image of the <a href="https://en.wikipedia.org/wiki/Mandelbrot_set">Mandelbrot set</a>
 in binary <a href="https://en.wikipedia.org/wiki/Netpbm_format">Netpbm format</a> to standard output.
 </p>
-<pre class="code"><code class="lang-d"><span class="kwd">import <a href="../../std/algorithm.html"></span><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">algorithm</span></a><span class="pun">, <a href="../../std/range.html"></span><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">range</span></a><span class="pun">, <a href="../../std/stdio.html"></span><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">stdio</span></a><span class="pun">;
+<pre class="code"><code class="lang-d"><span class="kwd">import <a href="../../std/algorithm.html"></span><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">algorithm</span></a><span class="pun">, <a href="../../std/complex.html"></span><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">complex</span></a><span class="pun">, <a href="../../std/range.html"></span><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">range</span></a><span class="pun">, <a href="../../std/stdio.html"></span><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">stdio</span></a><span class="pun">;
 
 </span><span class="typ">void </span><span class="pln">main</span><span class="pun">()
 {
@@ -2962,7 +2977,7 @@ in binary <a href="https://en.wikipedia.org/wiki/Netpbm_format">Netpbm format</a
     </span><span class="pln">iota</span><span class="pun">(-</span><span class="lit">1</span><span class="pun">, </span><span class="lit">3</span><span class="pun">, </span><span class="lit">2.0</span><span class="pun">/<a href="../../std/stdio/file.size.html"></span><span class="pln">size</span></a><span class="pun">)<wbr/>.</span><span class="pln">map</span><span class="pun">!(</span><span class="pln">y </span><span class="pun">=&gt;
         </span><span class="pln">iota</span><span class="pun">(-</span><span class="lit">1.5</span><span class="pun">, </span><span class="lit">0.5</span><span class="pun">, </span><span class="lit">2.0</span><span class="pun">/<a href="../../std/stdio/file.size.html"></span><span class="pln">size</span></a><span class="pun">)<wbr/>.</span><span class="pln">map</span><span class="pun">!(</span><span class="pln">x </span><span class="pun">=&gt;
             </span><span class="kwd">cast</span><span class="pun">(</span><span class="typ">ubyte</span><span class="pun">)(</span><span class="lit">1</span><span class="pun">+
-                </span><span class="pln">recurrence</span><span class="pun">!((</span><span class="pln">a</span><span class="pun">, </span><span class="pln">n</span><span class="pun">) =&gt; </span><span class="pln">x </span><span class="pun">+ </span><span class="pln">y</span><span class="pun">*</span><span class="lit">1i </span><span class="pun">+ </span><span class="pln">a</span><span class="pun">[</span><span class="pln">n</span><span class="pun">-</span><span class="lit">1</span><span class="pun">]^^</span><span class="lit">2</span><span class="pun">)(</span><span class="lit">0</span><span class="pun">+</span><span class="lit">0i</span><span class="pun">)
+                </span><span class="pln">recurrence</span><span class="pun">!((</span><span class="pln">a</span><span class="pun">, </span><span class="pln">n</span><span class="pun">) =&gt; </span><span class="pln">x </span><span class="pun">+ </span><span class="pln">y </span><span class="pun">* </span><span class="pln">complex</span><span class="pun">(</span><span class="lit">0</span><span class="pun">, </span><span class="lit">1</span><span class="pun">) + </span><span class="pln">a</span><span class="pun">[</span><span class="pln">n</span><span class="pun">-</span><span class="lit">1</span><span class="pun">]^^</span><span class="lit">2</span><span class="pun">)(</span><span class="pln">complex</span><span class="pun">(</span><span class="lit">0</span><span class="pun">))
                 <wbr/>.</span><span class="pln">take</span><span class="pun">(</span><span class="typ">ubyte<wbr/></span><span class="pun">.</span><span class="pln">max</span><span class="pun">)
                 <wbr/>.</span><span class="pln">countUntil</span><span class="pun">!(</span><span class="pln">z </span><span class="pun">=&gt; </span><span class="pln">z<wbr/></span><span class="pun">.</span><span class="pln">re</span><span class="pun">^^</span><span class="lit">2 </span><span class="pun">+ </span><span class="pln">z<wbr/></span><span class="pun">.</span><span class="pln">im</span><span class="pun">^^</span><span class="lit">2 </span><span class="pun">&gt; </span><span class="lit">4</span><span class="pun">))
         )

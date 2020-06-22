@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/math.d#L5624">
+							<a href="https://github.com/dlang/phobos/blob/master/std/math.d#L5015">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/math.d#L5624">
+							<a href="https://github.com/dlang/phobos/edit/master/std/math.d#L5015">
 								Improve this page
 							</a>
 							<div>
@@ -2975,36 +2990,27 @@ $('#symbolSearchPane').show();</script>
   <tr><td>!= &plusmn;&infin;</td> <td>&plusmn;&infin;</td> <td>x</td>               <td>?</td>   <td>no</td></tr>
  </table>
 </p>
-
-<p> <span class="blue"><code class="lang-d"><span class="pln">remquo</span></code> and <code class="lang-d"><a href="../../std/math/remainder.html"><span class="pln">remainder</span></a></code> not supported on Windows.</span>
-</p>
 </section>
 
 				<section><h2>Example</h2>
 <p><span class="dlang_runnable"></span>
 </p>
-<pre class="code"><code class="lang-d"><span class="kwd">version </span><span class="pun">(</span><span class="typ">Posix</span><span class="pun">)
-{
-    </span><span class="kwd">assert</span><span class="pun">(<a href="../../std/math/remainder.html"></span><span class="pln">remainder</span></a><span class="pun">(</span><span class="lit">5.1</span><span class="pun">, </span><span class="lit">3.0</span><span class="pun">)<a href="../../std/math/feqrel.html"></span><wbr/><span class="pun">.</span><span class="pln">feqrel</span></a><span class="pun">(-</span><span class="lit">0.9</span><span class="pun">) &gt; </span><span class="lit">16</span><span class="pun">);
-    </span><span class="kwd">assert</span><span class="pun">(<a href="../../std/math/remainder.html"></span><span class="pln">remainder</span></a><span class="pun">(-</span><span class="lit">5.1</span><span class="pun">, </span><span class="lit">3.0</span><span class="pun">)<a href="../../std/math/feqrel.html"></span><wbr/><span class="pun">.</span><span class="pln">feqrel</span></a><span class="pun">(</span><span class="lit">0.9</span><span class="pun">) &gt; </span><span class="lit">16</span><span class="pun">);
-    </span><span class="pln">writeln</span><span class="pun">(<a href="../../std/math/remainder.html"></span><span class="pln">remainder</span></a><span class="pun">(</span><span class="lit">0.0</span><span class="pun">, </span><span class="lit">3.0</span><span class="pun">)); </span><span class="com">// 0.0
+<pre class="code"><code class="lang-d"><span class="kwd">assert</span><span class="pun">(<a href="../../std/math/remainder.html"></span><span class="pln">remainder</span></a><span class="pun">(</span><span class="lit">5.1</span><span class="pun">, </span><span class="lit">3.0</span><span class="pun">)<a href="../../std/math/feqrel.html"></span><wbr/><span class="pun">.</span><span class="pln">feqrel</span></a><span class="pun">(-</span><span class="lit">0.9</span><span class="pun">) &gt; </span><span class="lit">16</span><span class="pun">);
+</span><span class="kwd">assert</span><span class="pun">(<a href="../../std/math/remainder.html"></span><span class="pln">remainder</span></a><span class="pun">(-</span><span class="lit">5.1</span><span class="pun">, </span><span class="lit">3.0</span><span class="pun">)<a href="../../std/math/feqrel.html"></span><wbr/><span class="pun">.</span><span class="pln">feqrel</span></a><span class="pun">(</span><span class="lit">0.9</span><span class="pun">) &gt; </span><span class="lit">16</span><span class="pun">);
+</span><span class="pln">writeln</span><span class="pun">(<a href="../../std/math/remainder.html"></span><span class="pln">remainder</span></a><span class="pun">(</span><span class="lit">0.0</span><span class="pun">, </span><span class="lit">3.0</span><span class="pun">)); </span><span class="com">// 0.0
 
-    </span><span class="kwd">assert</span><span class="pun">(<a href="../../std/math/is_nan.html"></span><span class="pln">isNaN</span></a><span class="pun">(<a href="../../std/math/remainder.html"></span><span class="pln">remainder</span></a><span class="pun">(</span><span class="lit">1.0</span><span class="pun">, </span><span class="lit">0.0</span><span class="pun">)));
-    </span><span class="kwd">assert</span><span class="pun">(<a href="../../std/math/is_nan.html"></span><span class="pln">isNaN</span></a><span class="pun">(<a href="../../std/math/remainder.html"></span><span class="pln">remainder</span></a><span class="pun">(-</span><span class="lit">1.0</span><span class="pun">, </span><span class="lit">0.0</span><span class="pun">)));
-}
+</span><span class="kwd">assert</span><span class="pun">(<a href="../../std/math/is_nan.html"></span><span class="pln">isNaN</span></a><span class="pun">(<a href="../../std/math/remainder.html"></span><span class="pln">remainder</span></a><span class="pun">(</span><span class="lit">1.0</span><span class="pun">, </span><span class="lit">0.0</span><span class="pun">)));
+</span><span class="kwd">assert</span><span class="pun">(<a href="../../std/math/is_nan.html"></span><span class="pln">isNaN</span></a><span class="pun">(<a href="../../std/math/remainder.html"></span><span class="pln">remainder</span></a><span class="pun">(-</span><span class="lit">1.0</span><span class="pun">, </span><span class="lit">0.0</span><span class="pun">)));
 </span></code></pre>
 </section>
 <section><h2>Example</h2>
 <p><span class="dlang_runnable"></span>
 </p>
-<pre class="code"><code class="lang-d"><span class="kwd">version </span><span class="pun">(</span><span class="typ">Posix</span><span class="pun">)
-{
-    </span><span class="typ">int <a href="../../std/math/remquo.html#n"></span><span class="pln">n</span></a><span class="pun">;
+<pre class="code"><code class="lang-d"><span class="typ">int <a href="../../std/math/remquo.html#n"></span><span class="pln">n</span></a><span class="pun">;
 
-    </span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">remquo</span><span class="pun">(</span><span class="lit">5.1</span><span class="pun">, </span><span class="lit">3.0</span><span class="pun">, <a href="../../std/math/remquo.html#n"></span><span class="pln">n</span></a><span class="pun">)<a href="../../std/math/feqrel.html"></span><wbr/><span class="pun">.</span><span class="pln">feqrel</span></a><span class="pun">(-</span><span class="lit">0.9</span><span class="pun">) &gt; </span><span class="lit">16 </span><span class="pun">&amp;&amp; <a href="../../std/math/remquo.html#n"></span><span class="pln">n</span></a><span class="pln"> </span><span class="pun">== </span><span class="lit">2</span><span class="pun">);
-    </span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">remquo</span><span class="pun">(-</span><span class="lit">5.1</span><span class="pun">, </span><span class="lit">3.0</span><span class="pun">, <a href="../../std/math/remquo.html#n"></span><span class="pln">n</span></a><span class="pun">)<a href="../../std/math/feqrel.html"></span><wbr/><span class="pun">.</span><span class="pln">feqrel</span></a><span class="pun">(</span><span class="lit">0.9</span><span class="pun">) &gt; </span><span class="lit">16 </span><span class="pun">&amp;&amp; <a href="../../std/math/remquo.html#n"></span><span class="pln">n</span></a><span class="pln"> </span><span class="pun">== -</span><span class="lit">2</span><span class="pun">);
-    </span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">remquo</span><span class="pun">(</span><span class="lit">0.0</span><span class="pun">, </span><span class="lit">3.0</span><span class="pun">, <a href="../../std/math/remquo.html#n"></span><span class="pln">n</span></a><span class="pun">) == </span><span class="lit">0.0 </span><span class="pun">&amp;&amp; <a href="../../std/math/remquo.html#n"></span><span class="pln">n</span></a><span class="pln"> </span><span class="pun">== </span><span class="lit">0</span><span class="pun">);
-}
+</span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">remquo</span><span class="pun">(</span><span class="lit">5.1</span><span class="pun">, </span><span class="lit">3.0</span><span class="pun">, <a href="../../std/math/remquo.html#n"></span><span class="pln">n</span></a><span class="pun">)<a href="../../std/math/feqrel.html"></span><wbr/><span class="pun">.</span><span class="pln">feqrel</span></a><span class="pun">(-</span><span class="lit">0.9</span><span class="pun">) &gt; </span><span class="lit">16 </span><span class="pun">&amp;&amp; <a href="../../std/math/remquo.html#n"></span><span class="pln">n</span></a><span class="pln"> </span><span class="pun">== </span><span class="lit">2</span><span class="pun">);
+</span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">remquo</span><span class="pun">(-</span><span class="lit">5.1</span><span class="pun">, </span><span class="lit">3.0</span><span class="pun">, <a href="../../std/math/remquo.html#n"></span><span class="pln">n</span></a><span class="pun">)<a href="../../std/math/feqrel.html"></span><wbr/><span class="pun">.</span><span class="pln">feqrel</span></a><span class="pun">(</span><span class="lit">0.9</span><span class="pun">) &gt; </span><span class="lit">16 </span><span class="pun">&amp;&amp; <a href="../../std/math/remquo.html#n"></span><span class="pln">n</span></a><span class="pln"> </span><span class="pun">== -</span><span class="lit">2</span><span class="pun">);
+</span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">remquo</span><span class="pun">(</span><span class="lit">0.0</span><span class="pun">, </span><span class="lit">3.0</span><span class="pun">, <a href="../../std/math/remquo.html#n"></span><span class="pln">n</span></a><span class="pun">) == </span><span class="lit">0.0 </span><span class="pun">&amp;&amp; <a href="../../std/math/remquo.html#n"></span><span class="pln">n</span></a><span class="pln"> </span><span class="pun">== </span><span class="lit">0</span><span class="pun">);
 </span></code></pre>
 </section>
 

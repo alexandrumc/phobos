@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,11 +2952,55 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Module <code>rt.backtrace.dwarf</code></h1><p>This code handles backtrace generation using DWARF debug_line section
- in ELF and Mach-O files for Posix.
-</p><section></section>
+				</div><h1>Module <code>rt.backtrace.dwarf</code></h1><p>Generates a human-readable stack-trace on POSIX targets using DWARF
+</p><section><p>The common use case for printing a stack trace is when <code class="lang-d"><span class="pln">toString</span></code> is called
+ on a <code class="lang-d"><span class="typ">Throwable</span></code> (see <code class="lang-d"><span class="pln">object<wbr/></span><span class="pun">.</span><span class="pln">d</span></code>). It will iterate on what is likely to be
+ the default trace handler (see <code class="lang-d"><a href="../../core/runtime.html"><span class="pln">core<wbr/></span><span class="pun">.</span><span class="pln">runtime</span></a><span class="pln"> </span><span class="pun">: </span><span class="pln">defaultTraceHandler</span></code>).
+ The class returned by <code class="lang-d"><span class="pln">defaultTraceHandler</span></code> is what ends up calling into
+ this module, through the use of <code class="lang-d"><span class="pln">core<wbr/></span><span class="pun">.</span><span class="pln">internal<wbr/></span><span class="pun">.</span><span class="pln">traits </span><span class="pun">: </span><span class="pln">externDFunc</span></code>.
+</p>
 
-				<section><section><h2>Reference</h2>
+<p> The entry point of this module is <code class="lang-d"><span class="pln">traceHandlerOpApplyImpl</span></code>,
+ and the only really "public" symbol (since all <code class="lang-d"><span class="pln">rt</span></code> symbols are private).
+ In the future, this implementation should probably be made idiomatic,
+ so that it can for example work with attributes.
+</p>
+</section>
+
+				<section><section><h2>Resilience</h2>
+<p>As this module is used for diagnostic, it should handle failures
+ as gracefully as possible. Having the runtime error out on printing
+ the stack trace one is trying to debug would be quite a terrible UX.
+ For this reason, this module works on a "best effort" basis and will
+ sometimes print mangled symbols, or "???" when it cannot do anything
+ more useful.
+</p>
+</section>
+<section><h2>Source of data</h2>
+<p>This module uses two main sources for generating human-readable data.
+ First, it uses <code class="lang-d"><span class="pln">backtrace_symbols</span></code> to obtain the name of the symbols
+ (functions or methods) associated with the addresses.
+ Since the names are mangled, it will also call into <code class="lang-d"><a href="../../core/demangle.html"><span class="pln">core<wbr/></span><span class="pun">.</span><span class="pln">demangle</span></a></code>,
+ and doesn't need to use any DWARF information for this,
+ however a future extension  could make use of the call frame information
+ (See DWARF4 "6.4 Call Frame Information", PDF page 126).
+</p>
+
+<p> The other piece of data used is the DWARF <code class="lang-d"><wbr/><span class="pun">.</span><span class="pln">debug_line</span></code> section,
+ which contains the line informations of a program, necessary to associate
+ the instruction address with its (file, line) information.
+</p>
+
+<p> Since debug lines informations are quite large, they are encoded using a
+ program that is to be fed to a finite state machine.
+ See <code class="lang-d"><span class="pln">runStateMachine</span></code> and <code class="lang-d"><span class="pln">readLineNumberProgram</span></code> for more details.
+</p>
+</section>
+<section><h2>DWARF Version</h2>
+<p>This module only supports DWARF 3 and 4.
+</p>
+</section>
+<section><h2>Reference</h2>
 <p>http://www.dwarfstd.org/
 </p>
 </section>

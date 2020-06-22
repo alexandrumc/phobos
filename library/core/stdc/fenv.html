@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2955,95 +2970,128 @@ original C header.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="feclearexcept" class="public" href="../../core/stdc/fenv/feclearexcept.html">feclearexcept</a><span class="decoration">(excepts)</span>
+									<a id="feclearexcept" class="public" href="../../core/stdc/fenv/feclearexcept.html">feclearexcept</a><span class="tableEntryAnnotation">(excepts)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fegetenv" class="public" href="../../core/stdc/fenv/fegetenv.html">fegetenv</a><span class="decoration">(envp)</span>
+									<a id="fegetenv" class="public" href="../../core/stdc/fenv/fegetenv.html">fegetenv</a><span class="tableEntryAnnotation">(envp)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fegetexceptflag" class="public" href="../../core/stdc/fenv/fegetexceptflag.html">fegetexceptflag</a><span class="decoration">(flagp, excepts)</span>
+									<a id="fegetexceptflag" class="public" href="../../core/stdc/fenv/fegetexceptflag.html">fegetexceptflag</a><span class="tableEntryAnnotation">(flagp, excepts)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fegetround" class="public" href="../../core/stdc/fenv/fegetround.html">fegetround</a><span class="decoration">()</span>
+									<a id="fegetround" class="public" href="../../core/stdc/fenv/fegetround.html">fegetround</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="feholdexcept" class="public" href="../../core/stdc/fenv/feholdexcept.html">feholdexcept</a><span class="decoration">(envp)</span>
+									<a id="feholdexcept" class="public" href="../../core/stdc/fenv/feholdexcept.html">feholdexcept</a><span class="tableEntryAnnotation">(envp)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="feraiseexcept" class="public" href="../../core/stdc/fenv/feraiseexcept.html">feraiseexcept</a><span class="decoration">(excepts)</span>
+									<a id="feraiseexcept" class="public" href="../../core/stdc/fenv/feraiseexcept.html">feraiseexcept</a><span class="tableEntryAnnotation">(excepts)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fesetenv" class="public" href="../../core/stdc/fenv/fesetenv.html">fesetenv</a><span class="decoration">(envp)</span>
+									<a id="fesetenv" class="public" href="../../core/stdc/fenv/fesetenv.html">fesetenv</a><span class="tableEntryAnnotation">(envp)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fesetexceptflag" class="public" href="../../core/stdc/fenv/fesetexceptflag.html">fesetexceptflag</a><span class="decoration">(flagp, excepts)</span>
+									<a id="fesetexceptflag" class="public" href="../../core/stdc/fenv/fesetexceptflag.html">fesetexceptflag</a><span class="tableEntryAnnotation">(flagp, excepts)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fesetround" class="public" href="../../core/stdc/fenv/fesetround.html">fesetround</a><span class="decoration">(round)</span>
+									<a id="fesetround" class="public" href="../../core/stdc/fenv/fesetround.html">fesetround</a><span class="tableEntryAnnotation">(round)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="fetestexcept" class="public" href="../../core/stdc/fenv/fetestexcept.html">fetestexcept</a><span class="decoration">(excepts)</span>
+									<a id="fetestexcept" class="public" href="../../core/stdc/fenv/fetestexcept.html">fetestexcept</a><span class="tableEntryAnnotation">(excepts)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="feupdateenv" class="public" href="../../core/stdc/fenv/feupdateenv.html">feupdateenv</a><span class="decoration">(envp)</span>
+									<a id="feupdateenv" class="public" href="../../core/stdc/fenv/feupdateenv.html">feupdateenv</a><span class="tableEntryAnnotation">(envp)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

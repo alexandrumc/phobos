@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2954,35 +2969,44 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="peekSlice" class="public property" href="../../dmd/root/array/peek_slice.html">peekSlice</a><span class="decoration">(array)</span>
+									<a id="peekSlice" class="public property" href="../../dmd/root/array/peek_slice.html">peekSlice</a><span class="tableEntryAnnotation">(array)</span>
 								</code>
 							</td>
 							<td>Exposes the given root Array as a standard D array.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="reverse" class="public" href="../../dmd/root/array/reverse.html">reverse</a><span class="decoration">(a)</span>
+									<a id="reverse" class="public" href="../../dmd/root/array/reverse.html">reverse</a><span class="tableEntryAnnotation">(a)</span>
 								</code>
 							</td>
 							<td>Reverse an array in-place.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="split" class="public" href="../../dmd/root/array/split.html">split</a><span class="decoration">(array, index, length)</span>
+									<a id="split" class="public" href="../../dmd/root/array/split.html">split</a><span class="tableEntryAnnotation">(array, index, length)</span>
 								</code>
 							</td>
 							<td>Splits the array at <code class="lang-d"><a href="../../dmd/root/array/split.html#index"><span class="pln">index</span></a></code> and expands it to make room for <code class="lang-d"><a href="../../dmd/root/array/split.html#length"><span class="pln">length</span></a></code>
  elements by shifting everything past <code class="lang-d"><a href="../../dmd/root/array/split.html#index"><span class="pln">index</span></a></code> to the right.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

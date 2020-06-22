@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2984,43 +2999,55 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="adler32" class="public" href="../std/zlib/adler32.html">adler32</a><span class="decoration">(adler, buf)</span>
+									<a id="adler32" class="public" href="../std/zlib/adler32.html">adler32</a><span class="tableEntryAnnotation">(adler, buf)</span>
 								</code>
 							</td>
 							<td><p>Compute the Adler-32 checksum of a buffer's worth of data.</p>
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="compress" class="public" href="../std/zlib/compress.html">compress</a><span class="decoration">(srcbuf, level)</span>
+									<a id="compress" class="public" href="../std/zlib/compress.html">compress</a><span class="tableEntryAnnotation">(srcbuf, level)</span>
 								</code>
 							</td>
 							<td><p>Compress data</p>
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="crc32" class="public" href="../std/zlib/crc32.html">crc32</a><span class="decoration">(crc, buf)</span>
+									<a id="crc32" class="public" href="../std/zlib/crc32.html">crc32</a><span class="tableEntryAnnotation">(crc, buf)</span>
 								</code>
 							</td>
 							<td><p>Compute the CRC32 checksum of a buffer's worth of data.</p>
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="uncompress" class="public" href="../std/zlib/uncompress.html">uncompress</a><span class="decoration">(srcbuf, destlen, winbits)</span>
+									<a id="uncompress" class="public" href="../std/zlib/uncompress.html">uncompress</a><span class="tableEntryAnnotation">(srcbuf, destlen, winbits)</span>
 								</code>
 							</td>
 							<td>Decompresses the data in srcbuf[].
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3029,7 +3056,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3039,6 +3066,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Used when the data to be compressed is not all in one buffer.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3048,6 +3077,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Used when the data to be decompressed is not all in one buffer.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3057,6 +3088,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Errors throw a ZlibException.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3065,7 +3098,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3075,6 +3108,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>the header format the compressed stream is wrapped in
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

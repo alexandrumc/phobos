@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,16 +2952,16 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../std/array.html">std.array</a>.staticArray</code></h1><p>Constructs a static array from <code class="lang-d"><a href="../std/array/static_array.html#a"><span class="pln"><a href="../../std/array/static_array.html#a"><span class="pln">a</span></a></span></a></code>.
+				</div><h1>Function <code><a href="../../std/array.html">std.array</a>.staticArray</code></h1><p>Constructs a static array from <code class="lang-d"><a href="../../std/array/static_array.html#a"><span class="pln">a</span></a></code>.
 The type of elements can be specified implicitly so that <code class="lang-d"><span class="pun">[</span><span class="lit">1</span><span class="pun">, </span><span class="lit">2</span><span class="pun">]<wbr/>.</span><span class="pln">staticArray</span></code> results in <code class="lang-d"><span class="typ">int</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]</span></code>,
 or explicitly, e.g. <code class="lang-d"><span class="pun">[</span><span class="lit">1</span><span class="pun">, </span><span class="lit">2</span><span class="pun">]<wbr/>.</span><span class="pln">staticArray</span><span class="pun">!</span><span class="typ">float</span></code> returns <code class="lang-d"><span class="typ">float</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]</span></code>.
-When <code class="lang-d"><a href="../std/array/static_array.html#a"><span class="pln"><a href="../../std/array/static_array.html#a"><span class="pln">a</span></a></span></a></code> is a range whose length is not known at compile time, the number of elements must be
-given as template argument (e.g. <code class="lang-d"><span class="pln">myrange<wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">staticArray</span></span><span class="pun">!</span><span class="lit">2</span></code>).
+When <code class="lang-d"><a href="../../std/array/static_array.html#a"><span class="pln">a</span></a></code> is a range whose length is not known at compile time, the number of elements must be
+given as template argument (e.g. <code class="lang-d"><span class="pln">myrange<wbr/></span><span class="pun">.</span><span class="pln">staticArray</span><span class="pun">!</span><span class="lit">2</span></code>).
 Size and type can be combined, if the source range elements are implicitly
-convertible to the requested element type (eg: <code class="lang-d"><span class="lit">2<wbr/></span><span class="pun">.</span><span class="pln">iota<wbr/></span><span class="pun">.</span><span class="pln"><span class="pln">staticArray</span></span><span class="pun">!(</span><span class="typ">long</span><span class="pun">[</span><span class="lit">2</span><span class="pun">])</span></code>).
-When the range <code class="lang-d"><a href="../std/array/static_array.html#a"><span class="pln"><a href="../../std/array/static_array.html#a"><span class="pln">a</span></a></span></a></code> is known at compile time, it can also be specified as a
+convertible to the requested element type (eg: <code class="lang-d"><span class="lit">2<wbr/></span><span class="pun">.</span><span class="pln">iota<wbr/></span><span class="pun">.</span><span class="pln">staticArray</span><span class="pun">!(</span><span class="typ">long</span><span class="pun">[</span><span class="lit">2</span><span class="pun">])</span></code>).
+When the range <code class="lang-d"><a href="../../std/array/static_array.html#a"><span class="pln">a</span></a></code> is known at compile time, it can also be specified as a
 template argument to avoid having to specify the number of elements
-(e.g.: <code class="lang-d"><span class="pln"><span class="pln">staticArray</span></span><span class="pun">!(</span><span class="lit">2<wbr/></span><span class="pun">.</span><span class="pln">iota</span><span class="pun">)</span></code> or <code class="lang-d"><span class="pln"><span class="pln">staticArray</span></span><span class="pun">!(</span><span class="typ">double</span><span class="pun">, </span><span class="lit">2<wbr/></span><span class="pun">.</span><span class="pln">iota</span><span class="pun">)</span></code>).
+(e.g.: <code class="lang-d"><span class="pln">staticArray</span><span class="pun">!(</span><span class="lit">2<wbr/></span><span class="pun">.</span><span class="pln">iota</span><span class="pun">)</span></code> or <code class="lang-d"><span class="pln">staticArray</span><span class="pun">!(</span><span class="typ">double</span><span class="pun">, </span><span class="lit">2<wbr/></span><span class="pun">.</span><span class="pln">iota</span><span class="pun">)</span></code>).
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2959,7 +2974,7 @@ template argument to avoid having to specify the number of elements
 				<span class="pun">)</span><span class="pun">;</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">staticArray</span>(<span class="typ">ulong</span> n, T)
+				<span class="kwd">auto</span> <span class="pln">staticArray</span>(<span class="typ">ulong</span> n, T)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="kwd">scope </span><span class="pln">T</span> <span class="pln">a</span>
@@ -2969,7 +2984,7 @@ template argument to avoid having to specify the number of elements
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isInputRange</span><span class="pun">!</span><span class="pln">T</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">staticArray</span>(<span class="typ">ulong</span> n, T)
+				<span class="kwd">auto</span> <span class="pln">staticArray</span>(<span class="typ">ulong</span> n, T)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="kwd">scope </span><span class="pln">T</span> <span class="pln">a</span><span class="pun">,</span>
@@ -2981,7 +2996,7 @@ template argument to avoid having to specify the number of elements
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isInputRange</span><span class="pun">!</span><span class="pln">T</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">staticArray</span>(Un, U, <span class="typ">ulong</span> n, T)
+				<span class="kwd">auto</span> <span class="pln">staticArray</span>(Un, U, <span class="typ">ulong</span> n, T)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="kwd">scope </span><span class="pln">T</span> <span class="pln">a</span>
@@ -2991,7 +3006,7 @@ template argument to avoid having to specify the number of elements
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isInputRange</span><span class="pun">!</span><span class="pln">T </span><span class="pun">&amp;&amp; </span><span class="kwd">is</span><span class="pun">(</span><span class="typ">ElementType</span><span class="pun">!</span><span class="pln">T </span><span class="pun">: </span><span class="pln">U</span><span class="pun">)</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">staticArray</span>(Un, U, <span class="typ">ulong</span> n, T)
+				<span class="kwd">auto</span> <span class="pln">staticArray</span>(Un, U, <span class="typ">ulong</span> n, T)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="kwd">scope </span><span class="pln">T</span> <span class="pln">a</span><span class="pun">,</span>
@@ -3003,12 +3018,12 @@ template argument to avoid having to specify the number of elements
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isInputRange</span><span class="pun">!</span><span class="pln">T </span><span class="pun">&amp;&amp; </span><span class="kwd">is</span><span class="pun">(</span><span class="typ">ElementType</span><span class="pun">!</span><span class="pln">T </span><span class="pun">: </span><span class="pln">U</span><span class="pun">)</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">staticArray</span>(alias a)<span class="pun">(</span><span class="pun">)</span>
+				<span class="kwd">auto</span> <span class="pln">staticArray</span>(alias a)<span class="pun">(</span><span class="pun">)</span>
 				<br/>
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isInputRange</span><span class="pun">!(</span><span class="kwd">typeof</span><span class="pun">(</span><span class="pln">a</span><span class="pun">))</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">staticArray</span>(U, alias a)<span class="pun">(</span><span class="pun">)</span>
+				<span class="kwd">auto</span> <span class="pln">staticArray</span>(U, alias a)<span class="pun">(</span><span class="pun">)</span>
 				<br/>
 				<span class="kwd">if</span> <span class="pun">(</span><span class="pln">isInputRange</span><span class="pun">!(</span><span class="kwd">typeof</span><span class="pun">(</span><span class="pln">a</span><span class="pun">))</span><span class="pun">);</span>
 						</div>

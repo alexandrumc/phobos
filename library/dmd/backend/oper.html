@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2947,27 +2962,33 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="convidx" class="public" href="../../dmd/backend/oper/convidx.html">convidx</a><span class="decoration">(op)</span>
+									<a id="convidx" class="public" href="../../dmd/backend/oper/convidx.html">convidx</a><span class="tableEntryAnnotation">(op)</span>
 								</code>
 							</td>
 							<td>Conversion operators.
  Convert from conversion operator to conversion index
  parallel array invconvtab[] in cgelem.c
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rel_not" class="public" href="../../dmd/backend/oper/rel_not.html">rel_not</a><span class="decoration">(op)</span>
+									<a id="rel_not" class="public" href="../../dmd/backend/oper/rel_not.html">rel_not</a><span class="tableEntryAnnotation">(op)</span>
 								</code>
 							</td>
 							<td>Determine things about relational operators.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

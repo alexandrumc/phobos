@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2951,33 +2966,42 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="go_flag" class="public" href="../../dmd/backend/go/go_flag.html">go_flag</a><span class="decoration">(cp)</span>
+									<a id="go_flag" class="public" href="../../dmd/backend/go/go_flag.html">go_flag</a><span class="tableEntryAnnotation">(cp)</span>
 								</code>
 							</td>
 							<td>Parse optimizer command line flag.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="mem_free" class="public" href="../../dmd/backend/go/mem_free.html">mem_free</a><span class="decoration">(p)</span>
+									<a id="mem_free" class="public" href="../../dmd/backend/go/mem_free.html">mem_free</a><span class="tableEntryAnnotation">(p)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="optfunc" class="public" href="../../dmd/backend/go/optfunc.html">optfunc</a><span class="decoration">()</span>
+									<a id="optfunc" class="public" href="../../dmd/backend/go/optfunc.html">optfunc</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Optimize function.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2954,67 +2969,85 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="arraydup" class="public" href="../../dmd/root/rmem/arraydup.html">arraydup</a><span class="decoration">(s)</span>
+									<a id="arraydup" class="public" href="../../dmd/root/rmem/arraydup.html">arraydup</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Makes a copy of the given array on newly allocated memory.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="pureCalloc" class="public" href="../../dmd/root/rmem/pure_calloc.html">pureCalloc</a><span class="decoration">(nmemb, size)</span>
+									<a id="pureCalloc" class="public" href="../../dmd/root/rmem/pure_calloc.html">pureCalloc</a><span class="tableEntryAnnotation">(nmemb, size)</span>
 								</code>
 							</td>
 							<td>Pure variants of C's memory allocation functions <code class="lang-d"><span class="pln">malloc</span></code>, <code class="lang-d"><span class="pln">calloc</span></code>, and
  <code class="lang-d"><span class="pln">realloc</span></code> and deallocation function <code class="lang-d"><span class="pln">free</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="pureFree" class="public" href="../../dmd/root/rmem/pure_free.html">pureFree</a><span class="decoration">(ptr)</span>
+									<a id="pureFree" class="public" href="../../dmd/root/rmem/pure_free.html">pureFree</a><span class="tableEntryAnnotation">(ptr)</span>
 								</code>
 							</td>
 							<td>Pure variants of C's memory allocation functions <code class="lang-d"><span class="pln">malloc</span></code>, <code class="lang-d"><span class="pln">calloc</span></code>, and
  <code class="lang-d"><span class="pln">realloc</span></code> and deallocation function <code class="lang-d"><span class="pln">free</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="pureMalloc" class="public" href="../../dmd/root/rmem/pure_malloc.html">pureMalloc</a><span class="decoration">(size)</span>
+									<a id="pureMalloc" class="public" href="../../dmd/root/rmem/pure_malloc.html">pureMalloc</a><span class="tableEntryAnnotation">(size)</span>
 								</code>
 							</td>
 							<td>Pure variants of C's memory allocation functions <code class="lang-d"><span class="pln">malloc</span></code>, <code class="lang-d"><span class="pln">calloc</span></code>, and
  <code class="lang-d"><span class="pln">realloc</span></code> and deallocation function <code class="lang-d"><span class="pln">free</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="pureRealloc" class="public" href="../../dmd/root/rmem/pure_realloc.html">pureRealloc</a><span class="decoration">(ptr, size)</span>
+									<a id="pureRealloc" class="public" href="../../dmd/root/rmem/pure_realloc.html">pureRealloc</a><span class="tableEntryAnnotation">(ptr, size)</span>
 								</code>
 							</td>
 							<td>Pure variants of C's memory allocation functions <code class="lang-d"><span class="pln">malloc</span></code>, <code class="lang-d"><span class="pln">calloc</span></code>, and
  <code class="lang-d"><span class="pln">realloc</span></code> and deallocation function <code class="lang-d"><span class="pln">free</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="xarraydup" class="public" href="../../dmd/root/rmem/xarraydup.html">xarraydup</a><span class="decoration">(s)</span>
+									<a id="xarraydup" class="public" href="../../dmd/root/rmem/xarraydup.html">xarraydup</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Makes a null-terminated copy of the given string on newly allocated memory.
 The null-terminator won't be part of the returned string slice. It will be
 at position <code class="lang-d"><span class="pln">n</span></code> where <code class="lang-d"><span class="pln">n</span></code> is the length of the input string.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

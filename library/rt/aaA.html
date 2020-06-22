@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2946,146 +2961,191 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_aaApply" class="public" href="../rt/aaA/_aa_apply.html">_aaApply</a><span class="decoration">(aa, keysz, dg)</span>
+									<a id="_aaApply" class="public" href="../rt/aaA/_aa_apply.html">_aaApply</a><span class="tableEntryAnnotation">(aa, keysz, dg)</span>
 								</code>
 							</td>
 							<td>foreach opApply over all values
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_aaApply2" class="public" href="../rt/aaA/_aa_apply2.html">_aaApply2</a><span class="decoration">(aa, keysz, dg)</span>
+									<a id="_aaApply2" class="public" href="../rt/aaA/_aa_apply2.html">_aaApply2</a><span class="tableEntryAnnotation">(aa, keysz, dg)</span>
 								</code>
 							</td>
 							<td>foreach opApply over all key/value pairs
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_aaClear" class="public" href="../rt/aaA/_aa_clear.html">_aaClear</a><span class="decoration">(aa)</span>
+									<a id="_aaClear" class="public" href="../rt/aaA/_aa_clear.html">_aaClear</a><span class="tableEntryAnnotation">(aa)</span>
 								</code>
 							</td>
 							<td>Remove all elements from AA.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_aaDelX" class="public" href="../rt/aaA/_aa_del_x.html">_aaDelX</a><span class="decoration">(aa, keyti, pkey)</span>
+									<a id="_aaDelX" class="public" href="../rt/aaA/_aa_del_x.html">_aaDelX</a><span class="tableEntryAnnotation">(aa, keyti, pkey)</span>
 								</code>
 							</td>
 							<td>Delete entry scope const AA, return true if it was present
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_aaEqual" class="public" href="../rt/aaA/_aa_equal.html">_aaEqual</a><span class="decoration">(tiRaw, aa1, aa2)</span>
+									<a id="_aaEqual" class="public" href="../rt/aaA/_aa_equal.html">_aaEqual</a><span class="tableEntryAnnotation">(tiRaw, aa1, aa2)</span>
 								</code>
 							</td>
 							<td>compares 2 AAs for equality
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_aaGetHash" class="public" href="../rt/aaA/_aa_get_hash.html">_aaGetHash</a><span class="decoration">(aa, tiRaw)</span>
+									<a id="_aaGetHash" class="public" href="../rt/aaA/_aa_get_hash.html">_aaGetHash</a><span class="tableEntryAnnotation">(aa, tiRaw)</span>
 								</code>
 							</td>
 							<td>compute a hash
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_aaGetRvalueX" class="public" href="../rt/aaA/_aa_get_rvalue_x.html">_aaGetRvalueX</a><span class="decoration">(aa, keyti, valsz, pkey)</span>
+									<a id="_aaGetRvalueX" class="public" href="../rt/aaA/_aa_get_rvalue_x.html">_aaGetRvalueX</a><span class="tableEntryAnnotation">(aa, keyti, valsz, pkey)</span>
 								</code>
 							</td>
 							<td>Lookup *pkey in aa.
  Called only from implementation of (aa[key]) expressions when value is not mutable.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_aaGetX" class="public" href="../rt/aaA/_aa_get_x.html">_aaGetX</a><span class="decoration">(aa, ti, valsz, pkey, found)</span>
+									<a id="_aaGetX" class="public" href="../rt/aaA/_aa_get_x.html">_aaGetX</a><span class="tableEntryAnnotation">(aa, ti, valsz, pkey, found)</span>
 								</code>
 							</td>
 							<td>Lookup *pkey in aa.
  Called only from implementation of require
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_aaGetY" class="public" href="../rt/aaA/_aa_get_y.html">_aaGetY</a><span class="decoration">(aa, ti, valsz, pkey)</span>
+									<a id="_aaGetY" class="public" href="../rt/aaA/_aa_get_y.html">_aaGetY</a><span class="tableEntryAnnotation">(aa, ti, valsz, pkey)</span>
 								</code>
 							</td>
 							<td>Lookup *pkey in aa.
  Called only from implementation of (aa[key]) expressions when value is mutable.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_aaInX" class="public" href="../rt/aaA/_aa_inx.html">_aaInX</a><span class="decoration">(aa, keyti, pkey)</span>
+									<a id="_aaInX" class="public" href="../rt/aaA/_aa_inx.html">_aaInX</a><span class="tableEntryAnnotation">(aa, keyti, pkey)</span>
 								</code>
 							</td>
 							<td>Lookup *pkey in aa.
  Called only from implementation of (key in aa) expressions.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_aaKeys" class="public" href="../rt/aaA/_aa_keys.html">_aaKeys</a><span class="decoration">(aa, keysz, tiKeyArray)</span>
+									<a id="_aaKeys" class="public" href="../rt/aaA/_aa_keys.html">_aaKeys</a><span class="tableEntryAnnotation">(aa, keysz, tiKeyArray)</span>
 								</code>
 							</td>
 							<td>Return a GC allocated array of all keys
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_aaLen" class="public" href="../rt/aaA/_aa_len.html">_aaLen</a><span class="decoration">(aa)</span>
+									<a id="_aaLen" class="public" href="../rt/aaA/_aa_len.html">_aaLen</a><span class="tableEntryAnnotation">(aa)</span>
 								</code>
 							</td>
 							<td>Determine number of entries in associative array.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_aaRehash" class="public" href="../rt/aaA/_aa_rehash.html">_aaRehash</a><span class="decoration">(paa, keyti)</span>
+									<a id="_aaRehash" class="public" href="../rt/aaA/_aa_rehash.html">_aaRehash</a><span class="tableEntryAnnotation">(paa, keyti)</span>
 								</code>
 							</td>
 							<td>Rehash AA
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_aaValues" class="public" href="../rt/aaA/_aa_values.html">_aaValues</a><span class="decoration">(aa, keysz, valsz, tiValueArray)</span>
+									<a id="_aaValues" class="public" href="../rt/aaA/_aa_values.html">_aaValues</a><span class="tableEntryAnnotation">(aa, keysz, valsz, tiValueArray)</span>
 								</code>
 							</td>
 							<td>Return a GC allocated array of all values
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_assocarrayliteralTX" class="public" href="../rt/aaA/_d_assocarrayliteral_tx.html">_d_assocarrayliteralTX</a><span class="decoration">(ti, keys, vals)</span>
+									<a id="_d_assocarrayliteralTX" class="public" href="../rt/aaA/_d_assocarrayliteral_tx.html">_d_assocarrayliteralTX</a><span class="tableEntryAnnotation">(ti, keys, vals)</span>
 								</code>
 							</td>
 							<td>Construct an associative array of type ti from keys and value
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3094,7 +3154,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3104,6 +3164,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Opaque AA wrapper
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3113,6 +3175,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>aaRange implements a ForwardRange
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2947,82 +2962,106 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_allocmemory" class="public" href="../rt/lifetime/_d_allocmemory.html">_d_allocmemory</a><span class="decoration">(sz)</span>
+									<a id="_d_allocmemory" class="public" href="../rt/lifetime/_d_allocmemory.html">_d_allocmemory</a><span class="tableEntryAnnotation">(sz)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_arrayappendcd" class="public" href="../rt/lifetime/_d_arrayappendcd.html">_d_arrayappendcd</a><span class="decoration">(x, c)</span>
+									<a id="_d_arrayappendcd" class="public" href="../rt/lifetime/_d_arrayappendcd.html">_d_arrayappendcd</a><span class="tableEntryAnnotation">(x, c)</span>
 								</code>
 							</td>
 							<td>Append dchar to char[]
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_arrayappendcTX" class="public" href="../rt/lifetime/_d_arrayappendc_tx.html">_d_arrayappendcTX</a><span class="decoration">(ti, px, n)</span>
+									<a id="_d_arrayappendcTX" class="public" href="../rt/lifetime/_d_arrayappendc_tx.html">_d_arrayappendcTX</a><span class="tableEntryAnnotation">(ti, px, n)</span>
 								</code>
 							</td>
 							<td>Extend an array by n elements.
  Caller must initialize those elements.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_arrayappendT" class="public" href="../rt/lifetime/_d_arrayappend_t.html">_d_arrayappendT</a><span class="decoration">(ti, x, y)</span>
+									<a id="_d_arrayappendT" class="public" href="../rt/lifetime/_d_arrayappend_t.html">_d_arrayappendT</a><span class="tableEntryAnnotation">(ti, x, y)</span>
 								</code>
 							</td>
 							<td>Append y[] to array x[]
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_arrayappendwd" class="public" href="../rt/lifetime/_d_arrayappendwd.html">_d_arrayappendwd</a><span class="decoration">(x, c)</span>
+									<a id="_d_arrayappendwd" class="public" href="../rt/lifetime/_d_arrayappendwd.html">_d_arrayappendwd</a><span class="tableEntryAnnotation">(x, c)</span>
 								</code>
 							</td>
 							<td>Append dchar to wchar[]
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_arraycatnTX" class="public" href="../rt/lifetime/_d_arraycatn_tx.html">_d_arraycatnTX</a><span class="decoration">(ti, arrs)</span>
+									<a id="_d_arraycatnTX" class="public" href="../rt/lifetime/_d_arraycatn_tx.html">_d_arraycatnTX</a><span class="tableEntryAnnotation">(ti, arrs)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_arraycatT" class="public" href="../rt/lifetime/_d_arraycat_t.html">_d_arraycatT</a><span class="decoration">(ti, x, y)</span>
+									<a id="_d_arraycatT" class="public" href="../rt/lifetime/_d_arraycat_t.html">_d_arraycatT</a><span class="tableEntryAnnotation">(ti, x, y)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_arrayliteralTX" class="public" href="../rt/lifetime/_d_arrayliteral_tx.html">_d_arrayliteralTX</a><span class="decoration">(ti, length)</span>
+									<a id="_d_arrayliteralTX" class="public" href="../rt/lifetime/_d_arrayliteral_tx.html">_d_arrayliteralTX</a><span class="tableEntryAnnotation">(ti, length)</span>
 								</code>
 							</td>
 							<td>Allocate the array, rely on the caller to do the initialization of the array.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_arraysetcapacity" class="public" href="../rt/lifetime/_d_arraysetcapacity.html">_d_arraysetcapacity</a><span class="decoration">(ti, newcapacity, p)</span>
+									<a id="_d_arraysetcapacity" class="public" href="../rt/lifetime/_d_arraysetcapacity.html">_d_arraysetcapacity</a><span class="tableEntryAnnotation">(ti, newcapacity, p)</span>
 								</code>
 							</td>
 							<td>set the array capacity.  If the array capacity isn't currently large enough
@@ -3031,11 +3070,14 @@ $('#symbolSearchPane').show();</script>
  of 0 to get the current capacity.  Returns the number of elements that can
  actually be stored once the resizing is done.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_arraysetlengthiT" class="public" href="../rt/lifetime/_d_arraysetlengthi_t.html">_d_arraysetlengthiT</a><span class="decoration">(ti, newlength, p)</span>
+									<a id="_d_arraysetlengthiT" class="public" href="../rt/lifetime/_d_arraysetlengthi_t.html">_d_arraysetlengthiT</a><span class="tableEntryAnnotation">(ti, newlength, p)</span>
 								</code>
 							</td>
 							<td>Resize arrays for non-zero initializers.
@@ -3045,215 +3087,290 @@ $('#symbolSearchPane').show();</script>
       initsize        size of initializer
       ...             initializer
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_arraysetlengthT" class="public" href="../rt/lifetime/_d_arraysetlength_t.html">_d_arraysetlengthT</a><span class="decoration">(ti, newlength, p)</span>
+									<a id="_d_arraysetlengthT" class="public" href="../rt/lifetime/_d_arraysetlength_t.html">_d_arraysetlengthT</a><span class="tableEntryAnnotation">(ti, newlength, p)</span>
 								</code>
 							</td>
 							<td>Resize dynamic arrays with 0 initializers.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_arrayshrinkfit" class="public" href="../rt/lifetime/_d_arrayshrinkfit.html">_d_arrayshrinkfit</a><span class="decoration">(ti, arr)</span>
+									<a id="_d_arrayshrinkfit" class="public" href="../rt/lifetime/_d_arrayshrinkfit.html">_d_arrayshrinkfit</a><span class="tableEntryAnnotation">(ti, arr)</span>
 								</code>
 							</td>
 							<td>Shrink the "allocated" length of an array to be the exact size of the array.
  It doesn't matter what the current allocated length of the array is, the
  user is telling the runtime that he knows what he is doing.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_callfinalizer" class="public" href="../rt/lifetime/_d_callfinalizer.html">_d_callfinalizer</a><span class="decoration">(p)</span>
+									<a id="_d_callfinalizer" class="public" href="../rt/lifetime/_d_callfinalizer.html">_d_callfinalizer</a><span class="tableEntryAnnotation">(p)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_callinterfacefinalizer" class="public" href="../rt/lifetime/_d_callinterfacefinalizer.html">_d_callinterfacefinalizer</a><span class="decoration">(p)</span>
+									<a id="_d_callinterfacefinalizer" class="public" href="../rt/lifetime/_d_callinterfacefinalizer.html">_d_callinterfacefinalizer</a><span class="tableEntryAnnotation">(p)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_delarray_t" class="public" href="../rt/lifetime/_d_delarray_t.html">_d_delarray_t</a><span class="decoration">(p, ti)</span>
+									<a id="_d_delarray_t" class="public" href="../rt/lifetime/_d_delarray_t.html">_d_delarray_t</a><span class="tableEntryAnnotation">(p, ti)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_delclass" class="public" href="../rt/lifetime/_d_delclass.html">_d_delclass</a><span class="decoration">(p)</span>
+									<a id="_d_delclass" class="public" href="../rt/lifetime/_d_delclass.html">_d_delclass</a><span class="tableEntryAnnotation">(p)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_delinterface" class="public" href="../rt/lifetime/_d_delinterface.html">_d_delinterface</a><span class="decoration">(p)</span>
+									<a id="_d_delinterface" class="public" href="../rt/lifetime/_d_delinterface.html">_d_delinterface</a><span class="tableEntryAnnotation">(p)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_delmemory" class="public" href="../rt/lifetime/_d_delmemory.html">_d_delmemory</a><span class="decoration">(p)</span>
+									<a id="_d_delmemory" class="public" href="../rt/lifetime/_d_delmemory.html">_d_delmemory</a><span class="tableEntryAnnotation">(p)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_delstruct" class="public" href="../rt/lifetime/_d_delstruct.html">_d_delstruct</a><span class="decoration">(p, inf)</span>
+									<a id="_d_delstruct" class="public" href="../rt/lifetime/_d_delstruct.html">_d_delstruct</a><span class="tableEntryAnnotation">(p, inf)</span>
 								</code>
 							</td>
 							<td>This is called for a delete statement where the value
  being deleted is a pointer to a struct with a destructor
  but doesn't have an overloaded delete operator.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_newarrayiT" class="public" href="../rt/lifetime/_d_newarrayi_t.html">_d_newarrayiT</a><span class="decoration">(ti, length)</span>
+									<a id="_d_newarrayiT" class="public" href="../rt/lifetime/_d_newarrayi_t.html">_d_newarrayiT</a><span class="tableEntryAnnotation">(ti, length)</span>
 								</code>
 							</td>
 							<td>For when the array has a non-zero initializer.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_newarraymiTX" class="public" href="../rt/lifetime/_d_newarraymi_tx.html">_d_newarraymiTX</a><span class="decoration">(ti, dims)</span>
+									<a id="_d_newarraymiTX" class="public" href="../rt/lifetime/_d_newarraymi_tx.html">_d_newarraymiTX</a><span class="tableEntryAnnotation">(ti, dims)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_newarraymTX" class="public" href="../rt/lifetime/_d_newarraym_tx.html">_d_newarraymTX</a><span class="decoration">(ti, dims)</span>
+									<a id="_d_newarraymTX" class="public" href="../rt/lifetime/_d_newarraym_tx.html">_d_newarraymTX</a><span class="tableEntryAnnotation">(ti, dims)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_newarrayOpT" class="public" href="../rt/lifetime/_d_newarray_opt.html">_d_newarrayOpT</a><span class="decoration">(ti, dims)</span>
+									<a id="_d_newarrayOpT" class="public" href="../rt/lifetime/_d_newarray_opt.html">_d_newarrayOpT</a><span class="tableEntryAnnotation">(ti, dims)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_newarrayT" class="public" href="../rt/lifetime/_d_newarray_t.html">_d_newarrayT</a><span class="decoration">(ti, length)</span>
+									<a id="_d_newarrayT" class="public" href="../rt/lifetime/_d_newarray_t.html">_d_newarrayT</a><span class="tableEntryAnnotation">(ti, length)</span>
 								</code>
 							</td>
 							<td>Allocate a new array of length elements.
  ti is the type of the resulting array, or pointer to element.
  (For when the array is initialized to 0)
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_newarrayU" class="public" href="../rt/lifetime/_d_newarray_u.html">_d_newarrayU</a><span class="decoration">(ti, length)</span>
+									<a id="_d_newarrayU" class="public" href="../rt/lifetime/_d_newarray_u.html">_d_newarrayU</a><span class="tableEntryAnnotation">(ti, length)</span>
 								</code>
 							</td>
 							<td>Allocate a new uninitialized array of length elements.
  ti is the type of the resulting array, or pointer to element.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_newclass" class="public" href="../rt/lifetime/_d_newclass.html">_d_newclass</a><span class="decoration">(ci)</span>
+									<a id="_d_newclass" class="public" href="../rt/lifetime/_d_newclass.html">_d_newclass</a><span class="tableEntryAnnotation">(ci)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_newitemiT" class="public" href="../rt/lifetime/_d_newitemi_t.html">_d_newitemiT</a><span class="decoration">(_ti)</span>
+									<a id="_d_newitemiT" class="public" href="../rt/lifetime/_d_newitemi_t.html">_d_newitemiT</a><span class="tableEntryAnnotation">(_ti)</span>
 								</code>
 							</td>
 							<td>Same as above, for item with non-zero initializer.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_newitemT" class="public" href="../rt/lifetime/_d_newitem_t.html">_d_newitemT</a><span class="decoration">(_ti)</span>
+									<a id="_d_newitemT" class="public" href="../rt/lifetime/_d_newitem_t.html">_d_newitemT</a><span class="tableEntryAnnotation">(_ti)</span>
 								</code>
 							</td>
 							<td>Same as above, zero initializes the item.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_d_newitemU" class="public" href="../rt/lifetime/_d_newitem_u.html">_d_newitemU</a><span class="decoration">(_ti)</span>
+									<a id="_d_newitemU" class="public" href="../rt/lifetime/_d_newitem_u.html">_d_newitemU</a><span class="tableEntryAnnotation">(_ti)</span>
 								</code>
 							</td>
 							<td>Allocate an uninitialized non-array item.
  This is an optimization to avoid things needed for arrays like the _arrayPad(size).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="newCapacity" class="public" href="../rt/lifetime/new_capacity.html">newCapacity</a><span class="decoration">(newlength, size)</span>
+									<a id="newCapacity" class="public" href="../rt/lifetime/new_capacity.html">newCapacity</a><span class="tableEntryAnnotation">(newlength, size)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rt_finalize2" class="public" href="../rt/lifetime/rt_finalize2.html">rt_finalize2</a><span class="decoration">(p, det, resetMemory)</span>
+									<a id="rt_finalize2" class="public" href="../rt/lifetime/rt_finalize2.html">rt_finalize2</a><span class="tableEntryAnnotation">(p, det, resetMemory)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rt_getCollectHandler" class="public" href="../rt/lifetime/rt_get_collect_handler.html">rt_getCollectHandler</a><span class="decoration">()</span>
+									<a id="rt_getCollectHandler" class="public" href="../rt/lifetime/rt_get_collect_handler.html">rt_getCollectHandler</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rt_hasFinalizerInSegment" class="public" href="../rt/lifetime/rt_has_finalizer_in_segment.html">rt_hasFinalizerInSegment</a><span class="decoration">(p, size, attr, segment)</span>
+									<a id="rt_hasFinalizerInSegment" class="public" href="../rt/lifetime/rt_has_finalizer_in_segment.html">rt_hasFinalizerInSegment</a><span class="tableEntryAnnotation">(p, size, attr, segment)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rt_setCollectHandler" class="public" href="../rt/lifetime/rt_set_collect_handler.html">rt_setCollectHandler</a><span class="decoration">(h)</span>
+									<a id="rt_setCollectHandler" class="public" href="../rt/lifetime/rt_set_collect_handler.html">rt_setCollectHandler</a><span class="tableEntryAnnotation">(h)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3262,7 +3379,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3271,6 +3388,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

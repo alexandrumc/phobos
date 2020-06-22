@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2952,17 +2967,17 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function sequence</h2><p><code class="lang-d"><a href="../std/range/sequence.html"><span class="typ"><span class="typ"><a href="../../std/range/sequence.html"><span class="typ">Sequence</span></a></span></span></a></code> is similar to <code class="lang-d"><a href="../std/range/recurrence.html"><span class="typ"><a href="../std/range/recurrence.html"><span class="typ"><a href="../../std/range/recurrence.html"><span class="typ">Recurrence</span></a></span></a></span></a></code> except that iteration is
+				</nav><h2 id="0">Function sequence</h2><p><code class="lang-d"><a href="../../std/range/sequence.html"><span class="typ">Sequence</span></a></code> is similar to <code class="lang-d"><a href="../../std/range/recurrence.html"><span class="typ">Recurrence</span></a></code> except that iteration is
    presented in the so-called <a href="http://en.wikipedia.org/wiki/Closed_form">  closed form</a>. This means that the <code class="lang-d"><span class="pln">n</span></code>th element in the series is
    computable directly from the initial values and <code class="lang-d"><span class="pln">n</span></code> itself. This
-   implies that the interface offered by <code class="lang-d"><a href="../std/range/sequence.html"><span class="typ"><span class="typ"><a href="../../std/range/sequence.html"><span class="typ">Sequence</span></a></span></span></a></code> is a random-access
-   range, as opposed to the regular <code class="lang-d"><a href="../std/range/recurrence.html"><span class="typ"><a href="../std/range/recurrence.html"><span class="typ"><a href="../../std/range/recurrence.html"><span class="typ">Recurrence</span></a></span></a></span></a></code>, which only offers
+   implies that the interface offered by <code class="lang-d"><a href="../../std/range/sequence.html"><span class="typ">Sequence</span></a></code> is a random-access
+   range, as opposed to the regular <code class="lang-d"><a href="../../std/range/recurrence.html"><span class="typ">Recurrence</span></a></code>, which only offers
    forward iteration.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">sequence</span>(alias fun, State...)
+				<span class="kwd">auto</span> <span class="pln">sequence</span>(alias fun, State...)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">State</span> <span class="pln">args</span>
@@ -3023,11 +3038,11 @@ $('#symbolSearchPane').show();</script>
 </span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">fib</span><span class="pun">[</span><span class="lit">9</span><span class="pun">]); </span><span class="com">// 55
 </span></code></pre>
 </section>
-<h2 id="1">Struct Sequence</h2><p><code class="lang-d"><a href="../std/range/sequence.html"><span class="typ"><span class="typ"><a href="../../std/range/sequence.html"><span class="typ"><span class="typ">Sequence</span></span></a></span></span></a></code> is similar to <code class="lang-d"><a href="../std/range/recurrence.html"><span class="typ"><a href="../std/range/recurrence.html"><span class="typ"><a href="../../std/range/recurrence.html"><span class="typ"><a href="../../std/range/recurrence.html"><span class="typ">Recurrence</span></a></span></a></span></a></span></a></code> except that iteration is
+<h2 id="1">Struct Sequence</h2><p><code class="lang-d"><span class="typ">Sequence</span></code> is similar to <code class="lang-d"><a href="../../std/range/recurrence.html"><span class="typ">Recurrence</span></a></code> except that iteration is
    presented in the so-called <a href="http://en.wikipedia.org/wiki/Closed_form">  closed form</a>. This means that the <code class="lang-d"><span class="pln">n</span></code>th element in the series is
    computable directly from the initial values and <code class="lang-d"><span class="pln">n</span></code> itself. This
-   implies that the interface offered by <code class="lang-d"><a href="../std/range/sequence.html"><span class="typ"><span class="typ"><a href="../../std/range/sequence.html"><span class="typ"><span class="typ">Sequence</span></span></a></span></span></a></code> is a random-access
-   range, as opposed to the regular <code class="lang-d"><a href="../std/range/recurrence.html"><span class="typ"><a href="../std/range/recurrence.html"><span class="typ"><a href="../../std/range/recurrence.html"><span class="typ"><a href="../../std/range/recurrence.html"><span class="typ">Recurrence</span></a></span></a></span></a></span></a></code>, which only offers
+   implies that the interface offered by <code class="lang-d"><span class="typ">Sequence</span></code> is a random-access
+   range, as opposed to the regular <code class="lang-d"><a href="../../std/range/recurrence.html"><span class="typ">Recurrence</span></a></code>, which only offers
    forward iteration.
 </p>
 				<div class="prototype">

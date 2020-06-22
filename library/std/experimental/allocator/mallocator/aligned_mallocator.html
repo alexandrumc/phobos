@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2976,6 +2991,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../../std/experimental/allocator/mallocator/aligned_mallocator.aligned_allocate.html" class="public">
 									<code>alignedAllocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(bytes, a)</span>
 							</td>
 							<td>Uses <a href="http://man7.org/linux/man-pages/man3/posix_memalign.3.html">   <code class="lang-d"><span class="pln">posix_memalign</span></code></a> on Posix and
     <a href="http://msdn.microsoft.com/en-us/library/8z34s9c6(v=vs.80).aspx">   <code class="lang-d"><span class="pln">__aligned_malloc</span></code></a> on Windows.
@@ -2986,6 +3002,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../../std/experimental/allocator/mallocator/aligned_mallocator.aligned_reallocate.html" class="public">
 									<code>alignedReallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, s, a)</span>
 							</td>
 							<td>Forwards to <code class="lang-d"><span class="pln">alignedReallocate</span><span class="pun">(<a href="../../../../std/experimental/allocator/mallocator/aligned_mallocator.aligned_reallocate.html#b"></span><span class="pln">b</span></a><span class="pun">, </span><span class="pln">newSize</span><span class="pun">, </span><span class="pln">platformAlignment</span><span class="pun">)</span></code>.
     Should be used with blocks obtained with <code class="lang-d"><a href="../../../../std/experimental/allocator/mallocator/aligned_mallocator.allocate.html"><span class="pln">allocate</span></a></code> otherwise the custom
@@ -2997,6 +3014,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../../std/experimental/allocator/mallocator/aligned_mallocator.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(bytes)</span>
 							</td>
 							<td>Forwards to <code class="lang-d"><a href="../../../../std/experimental/allocator/mallocator/aligned_mallocator.aligned_allocate.html"><span class="pln">alignedAllocate</span></a><span class="pun">(<a href="../../../../std/experimental/allocator/mallocator/aligned_mallocator.allocate.html#bytes"></span><span class="pln">bytes</span></a><span class="pun">, </span><span class="pln">platformAlignment</span><span class="pun">)</span></code>.
 </td>
@@ -3006,6 +3024,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../../std/experimental/allocator/mallocator/aligned_mallocator.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>Calls <code class="lang-d"><span class="pln">free</span><span class="pun">(</span><span class="pln">b<wbr/></span><span class="pun">.</span><span class="pln">ptr</span><span class="pun">)</span></code> on Posix and
     <a href="http://msdn.microsoft.com/en-US/library/17b5h8td(v=vs.80).aspx">   <code class="lang-d"><span class="pln">__aligned_free</span><span class="pun">(</span><span class="pln">b<wbr/></span><span class="pun">.</span><span class="pln">ptr</span><span class="pun">)</span></code></a> on Windows.
@@ -3016,10 +3035,11 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../../std/experimental/allocator/mallocator/aligned_mallocator.reallocate.html" class="public">
 									<code>reallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, newSize)</span>
 							</td>
 							<td>Forwards to <code class="lang-d"><a href="../../../../std/experimental/allocator/mallocator/aligned_mallocator.aligned_reallocate.html"><span class="pln">alignedReallocate</span></a><span class="pun">(<a href="../../../../std/experimental/allocator/mallocator/aligned_mallocator.reallocate.html#b"></span><span class="pln">b</span></a><span class="pun">, <a href="../../../../std/experimental/allocator/mallocator/aligned_mallocator.reallocate.html#newSize"></span><span class="pln">newSize</span></a><span class="pun">, </span><span class="pln">platformAlignment</span><span class="pun">)</span></code>.
-    Should be used with blocks obtained with <code class="lang-d"><a href="../../../../std/experimental/allocator/mallocator/aligned_mallocator.allocate.html"><span class="pln"><a href="../../../../std/experimental/allocator/mallocator/aligned_mallocator.allocate.html"><span class="pln">allocate</span></a></span></a></code> otherwise the custom
-    alignment passed with <code class="lang-d"><a href="../../../../std/experimental/allocator/mallocator/aligned_mallocator.aligned_allocate.html"><span class="pln"><a href="../../../../std/experimental/allocator/mallocator/aligned_mallocator.aligned_allocate.html"><span class="pln">alignedAllocate</span></a></span></a></code> can be lost.
+    Should be used with blocks obtained with <code class="lang-d"><a href="../../../../std/experimental/allocator/mallocator/aligned_mallocator.allocate.html"><span class="pln">allocate</span></a></code> otherwise the custom
+    alignment passed with <code class="lang-d"><a href="../../../../std/experimental/allocator/mallocator/aligned_mallocator.aligned_allocate.html"><span class="pln">alignedAllocate</span></a></code> can be lost.
 </td>
 						</tr>
 					</table>

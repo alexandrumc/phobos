@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2964,43 +2979,55 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="everyDayOfWeek" class="public" href="../../std/datetime/interval/every_day_of_week.html">everyDayOfWeek</a><span class="decoration">(dayOfWeek)</span>
+									<a id="everyDayOfWeek" class="public" href="../../std/datetime/interval/every_day_of_week.html">everyDayOfWeek</a><span class="tableEntryAnnotation">(dayOfWeek)</span>
 								</code>
 							</td>
 							<td>Range-generating function.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="everyDuration" class="public" href="../../std/datetime/interval/every_duration.html">everyDuration</a><span class="decoration">(duration)</span>
+									<a id="everyDuration" class="public" href="../../std/datetime/interval/every_duration.html">everyDuration</a><span class="tableEntryAnnotation">(duration)</span>
 								</code>
 							</td>
 							<td>Range-generating function.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="everyDuration" class="public" href="../../std/datetime/interval/every_duration.html">everyDuration</a><span class="decoration">(years, months, allowOverflow, duration)</span>
+									<a id="everyDuration" class="public" href="../../std/datetime/interval/every_duration.html">everyDuration</a><span class="tableEntryAnnotation">(years, months, allowOverflow, duration)</span>
 								</code>
 							</td>
 							<td>Range-generating function.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="everyMonth" class="public" href="../../std/datetime/interval/every_month.html">everyMonth</a><span class="decoration">(month)</span>
+									<a id="everyMonth" class="public" href="../../std/datetime/interval/every_month.html">everyMonth</a><span class="tableEntryAnnotation">(month)</span>
 								</code>
 							</td>
 							<td>Range-generating function.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3009,7 +3036,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3019,6 +3046,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Represents an interval of time.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3028,6 +3057,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>A range over an <code class="lang-d"><a href="../../std/datetime/interval/interval.html"><span class="typ">Interval</span></a></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3038,6 +3069,8 @@ $('#symbolSearchPane').show();</script>
 							<td>Represents an interval of time which has negative infinity as its starting
     point.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3047,6 +3080,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>A range over a <code class="lang-d"><a href="../../std/datetime/interval/neg_inf_interval.html"><span class="typ">NegInfInterval</span></a></code>. It is an infinite range.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3056,6 +3091,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Represents an interval of time which has positive infinity as its end point.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3065,6 +3102,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>A range over a <code class="lang-d"><a href="../../std/datetime/interval/pos_inf_interval.html"><span class="typ">PosInfInterval</span></a></code>. It is an infinite range.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3073,7 +3112,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3086,6 +3125,8 @@ $('#symbolSearchPane').show();</script>
     should be expanded backwards (into the past), forwards (into the future), or
     both.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,7 +2952,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Class <code><a href="../../std/socket.html">std.socket</a>.SocketAcceptException</code></h1><p>Class for exceptions thrown by <code class="lang-d"><a href="../std/socket/socket.accept.html"><span class="typ"><a href="../../std/socket/socket.html"><span class="typ">Socket</span></a><wbr/></span><span class="pun">.</span><span class="pln">accept</span></a></code>.
+				</div><h1>Class <code><a href="../../std/socket.html">std.socket</a>.SocketAcceptException</code></h1><p>Class for exceptions thrown by <code class="lang-d"><a href="../../std/socket/socket.accept.html"><span class="typ">Socket<wbr/></span><span class="pun">.</span><span class="pln">accept</span></a></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -3028,6 +3043,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/throwable.chain_together.html" class="public inherited">
 									<code>chainTogether</code>
 								</a>
+								<span class="tableEntryAnnotation">(e1, e2)</span>
 							</td>
 							<td>Append <code class="lang-d"><a href="../../object/throwable.chain_together.html#e2"><span class="pln">e2</span></a></code> to chain of exceptions that starts with <code class="lang-d"><a href="../../object/throwable.chain_together.html#e1"><span class="pln">e1</span></a></code>.
 </td>
@@ -3037,6 +3053,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.factory.html" class="public inherited">
 									<code>factory</code>
 								</a>
+								<span class="tableEntryAnnotation">(classname)</span>
 							</td>
 							<td>Create instance of class specified by the fully qualified name
  classname.
@@ -3049,6 +3066,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/throwable.message.html" class="public inherited">
 									<code>message</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Get the message describing the error.
  Base behavior is to return the <code class="lang-d"><a href="../../object/throwable.msg.html"><span class="typ">Throwable<wbr/></span><span class="pun">.</span><span class="pln">msg</span></a></code> field.
@@ -3060,6 +3078,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/throwable.op_apply.html" class="public inherited">
 									<code>opApply</code>
 								</a>
+								<span class="tableEntryAnnotation">(dg)</span>
 							</td>
 							<td>Loop over the chain of Throwables.
 </td>
@@ -3069,6 +3088,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.op_cmp.html" class="public inherited">
 									<code>opCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Compare with another Object obj.
 </td>
@@ -3078,6 +3098,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.op_equals.html" class="public inherited">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Test whether <code class="lang-d"><span class="kwd">this</span></code> is equal to <code class="lang-d"><a href="../../object/object.op_equals.html#o"><span class="pln">o</span></a></code>.
  The default implementation only compares by identity (using the <code class="lang-d"><span class="kwd">is</span></code> operator).
@@ -3089,6 +3110,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/throwable.refcount.html" class="public inherited">
 									<code>refcount</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3097,6 +3119,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.to_hash.html" class="public inherited">
 									<code>toHash</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Compute hash function for Object.
 </td>
@@ -3106,6 +3129,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/throwable.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Overrides <code class="lang-d"><a href="../../object/object.to_string.html"><span class="typ">Object<wbr/></span><span class="pun">.</span><span class="pln">toString</span></a></code> and returns the error message.
  Internally this forwards to the <code class="lang-d"><a href="../../object/throwable.to_string.html"><span class="pln">toString</span></a></code> overload that
@@ -3117,6 +3141,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/throwable.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">(sink)</span>
 							</td>
 							<td>The Throwable hierarchy uses a toString overload that takes a
  <span class="d_param">sink</span> delegate to avoid GC allocations, which cannot be

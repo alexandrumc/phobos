@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/stdio.d#L368">
+							<a href="https://github.com/dlang/phobos/blob/master/std/stdio.d#L369">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/stdio.d#L368">
+							<a href="https://github.com/dlang/phobos/edit/master/std/stdio.d#L369">
 								Improve this page
 							</a>
 							<div>
@@ -2940,7 +2955,7 @@ $('#symbolSearchPane').show();</script>
 				</div><h1>Struct <code><a href="../../std/stdio.html">std.stdio</a>.File</code></h1><p>Encapsulates a <code class="lang-d"><span class="pln">FILE</span><span class="pun">*</span></code>. Generally D does not attempt to provide
 thin wrappers over equivalent functions in the C standard library, but
 manipulating <code class="lang-d"><span class="pln">FILE</span><span class="pun">*</span></code> values directly is unsafe and error-prone in
-many ways. The <code class="lang-d"><span class="typ"><span class="typ">File</span></span></code> type ensures safe manipulation, automatic
+many ways. The <code class="lang-d"><span class="typ">File</span></code> type ensures safe manipulation, automatic
 file closing, and a lot of convenience.
 </p>
 				<div class="prototype">
@@ -2969,6 +2984,7 @@ automatically closed.
 								<a href="../../std/stdio/file.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(name, stdioOpenmode)</span>
 							</td>
 							<td>Constructor taking the name of the file to open and the open mode.
 </td>
@@ -3015,14 +3031,14 @@ the file handle.
 							<td>
 								<a href="../../std/stdio/file.name.html" class="public property"><code>name</code></a><span class="tableEntryAnnotation">[get]</span>
 							</td>
-							<td class="typecol"><code class="prettyprint lang-d"><span class="typ">string</span></code></td><td>Returns the name last used to initialize this <code class="lang-d"><a href="../../std/stdio/file.html"><span class="typ"><a href="../../std/stdio/file.html"><span class="typ">File</span></a></span></a></code>, if any.
+							<td class="typecol"><code class="prettyprint lang-d"><span class="typ">string</span></code></td><td>Returns the name last used to initialize this <code class="lang-d"><a href="../../std/stdio/file.html"><span class="typ">File</span></a></code>, if any.
 </td>
 						</tr>
 						<tr>
 							<td>
 								<a href="../../std/stdio/file.size.html" class="public property"><code>size</code></a><span class="tableEntryAnnotation">[get]</span>
 							</td>
-							<td class="typecol"><code class="prettyprint lang-d"><span class="typ">ulong</span></code></td><td>Get the size of the file, ulong.max if file is not searchable, but still throws if an actual error occurs.
+							<td class="typecol"><code class="prettyprint lang-d"><span class="typ">ulong</span></code></td><td>Returns the size of the file in bytes, ulong.max if file is not searchable or throws if the operation fails.
 </td>
 						</tr>
 						<tr>
@@ -3053,6 +3069,7 @@ managed file handle.
 								<a href="../../std/stdio/file.by_chunk.html" class="public">
 									<code>byChunk</code>
 								</a>
+								<span class="tableEntryAnnotation">(chunkSize)</span>
 							</td>
 							<td>Returns an <a href="../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>
 set up to read from the file handle a chunk at a time.
@@ -3063,6 +3080,7 @@ set up to read from the file handle a chunk at a time.
 								<a href="../../std/stdio/file.by_line.html" class="public">
 									<code>byLine</code>
 								</a>
+								<span class="tableEntryAnnotation">(keepTerminator, terminator)</span>
 							</td>
 							<td>Returns an <a href="../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>
 set up to read from the file handle one line at a time.
@@ -3073,6 +3091,7 @@ set up to read from the file handle one line at a time.
 								<a href="../../std/stdio/file.by_line_copy.html" class="public">
 									<code>byLineCopy</code>
 								</a>
+								<span class="tableEntryAnnotation">(keepTerminator, terminator)</span>
 							</td>
 							<td>Returns an <a href="../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>
 set up to read from the file handle one line
@@ -3085,6 +3104,7 @@ its value to allow repeated calls without unnecessary allocations.
 								<a href="../../std/stdio/file.by_record.html" class="public">
 									<code>byRecord</code>
 								</a>
+								<span class="tableEntryAnnotation">(format)</span>
 							</td>
 							<td>Creates an <a href="../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>
     set up to parse one line at a time from the file into a tuple.
@@ -3095,6 +3115,7 @@ its value to allow repeated calls without unnecessary allocations.
 								<a href="../../std/stdio/file.clearerr.html" class="public">
 									<code>clearerr</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>If the file is not opened, succeeds vacuously. Otherwise, returns
 <a href="http://cplusplus.com/reference/clibrary/cstdio/clearerr.html">clearerr</a> for the file handle.
@@ -3105,11 +3126,12 @@ its value to allow repeated calls without unnecessary allocations.
 								<a href="../../std/stdio/file.close.html" class="public">
 									<code>close</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>If the file was unopened, succeeds vacuously. Otherwise closes the
 file (by calling <a href="http://cplusplus.com/reference/clibrary/cstdio/fclose.html">fclose</a>),
-throwing on error. Even if an exception is thrown, afterwards the <code class="lang-d"><a href="../../std/stdio/file.html"><span class="typ">File</span></a></code> object is empty. This is different from <code class="lang-d"><a href="../../std/stdio/file.detach.html"><span class="pln"><a href="../../std/stdio/file.detach.html"><span class="pln">detach</span></a></span></a></code> in that it
-always closes the file; consequently, all other <code class="lang-d"><a href="../../std/stdio/file.html"><span class="typ"><a href="../../std/stdio/file.html"><span class="typ">File</span></a></span></a></code> objects
+throwing on error. Even if an exception is thrown, afterwards the <code class="lang-d"><a href="../../std/stdio/file.html"><span class="typ">File</span></a></code> object is empty. This is different from <code class="lang-d"><a href="../../std/stdio/file.detach.html"><span class="pln">detach</span></a></code> in that it
+always closes the file; consequently, all other <code class="lang-d"><a href="../../std/stdio/file.html"><span class="typ">File</span></a></code> objects
 referring to the same handle will see a closed file henceforth.
 </td>
 						</tr>
@@ -3118,8 +3140,9 @@ referring to the same handle will see a closed file henceforth.
 								<a href="../../std/stdio/file.detach.html" class="public">
 									<code>detach</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
-							<td>Detaches from the underlying file. If the sole owner, calls <code class="lang-d"><a href="../../std/stdio/file.close.html"><span class="pln"><a href="../../std/stdio/file.close.html"><span class="pln">close</span></a></span></a></code>.
+							<td>Detaches from the underlying file. If the sole owner, calls <code class="lang-d"><a href="../../std/stdio/file.close.html"><span class="pln">close</span></a></code>.
 </td>
 						</tr>
 						<tr>
@@ -3127,9 +3150,10 @@ referring to the same handle will see a closed file henceforth.
 								<a href="../../std/stdio/file.fdopen.html" class="public">
 									<code>fdopen</code>
 								</a>
+								<span class="tableEntryAnnotation">(fd, stdioOpenmode)</span>
 							</td>
-							<td>First calls <code class="lang-d"><a href="../../std/stdio/file.detach.html"><span class="pln"><a href="../../std/stdio/file.detach.html"><span class="pln">detach</span></a></span></a></code> (throwing on failure), then attempts to
-associate the given file descriptor with the <code class="lang-d"><a href="../../std/stdio/file.html"><span class="typ"><a href="../../std/stdio/file.html"><span class="typ">File</span></a></span></a></code>, and sets the file's name to <code class="lang-d"><span class="kwd">null</span></code>.
+							<td>First calls <code class="lang-d"><a href="../../std/stdio/file.detach.html"><span class="pln">detach</span></a></code> (throwing on failure), then attempts to
+associate the given file descriptor with the <code class="lang-d"><a href="../../std/stdio/file.html"><span class="typ">File</span></a></code>, and sets the file's name to <code class="lang-d"><span class="kwd">null</span></code>.
 </td>
 						</tr>
 						<tr>
@@ -3137,6 +3161,7 @@ associate the given file descriptor with the <code class="lang-d"><a href="../..
 								<a href="../../std/stdio/file.flush.html" class="public">
 									<code>flush</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Flushes the C <code class="lang-d"><span class="pln">FILE</span></code> buffers.
 </td>
@@ -3146,6 +3171,7 @@ associate the given file descriptor with the <code class="lang-d"><a href="../..
 								<a href="../../std/stdio/file.get_fp.html" class="public">
 									<code>getFP</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns the <code class="lang-d"><span class="pln">FILE</span><span class="pun">*</span></code> corresponding to this object.
 </td>
@@ -3155,10 +3181,11 @@ associate the given file descriptor with the <code class="lang-d"><a href="../..
 								<a href="../../std/stdio/file.lock.html" class="public">
 									<code>lock</code>
 								</a>
+								<span class="tableEntryAnnotation">(lockType, start, length)</span>
 							</td>
 							<td>Locks the specified file segment. If the file segment is already locked
 by another process, waits until the existing lock is released.
-If both <code class="lang-d"><a href="../../std/stdio/file.lock.html#start"><span class="pln"><a href="../../std/stdio/file.lock.html#start"><span class="pln">start</span></a></span></a></code> and <code class="lang-d"><a href="../../std/stdio/file.lock.html#length"><span class="pln"><a href="../../std/stdio/file.lock.html#length"><span class="pln">length</span></a></span></a></code> are zero, the entire file is locked.
+If both <code class="lang-d"><a href="../../std/stdio/file.lock.html#start"><span class="pln">start</span></a></code> and <code class="lang-d"><a href="../../std/stdio/file.lock.html#length"><span class="pln">length</span></a></code> are zero, the entire file is locked.
 </td>
 						</tr>
 						<tr>
@@ -3166,6 +3193,7 @@ If both <code class="lang-d"><a href="../../std/stdio/file.lock.html#start"><spa
 								<a href="../../std/stdio/file.locking_binary_writer.html" class="public">
 									<code>lockingBinaryWriter</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns an output range that locks the file and allows fast writing to it.
 </td>
@@ -3175,6 +3203,7 @@ If both <code class="lang-d"><a href="../../std/stdio/file.lock.html#start"><spa
 								<a href="../../std/stdio/file.locking_text_writer.html" class="public">
 									<code>lockingTextWriter</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Output range which locks the file when created, and unlocks the file when it goes
  out of scope.
@@ -3185,6 +3214,7 @@ If both <code class="lang-d"><a href="../../std/stdio/file.lock.html#start"><spa
 								<a href="../../std/stdio/file.op_assign.html" class="public">
 									<code>opAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td>Assigns a file to another. The target of the assignment gets detached
 from whatever file it was attached to, and attaches itself to the new
@@ -3196,9 +3226,10 @@ file.
 								<a href="../../std/stdio/file.open.html" class="public">
 									<code>open</code>
 								</a>
+								<span class="tableEntryAnnotation">(name, stdioOpenmode)</span>
 							</td>
 							<td>Detaches from the current file (throwing on failure), and then attempts to
-open file <code class="lang-d"><a href="../../std/stdio/file.open.html#name"><span class="pln"><a href="../../std/stdio/file.open.html#name"><span class="pln">name</span></a></span></a></code> with mode <code class="lang-d"><a href="../../std/stdio/file.open.html#stdioOpenmode"><span class="pln"><a href="../../std/stdio/file.open.html#stdioOpenmode"><span class="pln">stdioOpenmode</span></a></span></a></code>. The mode has the
+open file <code class="lang-d"><a href="../../std/stdio/file.open.html#name"><span class="pln">name</span></a></code> with mode <code class="lang-d"><a href="../../std/stdio/file.open.html#stdioOpenmode"><span class="pln">stdioOpenmode</span></a></code>. The mode has the
 same semantics as in the C standard library <a href="http://cplusplus.com/reference/clibrary/cstdio/fopen.html">fopen</a> function.
 </td>
 						</tr>
@@ -3207,6 +3238,7 @@ same semantics as in the C standard library <a href="http://cplusplus.com/refere
 								<a href="../../std/stdio/file.popen.html" class="public">
 									<code>popen</code>
 								</a>
+								<span class="tableEntryAnnotation">(command, stdioOpenmode)</span>
 							</td>
 							<td>Detaches from the current file (throwing on failure), and then runs a command
 by calling the C standard library function <a href="http://opengroup.org/onlinepubs/007908799/xsh/popen.html">popen</a>.
@@ -3217,6 +3249,7 @@ by calling the C standard library function <a href="http://opengroup.org/onlinep
 								<a href="../../std/stdio/file.raw_read.html" class="public">
 									<code>rawRead</code>
 								</a>
+								<span class="tableEntryAnnotation">(buffer)</span>
 							</td>
 							<td>Calls <a href="http://cplusplus.com/reference/clibrary/cstdio/fread.html">fread</a> for the
 file handle. The number of items to read and the size of
@@ -3228,6 +3261,7 @@ each item is inferred from the size and type of the input array, respectively.
 								<a href="../../std/stdio/file.raw_write.html" class="public">
 									<code>rawWrite</code>
 								</a>
+								<span class="tableEntryAnnotation">(buffer)</span>
 							</td>
 							<td>Calls <a href="http://cplusplus.com/reference/clibrary/cstdio/fwrite.html">fwrite</a> for the file
 handle. The number of items to write and the size of each
@@ -3240,6 +3274,7 @@ error is thrown if the buffer could not be written in its entirety.
 								<a href="../../std/stdio/file.readf.html" class="public">
 									<code>readf</code>
 								</a>
+								<span class="tableEntryAnnotation">(data)</span>
 							</td>
 							<td>Reads formatted data from the file using <code class="lang-d"><a href="../../std/format/formatted_read.html" title="std.format.formattedRead"><span class="pln">formattedRead</span></a></code>.
 </td>
@@ -3249,6 +3284,7 @@ error is thrown if the buffer could not be written in its entirety.
 								<a href="../../std/stdio/file.readln.html" class="public">
 									<code>readln</code>
 								</a>
+								<span class="tableEntryAnnotation">(terminator)</span>
 							</td>
 							<td>Read line from the file handle and return it as a specified type.
 </td>
@@ -3258,8 +3294,9 @@ error is thrown if the buffer could not be written in its entirety.
 								<a href="../../std/stdio/file.readln.html" class="public">
 									<code>readln</code>
 								</a>
+								<span class="tableEntryAnnotation">(buf, terminator)</span>
 							</td>
-							<td>Read line from the file handle and write it to <code class="lang-d"><a href="../../std/stdio/file.readln.html#buf"><span class="pln"><a href="../../std/stdio/file.readln.html#buf"><span class="pln">buf</span></a></span></a><span class="pun">[]</span></code>, including
+							<td>Read line from the file handle and write it to <code class="lang-d"><a href="../../std/stdio/file.readln.html#buf"><span class="pln">buf</span></a><span class="pun">[]</span></code>, including
 terminating character.
 </td>
 						</tr>
@@ -3268,9 +3305,10 @@ terminating character.
 								<a href="../../std/stdio/file.reopen.html" class="public">
 									<code>reopen</code>
 								</a>
+								<span class="tableEntryAnnotation">(name, stdioOpenmode)</span>
 							</td>
-							<td>Reuses the <code class="lang-d"><a href="../../std/stdio/file.html"><span class="typ"><a href="../../std/stdio/file.html"><span class="typ">File</span></a></span></a></code> object to either open a different file, or change
-the file mode. If <code class="lang-d"><a href="../../std/stdio/file.reopen.html#name"><span class="pln"><a href="../../std/stdio/file.reopen.html#name"><span class="pln">name</span></a></span></a></code> is <code class="lang-d"><span class="kwd">null</span></code>, the mode of the currently open
+							<td>Reuses the <code class="lang-d"><a href="../../std/stdio/file.html"><span class="typ">File</span></a></code> object to either open a different file, or change
+the file mode. If <code class="lang-d"><a href="../../std/stdio/file.reopen.html#name"><span class="pln">name</span></a></code> is <code class="lang-d"><span class="kwd">null</span></code>, the mode of the currently open
 file is changed; otherwise, a new file is opened, reusing the C
 <code class="lang-d"><span class="pln">FILE</span><span class="pun">*</span></code>. The function has the same semantics as in the C standard
 library <a href="http://cplusplus.com/reference/cstdio/freopen/">freopen</a>
@@ -3282,6 +3320,7 @@ function.
 								<a href="../../std/stdio/file.rewind.html" class="public">
 									<code>rewind</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Calls <a href="http://cplusplus.com/reference/clibrary/cstdio/rewind.html">rewind</a>
 for the file handle.
@@ -3292,6 +3331,7 @@ for the file handle.
 								<a href="../../std/stdio/file.seek.html" class="public">
 									<code>seek</code>
 								</a>
+								<span class="tableEntryAnnotation">(offset, origin)</span>
 							</td>
 							<td>Calls <a href="http://cplusplus.com/reference/clibrary/cstdio/fseek.html">fseek</a>
 for the file handle to move its position indicator.
@@ -3302,6 +3342,7 @@ for the file handle to move its position indicator.
 								<a href="../../std/stdio/file.setvbuf.html" class="public">
 									<code>setvbuf</code>
 								</a>
+								<span class="tableEntryAnnotation">(size, mode)</span>
 							</td>
 							<td>Calls <a href="http://cplusplus.com/reference/clibrary/cstdio/setvbuf.html">setvbuf</a> for
 the file handle.
@@ -3312,6 +3353,7 @@ the file handle.
 								<a href="../../std/stdio/file.setvbuf.html" class="public">
 									<code>setvbuf</code>
 								</a>
+								<span class="tableEntryAnnotation">(buf, mode)</span>
 							</td>
 							<td>Calls <a href="http://cplusplus.com/reference/clibrary/cstdio/setvbuf.html">setvbuf</a> for the file handle.
 </td>
@@ -3321,6 +3363,7 @@ the file handle.
 								<a href="../../std/stdio/file.sync.html" class="public">
 									<code>sync</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Forces any data buffered by the OS to be written to disk.
 Call <code class="lang-d"><a href="../../std/stdio/file.flush.html"><span class="pln">flush</span></a></code> before calling this function to flush the C <code class="lang-d"><span class="pln">FILE</span></code> buffers first.
@@ -3331,6 +3374,7 @@ Call <code class="lang-d"><a href="../../std/stdio/file.flush.html"><span class=
 								<a href="../../std/stdio/file.tmpfile.html" class="public">
 									<code>tmpfile</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns a temporary file by calling
  <a href="http://cplusplus.com/reference/clibrary/cstdio/tmpfile.html">tmpfile</a>.
@@ -3342,9 +3386,10 @@ Call <code class="lang-d"><a href="../../std/stdio/file.flush.html"><span class=
 								<a href="../../std/stdio/file.try_lock.html" class="public">
 									<code>tryLock</code>
 								</a>
+								<span class="tableEntryAnnotation">(lockType, start, length)</span>
 							</td>
 							<td>Attempts to lock the specified file segment.
-If both <code class="lang-d"><a href="../../std/stdio/file.try_lock.html#start"><span class="pln"><a href="../../std/stdio/file.try_lock.html#start"><span class="pln">start</span></a></span></a></code> and <code class="lang-d"><a href="../../std/stdio/file.try_lock.html#length"><span class="pln"><a href="../../std/stdio/file.try_lock.html#length"><span class="pln">length</span></a></span></a></code> are zero, the entire file is locked.
+If both <code class="lang-d"><a href="../../std/stdio/file.try_lock.html#start"><span class="pln">start</span></a></code> and <code class="lang-d"><a href="../../std/stdio/file.try_lock.html#length"><span class="pln">length</span></a></code> are zero, the entire file is locked.
 </td>
 						</tr>
 						<tr>
@@ -3352,6 +3397,7 @@ If both <code class="lang-d"><a href="../../std/stdio/file.try_lock.html#start">
 								<a href="../../std/stdio/file.unlock.html" class="public">
 									<code>unlock</code>
 								</a>
+								<span class="tableEntryAnnotation">(start, length)</span>
 							</td>
 							<td>Removes the lock over the specified file segment.
 </td>
@@ -3361,6 +3407,7 @@ If both <code class="lang-d"><a href="../../std/stdio/file.try_lock.html#start">
 								<a href="../../std/stdio/file.windows_handle_open.html" class="public">
 									<code>windowsHandleOpen</code>
 								</a>
+								<span class="tableEntryAnnotation">(handle, stdioOpenmode)</span>
 							</td>
 							<td>First calls <code class="lang-d"><a href="../../std/stdio/file.detach.html"><span class="pln">detach</span></a></code> (throwing on failure), and then attempts to
 associate the given Windows <code class="lang-d"><span class="pln">HANDLE</span></code> with the <code class="lang-d"><a href="../../std/stdio/file.html"><span class="typ">File</span></a></code>. The mode must
@@ -3372,6 +3419,7 @@ be compatible with the access attributes of the handle. Windows only.
 								<a href="../../std/stdio/file.wrap_file.html" class="public">
 									<code>wrapFile</code>
 								</a>
+								<span class="tableEntryAnnotation">(f)</span>
 							</td>
 							<td>Unsafe function that wraps an existing <code class="lang-d"><span class="pln">FILE</span><span class="pun">*</span></code>. The resulting <code class="lang-d"><a href="../../std/stdio/file.html"><span class="typ">File</span></a></code> never takes the initiative in closing the file.
 Note that the created file has no <code class="lang-d"><a href="../../std/stdio/file.name.html"><span class="pln">name</span></a></code>
@@ -3382,6 +3430,7 @@ Note that the created file has no <code class="lang-d"><a href="../../std/stdio/
 								<a href="../../std/stdio/file.write.html" class="public">
 									<code>write</code>
 								</a>
+								<span class="tableEntryAnnotation">(args)</span>
 							</td>
 							<td>Writes its arguments in text format to the file.
 </td>
@@ -3391,6 +3440,7 @@ Note that the created file has no <code class="lang-d"><a href="../../std/stdio/
 								<a href="../../std/stdio/file.writef.html" class="public">
 									<code>writef</code>
 								</a>
+								<span class="tableEntryAnnotation">(args)</span>
 							</td>
 							<td>Writes its arguments in text format to the file, according to the
 format string fmt.
@@ -3401,8 +3451,9 @@ format string fmt.
 								<a href="../../std/stdio/file.writefln.html" class="public">
 									<code>writefln</code>
 								</a>
+								<span class="tableEntryAnnotation">(args)</span>
 							</td>
-							<td>Equivalent to <code class="lang-d"><span class="pln">file<wbr/></span><span class="pun">.</span><span class="pln"><a href="../../std/stdio/file.writef.html"><span class="pln">writef</span></a></span><span class="pun">(<a href="../../std/stdio/file.writefln.html#fmt"></span><span class="pln"><a href="../../std/stdio/file.writefln.html#fmt"><span class="pln">fmt</span></a></span></a><span class="pun">, <a href="../../std/stdio/file.writefln.html#args"></span><span class="pln"><a href="../../std/stdio/file.writefln.html#args"><span class="pln">args</span></a></span></a><span class="pun">, </span><span class="str">'\n'</span><span class="pun">)</span></code>.
+							<td>Equivalent to <code class="lang-d"><span class="pln">file<wbr/></span><span class="pun">.</span><span class="pln">writef</span><span class="pun">(<a href="../../std/stdio/file.writefln.html#fmt"></span><span class="pln">fmt</span></a><span class="pun">, <a href="../../std/stdio/file.writefln.html#args"></span><span class="pln">args</span></a><span class="pun">, </span><span class="str">'\n'</span><span class="pun">)</span></code>.
 </td>
 						</tr>
 						<tr>
@@ -3410,6 +3461,7 @@ format string fmt.
 								<a href="../../std/stdio/file.writeln.html" class="public">
 									<code>writeln</code>
 								</a>
+								<span class="tableEntryAnnotation">(args)</span>
 							</td>
 							<td>Writes its arguments in text format to the file, followed by a newline.
 </td>
@@ -3418,6 +3470,8 @@ format string fmt.
 				</section>
 				<section><h2>Example</h2>
 <pre class="code"><code class="lang-d"><span class="com">// test.d
+</span><span class="kwd">import <a href="../../std/stdio.html"></span><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">stdio</span></a><span class="pun">;
+
 </span><span class="typ">void </span><span class="pln">main</span><span class="pun">(</span><span class="typ">string</span><span class="pun">[] </span><span class="pln">args</span><span class="pun">)
 {
     </span><span class="kwd">auto </span><span class="pln">f </span><span class="pun">= </span><span class="typ">File</span><span class="pun">(</span><span class="str">"test.txt"</span><span class="pun">, </span><span class="str">"w"</span><span class="pun">); </span><span class="com">// open for writing

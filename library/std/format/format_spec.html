@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2963,8 +2978,9 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/format/format_spec.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(fmt)</span>
 							</td>
-							<td>Construct a new <code class="lang-d"><a href="../../std/format/format_spec.html"><span class="typ"><a href="../../std/format/format_spec.html"><span class="typ">FormatSpec</span></a></span></a></code> using the format string <code class="lang-d"><a href="../../std/format/format_spec.this.html#fmt"><span class="pln"><a href="../../std/format/format_spec.this.html#fmt"><span class="pln">fmt</span></a></span></a></code>, no
+							<td>Construct a new <code class="lang-d"><a href="../../std/format/format_spec.html"><span class="typ">FormatSpec</span></a></code> using the format string <code class="lang-d"><a href="../../std/format/format_spec.this.html#fmt"><span class="pln">fmt</span></a></code>, no
        processing is done until needed.
 </td>
 						</tr>
@@ -3043,7 +3059,7 @@ $('#symbolSearchPane').show();</script>
 							<td>
 								<a href="../../std/format/format_spec.nested.html" class="public"><code>nested</code></a>
 							</td>
-							<td class="typecol"><code class="prettyprint lang-d"><span class="kwd">const</span><span class="pun">(</span><span class="typ">Char</span><span class="pun">)</span><span class="pun">[]</span></code></td><td>In case of a compound format specifier starting with <code class="lang-d"><span class="pln">       </span><span class="str">"%("</span></code> and ending with <code class="lang-d"><span class="str">"%)"</span></code>, <code class="lang-d"><span class="pln">nested</span></code>
+							<td class="typecol"><code class="prettyprint lang-d"><span class="kwd">const</span><span class="pun">(</span><span class="typ">Char</span><span class="pun">)</span><span class="pun">[]</span></code></td><td>In case of a compound format specifier starting with <code class="lang-d"><span class="pln">       </span><span class="str">"%("</span></code> and ending with <code class="lang-d"><span class="str">"%)"</span></code>, <code class="lang-d"><span class="pln">_nested</span></code>
        contains the string contained within the two separators.
 </td>
 						</tr>
@@ -3077,7 +3093,7 @@ $('#symbolSearchPane').show();</script>
 							<td>
 								<a href="../../std/format/format_spec.separator_char_pos.html" class="public"><code>separatorCharPos</code></a>
 							</td>
-							<td class="typecol"><code class="prettyprint lang-d"><span class="typ">int</span></code></td><td>Set to <code class="lang-d"><a href="../../std/format/format_spec.dynamic.html"><span class="pln"><a href="../../std/format/format_spec.dynamic.html"><span class="pln">DYNAMIC</span></a></span></a></code> when the separator character is supplied at runtime.
+							<td class="typecol"><code class="prettyprint lang-d"><span class="typ">int</span></code></td><td>Set to <code class="lang-d"><a href="../../std/format/format_spec.dynamic.html"><span class="pln">DYNAMIC</span></a></code> when the separator character is supplied at runtime.
 </td>
 						</tr>
 						<tr>
@@ -3121,6 +3137,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/format/format_spec.to_string.html" class="public">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">(writer)</span>
 							</td>
 							<td>Gives a string containing all of the member variables on their own
  line.
@@ -3131,6 +3148,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/format/format_spec.write_up_to_next_spec.html" class="public">
 									<code>writeUpToNextSpec</code>
 								</a>
+								<span class="tableEntryAnnotation">(writer)</span>
 							</td>
 							<td>Write the format string to an output range until the next format
        specifier is found and parse that format specifier.

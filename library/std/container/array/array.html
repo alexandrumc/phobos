@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2954,7 +2969,7 @@ $('#symbolSearchPane').show();</script>
 					</ul>
 				</nav><h2 id="0">Struct Array</h2><p>Array type with deterministic control of memory. The memory allocated
  for the array is reclaimed as soon as possible; there is no reliance
- on the garbage collector. <code class="lang-d"><span class="typ"><span class="typ">Array</span></span></code> uses <code class="lang-d"><span class="pln">malloc</span></code>, <code class="lang-d"><span class="pln">realloc</span></code> and <code class="lang-d"><span class="pln">free</span></code>
+ on the garbage collector. <code class="lang-d"><span class="typ">Array</span></code> uses <code class="lang-d"><span class="pln">malloc</span></code>, <code class="lang-d"><span class="pln">realloc</span></code> and <code class="lang-d"><span class="pln">free</span></code>
  for managing its own memory.
 </p>
 				<div class="prototype">
@@ -2986,6 +3001,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Constructor taking a number of items.
 </td>
@@ -2995,6 +3011,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(r)</span>
 							</td>
 							<td>Constructor taking an <a href="../../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>
 </td>
@@ -3067,6 +3084,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.clear.html" class="public">
 									<code>clear</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Removes all the elements from the array and releases allocated memory.
 </td>
@@ -3076,9 +3094,10 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.insert_after.html" class="public">
 									<code>insertAfter</code>
 								</a>
+								<span class="tableEntryAnnotation">(r, stuff)</span>
 							</td>
-							<td>Inserts <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></code> before, after, or instead range <code class="lang-d"><a href="../../../std/container/array/array.replace.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#r"><span class="pln">r</span></a></span></a></span></a></code>, which must
- be a valid range previously extracted from this array. <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></code>
+							<td>Inserts <code class="lang-d"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln">stuff</span></a></code> before, after, or instead range <code class="lang-d"><a href="../../../std/container/array/array.insert_after.html#r"><span class="pln">r</span></a></code>, which must
+ be a valid range previously extracted from this array. <code class="lang-d"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln">stuff</span></a></code>
  can be a value convertible to <code class="lang-d"><span class="pln">T</span></code> or a range of objects convertible
  to <code class="lang-d"><span class="pln">T</span></code>. Both stable and non-stable version behave the same and
  guarantee that ranges iterating over the array are never invalidated.
@@ -3089,8 +3108,9 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.insert_back.html" class="public">
 									<code>insertBack</code>
 								</a>
+								<span class="tableEntryAnnotation">(stuff)</span>
 							</td>
-							<td>Inserts the specified elements at the back of the array. <code class="lang-d"><a href="../../../std/container/array/array.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_back.html#stuff"><span class="pln">stuff</span></a></span></a></code> can be
+							<td>Inserts the specified elements at the back of the array. <code class="lang-d"><a href="../../../std/container/array/array.insert_back.html#stuff"><span class="pln">stuff</span></a></code> can be
  a value convertible to <code class="lang-d"><span class="pln">T</span></code> or a range of objects convertible to <code class="lang-d"><span class="pln">T</span></code>.
 </td>
 						</tr>
@@ -3099,9 +3119,10 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.insert_before.html" class="public">
 									<code>insertBefore</code>
 								</a>
+								<span class="tableEntryAnnotation">(r, stuff)</span>
 							</td>
-							<td>Inserts <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></code> before, after, or instead range <code class="lang-d"><a href="../../../std/container/array/array.replace.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#r"><span class="pln">r</span></a></span></a></span></a></span></a></code>, which must
- be a valid range previously extracted from this array. <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></code>
+							<td>Inserts <code class="lang-d"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln">stuff</span></a></code> before, after, or instead range <code class="lang-d"><a href="../../../std/container/array/array.insert_before.html#r"><span class="pln">r</span></a></code>, which must
+ be a valid range previously extracted from this array. <code class="lang-d"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln">stuff</span></a></code>
  can be a value convertible to <code class="lang-d"><span class="pln">T</span></code> or a range of objects convertible
  to <code class="lang-d"><span class="pln">T</span></code>. Both stable and non-stable version behave the same and
  guarantee that ranges iterating over the array are never invalidated.
@@ -3112,6 +3133,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.linear_remove.html" class="public">
 									<code>linearRemove</code>
 								</a>
+								<span class="tableEntryAnnotation">(r)</span>
 							</td>
 							<td>Removes all elements belonging to <code class="lang-d"><a href="../../../std/container/array/array.linear_remove.html#r"><span class="pln">r</span></a></code>, which must be a range
  obtained originally from this array.
@@ -3122,6 +3144,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.op_binary.html" class="public">
 									<code>opBinary</code>
 								</a>
+								<span class="tableEntryAnnotation">(stuff)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3130,6 +3153,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.op_dollar.html" class="public">
 									<code>opDollar</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3138,6 +3162,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.op_equals.html" class="public">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td>Comparison for equality.
 </td>
@@ -3147,6 +3172,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.op_index.html" class="public">
 									<code>opIndex</code>
 								</a>
+								<span class="tableEntryAnnotation">(i)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3155,6 +3181,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.op_op_assign.html" class="public">
 									<code>opOpAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(stuff)</span>
 							</td>
 							<td>Forwards to <code class="lang-d"><a href="../../../std/container/array/array.insert_back.html"><span class="pln">insertBack</span></a></code>.
 </td>
@@ -3164,6 +3191,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.op_slice.html" class="public">
 									<code>opSlice</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3172,6 +3200,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.op_slice.html" class="public">
 									<code>opSlice</code>
 								</a>
+								<span class="tableEntryAnnotation">(i, j)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3180,6 +3209,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.op_slice_assign.html" class="public">
 									<code>opSliceAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
 							<td>Slicing operators executing the specified operation on the entire slice.
 </td>
@@ -3189,6 +3219,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.op_slice_op_assign.html" class="public">
 									<code>opSliceOpAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
 							<td>Slicing operators executing the specified operation on the entire slice.
 </td>
@@ -3198,6 +3229,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.op_slice_unary.html" class="public">
 									<code>opSliceUnary</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Slicing operators executing the specified operation on the entire slice.
 </td>
@@ -3207,6 +3239,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.remove_any.html" class="public">
 									<code>removeAny</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Removes the last element from the array and returns it.
  Both stable and non-stable versions behave the same and guarantee
@@ -3218,6 +3251,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.remove_back.html" class="public">
 									<code>removeBack</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Removes the value from the back of the array. Both stable and non-stable
  versions behave the same and guarantee that ranges iterating over the
@@ -3229,11 +3263,12 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.remove_back.html" class="public">
 									<code>removeBack</code>
 								</a>
+								<span class="tableEntryAnnotation">(howMany)</span>
 							</td>
-							<td>Removes <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a></span></a></code> values from the back of the array.
+							<td>Removes <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a></code> values from the back of the array.
  Unlike the unparameterized versions above, these functions
- do not throw if they could not remove <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a></span></a></code> elements. Instead,
- if <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a></span></a><span class="pln"> </span><span class="pun">&gt; </span><span class="pln">n</span></code>, all elements are removed. The returned value is
+ do not throw if they could not remove <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a></code> elements. Instead,
+ if <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a><span class="pln"> </span><span class="pun">&gt; </span><span class="pln">n</span></code>, all elements are removed. The returned value is
  the effective number of elements removed. Both stable and non-stable
  versions behave the same and guarantee that ranges iterating over
  the array are never invalidated.
@@ -3244,9 +3279,10 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.replace.html" class="public">
 									<code>replace</code>
 								</a>
+								<span class="tableEntryAnnotation">(r, stuff)</span>
 							</td>
-							<td>Inserts <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></span></a></code> before, after, or instead range <code class="lang-d"><a href="../../../std/container/array/array.replace.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#r"><span class="pln"><a href="../../../std/container/array/array.replace.html#r"><span class="pln">r</span></a></span></a></span></a></span></a></span></a></code>, which must
- be a valid range previously extracted from this array. <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></span></a></code>
+							<td>Inserts <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln">stuff</span></a></code> before, after, or instead range <code class="lang-d"><a href="../../../std/container/array/array.replace.html#r"><span class="pln">r</span></a></code>, which must
+ be a valid range previously extracted from this array. <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln">stuff</span></a></code>
  can be a value convertible to <code class="lang-d"><span class="pln">T</span></code> or a range of objects convertible
  to <code class="lang-d"><span class="pln">T</span></code>. Both stable and non-stable version behave the same and
  guarantee that ranges iterating over the array are never invalidated.
@@ -3257,9 +3293,10 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.reserve.html" class="public">
 									<code>reserve</code>
 								</a>
+								<span class="tableEntryAnnotation">(elements)</span>
 							</td>
 							<td>Ensures sufficient capacity to accommodate <code class="lang-d"><span class="pln">e</span></code> elements.
- If <code class="lang-d"><span class="pln">e </span><span class="pun">&lt; <a href="../../../std/container/array/array.capacity.html"></span><span class="pln"><a href="../../../std/container/array/array.capacity.html"><span class="pln">capacity</span></a></span></a></code>, this method does nothing.
+ If <code class="lang-d"><span class="pln">e </span><span class="pun">&lt; <a href="../../../std/container/array/array.capacity.html"></span><span class="pln">capacity</span></a></code>, this method does nothing.
 </td>
 						</tr>
 					</table>
@@ -3294,7 +3331,7 @@ $('#symbolSearchPane').show();</script>
 									<code>insert</code>
 								</a>
 							</td>
-							<td>Inserts the specified elements at the back of the array. <code class="lang-d"><a href="../../../std/container/array/array.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_back.html#stuff"><span class="pln">stuff</span></a></span></a></code> can be
+							<td>Inserts the specified elements at the back of the array. <code class="lang-d"><span class="pln">stuff</span></code> can be
  a value convertible to <code class="lang-d"><span class="pln">T</span></code> or a range of objects convertible to <code class="lang-d"><span class="pln">T</span></code>.
 </td>
 						</tr>
@@ -3313,8 +3350,8 @@ $('#symbolSearchPane').show();</script>
 									<code>stableInsertBefore</code>
 								</a>
 							</td>
-							<td>Inserts <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></span></a></code> before, after, or instead range <code class="lang-d"><a href="../../../std/container/array/array.replace.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#r"><span class="pln"><a href="../../../std/container/array/array.replace.html#r"><span class="pln">r</span></a></span></a></span></a></span></a></span></a></code>, which must
- be a valid range previously extracted from this array. <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></span></a></code>
+							<td>Inserts <code class="lang-d"><span class="pln">stuff</span></code> before, after, or instead range <code class="lang-d"><span class="pln">r</span></code>, which must
+ be a valid range previously extracted from this array. <code class="lang-d"><span class="pln">stuff</span></code>
  can be a value convertible to <code class="lang-d"><span class="pln">T</span></code> or a range of objects convertible
  to <code class="lang-d"><span class="pln">T</span></code>. Both stable and non-stable version behave the same and
  guarantee that ranges iterating over the array are never invalidated.
@@ -3348,10 +3385,10 @@ $('#symbolSearchPane').show();</script>
 									<code>stableRemoveBack</code>
 								</a>
 							</td>
-							<td>Removes <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a></span></a></code> values from the back of the array.
+							<td>Removes <code class="lang-d"><span class="pln">howMany</span></code> values from the back of the array.
  Unlike the unparameterized versions above, these functions
- do not throw if they could not remove <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a></span></a></code> elements. Instead,
- if <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a></span></a><span class="pln"> </span><span class="pun">&gt; </span><span class="pln">n</span></code>, all elements are removed. The returned value is
+ do not throw if they could not remove <code class="lang-d"><span class="pln">howMany</span></code> elements. Instead,
+ if <code class="lang-d"><span class="pln">howMany </span><span class="pun">&gt; </span><span class="pln">n</span></code>, all elements are removed. The returned value is
  the effective number of elements removed. Both stable and non-stable
  versions behave the same and guarantee that ranges iterating over
  the array are never invalidated.
@@ -3469,6 +3506,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.clear.html" class="public">
 									<code>clear</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Removes all the elements from the array and releases allocated memory.
 </td>
@@ -3478,9 +3516,10 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.insert_after.html" class="public">
 									<code>insertAfter</code>
 								</a>
+								<span class="tableEntryAnnotation">(r, stuff)</span>
 							</td>
-							<td>Inserts <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></code> before, after, or instead range <code class="lang-d"><a href="../../../std/container/array/array.replace.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#r"><span class="pln">r</span></a></span></a></span></a></code>, which must
- be a valid range previously extracted from this array. <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></code>
+							<td>Inserts <code class="lang-d"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln">stuff</span></a></code> before, after, or instead range <code class="lang-d"><a href="../../../std/container/array/array.insert_after.html#r"><span class="pln">r</span></a></code>, which must
+ be a valid range previously extracted from this array. <code class="lang-d"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln">stuff</span></a></code>
  can be a value convertible to <code class="lang-d"><span class="typ">bool</span></code> or a range of objects convertible
  to <code class="lang-d"><span class="typ">bool</span></code>. Both stable and non-stable version behave the same and
  guarantee that ranges iterating over the array are never invalidated.
@@ -3491,8 +3530,9 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.insert_back.html" class="public">
 									<code>insertBack</code>
 								</a>
+								<span class="tableEntryAnnotation">(stuff)</span>
 							</td>
-							<td>Inserts the specified elements at the back of the array. <code class="lang-d"><span class="pln"><a href="../../../std/container/array/array.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_back.html#stuff"><span class="pln">stuff</span></a></span></a></span></code> can be
+							<td>Inserts the specified elements at the back of the array. <code class="lang-d"><a href="../../../std/container/array/array.insert_back.html#stuff"><span class="pln">stuff</span></a></code> can be
  a value convertible to <code class="lang-d"><span class="typ">bool</span></code> or a range of objects convertible to <code class="lang-d"><span class="typ">bool</span></code>.
 </td>
 						</tr>
@@ -3501,9 +3541,10 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.insert_before.html" class="public">
 									<code>insertBefore</code>
 								</a>
+								<span class="tableEntryAnnotation">(r, stuff)</span>
 							</td>
-							<td>Inserts <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></code> before, after, or instead range <code class="lang-d"><a href="../../../std/container/array/array.replace.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#r"><span class="pln">r</span></a></span></a></span></a></span></a></code>, which must
- be a valid range previously extracted from this array. <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></code>
+							<td>Inserts <code class="lang-d"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln">stuff</span></a></code> before, after, or instead range <code class="lang-d"><a href="../../../std/container/array/array.insert_before.html#r"><span class="pln">r</span></a></code>, which must
+ be a valid range previously extracted from this array. <code class="lang-d"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln">stuff</span></a></code>
  can be a value convertible to <code class="lang-d"><span class="typ">bool</span></code> or a range of objects convertible
  to <code class="lang-d"><span class="typ">bool</span></code>. Both stable and non-stable version behave the same and
  guarantee that ranges iterating over the array are never invalidated.
@@ -3514,6 +3555,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.linear_remove.html" class="public">
 									<code>linearRemove</code>
 								</a>
+								<span class="tableEntryAnnotation">(r)</span>
 							</td>
 							<td>Removes all elements belonging to <code class="lang-d"><a href="../../../std/container/array/array.linear_remove.html#r"><span class="pln">r</span></a></code>, which must be a range
  obtained originally from this array.
@@ -3524,6 +3566,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.move_at.html" class="public">
 									<code>moveAt</code>
 								</a>
+								<span class="tableEntryAnnotation">(i)</span>
 							</td>
 							<td>Indexing operators yielding or modifyng the value at the specified index.
 </td>
@@ -3533,6 +3576,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.op_binary.html" class="public">
 									<code>opBinary</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3541,6 +3585,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.op_index.html" class="public">
 									<code>opIndex</code>
 								</a>
+								<span class="tableEntryAnnotation">(i)</span>
 							</td>
 							<td>Indexing operators yielding or modifyng the value at the specified index.
 </td>
@@ -3550,6 +3595,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.op_index_assign.html" class="public">
 									<code>opIndexAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(value, i)</span>
 							</td>
 							<td>Indexing operators yielding or modifyng the value at the specified index.
 </td>
@@ -3559,6 +3605,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.op_index_op_assign.html" class="public">
 									<code>opIndexOpAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(value, i)</span>
 							</td>
 							<td>Indexing operators yielding or modifyng the value at the specified index.
 </td>
@@ -3568,6 +3615,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.op_op_assign.html" class="public">
 									<code>opOpAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(stuff)</span>
 							</td>
 							<td>Forwards to <code class="lang-d"><a href="../../../std/container/array/array.insert_back.html"><span class="pln">insertBack</span></a></code>.
 </td>
@@ -3577,6 +3625,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.op_slice.html" class="public">
 									<code>opSlice</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3585,6 +3634,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.op_slice.html" class="public">
 									<code>opSlice</code>
 								</a>
+								<span class="tableEntryAnnotation">(a, b)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3593,6 +3643,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.remove_any.html" class="public">
 									<code>removeAny</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Removes the last element from the array and returns it.
  Both stable and non-stable versions behave the same and guarantee
@@ -3604,6 +3655,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.remove_back.html" class="public">
 									<code>removeBack</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Removes the value from the back of the array. Both stable and non-stable
  versions behave the same and guarantee that ranges iterating over the
@@ -3615,10 +3667,11 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.remove_back.html" class="public">
 									<code>removeBack</code>
 								</a>
+								<span class="tableEntryAnnotation">(howMany)</span>
 							</td>
-							<td>Removes <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a></span></a></code> values from the back of the array. Unlike the
+							<td>Removes <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a></code> values from the back of the array. Unlike the
  unparameterized versions above, these functions do not throw if
- they could not remove <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a></span></a></code> elements. Instead, if <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a></span></a><span class="pln"> </span><span class="pun">&gt; </span><span class="pln">n</span></code>,
+ they could not remove <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a></code> elements. Instead, if <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a><span class="pln"> </span><span class="pun">&gt; </span><span class="pln">n</span></code>,
  all elements are removed. The returned value is the effective number
  of elements removed. Both stable and non-stable versions behave the same
  and guarantee that ranges iterating over the array are never invalidated.
@@ -3629,9 +3682,10 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.replace.html" class="public">
 									<code>replace</code>
 								</a>
+								<span class="tableEntryAnnotation">(r, stuff)</span>
 							</td>
-							<td>Inserts <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></span></a></code> before, after, or instead range <code class="lang-d"><a href="../../../std/container/array/array.replace.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#r"><span class="pln"><a href="../../../std/container/array/array.replace.html#r"><span class="pln">r</span></a></span></a></span></a></span></a></span></a></code>, which must
- be a valid range previously extracted from this array. <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></span></a></code>
+							<td>Inserts <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln">stuff</span></a></code> before, after, or instead range <code class="lang-d"><a href="../../../std/container/array/array.replace.html#r"><span class="pln">r</span></a></code>, which must
+ be a valid range previously extracted from this array. <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln">stuff</span></a></code>
  can be a value convertible to <code class="lang-d"><span class="typ">bool</span></code> or a range of objects convertible
  to <code class="lang-d"><span class="typ">bool</span></code>. Both stable and non-stable version behave the same and
  guarantee that ranges iterating over the array are never invalidated.
@@ -3642,9 +3696,10 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/array/array.reserve.html" class="public">
 									<code>reserve</code>
 								</a>
+								<span class="tableEntryAnnotation">(e)</span>
 							</td>
-							<td>Ensures sufficient capacity to accommodate <code class="lang-d"><a href="../../../std/container/array/array.reserve.html#e"><span class="pln"><a href="../../../std/container/array/array.reserve.html#e"><span class="pln">e</span></a></span></a></code> elements.
- If <code class="lang-d"><a href="../../../std/container/array/array.reserve.html#e"><span class="pln"><a href="../../../std/container/array/array.reserve.html#e"><span class="pln">e</span></a></span></a><span class="pln"> </span><span class="pun">&lt; <a href="../../../std/container/array/array.capacity.html"></span><span class="pln"><a href="../../../std/container/array/array.capacity.html"><span class="pln">capacity</span></a></span></a></code>, this method does nothing.
+							<td>Ensures sufficient capacity to accommodate <code class="lang-d"><a href="../../../std/container/array/array.reserve.html#e"><span class="pln">e</span></a></code> elements.
+ If <code class="lang-d"><a href="../../../std/container/array/array.reserve.html#e"><span class="pln">e</span></a><span class="pln"> </span><span class="pun">&lt; <a href="../../../std/container/array/array.capacity.html"></span><span class="pln">capacity</span></a></code>, this method does nothing.
 </td>
 						</tr>
 					</table>
@@ -3678,7 +3733,7 @@ $('#symbolSearchPane').show();</script>
 									<code>insert</code>
 								</a>
 							</td>
-							<td>Inserts the specified elements at the back of the array. <code class="lang-d"><span class="pln"><a href="../../../std/container/array/array.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_back.html#stuff"><span class="pln">stuff</span></a></span></a></span></code> can be
+							<td>Inserts the specified elements at the back of the array. <code class="lang-d"><span class="pln">stuff</span></code> can be
  a value convertible to <code class="lang-d"><span class="typ">bool</span></code> or a range of objects convertible to <code class="lang-d"><span class="typ">bool</span></code>.
 </td>
 						</tr>
@@ -3688,7 +3743,7 @@ $('#symbolSearchPane').show();</script>
 									<code>linearInsert</code>
 								</a>
 							</td>
-							<td>Inserts the specified elements at the back of the array. <code class="lang-d"><span class="pln"><a href="../../../std/container/array/array.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_back.html#stuff"><span class="pln">stuff</span></a></span></a></span></code> can be
+							<td>Inserts the specified elements at the back of the array. <code class="lang-d"><span class="pln">stuff</span></code> can be
  a value convertible to <code class="lang-d"><span class="typ">bool</span></code> or a range of objects convertible to <code class="lang-d"><span class="typ">bool</span></code>.
 </td>
 						</tr>
@@ -3698,7 +3753,7 @@ $('#symbolSearchPane').show();</script>
 									<code>stableInsert</code>
 								</a>
 							</td>
-							<td>Inserts the specified elements at the back of the array. <code class="lang-d"><span class="pln"><a href="../../../std/container/array/array.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_back.html#stuff"><span class="pln">stuff</span></a></span></a></span></code> can be
+							<td>Inserts the specified elements at the back of the array. <code class="lang-d"><span class="pln">stuff</span></code> can be
  a value convertible to <code class="lang-d"><span class="typ">bool</span></code> or a range of objects convertible to <code class="lang-d"><span class="typ">bool</span></code>.
 </td>
 						</tr>
@@ -3708,8 +3763,8 @@ $('#symbolSearchPane').show();</script>
 									<code>stableInsertAfter</code>
 								</a>
 							</td>
-							<td>Inserts <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></span></a></code> before, after, or instead range <code class="lang-d"><a href="../../../std/container/array/array.replace.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#r"><span class="pln"><a href="../../../std/container/array/array.replace.html#r"><span class="pln">r</span></a></span></a></span></a></span></a></span></a></code>, which must
- be a valid range previously extracted from this array. <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></span></a></code>
+							<td>Inserts <code class="lang-d"><span class="pln">stuff</span></code> before, after, or instead range <code class="lang-d"><span class="pln">r</span></code>, which must
+ be a valid range previously extracted from this array. <code class="lang-d"><span class="pln">stuff</span></code>
  can be a value convertible to <code class="lang-d"><span class="typ">bool</span></code> or a range of objects convertible
  to <code class="lang-d"><span class="typ">bool</span></code>. Both stable and non-stable version behave the same and
  guarantee that ranges iterating over the array are never invalidated.
@@ -3721,7 +3776,7 @@ $('#symbolSearchPane').show();</script>
 									<code>stableInsertBack</code>
 								</a>
 							</td>
-							<td>Inserts the specified elements at the back of the array. <code class="lang-d"><span class="pln"><a href="../../../std/container/array/array.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_back.html#stuff"><span class="pln">stuff</span></a></span></a></span></code> can be
+							<td>Inserts the specified elements at the back of the array. <code class="lang-d"><span class="pln">stuff</span></code> can be
  a value convertible to <code class="lang-d"><span class="typ">bool</span></code> or a range of objects convertible to <code class="lang-d"><span class="typ">bool</span></code>.
 </td>
 						</tr>
@@ -3731,8 +3786,8 @@ $('#symbolSearchPane').show();</script>
 									<code>stableInsertBefore</code>
 								</a>
 							</td>
-							<td>Inserts <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></span></a></code> before, after, or instead range <code class="lang-d"><a href="../../../std/container/array/array.replace.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#r"><span class="pln"><a href="../../../std/container/array/array.replace.html#r"><span class="pln">r</span></a></span></a></span></a></span></a></span></a></code>, which must
- be a valid range previously extracted from this array. <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></span></a></code>
+							<td>Inserts <code class="lang-d"><span class="pln">stuff</span></code> before, after, or instead range <code class="lang-d"><span class="pln">r</span></code>, which must
+ be a valid range previously extracted from this array. <code class="lang-d"><span class="pln">stuff</span></code>
  can be a value convertible to <code class="lang-d"><span class="typ">bool</span></code> or a range of objects convertible
  to <code class="lang-d"><span class="typ">bool</span></code>. Both stable and non-stable version behave the same and
  guarantee that ranges iterating over the array are never invalidated.
@@ -3744,7 +3799,7 @@ $('#symbolSearchPane').show();</script>
 									<code>stableLinearInsert</code>
 								</a>
 							</td>
-							<td>Inserts the specified elements at the back of the array. <code class="lang-d"><span class="pln"><a href="../../../std/container/array/array.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_back.html#stuff"><span class="pln">stuff</span></a></span></a></span></code> can be
+							<td>Inserts the specified elements at the back of the array. <code class="lang-d"><span class="pln">stuff</span></code> can be
  a value convertible to <code class="lang-d"><span class="typ">bool</span></code> or a range of objects convertible to <code class="lang-d"><span class="typ">bool</span></code>.
 </td>
 						</tr>
@@ -3776,9 +3831,9 @@ $('#symbolSearchPane').show();</script>
 									<code>stableRemoveBack</code>
 								</a>
 							</td>
-							<td>Removes <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a></span></a></code> values from the back of the array. Unlike the
+							<td>Removes <code class="lang-d"><span class="pln">howMany</span></code> values from the back of the array. Unlike the
  unparameterized versions above, these functions do not throw if
- they could not remove <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a></span></a></code> elements. Instead, if <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a></span></a><span class="pln"> </span><span class="pun">&gt; </span><span class="pln">n</span></code>,
+ they could not remove <code class="lang-d"><span class="pln">howMany</span></code> elements. Instead, if <code class="lang-d"><span class="pln">howMany </span><span class="pun">&gt; </span><span class="pln">n</span></code>,
  all elements are removed. The returned value is the effective number
  of elements removed. Both stable and non-stable versions behave the same
  and guarantee that ranges iterating over the array are never invalidated.
@@ -3790,8 +3845,8 @@ $('#symbolSearchPane').show();</script>
 									<code>stableReplace</code>
 								</a>
 							</td>
-							<td>Inserts <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></span></a></code> before, after, or instead range <code class="lang-d"><a href="../../../std/container/array/array.replace.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#r"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#r"><span class="pln"><a href="../../../std/container/array/array.replace.html#r"><span class="pln">r</span></a></span></a></span></a></span></a></span></a></code>, which must
- be a valid range previously extracted from this array. <code class="lang-d"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/array/array.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/array/array.replace.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></span></a></code>
+							<td>Inserts <code class="lang-d"><span class="pln">stuff</span></code> before, after, or instead range <code class="lang-d"><span class="pln">r</span></code>, which must
+ be a valid range previously extracted from this array. <code class="lang-d"><span class="pln">stuff</span></code>
  can be a value convertible to <code class="lang-d"><span class="typ">bool</span></code> or a range of objects convertible
  to <code class="lang-d"><span class="typ">bool</span></code>. Both stable and non-stable version behave the same and
  guarantee that ranges iterating over the array are never invalidated.

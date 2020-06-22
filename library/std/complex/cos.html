@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/complex.d#L839">
+							<a href="https://github.com/dlang/phobos/blob/master/std/complex.d#L928">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/complex.d#L839">
+							<a href="https://github.com/dlang/phobos/edit/master/std/complex.d#L928">
 								Improve this page
 							</a>
 							<div>
@@ -2959,7 +2974,7 @@ $('#symbolSearchPane').show();</script>
 </table>
 </section>
 <section><h2>Returns</h2>
-<p>The sine and cosine of <code class="lang-d"><a href="../../std/complex/cos.html#z"><span class="pln">z</span></a></code>, respectively.
+<p>The sine, cosine and tangent of <code class="lang-d"><a href="../../std/complex/cos.html#z"><span class="pln">z</span></a></code>, respectively.
 </p>
 </section>
 <section><h2>Example</h2>
@@ -2973,8 +2988,18 @@ $('#symbolSearchPane').show();</script>
 <section><h2>Example</h2>
 <p><span class="dlang_runnable"></span>
 </p>
-<pre class="code"><code class="lang-d"><span class="kwd">import <a href="../../std/complex.html"></span><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">complex</span></a><span class="pun">;
+<pre class="code"><code class="lang-d"><span class="kwd">static import <a href="../../std/math.html"></span><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">math</span></a><span class="pun">;
 </span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">cos</span><span class="pun">(<a href="../../std/complex/complex.html"></span><span class="pln">complex</span></a><span class="pun">(</span><span class="lit">0.0</span><span class="pun">))); </span><span class="com">// 1.0
+</span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">cos</span><span class="pun">(<a href="../../std/complex/complex.html"></span><span class="pln">complex</span></a><span class="pun">(</span><span class="lit">1.3L</span><span class="pun">, </span><span class="lit">0.0</span><span class="pun">))); </span><span class="com">// std.math.cos(1.3L)
+</span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">cos</span><span class="pun">(<a href="../../std/complex/complex.html"></span><span class="pln">complex</span></a><span class="pun">(</span><span class="lit">0.0L</span><span class="pun">, </span><span class="lit">5.2L</span><span class="pun">))); </span><span class="com">// std.math.cosh(5.2L)
+</span></code></pre>
+</section>
+<section><h2>Example</h2>
+<p><span class="dlang_runnable"></span>
+</p>
+<pre class="code"><code class="lang-d"><span class="kwd">static import <a href="../../std/math.html"></span><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">math</span></a><span class="pun">;
+</span><span class="pln">writeln</span><span class="pun">(<a href="../../std/complex/tan.html"></span><span class="pln">tan</span></a><span class="pun">(<a href="../../std/complex/complex.html"></span><span class="pln">complex</span></a><span class="pun">(</span><span class="lit">1.0</span><span class="pun">, </span><span class="lit">0.0</span><span class="pun">))); </span><span class="com">// complex(std.math.tan(1.0), 0.0)
+</span><span class="pln">writeln</span><span class="pun">(<a href="../../std/complex/tan.html"></span><span class="pln">tan</span></a><span class="pun">(<a href="../../std/complex/complex.html"></span><span class="pln">complex</span></a><span class="pun">(</span><span class="lit">0.0</span><span class="pun">, </span><span class="lit">1.0</span><span class="pun">))); </span><span class="com">// complex(0.0, std.math.tanh(1.0))
 </span></code></pre>
 </section>
 

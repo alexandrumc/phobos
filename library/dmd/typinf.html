@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2954,34 +2969,43 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="genTypeInfo" class="public" href="../dmd/typinf/gen_type_info.html">genTypeInfo</a><span class="decoration">(loc, torig, sc)</span>
+									<a id="genTypeInfo" class="public" href="../dmd/typinf/gen_type_info.html">genTypeInfo</a><span class="tableEntryAnnotation">(loc, torig, sc)</span>
 								</code>
 							</td>
 							<td>Generates the <code class="lang-d"><span class="typ">TypeInfo</span></code> object associated with <code class="lang-d"><a href="../dmd/typinf/gen_type_info.html#torig"><span class="pln">torig</span></a></code> if it
  hasn't already been generated
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getTypeInfoType" class="public" href="../dmd/typinf/get_type_info_type.html">getTypeInfoType</a><span class="decoration">(loc, t, sc)</span>
+									<a id="getTypeInfoType" class="public" href="../dmd/typinf/get_type_info_type.html">getTypeInfoType</a><span class="tableEntryAnnotation">(loc, t, sc)</span>
 								</code>
 							</td>
 							<td>Gets the type of the <code class="lang-d"><span class="typ">TypeInfo</span></code> object associated with <code class="lang-d"><a href="../dmd/typinf/get_type_info_type.html#t"><span class="pln">t</span></a></code>
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isSpeculativeType" class="public" href="../dmd/typinf/is_speculative_type.html">isSpeculativeType</a><span class="decoration">(t)</span>
+									<a id="isSpeculativeType" class="public" href="../dmd/typinf/is_speculative_type.html">isSpeculativeType</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

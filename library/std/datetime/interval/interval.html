@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2975,6 +2990,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(begin, end)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -2983,6 +2999,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(begin, duration)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3049,6 +3066,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.bwd_range.html" class="public">
 									<code>bwdRange</code>
 								</a>
+								<span class="tableEntryAnnotation">(func, popFirst)</span>
 							</td>
 							<td>Returns a range which iterates backwards over the interval, starting
         at <code class="lang-d"><a href="../../../std/datetime/interval/interval.end.html"><span class="pln">end</span></a></code>, using <span class="d_param">func</span> to generate each successive time
@@ -3060,6 +3078,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.contains.html" class="public">
 									<code>contains</code>
 								</a>
+								<span class="tableEntryAnnotation">(timePoint)</span>
 							</td>
 							<td>Whether the given time point is within this interval.
 </td>
@@ -3069,6 +3088,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.contains.html" class="public">
 									<code>contains</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Whether the given interval is completely within this interval.
 </td>
@@ -3078,6 +3098,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.contains.html" class="public">
 									<code>contains</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Whether the given interval is completely within this interval.
 </td>
@@ -3087,6 +3108,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.contains.html" class="public">
 									<code>contains</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Whether the given interval is completely within this interval.
 </td>
@@ -3096,6 +3118,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.expand.html" class="public">
 									<code>expand</code>
 								</a>
+								<span class="tableEntryAnnotation">(duration, dir)</span>
 							</td>
 							<td>Expands the interval forwards and/or backwards in time. Effectively,
         it does <code class="lang-d"><a href="../../../std/datetime/interval/interval.begin.html"><span class="pln">begin</span></a><span class="pln"> </span><span class="pun">-= <a href="../../../std/datetime/interval/interval.expand.html#duration"></span><span class="pln">duration</span></a></code> and/or <code class="lang-d"><a href="../../../std/datetime/interval/interval.end.html"><span class="pln">end</span></a><span class="pln"> </span><span class="pun">+= <a href="../../../std/datetime/interval/interval.expand.html#duration"></span><span class="pln">duration</span></a></code>. Whether
@@ -3108,6 +3131,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.expand.html" class="public">
 									<code>expand</code>
 								</a>
+								<span class="tableEntryAnnotation">(years, months, allowOverflow, dir)</span>
 							</td>
 							<td>Expands the interval forwards and/or backwards in time. Effectively,
             it subtracts the given number of months/years from <code class="lang-d"><a href="../../../std/datetime/interval/interval.begin.html"><span class="pln">begin</span></a></code> and
@@ -3120,6 +3144,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.fwd_range.html" class="public">
 									<code>fwdRange</code>
 								</a>
+								<span class="tableEntryAnnotation">(func, popFirst)</span>
 							</td>
 							<td>Returns a range which iterates forward over the interval, starting
         at <code class="lang-d"><a href="../../../std/datetime/interval/interval.begin.html"><span class="pln">begin</span></a></code>, using <span class="d_param">func</span> to generate each successive time
@@ -3131,6 +3156,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.intersection.html" class="public">
 									<code>intersection</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Returns the intersection of two intervals
 </td>
@@ -3140,6 +3166,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.intersection.html" class="public">
 									<code>intersection</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Returns the intersection of two intervals
 </td>
@@ -3149,6 +3176,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.intersection.html" class="public">
 									<code>intersection</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Returns the intersection of two intervals
 </td>
@@ -3158,6 +3186,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.intersects.html" class="public">
 									<code>intersects</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Whether the given interval overlaps this interval.
 </td>
@@ -3167,6 +3196,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.intersects.html" class="public">
 									<code>intersects</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Whether the given interval overlaps this interval.
 </td>
@@ -3176,6 +3206,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.intersects.html" class="public">
 									<code>intersects</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Whether the given interval overlaps this interval.
 </td>
@@ -3185,6 +3216,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.is_adjacent.html" class="public">
 									<code>isAdjacent</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Whether the given interval is adjacent to this interval.
 </td>
@@ -3194,6 +3226,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.is_adjacent.html" class="public">
 									<code>isAdjacent</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Whether the given interval is adjacent to this interval.
 </td>
@@ -3203,6 +3236,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.is_adjacent.html" class="public">
 									<code>isAdjacent</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Whether the given interval is adjacent to this interval.
 </td>
@@ -3212,6 +3246,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.is_after.html" class="public">
 									<code>isAfter</code>
 								</a>
+								<span class="tableEntryAnnotation">(timePoint)</span>
 							</td>
 							<td>Whether this interval is after the given time point.
 </td>
@@ -3221,6 +3256,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.is_after.html" class="public">
 									<code>isAfter</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Whether this interval is after the given interval and does not intersect
         it.
@@ -3231,6 +3267,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.is_after.html" class="public">
 									<code>isAfter</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Whether this interval is after the given interval and does not intersect
         it.
@@ -3241,6 +3278,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.is_after.html" class="public">
 									<code>isAfter</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Whether this interval is after the given interval and does not intersect
         it.
@@ -3251,6 +3289,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.is_before.html" class="public">
 									<code>isBefore</code>
 								</a>
+								<span class="tableEntryAnnotation">(timePoint)</span>
 							</td>
 							<td>Whether this interval is before the given time point.
 </td>
@@ -3260,6 +3299,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.is_before.html" class="public">
 									<code>isBefore</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Whether this interval is before the given interval and does not
         intersect with it.
@@ -3270,6 +3310,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.is_before.html" class="public">
 									<code>isBefore</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Whether this interval is before the given interval and does not
         intersect with it.
@@ -3280,6 +3321,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.is_before.html" class="public">
 									<code>isBefore</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Whether this interval is before the given interval and does not
         intersect with it.
@@ -3290,6 +3332,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.merge.html" class="public">
 									<code>merge</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Returns the union of two intervals
 </td>
@@ -3299,6 +3342,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.merge.html" class="public">
 									<code>merge</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Returns the union of two intervals
 </td>
@@ -3308,6 +3352,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.merge.html" class="public">
 									<code>merge</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Returns the union of two intervals
 </td>
@@ -3317,6 +3362,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.op_assign.html" class="public">
 									<code>opAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3325,6 +3371,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.shift.html" class="public">
 									<code>shift</code>
 								</a>
+								<span class="tableEntryAnnotation">(duration)</span>
 							</td>
 							<td>Shifts the interval forward or backwards in time by the given duration
         (a positive duration shifts the interval forward; a negative duration
@@ -3337,6 +3384,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.shift.html" class="public">
 									<code>shift</code>
 								</a>
+								<span class="tableEntryAnnotation">(years, months, allowOverflow)</span>
 							</td>
 							<td>Shifts the interval forward or backwards in time by the given number
             of years and/or months (a positive number of years and months shifts
@@ -3351,6 +3399,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.span.html" class="public">
 									<code>span</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Returns an interval that covers from the earliest time point of two
         intervals up to (but not including) the latest time point of two
@@ -3362,6 +3411,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.span.html" class="public">
 									<code>span</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Returns an interval that covers from the earliest time point of two
         intervals up to (but not including) the latest time point of two
@@ -3373,6 +3423,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.span.html" class="public">
 									<code>span</code>
 								</a>
+								<span class="tableEntryAnnotation">(interval)</span>
 							</td>
 							<td>Returns an interval that covers from the earliest time point of two
         intervals up to (but not including) the latest time point of two
@@ -3384,6 +3435,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval.to_string.html" class="public">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Converts this interval to a string.
 </td>

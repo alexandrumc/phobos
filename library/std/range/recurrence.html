@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2955,7 +2970,7 @@ $('#symbolSearchPane').show();</script>
 				</nav><h2 id="0">Function recurrence</h2><p>Creates a mathematical sequence given the initial values and a
 recurrence function that computes the next value from the existing
 values. The sequence comes in the form of an infinite forward
-range. The type <code class="lang-d"><a href="../std/range/recurrence.html"><span class="typ"><span class="typ"><a href="../../std/range/recurrence.html"><span class="typ">Recurrence</span></a></span></span></a></code> itself is seldom used directly; most
+range. The type <code class="lang-d"><a href="../../std/range/recurrence.html"><span class="typ">Recurrence</span></a></code> itself is seldom used directly; most
 often, recurrences are obtained by calling the function <code class="lang-d"><span class="pln">recurrence</span></code>.
 </p>
 				<div class="prototype">
@@ -3025,7 +3040,7 @@ managing the recurrence's state and shifting it appropriately.
 <h2 id="1">Struct Recurrence</h2><p>Creates a mathematical sequence given the initial values and a
 recurrence function that computes the next value from the existing
 values. The sequence comes in the form of an infinite forward
-range. The type <code class="lang-d"><a href="../std/range/recurrence.html"><span class="typ"><span class="typ"><a href="../../std/range/recurrence.html"><span class="typ"><span class="typ">Recurrence</span></span></a></span></span></a></code> itself is seldom used directly; most
+range. The type <code class="lang-d"><span class="typ">Recurrence</span></code> itself is seldom used directly; most
 often, recurrences are obtained by calling the function <code class="lang-d"><a href="../../std/range/recurrence.html"><span class="pln">recurrence</span></a></code>.
 </p>
 				<div class="prototype">
@@ -3036,7 +3051,7 @@ often, recurrences are obtained by calling the function <code class="lang-d"><a 
 						</div>
 					</code>
 				</div>
-				<section><p>When calling <code class="lang-d"><span class="pln"><a href="../../std/range/recurrence.html"><span class="pln">recurrence</span></a></span></code>, the function that computes the next
+				<section><p>When calling <code class="lang-d"><a href="../../std/range/recurrence.html"><span class="pln">recurrence</span></a></code>, the function that computes the next
 value is specified as a template argument, and the initial values in
 the recurrence are passed as regular arguments. For example, in a
 Fibonacci sequence, there are two initial values (and therefore a
@@ -3058,7 +3073,7 @@ and the zero-based index in the recurrence has name <code class="lang-d"><span c
 given string must return the desired value for <code class="lang-d"><span class="pln">a</span><span class="pun">[</span><span class="pln">n</span><span class="pun">]</span></code> given
 <code class="lang-d"><span class="pln">a</span><span class="pun">[</span><span class="pln">n </span><span class="pun">- </span><span class="lit">1</span><span class="pun">]</span></code>, <code class="lang-d"><span class="pln">a</span><span class="pun">[</span><span class="pln">n </span><span class="pun">- </span><span class="lit">2</span><span class="pun">]</span></code>, <code class="lang-d"><span class="pln">a</span><span class="pun">[</span><span class="pln">n </span><span class="pun">- </span><span class="lit">3</span><span class="pun">]</span></code>,..., <code class="lang-d"><span class="pln">a</span><span class="pun">[</span><span class="pln">n </span><span class="pun">- </span><span class="pln">stateSize</span><span class="pun">]</span></code>. The
 state size is dictated by the number of arguments passed to the call
-to <code class="lang-d"><span class="pln"><a href="../../std/range/recurrence.html"><span class="pln">recurrence</span></a></span></code>. The <code class="lang-d"><a href="../../std/range/recurrence.html"><span class="typ"><span class="typ">Recurrence</span></span></a></code> struct itself takes care of
+to <code class="lang-d"><a href="../../std/range/recurrence.html"><span class="pln">recurrence</span></a></code>. The <code class="lang-d"><span class="typ">Recurrence</span></code> struct itself takes care of
 managing the recurrence's state and shifting it appropriately.
 </p>
 </section>

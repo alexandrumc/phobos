@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/dmd/blob/master/src/dmd/dstruct.d#L700">
+							<a href="https://github.com/dlang/dmd/blob/master/src/dmd/dstruct.d#L739">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/dmd/edit/master/src/dmd/dstruct.d#L700">
+							<a href="https://github.com/dlang/dmd/edit/master/src/dmd/dstruct.d#L739">
 								Improve this page
 							</a>
 							<div>
@@ -2991,6 +3006,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/scope_dsymbol._foreach.html" class="public inherited">
 									<code>_foreach</code>
 								</a>
+								<span class="tableEntryAnnotation">(sc, members, dg, pn)</span>
 							</td>
 							<td>Expands attribute declarations in members in depth first
  order. Calls dg(size_t symidx, Dsymbol *sym) for each
@@ -3005,6 +3021,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.accept.html" class="public inherited">
 									<code>accept</code>
 								</a>
+								<span class="tableEntryAnnotation">(v)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3013,6 +3030,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.add_comment.html" class="public inherited">
 									<code>addComment</code>
 								</a>
+								<span class="tableEntryAnnotation">(comment)</span>
 							</td>
 							<td>Add documentation comment to Dsymbol.
  Ignore NULL comments.
@@ -3023,6 +3041,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/aggregate/aggregate_declaration.alignmember.html" class="public inherited">
 									<code>alignmember</code>
 								</a>
+								<span class="tableEntryAnnotation">(alignment, size, poffset)</span>
 							</td>
 							<td>Do byte or word alignment as necessary.
  Align sizes of 0, as we may not know array sizes yet.
@@ -3033,6 +3052,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.array_syntax_copy.html" class="public inherited">
 									<code>arraySyntaxCopy</code>
 								</a>
+								<span class="tableEntryAnnotation">(a)</span>
 							</td>
 							<td>Do syntax copy of an array of Dsymbol's.
 </td>
@@ -3042,6 +3062,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/aggregate/aggregate_declaration.check_overlapped_fields.html" class="public inherited">
 									<code>checkOverlappedFields</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Calculate field[i].overlapped and overlapUnsafe, and check that all of explicit
  field initializers have unique memory space on instance.
@@ -3052,6 +3073,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/aggregate/aggregate_declaration.determine_fields.html" class="public inherited">
 									<code>determineFields</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Find all instance fields, then push them into <code class="lang-d"><span class="pln">fields</span></code>.
 </td>
@@ -3061,6 +3083,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/aggregate/aggregate_declaration.determine_size.html" class="public inherited">
 									<code>determineSize</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc)</span>
 							</td>
 							<td>Collect all instance fields, then determine instance size.
 </td>
@@ -3070,6 +3093,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../object/object.factory.html" class="public inherited">
 									<code>factory</code>
 								</a>
+								<span class="tableEntryAnnotation">(classname)</span>
 							</td>
 							<td>Create instance of class specified by the fully qualified name
  classname.
@@ -3082,6 +3106,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/aggregate/aggregate_declaration.fill.html" class="public inherited">
 									<code>fill</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc, elements, ctorinit)</span>
 							</td>
 							<td>Fill out remainder of elements[] with default initializers for fields[].
 </td>
@@ -3091,6 +3116,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/scope_dsymbol.find_get_members.html" class="public inherited">
 									<code>findGetMembers</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Look for member of the form:
       const(MemberInfo)[] getMembers(string);
@@ -3102,6 +3128,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dstruct/struct_declaration.fit.html" class="public inherited">
 									<code>fit</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc, sc, elements, stype)</span>
 							</td>
 							<td>Fit elements[] to the corresponding types of the struct's fields.
 </td>
@@ -3111,6 +3138,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.follow_instantiation_context.html" class="public inherited">
 									<code>followInstantiationContext</code>
 								</a>
+								<span class="tableEntryAnnotation">(p1, p2)</span>
 							</td>
 							<td>Returns true if any of the symbols <code class="lang-d"><a href="../../dmd/dsymbol/dsymbol.follow_instantiation_context.html#p1"><span class="pln">p1</span></a></code> or <code class="lang-d"><a href="../../dmd/dsymbol/dsymbol.follow_instantiation_context.html#p2"><span class="pln">p2</span></a></code> resides in the enclosing
  instantiation scope of <code class="lang-d"><span class="kwd">this</span></code>.
@@ -3121,6 +3149,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.get_access_module.html" class="public inherited">
 									<code>getAccessModule</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Determine which Module a Dsymbol is in, as far as access rights go.
 </td>
@@ -3130,6 +3159,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.get_module.html" class="public inherited">
 									<code>getModule</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Determine which Module a Dsymbol is in.
 </td>
@@ -3139,6 +3169,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.has_pointers.html" class="public inherited">
 									<code>hasPointers</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Is Dsymbol a variable that contains pointers?
 </td>
@@ -3148,6 +3179,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/scope_dsymbol.has_static_ctor_or_dtor.html" class="public inherited">
 									<code>hasStaticCtorOrDtor</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Return true if any of the members are static ctors or static dtors, or if
  any members have members that are.
@@ -3158,6 +3190,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.in_non_root.html" class="public inherited">
 									<code>inNonRoot</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns true if this symbol is defined in a non-root module without instantiation.
 </td>
@@ -3167,6 +3200,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.is_member.html" class="public inherited">
 									<code>isMember</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns an AggregateDeclaration when toParent() is that.
 </td>
@@ -3176,6 +3210,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.is_member2.html" class="public inherited">
 									<code>isMember2</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns an AggregateDeclaration when toParent2() is that.
 </td>
@@ -3185,6 +3220,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.is_member_decl.html" class="public inherited">
 									<code>isMemberDecl</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns an AggregateDeclaration when toParentDecl() is that.
 </td>
@@ -3194,6 +3230,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.is_member_local.html" class="public inherited">
 									<code>isMemberLocal</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns an AggregateDeclaration when toParentLocal() is that.
 </td>
@@ -3203,6 +3240,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/aggregate/aggregate_declaration.is_nested.html" class="public inherited">
 									<code>isNested</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns true if there's an extra member which is the 'this'
  pointer to the enclosing context (enclosing aggregate or function)
@@ -3213,6 +3251,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dstruct/struct_declaration.is_pod.html" class="public inherited">
 									<code>isPOD</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Determine if struct is POD (Plain Old Data).
 </td>
@@ -3222,6 +3261,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/aggregate/aggregate_declaration.new_scope.html" class="public inherited">
 									<code>newScope</code>
 								</a>
+								<span class="tableEntryAnnotation">(sc)</span>
 							</td>
 							<td>Create a new scope from sc.
  semantic, semantic2 and semantic3 will use this for aggregate members.
@@ -3232,6 +3272,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/aggregate/aggregate_declaration.non_hidden_fields.html" class="public inherited">
 									<code>nonHiddenFields</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3240,6 +3281,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.one_member.html" class="public inherited">
 									<code>oneMember</code>
 								</a>
+								<span class="tableEntryAnnotation">(ps, ident)</span>
 							</td>
 							<td>Determine if this symbol is only one.
 </td>
@@ -3249,6 +3291,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.one_members.html" class="public inherited">
 									<code>oneMembers</code>
 								</a>
+								<span class="tableEntryAnnotation">(members, ps, ident)</span>
 							</td>
 							<td>Same as Dsymbol::oneMember(), but look at an array of Dsymbols.
 </td>
@@ -3258,6 +3301,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../object/object.op_cmp.html" class="public inherited">
 									<code>opCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Compare with another Object obj.
 </td>
@@ -3267,6 +3311,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../object/object.op_equals.html" class="public inherited">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Test whether <code class="lang-d"><span class="kwd">this</span></code> is equal to <code class="lang-d"><a href="../../object/object.op_equals.html#o"><span class="pln">o</span></a></code>.
  The default implementation only compares by identity (using the <code class="lang-d"><span class="kwd">is</span></code> operator).
@@ -3278,6 +3323,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.past_mixin.html" class="public inherited">
 									<code>pastMixin</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td><code class="lang-d"><a href="../../dmd/dsymbol/dsymbol.past_mixin.html"><span class="pln">pastMixin</span></a></code> returns the enclosing symbol if this is a template mixin.
 </td>
@@ -3287,6 +3333,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/aggregate/aggregate_declaration.place_field.html" class="public inherited">
 									<code>placeField</code>
 								</a>
+								<span class="tableEntryAnnotation">(nextoffset, memsize, memalignsize, alignment, paggsize, paggalignsize, isunion)</span>
 							</td>
 							<td>Place a member (mem) into an aggregate (agg), which can be a struct, union or class
 </td>
@@ -3296,6 +3343,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.prot.html" class="public inherited">
 									<code>prot</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3304,6 +3352,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/scope_dsymbol.search.html" class="public inherited">
 									<code>search</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc, ident, flags)</span>
 							</td>
 							<td>This function is #1 on the list of functions that eat cpu time.
  Be very, very careful about slowing it down.
@@ -3314,6 +3363,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/aggregate/aggregate_declaration.search_ctor.html" class="public inherited">
 									<code>searchCtor</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Look for constructor declaration.
 </td>
@@ -3323,6 +3373,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.search_x.html" class="public inherited">
 									<code>searchX</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc, sc, id, flags)</span>
 							</td>
 							<td>Search for identifier id as a member of <code class="lang-d"><span class="kwd">this</span></code>.
  <code class="lang-d"><a href="../../dmd/dsymbol/dsymbol.search_x.html#id"><span class="pln">id</span></a></code> may be a template instance.
@@ -3333,6 +3384,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/aggregate/aggregate_declaration.set_deprecated.html" class="public inherited">
 									<code>setDeprecated</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Flag this aggregate as deprecated
 </td>
@@ -3342,6 +3394,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.set_scope.html" class="public inherited">
 									<code>setScope</code>
 								</a>
+								<span class="tableEntryAnnotation">(sc)</span>
 							</td>
 							<td>Set scope for future semantic analysis so we can
  deal better with forward references.
@@ -3352,6 +3405,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.size.html" class="public inherited">
 									<code>size</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3360,6 +3414,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/scope_dsymbol.symtab_lookup.html" class="public inherited">
 									<code>symtabLookup</code>
 								</a>
+								<span class="tableEntryAnnotation">(s, id)</span>
 							</td>
 							<td>Look up identifier in symbol table.
 </td>
@@ -3369,6 +3424,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.syntax_copy.html" class="public inherited">
 									<code>syntaxCopy</code>
 								</a>
+								<span class="tableEntryAnnotation">(s)</span>
 							</td>
 							<td>Copy the syntax.
  Used for template instantiations.
@@ -3380,6 +3436,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.to_alias.html" class="public inherited">
 									<code>toAlias</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>If this symbol is really an alias for another,
  return that other.
@@ -3391,6 +3448,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.to_alias2.html" class="public inherited">
 									<code>toAlias2</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Resolve recursive tuple expansion in eponymous template.
 </td>
@@ -3400,6 +3458,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../object/object.to_hash.html" class="public inherited">
 									<code>toHash</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Compute hash function for Object.
 </td>
@@ -3409,6 +3468,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.to_parent.html" class="public inherited">
 									<code>toParent</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td><code class="lang-d"><span class="pln">parent</span></code> field returns a lexically enclosing scope symbol this is a member of.
 </td>
@@ -3418,6 +3478,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.to_parent2.html" class="public inherited">
 									<code>toParent2</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td><code class="lang-d"><span class="pln">parent</span></code> field returns a lexically enclosing scope symbol this is a member of.
 </td>
@@ -3427,6 +3488,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.to_parent_decl.html" class="public inherited">
 									<code>toParentDecl</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td><code class="lang-d"><span class="pln">parent</span></code> field returns a lexically enclosing scope symbol this is a member of.
 </td>
@@ -3436,6 +3498,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.to_parent_local.html" class="public inherited">
 									<code>toParentLocal</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td><code class="lang-d"><span class="pln">parent</span></code> field returns a lexically enclosing scope symbol this is a member of.
 </td>
@@ -3445,6 +3508,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/dsymbol/dsymbol.to_parent_p.html" class="public inherited">
 									<code>toParentP</code>
 								</a>
+								<span class="tableEntryAnnotation">(p1, p2)</span>
 							</td>
 							<td>Returns the declaration scope scope of <code class="lang-d"><span class="kwd">this</span></code> unless any of the symbols
  <code class="lang-d"><a href="../../dmd/dsymbol/dsymbol.to_parent_p.html#p1"><span class="pln">p1</span></a></code> or <code class="lang-d"><a href="../../dmd/dsymbol/dsymbol.to_parent_p.html#p2"><span class="pln">p2</span></a></code> resides in its enclosing instantiation scope then the
@@ -3456,6 +3520,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../dmd/root/rootobject/root_object.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3464,6 +3529,7 @@ Only valid for class and struct. TODO: Merge with ClassKind ?
 								<a href="../../object/object.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Convert Object to a human readable string.
 </td>

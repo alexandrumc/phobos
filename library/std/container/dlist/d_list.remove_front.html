@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2966,16 +2981,16 @@ container are never invalidated.
 				<section></section>
 
 				<section><h3>Precondition</h3>
-<p><code class="lang-d"><span class="pun">!<a href="../../../std/container/dlist/d_list.empty.html"></span><span class="pln"><a href="../../../std/container/dlist/d_list.empty.html"><span class="pln"><a href="../../../std/container/dlist/d_list.empty.html"><span class="pln">empty</span></a></span></a></span></a></code>
+<p><code class="lang-d"><span class="pun">!<a href="../../../std/container/dlist/d_list.empty.html"></span><span class="pln">empty</span></a></code>
 </p>
 </section>
 <section><h3>Complexity</h3>
 <p><span class="bigoh">&Omicron;(<code class="lang-d"><span class="lit">1</span></code>)</span>.
 </p>
 </section>
-<h2 id="1">Function DList.removeFront</h2><p>Removes <code class="lang-d"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_front.html#howMany"><span class="pln">howMany</span></a></span></a></span></code> values at the front or back of the
+<h2 id="1">Function DList.removeFront</h2><p>Removes <code class="lang-d"><a href="../../../std/container/dlist/d_list.remove_front.html#howMany"><span class="pln">howMany</span></a></code> values at the front or back of the
 container. Unlike the unparameterized versions above, these functions
-do not throw if they could not remove <code class="lang-d"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_front.html#howMany"><span class="pln">howMany</span></a></span></a></span></code> elements. Instead,
+do not throw if they could not remove <code class="lang-d"><a href="../../../std/container/dlist/d_list.remove_front.html#howMany"><span class="pln">howMany</span></a></code> elements. Instead,
 if <code class="lang-d"><a href="../../../std/container/dlist/d_list.remove_front.html#howMany"><span class="pln">howMany</span></a><span class="pln"> </span><span class="pun">&gt; </span><span class="pln">n</span></code>, all elements are removed. The returned value is
 the effective number of elements removed. The stable version behaves
 the same, but guarantees that ranges iterating over the container are

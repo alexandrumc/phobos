@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/algorithm/iteration.d#L4130">
+							<a href="https://github.com/dlang/phobos/blob/master/std/algorithm/iteration.d#L4134">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/algorithm/iteration.d#L4130">
+							<a href="https://github.com/dlang/phobos/edit/master/std/algorithm/iteration.d#L4134">
 								Improve this page
 							</a>
 							<div>
@@ -2938,9 +2953,9 @@ $('#symbolSearchPane').show();</script>
 						</div>
 					</div>
 				</div><h1>Template <code><a href="../../../std/algorithm/iteration.html">std.algorithm.iteration</a>.fold</code></h1><p>Implements the homonym function (also known as <code class="lang-d"><span class="pln">accumulate</span></code>, <code class="lang-d"><span class="pln">compress</span></code>, <code class="lang-d"><span class="pln">inject</span></code>, or <code class="lang-d"><span class="pln">foldl</span></code>) present in various programming
-languages of functional flavor. The call <code class="lang-d"><a href="../../std/algorithm/iteration/fold.fold.html"><span class="pln"><a href="../../../std/algorithm/iteration/fold.fold.html"><span class="pln">fold</span></a></span></a><span class="pun">!(</span><span class="pln">fun</span><span class="pun">)(</span><span class="pln">range</span><span class="pun">, </span><span class="pln">seed</span><span class="pun">)</span></code>
+languages of functional flavor. The call <code class="lang-d"><a href="../../../std/algorithm/iteration/fold.fold.html"><span class="pln">fold</span></a><span class="pun">!(</span><span class="pln">fun</span><span class="pun">)(</span><span class="pln">range</span><span class="pun">, </span><span class="pln">seed</span><span class="pun">)</span></code>
 first assigns <code class="lang-d"><span class="pln">seed</span></code> to an internal variable <code class="lang-d"><span class="pln">result</span></code>,
-also called the accumulator. Then, for each element <code class="lang-d"><span class="pln">x</span></code> in <code class="lang-d"><span class="pln">range</span></code>, <code class="lang-d"><span class="pln">result </span><span class="pun">= </span><span class="pln">fun</span><span class="pun">(</span><span class="pln">result</span><span class="pun">, </span><span class="pln">x</span><span class="pun">)</span></code> gets evaluated. Finally, <code class="lang-d"><span class="pln">result</span></code> is returned. The one-argument version <code class="lang-d"><a href="../../std/algorithm/iteration/fold.fold.html"><span class="pln"><a href="../../../std/algorithm/iteration/fold.fold.html"><span class="pln">fold</span></a></span></a><span class="pun">!(</span><span class="pln">fun</span><span class="pun">)(</span><span class="pln">range</span><span class="pun">)</span></code>
+also called the accumulator. Then, for each element <code class="lang-d"><span class="pln">x</span></code> in <code class="lang-d"><span class="pln">range</span></code>, <code class="lang-d"><span class="pln">result </span><span class="pun">= </span><span class="pln">fun</span><span class="pun">(</span><span class="pln">result</span><span class="pun">, </span><span class="pln">x</span><span class="pun">)</span></code> gets evaluated. Finally, <code class="lang-d"><span class="pln">result</span></code> is returned. The one-argument version <code class="lang-d"><a href="../../../std/algorithm/iteration/fold.fold.html"><span class="pln">fold</span></a><span class="pun">!(</span><span class="pln">fun</span><span class="pun">)(</span><span class="pln">range</span><span class="pun">)</span></code>
 works similarly, but it uses the first element of the range as the
 seed (the range must be non-empty).
 </p>

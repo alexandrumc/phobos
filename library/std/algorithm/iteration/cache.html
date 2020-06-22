@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,7 +2952,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../../std/algorithm/iteration.html">std.algorithm.iteration</a>.cache</code></h1><p><code class="lang-d"><span class="pln"><a href="../../std/algorithm/iteration/cache.html"><span class="pln"><a href="../../../std/algorithm/iteration/cache.html"><span class="pln"><span class="pln">cache</span></span></a></span></a></span></code> eagerly evaluates <a href="../../../std/range/primitives/front.html" title="std.range.primitives.front">front</a> of <code class="lang-d"><a href="../../std/algorithm/iteration/cache.html#range"><span class="pln"><a href="../../std/algorithm/iteration/cache_bidirectional.html#range"><span class="pln"><a href="../../../std/algorithm/iteration/cache_bidirectional.html#range"><span class="pln"><a href="../../../std/algorithm/iteration/cache.html#range"><span class="pln">range</span></a></span></a></span></a></span></a></code>
+				</div><h1>Function <code><a href="../../../std/algorithm/iteration.html">std.algorithm.iteration</a>.cache</code></h1><p><code class="lang-d"><span class="pln">cache</span></code> eagerly evaluates <a href="../../../std/range/primitives/front.html" title="std.range.primitives.front">front</a> of <code class="lang-d"><a href="../../../std/algorithm/iteration/cache.html#range"><span class="pln">range</span></a></code>
 on each construction or call to <a href="../../../std/range/primitives/pop_front.html" title="std.range.primitives.popFront">popFront</a>,
 to store the result in a cache.
 The result is then directly returned when <a href="../../../std/range/primitives/front.html" title="std.range.primitives.front">front</a> is called,
@@ -2946,7 +2961,7 @@ rather than re-evaluated.
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">cache</span>(Range)
+				<span class="kwd">auto</span> <span class="pln">cache</span>(Range)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">Range</span> <span class="pln">range</span>
@@ -2963,18 +2978,18 @@ In particular, it can be placed after a call to <code class="lang-d"><a href="..
 <code class="lang-d"><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">range<wbr/></span><span class="pun">.</span><span class="pln">filter</span></code> or <code class="lang-d"><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">range<wbr/></span><span class="pun">.</span><span class="pln">tee</span></code>
 </p>
 
-<p><code class="lang-d"><a href="../../../std/algorithm/iteration/cache.html"><span class="pln"><span class="pln">cache</span></span></a></code> may provide
+<p><code class="lang-d"><span class="pln">cache</span></code> may provide
 <a href="../../../std/range/primitives/is_bidirectional_range.html" title="std.range.primitives.isBidirectionalRange">bidirectional range</a>
 iteration if needed, but since this comes at an increased cost, it must be explicitly requested via the
-call to <code class="lang-d"><span class="pln"><a href="../../../std/algorithm/iteration/cache_bidirectional.html"><span class="pln">cacheBidirectional</span></a></span></code>. Furthermore, a bidirectional cache will
+call to <code class="lang-d"><a href="../../../std/algorithm/iteration/cache_bidirectional.html"><span class="pln">cacheBidirectional</span></a></code>. Furthermore, a bidirectional cache will
 evaluate the "center" element twice, when there is only one element left in
 the range.
 </p>
 
-<p><code class="lang-d"><a href="../../../std/algorithm/iteration/cache.html"><span class="pln"><span class="pln">cache</span></span></a></code> does not provide random access primitives,
-as <code class="lang-d"><a href="../../../std/algorithm/iteration/cache.html"><span class="pln"><span class="pln">cache</span></span></a></code> would be unable to cache the random accesses.
+<p><code class="lang-d"><span class="pln">cache</span></code> does not provide random access primitives,
+as <code class="lang-d"><span class="pln">cache</span></code> would be unable to cache the random accesses.
 If <code class="lang-d"><span class="typ">Range</span></code> provides slicing primitives,
-then <code class="lang-d"><a href="../../../std/algorithm/iteration/cache.html"><span class="pln"><span class="pln">cache</span></span></a></code> will provide the same slicing primitives,
+then <code class="lang-d"><span class="pln">cache</span></code> will provide the same slicing primitives,
 but <code class="lang-d"><span class="pln">hasSlicing</span><span class="pun">!</span><span class="typ">Cache</span></code> will not yield true (as the <code class="lang-d"><a href="../../../std/range/primitives/has_slicing.html" title="std.range.primitives.hasSlicing"><span class="pln">hasSlicing</span></a></code>
 trait also checks for random access).
 </p>
@@ -3034,15 +3049,15 @@ trait also checks for random access).
 <section><h2>Example</h2>
 </section>
 <section><h2>Tip</h2>
-<p><code class="lang-d"><a href="../../../std/algorithm/iteration/cache.html"><span class="pln"><span class="pln">cache</span></span></a></code> is eager when evaluating elements. If calling front on the
+<p><code class="lang-d"><span class="pln">cache</span></code> is eager when evaluating elements. If calling front on the
 underlying range has a side effect, it will be observable before calling
 front on the actual cached range.
 </p>
 
-<p>Furthermore, care should be taken composing <code class="lang-d"><a href="../../../std/algorithm/iteration/cache.html"><span class="pln"><span class="pln">cache</span></span></a></code> with <code class="lang-d"><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">range<wbr/></span><span class="pun">.</span><span class="pln">take</span></code>.
-By placing <code class="lang-d"><span class="pln">take</span></code> before <code class="lang-d"><a href="../../../std/algorithm/iteration/cache.html"><span class="pln"><span class="pln">cache</span></span></a></code>, then <code class="lang-d"><a href="../../../std/algorithm/iteration/cache.html"><span class="pln"><span class="pln">cache</span></span></a></code> will be "aware"
+<p>Furthermore, care should be taken composing <code class="lang-d"><span class="pln">cache</span></code> with <code class="lang-d"><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">range<wbr/></span><span class="pun">.</span><span class="pln">take</span></code>.
+By placing <code class="lang-d"><span class="pln">take</span></code> before <code class="lang-d"><span class="pln">cache</span></code>, then <code class="lang-d"><span class="pln">cache</span></code> will be "aware"
 of when the range ends, and correctly stop caching elements when needed.
-If calling front has no side effect though, placing <code class="lang-d"><span class="pln">take</span></code> after <code class="lang-d"><a href="../../../std/algorithm/iteration/cache.html"><span class="pln"><span class="pln">cache</span></span></a></code>
+If calling front has no side effect though, placing <code class="lang-d"><span class="pln">take</span></code> after <code class="lang-d"><span class="pln">cache</span></code>
 may yield a faster range.
 </p>
 

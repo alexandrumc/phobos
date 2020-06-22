@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2959,7 +2974,7 @@ $('#symbolSearchPane').show();</script>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">zip</span>(Ranges...)
+				<span class="kwd">auto</span> <span class="pln">zip</span>(Ranges...)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">Ranges</span> <span class="pln">ranges</span>
@@ -2969,7 +2984,7 @@ $('#symbolSearchPane').show();</script>
 				<span class="kwd">if</span> <span class="pun">(</span><span class="typ">Ranges<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">&amp;&amp; </span><span class="pln">allSatisfy</span><span class="pun">!(</span><span class="pln">isInputRange</span><span class="pun">, </span><span class="typ">Ranges</span><span class="pun">)</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">zip</span>(Ranges...)
+				<span class="kwd">auto</span> <span class="pln">zip</span>(Ranges...)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<a href="../../std/range/stopping_policy.html"><span class="typ">StoppingPolicy</span></a> <span class="pln">sp</span><span class="pun">,</span>
@@ -3082,9 +3097,9 @@ $('#symbolSearchPane').show();</script>
 						</div>
 					</code>
 				</div>
-				<section><p><code class="lang-d"><span class="pln"><a href="../../std/range/zip.html"><span class="pln">zip</span></a></span></code> is similar to <code class="lang-d"><a href="../../std/range/lockstep.html"><span class="pln">lockstep</span></a></code>, but <code class="lang-d"><a href="../../std/range/lockstep.html"><span class="pln"><a href="../../std/range/lockstep.html"><span class="pln">lockstep</span></a></span></a></code> doesn't
+				<section><p><code class="lang-d"><a href="../../std/range/zip.html"><span class="pln">zip</span></a></code> is similar to <code class="lang-d"><a href="../../std/range/lockstep.html"><span class="pln">lockstep</span></a></code>, but <code class="lang-d"><a href="../../std/range/lockstep.html"><span class="pln">lockstep</span></a></code> doesn't
    bundle its elements and uses the <code class="lang-d"><span class="pln">opApply</span></code> protocol.
-   <code class="lang-d"><a href="../../std/range/lockstep.html"><span class="pln"><a href="../../std/range/lockstep.html"><span class="pln">lockstep</span></a></span></a></code> allows reference access to the elements in
+   <code class="lang-d"><a href="../../std/range/lockstep.html"><span class="pln">lockstep</span></a></code> allows reference access to the elements in
    <code class="lang-d"><span class="kwd">foreach</span></code> iterations.
 </p>
 </section>
@@ -3100,6 +3115,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/zip.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(rs, s)</span>
 							</td>
 							<td>Builds an object. Usually this is invoked indirectly by using the
    <code class="lang-d"><a href="../../std/range/zip.html"><span class="pln">zip</span></a></code> function.
@@ -3168,6 +3184,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/zip.move_at.html" class="public">
 									<code>moveAt</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
 							<td>Destructively reads the <code class="lang-d"><a href="../../std/range/zip.move_at.html#n"><span class="pln">n</span></a></code>th element in the composite
    range. Defined if all ranges offer random access.
@@ -3178,6 +3195,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/zip.move_back.html" class="public">
 									<code>moveBack</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Moves out the back.
 </td>
@@ -3187,6 +3205,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/zip.move_front.html" class="public">
 									<code>moveFront</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Moves out the front.
 </td>
@@ -3196,8 +3215,9 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/zip.op_index.html" class="public">
 									<code>opIndex</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
-							<td>Returns the <code class="lang-d"><a href="../../std/range/zip.op_index.html#n"><span class="pln"><a href="../../std/range/zip.op_index.html#n"><span class="pln">n</span></a></span></a></code>th element in the composite range. Defined if all
+							<td>Returns the <code class="lang-d"><a href="../../std/range/zip.op_index.html#n"><span class="pln">n</span></a></code>th element in the composite range. Defined if all
    ranges offer random access.
 </td>
 						</tr>
@@ -3206,6 +3226,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/zip.op_index_assign.html" class="public">
 									<code>opIndexAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(v, n)</span>
 							</td>
 							<td>Assigns to the <code class="lang-d"><a href="../../std/range/zip.op_index_assign.html#n"><span class="pln">n</span></a></code>th element in the composite range. Defined if
    all ranges offer random access.
@@ -3216,6 +3237,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/zip.op_slice.html" class="public">
 									<code>opSlice</code>
 								</a>
+								<span class="tableEntryAnnotation">(from, to)</span>
 							</td>
 							<td>Returns a slice of the range. Defined only if all range define
    slicing.
@@ -3226,6 +3248,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/zip.pop_back.html" class="public">
 									<code>popBack</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Calls <code class="lang-d"><span class="pln">popBack</span></code> for all controlled ranges.
 </td>
@@ -3235,6 +3258,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/range/zip.pop_front.html" class="public">
 									<code>popFront</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Advances to the next element in all controlled ranges.
 </td>
@@ -3254,35 +3278,35 @@ $('#symbolSearchPane').show();</script>
 								</a>
 							</td>
 							<td>Returns the length of this range. Defined only if all ranges define
-   <code class="lang-d"><span class="pln"><a href="../../std/range/zip.length.html"><span class="pln">length</span></a></span></code>.
+   <code class="lang-d"><a href="../../std/range/zip.length.html"><span class="pln">length</span></a></code>.
 </td>
 						</tr>
 					</table>
 				</section>
 				<section><h3>Parameters</h3>
 <table><col class="caption"><tr><th>Name</th><th>Description</th></tr>
-<tr><td id="sp">sp</td><td> controls what <code class="lang-d"><span class="pln"><a href="../../std/range/zip.html"><span class="pln">zip</span></a></span></code> will do if the ranges are different lengths</td></tr>
+<tr><td id="sp">sp</td><td> controls what <code class="lang-d"><a href="../../std/range/zip.html"><span class="pln">zip</span></a></code> will do if the ranges are different lengths</td></tr>
 <tr><td id="ranges">ranges</td><td> the ranges to zip together</td></tr>
 </table>
 </section>
 <section><h3>Returns</h3>
-<p>At minimum, an input range. <code class="lang-d"><a href="../../std/range/zip.html"><span class="typ"><span class="typ">Zip</span></span></a></code> offers the lowest range facilities
+<p>At minimum, an input range. <code class="lang-d"><span class="typ">Zip</span></code> offers the lowest range facilities
         of all components, e.g. it offers random access iff all ranges offer
         random access, and also offers mutation and swapping if all ranges offer
-        it. Due to this, <code class="lang-d"><a href="../../std/range/zip.html"><span class="typ"><span class="typ">Zip</span></span></a></code> is extremely powerful because it allows manipulating
+        it. Due to this, <code class="lang-d"><span class="typ">Zip</span></code> is extremely powerful because it allows manipulating
         several ranges in lockstep.
 </p>
 </section>
 <section><h3>Throws</h3>
 <p>An <code class="lang-d"><span class="typ">Exception</span></code> if all of the ranges are not the same length and
-        <code class="lang-d"><a href="../../std/range/zip.html#sp"><span class="pln">sp</span></a></code> is set to <code class="lang-d"><a href="../../std/range/stopping_policy.html#requireSameLength"><span class="typ"><a href="../../std/range/stopping_policy.html"><span class="typ">StoppingPolicy</span></a><wbr/></span><span class="pun">.</span><span class="pln">requireSameLength</span></a></code>.
+        <code class="lang-d"><span class="pln">sp</span></code> is set to <code class="lang-d"><a href="../../std/range/stopping_policy.html#requireSameLength"><span class="typ">StoppingPolicy<wbr/></span><span class="pun">.</span><span class="pln">requireSameLength</span></a></code>.
 </p>
 </section>
 <section><h3>Limitations</h3>
 <p>The <code class="lang-d"><span class="kwd">@nogc</span></code> and <code class="lang-d"><span class="kwd">nothrow</span></code> attributes cannot be inferred for
-    the <code class="lang-d"><a href="../../std/range/zip.html"><span class="typ"><span class="typ">Zip</span></span></a></code> struct because <code class="lang-d"><a href="../../std/range/stopping_policy.html"><span class="typ">StoppingPolicy</span></a></code> can vary at runtime. This
-    limitation is not shared by the anonymous range returned by the <code class="lang-d"><span class="pln"><a href="../../std/range/zip.html"><span class="pln">zip</span></a></span></code>
-    function when not given an explicit <code class="lang-d"><a href="../../std/range/stopping_policy.html"><span class="typ"><a href="../../std/range/stopping_policy.html"><span class="typ">StoppingPolicy</span></a></span></a></code> as an argument.
+    the <code class="lang-d"><span class="typ">Zip</span></code> struct because <code class="lang-d"><a href="../../std/range/stopping_policy.html"><span class="typ">StoppingPolicy</span></a></code> can vary at runtime. This
+    limitation is not shared by the anonymous range returned by the <code class="lang-d"><a href="../../std/range/zip.html"><span class="pln">zip</span></a></code>
+    function when not given an explicit <code class="lang-d"><a href="../../std/range/stopping_policy.html"><span class="typ">StoppingPolicy</span></a></code> as an argument.
 </p>
 </section>
 <section><h3>Example</h3>
@@ -3324,7 +3348,7 @@ $('#symbolSearchPane').show();</script>
 </span></code></pre>
 </section>
 <section><h3>Example</h3>
-<p><code class="lang-d"><span class="pln"><a href="../../std/range/zip.html"><span class="pln">zip</span></a></span></code> is powerful - the following code sorts two arrays in parallel:<span class="dlang_runnable"></span>
+<p><code class="lang-d"><a href="../../std/range/zip.html"><span class="pln">zip</span></a></code> is powerful - the following code sorts two arrays in parallel:<span class="dlang_runnable"></span>
 </p>
 <pre class="code"><code class="lang-d"><span class="kwd">import <a href="../../std/algorithm/sorting.html"></span><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">algorithm<wbr/></span><span class="pun">.</span><span class="pln">sorting</span></a><span class="pln"> </span><span class="pun">: </span><span class="pln">sort</span><span class="pun">;
 

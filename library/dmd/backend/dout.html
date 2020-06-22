@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2947,110 +2962,143 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="alignOffset" class="public" href="../../dmd/backend/dout/align_offset.html">alignOffset</a><span class="decoration">(seg, datasize)</span>
+									<a id="alignOffset" class="public" href="../../dmd/backend/dout/align_offset.html">alignOffset</a><span class="tableEntryAnnotation">(seg, datasize)</span>
 								</code>
 							</td>
 							<td>Align segment offset.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dt_writeToObj" class="public" href="../../dmd/backend/dout/dt_write_to_obj.html">dt_writeToObj</a><span class="decoration">(objmod, dt, seg, offset)</span>
+									<a id="dt_writeToObj" class="public" href="../../dmd/backend/dout/dt_write_to_obj.html">dt_writeToObj</a><span class="tableEntryAnnotation">(objmod, dt, seg, offset)</span>
 								</code>
 							</td>
 							<td>Write dt to Object file.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="out_readonly" class="public" href="../../dmd/backend/dout/out_readonly.html">out_readonly</a><span class="decoration">(s)</span>
+									<a id="out_readonly" class="public" href="../../dmd/backend/dout/out_readonly.html">out_readonly</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Mark a Symbol as going into a read-only segment.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="out_readonly_comdat" class="public" href="../../dmd/backend/dout/out_readonly_comdat.html">out_readonly_comdat</a><span class="decoration">(s, p, len, nzeros)</span>
+									<a id="out_readonly_comdat" class="public" href="../../dmd/backend/dout/out_readonly_comdat.html">out_readonly_comdat</a><span class="tableEntryAnnotation">(s, p, len, nzeros)</span>
 								</code>
 							</td>
 							<td>Output Symbol as a readonly comdat.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="out_regcand" class="public" href="../../dmd/backend/dout/out_regcand.html">out_regcand</a><span class="decoration">(psymtab)</span>
+									<a id="out_regcand" class="public" href="../../dmd/backend/dout/out_regcand.html">out_regcand</a><span class="tableEntryAnnotation">(psymtab)</span>
 								</code>
 							</td>
 							<td>Determine register candidates.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="out_string_literal" class="public" href="../../dmd/backend/dout/out_string_literal.html">out_string_literal</a><span class="decoration">(str, len, sz)</span>
+									<a id="out_string_literal" class="public" href="../../dmd/backend/dout/out_string_literal.html">out_string_literal</a><span class="tableEntryAnnotation">(str, len, sz)</span>
 								</code>
 							</td>
 							<td>Write out a readonly string literal in an implementation-defined
  manner.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="outcommon" class="public" href="../../dmd/backend/dout/outcommon.html">outcommon</a><span class="decoration">(s, n)</span>
+									<a id="outcommon" class="public" href="../../dmd/backend/dout/outcommon.html">outcommon</a><span class="tableEntryAnnotation">(s, n)</span>
 								</code>
 							</td>
 							<td>Output n bytes of a common block, n &gt; 0.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="outdata" class="public" href="../../dmd/backend/dout/outdata.html">outdata</a><span class="decoration">(s)</span>
+									<a id="outdata" class="public" href="../../dmd/backend/dout/outdata.html">outdata</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Write out statically allocated data.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="outelem" class="public" href="../../dmd/backend/dout/outelem.html">outelem</a><span class="decoration">(e, addressOfParam)</span>
+									<a id="outelem" class="public" href="../../dmd/backend/dout/outelem.html">outelem</a><span class="tableEntryAnnotation">(e, addressOfParam)</span>
 								</code>
 							</td>
 							<td>Walk expression tree, converting it from a PARSER tree to
  a code generator tree.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="outthunk" class="public" href="../../dmd/backend/dout/outthunk.html">outthunk</a><span class="decoration">(sthunk, sfunc, p, thisty, d, i, d2)</span>
+									<a id="outthunk" class="public" href="../../dmd/backend/dout/outthunk.html">outthunk</a><span class="tableEntryAnnotation">(sthunk, sfunc, p, thisty, d, i, d2)</span>
 								</code>
 							</td>
 							<td>Output function thunk.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="writefunc" class="public" href="../../dmd/backend/dout/writefunc.html">writefunc</a><span class="decoration">(sfunc)</span>
+									<a id="writefunc" class="public" href="../../dmd/backend/dout/writefunc.html">writefunc</a><span class="tableEntryAnnotation">(sfunc)</span>
 								</code>
 							</td>
 							<td>Optimize function,
  generate code for it,
  and write it out.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

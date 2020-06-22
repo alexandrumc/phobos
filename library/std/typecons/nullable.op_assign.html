@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/typecons.d#L2913">
+							<a href="https://github.com/dlang/phobos/blob/master/std/typecons.d#L2922">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/typecons.d#L2913">
+							<a href="https://github.com/dlang/phobos/edit/master/std/typecons.d#L2922">
 								Improve this page
 							</a>
 							<div>
@@ -2952,8 +2967,8 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function Nullable.opAssign</h2><p>Assigns <code class="lang-d"><a href="../../std/typecons/nullable.op_assign.html#value"><span class="pln"><a href="../../std/typecons/nullable.op_assign.html#value"><span class="pln">value</span></a></span></a></code> to the internally-held state. If the assignment
-succeeds, <code class="lang-d"><span class="kwd">this</span></code> becomes non-null.
+				</nav><h2 id="0">Function Nullable.opAssign</h2><p>Assigns <code class="lang-d"><a href="../../std/typecons/nullable.op_assign.html#value"><span class="pln">value</span></a></code> to the internally-held state. If the assignment
+ succeeds, <code class="lang-d"><span class="kwd">this</span></code> becomes non-null.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2976,12 +2991,12 @@ succeeds, <code class="lang-d"><span class="kwd">this</span></code> becomes non-
 </section>
 <section><h3>Example</h3>
 <p>If this <code class="lang-d"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a></code> wraps a type that already has a null value
-    (such as a pointer), then assigning the null value to this
-    <code class="lang-d"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a></code> is no different than assigning any other value of
-    type <code class="lang-d"><span class="pln">T</span></code>, and the resulting code will look very strange. It
-    is strongly recommended that this be avoided by instead using
-    the version of <code class="lang-d"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a></code> that takes an additional <code class="lang-d"><span class="pln">nullValue</span></code>
-    template argument.<span class="dlang_runnable"></span>
+ (such as a pointer), then assigning the null value to this
+ <code class="lang-d"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a></code> is no different than assigning any other value of
+ type <code class="lang-d"><span class="pln">T</span></code>, and the resulting code will look very strange. It
+ is strongly recommended that this be avoided by instead using
+ the version of <code class="lang-d"><a href="../../std/typecons/nullable.html"><span class="typ">Nullable</span></a></code> that takes an additional <code class="lang-d"><span class="pln">nullValue</span></code>
+ template argument.<span class="dlang_runnable"></span>
 </p>
 <pre class="code"><code class="lang-d"><span class="com">//Passes
 <a href="../../std/typecons/nullable.html"></span><span class="typ">Nullable</span></a><span class="pun">!(</span><span class="typ">int</span><span class="pun">*) </span><span class="pln">npi</span><span class="pun">;
@@ -2990,9 +3005,10 @@ succeeds, <code class="lang-d"><span class="kwd">this</span></code> becomes non-
 </span><span class="com">//Passes?!
 </span><span class="pln">npi </span><span class="pun">= </span><span class="kwd">null</span><span class="pun">;
 </span><span class="kwd">assert</span><span class="pun">(!</span><span class="pln">npi<wbr/></span><span class="pun">.</span><span class="pln">isNull</span><span class="pun">);
+
 </span></code></pre>
 </section>
-<h2 id="1">Function Nullable.opAssign</h2><p>Assigns <code class="lang-d"><a href="../../std/typecons/nullable.op_assign.html#value"><span class="pln"><a href="../../std/typecons/nullable.op_assign.html#value"><span class="pln">value</span></a></span></a></code> to the internally-held state. If the assignment
+<h2 id="1">Function Nullable.opAssign</h2><p>Assigns <code class="lang-d"><a href="../../std/typecons/nullable.op_assign.html#value"><span class="pln">value</span></a></code> to the internally-held state. If the assignment
 succeeds, <code class="lang-d"><span class="kwd">this</span></code> becomes non-null. No null checks are made. Note
 that the assignment may leave <code class="lang-d"><span class="kwd">this</span></code> in the null state.
 </p>

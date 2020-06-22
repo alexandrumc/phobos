@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,7 +2952,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Struct <code><a href="../../../../../std/experimental/allocator/building_blocks/null_allocator.html">std.experimental.allocator.building_blocks.null_allocator</a>.NullAllocator</code></h1><p><code class="lang-d"><span class="typ"><span class="typ">NullAllocator</span></span></code> is an emphatically empty implementation of the allocator
+				</div><h1>Struct <code><a href="../../../../../std/experimental/allocator/building_blocks/null_allocator.html">std.experimental.allocator.building_blocks.null_allocator</a>.NullAllocator</code></h1><p><code class="lang-d"><span class="typ">NullAllocator</span></code> is an emphatically empty implementation of the allocator
 interface. Although it has no direct use, it is useful as a "terminator" in
 composite allocators.
 </p>
@@ -2976,6 +2991,7 @@ composite allocators.
 								<a href="../../../../../std/experimental/allocator/building_blocks/null_allocator/null_allocator.aligned_allocate.html" class="public">
 									<code>alignedAllocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(_param_0, _param_1)</span>
 							</td>
 							<td>Always returns <code class="lang-d"><span class="kwd">null</span></code>.
 </td>
@@ -2985,6 +3001,7 @@ composite allocators.
 								<a href="../../../../../std/experimental/allocator/building_blocks/null_allocator/null_allocator.aligned_reallocate.html" class="public">
 									<code>alignedReallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, _param_1, _param_2)</span>
 							</td>
 							<td>These methods return <code class="lang-d"><span class="kwd">false</span></code>.
 </td>
@@ -2994,6 +3011,7 @@ composite allocators.
 								<a href="../../../../../std/experimental/allocator/building_blocks/null_allocator/null_allocator.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(_param_0)</span>
 							</td>
 							<td>Always returns <code class="lang-d"><span class="kwd">null</span></code>.
 </td>
@@ -3003,6 +3021,7 @@ composite allocators.
 								<a href="../../../../../std/experimental/allocator/building_blocks/null_allocator/null_allocator.allocate_all.html" class="public">
 									<code>allocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Always returns <code class="lang-d"><span class="kwd">null</span></code>.
 </td>
@@ -3012,6 +3031,7 @@ composite allocators.
 								<a href="../../../../../std/experimental/allocator/building_blocks/null_allocator/null_allocator.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>No-op.
 </td>
@@ -3021,6 +3041,7 @@ composite allocators.
 								<a href="../../../../../std/experimental/allocator/building_blocks/null_allocator/null_allocator.deallocate_all.html" class="public">
 									<code>deallocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>No-op.
 </td>
@@ -3030,6 +3051,7 @@ composite allocators.
 								<a href="../../../../../std/experimental/allocator/building_blocks/null_allocator/null_allocator.empty.html" class="public">
 									<code>empty</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">yes</span></code>.
 </td>
@@ -3039,6 +3061,7 @@ composite allocators.
 								<a href="../../../../../std/experimental/allocator/building_blocks/null_allocator/null_allocator.expand.html" class="public">
 									<code>expand</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, s)</span>
 							</td>
 							<td>These methods return <code class="lang-d"><span class="kwd">false</span></code>.
 </td>
@@ -3048,6 +3071,7 @@ composite allocators.
 								<a href="../../../../../std/experimental/allocator/building_blocks/null_allocator/null_allocator.owns.html" class="public">
 									<code>owns</code>
 								</a>
+								<span class="tableEntryAnnotation">(_param_0)</span>
 							</td>
 							<td>Returns <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">no</span></code>.
 </td>
@@ -3057,6 +3081,7 @@ composite allocators.
 								<a href="../../../../../std/experimental/allocator/building_blocks/null_allocator/null_allocator.reallocate.html" class="public">
 									<code>reallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, _param_1)</span>
 							</td>
 							<td>These methods return <code class="lang-d"><span class="kwd">false</span></code>.
 </td>
@@ -3066,6 +3091,7 @@ composite allocators.
 								<a href="../../../../../std/experimental/allocator/building_blocks/null_allocator/null_allocator.resolve_internal_pointer.html" class="public">
 									<code>resolveInternalPointer</code>
 								</a>
+								<span class="tableEntryAnnotation">(_param_0, _param_1)</span>
 							</td>
 							<td>Returns <code class="lang-d"><span class="typ">Ternary<wbr/></span><span class="pun">.</span><span class="pln">no</span></code>.
 </td>

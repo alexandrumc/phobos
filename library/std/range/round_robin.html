@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2940,14 +2955,14 @@ $('#symbolSearchPane').show();</script>
 				</div><h1>Function <code><a href="../../std/range.html">std.range</a>.roundRobin</code></h1><p><code class="lang-d"><span class="pln">roundRobin</span><span class="pun">(</span><span class="pln">r1</span><span class="pun">, </span><span class="pln">r2</span><span class="pun">, </span><span class="pln">r3</span><span class="pun">)</span></code> yields <code class="lang-d"><span class="pln">r1<wbr/></span><span class="pun">.</span><span class="pln">front</span></code>, then <code class="lang-d"><span class="pln">r2<wbr/></span><span class="pun">.</span><span class="pln">front</span></code>,
 then <code class="lang-d"><span class="pln">r3<wbr/></span><span class="pun">.</span><span class="pln">front</span></code>, after which it pops off one element from each and
 continues again from <code class="lang-d"><span class="pln">r1</span></code>. For example, if two ranges are involved,
-it alternately yields elements off the two ranges. <code class="lang-d"><span class="pln"><span class="pln">roundRobin</span></span></code>
+it alternately yields elements off the two ranges. <code class="lang-d"><span class="pln">roundRobin</span></code>
 stops after it has consumed all ranges (skipping over the ones that
 finish early).
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">roundRobin</span>(Rs...)
+				<span class="kwd">auto</span> <span class="pln">roundRobin</span>(Rs...)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">Rs</span> <span class="pln">rs</span>

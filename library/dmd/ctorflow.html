@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2954,25 +2969,31 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="mergeCallSuper" class="public" href="../dmd/ctorflow/merge_call_super.html">mergeCallSuper</a><span class="decoration">(a, b)</span>
+									<a id="mergeCallSuper" class="public" href="../dmd/ctorflow/merge_call_super.html">mergeCallSuper</a><span class="tableEntryAnnotation">(a, b)</span>
 								</code>
 							</td>
 							<td>Merge <code class="lang-d"><a href="../dmd/ctorflow/merge_call_super.html#b"><span class="pln">b</span></a></code> flow analysis results into <code class="lang-d"><a href="../dmd/ctorflow/merge_call_super.html#a"><span class="pln">a</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="mergeFieldInit" class="public" href="../dmd/ctorflow/merge_field_init.html">mergeFieldInit</a><span class="decoration">(a, b)</span>
+									<a id="mergeFieldInit" class="public" href="../dmd/ctorflow/merge_field_init.html">mergeFieldInit</a><span class="tableEntryAnnotation">(a, b)</span>
 								</code>
 							</td>
 							<td>Merge <code class="lang-d"><a href="../dmd/ctorflow/merge_field_init.html#b"><span class="pln">b</span></a></code> flow analysis results into <code class="lang-d"><a href="../dmd/ctorflow/merge_field_init.html#a"><span class="pln">a</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -2981,7 +3002,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -2991,6 +3012,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Primitive flow analysis for constructors
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3000,6 +3023,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Individual field in the Ctor with information about its callees and location.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

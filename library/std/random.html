@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -3076,32 +3091,38 @@ integers and real numbers have been implemented.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="choice" class="public" href="../std/random/choice.html">choice</a><span class="decoration">(range, urng)</span>
+									<a id="choice" class="public" href="../std/random/choice.html">choice</a><span class="tableEntryAnnotation">(range, urng)</span>
 								</code>
 							</td>
 							<td>Returns a random, uniformly chosen, element <code class="lang-d"><span class="pln">e</span></code> from the supplied
 <code class="lang-d"><span class="typ">Range </span><span class="pln">range</span></code>. If no random number generator is passed, the default
 <code class="lang-d"><a href="../std/random/rnd_gen.html"><span class="pln">rndGen</span></a></code> is used.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dice" class="public" href="../std/random/dice.html">dice</a><span class="decoration">()</span>
+									<a id="dice" class="public" href="../std/random/dice.html">dice</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Rolls a dice with relative probabilities stored in <code class="lang-d"><a href="../std/random/dice.html#proportions"><span class="pln">proportions</span></a></code>. Returns the index in <code class="lang-d"><a href="../std/random/dice.html#proportions"><span class="pln">proportions</span></a></code> that was chosen.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="partialShuffle" class="public" href="../std/random/partial_shuffle.html">partialShuffle</a><span class="decoration">(r, n, gen)</span>
+									<a id="partialShuffle" class="public" href="../std/random/partial_shuffle.html">partialShuffle</a><span class="tableEntryAnnotation">(r, n, gen)</span>
 								</code>
 							</td>
 							<td>Partially shuffles the elements of <code class="lang-d"><a href="../std/random/partial_shuffle.html#r"><span class="pln">r</span></a></code> such that upon returning <code class="lang-d"><a href="../std/random/partial_shuffle.html#r"><span class="pln">r</span></a><span class="pun">[</span><span class="lit">0 </span><span class="pun">.. <a href="../std/random/partial_shuffle.html#n"></span><span class="pln">n</span></a><span class="pun">]</span></code>
@@ -3111,22 +3132,28 @@ order, but will not be random in the sense that their order after
 <code class="lang-d"><span class="pln">partialShuffle</span></code> returns will not be independent of their order before
 <code class="lang-d"><span class="pln">partialShuffle</span></code> was called.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="randomCover" class="public" href="../std/random/random_cover.html">randomCover</a><span class="decoration">(r, rng)</span>
+									<a id="randomCover" class="public" href="../std/random/random_cover.html">randomCover</a><span class="tableEntryAnnotation">(r, rng)</span>
 								</code>
 							</td>
 							<td>Covers a given range <code class="lang-d"><a href="../std/random/random_cover.html#r"><span class="pln">r</span></a></code> in a random manner, i.e. goes through each
 element of <code class="lang-d"><a href="../std/random/random_cover.html#r"><span class="pln">r</span></a></code> once and only once, just in a random order. <code class="lang-d"><a href="../std/random/random_cover.html#r"><span class="pln">r</span></a></code>
 must be a random-access range with length.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="randomSample" class="public" href="../std/random/random_sample.html">randomSample</a><span class="decoration">(r, n, total)</span>
+									<a id="randomSample" class="public" href="../std/random/random_sample.html">randomSample</a><span class="tableEntryAnnotation">(r, n, total)</span>
 								</code>
 							</td>
 							<td>Selects a random subsample out of <code class="lang-d"><a href="../std/random/random_sample.html#r"><span class="pln">r</span></a></code>, containing exactly <code class="lang-d"><a href="../std/random/random_sample.html#n"><span class="pln">n</span></a></code>
@@ -3134,33 +3161,42 @@ elements. The order of elements is the same as in the original
 range. The total length of <code class="lang-d"><a href="../std/random/random_sample.html#r"><span class="pln">r</span></a></code> must be known. If <code class="lang-d"><a href="../std/random/random_sample.html#total"><span class="pln">total</span></a></code> is
 passed in, the total number of sample is considered to be <code class="lang-d"><a href="../std/random/random_sample.html#total"><span class="pln">total</span></a></code>. Otherwise, <code class="lang-d"><a href="../std/random/random_sample.html"><span class="typ">RandomSample</span></a></code> uses <code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="randomShuffle" class="public" href="../std/random/random_shuffle.html">randomShuffle</a><span class="decoration">(r, gen)</span>
+									<a id="randomShuffle" class="public" href="../std/random/random_shuffle.html">randomShuffle</a><span class="tableEntryAnnotation">(r, gen)</span>
 								</code>
 							</td>
 							<td>Shuffles elements of <code class="lang-d"><a href="../std/random/random_shuffle.html#r"><span class="pln">r</span></a></code> using <code class="lang-d"><a href="../std/random/random_shuffle.html#gen"><span class="pln">gen</span></a></code> as a shuffler. <code class="lang-d"><a href="../std/random/random_shuffle.html#r"><span class="pln">r</span></a></code> must be
 a random-access range with length.  If no RNG is specified, <code class="lang-d"><a href="../std/random/rnd_gen.html"><span class="pln">rndGen</span></a></code>
 will be used.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rndGen" class="public property" href="../std/random/rnd_gen.html">rndGen</a><span class="decoration">()</span>
+									<a id="rndGen" class="public property" href="../std/random/rnd_gen.html">rndGen</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Global random number generator used by various functions in this
 module whenever no generator is specified. It is allocated per-thread
 and initialized to an unpredictable value for each thread.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="uniform" class="public" href="../std/random/uniform.html">uniform</a><span class="decoration">(a, b)</span>
+									<a id="uniform" class="public" href="../std/random/uniform.html">uniform</a><span class="tableEntryAnnotation">(a, b)</span>
 								</code>
 							</td>
 							<td>Generates a number between <code class="lang-d"><a href="../std/random/uniform.html#a"><span class="pln">a</span></a></code> and <code class="lang-d"><a href="../std/random/uniform.html#b"><span class="pln">b</span></a></code>. The <code class="lang-d"><span class="pln">boundaries</span></code>
@@ -3169,22 +3205,28 @@ either side). Valid values for <code class="lang-d"><span class="pln">boundaries
 is closed to the left and open to the right. The version that does not
 take <code class="lang-d"><a href="../std/random/uniform.html#urng"><span class="pln">urng</span></a></code> uses the default generator <code class="lang-d"><a href="../std/random/rnd_gen.html"><span class="pln">rndGen</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="uniform" class="public" href="../std/random/uniform.html">uniform</a><span class="decoration">(urng)</span>
+									<a id="uniform" class="public" href="../std/random/uniform.html">uniform</a><span class="tableEntryAnnotation">(urng)</span>
 								</code>
 							</td>
 							<td>Generates a uniformly-distributed number in the range <code class="lang-d"><span class="pun">[</span><span class="pln">T<wbr/></span><span class="pun">.</span><span class="pln">min</span><span class="pun">,
 </span><span class="pln">T<wbr/></span><span class="pun">.</span><span class="pln">max</span><span class="pun">]</span></code> for any integral or character type <code class="lang-d"><span class="pln">T</span></code>. If no random
 number generator is passed, uses the default <code class="lang-d"><a href="../std/random/rnd_gen.html"><span class="pln">rndGen</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="uniform01" class="public" href="../std/random/uniform01.html">uniform01</a><span class="decoration">()</span>
+									<a id="uniform01" class="public" href="../std/random/uniform01.html">uniform01</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Generates a uniformly-distributed floating point number of type
@@ -3192,28 +3234,37 @@ number generator is passed, uses the default <code class="lang-d"><a href="../st
  specified, the default RNG <code class="lang-d"><a href="../std/random/rnd_gen.html"><span class="pln">rndGen</span></a></code> will be used as the source
  of randomness.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="uniformDistribution" class="public" href="../std/random/uniform_distribution.html">uniformDistribution</a><span class="decoration">(n, useThis)</span>
+									<a id="uniformDistribution" class="public" href="../std/random/uniform_distribution.html">uniformDistribution</a><span class="tableEntryAnnotation">(n, useThis)</span>
 								</code>
 							</td>
 							<td>Generates a uniform probability distribution of size <code class="lang-d"><a href="../std/random/uniform_distribution.html#n"><span class="pln">n</span></a></code>, i.e., an
 array of size <code class="lang-d"><a href="../std/random/uniform_distribution.html#n"><span class="pln">n</span></a></code> of positive numbers of type <code class="lang-d"><span class="pln">F</span></code> that sum to
 <code class="lang-d"><span class="lit">1</span></code>. If <code class="lang-d"><a href="../std/random/uniform_distribution.html#useThis"><span class="pln">useThis</span></a></code> is provided, it is used as storage.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="unpredictableSeed" class="public property" href="../std/random/unpredictable_seed.html">unpredictableSeed</a><span class="decoration">()</span>
+									<a id="unpredictableSeed" class="public property" href="../std/random/unpredictable_seed.html">unpredictableSeed</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>A "good" seed for initializing random number engines. Initializing
 with <span class="d_param">unpredictableSeed</span> makes engines generate different
 random number sequences every run.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3222,7 +3273,7 @@ random number sequences every run.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3232,6 +3283,8 @@ random number sequences every run.
 							</td>
 							<td>Linear Congruential generator.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3241,6 +3294,8 @@ random number sequences every run.
 							</td>
 							<td>The <a href="https://en.wikipedia.org/wiki/Mersenne_Twister">Mersenne Twister</a> generator.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3248,10 +3303,12 @@ random number sequences every run.
 									<a id="RandomCover" class="public" href="../std/random/random_cover.html">RandomCover</a>
 								</code>
 							</td>
-							<td>Covers a given range <code class="lang-d"><a href="../std/random/random_cover.html#r"><span class="pln">r</span></a></code> in a random manner, i.e. goes through each
-element of <code class="lang-d"><a href="../std/random/random_cover.html#r"><span class="pln">r</span></a></code> once and only once, just in a random order. <code class="lang-d"><a href="../std/random/random_cover.html#r"><span class="pln">r</span></a></code>
+							<td>Covers a given range <code class="lang-d"><span class="pln">r</span></code> in a random manner, i.e. goes through each
+element of <code class="lang-d"><span class="pln">r</span></code> once and only once, just in a random order. <code class="lang-d"><span class="pln">r</span></code>
 must be a random-access range with length.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3259,11 +3316,13 @@ must be a random-access range with length.
 									<a id="RandomSample" class="public" href="../std/random/random_sample.html">RandomSample</a>
 								</code>
 							</td>
-							<td>Selects a random subsample out of <code class="lang-d"><a href="../std/random/random_sample.html#r"><span class="pln">r</span></a></code>, containing exactly <code class="lang-d"><a href="../std/random/random_sample.html#n"><span class="pln">n</span></a></code>
+							<td>Selects a random subsample out of <code class="lang-d"><span class="pln">r</span></code>, containing exactly <code class="lang-d"><span class="pln">n</span></code>
 elements. The order of elements is the same as in the original
-range. The total length of <code class="lang-d"><a href="../std/random/random_sample.html#r"><span class="pln">r</span></a></code> must be known. If <code class="lang-d"><a href="../std/random/random_sample.html#total"><span class="pln">total</span></a></code> is
-passed in, the total number of sample is considered to be <code class="lang-d"><span class="pln">total</span></code>. Otherwise, <code class="lang-d"><a href="../std/random/random_sample.html"><span class="typ"><span class="typ">RandomSample</span></span></a></code> uses <code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln"><a href="../std/random/random_sample.length.html"><span class="pln">length</span></a></span></code>.
+range. The total length of <code class="lang-d"><span class="pln">r</span></code> must be known. If <code class="lang-d"><span class="pln">total</span></code> is
+passed in, the total number of sample is considered to be <code class="lang-d"><span class="pln">total</span></code>. Otherwise, <code class="lang-d"><span class="typ">RandomSample</span></code> uses <code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3277,6 +3336,8 @@ Implemented according to <a href="http://www.jstatsoft.org/v08/i14/paper">Xorshi
 uses Sebastino Vigna's optimization of using an index to avoid needing
 to rotate the internal array.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3347,8 +3408,8 @@ using the multiplier 48271. Both generators are rather simplistic.
 								<code class="prettyprint lang-d"><a href="../std/random/linear_congruential_engine.html"><span class="typ">LinearCongruentialEngine</span></a>!(uint,16807,0,2147483647)</code>
 							</td>
 							<td>Define <span class="d_param">LinearCongruentialEngine</span> generators with well-chosen
-parameters. <code class="lang-d"><a href="../std/random/minstd_rand0.html"><span class="typ"><span class="typ">MinstdRand0</span></span></a></code> implements Park and Miller's "minimal
-standard" <a href="http://wikipedia.org/wiki/Park%E2%80%93Miller_random_number_generator">generator</a> that uses 16807 for the multiplier. <code class="lang-d"><span class="typ"><a href="../std/random/minstd_rand.html"><span class="typ">MinstdRand</span></a></span></code>
+parameters. <code class="lang-d"><span class="typ">MinstdRand0</span></code> implements Park and Miller's "minimal
+standard" <a href="http://wikipedia.org/wiki/Park%E2%80%93Miller_random_number_generator">generator</a> that uses 16807 for the multiplier. <code class="lang-d"><a href="../std/random/minstd_rand.html"><span class="typ">MinstdRand</span></a></code>
 implements a variant that has slightly better spectral behavior by
 using the multiplier 48271. Both generators are rather simplistic.
 </td>
@@ -3434,8 +3495,8 @@ random number sequences every run.
 							<td>
 								<code class="prettyprint lang-d"><a href="../std/random/xorshift_engine.html"><span class="typ">XorshiftEngine</span></a>!(uint,128,11,-8,-19)</code>
 							</td>
-							<td>Define <code class="lang-d"><a href="../std/random/xorshift_engine.html"><span class="typ"><a href="../std/random/xorshift_engine.html"><span class="typ">XorshiftEngine</span></a></span></a></code> generators with well-chosen parameters. See each bits examples of "Xorshift RNGs".
- <code class="lang-d"><span class="typ"><a href="../std/random/xorshift.html"><span class="typ">Xorshift</span></a></span></code> is a Xorshift128's alias because 128bits implementation is mostly used.
+							<td>Define <code class="lang-d"><a href="../std/random/xorshift_engine.html"><span class="typ">XorshiftEngine</span></a></code> generators with well-chosen parameters. See each bits examples of "Xorshift RNGs".
+ <code class="lang-d"><a href="../std/random/xorshift.html"><span class="typ">Xorshift</span></a></code> is a Xorshift128's alias because 128bits implementation is mostly used.
 </td>
 						</tr>
 						<tr>
@@ -3447,8 +3508,8 @@ random number sequences every run.
 							<td>
 								<code class="prettyprint lang-d"><a href="../std/random/xorshift_engine.html"><span class="typ">XorshiftEngine</span></a>!(uint,160,2,-1,-4)</code>
 							</td>
-							<td>Define <code class="lang-d"><a href="../std/random/xorshift_engine.html"><span class="typ"><a href="../std/random/xorshift_engine.html"><span class="typ"><a href="../std/random/xorshift_engine.html"><span class="typ">XorshiftEngine</span></a></span></a></span></a></code> generators with well-chosen parameters. See each bits examples of "Xorshift RNGs".
- <code class="lang-d"><span class="typ"><a href="../std/random/xorshift.html"><span class="typ"><a href="../std/random/xorshift.html"><span class="typ">Xorshift</span></a></span></a></span></code> is a Xorshift128's alias because 128bits implementation is mostly used.
+							<td>Define <code class="lang-d"><a href="../std/random/xorshift_engine.html"><span class="typ">XorshiftEngine</span></a></code> generators with well-chosen parameters. See each bits examples of "Xorshift RNGs".
+ <code class="lang-d"><a href="../std/random/xorshift.html"><span class="typ">Xorshift</span></a></code> is a Xorshift128's alias because 128bits implementation is mostly used.
 </td>
 						</tr>
 						<tr>
@@ -3460,8 +3521,8 @@ random number sequences every run.
 							<td>
 								<code class="prettyprint lang-d"><a href="../std/random/xorshift_engine.html"><span class="typ">XorshiftEngine</span></a>!(uint,192,-2,1,4)</code>
 							</td>
-							<td>Define <code class="lang-d"><a href="../std/random/xorshift_engine.html"><span class="typ"><a href="../std/random/xorshift_engine.html"><span class="typ"><a href="../std/random/xorshift_engine.html"><span class="typ"><a href="../std/random/xorshift_engine.html"><span class="typ">XorshiftEngine</span></a></span></a></span></a></span></a></code> generators with well-chosen parameters. See each bits examples of "Xorshift RNGs".
- <code class="lang-d"><span class="typ"><a href="../std/random/xorshift.html"><span class="typ"><a href="../std/random/xorshift.html"><span class="typ"><a href="../std/random/xorshift.html"><span class="typ">Xorshift</span></a></span></a></span></a></span></code> is a Xorshift128's alias because 128bits implementation is mostly used.
+							<td>Define <code class="lang-d"><a href="../std/random/xorshift_engine.html"><span class="typ">XorshiftEngine</span></a></code> generators with well-chosen parameters. See each bits examples of "Xorshift RNGs".
+ <code class="lang-d"><a href="../std/random/xorshift.html"><span class="typ">Xorshift</span></a></code> is a Xorshift128's alias because 128bits implementation is mostly used.
 </td>
 						</tr>
 						<tr>
@@ -3473,8 +3534,8 @@ random number sequences every run.
 							<td>
 								<code class="prettyprint lang-d"><a href="../std/random/xorshift_engine.html"><span class="typ">XorshiftEngine</span></a>!(uint,32,13,-17,15)</code>
 							</td>
-							<td>Define <code class="lang-d"><a href="../std/random/xorshift_engine.html"><span class="typ"><a href="../std/random/xorshift_engine.html"><span class="typ"><a href="../std/random/xorshift_engine.html"><span class="typ"><a href="../std/random/xorshift_engine.html"><span class="typ"><a href="../std/random/xorshift_engine.html"><span class="typ">XorshiftEngine</span></a></span></a></span></a></span></a></span></a></code> generators with well-chosen parameters. See each bits examples of "Xorshift RNGs".
- <code class="lang-d"><span class="typ"><a href="../std/random/xorshift.html"><span class="typ"><a href="../std/random/xorshift.html"><span class="typ"><a href="../std/random/xorshift.html"><span class="typ"><a href="../std/random/xorshift.html"><span class="typ">Xorshift</span></a></span></a></span></a></span></a></span></code> is a Xorshift128's alias because 128bits implementation is mostly used.
+							<td>Define <code class="lang-d"><a href="../std/random/xorshift_engine.html"><span class="typ">XorshiftEngine</span></a></code> generators with well-chosen parameters. See each bits examples of "Xorshift RNGs".
+ <code class="lang-d"><a href="../std/random/xorshift.html"><span class="typ">Xorshift</span></a></code> is a Xorshift128's alias because 128bits implementation is mostly used.
 </td>
 						</tr>
 						<tr>
@@ -3486,8 +3547,8 @@ random number sequences every run.
 							<td>
 								<code class="prettyprint lang-d"><a href="../std/random/xorshift_engine.html"><span class="typ">XorshiftEngine</span></a>!(uint,64,10,-13,-10)</code>
 							</td>
-							<td>Define <code class="lang-d"><a href="../std/random/xorshift_engine.html"><span class="typ"><a href="../std/random/xorshift_engine.html"><span class="typ"><a href="../std/random/xorshift_engine.html"><span class="typ"><a href="../std/random/xorshift_engine.html"><span class="typ"><a href="../std/random/xorshift_engine.html"><span class="typ"><a href="../std/random/xorshift_engine.html"><span class="typ">XorshiftEngine</span></a></span></a></span></a></span></a></span></a></span></a></code> generators with well-chosen parameters. See each bits examples of "Xorshift RNGs".
- <code class="lang-d"><span class="typ"><a href="../std/random/xorshift.html"><span class="typ"><a href="../std/random/xorshift.html"><span class="typ"><a href="../std/random/xorshift.html"><span class="typ"><a href="../std/random/xorshift.html"><span class="typ"><a href="../std/random/xorshift.html"><span class="typ">Xorshift</span></a></span></a></span></a></span></a></span></a></span></code> is a Xorshift128's alias because 128bits implementation is mostly used.
+							<td>Define <code class="lang-d"><a href="../std/random/xorshift_engine.html"><span class="typ">XorshiftEngine</span></a></code> generators with well-chosen parameters. See each bits examples of "Xorshift RNGs".
+ <code class="lang-d"><a href="../std/random/xorshift.html"><span class="typ">Xorshift</span></a></code> is a Xorshift128's alias because 128bits implementation is mostly used.
 </td>
 						</tr>
 						<tr>
@@ -3499,8 +3560,8 @@ random number sequences every run.
 							<td>
 								<code class="prettyprint lang-d"><a href="../std/random/xorshift_engine.html"><span class="typ">XorshiftEngine</span></a>!(uint,96,10,-5,-26)</code>
 							</td>
-							<td>Define <code class="lang-d"><a href="../std/random/xorshift_engine.html"><span class="typ"><a href="../std/random/xorshift_engine.html"><span class="typ"><a href="../std/random/xorshift_engine.html"><span class="typ"><a href="../std/random/xorshift_engine.html"><span class="typ"><a href="../std/random/xorshift_engine.html"><span class="typ"><a href="../std/random/xorshift_engine.html"><span class="typ"><a href="../std/random/xorshift_engine.html"><span class="typ">XorshiftEngine</span></a></span></a></span></a></span></a></span></a></span></a></span></a></code> generators with well-chosen parameters. See each bits examples of "Xorshift RNGs".
- <code class="lang-d"><span class="typ"><a href="../std/random/xorshift.html"><span class="typ"><a href="../std/random/xorshift.html"><span class="typ"><a href="../std/random/xorshift.html"><span class="typ"><a href="../std/random/xorshift.html"><span class="typ"><a href="../std/random/xorshift.html"><span class="typ"><a href="../std/random/xorshift.html"><span class="typ">Xorshift</span></a></span></a></span></a></span></a></span></a></span></a></span></code> is a Xorshift128's alias because 128bits implementation is mostly used.
+							<td>Define <code class="lang-d"><a href="../std/random/xorshift_engine.html"><span class="typ">XorshiftEngine</span></a></code> generators with well-chosen parameters. See each bits examples of "Xorshift RNGs".
+ <code class="lang-d"><a href="../std/random/xorshift.html"><span class="typ">Xorshift</span></a></code> is a Xorshift128's alias because 128bits implementation is mostly used.
 </td>
 						</tr>
 						<tr>

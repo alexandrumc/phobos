@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/typecons.d#L6646">
+							<a href="https://github.com/dlang/phobos/blob/master/std/typecons.d#L6655">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/typecons.d#L6646">
+							<a href="https://github.com/dlang/phobos/edit/master/std/typecons.d#L6655">
 								Improve this page
 							</a>
 							<div>
@@ -2952,10 +2967,10 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function refCounted</h2><p>Initializes a <code class="lang-d"><a href="../std/typecons/ref_counted.html"><span class="typ"><a href="../../std/typecons/ref_counted.html"><span class="typ">RefCounted</span></a></span></a></code> with <code class="lang-d"><a href="../std/typecons/ref_counted.html#val"><span class="pln"><a href="../../std/typecons/ref_counted.html#val"><span class="pln">val</span></a></span></a></code>. The template parameter
- <code class="lang-d"><span class="pln">T</span></code> of <code class="lang-d"><a href="../std/typecons/ref_counted.html"><span class="typ"><a href="../../std/typecons/ref_counted.html"><span class="typ">RefCounted</span></a></span></a></code> is inferred from <code class="lang-d"><a href="../std/typecons/ref_counted.html#val"><span class="pln"><a href="../../std/typecons/ref_counted.html#val"><span class="pln">val</span></a></span></a></code>.
+				</nav><h2 id="0">Function refCounted</h2><p>Initializes a <code class="lang-d"><a href="../../std/typecons/ref_counted.html"><span class="typ">RefCounted</span></a></code> with <code class="lang-d"><a href="../../std/typecons/ref_counted.html#val"><span class="pln">val</span></a></code>. The template parameter
+ <code class="lang-d"><span class="pln">T</span></code> of <code class="lang-d"><a href="../../std/typecons/ref_counted.html"><span class="typ">RefCounted</span></a></code> is inferred from <code class="lang-d"><a href="../../std/typecons/ref_counted.html#val"><span class="pln">val</span></a></code>.
  This function can be used to move non-copyable values to the heap.
- It also disables the <code class="lang-d"><span class="pln">autoInit</span></code> option of <code class="lang-d"><a href="../std/typecons/ref_counted.html"><span class="typ"><a href="../../std/typecons/ref_counted.html"><span class="typ">RefCounted</span></a></span></a></code>.
+ It also disables the <code class="lang-d"><span class="pln">autoInit</span></code> option of <code class="lang-d"><a href="../../std/typecons/ref_counted.html"><span class="typ">RefCounted</span></a></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -3071,6 +3086,7 @@ pointer dereference.
 								<a href="../../std/typecons/ref_counted.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(args)</span>
 							</td>
 							<td>Constructor that initializes the payload.
 </td>
@@ -3089,7 +3105,7 @@ pointer dereference.
 							</td>
 							<td class="typecol"><code class="prettyprint lang-d"><span class="pln">T</span></code></td><td>Returns a reference to the payload. If (autoInit ==
         RefCountedAutoInitialize.yes), calls <code class="lang-d"><span class="pln">        refCountedStore<wbr/></span><span class="pun">.</span><span class="pln">ensureInitialized</span></code>. Otherwise, just issues <code class="lang-d"><span class="pln">        </span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">refCountedStore<wbr/></span><span class="pun">.</span><span class="pln">isInitialized</span><span class="pun">)</span></code>. Used with <code class="lang-d"><span class="kwd">alias
-        </span><span class="pln">refCountedPayload </span><span class="kwd">this</span><span class="pun">;</span></code>, so callers can just use the <code class="lang-d"><a href="../../std/typecons/ref_counted.html"><span class="typ"><a href="../../std/typecons/ref_counted.html"><span class="typ">RefCounted</span></a></span></a></code>
+        </span><span class="pln">refCountedPayload </span><span class="kwd">this</span><span class="pun">;</span></code>, so callers can just use the <code class="lang-d"><a href="../../std/typecons/ref_counted.html"><span class="typ">RefCounted</span></a></code>
         object as a <code class="lang-d"><span class="pln">T</span></code>.
 </td>
 						</tr>
@@ -3113,6 +3129,7 @@ pointer dereference.
 								<a href="../../std/typecons/ref_counted.op_assign.html" class="public">
 									<code>opAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td>Assignment operators
 </td>

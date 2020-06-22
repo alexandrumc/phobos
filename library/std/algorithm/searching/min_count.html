@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,10 +2952,10 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../../std/algorithm/searching.html">std.algorithm.searching</a>.minCount</code></h1><p>Computes the minimum (respectively maximum) of <code class="lang-d"><a href="../../std/algorithm/searching/max_count.html#range"><span class="pln"><a href="../../std/algorithm/searching/min_count.html#range"><span class="pln"><a href="../../../std/algorithm/searching/max_count.html#range"><span class="pln"><a href="../../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></span></a></span></a></span></a></code> along with its number of
-occurrences. Formally, the minimum is a value <code class="lang-d"><span class="pln">x</span></code> in <code class="lang-d"><a href="../../std/algorithm/searching/max_count.html#range"><span class="pln"><a href="../../std/algorithm/searching/min_count.html#range"><span class="pln"><a href="../../../std/algorithm/searching/max_count.html#range"><span class="pln"><a href="../../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></span></a></span></a></span></a></code> such that <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">a</span><span class="pun">, </span><span class="pln">x</span><span class="pun">)</span></code> is <code class="lang-d"><span class="kwd">false</span></code> for all values <code class="lang-d"><span class="pln">a</span></code> in <code class="lang-d"><a href="../../std/algorithm/searching/max_count.html#range"><span class="pln"><a href="../../std/algorithm/searching/min_count.html#range"><span class="pln"><a href="../../../std/algorithm/searching/max_count.html#range"><span class="pln"><a href="../../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></span></a></span></a></span></a></code>. Conversely, the maximum is
-a value <code class="lang-d"><span class="pln">x</span></code> in <code class="lang-d"><a href="../../std/algorithm/searching/max_count.html#range"><span class="pln"><a href="../../std/algorithm/searching/min_count.html#range"><span class="pln"><a href="../../../std/algorithm/searching/max_count.html#range"><span class="pln"><a href="../../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></span></a></span></a></span></a></code> such that <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">x</span><span class="pun">, </span><span class="pln">a</span><span class="pun">)</span></code> is <code class="lang-d"><span class="kwd">false</span></code> for all values <code class="lang-d"><span class="pln">a</span></code>
-in <code class="lang-d"><a href="../../std/algorithm/searching/max_count.html#range"><span class="pln"><a href="../../std/algorithm/searching/min_count.html#range"><span class="pln"><a href="../../../std/algorithm/searching/max_count.html#range"><span class="pln"><a href="../../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></span></a></span></a></span></a></code> (note the swapped arguments to <code class="lang-d"><span class="pln">pred</span></code>).
+				</div><h1>Function <code><a href="../../../std/algorithm/searching.html">std.algorithm.searching</a>.minCount</code></h1><p>Computes the minimum (respectively maximum) of <code class="lang-d"><a href="../../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></code> along with its number of
+occurrences. Formally, the minimum is a value <code class="lang-d"><span class="pln">x</span></code> in <code class="lang-d"><a href="../../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></code> such that <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">a</span><span class="pun">, </span><span class="pln">x</span><span class="pun">)</span></code> is <code class="lang-d"><span class="kwd">false</span></code> for all values <code class="lang-d"><span class="pln">a</span></code> in <code class="lang-d"><a href="../../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></code>. Conversely, the maximum is
+a value <code class="lang-d"><span class="pln">x</span></code> in <code class="lang-d"><a href="../../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></code> such that <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">x</span><span class="pun">, </span><span class="pln">a</span><span class="pun">)</span></code> is <code class="lang-d"><span class="kwd">false</span></code> for all values <code class="lang-d"><span class="pln">a</span></code>
+in <code class="lang-d"><a href="../../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></code> (note the swapped arguments to <code class="lang-d"><span class="pln">pred</span></code>).
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2986,7 +3001,7 @@ for examples on how to cope with NaNs.
 </p>
 </section>
 <section><h2>Throws</h2>
-<p><code class="lang-d"><span class="typ">Exception</span></code> if <code class="lang-d"><span class="pln"><a href="../../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a><wbr/></span><span class="pun">.</span><span class="pln">empty</span></code>.
+<p><code class="lang-d"><span class="typ">Exception</span></code> if <code class="lang-d"><span class="pln">range<wbr/></span><span class="pun">.</span><span class="pln">empty</span></code>.
 </p>
 </section>
 <section><h2>See Also</h2>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2958,21 +2973,24 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="build_overload" class="public" href="../dmd/opover/build_overload.html">build_overload</a><span class="decoration">(loc, sc, ethis, earg, d)</span>
+									<a id="build_overload" class="public" href="../dmd/opover/build_overload.html">build_overload</a><span class="tableEntryAnnotation">(loc, sc, ethis, earg, d)</span>
 								</code>
 							</td>
 							<td>Utility to build a function call out of this reference and argument.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="inferApplyArgTypes" class="public" href="../dmd/opover/infer_apply_arg_types.html">inferApplyArgTypes</a><span class="decoration">(fes, sc, sapply)</span>
+									<a id="inferApplyArgTypes" class="public" href="../dmd/opover/infer_apply_arg_types.html">inferApplyArgTypes</a><span class="tableEntryAnnotation">(fes, sc, sapply)</span>
 								</code>
 							</td>
 							<td>Given array of foreach parameters and an aggregate type,
@@ -2980,54 +2998,72 @@ $('#symbolSearchPane').show();</script>
  if any of the parameter types are missing, attempt to infer
  them from the aggregate type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="inferForeachAggregate" class="public" href="../dmd/opover/infer_foreach_aggregate.html">inferForeachAggregate</a><span class="decoration">(sc, isForeach, feaggr, sapply)</span>
+									<a id="inferForeachAggregate" class="public" href="../dmd/opover/infer_foreach_aggregate.html">inferForeachAggregate</a><span class="tableEntryAnnotation">(sc, isForeach, feaggr, sapply)</span>
 								</code>
 							</td>
 							<td>Figure out what is being foreach'd over by looking at the ForeachAggregate.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isCommutative" class="public" href="../dmd/opover/is_commutative.html">isCommutative</a><span class="decoration">(op)</span>
+									<a id="isCommutative" class="public" href="../dmd/opover/is_commutative.html">isCommutative</a><span class="tableEntryAnnotation">(op)</span>
 								</code>
 							</td>
 							<td>Determine if operands of binary op can be reversed
  to fit operator overload.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="op_overload" class="public" href="../dmd/opover/op_overload.html">op_overload</a><span class="decoration">(e, sc, pop)</span>
+									<a id="op_overload" class="public" href="../dmd/opover/op_overload.html">op_overload</a><span class="tableEntryAnnotation">(e, sc, pop)</span>
 								</code>
 							</td>
 							<td>Operator overload.
  Check for operator overload, if so, replace
  with function call.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="opToArg" class="public" href="../dmd/opover/op_to_arg.html">opToArg</a><span class="decoration">(sc, op)</span>
+									<a id="opToArg" class="public" href="../dmd/opover/op_to_arg.html">opToArg</a><span class="tableEntryAnnotation">(sc, op)</span>
 								</code>
 							</td>
 							<td>Helper function to turn operator into template argument list
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="search_function" class="public" href="../dmd/opover/search_function.html">search_function</a><span class="decoration">(ad, funcid)</span>
+									<a id="search_function" class="public" href="../dmd/opover/search_function.html">search_function</a><span class="tableEntryAnnotation">(ad, funcid)</span>
 								</code>
 							</td>
 							<td>Search for function funcid in aggregate ad.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/algorithm/iteration.d#L4632">
+							<a href="https://github.com/dlang/phobos/blob/master/std/algorithm/iteration.d#L4636">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/algorithm/iteration.d#L4632">
+							<a href="https://github.com/dlang/phobos/edit/master/std/algorithm/iteration.d#L4636">
 								Improve this page
 							</a>
 							<div>
@@ -2958,7 +2973,7 @@ Separator ranges can be any narrow string type or sliceable range type.
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">splitter</span>(alias pred, Range, Separator)
+				<span class="kwd">auto</span> <span class="pln">splitter</span>(alias pred, Range, Separator)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">Range</span> <span class="pln">r</span><span class="pun">,</span>
@@ -2970,7 +2985,7 @@ Separator ranges can be any narrow string type or sliceable range type.
 				<span class="kwd">if</span> <span class="pun">(</span><span class="kwd">is</span><span class="pun">(</span><span class="kwd">typeof</span><span class="pun">(</span><span class="pln">binaryFun</span><span class="pun">!</span><span class="pln">pred</span><span class="pun">(</span><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">front</span><span class="pun">, </span><span class="pln">s</span><span class="pun">)) : </span><span class="typ">bool</span><span class="pun">) &amp;&amp; (</span><span class="pln">hasSlicing</span><span class="pun">!</span><span class="typ">Range </span><span class="pun">&amp;&amp; </span><span class="pln">hasLength</span><span class="pun">!</span><span class="typ">Range </span><span class="pun">|| </span><span class="pln">isNarrowString</span><span class="pun">!</span><span class="typ">Range</span><span class="pun">)</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">splitter</span>(alias pred, Range, Separator)
+				<span class="kwd">auto</span> <span class="pln">splitter</span>(alias pred, Range, Separator)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">Range</span> <span class="pln">r</span><span class="pun">,</span>
@@ -2982,7 +2997,7 @@ Separator ranges can be any narrow string type or sliceable range type.
 				<span class="kwd">if</span> <span class="pun">(</span><span class="kwd">is</span><span class="pun">(</span><span class="kwd">typeof</span><span class="pun">(</span><span class="pln">binaryFun</span><span class="pun">!</span><span class="pln">pred</span><span class="pun">(</span><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">front</span><span class="pun">, </span><span class="pln">s<wbr/></span><span class="pun">.</span><span class="pln">front</span><span class="pun">)) : </span><span class="typ">bool</span><span class="pun">) &amp;&amp; (</span><span class="pln">hasSlicing</span><span class="pun">!</span><span class="typ">Range </span><span class="pun">|| </span><span class="pln">isNarrowString</span><span class="pun">!</span><span class="typ">Range</span><span class="pun">) &amp;&amp; </span><span class="pln">isForwardRange</span><span class="pun">!</span><span class="typ">Separator </span><span class="pun">&amp;&amp; (</span><span class="pln">hasLength</span><span class="pun">!</span><span class="typ">Separator </span><span class="pun">|| </span><span class="pln">isNarrowString</span><span class="pun">!</span><span class="typ">Separator</span><span class="pun">)</span><span class="pun">);</span>
 				<br/>
 				<br/>
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">splitter</span>(alias isTerminator, Range)
+				<span class="kwd">auto</span> <span class="pln">splitter</span>(alias isTerminator, Range)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">Range</span> <span class="pln">r</span>
@@ -3169,13 +3184,13 @@ expression defined separator and
 </span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">str<wbr/></span><span class="pun">.</span><span class="pln">splitter</span><span class="pun">!(</span><span class="pln">isWhite</span><span class="pun">)<wbr/>.</span><span class="pln">equal</span><span class="pun">([</span><span class="str">"Hello"</span><span class="pun">, </span><span class="str">"World!"</span><span class="pun">]));
 </span></code></pre>
 </section>
-<h2 id="1">Function splitter</h2><p>Lazily splits the character-based range <code class="lang-d"><a href="../../std/algorithm/iteration/splitter.html#s"><span class="pln"><a href="../../../std/algorithm/iteration/splitter.html#s"><span class="pln">s</span></a></span></a></code> into words, using whitespace as the
+<h2 id="1">Function splitter</h2><p>Lazily splits the character-based range <code class="lang-d"><a href="../../../std/algorithm/iteration/splitter.html#s"><span class="pln">s</span></a></code> into words, using whitespace as the
 delimiter.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto </span><span class="kwd">auto</span> <span class="pln">splitter</span>(Range)
+				<span class="kwd">auto</span> <span class="pln">splitter</span>(Range)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">Range</span> <span class="pln">s</span>

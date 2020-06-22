@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/typecons.d#L2413">
+							<a href="https://github.com/dlang/phobos/blob/master/std/typecons.d#L2422">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/typecons.d#L2413">
+							<a href="https://github.com/dlang/phobos/edit/master/std/typecons.d#L2422">
 								Improve this page
 							</a>
 							<div>
@@ -2957,9 +2972,9 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function rebindable</h2><p>This function simply returns the <code class="lang-d"><a href="../std/typecons/rebindable.html"><span class="typ"><a href="../../std/typecons/rebindable.html"><span class="typ">Rebindable</span></a></span></a></code> object passed in.  It's useful
+				</nav><h2 id="0">Function rebindable</h2><p>This function simply returns the <code class="lang-d"><a href="../../std/typecons/rebindable.html"><span class="typ">Rebindable</span></a></code> object passed in.  It's useful
 in generic programming cases when a given object may be either a regular
-<code class="lang-d"><span class="kwd">class</span></code> or a <code class="lang-d"><a href="../std/typecons/rebindable.html"><span class="typ"><a href="../../std/typecons/rebindable.html"><span class="typ">Rebindable</span></a></span></a></code>.
+<code class="lang-d"><span class="kwd">class</span></code> or a <code class="lang-d"><a href="../../std/typecons/rebindable.html"><span class="typ">Rebindable</span></a></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -3001,7 +3016,7 @@ in generic programming cases when a given object may be either a regular
 </span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">c2<wbr/></span><span class="pun">.</span><span class="pln">payload</span><span class="pun">); </span><span class="com">// 1
 </span></code></pre>
 </section>
-<h2 id="1">Function rebindable</h2><p>Convenience function for creating a <code class="lang-d"><a href="../std/typecons/rebindable.html"><span class="typ"><a href="../../std/typecons/rebindable.html"><span class="typ">Rebindable</span></a></span></a></code> using automatic type
+<h2 id="1">Function rebindable</h2><p>Convenience function for creating a <code class="lang-d"><a href="../../std/typecons/rebindable.html"><span class="typ">Rebindable</span></a></code> using automatic type
 inference.
 </p>
 				<div class="prototype">
@@ -3052,9 +3067,9 @@ inference.
 </span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">c3<wbr/></span><span class="pun">.</span><span class="pln">payload</span><span class="pun">); </span><span class="com">// 2
 </span></code></pre>
 </section>
-<h2 id="2">Alias Rebindable</h2><p><code class="lang-d"><span class="typ"><span class="typ">Rebindable</span></span><span class="pun">!(</span><span class="pln">T</span><span class="pun">)</span></code> is a simple, efficient wrapper that behaves just
+<h2 id="2">Alias Rebindable</h2><p><code class="lang-d"><span class="typ">Rebindable</span><span class="pun">!(</span><span class="pln">T</span><span class="pun">)</span></code> is a simple, efficient wrapper that behaves just
 like an object of type <code class="lang-d"><span class="pln">T</span></code>, except that you can reassign it to
-refer to another object. For completeness, <code class="lang-d"><span class="typ"><span class="typ">Rebindable</span></span><span class="pun">!(</span><span class="pln">T</span><span class="pun">)</span></code> aliases
+refer to another object. For completeness, <code class="lang-d"><span class="typ">Rebindable</span><span class="pun">!(</span><span class="pln">T</span><span class="pun">)</span></code> aliases
 itself away to <code class="lang-d"><span class="pln">T</span></code> if <code class="lang-d"><span class="pln">T</span></code> is a non-const object type.
 </p>
 				<div class="prototype">

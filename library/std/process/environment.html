@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2964,8 +2979,9 @@ See below for examples of use.
 								<a href="../../std/process/environment.get.html" class="public">
 									<code>get</code>
 								</a>
+								<span class="tableEntryAnnotation">(name, defaultValue)</span>
 							</td>
-							<td>Retrieves the value of the environment variable with the given <code class="lang-d"><a href="../../std/process/environment.get.html#name"><span class="pln"><a href="../../std/process/environment.get.html#name"><span class="pln">name</span></a></span></a></code>,
+							<td>Retrieves the value of the environment variable with the given <code class="lang-d"><a href="../../std/process/environment.get.html#name"><span class="pln">name</span></a></code>,
     or a default value if the variable doesn't exist.
 </td>
 						</tr>
@@ -2974,6 +2990,7 @@ See below for examples of use.
 								<a href="../../std/process/environment.op_binary_right.html" class="public">
 									<code>opBinaryRight</code>
 								</a>
+								<span class="tableEntryAnnotation">(name)</span>
 							</td>
 							<td>Identify whether a variable is defined in the environment.
 </td>
@@ -2983,6 +3000,7 @@ See below for examples of use.
 								<a href="../../std/process/environment.op_index.html" class="public">
 									<code>opIndex</code>
 								</a>
+								<span class="tableEntryAnnotation">(name)</span>
 							</td>
 							<td>Retrieves the value of the environment variable with the given <code class="lang-d"><a href="../../std/process/environment.op_index.html#name"><span class="pln">name</span></a></code>.
 </td>
@@ -2992,6 +3010,7 @@ See below for examples of use.
 								<a href="../../std/process/environment.op_index_assign.html" class="public">
 									<code>opIndexAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(value, name)</span>
 							</td>
 							<td>Assigns the given <code class="lang-d"><a href="../../std/process/environment.op_index_assign.html#value"><span class="pln">value</span></a></code> to the environment variable with the given
     <code class="lang-d"><a href="../../std/process/environment.op_index_assign.html#name"><span class="pln">name</span></a></code>.
@@ -3003,8 +3022,9 @@ See below for examples of use.
 								<a href="../../std/process/environment.remove.html" class="public">
 									<code>remove</code>
 								</a>
+								<span class="tableEntryAnnotation">(name)</span>
 							</td>
-							<td>Removes the environment variable with the given <code class="lang-d"><a href="../../std/process/environment.remove.html#name"><span class="pln"><a href="../../std/process/environment.remove.html#name"><span class="pln">name</span></a></span></a></code>.
+							<td>Removes the environment variable with the given <code class="lang-d"><a href="../../std/process/environment.remove.html#name"><span class="pln">name</span></a></code>.
 </td>
 						</tr>
 						<tr>
@@ -3012,6 +3032,7 @@ See below for examples of use.
 								<a href="../../std/process/environment.to_aa.html" class="public">
 									<code>toAA</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Copies all environment variables into an associative array.
 </td>
@@ -3021,6 +3042,7 @@ See below for examples of use.
 								<a href="../../object/object.factory.html" class="public inherited">
 									<code>factory</code>
 								</a>
+								<span class="tableEntryAnnotation">(classname)</span>
 							</td>
 							<td>Create instance of class specified by the fully qualified name
  classname.
@@ -3033,6 +3055,7 @@ See below for examples of use.
 								<a href="../../object/object.op_cmp.html" class="public inherited">
 									<code>opCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Compare with another Object obj.
 </td>
@@ -3042,6 +3065,7 @@ See below for examples of use.
 								<a href="../../object/object.op_equals.html" class="public inherited">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Test whether <code class="lang-d"><span class="kwd">this</span></code> is equal to <code class="lang-d"><a href="../../object/object.op_equals.html#o"><span class="pln">o</span></a></code>.
  The default implementation only compares by identity (using the <code class="lang-d"><span class="kwd">is</span></code> operator).
@@ -3053,6 +3077,7 @@ See below for examples of use.
 								<a href="../../object/object.to_hash.html" class="public inherited">
 									<code>toHash</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Compute hash function for Object.
 </td>
@@ -3062,6 +3087,7 @@ See below for examples of use.
 								<a href="../../object/object.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Convert Object to a human readable string.
 </td>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,7 +2952,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Class <code><a href="../../std/socket.html">std.socket</a>.UdpSocket</code></h1><p><code class="lang-d"><span class="typ"><span class="typ">UdpSocket</span></span></code> is a shortcut class for a UDP Socket.
+				</div><h1>Class <code><a href="../../std/socket.html">std.socket</a>.UdpSocket</code></h1><p><code class="lang-d"><span class="typ">UdpSocket</span></code> is a shortcut class for a UDP Socket.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2960,6 +2975,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/udp_socket.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(family)</span>
 							</td>
 							<td>Constructs a blocking UDP Socket.
 </td>
@@ -2969,6 +2985,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/udp_socket.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Constructs a blocking IPv4 UDP Socket.
 </td>
@@ -3042,6 +3059,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.accept.html" class="public inherited">
 									<code>accept</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Accept an incoming connection. If the socket is blocking, <code class="lang-d"><a href="../../std/socket/socket.accept.html"><span class="pln">accept</span></a></code>
  waits for a connection request. Throws <code class="lang-d"><a href="../../std/socket/socket_accept_exception.html"><span class="typ">SocketAcceptException</span></a></code> if
@@ -3053,6 +3071,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.bind.html" class="public inherited">
 									<code>bind</code>
 								</a>
+								<span class="tableEntryAnnotation">(addr)</span>
 							</td>
 							<td>Associate a local address with this socket.
 </td>
@@ -3062,6 +3081,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.close.html" class="public inherited">
 									<code>close</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Immediately drop any connections and release socket resources.
  The <code class="lang-d"><a href="../../std/socket/socket.html"><span class="typ">Socket</span></a></code> object is no longer usable after <code class="lang-d"><a href="../../std/socket/socket.close.html"><span class="pln">close</span></a></code>.
@@ -3074,6 +3094,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.connect.html" class="public inherited">
 									<code>connect</code>
 								</a>
+								<span class="tableEntryAnnotation">(to)</span>
 							</td>
 							<td>Establish a connection. If the socket is blocking, connect waits for
  the connection to be made. If the socket is nonblocking, connect
@@ -3085,6 +3106,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.factory.html" class="public inherited">
 									<code>factory</code>
 								</a>
+								<span class="tableEntryAnnotation">(classname)</span>
 							</td>
 							<td>Create instance of class specified by the fully qualified name
  classname.
@@ -3097,6 +3119,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.get_error_text.html" class="public inherited">
 									<code>getErrorText</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Get a text description of this socket's error status, and clear the
  socket's error status.
@@ -3107,6 +3130,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.get_option.html" class="public inherited">
 									<code>getOption</code>
 								</a>
+								<span class="tableEntryAnnotation">(level, option, result)</span>
 							</td>
 							<td>Get a socket option.
 </td>
@@ -3116,6 +3140,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.get_option.html" class="public inherited">
 									<code>getOption</code>
 								</a>
+								<span class="tableEntryAnnotation">(level, option, result)</span>
 							</td>
 							<td>Common case of getting integer and boolean options.
 </td>
@@ -3125,6 +3150,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.get_option.html" class="public inherited">
 									<code>getOption</code>
 								</a>
+								<span class="tableEntryAnnotation">(level, option, result)</span>
 							</td>
 							<td>Get the linger option.
 </td>
@@ -3134,6 +3160,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.get_option.html" class="public inherited">
 									<code>getOption</code>
 								</a>
+								<span class="tableEntryAnnotation">(level, option, result)</span>
 							</td>
 							<td>Get a timeout (duration) option.
 </td>
@@ -3143,6 +3170,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.listen.html" class="public inherited">
 									<code>listen</code>
 								</a>
+								<span class="tableEntryAnnotation">(backlog)</span>
 							</td>
 							<td>Listen for an incoming connection. <code class="lang-d"><a href="../../std/socket/socket.bind.html"><span class="pln">bind</span></a></code> must be called before you
  can <code class="lang-d"><a href="../../std/socket/socket.listen.html"><span class="pln">listen</span></a></code>. The <code class="lang-d"><a href="../../std/socket/socket.listen.html#backlog"><span class="pln">backlog</span></a></code> is a request of how many pending
@@ -3154,6 +3182,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.op_cmp.html" class="public inherited">
 									<code>opCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Compare with another Object obj.
 </td>
@@ -3163,6 +3192,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.op_equals.html" class="public inherited">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Test whether <code class="lang-d"><span class="kwd">this</span></code> is equal to <code class="lang-d"><a href="../../object/object.op_equals.html#o"><span class="pln">o</span></a></code>.
  The default implementation only compares by identity (using the <code class="lang-d"><span class="kwd">is</span></code> operator).
@@ -3174,6 +3204,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.receive.html" class="public inherited">
 									<code>receive</code>
 								</a>
+								<span class="tableEntryAnnotation">(buf, flags)</span>
 							</td>
 							<td>Receive data on the connection. If the socket is blocking, <code class="lang-d"><a href="../../std/socket/socket.receive.html"><span class="pln">receive</span></a></code>
  waits until there is data to be received.
@@ -3184,6 +3215,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.receive_from.html" class="public inherited">
 									<code>receiveFrom</code>
 								</a>
+								<span class="tableEntryAnnotation">(buf, flags, from)</span>
 							</td>
 							<td>Receive data and get the remote endpoint <code class="lang-d"><a href="../../std/socket/address.html"><span class="typ">Address</span></a></code>.
  If the socket is blocking, <code class="lang-d"><a href="../../std/socket/socket.receive_from.html"><span class="pln">receiveFrom</span></a></code> waits until there is data to
@@ -3195,6 +3227,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.select.html" class="public inherited">
 									<code>select</code>
 								</a>
+								<span class="tableEntryAnnotation">(checkRead, checkWrite, checkError, timeout)</span>
 							</td>
 							<td>Wait for a socket to change status. A wait timeout of <code class="lang-d"><a href="../../core/time/duration.html" title="core.time.Duration"><span class="typ">Duration</span></a></code> or
  <code class="lang-d"><a href="../../std/socket/time_val.html"><span class="typ">TimeVal</span></a></code>, may be specified; if a timeout is not specified or the
@@ -3207,6 +3240,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.send.html" class="public inherited">
 									<code>send</code>
 								</a>
+								<span class="tableEntryAnnotation">(buf, flags)</span>
 							</td>
 							<td>Send data on the connection. If the socket is blocking and there is no
  buffer space left, <code class="lang-d"><a href="../../std/socket/socket.send.html"><span class="pln">send</span></a></code> waits.
@@ -3217,6 +3251,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.send_to.html" class="public inherited">
 									<code>sendTo</code>
 								</a>
+								<span class="tableEntryAnnotation">(buf, flags, to)</span>
 							</td>
 							<td>Send data to a specific destination Address. If the destination address is
  not specified, a connection must have been made and that address is used.
@@ -3228,6 +3263,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.set_keep_alive.html" class="public inherited">
 									<code>setKeepAlive</code>
 								</a>
+								<span class="tableEntryAnnotation">(time, interval)</span>
 							</td>
 							<td>Enables TCP keep-alive with the specified parameters.
 </td>
@@ -3237,6 +3273,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.set_option.html" class="public inherited">
 									<code>setOption</code>
 								</a>
+								<span class="tableEntryAnnotation">(level, option, value)</span>
 							</td>
 							<td>Set a socket option.
 </td>
@@ -3246,6 +3283,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.set_option.html" class="public inherited">
 									<code>setOption</code>
 								</a>
+								<span class="tableEntryAnnotation">(level, option, value)</span>
 							</td>
 							<td>Common case for setting integer and boolean options.
 </td>
@@ -3255,6 +3293,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.set_option.html" class="public inherited">
 									<code>setOption</code>
 								</a>
+								<span class="tableEntryAnnotation">(level, option, value)</span>
 							</td>
 							<td>Set the linger option.
 </td>
@@ -3264,6 +3303,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.set_option.html" class="public inherited">
 									<code>setOption</code>
 								</a>
+								<span class="tableEntryAnnotation">(level, option, value)</span>
 							</td>
 							<td>Sets a timeout (duration) option, i.e. <code class="lang-d"><a href="../../std/socket/socket_option.html#SNDTIMEO"><span class="typ">SocketOption<wbr/></span><span class="pun">.</span><span class="pln">SNDTIMEO</span></a></code> or
  <code class="lang-d"><span class="pln">RCVTIMEO</span></code>. Zero indicates no timeout.
@@ -3274,6 +3314,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.shutdown.html" class="public inherited">
 									<code>shutdown</code>
 								</a>
+								<span class="tableEntryAnnotation">(how)</span>
 							</td>
 							<td>Disables sends and/or receives.
 </td>
@@ -3283,6 +3324,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.to_hash.html" class="public inherited">
 									<code>toHash</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Compute hash function for Object.
 </td>
@@ -3292,6 +3334,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Convert Object to a human readable string.
 </td>
@@ -3301,6 +3344,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.accepting.html" class="protected inherited">
 									<code>accepting</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Called by <code class="lang-d"><a href="../../std/socket/socket.accept.html"><span class="pln">accept</span></a></code> when a new <code class="lang-d"><a href="../../std/socket/socket.html"><span class="typ">Socket</span></a></code> must be created for a new
  connection. To use a derived class, override this method and return an
@@ -3314,6 +3358,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/socket/socket.create_address.html" class="protected inherited">
 									<code>createAddress</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Can be overridden to support other addresses.
 </td>

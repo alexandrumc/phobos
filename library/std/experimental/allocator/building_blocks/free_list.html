@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2944,7 +2959,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -2956,6 +2971,8 @@ $('#symbolSearchPane').show();</script>
 assumed to have been allocated with <code class="lang-d"><span class="typ">ParentAllocator</span></code>, and is released in
 <code class="lang-d"><span class="typ">ContiguousFreeList</span></code>'s destructor (unless <code class="lang-d"><span class="typ">ParentAllocator</span></code> is <code class="lang-d"><span class="typ">NullAllocator</span></code>).
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2971,6 +2988,8 @@ from the free list are fast. If <code class="lang-d"><span class="pln">adaptive<
 the free list gradually reduces its size if allocations tend to use the parent
 allocator much more than the lists' available nodes.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2981,6 +3000,8 @@ allocator much more than the lists' available nodes.
 							<td>FreeList shared across threads. Allocation and deallocation are lock-free. The
 parameters have the same semantics as for <code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ">FreeList</span></a></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

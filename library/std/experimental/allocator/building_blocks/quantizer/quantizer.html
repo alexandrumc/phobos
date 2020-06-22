@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2995,6 +3010,7 @@ free lists/trees at the cost of slack memory (internal fragmentation).</li>
 								<a href="../../../../../std/experimental/allocator/building_blocks/quantizer/quantizer.aligned_allocate.html" class="public">
 									<code>alignedAllocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(n, a)</span>
 							</td>
 							<td>Defined only if <code class="lang-d"><span class="pln">parent<wbr/></span><span class="pun">.</span><span class="pln">alignedAllocate</span></code> exists and works similarly to
     <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/quantizer/quantizer.allocate.html"><span class="pln">allocate</span></a></code> by forwarding to
@@ -3006,6 +3022,7 @@ free lists/trees at the cost of slack memory (internal fragmentation).</li>
 								<a href="../../../../../std/experimental/allocator/building_blocks/quantizer/quantizer.aligned_reallocate.html" class="public">
 									<code>alignedReallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, s, a)</span>
 							</td>
 							<td>Defined only if <code class="lang-d"><span class="typ">ParentAllocator<wbr/></span><span class="pun">.</span><span class="pln">alignedAllocate</span></code> exists. Expansion
     occurs in place under the conditions required by <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/quantizer/quantizer.expand.html"><span class="pln">expand</span></a></code>. Shrinking
@@ -3017,6 +3034,7 @@ free lists/trees at the cost of slack memory (internal fragmentation).</li>
 								<a href="../../../../../std/experimental/allocator/building_blocks/quantizer/quantizer.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
 							<td>Gets a larger buffer <code class="lang-d"><span class="pln">buf</span></code> by calling
     <code class="lang-d"><span class="pln">parent<wbr/></span><span class="pun">.</span><span class="pln">allocate</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/quantizer/quantizer.good_alloc_size.html"></span><span class="pln">goodAllocSize</span></a><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/quantizer/quantizer.allocate.html#n"></span><span class="pln">n</span></a><span class="pun">))</span></code>. If <code class="lang-d"><span class="pln">buf</span></code> is <code class="lang-d"><span class="kwd">null</span></code>, returns
@@ -3028,6 +3046,7 @@ free lists/trees at the cost of slack memory (internal fragmentation).</li>
 								<a href="../../../../../std/experimental/allocator/building_blocks/quantizer/quantizer.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>Defined if <code class="lang-d"><span class="typ">ParentAllocator<wbr/></span><span class="pun">.</span><span class="pln">deallocate</span></code> exists and forwards to
     <code class="lang-d"><span class="pln">parent<wbr/></span><span class="pun">.</span><span class="pln">deallocate</span><span class="pun">(</span><span class="pln">b<wbr/></span><span class="pun">.</span><span class="pln">ptr</span><span class="pun">[</span><span class="lit">0 </span><span class="pun">.. <a href="../../../../../std/experimental/allocator/building_blocks/quantizer/quantizer.good_alloc_size.html"></span><span class="pln">goodAllocSize</span></a><span class="pun">(</span><span class="pln">b<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)])</span></code>.
@@ -3038,6 +3057,7 @@ free lists/trees at the cost of slack memory (internal fragmentation).</li>
 								<a href="../../../../../std/experimental/allocator/building_blocks/quantizer/quantizer.expand.html" class="public">
 									<code>expand</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, delta)</span>
 							</td>
 							<td>First checks whether there's enough slack memory preallocated for <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/quantizer/quantizer.expand.html#b"><span class="pln">b</span></a></code>
     by evaluating <code class="lang-d"><span class="pln">b<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">+ <a href="../../../../../std/experimental/allocator/building_blocks/quantizer/quantizer.expand.html#delta"></span><span class="pln">delta</span></a><span class="pln"> </span><span class="pun">&lt;= <a href="../../../../../std/experimental/allocator/building_blocks/quantizer/quantizer.good_alloc_size.html"></span><span class="pln">goodAllocSize</span></a><span class="pun">(</span><span class="pln">b<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code>. If that's
@@ -3050,6 +3070,7 @@ free lists/trees at the cost of slack memory (internal fragmentation).</li>
 								<a href="../../../../../std/experimental/allocator/building_blocks/quantizer/quantizer.good_alloc_size.html" class="public">
 									<code>goodAllocSize</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
 							<td>Returns <code class="lang-d"><span class="pln">roundingFunction</span><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/quantizer/quantizer.good_alloc_size.html#n"></span><span class="pln">n</span></a><span class="pun">)</span></code>.
 </td>
@@ -3059,6 +3080,7 @@ free lists/trees at the cost of slack memory (internal fragmentation).</li>
 								<a href="../../../../../std/experimental/allocator/building_blocks/quantizer/quantizer.reallocate.html" class="public">
 									<code>reallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, s)</span>
 							</td>
 							<td>Expands or shrinks allocated block to an allocated size of <code class="lang-d"><span class="pln">    <a href="../../../../../std/experimental/allocator/building_blocks/quantizer/quantizer.good_alloc_size.html"></span><span class="pln">goodAllocSize</span></a><span class="pun">(<a href="../../../../../std/experimental/allocator/building_blocks/quantizer/quantizer.reallocate.html#s"></span><span class="pln">s</span></a><span class="pun">)</span></code>. Expansion occurs in place under the conditions required
     by <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/quantizer/quantizer.expand.html"><span class="pln">expand</span></a></code>. Shrinking occurs in place if <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/quantizer/quantizer.good_alloc_size.html"><span class="pln">goodAllocSize</span></a><span class="pun">(</span><span class="pln">b<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)

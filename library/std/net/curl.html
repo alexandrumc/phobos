@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -3081,133 +3096,175 @@ synchronous.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="byChunk" class="public" href="../../std/net/curl/by_chunk.html">byChunk</a><span class="decoration">(url, chunkSize, conn)</span>
+									<a id="byChunk" class="public" href="../../std/net/curl/by_chunk.html">byChunk</a><span class="tableEntryAnnotation">(url, chunkSize, conn)</span>
 								</code>
 							</td>
 							<td>HTTP/FTP fetch content as a range of chunks.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="byChunkAsync" class="public" href="../../std/net/curl/by_chunk_async.html">byChunkAsync</a><span class="decoration">(url, postData, chunkSize, transmitBuffers, conn)</span>
+									<a id="byChunkAsync" class="public" href="../../std/net/curl/by_chunk_async.html">byChunkAsync</a><span class="tableEntryAnnotation">(url, postData, chunkSize, transmitBuffers, conn)</span>
 								</code>
 							</td>
 							<td>HTTP/FTP fetch content as a range of chunks asynchronously.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="byLine" class="public" href="../../std/net/curl/by_line.html">byLine</a><span class="decoration">(url, keepTerminator, terminator, conn)</span>
+									<a id="byLine" class="public" href="../../std/net/curl/by_line.html">byLine</a><span class="tableEntryAnnotation">(url, keepTerminator, terminator, conn)</span>
 								</code>
 							</td>
 							<td>HTTP/FTP fetch content as a range of lines.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="byLineAsync" class="public" href="../../std/net/curl/by_line_async.html">byLineAsync</a><span class="decoration">(url, postData, keepTerminator, terminator, transmitBuffers, conn)</span>
+									<a id="byLineAsync" class="public" href="../../std/net/curl/by_line_async.html">byLineAsync</a><span class="tableEntryAnnotation">(url, postData, keepTerminator, terminator, transmitBuffers, conn)</span>
 								</code>
 							</td>
 							<td>HTTP/FTP fetch content as a range of lines asynchronously.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="connect" class="public" href="../../std/net/curl/connect.html">connect</a><span class="decoration">(url, conn)</span>
+									<a id="connect" class="public" href="../../std/net/curl/connect.html">connect</a><span class="tableEntryAnnotation">(url, conn)</span>
 								</code>
 							</td>
 							<td>HTTP connect request.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="del" class="public" href="../../std/net/curl/del.html">del</a><span class="decoration">(url, conn)</span>
+									<a id="del" class="public" href="../../std/net/curl/del.html">del</a><span class="tableEntryAnnotation">(url, conn)</span>
 								</code>
 							</td>
 							<td>HTTP/FTP delete content.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="download" class="public" href="../../std/net/curl/download.html">download</a><span class="decoration">(url, saveToPath, conn)</span>
+									<a id="download" class="public" href="../../std/net/curl/download.html">download</a><span class="tableEntryAnnotation">(url, saveToPath, conn)</span>
 								</code>
 							</td>
 							<td>HTTP/FTP download to local file system.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="get" class="public" href="../../std/net/curl/get.html">get</a><span class="decoration">(url, conn)</span>
+									<a id="get" class="public" href="../../std/net/curl/get.html">get</a><span class="tableEntryAnnotation">(url, conn)</span>
 								</code>
 							</td>
 							<td>HTTP/FTP get content.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="options" class="public" href="../../std/net/curl/options.html">options</a><span class="decoration">(url, conn)</span>
+									<a id="options" class="public" href="../../std/net/curl/options.html">options</a><span class="tableEntryAnnotation">(url, conn)</span>
 								</code>
 							</td>
 							<td>HTTP options request.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="patch" class="public" href="../../std/net/curl/patch.html">patch</a><span class="decoration">(url, patchData, conn)</span>
+									<a id="patch" class="public" href="../../std/net/curl/patch.html">patch</a><span class="tableEntryAnnotation">(url, patchData, conn)</span>
 								</code>
 							</td>
 							<td>HTTP patch content.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="post" class="public" href="../../std/net/curl/post.html">post</a><span class="decoration">(url, postData, conn)</span>
+									<a id="post" class="public" href="../../std/net/curl/post.html">post</a><span class="tableEntryAnnotation">(url, postData, conn)</span>
 								</code>
 							</td>
 							<td>HTTP post content.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="put" class="public" href="../../std/net/curl/put.html">put</a><span class="decoration">(url, putData, conn)</span>
+									<a id="put" class="public" href="../../std/net/curl/put.html">put</a><span class="tableEntryAnnotation">(url, putData, conn)</span>
 								</code>
 							</td>
 							<td>HTTP/FTP put content.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="trace" class="public" href="../../std/net/curl/trace.html">trace</a><span class="decoration">(url, conn)</span>
+									<a id="trace" class="public" href="../../std/net/curl/trace.html">trace</a><span class="tableEntryAnnotation">(url, conn)</span>
 								</code>
 							</td>
 							<td>HTTP trace request.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="upload" class="public" href="../../std/net/curl/upload.html">upload</a><span class="decoration">(loadFromPath, url, conn)</span>
+									<a id="upload" class="public" href="../../std/net/curl/upload.html">upload</a><span class="tableEntryAnnotation">(loadFromPath, url, conn)</span>
 								</code>
 							</td>
 							<td>Upload file from local files system using the HTTP or FTP protocol.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3216,7 +3273,7 @@ synchronous.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3226,6 +3283,8 @@ synchronous.
 							</td>
 							<td>Exception thrown on errors in std.net.curl functions.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3235,6 +3294,8 @@ synchronous.
 							</td>
 							<td>Exception thrown on timeout errors in std.net.curl functions.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3244,6 +3305,8 @@ synchronous.
 							</td>
 							<td>Exception thrown on HTTP request failures, e.g. 404 Not Found.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3252,7 +3315,7 @@ synchronous.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3261,6 +3324,8 @@ synchronous.
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3272,6 +3337,8 @@ synchronous.
   It is recommended to use the <code class="lang-d"><a href="../../std/net/curl/http.html"><span class="pln">HTTP</span></a></code>/<code class="lang-d"><a href="../../std/net/curl/ftp.html"><span class="pln">FTP</span></a></code> etc. structs instead unless
   raw access to libcurl is needed.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3281,6 +3348,8 @@ synchronous.
 							</td>
 							<td>FTP client functionality.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3290,6 +3359,8 @@ synchronous.
 							</td>
 							<td>HTTP client functionality.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3299,6 +3370,8 @@ synchronous.
 							</td>
 							<td>Basic SMTP protocol support.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

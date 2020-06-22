@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2958,9 +2973,9 @@ $('#symbolSearchPane').show();</script>
 						</li>
 					</ul>
 				</nav><h2 id="0">Function find</h2><p>Finds an individual element in an <a href="../../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>.
-Elements of <code class="lang-d"><a href="../../std/algorithm/searching/find.html#haystack"><span class="pln"><a href="../../../std/algorithm/searching/find.html#haystack"><span class="pln">haystack</span></a></span></a></code> are compared with <code class="lang-d"><a href="../../std/algorithm/searching/find.html#needle"><span class="pln"><a href="../../../std/algorithm/searching/find.html#needle"><span class="pln">needle</span></a></span></a></code> by using predicate
-<code class="lang-d"><span class="pln">pred</span></code> with <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln"><a href="../../../std/algorithm/searching/find.html#haystack"><span class="pln">haystack</span></a><wbr/></span><span class="pun">.</span><span class="pln">front</span><span class="pun">, <a href="../../std/algorithm/searching/find.html#needle"></span><span class="pln"><a href="../../../std/algorithm/searching/find.html#needle"><span class="pln">needle</span></a></span></a><span class="pun">)</span></code>.
-<code class="lang-d"><span class="pln"><span class="pln">find</span></span></code> performs <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">walkLength</span><span class="pun">(<a href="../../../std/algorithm/searching/find.html#haystack"></span><span class="pln">haystack</span></a><span class="pun">)</span></code>)</span> evaluations of <code class="lang-d"><span class="pln">pred</span></code>.
+Elements of <code class="lang-d"><a href="../../../std/algorithm/searching/find.html#haystack"><span class="pln">haystack</span></a></code> are compared with <code class="lang-d"><a href="../../../std/algorithm/searching/find.html#needle"><span class="pln">needle</span></a></code> by using predicate
+<code class="lang-d"><span class="pln">pred</span></code> with <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">haystack<wbr/></span><span class="pun">.</span><span class="pln">front</span><span class="pun">, <a href="../../../std/algorithm/searching/find.html#needle"></span><span class="pln">needle</span></a><span class="pun">)</span></code>.
+<code class="lang-d"><span class="pln">find</span></code> performs <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">walkLength</span><span class="pun">(<a href="../../../std/algorithm/searching/find.html#haystack"></span><span class="pln">haystack</span></a><span class="pun">)</span></code>)</span> evaluations of <code class="lang-d"><span class="pln">pred</span></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -3108,7 +3123,7 @@ In this case <code class="lang-d"><a href="../../../std/algorithm/searching/star
 </span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">a</span><span class="pun">[</span><span class="lit">1 </span><span class="pun">.. $]<wbr/>.</span><span class="pln">find</span><span class="pun">!</span><span class="str">"a.x == b"</span><span class="pun">([</span><span class="lit">2</span><span class="pun">, </span><span class="lit">3</span><span class="pun">])); </span><span class="com">// [C(2, 0), C(3, 1), C(4, 0)]
 </span></code></pre>
 </section>
-<h2 id="1">Function find</h2><p>Finds two or more <code class="lang-d"><a href="../../std/algorithm/searching/find.html#needles"><span class="pln"><a href="../../../std/algorithm/searching/find.html#needles"><span class="pln">needles</span></a></span></a></code> into a <code class="lang-d"><a href="../../std/algorithm/searching/find.html#haystack"><span class="pln"><a href="../../../std/algorithm/searching/find.html#haystack"><span class="pln">haystack</span></a></span></a></code>. The predicate <code class="lang-d"><span class="pln">pred</span></code> is used throughout to compare elements. By default, elements are
+<h2 id="1">Function find</h2><p>Finds two or more <code class="lang-d"><a href="../../../std/algorithm/searching/find.html#needles"><span class="pln">needles</span></a></code> into a <code class="lang-d"><a href="../../../std/algorithm/searching/find.html#haystack"><span class="pln">haystack</span></a></code>. The predicate <code class="lang-d"><span class="pln">pred</span></code> is used throughout to compare elements. By default, elements are
 compared for equality.
 </p>
 				<div class="prototype">
@@ -3183,7 +3198,7 @@ few times as possible.
 </span><span class="pln">writeln</span><span class="pun">(<a href="../../../std/algorithm/searching/find.html"></span><span class="pln">find</span></a><span class="pun">(</span><span class="pln">a</span><span class="pun">, </span><span class="lit">5</span><span class="pun">, [</span><span class="lit">1.2</span><span class="pun">, </span><span class="lit">3.5</span><span class="pun">], </span><span class="lit">2.0</span><span class="pun">)); </span><span class="com">// tuple([2, 3], 3)
 </span></code></pre>
 </section>
-<h2 id="2">Function find</h2><p>Finds <code class="lang-d"><a href="../../std/algorithm/searching/find.html#needle"><span class="pln"><a href="../../../std/algorithm/searching/find.html#needle"><span class="pln">needle</span></a></span></a></code> in <code class="lang-d"><a href="../../std/algorithm/searching/find.html#haystack"><span class="pln"><a href="../../../std/algorithm/searching/find.html#haystack"><span class="pln">haystack</span></a></span></a></code> efficiently using the
+<h2 id="2">Function find</h2><p>Finds <code class="lang-d"><a href="../../../std/algorithm/searching/find.html#needle"><span class="pln">needle</span></a></code> in <code class="lang-d"><a href="../../../std/algorithm/searching/find.html#haystack"><span class="pln">haystack</span></a></code> efficiently using the
  <a href="https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string_search_algorithm"> Boyer-Moore</a> method.
 </p>
 				<div class="prototype">

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/dmd/blob/master/src/dmd/backend/gother.d#L621">
+							<a href="https://github.com/dlang/dmd/blob/master/src/dmd/backend/gother.d#L618">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/dmd/edit/master/src/dmd/backend/gother.d#L621">
+							<a href="https://github.com/dlang/dmd/edit/master/src/dmd/backend/gother.d#L618">
 								Improve this page
 							</a>
 							<div>
@@ -2938,27 +2953,35 @@ $('#symbolSearchPane').show();</script>
 						</div>
 					</div>
 				</div><h1>Function <code><a href="../../../dmd/backend/gother.html">dmd.backend.gother</a>.listrds</code></h1><p>Find all the reaching defs of OPvar e.
- Put into a linked list, or just set the RD bits in a vector.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">extern</span><span class="pun">(</span><span class="pln">C</span><span class="pun">) </span><span class="pln">dmd<wbr/></span><span class="pun">.</span><span class="pln">backend<wbr/></span><span class="pun">.</span><span class="pln">dlist<wbr/></span><span class="pun">.</span><span class="pln">LIST</span><span class="pun">*</span> <span class="pln">listrds</span>
+				<span class="kwd">extern</span><span class="pun">(</span><span class="pln">C</span><span class="pun">++) </span><span class="typ">void</span> <span class="pln">listrds</span>
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="typ">ulong</span><span class="pun">*</span> <span class="pln">IN</span><span class="pun">,</span>
 				<br/>
 				&nbsp;&nbsp;<a href="../../../dmd/backend/el/elem.html"><span class="pln">elem</span></a><span class="pun">*</span> <span class="pln">e</span><span class="pun">,</span>
 				<br/>
-				&nbsp;&nbsp;<span class="typ">ulong</span><span class="pun">*</span> <span class="pln">f</span>
+				&nbsp;&nbsp;<span class="typ">ulong</span><span class="pun">*</span> <span class="pln">f</span><span class="pun">,</span>
+				<br/>
+				&nbsp;&nbsp;<a href="../../../dmd/backend/barray/barray.html"><span class="typ">Barray</span></a>!(dmd.backend.el.elem*)<span class="pun">*</span> <span class="pln">rdlist</span>
 				<br/>
 				<span class="pun">)</span><span class="pun">;</span>
 						</div>
 					</code>
 				</div>
-				<section></section>
-
 				
+				<section><h2>Parameters</h2>
+<table><col class="caption"><tr><th>Name</th><th>Description</th></tr>
+<tr><td id="IN">IN</td><td> vector of definition nodes</td></tr>
+<tr><td id="e">e</td><td> OPvar</td></tr>
+<tr><td id="f">f</td><td> if not null, set RD bits in it</td></tr>
+<tr><td id="rdlist">rdlist</td><td> if not null, append reaching defs to it</td></tr>
+</table>
+</section>
+
 				<section>
 					<h2>Authors</h2><p><a href="http://www.digitalmars.com">Walter Bright</a>
 </p>

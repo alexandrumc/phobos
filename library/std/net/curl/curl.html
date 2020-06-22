@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2938,7 +2953,7 @@ $('#symbolSearchPane').show();</script>
 						</div>
 					</div>
 				</div><h1>Struct <code><a href="../../../std/net/curl.html">std.net.curl</a>.Curl</code></h1><p>Wrapper to provide a better interface to libcurl than using the plain C API.
-  It is recommended to use the <code class="lang-d"><a href="../../std/net/curl/http.html"><span class="pln"><a href="../../../std/net/curl/http.html"><span class="pln">HTTP</span></a></span></a></code>/<code class="lang-d"><a href="../../std/net/curl/ftp.html"><span class="pln"><a href="../../../std/net/curl/ftp.html"><span class="pln">FTP</span></a></span></a></code> etc. structs instead unless
+  It is recommended to use the <code class="lang-d"><a href="../../../std/net/curl/http.html"><span class="pln">HTTP</span></a></code>/<code class="lang-d"><a href="../../../std/net/curl/ftp.html"><span class="pln">FTP</span></a></code> etc. structs instead unless
   raw access to libcurl is needed.
 </p>
 				<div class="prototype">
@@ -2999,7 +3014,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/net/curl/curl.on_socket_option.html" class="public property"><code>onSocketOption</code></a><span class="tableEntryAnnotation">[set]</span>
 							</td>
 							<td class="typecol"><code class="prettyprint lang-d"><span class="typ">int</span> <span class="kwd">delegate</span><span class="pun">(</span><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">socket<wbr/></span><span class="pun">.</span><span class="pln">socket_t</span><span class="pun">, </span><a href="../../../etc/c/curl/curl_sock_type.html"><span class="typ">CurlSockType</span></a><span class="pun">)</span></code></td><td>The event handler that gets called when the net socket has been created
- but a <code class="lang-d"><a href="../../../std/net/curl/connect.html"><span class="pln"><a href="../../../std/net/curl/connect.html"><span class="pln">connect</span></a></span></a><span class="pun">()</span></code> call has not yet been done. This makes it possible to set
+ but a <code class="lang-d"><a href="../../../std/net/curl/connect.html"><span class="pln">connect</span></a><span class="pun">()</span></code> call has not yet been done. This makes it possible to set
  misc. socket options.
 </td>
 						</tr>
@@ -3022,6 +3037,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/net/curl/curl.clear.html" class="public">
 									<code>clear</code>
 								</a>
+								<span class="tableEntryAnnotation">(option)</span>
 							</td>
 							<td>Clear a pointer option.
 </td>
@@ -3031,6 +3047,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/net/curl/curl.clear_if_supported.html" class="public">
 									<code>clearIfSupported</code>
 								</a>
+								<span class="tableEntryAnnotation">(option)</span>
 							</td>
 							<td>Clear a pointer option. Does not raise an exception if the underlying
        libcurl does not support the option. Use sparingly.
@@ -3041,6 +3058,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/net/curl/curl.dup.html" class="public">
 									<code>dup</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Duplicate this handle.
 </td>
@@ -3050,6 +3068,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/net/curl/curl.get_timing.html" class="public">
 									<code>getTiming</code>
 								</a>
+								<span class="tableEntryAnnotation">(timing, val)</span>
 							</td>
 							<td>Get the various timings like name lookup time, total time, connect time etc.
        The timed category is passed through the timing parameter while the timing
@@ -3062,6 +3081,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/net/curl/curl.initialize.html" class="public">
 									<code>initialize</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Initialize the instance by creating a working curl handle.
 </td>
@@ -3071,6 +3091,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/net/curl/curl.pause.html" class="public">
 									<code>pause</code>
 								</a>
+								<span class="tableEntryAnnotation">(sendingPaused, receivingPaused)</span>
 							</td>
 							<td>Pausing and continuing transfers.
 </td>
@@ -3080,6 +3101,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/net/curl/curl.perform.html" class="public">
 									<code>perform</code>
 								</a>
+								<span class="tableEntryAnnotation">(throwOnError)</span>
 							</td>
 							<td>perform the curl request by doing the HTTP,FTP etc. as it has
        been setup beforehand.
@@ -3090,6 +3112,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/net/curl/curl.set.html" class="public">
 									<code>set</code>
 								</a>
+								<span class="tableEntryAnnotation">(option, value)</span>
 							</td>
 							<td>Set a string curl option.
 </td>
@@ -3099,6 +3122,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/net/curl/curl.set.html" class="public">
 									<code>set</code>
 								</a>
+								<span class="tableEntryAnnotation">(option, value)</span>
 							</td>
 							<td>Set a long curl option.
 </td>
@@ -3108,6 +3132,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/net/curl/curl.set.html" class="public">
 									<code>set</code>
 								</a>
+								<span class="tableEntryAnnotation">(option, value)</span>
 							</td>
 							<td>Set a void* curl option.
 </td>
@@ -3117,6 +3142,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/net/curl/curl.shutdown.html" class="public">
 									<code>shutdown</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Stop and invalidate this curl instance.
 </td>

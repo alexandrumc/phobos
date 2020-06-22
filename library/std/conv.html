@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2970,43 +2985,52 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="asOriginalType" class="public" href="../std/conv/as_original_type.html">asOriginalType</a><span class="decoration">(value)</span>
+									<a id="asOriginalType" class="public" href="../std/conv/as_original_type.html">asOriginalType</a><span class="tableEntryAnnotation">(value)</span>
 								</code>
 							</td>
 							<td>Returns the representation of an enumerated value, i.e. the value converted to
 the base type of the enumeration.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="dtext" class="public" href="../std/conv/dtext.html">dtext</a><span class="decoration">(args)</span>
+									<a id="dtext" class="public" href="../std/conv/dtext.html">dtext</a><span class="tableEntryAnnotation">(args)</span>
 								</code>
 							</td>
 							<td>Convenience functions for converting one or more arguments
  of any type into text (the three character widths).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="emplace" class="public" href="../std/conv/emplace.html">emplace</a><span class="decoration">(chunk)</span>
+									<a id="emplace" class="public" href="../std/conv/emplace.html">emplace</a><span class="tableEntryAnnotation">(chunk)</span>
 								</code>
 							</td>
 							<td>Given a pointer <code class="lang-d"><a href="../std/conv/emplace.html#chunk"><span class="pln">chunk</span></a></code> to uninitialized memory (but already typed
 as <code class="lang-d"><span class="pln">T</span></code>), constructs an object of non-<code class="lang-d"><span class="kwd">class</span></code> type <code class="lang-d"><span class="pln">T</span></code> at that
 address. If <code class="lang-d"><span class="pln">T</span></code> is a class, initializes the class reference to null.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="emplace" class="public" href="../std/conv/emplace.html">emplace</a><span class="decoration">(chunk, args)</span>
+									<a id="emplace" class="public" href="../std/conv/emplace.html">emplace</a><span class="tableEntryAnnotation">(chunk, args)</span>
 								</code>
 							</td>
 							<td>Given a pointer <code class="lang-d"><a href="../std/conv/emplace.html#chunk"><span class="pln">chunk</span></a></code> to uninitialized memory (but already typed
@@ -3014,42 +3038,54 @@ as a non-class type <code class="lang-d"><span class="pln">T</span></code>), con
 that address from arguments <code class="lang-d"><a href="../std/conv/emplace.html#args"><span class="pln">args</span></a></code>. If <code class="lang-d"><span class="pln">T</span></code> is a class, initializes
 the class reference to <code class="lang-d"><a href="../std/conv/emplace.html#args"><span class="pln">args</span></a><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="emplace" class="public" href="../std/conv/emplace.html">emplace</a><span class="decoration">(chunk, args)</span>
+									<a id="emplace" class="public" href="../std/conv/emplace.html">emplace</a><span class="tableEntryAnnotation">(chunk, args)</span>
 								</code>
 							</td>
 							<td>Given a raw memory area <code class="lang-d"><a href="../std/conv/emplace.html#chunk"><span class="pln">chunk</span></a></code> (but already typed as a class type <code class="lang-d"><span class="pln">T</span></code>),
 constructs an object of <code class="lang-d"><span class="kwd">class</span></code> type <code class="lang-d"><span class="pln">T</span></code> at that address. The constructor
 is passed the arguments <code class="lang-d"><span class="typ">Args</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="emplace" class="public" href="../std/conv/emplace.html">emplace</a><span class="decoration">(chunk, args)</span>
+									<a id="emplace" class="public" href="../std/conv/emplace.html">emplace</a><span class="tableEntryAnnotation">(chunk, args)</span>
 								</code>
 							</td>
 							<td>Given a raw memory area <code class="lang-d"><a href="../std/conv/emplace.html#chunk"><span class="pln">chunk</span></a></code>, constructs an object of <code class="lang-d"><span class="kwd">class</span></code> type <code class="lang-d"><span class="pln">T</span></code> at
 that address. The constructor is passed the arguments <code class="lang-d"><span class="typ">Args</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="emplace" class="public" href="../std/conv/emplace.html">emplace</a><span class="decoration">(chunk, args)</span>
+									<a id="emplace" class="public" href="../std/conv/emplace.html">emplace</a><span class="tableEntryAnnotation">(chunk, args)</span>
 								</code>
 							</td>
 							<td>Given a raw memory area <code class="lang-d"><a href="../std/conv/emplace.html#chunk"><span class="pln">chunk</span></a></code>, constructs an object of non-<code class="lang-d"><span class="kwd">class</span></code> type <code class="lang-d"><span class="pln">T</span></code> at that address. The constructor is passed the
 arguments <code class="lang-d"><a href="../std/conv/emplace.html#args"><span class="pln">args</span></a></code>, if any.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="parse" class="public" href="../std/conv/parse.html">parse</a><span class="decoration">(source)</span>
+									<a id="parse" class="public" href="../std/conv/parse.html">parse</a><span class="tableEntryAnnotation">(source)</span>
 								</code>
 							</td>
 							<td>The <code class="lang-d"><span class="pln">parse</span></code> family of functions works quite like the <code class="lang-d"><a href="../std/conv/to.html"><span class="pln">to</span></a></code>
@@ -3060,77 +3096,101 @@ family, except that:
     <li>It advances the input to the position following the conversion.</li>
     <li>It does not throw if it could not convert the entire input.</li></ol>
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="parse" class="public" href="../std/conv/parse.html">parse</a><span class="decoration">(s)</span>
+									<a id="parse" class="public" href="../std/conv/parse.html">parse</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Parses a character <a href="../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>
 to an integral value.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="parse" class="public" href="../std/conv/parse.html">parse</a><span class="decoration">(s)</span>
+									<a id="parse" class="public" href="../std/conv/parse.html">parse</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Takes a string representing an <code class="lang-d"><span class="kwd">enum</span></code> type and returns that type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="parse" class="public" href="../std/conv/parse.html">parse</a><span class="decoration">(source)</span>
+									<a id="parse" class="public" href="../std/conv/parse.html">parse</a><span class="tableEntryAnnotation">(source)</span>
 								</code>
 							</td>
 							<td>Parses a character range to a floating point number.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="parse" class="public" href="../std/conv/parse.html">parse</a><span class="decoration">(s)</span>
+									<a id="parse" class="public" href="../std/conv/parse.html">parse</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Parsing one character off a range returns the first element and calls <code class="lang-d"><span class="pln">popFront</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="parse" class="public" href="../std/conv/parse.html">parse</a><span class="decoration">(s)</span>
+									<a id="parse" class="public" href="../std/conv/parse.html">parse</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Parsing a character range to <code class="lang-d"><span class="kwd">typeof</span><span class="pun">(</span><span class="kwd">null</span><span class="pun">)</span></code> returns <code class="lang-d"><span class="kwd">null</span></code> if the range
 spells <code class="lang-d"><span class="str">"null"</span></code>. This function is case insensitive.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="parse" class="public" href="../std/conv/parse.html">parse</a><span class="decoration">(s, lbracket, rbracket, comma)</span>
+									<a id="parse" class="public" href="../std/conv/parse.html">parse</a><span class="tableEntryAnnotation">(s, lbracket, rbracket, comma)</span>
 								</code>
 							</td>
 							<td>Parses an array from a string given the left bracket (default <code class="lang-d"><span class="pln"> </span><span class="str">'['</span></code>), right bracket (default <code class="lang-d"><span class="str">']'</span></code>), and element separator (by
  default <code class="lang-d"><span class="str">','</span></code>). A trailing separator is allowed.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="parse" class="public" href="../std/conv/parse.html">parse</a><span class="decoration">(s, lbracket, rbracket, keyval, comma)</span>
+									<a id="parse" class="public" href="../std/conv/parse.html">parse</a><span class="tableEntryAnnotation">(s, lbracket, rbracket, keyval, comma)</span>
 								</code>
 							</td>
 							<td>Parses an associative array from a string given the left bracket (default <code class="lang-d"><span class="pln"> </span><span class="str">'['</span></code>), right bracket (default <code class="lang-d"><span class="str">']'</span></code>), key-value separator (default <code class="lang-d"><span class="pln"> </span><span class="str">':'</span></code>), and element seprator (by default <code class="lang-d"><span class="str">','</span></code>).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="signed" class="public" href="../std/conv/signed.html">signed</a><span class="decoration">(x)</span>
+									<a id="signed" class="public" href="../std/conv/signed.html">signed</a><span class="tableEntryAnnotation">(x)</span>
 								</code>
 							</td>
 							<td>Returns the corresponding signed value for <code class="lang-d"><a href="../std/conv/signed.html#x"><span class="pln">x</span></a></code> (e.g. if <code class="lang-d"><a href="../std/conv/signed.html#x"><span class="pln">x</span></a></code> has type
@@ -3138,31 +3198,40 @@ spells <code class="lang-d"><span class="str">"null"</span></code>. This functio
     is that you do not need to rewrite the cast if <code class="lang-d"><a href="../std/conv/signed.html#x"><span class="pln">x</span></a></code> later changes type
     (e.g from <code class="lang-d"><span class="typ">uint</span></code> to <code class="lang-d"><span class="typ">ulong</span></code>).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="text" class="public" href="../std/conv/text.html">text</a><span class="decoration">(args)</span>
+									<a id="text" class="public" href="../std/conv/text.html">text</a><span class="tableEntryAnnotation">(args)</span>
 								</code>
 							</td>
 							<td>Convenience functions for converting one or more arguments
  of any type into text (the three character widths).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toChars" class="public" href="../std/conv/to_chars.html">toChars</a><span class="decoration">(value)</span>
+									<a id="toChars" class="public" href="../std/conv/to_chars.html">toChars</a><span class="tableEntryAnnotation">(value)</span>
 								</code>
 							</td>
 							<td>Convert integer to a range of characters.
  Intended to be lightweight and fast.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="unsigned" class="public" href="../std/conv/unsigned.html">unsigned</a><span class="decoration">(x)</span>
+									<a id="unsigned" class="public" href="../std/conv/unsigned.html">unsigned</a><span class="tableEntryAnnotation">(x)</span>
 								</code>
 							</td>
 							<td>Returns the corresponding unsigned value for <code class="lang-d"><a href="../std/conv/unsigned.html#x"><span class="pln">x</span></a></code> (e.g. if <code class="lang-d"><a href="../std/conv/unsigned.html#x"><span class="pln">x</span></a></code> has type
@@ -3170,16 +3239,22 @@ spells <code class="lang-d"><span class="str">"null"</span></code>. This functio
     is that you do not need to rewrite the cast if <code class="lang-d"><a href="../std/conv/unsigned.html#x"><span class="pln">x</span></a></code> later changes type
     (e.g from <code class="lang-d"><span class="typ">int</span></code> to <code class="lang-d"><span class="typ">long</span></code>).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="wtext" class="public" href="../std/conv/wtext.html">wtext</a><span class="decoration">(args)</span>
+									<a id="wtext" class="public" href="../std/conv/wtext.html">wtext</a><span class="tableEntryAnnotation">(args)</span>
 								</code>
 							</td>
 							<td>Convenience functions for converting one or more arguments
  of any type into text (the three character widths).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3188,7 +3263,7 @@ spells <code class="lang-d"><span class="str">"null"</span></code>. This functio
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3198,6 +3273,8 @@ spells <code class="lang-d"><span class="str">"null"</span></code>. This functio
 							</td>
 							<td>Thrown on conversion errors.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3207,6 +3284,8 @@ spells <code class="lang-d"><span class="str">"null"</span></code>. This functio
 							</td>
 							<td>Thrown on conversion overflow errors.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3215,7 +3294,7 @@ spells <code class="lang-d"><span class="str">"null"</span></code>. This functio
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3226,6 +3305,8 @@ spells <code class="lang-d"><span class="str">"null"</span></code>. This functio
 							<td>A wrapper on top of the built-in cast operator that allows one to restrict
     casting of the original type of the value.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3235,6 +3316,8 @@ spells <code class="lang-d"><span class="str">"null"</span></code>. This functio
 							</td>
 							<td>Rounded conversion from floating point to integral.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3251,6 +3334,8 @@ it checks for overflow; <code class="lang-d"><a href="../std/conv/to.to.html"><s
 inserted when necessary, e.g., <code class="lang-d"><a href="../std/conv/to.to.html"><span class="pln">to</span></a><span class="pun">!</span><span class="typ">double</span><span class="pun">(</span><span class="lit">42</span><span class="pun">)</span></code> does not do
 any checking because any <code class="lang-d"><span class="typ">int</span></code> fits in a <code class="lang-d"><span class="typ">double</span></code>.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 					</table>
 				</section>

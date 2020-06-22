@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -3027,37 +3042,46 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="crc32Of" class="public" href="../../std/digest/crc/crc32_of.html">crc32Of</a><span class="decoration">(data)</span>
+									<a id="crc32Of" class="public" href="../../std/digest/crc/crc32_of.html">crc32Of</a><span class="tableEntryAnnotation">(data)</span>
 								</code>
 							</td>
 							<td>This is a convenience alias for <code class="lang-d"><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">digest<wbr/></span><span class="pun">.</span><span class="pln">digest</span></code> using the
  CRC32 implementation.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="crc64ECMAOf" class="public" href="../../std/digest/crc/crc64_ecma_of.html">crc64ECMAOf</a><span class="decoration">(data)</span>
+									<a id="crc64ECMAOf" class="public" href="../../std/digest/crc/crc64_ecma_of.html">crc64ECMAOf</a><span class="tableEntryAnnotation">(data)</span>
 								</code>
 							</td>
 							<td>This is a convenience alias for <code class="lang-d"><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">digest<wbr/></span><span class="pun">.</span><span class="pln">digest</span></code> using the
  CRC64-ECMA implementation.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="crc64ISOOf" class="public" href="../../std/digest/crc/crc64_iso_of.html">crc64ISOOf</a><span class="decoration">(data)</span>
+									<a id="crc64ISOOf" class="public" href="../../std/digest/crc/crc64_iso_of.html">crc64ISOOf</a><span class="tableEntryAnnotation">(data)</span>
 								</code>
 							</td>
 							<td>This is a convenience alias for <code class="lang-d"><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">digest<wbr/></span><span class="pun">.</span><span class="pln">digest<wbr/></span><span class="pun">.</span><span class="pln">digest</span></code> using the
  CRC64-ISO implementation.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3066,7 +3090,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3076,6 +3100,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Generic Template API used for CRC32 and CRC64 implementations.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

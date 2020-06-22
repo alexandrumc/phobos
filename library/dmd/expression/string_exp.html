@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/dmd/blob/master/src/dmd/expression.d#L2277">
+							<a href="https://github.com/dlang/dmd/blob/master/src/dmd/expression.d#L2285">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/dmd/edit/master/src/dmd/expression.d#L2277">
+							<a href="https://github.com/dlang/dmd/edit/master/src/dmd/expression.d#L2285">
 								Improve this page
 							</a>
 							<div>
@@ -2959,6 +2974,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/string_exp.borrow_data.html" class="public">
 									<code>borrowData</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Borrow a slice of the data, so the caller can modify
  it in-place (!)
@@ -2969,6 +2985,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/string_exp.compare.html" class="public">
 									<code>compare</code>
 								</a>
+								<span class="tableEntryAnnotation">(se2)</span>
 							</td>
 							<td>Compare two <code class="lang-d"><a href="../../dmd/expression/string_exp.html"><span class="typ">StringExp</span></a></code> by length, then value
 </td>
@@ -2978,6 +2995,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/string_exp.get_code_unit.html" class="public">
 									<code>getCodeUnit</code>
 								</a>
+								<span class="tableEntryAnnotation">(i)</span>
 							</td>
 							<td>Get the code unit at index i
 </td>
@@ -2987,6 +3005,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/string_exp.number_of_code_units.html" class="public">
 									<code>numberOfCodeUnits</code>
 								</a>
+								<span class="tableEntryAnnotation">(tynto)</span>
 							</td>
 							<td>Return the number of code units the string would be if it were re-encoded
  as tynto.
@@ -2997,6 +3016,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/string_exp.peek_data.html" class="public">
 									<code>peekData</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Get a slice of the data.
 </td>
@@ -3006,6 +3026,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/string_exp.set_code_unit.html" class="public">
 									<code>setCodeUnit</code>
 								</a>
+								<span class="tableEntryAnnotation">(i, c)</span>
 							</td>
 							<td>Set the code unit at index i to c
 </td>
@@ -3015,6 +3036,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/string_exp.set_data.html" class="public">
 									<code>setData</code>
 								</a>
+								<span class="tableEntryAnnotation">(s, len, sz)</span>
 							</td>
 							<td>Set new string data.
  <code class="lang-d"><span class="kwd">this</span></code> becomes the new owner of the data.
@@ -3025,6 +3047,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/string_exp.to_stringz.html" class="public">
 									<code>toStringz</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Convert string contents to a 0 terminated string,
  allocated by mem.xmalloc().
@@ -3035,6 +3058,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/string_exp.to_ut_f8.html" class="public">
 									<code>toUTF8</code>
 								</a>
+								<span class="tableEntryAnnotation">(sc)</span>
 							</td>
 							<td>Convert string to char[].
 </td>
@@ -3044,6 +3068,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/string_exp.write_to.html" class="public">
 									<code>writeTo</code>
 								</a>
+								<span class="tableEntryAnnotation">(dest, zero, tyto)</span>
 							</td>
 							<td>Write the contents of the string to dest.
  Use numberOfCodeUnits() to determine size of result.
@@ -3054,6 +3079,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/ast_node/ast_node.accept.html" class="public inherited">
 									<code>accept</code>
 								</a>
+								<span class="tableEntryAnnotation">(v)</span>
 							</td>
 							<td>Visits this AST node using the given visitor.
 </td>
@@ -3063,6 +3089,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/expression.add_dtor_hook.html" class="public inherited">
 									<code>addDtorHook</code>
 								</a>
+								<span class="tableEntryAnnotation">(sc)</span>
 							</td>
 							<td>Destructors are attached to VarDeclarations.
  Hence, if expression returns a temp that needs a destructor,
@@ -3074,6 +3101,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/expression.address_of.html" class="public inherited">
 									<code>addressOf</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Take address of expression.
 </td>
@@ -3083,6 +3111,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/expression.check_modifiable.html" class="public inherited">
 									<code>checkModifiable</code>
 								</a>
+								<span class="tableEntryAnnotation">(sc, flag)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3091,6 +3120,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/expression.check_nogc.html" class="public inherited">
 									<code>checkNogc</code>
 								</a>
+								<span class="tableEntryAnnotation">(sc, f)</span>
 							</td>
 							<td>Calling function f.
  Check the @nogc-ness, i.e. if we're in a @nogc function
@@ -3103,6 +3133,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/expression.check_postblit.html" class="public inherited">
 									<code>checkPostblit</code>
 								</a>
+								<span class="tableEntryAnnotation">(sc, t)</span>
 							</td>
 							<td>Check that the postblit is callable if t is an array of structs.
  Returns true if error happens.
@@ -3113,6 +3144,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/expression.check_purity.html" class="public inherited">
 									<code>checkPurity</code>
 								</a>
+								<span class="tableEntryAnnotation">(sc, f)</span>
 							</td>
 							<td>Calling function f.
  Check the purity, i.e. if we're in a pure function
@@ -3125,6 +3157,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/expression.check_purity.html" class="public inherited">
 									<code>checkPurity</code>
 								</a>
+								<span class="tableEntryAnnotation">(sc, v)</span>
 							</td>
 							<td>Accessing variable v.
  Check for purity and safety violations.
@@ -3136,6 +3169,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/expression.check_read_modify_write.html" class="public inherited">
 									<code>checkReadModifyWrite</code>
 								</a>
+								<span class="tableEntryAnnotation">(rmwOp, ex)</span>
 							</td>
 							<td>Check whether the expression allows RMW operations, error with rmw operator diagnostic if not.
  ex is the RHS expression, or NULL if ++/-- is used (for diagnostics)
@@ -3147,6 +3181,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/expression.check_safety.html" class="public inherited">
 									<code>checkSafety</code>
 								</a>
+								<span class="tableEntryAnnotation">(sc, f)</span>
 							</td>
 							<td>Calling function f.
  Check the safety, i.e. if we're in a @safe function
@@ -3159,6 +3194,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/expression.check_type.html" class="public inherited">
 									<code>checkType</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Check that the expression has a valid type.
  If not, generates an error "... has no type".
@@ -3169,6 +3205,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/expression.check_value.html" class="public inherited">
 									<code>checkValue</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Check that the expression has a valid value.
  If not, generates an error "... has no value".
@@ -3179,6 +3216,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/expression.combine.html" class="public inherited">
 									<code>combine</code>
 								</a>
+								<span class="tableEntryAnnotation">(e1, e2)</span>
 							</td>
 							<td>Combine e1 and e2 by CommaExp if both are not NULL.
 </td>
@@ -3188,6 +3226,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/expression.copy.html" class="public inherited">
 									<code>copy</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Does *not* do a deep copy.
 </td>
@@ -3197,6 +3236,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/expression.deinitialize.html" class="public inherited">
 									<code>deinitialize</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Deinitializes the global state of the compiler.
 </td>
@@ -3206,6 +3246,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/expression.deref.html" class="public inherited">
 									<code>deref</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>If this is a reference, dereference it.
 </td>
@@ -3215,6 +3256,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/expression.extract_last.html" class="public inherited">
 									<code>extractLast</code>
 								</a>
+								<span class="tableEntryAnnotation">(e, e0)</span>
 							</td>
 							<td>If 'e' is a tree of commas, returns the rightmost expression
  by stripping off it from the tree. The remained part of the tree
@@ -3227,6 +3269,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.factory.html" class="public inherited">
 									<code>factory</code>
 								</a>
+								<span class="tableEntryAnnotation">(classname)</span>
 							</td>
 							<td>Create instance of class specified by the fully qualified name
  classname.
@@ -3239,6 +3282,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/expression.is_bool.html" class="public inherited">
 									<code>isBool</code>
 								</a>
+								<span class="tableEntryAnnotation">(result)</span>
 							</td>
 							<td>Does this expression statically evaluate to a boolean 'result' (true or false)?
 </td>
@@ -3248,6 +3292,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/expression.is_lvalue.html" class="public inherited">
 									<code>isLvalue</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Return !=0 if expression is an lvalue.
 </td>
@@ -3257,6 +3302,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.op_cmp.html" class="public inherited">
 									<code>opCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Compare with another Object obj.
 </td>
@@ -3266,6 +3312,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.op_equals.html" class="public inherited">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Test whether <code class="lang-d"><span class="kwd">this</span></code> is equal to <code class="lang-d"><a href="../../object/object.op_equals.html#o"><span class="pln">o</span></a></code>.
  The default implementation only compares by identity (using the <code class="lang-d"><span class="kwd">is</span></code> operator).
@@ -3277,6 +3324,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/expression.resolve_loc.html" class="public inherited">
 									<code>resolveLoc</code>
 								</a>
+								<span class="tableEntryAnnotation">(loc, sc)</span>
 							</td>
 							<td>Resolve _FILE__, _LINE__, _MODULE__, _FUNCTION__, _PRETTY_FUNCTION__, _FILE_FULL_PATH__ to loc.
 </td>
@@ -3286,6 +3334,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/expression.to_boolean.html" class="public inherited">
 									<code>toBoolean</code>
 								</a>
+								<span class="tableEntryAnnotation">(sc)</span>
 							</td>
 							<td>If expression can be tested for true or false,
  returns the modified expression.
@@ -3297,6 +3346,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.to_hash.html" class="public inherited">
 									<code>toHash</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Compute hash function for Object.
 </td>
@@ -3306,6 +3356,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/expression/expression.to_lvalue.html" class="public inherited">
 									<code>toLvalue</code>
 								</a>
+								<span class="tableEntryAnnotation">(sc, e)</span>
 							</td>
 							<td>Give error if we're not an lvalue.
  If we can, convert expression to be an lvalue.
@@ -3316,6 +3367,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../dmd/root/rootobject/root_object.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3324,6 +3376,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Convert Object to a human readable string.
 </td>

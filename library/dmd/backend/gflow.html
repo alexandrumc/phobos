@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2951,63 +2966,81 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="flowae" class="public" href="../../dmd/backend/gflow/flowae.html">flowae</a><span class="decoration">()</span>
+									<a id="flowae" class="public" href="../../dmd/backend/gflow/flowae.html">flowae</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>AVAILABLE EXPRESSIONS
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="flowcp" class="public" href="../../dmd/backend/gflow/flowcp.html">flowcp</a><span class="decoration">()</span>
+									<a id="flowcp" class="public" href="../../dmd/backend/gflow/flowcp.html">flowcp</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>COPY PROPAGATION
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="flowlv" class="public" href="../../dmd/backend/gflow/flowlv.html">flowlv</a><span class="decoration">()</span>
+									<a id="flowlv" class="public" href="../../dmd/backend/gflow/flowlv.html">flowlv</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>LIVE VARIABLES
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="flowrd" class="public" href="../../dmd/backend/gflow/flowrd.html">flowrd</a><span class="decoration">()</span>
+									<a id="flowrd" class="public" href="../../dmd/backend/gflow/flowrd.html">flowrd</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>REACHING DEFINITIONS
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="flowvbe" class="public" href="../../dmd/backend/gflow/flowvbe.html">flowvbe</a><span class="decoration">()</span>
+									<a id="flowvbe" class="public" href="../../dmd/backend/gflow/flowvbe.html">flowvbe</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>VERY BUSY EXPRESSIONS
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="genkillae" class="public" href="../../dmd/backend/gflow/genkillae.html">genkillae</a><span class="decoration">()</span>
+									<a id="genkillae" class="public" href="../../dmd/backend/gflow/genkillae.html">genkillae</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Compute GEN and KILL vectors only for AEs.
  defkill and starkill are assumed to be already set up correctly.
  go.expnod[] is assumed to be set up correctly.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

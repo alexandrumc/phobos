@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2944,21 +2959,24 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="globalLogLevel" class="public property" href="../../../std/experimental/logger/core/global_log_level.html">globalLogLevel</a><span class="decoration">()</span>
+									<a id="globalLogLevel" class="public property" href="../../../std/experimental/logger/core/global_log_level.html">globalLogLevel</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>This methods get and set the global <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isLoggingEnabled" class="public" href="../../../std/experimental/logger/core/is_logging_enabled.html">isLoggingEnabled</a><span class="decoration">(ll, loggerLL, globalLL, condition)</span>
+									<a id="isLoggingEnabled" class="public" href="../../../std/experimental/logger/core/is_logging_enabled.html">isLoggingEnabled</a><span class="tableEntryAnnotation">(ll, loggerLL, globalLL, condition)</span>
 								</code>
 							</td>
 							<td>This functions is used at runtime to determine if a <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> is
@@ -2967,97 +2985,130 @@ certain levels. Again the version statements are associated with a compile
 unit and can therefore not disable logging in other compile units.
 pure bool isLoggingEnabled()(LogLevel ll) @safe nothrow @nogc
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="log" class="public" href="../../../std/experimental/logger/core/log.html">log</a><span class="decoration">(ll, condition, args)</span>
+									<a id="log" class="public" href="../../../std/experimental/logger/core/log.html">log</a><span class="tableEntryAnnotation">(ll, condition, args)</span>
 								</code>
 							</td>
 							<td>This function logs data.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="log" class="public" href="../../../std/experimental/logger/core/log.html">log</a><span class="decoration">(ll, args)</span>
+									<a id="log" class="public" href="../../../std/experimental/logger/core/log.html">log</a><span class="tableEntryAnnotation">(ll, args)</span>
 								</code>
 							</td>
 							<td>This function logs data.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="log" class="public" href="../../../std/experimental/logger/core/log.html">log</a><span class="decoration">(condition, args)</span>
+									<a id="log" class="public" href="../../../std/experimental/logger/core/log.html">log</a><span class="tableEntryAnnotation">(condition, args)</span>
 								</code>
 							</td>
 							<td>This function logs data.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="log" class="public" href="../../../std/experimental/logger/core/log.html">log</a><span class="decoration">(args)</span>
+									<a id="log" class="public" href="../../../std/experimental/logger/core/log.html">log</a><span class="tableEntryAnnotation">(args)</span>
 								</code>
 							</td>
 							<td>This function logs data.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="logf" class="public" href="../../../std/experimental/logger/core/logf.html">logf</a><span class="decoration">(ll, condition, msg, args)</span>
+									<a id="logf" class="public" href="../../../std/experimental/logger/core/logf.html">logf</a><span class="tableEntryAnnotation">(ll, condition, msg, args)</span>
 								</code>
 							</td>
 							<td>This function logs data in a <code class="lang-d"><span class="pln">printf</span></code>-style manner.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="logf" class="public" href="../../../std/experimental/logger/core/logf.html">logf</a><span class="decoration">(ll, msg, args)</span>
+									<a id="logf" class="public" href="../../../std/experimental/logger/core/logf.html">logf</a><span class="tableEntryAnnotation">(ll, msg, args)</span>
 								</code>
 							</td>
 							<td>This function logs data in a <code class="lang-d"><span class="pln">printf</span></code>-style manner.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="logf" class="public" href="../../../std/experimental/logger/core/logf.html">logf</a><span class="decoration">(condition, msg, args)</span>
+									<a id="logf" class="public" href="../../../std/experimental/logger/core/logf.html">logf</a><span class="tableEntryAnnotation">(condition, msg, args)</span>
 								</code>
 							</td>
 							<td>This function logs data in a <code class="lang-d"><span class="pln">printf</span></code>-style manner.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="logf" class="public" href="../../../std/experimental/logger/core/logf.html">logf</a><span class="decoration">(msg, args)</span>
+									<a id="logf" class="public" href="../../../std/experimental/logger/core/logf.html">logf</a><span class="tableEntryAnnotation">(msg, args)</span>
 								</code>
 							</td>
 							<td>This function logs data in a <code class="lang-d"><span class="pln">printf</span></code>-style manner.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="sharedLog" class="public property" href="../../../std/experimental/logger/core/shared_log.html">sharedLog</a><span class="decoration">()</span>
+									<a id="sharedLog" class="public property" href="../../../std/experimental/logger/core/shared_log.html">sharedLog</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>This property sets and gets the default <code class="lang-d"><a href="../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="stdThreadLocalLog" class="public property" href="../../../std/experimental/logger/core/std_thread_local_log.html">stdThreadLocalLog</a><span class="decoration">()</span>
+									<a id="stdThreadLocalLog" class="public property" href="../../../std/experimental/logger/core/std_thread_local_log.html">stdThreadLocalLog</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>This function returns a thread unique <code class="lang-d"><a href="../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code>, that by default
 propergates all data logged to it to the <code class="lang-d"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln">sharedLog</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3066,7 +3117,7 @@ propergates all data logged to it to the <code class="lang-d"><a href="../../../
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3078,6 +3129,8 @@ propergates all data logged to it to the <code class="lang-d"><a href="../../../
 logger a deriving class needs to implement the <code class="lang-d"><a href="../../../std/experimental/logger/core/logger.write_log_msg.html"><span class="pln">writeLogMsg</span></a></code> method. By
 default this is not thread-safe.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3087,6 +3140,8 @@ default this is not thread-safe.
 							</td>
 							<td>The <code class="lang-d"><span class="typ">StdForwardLogger</span></code> will always forward anything to the sharedLog.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3095,7 +3150,7 @@ default this is not thread-safe.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3108,6 +3163,8 @@ default this is not thread-safe.
 If a log function with <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html#fatal"><span class="typ">LogLevel<wbr/></span><span class="pun">.</span><span class="pln">fatal</span></a></code> is called the shutdown handler of
 that logger is called.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3116,7 +3173,7 @@ that logger is called.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3127,6 +3184,8 @@ that logger is called.
 							<td>This template provides the global log functions with the <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code>
 is encoded in the function name.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3137,6 +3196,8 @@ is encoded in the function name.
 							<td>This template provides the global <code class="lang-d"><span class="pln">printf</span></code>-style log functions with
 the <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> is encoded in the function name.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3148,6 +3209,8 @@ the <code class="lang-d"><a href="../../../std/experimental/logger/core/log_leve
 suffix "loggerconfig.d". This <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> sets the minimal <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code>
 of the module.
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3192,8 +3255,8 @@ specific compile unit.
 							</td>
 							<td>
 							</td>
-							<td>This template returns the <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></code> named "logLevel" of type <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> defined in a user defined module where the filename has the
-suffix "loggerconfig.d". This <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></code> sets the minimal <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></code>
+							<td>This template returns the <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> named "logLevel" of type <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> defined in a user defined module where the filename has the
+suffix "loggerconfig.d". This <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> sets the minimal <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code>
 of the module.
 </td>
 						</tr>
@@ -3241,7 +3304,7 @@ manner.
 							<td>
 								<code class="prettyprint lang-d"><span class="pln">defaultLogFunction</span>!(LogLevel.error)</code>
 							</td>
-							<td>This function logs data to the <code class="lang-d"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln">stdThreadLocalLog</span></a></span></a></code>, optionally depending
+							<td>This function logs data to the <code class="lang-d"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln">stdThreadLocalLog</span></a></code>, optionally depending
 on a condition.
 </td>
 						</tr>
@@ -3254,7 +3317,7 @@ on a condition.
 							<td>
 								<code class="prettyprint lang-d"><span class="pln">defaultLogFunctionf</span>!(LogLevel.error)</code>
 							</td>
-							<td>This function logs data to the <code class="lang-d"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln">sharedLog</span></a></span></a></code> in a <code class="lang-d"><span class="pln">printf</span></code>-style
+							<td>This function logs data to the <code class="lang-d"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln">sharedLog</span></a></code> in a <code class="lang-d"><span class="pln">printf</span></code>-style
 manner.
 </td>
 						</tr>
@@ -3267,7 +3330,7 @@ manner.
 							<td>
 								<code class="prettyprint lang-d"><span class="pln">defaultLogFunction</span>!(LogLevel.fatal)</code>
 							</td>
-							<td>This function logs data to the <code class="lang-d"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln">stdThreadLocalLog</span></a></span></a></span></a></code>, optionally depending
+							<td>This function logs data to the <code class="lang-d"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln">stdThreadLocalLog</span></a></code>, optionally depending
 on a condition.
 </td>
 						</tr>
@@ -3280,7 +3343,7 @@ on a condition.
 							<td>
 								<code class="prettyprint lang-d"><span class="pln">defaultLogFunctionf</span>!(LogLevel.fatal)</code>
 							</td>
-							<td>This function logs data to the <code class="lang-d"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln">sharedLog</span></a></span></a></span></a></code> in a <code class="lang-d"><span class="pln">printf</span></code>-style
+							<td>This function logs data to the <code class="lang-d"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln">sharedLog</span></a></code> in a <code class="lang-d"><span class="pln">printf</span></code>-style
 manner.
 </td>
 						</tr>
@@ -3293,7 +3356,7 @@ manner.
 							<td>
 								<code class="prettyprint lang-d"><span class="pln">defaultLogFunction</span>!(LogLevel.info)</code>
 							</td>
-							<td>This function logs data to the <code class="lang-d"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln">stdThreadLocalLog</span></a></span></a></span></a></span></a></code>, optionally depending
+							<td>This function logs data to the <code class="lang-d"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln">stdThreadLocalLog</span></a></code>, optionally depending
 on a condition.
 </td>
 						</tr>
@@ -3306,7 +3369,7 @@ on a condition.
 							<td>
 								<code class="prettyprint lang-d"><span class="pln">defaultLogFunctionf</span>!(LogLevel.info)</code>
 							</td>
-							<td>This function logs data to the <code class="lang-d"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln">sharedLog</span></a></span></a></span></a></span></a></code> in a <code class="lang-d"><span class="pln">printf</span></code>-style
+							<td>This function logs data to the <code class="lang-d"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln">sharedLog</span></a></code> in a <code class="lang-d"><span class="pln">printf</span></code>-style
 manner.
 </td>
 						</tr>
@@ -3319,7 +3382,7 @@ manner.
 							<td>
 								<code class="prettyprint lang-d"><span class="pln">defaultLogFunction</span>!(LogLevel.trace)</code>
 							</td>
-							<td>This function logs data to the <code class="lang-d"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln">stdThreadLocalLog</span></a></span></a></span></a></span></a></span></a></code>, optionally depending
+							<td>This function logs data to the <code class="lang-d"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln">stdThreadLocalLog</span></a></code>, optionally depending
 on a condition.
 </td>
 						</tr>
@@ -3332,7 +3395,7 @@ on a condition.
 							<td>
 								<code class="prettyprint lang-d"><span class="pln">defaultLogFunctionf</span>!(LogLevel.trace)</code>
 							</td>
-							<td>This function logs data to the <code class="lang-d"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln">sharedLog</span></a></span></a></span></a></span></a></span></a></code> in a <code class="lang-d"><span class="pln">printf</span></code>-style
+							<td>This function logs data to the <code class="lang-d"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln">sharedLog</span></a></code> in a <code class="lang-d"><span class="pln">printf</span></code>-style
 manner.
 </td>
 						</tr>
@@ -3345,7 +3408,7 @@ manner.
 							<td>
 								<code class="prettyprint lang-d"><span class="pln">defaultLogFunction</span>!(LogLevel.warning)</code>
 							</td>
-							<td>This function logs data to the <code class="lang-d"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln">stdThreadLocalLog</span></a></span></a></span></a></span></a></span></a></span></a></code>, optionally depending
+							<td>This function logs data to the <code class="lang-d"><a href="../../../std/experimental/logger/core/std_thread_local_log.html"><span class="pln">stdThreadLocalLog</span></a></code>, optionally depending
 on a condition.
 </td>
 						</tr>
@@ -3358,7 +3421,7 @@ on a condition.
 							<td>
 								<code class="prettyprint lang-d"><span class="pln">defaultLogFunctionf</span>!(LogLevel.warning)</code>
 							</td>
-							<td>This function logs data to the <code class="lang-d"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln">sharedLog</span></a></span></a></span></a></span></a></span></a></span></a></code> in a <code class="lang-d"><span class="pln">printf</span></code>-style
+							<td>This function logs data to the <code class="lang-d"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln">sharedLog</span></a></code> in a <code class="lang-d"><span class="pln">printf</span></code>-style
 manner.
 </td>
 						</tr>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2952,9 +2967,9 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function chunks</h2><p>This range iterates over fixed-sized chunks of size <code class="lang-d"><a href="../std/range/chunks.html#chunkSize"><span class="pln"><a href="../../std/range/chunks.html#chunkSize"><span class="pln">chunkSize</span></a></span></a></code> of a
-<code class="lang-d"><a href="../std/range/chunks.html#source"><span class="pln"><a href="../../std/range/chunks.html#source"><span class="pln">source</span></a></span></a></code> range. <code class="lang-d"><span class="typ">Source</span></code> must be an <a href="../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>.
-<code class="lang-d"><a href="../std/range/chunks.html#chunkSize"><span class="pln"><a href="../../std/range/chunks.html#chunkSize"><span class="pln">chunkSize</span></a></span></a></code> must be greater than zero.
+				</nav><h2 id="0">Function chunks</h2><p>This range iterates over fixed-sized chunks of size <code class="lang-d"><a href="../../std/range/chunks.html#chunkSize"><span class="pln">chunkSize</span></a></code> of a
+<code class="lang-d"><a href="../../std/range/chunks.html#source"><span class="pln">source</span></a></code> range. <code class="lang-d"><span class="typ">Source</span></code> must be an <a href="../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>.
+<code class="lang-d"><a href="../../std/range/chunks.html#chunkSize"><span class="pln">chunkSize</span></a></code> must be greater than zero.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -3037,9 +3052,9 @@ previous values of <code class="lang-d"><span class="pln">front</span></code>.
 </span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">chunked<wbr/></span><span class="pun">.</span><span class="pln">front<wbr/></span><span class="pun">.</span><span class="pln">equal</span><span class="pun">([</span><span class="lit">3</span><span class="pun">, </span><span class="lit">4</span><span class="pun">]));
 </span></code></pre>
 </section>
-<h2 id="1">Struct Chunks</h2><p>This range iterates over fixed-sized chunks of size <code class="lang-d"><a href="../std/range/chunks.html#chunkSize"><span class="pln"><a href="../../std/range/chunks.html#chunkSize"><span class="pln">chunkSize</span></a></span></a></code> of a
-<code class="lang-d"><a href="../std/range/chunks.html#source"><span class="pln"><a href="../../std/range/chunks.html#source"><span class="pln">source</span></a></span></a></code> range. <code class="lang-d"><span class="typ">Source</span></code> must be an <a href="../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>.
-<code class="lang-d"><a href="../std/range/chunks.html#chunkSize"><span class="pln"><a href="../../std/range/chunks.html#chunkSize"><span class="pln">chunkSize</span></a></span></a></code> must be greater than zero.
+<h2 id="1">Struct Chunks</h2><p>This range iterates over fixed-sized chunks of size <code class="lang-d"><span class="pln">chunkSize</span></code> of a
+<code class="lang-d"><span class="pln">source</span></code> range. <code class="lang-d"><span class="typ">Source</span></code> must be an <a href="../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>.
+<code class="lang-d"><span class="pln">chunkSize</span></code> must be greater than zero.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -3053,8 +3068,8 @@ previous values of <code class="lang-d"><span class="pln">front</span></code>.
 					</code>
 				</div>
 				<section><p>If <code class="lang-d"><span class="pun">!</span><span class="pln">isInfinite</span><span class="pun">!</span><span class="typ">Source</span></code> and <code class="lang-d"><span class="pln">source<wbr/></span><span class="pun">.</span><span class="pln">walkLength</span></code> is not evenly
-divisible by <code class="lang-d"><a href="../../std/range/chunks.html#chunkSize"><span class="pln">chunkSize</span></a></code>, the back element of this range will contain
-fewer than <code class="lang-d"><a href="../../std/range/chunks.html#chunkSize"><span class="pln">chunkSize</span></a></code> elements.
+divisible by <code class="lang-d"><span class="pln">chunkSize</span></code>, the back element of this range will contain
+fewer than <code class="lang-d"><span class="pln">chunkSize</span></code> elements.
 </p>
 
 <p>If <code class="lang-d"><span class="typ">Source</span></code> is a forward range, the resulting range will be forward ranges as
@@ -3073,6 +3088,7 @@ well. Otherwise, the resulting chunks will be input ranges consuming the same
 								<a href="../../std/range/chunks.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(source, chunkSize)</span>
 							</td>
 							<td>Standard constructor
 </td>
@@ -3134,6 +3150,7 @@ well. Otherwise, the resulting chunks will be input ranges consuming the same
 								<a href="../../std/range/chunks.op_index.html" class="public">
 									<code>opIndex</code>
 								</a>
+								<span class="tableEntryAnnotation">(index)</span>
 							</td>
 							<td>Indexing and slicing operations. Provided only if
             <code class="lang-d"><span class="pln">hasSlicing</span><span class="pun">!</span><span class="typ">Source</span></code> is <code class="lang-d"><span class="kwd">true</span></code>.
@@ -3144,6 +3161,7 @@ well. Otherwise, the resulting chunks will be input ranges consuming the same
 								<a href="../../std/range/chunks.op_slice.html" class="public">
 									<code>opSlice</code>
 								</a>
+								<span class="tableEntryAnnotation">(lower, upper)</span>
 							</td>
 							<td>Indexing and slicing operations. Provided only if
             <code class="lang-d"><span class="pln">hasSlicing</span><span class="pun">!</span><span class="typ">Source</span></code> is <code class="lang-d"><span class="kwd">true</span></code>.
@@ -3154,6 +3172,7 @@ well. Otherwise, the resulting chunks will be input ranges consuming the same
 								<a href="../../std/range/chunks.pop_back.html" class="public">
 									<code>popBack</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Bidirectional range primitives. Provided only if both
             <code class="lang-d"><span class="pln">hasSlicing</span><span class="pun">!</span><span class="typ">Source</span></code> and <code class="lang-d"><span class="pln">hasLength</span><span class="pun">!</span><span class="typ">Source</span></code> are <code class="lang-d"><span class="kwd">true</span></code>.
@@ -3164,6 +3183,7 @@ well. Otherwise, the resulting chunks will be input ranges consuming the same
 								<a href="../../std/range/chunks.pop_front.html" class="public">
 									<code>popFront</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Input range primitives. Always present.
 </td>
@@ -3171,10 +3191,10 @@ well. Otherwise, the resulting chunks will be input ranges consuming the same
 					</table>
 				</section>
 				<section><h3>input</h3>
-<p>iterating over <code class="lang-d"><span class="pln"><a href="../../std/range/chunks.front.html"><span class="pln">front</span></a></span></code> will shrink the chunk such that subsequent
-invocations of <code class="lang-d"><span class="pln"><a href="../../std/range/chunks.front.html"><span class="pln">front</span></a></span></code> will no longer return the full chunk, and calling
-<code class="lang-d"><span class="pln"><a href="../../std/range/chunks.pop_front.html"><span class="pln">popFront</span></a></span></code> on the outer range will invalidate any lingering references to
-previous values of <code class="lang-d"><span class="pln"><a href="../../std/range/chunks.front.html"><span class="pln">front</span></a></span></code>.
+<p>iterating over <code class="lang-d"><a href="../../std/range/chunks.front.html"><span class="pln">front</span></a></code> will shrink the chunk such that subsequent
+invocations of <code class="lang-d"><a href="../../std/range/chunks.front.html"><span class="pln">front</span></a></code> will no longer return the full chunk, and calling
+<code class="lang-d"><a href="../../std/range/chunks.pop_front.html"><span class="pln">popFront</span></a></code> on the outer range will invalidate any lingering references to
+previous values of <code class="lang-d"><a href="../../std/range/chunks.front.html"><span class="pln">front</span></a></code>.
 </p>
 </section>
 <section><h3>Parameters</h3>

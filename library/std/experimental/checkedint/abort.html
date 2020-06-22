@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2938,7 +2953,7 @@ $('#symbolSearchPane').show();</script>
 						</div>
 					</div>
 				</div><h1>Struct <code><a href="../../../std/experimental/checkedint.html">std.experimental.checkedint</a>.Abort</code></h1><p>Force all integral errors to fail by printing an error message to <code class="lang-d"><span class="pln">stderr</span></code> and
-then abort the program. <code class="lang-d"><span class="typ"><span class="typ">Abort</span></span></code> is the default second argument for <code class="lang-d"><a href="../../std/experimental/checkedint/checked.html"><span class="typ"><a href="../../../std/experimental/checkedint/checked.html"><span class="typ">Checked</span></a></span></a></code>.
+then abort the program. <code class="lang-d"><span class="typ">Abort</span></code> is the default second argument for <code class="lang-d"><a href="../../../std/experimental/checkedint/checked.html"><span class="typ">Checked</span></a></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2961,6 +2976,7 @@ then abort the program. <code class="lang-d"><span class="typ"><span class="typ"
 								<a href="../../../std/experimental/checkedint/abort.hook_op_cmp.html" class="public">
 									<code>hookOpCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(lhs, rhs)</span>
 							</td>
 							<td>Called automatically upon a comparison for ordering using one of the
     operators <code class="lang-d"><span class="pun">&lt;</span></code>, <code class="lang-d"><span class="pun">&lt;=</span></code>, <code class="lang-d"><span class="pun">&gt;</span></code>, or <code class="lang-d"><span class="pun">&gt;=</span></code>. In case the comparison is erroneous (i.e.
@@ -2975,6 +2991,7 @@ then abort the program. <code class="lang-d"><span class="typ"><span class="typ"
 								<a href="../../../std/experimental/checkedint/abort.hook_op_equals.html" class="public">
 									<code>hookOpEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(lhs, rhs)</span>
 							</td>
 							<td>Called automatically upon a comparison for equality. In case of a erroneous
     comparison (one that would make a signed negative value appear equal to an
@@ -2987,6 +3004,7 @@ then abort the program. <code class="lang-d"><span class="typ"><span class="typ"
 								<a href="../../../std/experimental/checkedint/abort.on_bad_cast.html" class="public">
 									<code>onBadCast</code>
 								</a>
+								<span class="tableEntryAnnotation">(src)</span>
 							</td>
 							<td>Called automatically upon a bad cast (one that loses precision or attempts
     to convert a negative value to an unsigned type). The source type is <code class="lang-d"><span class="typ">Src</span></code>
@@ -2998,6 +3016,7 @@ then abort the program. <code class="lang-d"><span class="typ"><span class="typ"
 								<a href="../../../std/experimental/checkedint/abort.on_lower_bound.html" class="public">
 									<code>onLowerBound</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs, bound)</span>
 							</td>
 							<td>Called automatically upon a bounds error.
 </td>
@@ -3007,6 +3026,7 @@ then abort the program. <code class="lang-d"><span class="typ"><span class="typ"
 								<a href="../../../std/experimental/checkedint/abort.on_overflow.html" class="public">
 									<code>onOverflow</code>
 								</a>
+								<span class="tableEntryAnnotation">(lhs)</span>
 							</td>
 							<td>Called automatically upon an overflow during a unary or binary operation.
 </td>
@@ -3016,6 +3036,7 @@ then abort the program. <code class="lang-d"><span class="typ"><span class="typ"
 								<a href="../../../std/experimental/checkedint/abort.on_upper_bound.html" class="public">
 									<code>onUpperBound</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs, bound)</span>
 							</td>
 							<td>Called automatically upon a bounds error.
 </td>

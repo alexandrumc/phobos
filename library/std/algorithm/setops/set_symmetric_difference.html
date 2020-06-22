@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2952,8 +2967,8 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function setSymmetricDifference</h2><p>Lazily computes the symmetric difference of <code class="lang-d"><a href="../../std/algorithm/setops/set_symmetric_difference.html#r1"><span class="pln"><a href="../../../std/algorithm/setops/set_symmetric_difference.html#r1"><span class="pln">r1</span></a></span></a></code> and <code class="lang-d"><a href="../../std/algorithm/setops/set_symmetric_difference.html#r2"><span class="pln"><a href="../../../std/algorithm/setops/set_symmetric_difference.html#r2"><span class="pln">r2</span></a></span></a></code>,
-i.e. the elements that are present in exactly one of <code class="lang-d"><a href="../../std/algorithm/setops/set_symmetric_difference.html#r1"><span class="pln"><a href="../../../std/algorithm/setops/set_symmetric_difference.html#r1"><span class="pln">r1</span></a></span></a></code> and <code class="lang-d"><a href="../../../std/algorithm/setops/set_symmetric_difference.html#r2"><span class="pln">r2</span></a></code>. The two ranges are assumed to be sorted by <code class="lang-d"><span class="pln">less</span></code>, and the
+				</nav><h2 id="0">Function setSymmetricDifference</h2><p>Lazily computes the symmetric difference of <code class="lang-d"><a href="../../../std/algorithm/setops/set_symmetric_difference.html#r1"><span class="pln">r1</span></a></code> and <code class="lang-d"><a href="../../../std/algorithm/setops/set_symmetric_difference.html#r2"><span class="pln">r2</span></a></code>,
+i.e. the elements that are present in exactly one of <code class="lang-d"><a href="../../../std/algorithm/setops/set_symmetric_difference.html#r1"><span class="pln">r1</span></a></code> and <code class="lang-d"><a href="../../../std/algorithm/setops/set_symmetric_difference.html#r2"><span class="pln">r2</span></a></code>. The two ranges are assumed to be sorted by <code class="lang-d"><span class="pln">less</span></code>, and the
 output is also sorted by <code class="lang-d"><span class="pln">less</span></code>. The element types of the two
 ranges must have a common type.
 </p>
@@ -3018,8 +3033,8 @@ that type.
 </span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">equal</span><span class="pun">(</span><span class="pln">setSymmetricDifference</span><span class="pun">(</span><span class="pln">c</span><span class="pun">, </span><span class="pln">d</span><span class="pun">), [</span><span class="lit">1</span><span class="pun">, </span><span class="lit">1</span><span class="pun">, </span><span class="lit">2</span><span class="pun">, </span><span class="lit">5</span><span class="pun">, </span><span class="lit">6</span><span class="pun">, </span><span class="lit">7</span><span class="pun">, </span><span class="lit">9</span><span class="pun">]));
 </span></code></pre>
 </section>
-<h2 id="1">Struct SetSymmetricDifference</h2><p>Lazily computes the symmetric difference of <code class="lang-d"><a href="../../std/algorithm/setops/set_symmetric_difference.html#r1"><span class="pln"><a href="../../../std/algorithm/setops/set_symmetric_difference.html#r1"><span class="pln">r1</span></a></span></a></code> and <code class="lang-d"><a href="../../std/algorithm/setops/set_symmetric_difference.html#r2"><span class="pln"><a href="../../../std/algorithm/setops/set_symmetric_difference.html#r2"><span class="pln">r2</span></a></span></a></code>,
-i.e. the elements that are present in exactly one of <code class="lang-d"><a href="../../std/algorithm/setops/set_symmetric_difference.html#r1"><span class="pln"><a href="../../../std/algorithm/setops/set_symmetric_difference.html#r1"><span class="pln">r1</span></a></span></a></code> and <code class="lang-d"><span class="pln">r2</span></code>. The two ranges are assumed to be sorted by <code class="lang-d"><span class="pln">less</span></code>, and the
+<h2 id="1">Struct SetSymmetricDifference</h2><p>Lazily computes the symmetric difference of <code class="lang-d"><span class="pln">r1</span></code> and <code class="lang-d"><span class="pln">r2</span></code>,
+i.e. the elements that are present in exactly one of <code class="lang-d"><span class="pln">r1</span></code> and <code class="lang-d"><span class="pln">r2</span></code>. The two ranges are assumed to be sorted by <code class="lang-d"><span class="pln">less</span></code>, and the
 output is also sorted by <code class="lang-d"><span class="pln">less</span></code>. The element types of the two
 ranges must have a common type.
 </p>
@@ -3037,12 +3052,12 @@ ranges must have a common type.
 				<section><p>If both ranges are sets (without duplicated elements), the resulting
 range is going to be a set. If at least one of the ranges is a multiset,
 the number of occurences of an element <code class="lang-d"><span class="pln">x</span></code> in the resulting range is <code class="lang-d"><span class="pln">abs</span><span class="pun">(</span><span class="pln">a</span><span class="pun">-</span><span class="pln">b</span><span class="pun">)</span></code>
-where <code class="lang-d"><span class="pln">a</span></code> is the number of occurences of <code class="lang-d"><span class="pln">x</span></code> in <code class="lang-d"><a href="../../../std/algorithm/setops/set_symmetric_difference.html#r1"><span class="pln">r1</span></a></code>, <code class="lang-d"><span class="pln">b</span></code> is the number of
-occurences of <code class="lang-d"><span class="pln">x</span></code> in <code class="lang-d"><a href="../../../std/algorithm/setops/set_symmetric_difference.html#r2"><span class="pln">r2</span></a></code>, and <code class="lang-d"><span class="pln">abs</span></code> is the absolute value.
+where <code class="lang-d"><span class="pln">a</span></code> is the number of occurences of <code class="lang-d"><span class="pln">x</span></code> in <code class="lang-d"><span class="pln">r1</span></code>, <code class="lang-d"><span class="pln">b</span></code> is the number of
+occurences of <code class="lang-d"><span class="pln">x</span></code> in <code class="lang-d"><span class="pln">r2</span></code>, and <code class="lang-d"><span class="pln">abs</span></code> is the absolute value.
 </p>
 
 <p>If both arguments are ranges of L-values of the same type then
-<code class="lang-d"><a href="../../../std/algorithm/setops/set_symmetric_difference.html"><span class="typ"><span class="typ">SetSymmetricDifference</span></span></a></code> will also be a range of L-values of
+<code class="lang-d"><span class="typ">SetSymmetricDifference</span></code> will also be a range of L-values of
 that type.
 </p>
 </section>
@@ -3058,6 +3073,7 @@ that type.
 								<a href="../../../std/algorithm/setops/set_symmetric_difference.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(r1, r2)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3100,6 +3116,7 @@ that type.
 								<a href="../../../std/algorithm/setops/set_symmetric_difference.op_slice.html" class="public">
 									<code>opSlice</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3108,6 +3125,7 @@ that type.
 								<a href="../../../std/algorithm/setops/set_symmetric_difference.pop_front.html" class="public">
 									<code>popFront</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3121,7 +3139,7 @@ that type.
 </table>
 </section>
 <section><h3>Returns</h3>
-<p>A range of the symmetric difference between <code class="lang-d"><a href="../../../std/algorithm/setops/set_symmetric_difference.html#r1"><span class="pln">r1</span></a></code> and <code class="lang-d"><a href="../../../std/algorithm/setops/set_symmetric_difference.html#r2"><span class="pln">r2</span></a></code>.
+<p>A range of the symmetric difference between <code class="lang-d"><span class="pln">r1</span></code> and <code class="lang-d"><span class="pln">r2</span></code>.
 </p>
 </section>
 <section><h3>See also</h3>

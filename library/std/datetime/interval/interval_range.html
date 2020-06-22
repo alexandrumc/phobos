@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -3006,14 +3021,14 @@ $('#symbolSearchPane').show();</script>
 							<td>
 								<a href="../../../std/datetime/interval/interval_range.direction.html" class="public property"><code>direction</code></a><span class="tableEntryAnnotation">[get]</span>
 							</td>
-							<td class="typecol"><code class="prettyprint lang-d"><a href="../../../std/datetime/interval/direction.html"><span class="typ">Direction</span></a></code></td><td>The <code class="lang-d"><a href="../../../std/datetime/interval/direction.html"><span class="typ"><a href="../../../std/datetime/interval/direction.html"><span class="typ">Direction</span></a></span></a></code> that this range iterates in.
+							<td class="typecol"><code class="prettyprint lang-d"><a href="../../../std/datetime/interval/direction.html"><span class="typ">Direction</span></a></code></td><td>The <code class="lang-d"><a href="../../../std/datetime/interval/direction.html"><span class="typ">Direction</span></a></code> that this range iterates in.
 </td>
 						</tr>
 						<tr>
 							<td>
 								<a href="../../../std/datetime/interval/interval_range.empty.html" class="public property"><code>empty</code></a><span class="tableEntryAnnotation">[get]</span>
 							</td>
-							<td class="typecol"><code class="prettyprint lang-d"><span class="typ">bool</span></code></td><td>Whether this <code class="lang-d"><a href="../../../std/datetime/interval/interval_range.html"><span class="typ"><a href="../../../std/datetime/interval/interval_range.html"><span class="typ">IntervalRange</span></a></span></a></code> is empty.
+							<td class="typecol"><code class="prettyprint lang-d"><span class="typ">bool</span></code></td><td>Whether this <code class="lang-d"><a href="../../../std/datetime/interval/interval_range.html"><span class="typ">IntervalRange</span></a></code> is empty.
 </td>
 						</tr>
 						<tr>
@@ -3034,7 +3049,7 @@ $('#symbolSearchPane').show();</script>
 							<td>
 								<a href="../../../std/datetime/interval/interval_range.interval.html" class="public property"><code>interval</code></a><span class="tableEntryAnnotation">[get]</span>
 							</td>
-							<td class="typecol"><code class="prettyprint lang-d"><a href="../../../std/datetime/interval/interval.html"><span class="typ">Interval</span></a>!TP</code></td><td>The interval that this <code class="lang-d"><a href="../../../std/datetime/interval/interval_range.html"><span class="typ"><a href="../../../std/datetime/interval/interval_range.html"><span class="typ">IntervalRange</span></a></span></a></code> currently covers.
+							<td class="typecol"><code class="prettyprint lang-d"><a href="../../../std/datetime/interval/interval.html"><span class="typ">Interval</span></a>!TP</code></td><td>The interval that this <code class="lang-d"><a href="../../../std/datetime/interval/interval_range.html"><span class="typ">IntervalRange</span></a></code> currently covers.
 </td>
 						</tr>
 						<tr>
@@ -3057,6 +3072,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval_range.op_assign.html" class="public">
 									<code>opAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3065,14 +3081,15 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/datetime/interval/interval_range.pop_front.html" class="public">
 									<code>popFront</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
-							<td>Pops <code class="lang-d"><a href="../../../std/datetime/interval/interval_range.front.html"><span class="pln"><a href="../../../std/datetime/interval/interval_range.front.html"><span class="pln">front</span></a></span></a></code> from the range, using <code class="lang-d"><a href="../../../std/datetime/interval/interval_range.func.html"><span class="pln"><a href="../../../std/datetime/interval/interval_range.func.html"><span class="pln">func</span></a></span></a></code> to generate the next
+							<td>Pops <code class="lang-d"><a href="../../../std/datetime/interval/interval_range.front.html"><span class="pln">front</span></a></code> from the range, using <code class="lang-d"><a href="../../../std/datetime/interval/interval_range.func.html"><span class="pln">func</span></a></code> to generate the next
         time point in the range. If the generated time point is beyond the edge
-        of the range, then <code class="lang-d"><a href="../../../std/datetime/interval/interval_range.front.html"><span class="pln"><a href="../../../std/datetime/interval/interval_range.front.html"><span class="pln">front</span></a></span></a></code> is set to that edge, and the range is then
+        of the range, then <code class="lang-d"><a href="../../../std/datetime/interval/interval_range.front.html"><span class="pln">front</span></a></code> is set to that edge, and the range is then
         empty. So, if iterating forwards, and the generated time point is
-        greater than the interval's <code class="lang-d"><span class="pln">end</span></code>, then <code class="lang-d"><a href="../../../std/datetime/interval/interval_range.front.html"><span class="pln"><a href="../../../std/datetime/interval/interval_range.front.html"><span class="pln">front</span></a></span></a></code> is set to
+        greater than the interval's <code class="lang-d"><span class="pln">end</span></code>, then <code class="lang-d"><a href="../../../std/datetime/interval/interval_range.front.html"><span class="pln">front</span></a></code> is set to
         <code class="lang-d"><span class="pln">end</span></code>. If iterating backwards, and the generated time point is less
-        than the interval's <code class="lang-d"><span class="pln">begin</span></code>, then <code class="lang-d"><a href="../../../std/datetime/interval/interval_range.front.html"><span class="pln"><a href="../../../std/datetime/interval/interval_range.front.html"><span class="pln">front</span></a></span></a></code> is set to <code class="lang-d"><span class="pln">begin</span></code>.
+        than the interval's <code class="lang-d"><span class="pln">begin</span></code>, then <code class="lang-d"><a href="../../../std/datetime/interval/interval_range.front.html"><span class="pln">front</span></a></code> is set to <code class="lang-d"><span class="pln">begin</span></code>.
 </td>
 						</tr>
 					</table>

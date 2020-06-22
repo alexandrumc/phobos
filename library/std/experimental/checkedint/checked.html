@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2952,9 +2967,9 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function checked</h2><p>Convenience function that turns an integral into the corresponding <code class="lang-d"><a href="../../std/experimental/checkedint/checked.html"><span class="typ"><a href="../../../std/experimental/checkedint/checked.html"><span class="typ">Checked</span></a></span></a></code>
+				</nav><h2 id="0">Function checked</h2><p>Convenience function that turns an integral into the corresponding <code class="lang-d"><a href="../../../std/experimental/checkedint/checked.html"><span class="typ">Checked</span></a></code>
 instance by using template argument deduction. The hook type may be specified
-(by default <code class="lang-d"><a href="../../std/experimental/checkedint/abort.html"><span class="typ"><a href="../../../std/experimental/checkedint/abort.html"><span class="typ">Abort</span></a></span></a></code>).
+(by default <code class="lang-d"><a href="../../../std/experimental/checkedint/abort.html"><span class="typ">Abort</span></a></code>).
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2983,7 +2998,7 @@ instance by using template argument deduction. The hook type may be specified
 </section>
 <h2 id="1">Struct Checked</h2><p>Checked integral type wraps an integral <code class="lang-d"><span class="pln">T</span></code> and customizes its behavior with the
 help of a <code class="lang-d"><span class="typ">Hook</span></code> type. The type wrapped must be one of the predefined integrals
-(unqualified), or another instance of <code class="lang-d"><span class="typ"><span class="typ">Checked</span></span></code>.
+(unqualified), or another instance of <code class="lang-d"><span class="typ">Checked</span></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -3008,10 +3023,11 @@ help of a <code class="lang-d"><span class="typ">Hook</span></code> type. The ty
 								<a href="../../../std/experimental/checkedint/checked.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td>Constructor taking a value properly convertible to the underlying type. <code class="lang-d"><span class="pln">U</span></code>
     may be either an integral that can be converted to <code class="lang-d"><span class="pln">T</span></code> without a loss, or
-    another <code class="lang-d"><a href="../../../std/experimental/checkedint/checked.html"><span class="typ"><a href="../../../std/experimental/checkedint/checked.html"><span class="typ">Checked</span></a></span></a></code> instance whose representation may be in turn converted to
+    another <code class="lang-d"><a href="../../../std/experimental/checkedint/checked.html"><span class="typ">Checked</span></a></code> instance whose representation may be in turn converted to
     <code class="lang-d"><span class="pln">T</span></code> without a loss.
 </td>
 						</tr>
@@ -3044,6 +3060,7 @@ help of a <code class="lang-d"><span class="typ">Hook</span></code> type. The ty
 								<a href="../../../std/experimental/checkedint/checked.get.html" class="public">
 									<code>get</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns a copy of the underlying value.
 </td>
@@ -3053,6 +3070,7 @@ help of a <code class="lang-d"><span class="typ">Hook</span></code> type. The ty
 								<a href="../../../std/experimental/checkedint/checked.op_assign.html" class="public">
 									<code>opAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td>Assignment operator. Has the same constraints as the constructor.
 </td>
@@ -3062,6 +3080,7 @@ help of a <code class="lang-d"><span class="typ">Hook</span></code> type. The ty
 								<a href="../../../std/experimental/checkedint/checked.op_binary.html" class="public">
 									<code>opBinary</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td>Defines binary operators <code class="lang-d"><span class="pun">+</span></code>, <code class="lang-d"><span class="pun">-</span></code>, <code class="lang-d"><span class="pun">*</span></code>, <code class="lang-d"><span class="pun">/</span></code>, <code class="lang-d"><span class="pun">%</span></code>, <code class="lang-d"><span class="pun">^^</span></code>, <code class="lang-d"><span class="pun">&amp;</span></code>, <code class="lang-d"><span class="pun">|</span></code>, <code class="lang-d"><span class="pun">^</span></code>, <code class="lang-d"><span class="pun">&lt;&lt;</span></code>, <code class="lang-d"><span class="pun">&gt;&gt;</span></code>,
     and <code class="lang-d"><span class="pun">&gt;&gt;&gt;</span></code>. If <code class="lang-d"><span class="typ">Hook</span></code> defines <code class="lang-d"><span class="pln">hookOpBinary</span></code>, <code class="lang-d"><span class="pln">opBinary</span></code> forwards to <code class="lang-d"><span class="pln">    <a href="../../../std/experimental/checkedint/checked.html"></span><span class="typ">Checked</span></a><span class="pun">!(</span><span class="kwd">typeof</span><span class="pun">(</span><span class="pln">hook<wbr/></span><span class="pun">.</span><span class="pln">hookOpBinary</span><span class="pun">!</span><span class="pln">op</span><span class="pun">(<a href="../../../std/experimental/checkedint/checked.get.html"></span><span class="pln">get</span></a><span class="pun">, <a href="../../../std/experimental/checkedint/checked.op_binary.html#rhs"></span><span class="pln">rhs</span></a><span class="pun">)),
@@ -3073,10 +3092,11 @@ help of a <code class="lang-d"><span class="typ">Hook</span></code> type. The ty
 								<a href="../../../std/experimental/checkedint/checked.op_binary_right.html" class="public">
 									<code>opBinaryRight</code>
 								</a>
+								<span class="tableEntryAnnotation">(lhs)</span>
 							</td>
 							<td>Defines binary operators <code class="lang-d"><span class="pun">+</span></code>, <code class="lang-d"><span class="pun">-</span></code>, <code class="lang-d"><span class="pun">*</span></code>, <code class="lang-d"><span class="pun">/</span></code>, <code class="lang-d"><span class="pun">%</span></code>, <code class="lang-d"><span class="pun">^^</span></code>, <code class="lang-d"><span class="pun">&amp;</span></code>, <code class="lang-d"><span class="pun">|</span></code>, <code class="lang-d"><span class="pun">^</span></code>, <code class="lang-d"><span class="pun">&lt;&lt;</span></code>,
     <code class="lang-d"><span class="pun">&gt;&gt;</span></code>, and <code class="lang-d"><span class="pun">&gt;&gt;&gt;</span></code> for the case when a built-in numeric or Boolean type is on
-    the left-hand side, and a <code class="lang-d"><a href="../../../std/experimental/checkedint/checked.html"><span class="typ"><a href="../../../std/experimental/checkedint/checked.html"><span class="typ">Checked</span></a></span></a></code> instance is on the right-hand side.
+    the left-hand side, and a <code class="lang-d"><a href="../../../std/experimental/checkedint/checked.html"><span class="typ">Checked</span></a></code> instance is on the right-hand side.
 </td>
 						</tr>
 						<tr>
@@ -3084,6 +3104,7 @@ help of a <code class="lang-d"><span class="typ">Hook</span></code> type. The ty
 								<a href="../../../std/experimental/checkedint/checked.op_cast.html" class="public">
 									<code>opCast</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Casting operator to integral, <code class="lang-d"><span class="typ">bool</span></code>, or floating point type. If <code class="lang-d"><span class="typ">Hook</span></code>
     defines <code class="lang-d"><span class="pln">hookOpCast</span></code>, the call immediately returns
@@ -3096,8 +3117,9 @@ help of a <code class="lang-d"><span class="typ">Hook</span></code> type. The ty
 								<a href="../../../std/experimental/checkedint/checked.op_cmp.html" class="public">
 									<code>opCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
-							<td>Compares <code class="lang-d"><span class="kwd">this</span></code> against <code class="lang-d"><a href="../../../std/experimental/checkedint/checked.op_cmp.html#rhs"><span class="pln"><a href="../../../std/experimental/checkedint/checked.op_cmp.html#rhs"><span class="pln">rhs</span></a></span></a></code> for ordering. If <code class="lang-d"><span class="typ">Hook</span></code> defines <code class="lang-d"><span class="pln">hookOpCmp</span></code>,
+							<td>Compares <code class="lang-d"><span class="kwd">this</span></code> against <code class="lang-d"><a href="../../../std/experimental/checkedint/checked.op_cmp.html#rhs"><span class="pln">rhs</span></a></code> for ordering. If <code class="lang-d"><span class="typ">Hook</span></code> defines <code class="lang-d"><span class="pln">hookOpCmp</span></code>,
     the function forwards to <code class="lang-d"><span class="pln">hook<wbr/></span><span class="pun">.</span><span class="pln">hookOpCmp</span><span class="pun">(<a href="../../../std/experimental/checkedint/checked.get.html"></span><span class="pln">get</span></a><span class="pun">, <a href="../../../std/experimental/checkedint/checked.op_cmp.html#rhs"></span><span class="pln">rhs</span></a><span class="pun">)</span></code>. Otherwise, the
     result of the built-in comparison operation is returned.
 </td>
@@ -3107,6 +3129,7 @@ help of a <code class="lang-d"><span class="typ">Hook</span></code> type. The ty
 								<a href="../../../std/experimental/checkedint/checked.op_equals.html" class="public">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td>Compares <code class="lang-d"><span class="kwd">this</span></code> against <code class="lang-d"><a href="../../../std/experimental/checkedint/checked.op_equals.html#rhs"><span class="pln">rhs</span></a></code> for equality. If <code class="lang-d"><span class="typ">Hook</span></code> defines
     <code class="lang-d"><span class="pln">hookOpEquals</span></code>, the function forwards to <code class="lang-d"><span class="pln">    hook<wbr/></span><span class="pun">.</span><span class="pln">hookOpEquals</span><span class="pun">(<a href="../../../std/experimental/checkedint/checked.get.html"></span><span class="pln">get</span></a><span class="pun">, <a href="../../../std/experimental/checkedint/checked.op_equals.html#rhs"></span><span class="pln">rhs</span></a><span class="pun">)</span></code>. Otherwise, the result of the
@@ -3118,6 +3141,7 @@ help of a <code class="lang-d"><span class="typ">Hook</span></code> type. The ty
 								<a href="../../../std/experimental/checkedint/checked.op_op_assign.html" class="public">
 									<code>opOpAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td>Defines operators <code class="lang-d"><span class="pun">+=</span></code>, <code class="lang-d"><span class="pun">-=</span></code>, <code class="lang-d"><span class="pun">*=</span></code>, <code class="lang-d"><span class="pun">/=</span></code>, <code class="lang-d"><span class="pun">%=</span></code>, <code class="lang-d"><span class="pun">^^=</span></code>, <code class="lang-d"><span class="pun">&amp;=</span></code>, <code class="lang-d"><span class="pun">|=</span></code>, <code class="lang-d"><span class="pun">^=</span></code>,
     <code class="lang-d"><span class="pun">&lt;&lt;=</span></code>, <code class="lang-d"><span class="pun">&gt;&gt;=</span></code>, and <code class="lang-d"><span class="pun">&gt;&gt;&gt;=</span></code>.
@@ -3128,10 +3152,11 @@ help of a <code class="lang-d"><span class="typ">Hook</span></code> type. The ty
 								<a href="../../../std/experimental/checkedint/checked.op_unary.html" class="public">
 									<code>opUnary</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Defines unary operators <code class="lang-d"><span class="pun">+</span></code>, <code class="lang-d"><span class="pun">-</span></code>, <code class="lang-d"><span class="pun">~</span></code>, <code class="lang-d"><span class="pun">++</span></code>, and <code class="lang-d"><span class="pun">--</span></code>. Unary <code class="lang-d"><span class="pun">+</span></code> is not
     overridable and always has built-in behavior (returns <code class="lang-d"><span class="kwd">this</span></code>). For the
-    others, if <code class="lang-d"><span class="typ">Hook</span></code> defines <code class="lang-d"><span class="pln">hookOpUnary</span></code>, <code class="lang-d"><span class="pln"><span class="pln">opUnary</span></span></code> forwards to <code class="lang-d"><span class="pln">    <a href="../../../std/experimental/checkedint/checked.html"></span><span class="typ">Checked</span></a><span class="pun">!(</span><span class="kwd">typeof</span><span class="pun">(</span><span class="pln">hook<wbr/></span><span class="pun">.</span><span class="pln">hookOpUnary</span><span class="pun">!</span><span class="pln">op</span><span class="pun">(<a href="../../../std/experimental/checkedint/checked.get.html"></span><span class="pln">get</span></a><span class="pun">)),
+    others, if <code class="lang-d"><span class="typ">Hook</span></code> defines <code class="lang-d"><span class="pln">hookOpUnary</span></code>, <code class="lang-d"><span class="pln">opUnary</span></code> forwards to <code class="lang-d"><span class="pln">    <a href="../../../std/experimental/checkedint/checked.html"></span><span class="typ">Checked</span></a><span class="pun">!(</span><span class="kwd">typeof</span><span class="pun">(</span><span class="pln">hook<wbr/></span><span class="pun">.</span><span class="pln">hookOpUnary</span><span class="pun">!</span><span class="pln">op</span><span class="pun">(<a href="../../../std/experimental/checkedint/checked.get.html"></span><span class="pln">get</span></a><span class="pun">)),
     </span><span class="typ">Hook</span><span class="pun">)(</span><span class="pln">hook<wbr/></span><span class="pun">.</span><span class="pln">hookOpUnary</span><span class="pun">!</span><span class="pln">op</span><span class="pun">(<a href="../../../std/experimental/checkedint/checked.get.html"></span><span class="pln">get</span></a><span class="pun">))</span></code>.
 </td>
 						</tr>
@@ -3140,6 +3165,7 @@ help of a <code class="lang-d"><span class="typ">Hook</span></code> type. The ty
 								<a href="../../../std/experimental/checkedint/checked.to_hash.html" class="public">
 									<code>toHash</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Generates a hash for <code class="lang-d"><span class="kwd">this</span></code>. If <code class="lang-d"><span class="typ">Hook</span></code> defines <code class="lang-d"><span class="pln">hookToHash</span></code>, the call
     immediately returns <code class="lang-d"><span class="pln">hook<wbr/></span><span class="pun">.</span><span class="pln">hookToHash</span><span class="pun">(</span><span class="pln">payload</span><span class="pun">)</span></code>. If <code class="lang-d"><span class="typ">Hook</span></code> does not

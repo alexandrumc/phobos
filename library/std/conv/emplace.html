@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/conv.d#L4576">
+							<a href="https://github.com/dlang/phobos/blob/master/std/conv.d#L4582">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/conv.d#L4576">
+							<a href="https://github.com/dlang/phobos/edit/master/std/conv.d#L4582">
 								Improve this page
 							</a>
 							<div>
@@ -2967,7 +2982,7 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function emplace</h2><p>Given a pointer <code class="lang-d"><a href="../std/conv/emplace.html#chunk"><span class="pln"><a href="../../std/conv/emplace.html#chunk"><span class="pln">chunk</span></a></span></a></code> to uninitialized memory (but already typed
+				</nav><h2 id="0">Function emplace</h2><p>Given a pointer <code class="lang-d"><a href="../../std/conv/emplace.html#chunk"><span class="pln">chunk</span></a></code> to uninitialized memory (but already typed
 as <code class="lang-d"><span class="pln">T</span></code>), constructs an object of non-<code class="lang-d"><span class="kwd">class</span></code> type <code class="lang-d"><span class="pln">T</span></code> at that
 address. If <code class="lang-d"><span class="pln">T</span></code> is a class, initializes the class reference to null.
 </p>
@@ -3017,10 +3032,10 @@ as <code class="lang-d"><a href="../../std/conv/emplace.html#chunk"><span class=
 </span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">i </span><span class="kwd">is null</span><span class="pun">);
 </span></code></pre>
 </section>
-<h2 id="1">Function emplace</h2><p>Given a pointer <code class="lang-d"><a href="../std/conv/emplace.html#chunk"><span class="pln"><a href="../../std/conv/emplace.html#chunk"><span class="pln">chunk</span></a></span></a></code> to uninitialized memory (but already typed
+<h2 id="1">Function emplace</h2><p>Given a pointer <code class="lang-d"><a href="../../std/conv/emplace.html#chunk"><span class="pln">chunk</span></a></code> to uninitialized memory (but already typed
 as a non-class type <code class="lang-d"><span class="pln">T</span></code>), constructs an object of type <code class="lang-d"><span class="pln">T</span></code> at
-that address from arguments <code class="lang-d"><a href="../std/conv/emplace.html#args"><span class="pln"><a href="../../std/conv/emplace.html#args"><span class="pln">args</span></a></span></a></code>. If <code class="lang-d"><span class="pln">T</span></code> is a class, initializes
-the class reference to <code class="lang-d"><a href="../std/conv/emplace.html#args"><span class="pln"><a href="../../std/conv/emplace.html#args"><span class="pln">args</span></a></span></a><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span></code>.
+that address from arguments <code class="lang-d"><a href="../../std/conv/emplace.html#args"><span class="pln">args</span></a></code>. If <code class="lang-d"><span class="pln">T</span></code> is a class, initializes
+the class reference to <code class="lang-d"><a href="../../std/conv/emplace.html#args"><span class="pln">args</span></a><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -3056,7 +3071,7 @@ as <code class="lang-d"><a href="../../std/conv/emplace.html#chunk"><span class=
 </span><span class="pln">writeln</span><span class="pun">(*<a href="../../std/conv/emplace.html"></span><span class="pln">emplace</span></a><span class="pun">!</span><span class="typ">int</span><span class="pun">(&amp;</span><span class="pln">a</span><span class="pun">, </span><span class="pln">b</span><span class="pun">)); </span><span class="com">// 42
 </span></code></pre>
 </section>
-<h2 id="2">Function emplace</h2><p>Given a raw memory area <code class="lang-d"><a href="../std/conv/emplace.html#chunk"><span class="pln"><a href="../../std/conv/emplace.html#chunk"><span class="pln">chunk</span></a></span></a></code> (but already typed as a class type <code class="lang-d"><span class="pln">T</span></code>),
+<h2 id="2">Function emplace</h2><p>Given a raw memory area <code class="lang-d"><a href="../../std/conv/emplace.html#chunk"><span class="pln">chunk</span></a></code> (but already typed as a class type <code class="lang-d"><span class="pln">T</span></code>),
 constructs an object of <code class="lang-d"><span class="kwd">class</span></code> type <code class="lang-d"><span class="pln">T</span></code> at that address. The constructor
 is passed the arguments <code class="lang-d"><span class="typ">Args</span></code>.
 </p>
@@ -3119,7 +3134,7 @@ this field is essential to access members of the outer class inside <code class=
 }();
 </span></code></pre>
 </section>
-<h2 id="3">Function emplace</h2><p>Given a raw memory area <code class="lang-d"><a href="../std/conv/emplace.html#chunk"><span class="pln"><a href="../../std/conv/emplace.html#chunk"><span class="pln">chunk</span></a></span></a></code>, constructs an object of <code class="lang-d"><span class="kwd">class</span></code> type <code class="lang-d"><span class="pln">T</span></code> at
+<h2 id="3">Function emplace</h2><p>Given a raw memory area <code class="lang-d"><a href="../../std/conv/emplace.html#chunk"><span class="pln">chunk</span></a></code>, constructs an object of <code class="lang-d"><span class="kwd">class</span></code> type <code class="lang-d"><span class="pln">T</span></code> at
 that address. The constructor is passed the arguments <code class="lang-d"><span class="typ">Args</span></code>.
 </p>
 				<div class="prototype">
@@ -3172,8 +3187,8 @@ multiple of <code class="lang-d"><span class="pln">T</span></code>'s alignment. 
 </span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">c<wbr/></span><span class="pun">.</span><span class="pln">i</span><span class="pun">); </span><span class="com">// 5
 </span></code></pre>
 </section>
-<h2 id="4">Function emplace</h2><p>Given a raw memory area <code class="lang-d"><a href="../std/conv/emplace.html#chunk"><span class="pln"><a href="../../std/conv/emplace.html#chunk"><span class="pln">chunk</span></a></span></a></code>, constructs an object of non-<code class="lang-d"><span class="kwd">class</span></code> type <code class="lang-d"><span class="pln">T</span></code> at that address. The constructor is passed the
-arguments <code class="lang-d"><a href="../std/conv/emplace.html#args"><span class="pln"><a href="../../std/conv/emplace.html#args"><span class="pln">args</span></a></span></a></code>, if any.
+<h2 id="4">Function emplace</h2><p>Given a raw memory area <code class="lang-d"><a href="../../std/conv/emplace.html#chunk"><span class="pln">chunk</span></a></code>, constructs an object of non-<code class="lang-d"><span class="kwd">class</span></code> type <code class="lang-d"><span class="pln">T</span></code> at that address. The constructor is passed the
+arguments <code class="lang-d"><a href="../../std/conv/emplace.html#args"><span class="pln">args</span></a></code>, if any.
 </p>
 				<div class="prototype">
 					<code class="lang-d">

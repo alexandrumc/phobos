@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,7 +2952,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Struct <code><a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie.html">std.experimental.allocator.building_blocks.kernighan_ritchie</a>.KRRegion</code></h1><p><code class="lang-d"><span class="typ"><span class="typ">KRRegion</span></span></code> draws inspiration from the <a href="../../../../../std/experimental/allocator/building_blocks/region.html" title="std.experimental.allocator.building_blocks.region">region allocation
+				</div><h1>Struct <code><a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie.html">std.experimental.allocator.building_blocks.kernighan_ritchie</a>.KRRegion</code></h1><p><code class="lang-d"><span class="typ">KRRegion</span></code> draws inspiration from the <a href="../../../../../std/experimental/allocator/building_blocks/region.html" title="std.experimental.allocator.building_blocks.region">region allocation
 strategy</a> and also the
 <a href="http://stackoverflow.com/questions/13159564/explain-this-implementation-of-malloc-from-the-kr-book">famed allocator</a> described by Brian Kernighan and Dennis Ritchie in section 8.7
 of the book <a href="http://amazon.com/exec/obidos/ASIN/0131103628/classicempire">"The C
@@ -3048,6 +3063,7 @@ information is available in client code at deallocation time.</li>
 								<a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>Create a <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.html"><span class="typ">KRRegion</span></a></code>. If <code class="lang-d"><span class="typ">ParentAllocator</span></code> is not <code class="lang-d"><span class="typ">NullAllocator</span></code>,
     <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.html"><span class="typ">KRRegion</span></a></code>'s destructor will call <code class="lang-d"><span class="pln">parent<wbr/></span><span class="pun">.</span><span class="pln">deallocate</span></code>.
@@ -3083,6 +3099,7 @@ information is available in client code at deallocation time.</li>
 								<a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
 							<td>Allocates <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.allocate.html#n"><span class="pln">n</span></a></code> bytes. Allocation searches the list of available blocks
     until a free block with <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.allocate.html#n"><span class="pln">n</span></a></code> or more bytes is found (first fit strategy).
@@ -3094,11 +3111,12 @@ information is available in client code at deallocation time.</li>
 								<a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.allocate_all.html" class="public">
 									<code>allocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Allocates all memory available to this allocator. If the allocator is empty,
     returns the entire available block of memory. Otherwise, it still performs
-    a best-effort allocation: if there is no fragmentation (e.g. <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.allocate.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.allocate.html"><span class="pln">allocate</span></a></span></a></code>
-    has been used but not <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.deallocate.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.deallocate.html"><span class="pln">deallocate</span></a></span></a></code>), allocates and returns the only
+    a best-effort allocation: if there is no fragmentation (e.g. <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.allocate.html"><span class="pln">allocate</span></a></code>
+    has been used but not <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.deallocate.html"><span class="pln">deallocate</span></a></code>), allocates and returns the only
     available block of memory.
 </td>
 						</tr>
@@ -3107,6 +3125,7 @@ information is available in client code at deallocation time.</li>
 								<a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>Deallocates <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.deallocate.html#b"><span class="pln">b</span></a></code>, which is assumed to have been previously allocated with
     this allocator. Deallocation performs a linear search in the free list to
@@ -3119,6 +3138,7 @@ information is available in client code at deallocation time.</li>
 								<a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.deallocate_all.html" class="public">
 									<code>deallocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Deallocates all memory currently allocated, making the allocator ready for
     other allocations. This is a <span class="bigoh">&Omicron;(<code class="lang-d"><span class="lit">1</span></code>)</span> operation.
@@ -3129,6 +3149,7 @@ information is available in client code at deallocation time.</li>
 								<a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.empty.html" class="public">
 									<code>empty</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3137,6 +3158,7 @@ information is available in client code at deallocation time.</li>
 								<a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.good_alloc_size.html" class="public">
 									<code>goodAllocSize</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
 							<td>Adjusts <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.good_alloc_size.html#n"><span class="pln">n</span></a></code> to a size suitable for allocation (two words or larger,
     word-aligned).
@@ -3147,6 +3169,7 @@ information is available in client code at deallocation time.</li>
 								<a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.owns.html" class="public">
 									<code>owns</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>Checks whether the allocator is responsible for the allocation of <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.owns.html#b"><span class="pln">b</span></a></code>.
     It does a simple <span class="bigoh">&Omicron;(<code class="lang-d"><span class="lit">1</span></code>)</span> range check. <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.owns.html#b"><span class="pln">b</span></a></code> should be a buffer either
@@ -3158,6 +3181,7 @@ information is available in client code at deallocation time.</li>
 								<a href="../../../../../std/experimental/allocator/building_blocks/kernighan_ritchie/kr_region.switch_to_free_list.html" class="public">
 									<code>switchToFreeList</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Forces free list mode. If already in free list mode, does nothing.
     Otherwise, sorts the free list accumulated so far and switches strategy for

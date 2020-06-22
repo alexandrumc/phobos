@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/string.d#L5215">
+							<a href="https://github.com/dlang/phobos/blob/master/std/string.d#L5224">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/string.d#L5215">
+							<a href="https://github.com/dlang/phobos/edit/master/std/string.d#L5224">
 								Improve this page
 							</a>
 							<div>
@@ -2962,11 +2977,11 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function translate</h2><p>Replaces the characters in <code class="lang-d"><a href="../std/string/translate.html#str"><span class="pln"><a href="../../std/string/translate.html#str"><span class="pln">str</span></a></span></a></code> which are keys in <code class="lang-d"><a href="../std/string/translate.html#transTable"><span class="pln"><a href="../../std/string/translate.html#transTable"><span class="pln">transTable</span></a></span></a></code> with
-    their corresponding values in <code class="lang-d"><a href="../std/string/translate.html#transTable"><span class="pln"><a href="../../std/string/translate.html#transTable"><span class="pln">transTable</span></a></span></a></code>. <code class="lang-d"><a href="../std/string/translate.html#transTable"><span class="pln"><a href="../../std/string/translate.html#transTable"><span class="pln">transTable</span></a></span></a></code> is an AA
+				</nav><h2 id="0">Function translate</h2><p>Replaces the characters in <code class="lang-d"><a href="../../std/string/translate.html#str"><span class="pln">str</span></a></code> which are keys in <code class="lang-d"><a href="../../std/string/translate.html#transTable"><span class="pln">transTable</span></a></code> with
+    their corresponding values in <code class="lang-d"><a href="../../std/string/translate.html#transTable"><span class="pln">transTable</span></a></code>. <code class="lang-d"><a href="../../std/string/translate.html#transTable"><span class="pln">transTable</span></a></code> is an AA
     where its keys are <code class="lang-d"><span class="typ">dchar</span></code> and its values are either <code class="lang-d"><span class="typ">dchar</span></code> or some
-    type of string. Also, if <code class="lang-d"><a href="../std/string/translate.html#toRemove"><span class="pln"><a href="../../std/string/translate.html#toRemove"><span class="pln">toRemove</span></a></span></a></code> is given, the characters in it are
-    removed from <code class="lang-d"><a href="../std/string/translate.html#str"><span class="pln"><a href="../../std/string/translate.html#str"><span class="pln">str</span></a></span></a></code> prior to translation. <code class="lang-d"><a href="../std/string/translate.html#str"><span class="pln"><a href="../../std/string/translate.html#str"><span class="pln">str</span></a></span></a></code> itself is unaltered.
+    type of string. Also, if <code class="lang-d"><a href="../../std/string/translate.html#toRemove"><span class="pln">toRemove</span></a></code> is given, the characters in it are
+    removed from <code class="lang-d"><a href="../../std/string/translate.html#str"><span class="pln">str</span></a></code> prior to translation. <code class="lang-d"><a href="../../std/string/translate.html#str"><span class="pln">str</span></a></code> itself is unaltered.
     A copy with the changes is returned.
 </p>
 				<div class="prototype">
@@ -3029,7 +3044,7 @@ $('#symbolSearchPane').show();</script>
 </span><span class="pln">writeln</span><span class="pun">(</span><span class="pln">translate</span><span class="pun">(</span><span class="str">"hello world"</span><span class="pun">, </span><span class="pln">transTable2</span><span class="pun">)); </span><span class="com">// "h5llorange worangerld"
 </span></code></pre>
 </section>
-<h2 id="1">Function translate</h2><p>This is an overload of <code class="lang-d"><a href="../std/string/translate.html"><span class="pln"><a href="../../std/string/translate.html"><span class="pln">translate</span></a></span></a></code> which takes an existing buffer to write the contents to.
+<h2 id="1">Function translate</h2><p>This is an overload of <code class="lang-d"><a href="../../std/string/translate.html"><span class="pln">translate</span></a></code> which takes an existing buffer to write the contents to.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -3164,7 +3179,7 @@ $('#symbolSearchPane').show();</script>
 </span><span class="pln">writeln</span><span class="pun">(<a href="../../std/string/translate.html"></span><span class="pln">translate</span></a><span class="pun">(</span><span class="str">"hello world"</span><span class="pun">, </span><span class="pln">transTable1</span><span class="pun">, </span><span class="str">"low"</span><span class="pun">)); </span><span class="com">// "h5 rd"
 </span></code></pre>
 </section>
-<h2 id="3">Function translate</h2><p>This is an <i><span class="red">ASCII-only</span></i> overload of <code class="lang-d"><a href="../std/string/translate.html"><span class="pln"><a href="../../std/string/translate.html"><span class="pln">translate</span></a></span></a></code> which takes an existing buffer to write the contents to.
+<h2 id="3">Function translate</h2><p>This is an <i><span class="red">ASCII-only</span></i> overload of <code class="lang-d"><a href="../../std/string/translate.html"><span class="pln">translate</span></a></code> which takes an existing buffer to write the contents to.
 </p>
 				<div class="prototype">
 					<code class="lang-d">

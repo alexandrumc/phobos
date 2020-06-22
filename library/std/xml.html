@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -3057,110 +3072,143 @@ make them do pretty much whatever you want.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="check" class="public" href="../std/xml/check.html">check</a><span class="decoration">(s)</span>
+									<a id="check" class="public" href="../std/xml/check.html">check</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Check an entire XML document for well-formedness
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="decode" class="public" href="../std/xml/decode.html">decode</a><span class="decoration">(s, mode)</span>
+									<a id="decode" class="public" href="../std/xml/decode.html">decode</a><span class="tableEntryAnnotation">(s, mode)</span>
 								</code>
 							</td>
 							<td>Decodes a string by unescaping all predefined XML entities.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="encode" class="public" href="../std/xml/encode.html">encode</a><span class="decoration">(s)</span>
+									<a id="encode" class="public" href="../std/xml/encode.html">encode</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Encodes a string by replacing all characters which need to be escaped with
  appropriate predefined XML entities.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isBaseChar" class="public" href="../std/xml/is_base_char.html">isBaseChar</a><span class="decoration">(c)</span>
+									<a id="isBaseChar" class="public" href="../std/xml/is_base_char.html">isBaseChar</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns true if the character is a base character according to the XML
  standard
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isChar" class="public" href="../std/xml/is_char.html">isChar</a><span class="decoration">(c)</span>
+									<a id="isChar" class="public" href="../std/xml/is_char.html">isChar</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns true if the character is a character according to the XML standard
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isCombiningChar" class="public" href="../std/xml/is_combining_char.html">isCombiningChar</a><span class="decoration">(c)</span>
+									<a id="isCombiningChar" class="public" href="../std/xml/is_combining_char.html">isCombiningChar</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns true if the character is a combining character according to the
  XML standard
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isDigit" class="public" href="../std/xml/is_digit.html">isDigit</a><span class="decoration">(c)</span>
+									<a id="isDigit" class="public" href="../std/xml/is_digit.html">isDigit</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns true if the character is a digit according to the XML standard
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isExtender" class="public" href="../std/xml/is_extender.html">isExtender</a><span class="decoration">(c)</span>
+									<a id="isExtender" class="public" href="../std/xml/is_extender.html">isExtender</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns true if the character is an extender according to the XML standard
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isIdeographic" class="public" href="../std/xml/is_ideographic.html">isIdeographic</a><span class="decoration">(c)</span>
+									<a id="isIdeographic" class="public" href="../std/xml/is_ideographic.html">isIdeographic</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns true if the character is an ideographic character according to the
  XML standard
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isLetter" class="public" href="../std/xml/is_letter.html">isLetter</a><span class="decoration">(c)</span>
+									<a id="isLetter" class="public" href="../std/xml/is_letter.html">isLetter</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns true if the character is a letter according to the XML standard
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isSpace" class="public" href="../std/xml/is_space.html">isSpace</a><span class="decoration">(c)</span>
+									<a id="isSpace" class="public" href="../std/xml/is_space.html">isSpace</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns true if the character is whitespace according to the XML standard
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3169,7 +3217,7 @@ make them do pretty much whatever you want.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3179,6 +3227,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>Class representing a Character Data section
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3188,6 +3238,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>Thrown during CData constructor
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3197,6 +3249,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>Thrown during check()
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3206,6 +3260,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>Class representing a comment
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3215,6 +3271,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>Thrown during Comment constructor
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3224,6 +3282,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>Thrown during decode()
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3233,6 +3293,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>Class representing an XML document.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3242,6 +3304,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>Class for parsing an XML Document.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3251,6 +3315,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>Class representing an XML element.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3260,6 +3326,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>Class for parsing an XML element.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3269,6 +3337,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>Thrown if comparing with wrong type
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3278,6 +3348,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>Abstract base class for XML items
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3287,6 +3359,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>Thrown during ProcessingInstruction constructor
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3296,6 +3370,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>Class representing a Processing Instruction section
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3305,6 +3381,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>Class representing an XML tag.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3314,6 +3392,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>Thrown when parsing for Tags
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3323,6 +3403,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>Class representing a text (aka Parsed Character Data) section
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3332,6 +3414,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>Thrown during Text constructor
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3341,6 +3425,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>Thrown during XMLInstruction constructor
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3350,6 +3436,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>The base class for exceptions thrown by this module
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3359,6 +3447,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>Class representing an XML Instruction section
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3367,7 +3457,7 @@ make them do pretty much whatever you want.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3377,6 +3467,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>Mode to use for decoding.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3386,6 +3478,8 @@ make them do pretty much whatever you want.
 							</td>
 							<td>Tag types.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

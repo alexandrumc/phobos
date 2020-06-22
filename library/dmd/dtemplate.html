@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,7 +2952,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Module <code>dmd.dtemplate</code></h1><p>Defines <code class="lang-d"><a href="./dmd/dtemplate/template_declaration.html"><span class="typ"><a href="../dmd/dtemplate/template_declaration.html"><span class="typ">TemplateDeclaration</span></a></span></a></code>, <code class="lang-d"><a href="./dmd/dtemplate/template_instance.html"><span class="typ"><a href="../dmd/dtemplate/template_instance.html"><span class="typ">TemplateInstance</span></a></span></a></code> and a few utilities
+				</div><h1>Module <code>dmd.dtemplate</code></h1><p>Defines <code class="lang-d"><a href="../dmd/dtemplate/template_declaration.html"><span class="typ">TemplateDeclaration</span></a></code>, <code class="lang-d"><a href="../dmd/dtemplate/template_instance.html"><span class="typ">TemplateInstance</span></a></code> and a few utilities
 </p><section><p>This modules holds the two main template types:
  <code class="lang-d"><a href="../dmd/dtemplate/template_declaration.html"><span class="typ">TemplateDeclaration</span></a></code>, which is the user-provided declaration of a template,
  and <code class="lang-d"><a href="../dmd/dtemplate/template_instance.html"><span class="typ">TemplateInstance</span></a></code>, which is an instance of a <code class="lang-d"><a href="../dmd/dtemplate/template_declaration.html"><span class="typ">TemplateDeclaration</span></a></code>
@@ -2983,88 +2998,112 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="arrayObjectIsError" class="public" href="../dmd/dtemplate/array_object_is_error.html">arrayObjectIsError</a><span class="decoration">(args)</span>
+									<a id="arrayObjectIsError" class="public" href="../dmd/dtemplate/array_object_is_error.html">arrayObjectIsError</a><span class="tableEntryAnnotation">(args)</span>
 								</code>
 							</td>
 							<td>Are any of the Objects an error?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="definitelyValueParameter" class="public" href="../dmd/dtemplate/definitely_value_parameter.html">definitelyValueParameter</a><span class="decoration">(e)</span>
+									<a id="definitelyValueParameter" class="public" href="../dmd/dtemplate/definitely_value_parameter.html">definitelyValueParameter</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>Return true if e could be valid only as a template value parameter.
  Return false if it might be an alias or tuple.
  (Note that even in this case, it could still turn out to be a value).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="functionResolve" class="public" href="../dmd/dtemplate/function_resolve.html">functionResolve</a><span class="decoration">(m, dstart, loc, sc, tiargs, tthis, fargs, pMessage)</span>
+									<a id="functionResolve" class="public" href="../dmd/dtemplate/function_resolve.html">functionResolve</a><span class="tableEntryAnnotation">(m, dstart, loc, sc, tiargs, tthis, fargs, pMessage)</span>
 								</code>
 							</td>
 							<td>Given function arguments, figure out which template function
  to expand, and return matching result.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getType" class="public" href="../dmd/dtemplate/get_type.html">getType</a><span class="decoration">(o)</span>
+									<a id="getType" class="public" href="../dmd/dtemplate/get_type.html">getType</a><span class="tableEntryAnnotation">(o)</span>
 								</code>
 							</td>
 							<td>Try to get arg as a type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isError" class="public" href="../dmd/dtemplate/is_error.html">isError</a><span class="decoration">(o)</span>
+									<a id="isError" class="public" href="../dmd/dtemplate/is_error.html">isError</a><span class="tableEntryAnnotation">(o)</span>
 								</code>
 							</td>
 							<td>Is this Object an error?
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isExpression" class="public" href="../dmd/dtemplate/is_expression.html">isExpression</a><span class="decoration">(o)</span>
+									<a id="isExpression" class="public" href="../dmd/dtemplate/is_expression.html">isExpression</a><span class="tableEntryAnnotation">(o)</span>
 								</code>
 							</td>
 							<td>These functions substitute for dynamic_cast. dynamic_cast does not work
  on earlier versions of gcc.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="matchArg" class="public" href="../dmd/dtemplate/match_arg.html">matchArg</a><span class="decoration">(tp, instLoc, sc, tiargs, i, parameters, dedtypes, psparam)</span>
+									<a id="matchArg" class="public" href="../dmd/dtemplate/match_arg.html">matchArg</a><span class="tableEntryAnnotation">(tp, instLoc, sc, tiargs, i, parameters, dedtypes, psparam)</span>
 								</code>
 							</td>
 							<td>Match to a particular TemplateParameter.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="reliesOnTident" class="public" href="../dmd/dtemplate/relies_on_tident.html">reliesOnTident</a><span class="decoration">(t, tparams, iStart)</span>
+									<a id="reliesOnTident" class="public" href="../dmd/dtemplate/relies_on_tident.html">reliesOnTident</a><span class="tableEntryAnnotation">(t, tparams, iStart)</span>
 								</code>
 							</td>
 							<td>Check whether the type t representation relies on one or more the template parameters.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="unSpeculative" class="public" href="../dmd/dtemplate/un_speculative.html">unSpeculative</a><span class="decoration">(sc, o)</span>
+									<a id="unSpeculative" class="public" href="../dmd/dtemplate/un_speculative.html">unSpeculative</a><span class="tableEntryAnnotation">(sc, o)</span>
 								</code>
 							</td>
 							<td>IsExpression can evaluate the specified type speculatively, and even if
@@ -3073,6 +3112,9 @@ $('#symbolSearchPane').show();</script>
  However, if those symbols leak to the actual code, compiler should remark
  them as non-speculative to generate their code and link to the final executable.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3081,7 +3123,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3090,6 +3132,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3099,6 +3143,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>[mixin] template Identifier (parameters) [Constraint]
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3107,6 +3153,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3115,6 +3163,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3123,6 +3173,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3131,6 +3183,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3139,6 +3193,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3147,6 +3203,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3155,6 +3213,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3163,7 +3223,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3174,6 +3234,19 @@ $('#symbolSearchPane').show();</script>
 							<td>This struct is needed for TemplateInstance to be the key in an associative array.
  Fixing https://issues.dlang.org/show_bug.cgi?id=15812 and
 </td>
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>
+									<a id="TemplateStats" class="public" href="../dmd/dtemplate/template_stats.html">TemplateStats</a>
+								</code>
+							</td>
+							<td>Collect and print statistics on template instantiations.
+</td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

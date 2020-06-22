@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2958,8 +2973,8 @@ $('#symbolSearchPane').show();</script>
 						</li>
 					</ul>
 				</nav><h2 id="0">Function appender</h2><p>Convenience function that returns a <code class="lang-d"><a href="../../std/array/ref_appender.html"><span class="typ">RefAppender</span></a></code> instance initialized
-    with <code class="lang-d"><a href="../std/array/appender.html#arrayPtr"><span class="pln"><a href="../../std/array/appender.html#arrayPtr"><span class="pln">arrayPtr</span></a></span></a></code>. Don't use null for the array pointer, use the other
-    version of <code class="lang-d"><a href="../std/array/appender.html"><span class="pln"><a href="../../std/array/appender.html"><span class="pln">appender</span></a></span></a></code> instead.
+    with <code class="lang-d"><a href="../../std/array/appender.html#arrayPtr"><span class="pln">arrayPtr</span></a></code>. Don't use null for the array pointer, use the other
+    version of <code class="lang-d"><a href="../../std/array/appender.html"><span class="pln">appender</span></a></code> instead.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2991,7 +3006,7 @@ $('#symbolSearchPane').show();</script>
 </span></code></pre>
 </section>
 <h2 id="1">Function appender</h2><p>Convenience function that returns an <code class="lang-d"><a href="../../std/array/appender.html"><span class="typ">Appender</span></a></code> instance,
-    optionally initialized with <code class="lang-d"><a href="../std/array/array.html"><span class="pln"><a href="../../std/array/array.html"><span class="pln">array</span></a></span></a></code>.
+    optionally initialized with <code class="lang-d"><a href="../../std/array/array.html"><span class="pln">array</span></a></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -3031,7 +3046,7 @@ $('#symbolSearchPane').show();</script>
 </section>
 <h2 id="2">Struct Appender</h2><p>Implements an output range that appends data to an array. This is
 recommended over <code class="lang-d"><a href="../../std/array/array.html"><span class="pln">array</span></a><span class="pln"> </span><span class="pun">~= <a href="../../std/array/appender.data.html"></span><span class="pln">data</span></a></code> when appending many elements because it is more
-efficient. <code class="lang-d"><span class="typ"><span class="typ">Appender</span></span></code> maintains its own array metadata locally, so it can avoid
+efficient. <code class="lang-d"><span class="typ">Appender</span></code> maintains its own array metadata locally, so it can avoid
 global locking for each append where <code class="lang-d"><a href="../../std/array/appender.capacity.html"><span class="pln">capacity</span></a></code> is non-zero.
 </p>
 				<div class="prototype">
@@ -3058,9 +3073,10 @@ global locking for each append where <code class="lang-d"><a href="../../std/arr
 								<a href="../../std/array/appender.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(arr)</span>
 							</td>
-							<td>Constructs an <code class="lang-d"><a href="../../std/array/appender.html"><span class="typ"><a href="../../std/array/appender.html"><span class="typ">Appender</span></a></span></a></code> with a given array.  Note that this does not copy the
- data.  If the array has a larger capacity as determined by <code class="lang-d"><span class="pln"><a href="../../std/array/appender.this.html#arr"><span class="pln">arr</span></a><wbr/></span><span class="pun">.</span><span class="pln"><a href="../../std/array/appender.capacity.html"><span class="pln">capacity</span></a></span></code>,
+							<td>Constructs an <code class="lang-d"><a href="../../std/array/appender.html"><span class="typ">Appender</span></a></code> with a given array.  Note that this does not copy the
+ data.  If the array has a larger capacity as determined by <code class="lang-d"><span class="pln">arr<wbr/></span><span class="pun">.</span><span class="pln">capacity</span></code>,
  it will be used by the appender.  After initializing an appender on an array,
  appending to the original array will reallocate.
 </td>
@@ -3105,6 +3121,7 @@ global locking for each append where <code class="lang-d"><a href="../../std/arr
 								<a href="../../std/array/appender.clear.html" class="public">
 									<code>clear</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Clears the managed array.  This allows the elements of the array to be reused
  for appending.
@@ -3115,8 +3132,9 @@ global locking for each append where <code class="lang-d"><a href="../../std/arr
 								<a href="../../std/array/appender.put.html" class="public">
 									<code>put</code>
 								</a>
+								<span class="tableEntryAnnotation">(item)</span>
 							</td>
-							<td>Appends <code class="lang-d"><a href="../../std/array/appender.put.html#item"><span class="pln"><a href="../../std/array/appender.put.html#item"><span class="pln">item</span></a></span></a></code> to the managed array. Performs encoding for
+							<td>Appends <code class="lang-d"><a href="../../std/array/appender.put.html#item"><span class="pln">item</span></a></code> to the managed array. Performs encoding for
  <code class="lang-d"><span class="typ">char</span></code> types if <code class="lang-d"><span class="pln">A</span></code> is a differently typed <code class="lang-d"><span class="typ">char</span></code> array.
 </td>
 						</tr>
@@ -3125,6 +3143,7 @@ global locking for each append where <code class="lang-d"><a href="../../std/arr
 								<a href="../../std/array/appender.put.html" class="public">
 									<code>put</code>
 								</a>
+								<span class="tableEntryAnnotation">(items)</span>
 							</td>
 							<td>Appends an entire range to the managed array. Performs encoding for
  <code class="lang-d"><span class="typ">char</span></code> elements if <code class="lang-d"><span class="pln">A</span></code> is a differently typed <code class="lang-d"><span class="typ">char</span></code> array.
@@ -3135,9 +3154,10 @@ global locking for each append where <code class="lang-d"><a href="../../std/arr
 								<a href="../../std/array/appender.reserve.html" class="public">
 									<code>reserve</code>
 								</a>
+								<span class="tableEntryAnnotation">(newCapacity)</span>
 							</td>
 							<td>Reserve at least newCapacity elements for appending.  Note that more elements
- may be reserved than requested. If <code class="lang-d"><a href="../../std/array/appender.reserve.html#newCapacity"><span class="pln"><a href="../../std/array/appender.reserve.html#newCapacity"><span class="pln">newCapacity</span></a></span></a><span class="pln"> </span><span class="pun">&lt;= <a href="../../std/array/appender.capacity.html"></span><span class="pln"><a href="../../std/array/appender.capacity.html"><span class="pln">capacity</span></a></span></a></code>, then nothing is
+ may be reserved than requested. If <code class="lang-d"><a href="../../std/array/appender.reserve.html#newCapacity"><span class="pln">newCapacity</span></a><span class="pln"> </span><span class="pun">&lt;= <a href="../../std/array/appender.capacity.html"></span><span class="pln">capacity</span></a></code>, then nothing is
  done.
 </td>
 						</tr>
@@ -3146,6 +3166,7 @@ global locking for each append where <code class="lang-d"><a href="../../std/arr
 								<a href="../../std/array/appender.shrink_to.html" class="public">
 									<code>shrinkTo</code>
 								</a>
+								<span class="tableEntryAnnotation">(newlength)</span>
 							</td>
 							<td>Shrinks the managed array to the given length.
 </td>
@@ -3155,6 +3176,7 @@ global locking for each append where <code class="lang-d"><a href="../../std/arr
 								<a href="../../std/array/appender.to_string.html" class="public">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Gives a string in the form of <code class="lang-d"><a href="../../std/array/appender.html"><span class="typ">Appender</span></a><span class="pun">!(</span><span class="pln">A</span><span class="pun">)(<a href="../../std/array/appender.data.html"></span><span class="pln">data</span></a><span class="pun">)</span></code>.
 </td>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2946,65 +2961,83 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="loadUnaligned" class="public" href="../core/simd/load_unaligned.html">loadUnaligned</a><span class="decoration">(p)</span>
+									<a id="loadUnaligned" class="public" href="../core/simd/load_unaligned.html">loadUnaligned</a><span class="tableEntryAnnotation">(p)</span>
 								</code>
 							</td>
 							<td>Load unaligned vector from address.
  This is a compiler intrinsic.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="prefetch" class="public" href="../core/simd/prefetch.html">prefetch</a><span class="decoration">(address)</span>
+									<a id="prefetch" class="public" href="../core/simd/prefetch.html">prefetch</a><span class="tableEntryAnnotation">(address)</span>
 								</code>
 							</td>
 							<td>Emit prefetch instruction.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="simd" class="public" href="../core/simd/simd.html">simd</a><span class="decoration">(op1, op2)</span>
+									<a id="simd" class="public" href="../core/simd/simd.html">simd</a><span class="tableEntryAnnotation">(op1, op2)</span>
 								</code>
 							</td>
 							<td>Generate two operand instruction with XMM 128 bit operands.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="simd" class="public" href="../core/simd/simd.html">simd</a><span class="decoration">(op1)</span>
+									<a id="simd" class="public" href="../core/simd/simd.html">simd</a><span class="tableEntryAnnotation">(op1)</span>
 								</code>
 							</td>
 							<td>Unary SIMD instructions.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="simd" class="public" href="../core/simd/simd.html">simd</a><span class="decoration">(d)</span>
+									<a id="simd" class="public" href="../core/simd/simd.html">simd</a><span class="tableEntryAnnotation">(d)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="simd" class="public" href="../core/simd/simd.html">simd</a><span class="decoration">(f)</span>
+									<a id="simd" class="public" href="../core/simd/simd.html">simd</a><span class="tableEntryAnnotation">(f)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="simd" class="public" href="../core/simd/simd.html">simd</a><span class="decoration">(op1, op2)</span>
+									<a id="simd" class="public" href="../core/simd/simd.html">simd</a><span class="tableEntryAnnotation">(op1, op2)</span>
 								</code>
 							</td>
 							<td>For instructions:
@@ -3014,53 +3047,71 @@ $('#symbolSearchPane').show();</script>
  MPSADBW, PBLENDW,
  ROUNDPD, ROUNDPS, ROUNDSD, ROUNDSS
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="simd" class="public" href="../core/simd/simd.html">simd</a><span class="decoration">(op1)</span>
+									<a id="simd" class="public" href="../core/simd/simd.html">simd</a><span class="tableEntryAnnotation">(op1)</span>
 								</code>
 							</td>
 							<td>For instructions with the imm8 version:
  PSLLD, PSLLQ, PSLLW, PSRAD, PSRAW, PSRLD, PSRLQ, PSRLW,
  PSRLDQ, PSLLDQ
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="simd_sto" class="public" href="../core/simd/simd_sto.html">simd_sto</a><span class="decoration">(op1, op2)</span>
+									<a id="simd_sto" class="public" href="../core/simd/simd_sto.html">simd_sto</a><span class="tableEntryAnnotation">(op1, op2)</span>
 								</code>
 							</td>
 							<td>For "store" operations of the form:
     op1 op= op2
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="simd_stod" class="public" href="../core/simd/simd_stod.html">simd_stod</a><span class="decoration">(op1, op2)</span>
+									<a id="simd_stod" class="public" href="../core/simd/simd_stod.html">simd_stod</a><span class="tableEntryAnnotation">(op1, op2)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="simd_stof" class="public" href="../core/simd/simd_stof.html">simd_stof</a><span class="decoration">(op1, op2)</span>
+									<a id="simd_stof" class="public" href="../core/simd/simd_stof.html">simd_stof</a><span class="tableEntryAnnotation">(op1, op2)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="storeUnaligned" class="public" href="../core/simd/store_unaligned.html">storeUnaligned</a><span class="decoration">(p, value)</span>
+									<a id="storeUnaligned" class="public" href="../core/simd/store_unaligned.html">storeUnaligned</a><span class="tableEntryAnnotation">(p, value)</span>
 								</code>
 							</td>
 							<td>Store vector to unaligned address.
  This is a compiler intrinsic.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3069,7 +3120,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3079,6 +3130,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>XMM opcodes that conform to the following:
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

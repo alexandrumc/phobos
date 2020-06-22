@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2947,67 +2962,85 @@ is <span class="d_param">public</span>ally imported when importing <b>std.stdio<
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="_popen" class="public" href="../std/stdio/_popen.html">_popen</a><span class="decoration">(name, mode)</span>
+									<a id="_popen" class="public" href="../std/stdio/_popen.html">_popen</a><span class="tableEntryAnnotation">(name, mode)</span>
 								</code>
 							</td>
 							<td>Convenience function that forwards to <code class="lang-d"><span class="pln">core<wbr/></span><span class="pun">.</span><span class="pln">sys<wbr/></span><span class="pun">.</span><span class="pln">posix<wbr/></span><span class="pun">.</span><span class="pln">stdio<wbr/></span><span class="pun">.</span><span class="pln">popen</span></code>
  with appropriately-constructed C-style strings.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="chunks" class="public" href="../std/stdio/chunks.html">chunks</a><span class="decoration">(f, size)</span>
+									<a id="chunks" class="public" href="../std/stdio/chunks.html">chunks</a><span class="tableEntryAnnotation">(f, size)</span>
 								</code>
 							</td>
 							<td>Iterates through a file a chunk at a time by using <code class="lang-d"><span class="kwd">foreach</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="openNetwork" class="public" href="../std/stdio/open_network.html">openNetwork</a><span class="decoration">(host, port)</span>
+									<a id="openNetwork" class="public" href="../std/stdio/open_network.html">openNetwork</a><span class="tableEntryAnnotation">(host, port)</span>
 								</code>
 							</td>
 							<td>Experimental network access via the File interface
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="readf" class="public" href="../std/stdio/readf.html">readf</a><span class="decoration">(args)</span>
+									<a id="readf" class="public" href="../std/stdio/readf.html">readf</a><span class="tableEntryAnnotation">(args)</span>
 								</code>
 							</td>
 							<td>Reads formatted data from <code class="lang-d"><a href="../std/stdio/stdin.html"><span class="pln">stdin</span></a></code> using <code class="lang-d"><a href="../std/format/formatted_read.html" title="std.format.formattedRead"><span class="pln">formattedRead</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="readln" class="public" href="../std/stdio/readln.html">readln</a><span class="decoration">(terminator)</span>
+									<a id="readln" class="public" href="../std/stdio/readln.html">readln</a><span class="tableEntryAnnotation">(terminator)</span>
 								</code>
 							</td>
 							<td>Read line from <code class="lang-d"><a href="../std/stdio/stdin.html"><span class="pln">stdin</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="readln" class="public" href="../std/stdio/readln.html">readln</a><span class="decoration">(buf, terminator)</span>
+									<a id="readln" class="public" href="../std/stdio/readln.html">readln</a><span class="tableEntryAnnotation">(buf, terminator)</span>
 								</code>
 							</td>
 							<td>Read line from <code class="lang-d"><a href="../std/stdio/stdin.html"><span class="pln">stdin</span></a></code> and write it to buf[], including terminating character.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toFile" class="public" href="../std/stdio/to_file.html">toFile</a><span class="decoration">(data, fileName)</span>
+									<a id="toFile" class="public" href="../std/stdio/to_file.html">toFile</a><span class="tableEntryAnnotation">(data, fileName)</span>
 								</code>
 							</td>
 							<td>Writes an array or range to a file.
@@ -3015,44 +3048,59 @@ Shorthand for <code class="lang-d"><span class="pln">data<wbr/></span><span clas
 Similar to <code class="lang-d"><a href="../std/file/write.html" title="std.file.write"><span class="pln">write</span></a></code>, strings are written as-is,
 rather than encoded according to the <code class="lang-d"><a href="../std/stdio/file.html"><span class="typ">File</span></a></code>'s <a href="http://en.cppreference.com/w/c/io#Narrow_and_wide_orientation">orientation</a>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="write" class="public" href="../std/stdio/write.html">write</a><span class="decoration">(args)</span>
+									<a id="write" class="public" href="../std/stdio/write.html">write</a><span class="tableEntryAnnotation">(args)</span>
 								</code>
 							</td>
 							<td>Writes its arguments in text format to standard output (without a trailing newline).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="writef" class="public" href="../std/stdio/writef.html">writef</a><span class="decoration">(args)</span>
+									<a id="writef" class="public" href="../std/stdio/writef.html">writef</a><span class="tableEntryAnnotation">(args)</span>
 								</code>
 							</td>
 							<td>Writes formatted data to standard output (without a trailing newline).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="writefln" class="public" href="../std/stdio/writefln.html">writefln</a><span class="decoration">(args)</span>
+									<a id="writefln" class="public" href="../std/stdio/writefln.html">writefln</a><span class="tableEntryAnnotation">(args)</span>
 								</code>
 							</td>
 							<td>Equivalent to <code class="lang-d"><a href="../std/stdio/writef.html"><span class="pln">writef</span></a><span class="pun">(<a href="../std/stdio/writefln.html#fmt"></span><span class="pln">fmt</span></a><span class="pun">, <a href="../std/stdio/writefln.html#args"></span><span class="pln">args</span></a><span class="pun">, </span><span class="str">'\n'</span><span class="pun">)</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="writeln" class="public" href="../std/stdio/writeln.html">writeln</a><span class="decoration">(args)</span>
+									<a id="writeln" class="public" href="../std/stdio/writeln.html">writeln</a><span class="tableEntryAnnotation">(args)</span>
 								</code>
 							</td>
 							<td>Equivalent to <code class="lang-d"><a href="../std/stdio/write.html"><span class="pln">write</span></a><span class="pun">(<a href="../std/stdio/writeln.html#args"></span><span class="pln">args</span></a><span class="pun">, </span><span class="str">'\n'</span><span class="pun">)</span></code>.  Calling <code class="lang-d"><span class="pln">writeln</span></code> without
  arguments is valid and just prints a newline to the standard
  output.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3061,7 +3109,7 @@ rather than encoded according to the <code class="lang-d"><a href="../std/stdio/
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3071,6 +3119,8 @@ rather than encoded according to the <code class="lang-d"><a href="../std/stdio/
 							</td>
 							<td>Thrown if I/O errors happen.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3079,7 +3129,7 @@ rather than encoded according to the <code class="lang-d"><a href="../std/stdio/
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3093,6 +3143,8 @@ manipulating <code class="lang-d"><span class="pln">FILE</span><span class="pun"
 many ways. The <code class="lang-d"><span class="typ">File</span></code> type ensures safe manipulation, automatic
 file closing, and a lot of convenience.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3102,6 +3154,8 @@ file closing, and a lot of convenience.
 							</td>
 							<td>Iterates through the lines of a file by using <code class="lang-d"><span class="kwd">foreach</span></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3110,7 +3164,7 @@ file closing, and a lot of convenience.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3120,6 +3174,8 @@ file closing, and a lot of convenience.
 							</td>
 							<td>Used to specify the lock type for <code class="lang-d"><a href="../std/stdio/file.lock.html"><span class="typ">File<wbr/></span><span class="pun">.</span><span class="pln">lock</span></a></code> and <code class="lang-d"><a href="../std/stdio/file.try_lock.html"><span class="typ">File<wbr/></span><span class="pun">.</span><span class="pln">tryLock</span></a></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

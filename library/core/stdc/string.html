@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2955,199 +2970,271 @@ original C header.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="memchr" class="public" href="../../core/stdc/string/memchr.html">memchr</a><span class="decoration">(s, c, n)</span>
+									<a id="memchr" class="public" href="../../core/stdc/string/memchr.html">memchr</a><span class="tableEntryAnnotation">(s, c, n)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="memcmp" class="public" href="../../core/stdc/string/memcmp.html">memcmp</a><span class="decoration">(s1, s2, n)</span>
+									<a id="memcmp" class="public" href="../../core/stdc/string/memcmp.html">memcmp</a><span class="tableEntryAnnotation">(s1, s2, n)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="memcpy" class="public" href="../../core/stdc/string/memcpy.html">memcpy</a><span class="decoration">(s1, s2, n)</span>
+									<a id="memcpy" class="public" href="../../core/stdc/string/memcpy.html">memcpy</a><span class="tableEntryAnnotation">(s1, s2, n)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="memmove" class="public" href="../../core/stdc/string/memmove.html">memmove</a><span class="decoration">(s1, s2, n)</span>
+									<a id="memmove" class="public" href="../../core/stdc/string/memmove.html">memmove</a><span class="tableEntryAnnotation">(s1, s2, n)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="memset" class="public" href="../../core/stdc/string/memset.html">memset</a><span class="decoration">(s, c, n)</span>
+									<a id="memset" class="public" href="../../core/stdc/string/memset.html">memset</a><span class="tableEntryAnnotation">(s, c, n)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="strcat" class="public" href="../../core/stdc/string/strcat.html">strcat</a><span class="decoration">(s1, s2)</span>
+									<a id="strcat" class="public" href="../../core/stdc/string/strcat.html">strcat</a><span class="tableEntryAnnotation">(s1, s2)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="strchr" class="public" href="../../core/stdc/string/strchr.html">strchr</a><span class="decoration">(s, c)</span>
+									<a id="strchr" class="public" href="../../core/stdc/string/strchr.html">strchr</a><span class="tableEntryAnnotation">(s, c)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="strcmp" class="public" href="../../core/stdc/string/strcmp.html">strcmp</a><span class="decoration">(s1, s2)</span>
+									<a id="strcmp" class="public" href="../../core/stdc/string/strcmp.html">strcmp</a><span class="tableEntryAnnotation">(s1, s2)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="strcoll" class="public" href="../../core/stdc/string/strcoll.html">strcoll</a><span class="decoration">(s1, s2)</span>
+									<a id="strcoll" class="public" href="../../core/stdc/string/strcoll.html">strcoll</a><span class="tableEntryAnnotation">(s1, s2)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="strcpy" class="public" href="../../core/stdc/string/strcpy.html">strcpy</a><span class="decoration">(s1, s2)</span>
+									<a id="strcpy" class="public" href="../../core/stdc/string/strcpy.html">strcpy</a><span class="tableEntryAnnotation">(s1, s2)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="strcspn" class="public" href="../../core/stdc/string/strcspn.html">strcspn</a><span class="decoration">(s1, s2)</span>
+									<a id="strcspn" class="public" href="../../core/stdc/string/strcspn.html">strcspn</a><span class="tableEntryAnnotation">(s1, s2)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="strdup" class="public" href="../../core/stdc/string/strdup.html">strdup</a><span class="decoration">(s)</span>
+									<a id="strdup" class="public" href="../../core/stdc/string/strdup.html">strdup</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="strerror" class="public" href="../../core/stdc/string/strerror.html">strerror</a><span class="decoration">(errnum)</span>
+									<a id="strerror" class="public" href="../../core/stdc/string/strerror.html">strerror</a><span class="tableEntryAnnotation">(errnum)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="strerror_r" class="public" href="../../core/stdc/string/strerror_r.html">strerror_r</a><span class="decoration">(errnum, buf, buflen)</span>
+									<a id="strerror_r" class="public" href="../../core/stdc/string/strerror_r.html">strerror_r</a><span class="tableEntryAnnotation">(errnum, buf, buflen)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="strlen" class="public" href="../../core/stdc/string/strlen.html">strlen</a><span class="decoration">(s)</span>
+									<a id="strlen" class="public" href="../../core/stdc/string/strlen.html">strlen</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="strncat" class="public" href="../../core/stdc/string/strncat.html">strncat</a><span class="decoration">(s1, s2, n)</span>
+									<a id="strncat" class="public" href="../../core/stdc/string/strncat.html">strncat</a><span class="tableEntryAnnotation">(s1, s2, n)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="strncmp" class="public" href="../../core/stdc/string/strncmp.html">strncmp</a><span class="decoration">(s1, s2, n)</span>
+									<a id="strncmp" class="public" href="../../core/stdc/string/strncmp.html">strncmp</a><span class="tableEntryAnnotation">(s1, s2, n)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="strncpy" class="public" href="../../core/stdc/string/strncpy.html">strncpy</a><span class="decoration">(s1, s2, n)</span>
+									<a id="strncpy" class="public" href="../../core/stdc/string/strncpy.html">strncpy</a><span class="tableEntryAnnotation">(s1, s2, n)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="strpbrk" class="public" href="../../core/stdc/string/strpbrk.html">strpbrk</a><span class="decoration">(s1, s2)</span>
+									<a id="strpbrk" class="public" href="../../core/stdc/string/strpbrk.html">strpbrk</a><span class="tableEntryAnnotation">(s1, s2)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="strrchr" class="public" href="../../core/stdc/string/strrchr.html">strrchr</a><span class="decoration">(s, c)</span>
+									<a id="strrchr" class="public" href="../../core/stdc/string/strrchr.html">strrchr</a><span class="tableEntryAnnotation">(s, c)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="strspn" class="public" href="../../core/stdc/string/strspn.html">strspn</a><span class="decoration">(s1, s2)</span>
+									<a id="strspn" class="public" href="../../core/stdc/string/strspn.html">strspn</a><span class="tableEntryAnnotation">(s1, s2)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="strstr" class="public" href="../../core/stdc/string/strstr.html">strstr</a><span class="decoration">(s1, s2)</span>
+									<a id="strstr" class="public" href="../../core/stdc/string/strstr.html">strstr</a><span class="tableEntryAnnotation">(s1, s2)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="strtok" class="public" href="../../core/stdc/string/strtok.html">strtok</a><span class="decoration">(s1, s2)</span>
+									<a id="strtok" class="public" href="../../core/stdc/string/strtok.html">strtok</a><span class="tableEntryAnnotation">(s1, s2)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="strxfrm" class="public" href="../../core/stdc/string/strxfrm.html">strxfrm</a><span class="decoration">(s1, s2, n)</span>
+									<a id="strxfrm" class="public" href="../../core/stdc/string/strxfrm.html">strxfrm</a><span class="tableEntryAnnotation">(s1, s2, n)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

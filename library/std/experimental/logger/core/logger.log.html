@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2962,7 +2977,7 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function Logger.log</h2><p>This method logs data with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></code> of the used <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></span></a></code>.
+				</nav><h2 id="0">Function Logger.log</h2><p>This method logs data with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> of the used <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -3023,8 +3038,8 @@ $('#symbolSearchPane').show();</script>
 <pre class="code"><code class="lang-d"><span class="kwd">auto </span><span class="pln">l </span><span class="pun">= </span><span class="kwd">new </span><span class="typ">StdioLogger</span><span class="pun">();
 </span><span class="pln">l<wbr/></span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="lit">1337</span><span class="pun">);</span></code></pre>
 </section>
-<h2 id="1">Function Logger.log</h2><p>This function logs data to the used <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></span></a></code> with a specific
-    <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></code>.
+<h2 id="1">Function Logger.log</h2><p>This function logs data to the used <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> with a specific
+    <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -3082,9 +3097,9 @@ $('#symbolSearchPane').show();</script>
 </span><span class="pln">s<wbr/></span><span class="pun">.</span><span class="pln">log</span><span class="pun">(<a href="../../../../std/experimental/logger/core/log_level.html#error"></span><span class="typ">LogLevel<wbr/></span><span class="pun">.</span><span class="pln">error</span></a><span class="pun">, </span><span class="lit">1337</span><span class="pun">, </span><span class="str">"is number"</span><span class="pun">);
 </span><span class="pln">s<wbr/></span><span class="pun">.</span><span class="pln">log</span><span class="pun">(<a href="../../../../std/experimental/logger/core/log_level.html#fatal"></span><span class="typ">LogLevel<wbr/></span><span class="pun">.</span><span class="pln">fatal</span></a><span class="pun">, </span><span class="lit">1337</span><span class="pun">, </span><span class="str">"is number"</span><span class="pun">);</span></code></pre>
 </section>
-<h2 id="2">Function Logger.log</h2><p>This function logs data to the used <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></span></a></code> depending on a
-    explicitly passed condition with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></code> of the used
-    <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></span></a></code>.
+<h2 id="2">Function Logger.log</h2><p>This function logs data to the used <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> depending on a
+    explicitly passed condition with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> of the used
+    <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -3142,8 +3157,8 @@ $('#symbolSearchPane').show();</script>
 </span><span class="pln">s<wbr/></span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="kwd">false</span><span class="pun">, </span><span class="lit">1337</span><span class="pun">, </span><span class="str">"is number"</span><span class="pun">);
 </span><span class="pln">s<wbr/></span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="kwd">false</span><span class="pun">, </span><span class="lit">1337</span><span class="pun">, </span><span class="str">"is number"</span><span class="pun">);</span></code></pre>
 </section>
-<h2 id="3">Function Logger.log</h2><p>This function logs data to the used <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></span></a></code> with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></code>
-    of the used <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></span></a></code>.
+<h2 id="3">Function Logger.log</h2><p>This function logs data to the used <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code>
+    of the used <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">

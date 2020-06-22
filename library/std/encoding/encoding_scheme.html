@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2975,6 +2990,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/encoding/encoding_scheme.can_encode.html" class="public">
 									<code>canEncode</code>
 								</a>
+								<span class="tableEntryAnnotation">(c)</span>
 							</td>
 							<td>Returns true if the character c can be represented
  in this encoding scheme.
@@ -2985,6 +3001,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/encoding/encoding_scheme.count.html" class="public">
 									<code>count</code>
 								</a>
+								<span class="tableEntryAnnotation">(s)</span>
 							</td>
 							<td>Returns the total number of code points encoded in a ubyte array.
 </td>
@@ -2994,6 +3011,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/encoding/encoding_scheme.create.html" class="public">
 									<code>create</code>
 								</a>
+								<span class="tableEntryAnnotation">(encodingName)</span>
 							</td>
 							<td>Obtains a subclass of EncodingScheme which is capable of encoding
  and decoding the named encoding scheme.
@@ -3004,6 +3022,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/encoding/encoding_scheme.decode.html" class="public">
 									<code>decode</code>
 								</a>
+								<span class="tableEntryAnnotation">(s)</span>
 							</td>
 							<td>Decodes a single code point.
 </td>
@@ -3013,6 +3032,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/encoding/encoding_scheme.encode.html" class="public">
 									<code>encode</code>
 								</a>
+								<span class="tableEntryAnnotation">(c, buffer)</span>
 							</td>
 							<td>Encodes a single code point into a user-supplied, fixed-size buffer.
 </td>
@@ -3022,6 +3042,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/encoding/encoding_scheme.encoded_length.html" class="public">
 									<code>encodedLength</code>
 								</a>
+								<span class="tableEntryAnnotation">(c)</span>
 							</td>
 							<td>Returns the number of ubytes required to encode this code point.
 </td>
@@ -3031,6 +3052,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/encoding/encoding_scheme.first_sequence.html" class="public">
 									<code>firstSequence</code>
 								</a>
+								<span class="tableEntryAnnotation">(s)</span>
 							</td>
 							<td>Returns the length of the first encoded sequence.
 </td>
@@ -3040,6 +3062,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/encoding/encoding_scheme.index.html" class="public">
 									<code>index</code>
 								</a>
+								<span class="tableEntryAnnotation">(s, n)</span>
 							</td>
 							<td>Returns the array index at which the (n+1)th code point begins.
 </td>
@@ -3049,6 +3072,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/encoding/encoding_scheme.is_valid.html" class="public">
 									<code>isValid</code>
 								</a>
+								<span class="tableEntryAnnotation">(s)</span>
 							</td>
 							<td>Returns true if the array is encoded correctly
 </td>
@@ -3058,6 +3082,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/encoding/encoding_scheme.names.html" class="public">
 									<code>names</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns an array of all known names for this encoding scheme
 </td>
@@ -3067,6 +3092,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/encoding/encoding_scheme.register.html" class="public">
 									<code>register</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Registers a subclass of EncodingScheme.
 </td>
@@ -3076,6 +3102,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/encoding/encoding_scheme.safe_decode.html" class="public">
 									<code>safeDecode</code>
 								</a>
+								<span class="tableEntryAnnotation">(s)</span>
 							</td>
 							<td>Decodes a single code point. The input does not have to be valid.
 </td>
@@ -3085,6 +3112,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/encoding/encoding_scheme.sanitize.html" class="public">
 									<code>sanitize</code>
 								</a>
+								<span class="tableEntryAnnotation">(s)</span>
 							</td>
 							<td>Sanitizes an array by replacing malformed ubyte sequences with valid
  ubyte sequences. The result is guaranteed to be valid for this
@@ -3096,6 +3124,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/encoding/encoding_scheme.to_string.html" class="public">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns the standard name of the encoding scheme
 </td>
@@ -3105,6 +3134,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../std/encoding/encoding_scheme.valid_length.html" class="public">
 									<code>validLength</code>
 								</a>
+								<span class="tableEntryAnnotation">(s)</span>
 							</td>
 							<td>Returns the length of the longest possible substring, starting from
  the first element, which is validly encoded.
@@ -3115,6 +3145,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.factory.html" class="public inherited">
 									<code>factory</code>
 								</a>
+								<span class="tableEntryAnnotation">(classname)</span>
 							</td>
 							<td>Create instance of class specified by the fully qualified name
  classname.
@@ -3127,6 +3158,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.op_cmp.html" class="public inherited">
 									<code>opCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Compare with another Object obj.
 </td>
@@ -3136,6 +3168,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.op_equals.html" class="public inherited">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Test whether <code class="lang-d"><span class="kwd">this</span></code> is equal to <code class="lang-d"><a href="../../object/object.op_equals.html#o"><span class="pln">o</span></a></code>.
  The default implementation only compares by identity (using the <code class="lang-d"><span class="kwd">is</span></code> operator).
@@ -3147,6 +3180,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.to_hash.html" class="public inherited">
 									<code>toHash</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Compute hash function for Object.
 </td>
@@ -3156,6 +3190,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../object/object.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Convert Object to a human readable string.
 </td>

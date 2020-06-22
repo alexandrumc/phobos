@@ -8,7 +8,7 @@
 		<meta charset="utf-8"/>
 		<meta name="keywords" content="D programming language"/>
 		<meta name="description" content="D Programming Language"/>
-		<title>sqrt - multiple declarations - D Programming Language</title>
+		<title>Function sqrt - D Programming Language</title>
 		<link rel="stylesheet" href="../../../css/codemirror.css"/>
 		<link rel="stylesheet" href="../../../css/style.css"/>
 		<link rel="stylesheet" href="../../../css/print.css" media="print"/>
@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/druntime/blob/master/src/core/math.d#L90">
+							<a href="https://github.com/dlang/druntime/blob/master/src/core/math.d#L97">
 								View source code
 							</a>
 							<div>
@@ -2919,14 +2934,14 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://issues.dlang.org/enter_bug.cgi?bug_file_loc=http%3A%2F%2Fdlang.org/library-prerelease/src/core/math.html&amp;bug_severity=enhancement&amp;component=druntime&amp;op_sys=All&amp;priority=P3&amp;product=D&amp;rep_platform=All&amp;short_desc=%5Bsqrt - multiple declarations%5D&amp;version=D2">Report a bug</a>
+							<a href="https://issues.dlang.org/enter_bug.cgi?bug_file_loc=http%3A%2F%2Fdlang.org/library-prerelease/src/core/math.html&amp;bug_severity=enhancement&amp;component=druntime&amp;op_sys=All&amp;priority=P3&amp;product=D&amp;rep_platform=All&amp;short_desc=%5BFunction sqrt%5D&amp;version=D2">Report a bug</a>
 							<div>
 								If you spot a problem with this page, click here to create a
 								Bugzilla issue.
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/druntime/edit/master/src/core/math.d#L90">
+							<a href="https://github.com/dlang/druntime/edit/master/src/core/math.d#L97">
 								Improve this page
 							</a>
 							<div>
@@ -2937,22 +2952,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div>
-				<h1><code><a href="../../core/math.html">core.math</a>.sqrt</code>  - multiple declarations</h1>
-				<nav class="page-nav">
-					<ul>
-						<li>
-							<a href="#0">
-								Function <code>sqrt</code>
-							</a>
-						</li>
-						<li>
-							<a href="#1">
-								Function <code>sqrt</code>
-							</a>
-						</li>
-					</ul>
-				</nav><h2 id="0">Function sqrt</h2><p>Compute square root of x.
+				</div><h1>Function <code><a href="../../core/math.html">core.math</a>.sqrt</code></h1><p>Compute square root of x.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2963,24 +2963,8 @@ $('#symbolSearchPane').show();</script>
 				&nbsp;&nbsp;<span class="typ">float</span> <span class="pln">x</span>
 				<br/>
 				<span class="pun">)</span><span class="pln"> </span><span class="kwd">pure nothrow @nogc @safe</span><span class="pun">;</span>
-						</div>
-					</code>
-				</div>
-				<section><p><table border="1" cellpadding="4" cellspacing="0">
-              <caption>Special Values</caption>
-                    <tr><th scope="col">x</th>         <th scope="col">sqrt(x)</th>   <th scope="col">invalid?</th></tr>
-      <tr><td>-0.0</td>      <td>-0.0</td>      <td>no</td></tr>
-      <tr><td>&lt;0.0</td>  <td><span class="red">NAN</span></td>    <td>yes</td></tr>
-      <tr><td>+&infin;</td> <td>+&infin;</td> <td>no</td></tr>
-      </table>
-</p>
-</section>
-
-				<h2 id="1">Function sqrt</h2><p>ditto
-</p>
-				<div class="prototype">
-					<code class="lang-d">
-						<div class="single-prototype">
+				<br/>
+				<br/>
 				<span class="typ">double</span> <span class="pln">sqrt</span>
 				<span class="pun">(</span>
 				<br/>
@@ -2998,10 +2982,7 @@ $('#symbolSearchPane').show();</script>
 						</div>
 					</code>
 				</div>
-				<section><p>Compute square root of x.
-</p>
-
-<p>      <table border="1" cellpadding="4" cellspacing="0">
+				<section><p><table border="1" cellpadding="4" cellspacing="0">
               <caption>Special Values</caption>
                     <tr><th scope="col">x</th>         <th scope="col">sqrt(x)</th>   <th scope="col">invalid?</th></tr>
       <tr><td>-0.0</td>      <td>-0.0</td>      <td>no</td></tr>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2954,26 +2969,32 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="modToTym" class="public" href="../dmd/toctype/mod_to_tym.html">modToTym</a><span class="decoration">(mod)</span>
+									<a id="modToTym" class="public" href="../dmd/toctype/mod_to_tym.html">modToTym</a><span class="tableEntryAnnotation">(mod)</span>
 								</code>
 							</td>
 							<td>Determine backend tym bits corresponding to MOD
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="Type_toCtype" class="public" href="../dmd/toctype/type_to_ctype.html">Type_toCtype</a><span class="decoration">(t)</span>
+									<a id="Type_toCtype" class="public" href="../dmd/toctype/type_to_ctype.html">Type_toCtype</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
 							<td>Convert front end type <code class="lang-d"><a href="../dmd/toctype/type_to_ctype.html#t"><span class="pln">t</span></a></code> to backend type <code class="lang-d"><span class="pln">t<wbr/></span><span class="pun">.</span><span class="pln">ctype</span></code>.
  Memoize the result.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

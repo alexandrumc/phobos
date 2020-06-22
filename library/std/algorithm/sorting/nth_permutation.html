@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/algorithm/sorting.d#L4667">
+							<a href="https://github.com/dlang/phobos/blob/master/std/algorithm/sorting.d#L4703">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/algorithm/sorting.d#L4667">
+							<a href="https://github.com/dlang/phobos/edit/master/std/algorithm/sorting.d#L4703">
 								Improve this page
 							</a>
 							<div>
@@ -2937,11 +2952,11 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../../std/algorithm/sorting.html">std.algorithm.sorting</a>.nthPermutation</code></h1><p>Permutes <code class="lang-d"><a href="../../std/algorithm/sorting/nth_permutation.html#range"><span class="pln"><a href="../../../std/algorithm/sorting/nth_permutation.html#range"><span class="pln">range</span></a></span></a></code> into the <code class="lang-d"><a href="../../std/algorithm/sorting/nth_permutation.html#perm"><span class="pln"><a href="../../../std/algorithm/sorting/nth_permutation.html#perm"><span class="pln">perm</span></a></span></a></code> permutation.
+				</div><h1>Function <code><a href="../../../std/algorithm/sorting.html">std.algorithm.sorting</a>.nthPermutation</code></h1><p>Permutes <code class="lang-d"><a href="../../../std/algorithm/sorting/nth_permutation.html#range"><span class="pln">range</span></a></code> into the <code class="lang-d"><a href="../../../std/algorithm/sorting/nth_permutation.html#perm"><span class="pln">perm</span></a></code> permutation.
 The algorithm has a constant runtime complexity with respect to the number of
 permutations created.
 Due to the number of unique values of <code class="lang-d"><span class="typ">ulong</span></code> only the first 21 elements of
-<code class="lang-d"><a href="../../std/algorithm/sorting/nth_permutation.html#range"><span class="pln"><a href="../../../std/algorithm/sorting/nth_permutation.html#range"><span class="pln">range</span></a></span></a></code> can be permuted. The rest of the range will therefore not be
+<code class="lang-d"><a href="../../../std/algorithm/sorting/nth_permutation.html#range"><span class="pln">range</span></a></code> can be permuted. The rest of the range will therefore not be
 permuted.
 This algorithm uses the <a href="http://en.wikipedia.org/wiki/Lehmer_code">Lehmer
 Code</a>.
@@ -2949,7 +2964,7 @@ Code</a>.
 				<div class="prototype">
 					<code class="lang-d">
 						<div class="single-prototype">
-				<span class="kwd">auto ref </span><span class="typ">Range</span> <span class="pln">nthPermutation</span>(Range)
+				<span class="kwd">ref </span><span class="typ">Range</span> <span class="pln">nthPermutation</span>(Range)
 				<span class="pun">(</span>
 				<br/>
 				&nbsp;&nbsp;<span class="kwd">auto ref </span><span class="typ">Range</span> <span class="pln">range</span><span class="pun">,</span>

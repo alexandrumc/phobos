@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2986,42 +3001,54 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="parseJSON" class="public" href="../std/json/parse_json.html">parseJSON</a><span class="decoration">(json, maxDepth, options)</span>
+									<a id="parseJSON" class="public" href="../std/json/parse_json.html">parseJSON</a><span class="tableEntryAnnotation">(json, maxDepth, options)</span>
 								</code>
 							</td>
 							<td>Parses a serialized string and returns a tree of JSON values.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="parseJSON" class="public" href="../std/json/parse_json.html">parseJSON</a><span class="decoration">(json, options)</span>
+									<a id="parseJSON" class="public" href="../std/json/parse_json.html">parseJSON</a><span class="tableEntryAnnotation">(json, options)</span>
 								</code>
 							</td>
 							<td>Parses a serialized string and returns a tree of JSON values.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toJSON" class="public" href="../std/json/to_json.html">toJSON</a><span class="decoration">(root, pretty, options)</span>
+									<a id="toJSON" class="public" href="../std/json/to_json.html">toJSON</a><span class="tableEntryAnnotation">(root, pretty, options)</span>
 								</code>
 							</td>
 							<td>Takes a tree of JSON values and returns the serialized string.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toJSON" class="public" href="../std/json/to_json.html">toJSON</a><span class="decoration">(json, root, pretty, options)</span>
+									<a id="toJSON" class="public" href="../std/json/to_json.html">toJSON</a><span class="tableEntryAnnotation">(json, root, pretty, options)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3030,7 +3057,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3040,6 +3067,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Exception thrown on JSON errors
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3048,7 +3077,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3058,6 +3087,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>JSON value node
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3066,7 +3097,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3076,6 +3107,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>String literals used to represent special float values within JSON strings.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3085,6 +3118,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Flags that control how json is encoded and parsed.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3094,6 +3129,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>JSON type enumeration
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

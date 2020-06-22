@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2971,12 +2986,12 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="append" class="public" href="../std/bitmanip/append.html">append</a><span class="decoration">(range, value)</span>
+									<a id="append" class="public" href="../std/bitmanip/append.html">append</a><span class="tableEntryAnnotation">(range, value)</span>
 								</code>
 							</td>
 							<td>Takes an integral value, converts it to the given endianness, and appends
@@ -2984,11 +2999,14 @@ $('#symbolSearchPane').show();</script>
     <code class="lang-d"><span class="pln">T<wbr/></span><span class="pun">.</span><span class="pln">sizeof</span></code> <code class="lang-d"><span class="typ">ubyte</span></code>s starting at index. <code class="lang-d"><span class="pln">hasSlicing</span><span class="pun">!</span><span class="pln">R</span></code> must be
     <code class="lang-d"><span class="kwd">true</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="bigEndianToNative" class="public" href="../std/bitmanip/big_endian_to_native.html">bigEndianToNative</a><span class="decoration">(val)</span>
+									<a id="bigEndianToNative" class="public" href="../std/bitmanip/big_endian_to_native.html">bigEndianToNative</a><span class="tableEntryAnnotation">(val)</span>
 								</code>
 							</td>
 							<td>Converts the given value from big endian to the native endianness and
@@ -2997,22 +3015,28 @@ $('#symbolSearchPane').show();</script>
     because there are multiple types with the same size and so the type of the
     argument is not enough to determine the return type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="bitsSet" class="public" href="../std/bitmanip/bits_set.html">bitsSet</a><span class="decoration">(value)</span>
+									<a id="bitsSet" class="public" href="../std/bitmanip/bits_set.html">bitsSet</a><span class="tableEntryAnnotation">(value)</span>
 								</code>
 							</td>
 							<td>Range that iterates the indices of the set bits in <code class="lang-d"><a href="../std/bitmanip/bits_set.html#value"><span class="pln">value</span></a></code>.
 Index 0 corresponds to the least significant bit.
 For signed integers, the highest index corresponds to the sign bit.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="littleEndianToNative" class="public" href="../std/bitmanip/little_endian_to_native.html">littleEndianToNative</a><span class="decoration">(val)</span>
+									<a id="littleEndianToNative" class="public" href="../std/bitmanip/little_endian_to_native.html">littleEndianToNative</a><span class="tableEntryAnnotation">(val)</span>
 								</code>
 							</td>
 							<td>Converts the given value from little endian to the native endianness and
@@ -3021,42 +3045,54 @@ For signed integers, the highest index corresponds to the sign bit.
     because there are multiple types with the same size and so the type of the
     argument is not enough to determine the return type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nativeToBigEndian" class="public" href="../std/bitmanip/native_to_big_endian.html">nativeToBigEndian</a><span class="decoration">(val)</span>
+									<a id="nativeToBigEndian" class="public" href="../std/bitmanip/native_to_big_endian.html">nativeToBigEndian</a><span class="tableEntryAnnotation">(val)</span>
 								</code>
 							</td>
 							<td>Converts the given value from the native endianness to big endian and
     returns it as a <code class="lang-d"><span class="typ">ubyte</span><span class="pun">[</span><span class="pln">n</span><span class="pun">]</span></code> where <code class="lang-d"><span class="pln">n</span></code> is the size of the given type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="nativeToLittleEndian" class="public" href="../std/bitmanip/native_to_little_endian.html">nativeToLittleEndian</a><span class="decoration">(val)</span>
+									<a id="nativeToLittleEndian" class="public" href="../std/bitmanip/native_to_little_endian.html">nativeToLittleEndian</a><span class="tableEntryAnnotation">(val)</span>
 								</code>
 							</td>
 							<td>Converts the given value from the native endianness to little endian and
     returns it as a <code class="lang-d"><span class="typ">ubyte</span><span class="pun">[</span><span class="pln">n</span><span class="pun">]</span></code> where <code class="lang-d"><span class="pln">n</span></code> is the size of the given type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="peek" class="public" href="../std/bitmanip/peek.html">peek</a><span class="decoration">(range)</span>
+									<a id="peek" class="public" href="../std/bitmanip/peek.html">peek</a><span class="tableEntryAnnotation">(range)</span>
 								</code>
 							</td>
 							<td>Takes a range of <code class="lang-d"><span class="typ">ubyte</span></code>s and converts the first <code class="lang-d"><span class="pln">T<wbr/></span><span class="pun">.</span><span class="pln">sizeof</span></code> bytes to
     <code class="lang-d"><span class="pln">T</span></code>. The value returned is converted from the given endianness to the
     native endianness. The range is not consumed.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="read" class="public" href="../std/bitmanip/read.html">read</a><span class="decoration">(range)</span>
+									<a id="read" class="public" href="../std/bitmanip/read.html">read</a><span class="tableEntryAnnotation">(range)</span>
 								</code>
 							</td>
 							<td>Takes a range of <code class="lang-d"><span class="typ">ubyte</span></code>s and converts the first <code class="lang-d"><span class="pln">T<wbr/></span><span class="pun">.</span><span class="pln">sizeof</span></code> bytes to
@@ -3064,26 +3100,35 @@ For signed integers, the highest index corresponds to the sign bit.
     native endianness. The <code class="lang-d"><span class="pln">T<wbr/></span><span class="pun">.</span><span class="pln">sizeof</span></code> bytes which are read are consumed from
     the range.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="swapEndian" class="public" href="../std/bitmanip/swap_endian.html">swapEndian</a><span class="decoration">(val)</span>
+									<a id="swapEndian" class="public" href="../std/bitmanip/swap_endian.html">swapEndian</a><span class="tableEntryAnnotation">(val)</span>
 								</code>
 							</td>
 							<td>Swaps the endianness of the given integral value or character.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="write" class="public" href="../std/bitmanip/write.html">write</a><span class="decoration">(range, value, index)</span>
+									<a id="write" class="public" href="../std/bitmanip/write.html">write</a><span class="tableEntryAnnotation">(range, value, index)</span>
 								</code>
 							</td>
 							<td>Takes an integral value, converts it to the given endianness, and writes it
     to the given range of <code class="lang-d"><span class="typ">ubyte</span></code>s as a sequence of <code class="lang-d"><span class="pln">T<wbr/></span><span class="pun">.</span><span class="pln">sizeof</span></code> <code class="lang-d"><span class="typ">ubyte</span></code>s
     starting at index. <code class="lang-d"><span class="pln">hasSlicing</span><span class="pun">!</span><span class="pln">R</span></code> must be <code class="lang-d"><span class="kwd">true</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3092,7 +3137,7 @@ For signed integers, the highest index corresponds to the sign bit.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3105,6 +3150,8 @@ or by the standard bitwise operators <code class="lang-d"><span class="pun">&amp
 other effective member functions; most of them work relative to the <code class="lang-d"><span class="typ">BitArray</span></code>'s
 dimension (see <code class="lang-d"><a href="../std/bitmanip/bit_array.dim.html"><span class="pln">dim</span></a></code>), instead of its <code class="lang-d"><a href="../std/bitmanip/bit_array.length.html"><span class="pln">length</span></a></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3115,6 +3162,8 @@ dimension (see <code class="lang-d"><a href="../std/bitmanip/bit_array.dim.html"
 							<td>Allows manipulating the fraction, exponent, and sign parts of a
    <span class="d_param">double</span> separately. The definition is:
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3125,6 +3174,8 @@ dimension (see <code class="lang-d"><a href="../std/bitmanip/bit_array.dim.html"
 							<td>Allows manipulating the fraction, exponent, and sign parts of a
    <span class="d_param">float</span> separately. The definition is:
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

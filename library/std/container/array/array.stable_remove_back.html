@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2989,7 +3004,7 @@ $('#symbolSearchPane').show();</script>
 				<section></section>
 
 				<section><h3>Precondition</h3>
-<p><code class="lang-d"><a href="../../../std/container/array/array.empty.html"><span class="pln"><a href="../../../std/container/array/array.empty.html"><span class="pln">empty</span></a></span></a><span class="pln"> </span><span class="pun">== </span><span class="kwd">false</span></code>
+<p><code class="lang-d"><a href="../../../std/container/array/array.empty.html"><span class="pln">empty</span></a><span class="pln"> </span><span class="pun">== </span><span class="kwd">false</span></code>
 </p>
 </section>
 <section><h3>Complexity</h3>
@@ -3000,10 +3015,10 @@ $('#symbolSearchPane').show();</script>
 <p><code class="lang-d"><span class="typ">Exception</span></code> if the array is empty.
 </p>
 </section>
-<h2 id="1">Alias Array.stableRemoveBack</h2><p>Removes <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a></code> values from the back of the array.
+<h2 id="1">Alias Array.stableRemoveBack</h2><p>Removes <code class="lang-d"><span class="pln">howMany</span></code> values from the back of the array.
  Unlike the unparameterized versions above, these functions
- do not throw if they could not remove <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a></code> elements. Instead,
- if <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a><span class="pln"> </span><span class="pun">&gt; </span><span class="pln">n</span></code>, all elements are removed. The returned value is
+ do not throw if they could not remove <code class="lang-d"><span class="pln">howMany</span></code> elements. Instead,
+ if <code class="lang-d"><span class="pln">howMany </span><span class="pun">&gt; </span><span class="pln">n</span></code>, all elements are removed. The returned value is
  the effective number of elements removed. Both stable and non-stable
  versions behave the same and guarantee that ranges iterating over
  the array are never invalidated.
@@ -3065,7 +3080,7 @@ $('#symbolSearchPane').show();</script>
 				<section></section>
 
 				<section><h3>Precondition</h3>
-<p><code class="lang-d"><a href="../../../std/container/array/array.empty.html"><span class="pln"><a href="../../../std/container/array/array.empty.html"><span class="pln">empty</span></a></span></a><span class="pln"> </span><span class="pun">== </span><span class="kwd">false</span></code>
+<p><code class="lang-d"><a href="../../../std/container/array/array.empty.html"><span class="pln">empty</span></a><span class="pln"> </span><span class="pun">== </span><span class="kwd">false</span></code>
 </p>
 </section>
 <section><h3>Complexity</h3>
@@ -3076,9 +3091,9 @@ $('#symbolSearchPane').show();</script>
 <p><code class="lang-d"><span class="typ">Exception</span></code> if the array is empty.
 </p>
 </section>
-<h2 id="3">Alias Array.stableRemoveBack</h2><p>Removes <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a></code> values from the back of the array. Unlike the
+<h2 id="3">Alias Array.stableRemoveBack</h2><p>Removes <code class="lang-d"><span class="pln">howMany</span></code> values from the back of the array. Unlike the
  unparameterized versions above, these functions do not throw if
- they could not remove <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a></code> elements. Instead, if <code class="lang-d"><a href="../../../std/container/array/array.remove_back.html#howMany"><span class="pln">howMany</span></a><span class="pln"> </span><span class="pun">&gt; </span><span class="pln">n</span></code>,
+ they could not remove <code class="lang-d"><span class="pln">howMany</span></code> elements. Instead, if <code class="lang-d"><span class="pln">howMany </span><span class="pun">&gt; </span><span class="pln">n</span></code>,
  all elements are removed. The returned value is the effective number
  of elements removed. Both stable and non-stable versions behave the same
  and guarantee that ranges iterating over the array are never invalidated.

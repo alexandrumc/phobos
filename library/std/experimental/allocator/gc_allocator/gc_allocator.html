@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2959,7 +2974,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.instance.html" class="public"><code>instance</code></a>
 							</td>
 							<td class="typecol"><code class="prettyprint lang-d"><span class="kwd">const</span><span class="pun">(</span><span class="kwd">shared</span><span class="pun">(</span><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.html"><span class="typ">GCAllocator</span></a><span class="pun">)</span><span class="pun">)</span></code></td><td>Returns the global instance of this allocator type. The garbage collected
-    allocator is thread-safe, therefore all of its methods and <code class="lang-d"><span class="pln"><span class="pln">instance</span></span></code> itself
+    allocator is thread-safe, therefore all of its methods and <code class="lang-d"><span class="pln">instance</span></code> itself
     are <code class="lang-d"><span class="kwd">shared</span></code>.
 </td>
 						</tr>
@@ -2976,8 +2991,9 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(bytes)</span>
 							</td>
-							<td>Standard allocator methods per the semantics defined above. The <code class="lang-d"><span class="pln">    <a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.deallocate.html"></span><span class="pln">deallocate</span></a></code> and <code class="lang-d"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln">reallocate</span></a></span></a></code> methods are <code class="lang-d"><span class="kwd">@system</span></code> because they may
+							<td>Standard allocator methods per the semantics defined above. The <code class="lang-d"><span class="pln">    <a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.deallocate.html"></span><span class="pln">deallocate</span></a></code> and <code class="lang-d"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln">reallocate</span></a></code> methods are <code class="lang-d"><span class="kwd">@system</span></code> because they may
     move memory around, leaving dangling pointers in user code.
 </td>
 						</tr>
@@ -2986,8 +3002,9 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
-							<td>Standard allocator methods per the semantics defined above. The <code class="lang-d"><span class="pln">    deallocate</span></code> and <code class="lang-d"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln">reallocate</span></a></span></a></span></a></code> methods are <code class="lang-d"><span class="kwd">@system</span></code> because they may
+							<td>Standard allocator methods per the semantics defined above. The <code class="lang-d"><span class="pln">    deallocate</span></code> and <code class="lang-d"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln">reallocate</span></a></code> methods are <code class="lang-d"><span class="kwd">@system</span></code> because they may
     move memory around, leaving dangling pointers in user code.
 </td>
 						</tr>
@@ -2996,8 +3013,9 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.expand.html" class="public">
 									<code>expand</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, delta)</span>
 							</td>
-							<td>Standard allocator methods per the semantics defined above. The <code class="lang-d"><span class="pln">    <a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.deallocate.html"></span><span class="pln">deallocate</span></a></code> and <code class="lang-d"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln">reallocate</span></a></span></a></span></a></span></a></code> methods are <code class="lang-d"><span class="kwd">@system</span></code> because they may
+							<td>Standard allocator methods per the semantics defined above. The <code class="lang-d"><span class="pln">    <a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.deallocate.html"></span><span class="pln">deallocate</span></a></code> and <code class="lang-d"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln">reallocate</span></a></code> methods are <code class="lang-d"><span class="kwd">@system</span></code> because they may
     move memory around, leaving dangling pointers in user code.
 </td>
 						</tr>
@@ -3006,8 +3024,9 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.good_alloc_size.html" class="public">
 									<code>goodAllocSize</code>
 								</a>
+								<span class="tableEntryAnnotation">(n)</span>
 							</td>
-							<td>Standard allocator methods per the semantics defined above. The <code class="lang-d"><span class="pln">    <a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.deallocate.html"></span><span class="pln">deallocate</span></a></code> and <code class="lang-d"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln">reallocate</span></a></span></a></span></a></span></a></span></a></code> methods are <code class="lang-d"><span class="kwd">@system</span></code> because they may
+							<td>Standard allocator methods per the semantics defined above. The <code class="lang-d"><span class="pln">    <a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.deallocate.html"></span><span class="pln">deallocate</span></a></code> and <code class="lang-d"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln">reallocate</span></a></code> methods are <code class="lang-d"><span class="kwd">@system</span></code> because they may
     move memory around, leaving dangling pointers in user code.
 </td>
 						</tr>
@@ -3016,8 +3035,9 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html" class="public">
 									<code>reallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, newSize)</span>
 							</td>
-							<td>Standard allocator methods per the semantics defined above. The <code class="lang-d"><span class="pln">    <a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.deallocate.html"></span><span class="pln">deallocate</span></a></code> and <code class="lang-d"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln"><span class="pln">reallocate</span></span></a></span></a></span></a></span></a></span></a></code> methods are <code class="lang-d"><span class="kwd">@system</span></code> because they may
+							<td>Standard allocator methods per the semantics defined above. The <code class="lang-d"><span class="pln">    <a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.deallocate.html"></span><span class="pln">deallocate</span></a></code> and <code class="lang-d"><span class="pln">reallocate</span></code> methods are <code class="lang-d"><span class="kwd">@system</span></code> because they may
     move memory around, leaving dangling pointers in user code.
 </td>
 						</tr>
@@ -3026,8 +3046,9 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.resolve_internal_pointer.html" class="public">
 									<code>resolveInternalPointer</code>
 								</a>
+								<span class="tableEntryAnnotation">(p, result)</span>
 							</td>
-							<td>Standard allocator methods per the semantics defined above. The <code class="lang-d"><span class="pln">    <a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.deallocate.html"></span><span class="pln">deallocate</span></a></code> and <code class="lang-d"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln"><span class="pln"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln">reallocate</span></a></span></span></a></span></a></span></a></span></a></span></a></code> methods are <code class="lang-d"><span class="kwd">@system</span></code> because they may
+							<td>Standard allocator methods per the semantics defined above. The <code class="lang-d"><span class="pln">    <a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.deallocate.html"></span><span class="pln">deallocate</span></a></code> and <code class="lang-d"><a href="../../../../std/experimental/allocator/gc_allocator/gc_allocator.reallocate.html"><span class="pln">reallocate</span></a></code> methods are <code class="lang-d"><span class="kwd">@system</span></code> because they may
     move memory around, leaving dangling pointers in user code.
 </td>
 						</tr>

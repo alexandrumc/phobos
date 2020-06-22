@@ -8,7 +8,7 @@
 		<meta charset="utf-8"/>
 		<meta name="keywords" content="D programming language"/>
 		<meta name="description" content="D Programming Language"/>
-		<title>Function ReadWriteMutex.Writer.tryLock - D Programming Language</title>
+		<title>ReadWriteMutex.Writer.tryLock - multiple declarations - D Programming Language</title>
 		<link rel="stylesheet" href="../../../../css/codemirror.css"/>
 		<link rel="stylesheet" href="../../../../css/style.css"/>
 		<link rel="stylesheet" href="../../../../css/print.css" media="print"/>
@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/druntime/blob/master/src/core/sync/rwmutex.d#L333">
+							<a href="https://github.com/dlang/druntime/blob/master/src/core/sync/rwmutex.d#L368">
 								View source code
 							</a>
 							<div>
@@ -2919,14 +2934,14 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://issues.dlang.org/enter_bug.cgi?bug_file_loc=http%3A%2F%2Fdlang.org/library-prerelease/src/core/sync/rwmutex.html&amp;bug_severity=enhancement&amp;component=druntime&amp;op_sys=All&amp;priority=P3&amp;product=D&amp;rep_platform=All&amp;short_desc=%5BFunction ReadWriteMutex.Writer.tryLock%5D&amp;version=D2">Report a bug</a>
+							<a href="https://issues.dlang.org/enter_bug.cgi?bug_file_loc=http%3A%2F%2Fdlang.org/library-prerelease/src/core/sync/rwmutex.html&amp;bug_severity=enhancement&amp;component=druntime&amp;op_sys=All&amp;priority=P3&amp;product=D&amp;rep_platform=All&amp;short_desc=%5BReadWriteMutex.Writer.tryLock - multiple declarations%5D&amp;version=D2">Report a bug</a>
 							<div>
 								If you spot a problem with this page, click here to create a
 								Bugzilla issue.
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/druntime/edit/master/src/core/sync/rwmutex.d#L333">
+							<a href="https://github.com/dlang/druntime/edit/master/src/core/sync/rwmutex.d#L368">
 								Improve this page
 							</a>
 							<div>
@@ -2937,7 +2952,22 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Function <code><a href="../../../core/sync/rwmutex/read_write_mutex.writer.html">core.sync.rwmutex.ReadWriteMutex.Writer</a>.tryLock</code></h1><p>Attempts to acquire a write lock on the enclosing mutex.  If one can
+				</div>
+				<h1><code><a href="../../../core/sync/rwmutex.html">core.sync.rwmutex</a>.ReadWriteMutex.Writer.tryLock</code>  - multiple declarations</h1>
+				<nav class="page-nav">
+					<ul>
+						<li>
+							<a href="#0">
+								Function <code>ReadWriteMutex.Writer.tryLock</code>
+							</a>
+						</li>
+						<li>
+							<a href="#1">
+								Function <code>ReadWriteMutex.Writer.tryLock</code>
+							</a>
+						</li>
+					</ul>
+				</nav><h2 id="0">Function ReadWriteMutex.Writer.tryLock</h2><p>Attempts to acquire a write lock on the enclosing mutex.  If one can
  be obtained without blocking, the lock is acquired and true is
  returned.  If not, the lock is not acquired and false is returned.
 </p>
@@ -2950,7 +2980,36 @@ $('#symbolSearchPane').show();</script>
 				</div>
 				<section></section>
 
-				<section><h2>Returns</h2>
+				<section><h3>Returns</h3>
+<p>true if the lock was acquired and false if not.
+</p>
+</section>
+<h2 id="1">Function ReadWriteMutex.Writer.tryLock</h2><p>Attempts to acquire a write lock on the enclosing mutex. If one can
+ be obtained without blocking, the lock is acquired and true is
+ returned. If not, the function blocks until either the lock can be
+ obtained or the time elapsed exceeds <span class="d_param">timeout</span>, returning
+ true if the lock was acquired and false if the function timed out.
+</p>
+				<div class="prototype">
+					<code class="lang-d">
+						<div class="single-prototype">
+				<span class="typ">bool</span> <span class="pln">tryLock</span>
+				<span class="pun">(</span>
+				<br/>
+				&nbsp;&nbsp;<a href="../../../core/time/duration.html"><span class="typ">Duration</span></a> <span class="pln">timeout</span>
+				<br/>
+				<span class="pun">)</span><span class="pun">;</span>
+						</div>
+					</code>
+				</div>
+				<section></section>
+
+				<section><h3>Parameters</h3>
+<table><col class="caption"><tr><th>Name</th><th>Description</th></tr>
+<tr><td id="timeout">timeout</td><td> maximum amount of time to wait for the lock</td></tr>
+</table>
+</section>
+<section><h3>Returns</h3>
 <p>true if the lock was acquired and false if not.
 </p>
 </section>

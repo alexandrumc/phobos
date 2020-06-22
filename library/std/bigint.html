@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2960,51 +2975,66 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="absUnsign" class="public" href="../std/bigint/abs_unsign.html">absUnsign</a><span class="decoration">(x)</span>
+									<a id="absUnsign" class="public" href="../std/bigint/abs_unsign.html">absUnsign</a><span class="tableEntryAnnotation">(x)</span>
 								</code>
 							</td>
 							<td>Returns the absolute value of x converted to the corresponding unsigned
 type.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="divMod" class="public" href="../std/bigint/div_mod.html">divMod</a><span class="decoration">(dividend, divisor, quotient, remainder)</span>
+									<a id="divMod" class="public" href="../std/bigint/div_mod.html">divMod</a><span class="tableEntryAnnotation">(dividend, divisor, quotient, remainder)</span>
 								</code>
 							</td>
 							<td>Finds the quotient and remainder for the given dividend and divisor in one operation.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="powmod" class="public" href="../std/bigint/powmod.html">powmod</a><span class="decoration">(base, exponent, modulus)</span>
+									<a id="powmod" class="public" href="../std/bigint/powmod.html">powmod</a><span class="tableEntryAnnotation">(base, exponent, modulus)</span>
 								</code>
 							</td>
 							<td>Fast power modulus calculation for <code class="lang-d"><a href="../std/bigint/big_int.html"><span class="typ">BigInt</span></a></code> operands.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toDecimalString" class="public" href="../std/bigint/to_decimal_string.html">toDecimalString</a><span class="decoration">(x)</span>
+									<a id="toDecimalString" class="public" href="../std/bigint/to_decimal_string.html">toDecimalString</a><span class="tableEntryAnnotation">(x)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="toHex" class="public" href="../std/bigint/to_hex.html">toHex</a><span class="decoration">(x)</span>
+									<a id="toHex" class="public" href="../std/bigint/to_hex.html">toHex</a><span class="tableEntryAnnotation">(x)</span>
 								</code>
 							</td>
 							<td></td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3013,7 +3043,7 @@ type.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3023,6 +3053,8 @@ type.
 							</td>
 							<td>A struct representing an arbitrary precision integer.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

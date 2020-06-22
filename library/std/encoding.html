@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -3030,124 +3045,160 @@ UTF-16LE and UTF-32LE; or (on big-endian architectures) UTF-16BE and UTF-32BE.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="canEncode" class="public" href="../std/encoding/can_encode.html">canEncode</a><span class="decoration">(c)</span>
+									<a id="canEncode" class="public" href="../std/encoding/can_encode.html">canEncode</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns true iff it is possible to represent the specified codepoint
  in the encoding.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="codePoints" class="public" href="../std/encoding/code_points.html">codePoints</a><span class="decoration">(s)</span>
+									<a id="codePoints" class="public" href="../std/encoding/code_points.html">codePoints</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Returns a foreachable struct which can bidirectionally iterate over all
  code points in a string.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="codeUnits" class="public" href="../std/encoding/code_units.html">codeUnits</a><span class="decoration">(c)</span>
+									<a id="codeUnits" class="public" href="../std/encoding/code_units.html">codeUnits</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns a foreachable struct which can bidirectionally iterate over all
  code units in a code point.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="decode" class="public" href="../std/encoding/decode.html">decode</a><span class="decoration">(s)</span>
+									<a id="decode" class="public" href="../std/encoding/decode.html">decode</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Decodes a single code point.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="decodeReverse" class="public" href="../std/encoding/decode_reverse.html">decodeReverse</a><span class="decoration">(s)</span>
+									<a id="decodeReverse" class="public" href="../std/encoding/decode_reverse.html">decodeReverse</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Decodes a single code point from the end of a string.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="encode" class="public" href="../std/encoding/encode.html">encode</a><span class="decoration">(c)</span>
+									<a id="encode" class="public" href="../std/encoding/encode.html">encode</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Encodes a single code point.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="encode" class="public" href="../std/encoding/encode.html">encode</a><span class="decoration">(c, array)</span>
+									<a id="encode" class="public" href="../std/encoding/encode.html">encode</a><span class="tableEntryAnnotation">(c, array)</span>
 								</code>
 							</td>
 							<td>Encodes a single code point into an array.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="encode" class="public" href="../std/encoding/encode.html">encode</a><span class="decoration">(c, dg)</span>
+									<a id="encode" class="public" href="../std/encoding/encode.html">encode</a><span class="tableEntryAnnotation">(c, dg)</span>
 								</code>
 							</td>
 							<td>Encodes a single code point to a delegate.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="encode" class="public" href="../std/encoding/encode.html">encode</a><span class="decoration">(s, range)</span>
+									<a id="encode" class="public" href="../std/encoding/encode.html">encode</a><span class="tableEntryAnnotation">(s, range)</span>
 								</code>
 							</td>
 							<td>Encodes the contents of <code class="lang-d"><a href="../std/encoding/encode.html#s"><span class="pln">s</span></a></code> in units of type <code class="lang-d"><span class="typ">Tgt</span></code>, writing the result to an
 output range.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="encodedLength" class="public" href="../std/encoding/encoded_length.html">encodedLength</a><span class="decoration">(c)</span>
+									<a id="encodedLength" class="public" href="../std/encoding/encoded_length.html">encodedLength</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns the number of code units required to encode a single code point.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="encodingName" class="public property" href="../std/encoding/encoding_name.html">encodingName</a><span class="decoration">()</span>
+									<a id="encodingName" class="public property" href="../std/encoding/encoding_name.html">encodingName</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Returns the name of an encoding.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="firstSequence" class="public" href="../std/encoding/first_sequence.html">firstSequence</a><span class="decoration">(s)</span>
+									<a id="firstSequence" class="public" href="../std/encoding/first_sequence.html">firstSequence</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Returns the length of the first encoded sequence.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getBOM" class="public" href="../std/encoding/get_bom.html">getBOM</a><span class="decoration">(input)</span>
+									<a id="getBOM" class="public" href="../std/encoding/get_bom.html">getBOM</a><span class="tableEntryAnnotation">(input)</span>
 								</code>
 							</td>
 							<td>Returns a <code class="lang-d"><a href="../std/encoding/bom_seq.html"><span class="typ">BOMSeq</span></a></code> for a given <code class="lang-d"><a href="../std/encoding/get_bom.html#input"><span class="pln">input</span></a></code>.
@@ -3156,91 +3207,121 @@ returned. The <code class="lang-d"><a href="../std/encoding/bom.html"><span clas
 not be comsumed from the passed range. If you pass a reference type
 range make sure that <code class="lang-d"><span class="pln">save</span></code> creates a deep copy.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="index" class="public" href="../std/encoding/index.html">index</a><span class="decoration">(s, n)</span>
+									<a id="index" class="public" href="../std/encoding/index.html">index</a><span class="tableEntryAnnotation">(s, n)</span>
 								</code>
 							</td>
 							<td>Returns the array index at which the (n+1)th code point begins.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isValid" class="public" href="../std/encoding/is_valid.html">isValid</a><span class="decoration">(s)</span>
+									<a id="isValid" class="public" href="../std/encoding/is_valid.html">isValid</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Returns true if the string is encoded correctly
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isValidCodePoint" class="public" href="../std/encoding/is_valid_code_point.html">isValidCodePoint</a><span class="decoration">(c)</span>
+									<a id="isValidCodePoint" class="public" href="../std/encoding/is_valid_code_point.html">isValidCodePoint</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns true if c is a valid code point
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isValidCodeUnit" class="public" href="../std/encoding/is_valid_code_unit.html">isValidCodeUnit</a><span class="decoration">(c)</span>
+									<a id="isValidCodeUnit" class="public" href="../std/encoding/is_valid_code_unit.html">isValidCodeUnit</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
 							<td>Returns true if the code unit is legal. For example, the byte 0x80 would
  not be legal in ASCII, because ASCII code units must always be in the range
  0x00 to 0x7F.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="lastSequence" class="public" href="../std/encoding/last_sequence.html">lastSequence</a><span class="decoration">(s)</span>
+									<a id="lastSequence" class="public" href="../std/encoding/last_sequence.html">lastSequence</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Returns the length of the last encoded sequence.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="safeDecode" class="public" href="../std/encoding/safe_decode.html">safeDecode</a><span class="decoration">(s)</span>
+									<a id="safeDecode" class="public" href="../std/encoding/safe_decode.html">safeDecode</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Decodes a single code point. The input does not have to be valid.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="sanitize" class="public" href="../std/encoding/sanitize.html">sanitize</a><span class="decoration">(s)</span>
+									<a id="sanitize" class="public" href="../std/encoding/sanitize.html">sanitize</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Sanitizes a string by replacing malformed code unit sequences with valid
  code unit sequences. The result is guaranteed to be valid for this encoding.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="transcode" class="public" href="../std/encoding/transcode.html">transcode</a><span class="decoration">(s, r)</span>
+									<a id="transcode" class="public" href="../std/encoding/transcode.html">transcode</a><span class="tableEntryAnnotation">(s, r)</span>
 								</code>
 							</td>
 							<td>Convert a string from one encoding to another.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="validLength" class="public" href="../std/encoding/valid_length.html">validLength</a><span class="decoration">(s)</span>
+									<a id="validLength" class="public" href="../std/encoding/valid_length.html">validLength</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>Returns the length of the longest possible substring, starting from
  the first code unit, which is validly encoded.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3249,7 +3330,7 @@ range make sure that <code class="lang-d"><span class="pln">save</span></code> c
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3259,6 +3340,8 @@ range make sure that <code class="lang-d"><span class="pln">save</span></code> c
 							</td>
 							<td>The base class for exceptions thrown by this module
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3268,6 +3351,8 @@ range make sure that <code class="lang-d"><span class="pln">save</span></code> c
 							</td>
 							<td>Abstract base class of all encoding schemes
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3277,6 +3362,8 @@ range make sure that <code class="lang-d"><span class="pln">save</span></code> c
 							</td>
 							<td>EncodingScheme to handle ASCII
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3286,6 +3373,8 @@ range make sure that <code class="lang-d"><span class="pln">save</span></code> c
 							</td>
 							<td>EncodingScheme to handle Latin-1
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3295,6 +3384,8 @@ range make sure that <code class="lang-d"><span class="pln">save</span></code> c
 							</td>
 							<td>EncodingScheme to handle Latin-2
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3304,6 +3395,8 @@ range make sure that <code class="lang-d"><span class="pln">save</span></code> c
 							</td>
 							<td>EncodingScheme to handle UTF-16 in native byte order
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3313,6 +3406,8 @@ range make sure that <code class="lang-d"><span class="pln">save</span></code> c
 							</td>
 							<td>EncodingScheme to handle UTF-32 in native byte order
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3322,6 +3417,8 @@ range make sure that <code class="lang-d"><span class="pln">save</span></code> c
 							</td>
 							<td>EncodingScheme to handle UTF-8
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3331,6 +3428,8 @@ range make sure that <code class="lang-d"><span class="pln">save</span></code> c
 							</td>
 							<td>EncodingScheme to handle Windows-1250
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3340,6 +3439,8 @@ range make sure that <code class="lang-d"><span class="pln">save</span></code> c
 							</td>
 							<td>EncodingScheme to handle Windows-1251
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3349,6 +3450,8 @@ range make sure that <code class="lang-d"><span class="pln">save</span></code> c
 							</td>
 							<td>EncodingScheme to handle Windows-1252
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3357,7 +3460,7 @@ range make sure that <code class="lang-d"><span class="pln">save</span></code> c
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3367,6 +3470,8 @@ range make sure that <code class="lang-d"><span class="pln">save</span></code> c
 							</td>
 							<td>Defines various character sets.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3378,6 +3483,8 @@ range make sure that <code class="lang-d"><span class="pln">save</span></code> c
 The elements of the <code class="lang-d"><span class="kwd">enum</span></code> can used as indices into <code class="lang-d"><a href="../std/encoding/bom_table.html"><span class="pln">bomTable</span></a></code> to get
 matching <code class="lang-d"><a href="../std/encoding/bom_seq.html"><span class="typ">BOMSeq</span></a></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3387,6 +3494,8 @@ matching <code class="lang-d"><a href="../std/encoding/bom_seq.html"><span class
 							</td>
 							<td>Defines an Latin1-encoded character.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3396,6 +3505,8 @@ matching <code class="lang-d"><a href="../std/encoding/bom_seq.html"><span class
 							</td>
 							<td>Defines a Latin2-encoded character.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3405,6 +3516,8 @@ matching <code class="lang-d"><a href="../std/encoding/bom_seq.html"><span class
 							</td>
 							<td>Defines a Windows1250-encoded character.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3414,6 +3527,8 @@ matching <code class="lang-d"><a href="../std/encoding/bom_seq.html"><span class
 							</td>
 							<td>Defines a Windows1251-encoded character.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3423,6 +3538,8 @@ matching <code class="lang-d"><a href="../std/encoding/bom_seq.html"><span class
 							</td>
 							<td>Defines a Windows1252-encoded character.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

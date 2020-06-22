@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2954,12 +2969,12 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="evalStaticCondition" class="public" href="../dmd/staticcond/eval_static_condition.html">evalStaticCondition</a><span class="decoration">(sc, original, e, errors, negatives)</span>
+									<a id="evalStaticCondition" class="public" href="../dmd/staticcond/eval_static_condition.html">evalStaticCondition</a><span class="tableEntryAnnotation">(sc, original, e, errors, negatives)</span>
 								</code>
 							</td>
 							<td>Semantically analyze and then evaluate a static condition at compile time.
@@ -2967,16 +2982,22 @@ $('#symbolSearchPane').show();</script>
  level are not semantically analyzed if the result of the expression is not
  necessary.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="visualizeStaticCondition" class="public" href="../dmd/staticcond/visualize_static_condition.html">visualizeStaticCondition</a><span class="decoration">(original, instantiated, negatives, full, itemCount)</span>
+									<a id="visualizeStaticCondition" class="public" href="../dmd/staticcond/visualize_static_condition.html">visualizeStaticCondition</a><span class="tableEntryAnnotation">(original, instantiated, negatives, full, itemCount)</span>
 								</code>
 							</td>
 							<td>Format a static condition as a tree-like structure, marking failed and
  bypassed expressions.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

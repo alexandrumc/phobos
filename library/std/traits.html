@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -3080,36 +3095,45 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="lvalueOf" class="public" href="../std/traits/lvalue_of.html">lvalueOf</a><span class="decoration">()</span>
+									<a id="lvalueOf" class="public" href="../std/traits/lvalue_of.html">lvalueOf</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Creates an lvalue or rvalue of type <code class="lang-d"><span class="pln">T</span></code> for <code class="lang-d"><span class="kwd">typeof</span><span class="pun">(...)</span></code> and
 <code class="lang-d"><span class="kwd">__traits</span><span class="pun">(</span><span class="pln">compiles</span><span class="pun">, ...)</span></code> purposes. No actual value is returned.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="rvalueOf" class="public" href="../std/traits/rvalue_of.html">rvalueOf</a><span class="decoration">()</span>
+									<a id="rvalueOf" class="public" href="../std/traits/rvalue_of.html">rvalueOf</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Creates an lvalue or rvalue of type <code class="lang-d"><span class="pln">T</span></code> for <code class="lang-d"><span class="kwd">typeof</span><span class="pun">(...)</span></code> and
-<code class="lang-d"><span class="kwd">_traits</span><span class="pun">(</span><span class="pln">compiles</span><span class="pun">, ...)</span></code> purposes. No actual value is returned.
+<code class="lang-d"><span class="kwd">__traits</span><span class="pun">(</span><span class="pln">compiles</span><span class="pun">, ...)</span></code> purposes. No actual value is returned.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="select" class="public" href="../std/traits/select.html">select</a><span class="decoration">(a, b)</span>
+									<a id="select" class="public" href="../std/traits/select.html">select</a><span class="tableEntryAnnotation">(a, b)</span>
 								</code>
 							</td>
 							<td>Select one of two functions to run via template parameter.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3118,7 +3142,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3128,6 +3152,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Returns the FunctionAttribute mask for function <code class="lang-d"><span class="pln">func</span></code>.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3137,6 +3163,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Get tuple, one per function parameter, of the storage classes of the parameters.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3146,6 +3174,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Determines what kind of variadic parameters function has.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3154,7 +3184,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3165,6 +3195,8 @@ $('#symbolSearchPane').show();</script>
 							<td>Constructs a new function or delegate type with the same basic signature
  as the given one, but different attributes (including linkage).
 </td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 						</tr>
 					</table>
 				</section>

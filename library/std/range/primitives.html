@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -3052,12 +3067,12 @@ whether a given object is a range, and what kind of range it is:
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="back" class="public property" href="../../std/range/primitives/back.html">back</a><span class="decoration">(a)</span>
+									<a id="back" class="public property" href="../../std/range/primitives/back.html">back</a><span class="tableEntryAnnotation">(a)</span>
 								</code>
 							</td>
 							<td>Implements the range interface primitive <code class="lang-d"><span class="pln">back</span></code> for built-in
@@ -3065,11 +3080,14 @@ arrays. Due to the fact that nonmember functions can be called with
 the first argument using the dot notation, <code class="lang-d"><span class="pln">array<wbr/></span><span class="pun">.</span><span class="pln">back</span></code> is
 equivalent to <code class="lang-d"><span class="pln">back</span><span class="pun">(</span><span class="pln">array</span><span class="pun">)</span></code>. For <a href="http://dlang.org/glossary.html#narrow strings">narrow strings</a>, <code class="lang-d"><span class="pln">back</span></code> automatically returns the last <a href="http://dlang.org/glossary.html#code point">code point</a> as a <code class="lang-d"><span class="typ">dchar</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="empty" class="public property" href="../../std/range/primitives/empty.html">empty</a><span class="decoration">(a)</span>
+									<a id="empty" class="public property" href="../../std/range/primitives/empty.html">empty</a><span class="tableEntryAnnotation">(a)</span>
 								</code>
 							</td>
 							<td>Implements the range interface primitive <code class="lang-d"><span class="pln">empty</span></code> for types that
@@ -3077,11 +3095,14 @@ obey <code class="lang-d"><a href="../../std/range/primitives/has_length.html"><
 fact that nonmember functions can be called with the first argument
 using the dot notation, <code class="lang-d"><span class="pln">a<wbr/></span><span class="pun">.</span><span class="pln">empty</span></code> is equivalent to <code class="lang-d"><span class="pln">empty</span><span class="pun">(<a href="../../std/range/primitives/empty.html#a"></span><span class="pln">a</span></a><span class="pun">)</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="front" class="public property" href="../../std/range/primitives/front.html">front</a><span class="decoration">(a)</span>
+									<a id="front" class="public property" href="../../std/range/primitives/front.html">front</a><span class="tableEntryAnnotation">(a)</span>
 								</code>
 							</td>
 							<td>Implements the range interface primitive <code class="lang-d"><span class="pln">front</span></code> for built-in
@@ -3089,43 +3110,55 @@ arrays. Due to the fact that nonmember functions can be called with
 the first argument using the dot notation, <code class="lang-d"><span class="pln">array<wbr/></span><span class="pun">.</span><span class="pln">front</span></code> is
 equivalent to <code class="lang-d"><span class="pln">front</span><span class="pun">(</span><span class="pln">array</span><span class="pun">)</span></code>. For <a href="http://dlang.org/glossary.html#narrow strings">narrow strings</a>, <code class="lang-d"><span class="pln">front</span></code> automatically returns the first <a href="http://dlang.org/glossary.html#code point">code point</a> as a <code class="lang-d"><span class="typ">dchar</span></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="moveAt" class="public" href="../../std/range/primitives/move_at.html">moveAt</a><span class="decoration">(r, i)</span>
+									<a id="moveAt" class="public" href="../../std/range/primitives/move_at.html">moveAt</a><span class="tableEntryAnnotation">(r, i)</span>
 								</code>
 							</td>
 							<td>Moves element at index <code class="lang-d"><a href="../../std/range/primitives/move_at.html#i"><span class="pln">i</span></a></code> of <code class="lang-d"><a href="../../std/range/primitives/move_at.html#r"><span class="pln">r</span></a></code> out and returns it. Leaves <code class="lang-d"><span class="pln">   <a href="../../std/range/primitives/move_at.html#r"></span><span class="pln">r</span></a><span class="pun">[<a href="../../std/range/primitives/move_at.html#i"></span><span class="pln">i</span></a><span class="pun">]</span></code> in a destroyable state that does not allocate any resources
    (usually equal to its <code class="lang-d"><wbr/><span class="pun">.</span><span class="pln">init</span></code> value).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="moveBack" class="public" href="../../std/range/primitives/move_back.html">moveBack</a><span class="decoration">(r)</span>
+									<a id="moveBack" class="public" href="../../std/range/primitives/move_back.html">moveBack</a><span class="tableEntryAnnotation">(r)</span>
 								</code>
 							</td>
 							<td>Moves the back of <code class="lang-d"><a href="../../std/range/primitives/move_back.html#r"><span class="pln">r</span></a></code> out and returns it. Leaves <code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">back</span></code> in a
    destroyable state that does not allocate any resources (usually equal
    to its <code class="lang-d"><wbr/><span class="pun">.</span><span class="pln">init</span></code> value).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="moveFront" class="public" href="../../std/range/primitives/move_front.html">moveFront</a><span class="decoration">(r)</span>
+									<a id="moveFront" class="public" href="../../std/range/primitives/move_front.html">moveFront</a><span class="tableEntryAnnotation">(r)</span>
 								</code>
 							</td>
 							<td>Moves the front of <code class="lang-d"><a href="../../std/range/primitives/move_front.html#r"><span class="pln">r</span></a></code> out and returns it. Leaves <code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">front</span></code> in a
    destroyable state that does not allocate any resources (usually equal
    to its <code class="lang-d"><wbr/><span class="pun">.</span><span class="pln">init</span></code> value).
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="popBack" class="public" href="../../std/range/primitives/pop_back.html">popBack</a><span class="decoration">(a)</span>
+									<a id="popBack" class="public" href="../../std/range/primitives/pop_back.html">popBack</a><span class="tableEntryAnnotation">(a)</span>
 								</code>
 							</td>
 							<td>Implements the range interface primitive <code class="lang-d"><span class="pln">popBack</span></code> for built-in
@@ -3133,11 +3166,14 @@ arrays. Due to the fact that nonmember functions can be called with
 the first argument using the dot notation, <code class="lang-d"><span class="pln">array<wbr/></span><span class="pun">.</span><span class="pln">popBack</span></code> is
 equivalent to <code class="lang-d"><span class="pln">popBack</span><span class="pun">(</span><span class="pln">array</span><span class="pun">)</span></code>. For <a href="http://dlang.org/glossary.html#narrow strings">narrow strings</a>, <code class="lang-d"><a href="../../std/range/primitives/pop_front.html"><span class="pln">popFront</span></a></code> automatically eliminates the last <a href="http://dlang.org/glossary.html#code point">code point</a>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="popBackExactly" class="public" href="../../std/range/primitives/pop_back_exactly.html">popBackExactly</a><span class="decoration">(r, n)</span>
+									<a id="popBackExactly" class="public" href="../../std/range/primitives/pop_back_exactly.html">popBackExactly</a><span class="tableEntryAnnotation">(r, n)</span>
 								</code>
 							</td>
 							<td>Eagerly advances <code class="lang-d"><a href="../../std/range/primitives/pop_back_exactly.html#r"><span class="pln">r</span></a></code> itself (not a copy) exactly <code class="lang-d"><a href="../../std/range/primitives/pop_back_exactly.html#n"><span class="pln">n</span></a></code> times (by
@@ -3146,11 +3182,14 @@ equivalent to <code class="lang-d"><span class="pln">popBack</span><span class="
     that support slicing, and have either length or are infinite.
     Completes in <span class="bigoh">&Omicron;(<code class="lang-d"><a href="../../std/range/primitives/pop_back_exactly.html#n"><span class="pln">n</span></a></code>)</span> time for all other ranges.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="popBackN" class="public" href="../../std/range/primitives/pop_back_n.html">popBackN</a><span class="decoration">(r, n)</span>
+									<a id="popBackN" class="public" href="../../std/range/primitives/pop_back_n.html">popBackN</a><span class="tableEntryAnnotation">(r, n)</span>
 								</code>
 							</td>
 							<td><code class="lang-d"><a href="../../std/range/primitives/pop_front_n.html"><span class="pln">popFrontN</span></a></code> eagerly advances <code class="lang-d"><a href="../../std/range/primitives/pop_back_n.html#r"><span class="pln">r</span></a></code> itself (not a copy) up to <code class="lang-d"><a href="../../std/range/primitives/pop_back_n.html#n"><span class="pln">n</span></a></code> times
@@ -3159,11 +3198,14 @@ equivalent to <code class="lang-d"><span class="pln">popBack</span><span class="
     that support slicing and have length.
     Completes in <span class="bigoh">&Omicron;(<code class="lang-d"><a href="../../std/range/primitives/pop_back_n.html#n"><span class="pln">n</span></a></code>)</span> time for all other ranges.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="popFront" class="public" href="../../std/range/primitives/pop_front.html">popFront</a><span class="decoration">(a)</span>
+									<a id="popFront" class="public" href="../../std/range/primitives/pop_front.html">popFront</a><span class="tableEntryAnnotation">(a)</span>
 								</code>
 							</td>
 							<td>Implements the range interface primitive <code class="lang-d"><span class="pln">popFront</span></code> for built-in
@@ -3174,37 +3216,46 @@ equivalent to <code class="lang-d"><span class="pln">popFront</span><span class=
 point">code
 point</a>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="popFrontExactly" class="public" href="../../std/range/primitives/pop_front_exactly.html">popFrontExactly</a><span class="decoration">(r, n)</span>
+									<a id="popFrontExactly" class="public" href="../../std/range/primitives/pop_front_exactly.html">popFrontExactly</a><span class="tableEntryAnnotation">(r, n)</span>
 								</code>
 							</td>
-							<td>Eagerly advances <code class="lang-d"><a href="../../std/range/primitives/pop_back_exactly.html#r"><span class="pln"><a href="../../std/range/primitives/pop_front_exactly.html#r"><span class="pln">r</span></a></span></a></code> itself (not a copy) exactly <code class="lang-d"><a href="../../std/range/primitives/pop_back_exactly.html#n"><span class="pln"><a href="../../std/range/primitives/pop_front_exactly.html#n"><span class="pln">n</span></a></span></a></code> times (by
-    calling <code class="lang-d"><span class="pln"><a href="../../std/range/primitives/pop_front_exactly.html#r"><span class="pln">r</span></a><wbr/></span><span class="pun">.</span><span class="pln"><a href="../../std/range/primitives/pop_front.html"><span class="pln">popFront</span></a></span></code>). <code class="lang-d"><a href="../../std/range/primitives/pop_front_exactly.html"><span class="pln"><span class="pln">popFrontExactly</span></span></a></code> takes <code class="lang-d"><a href="../../std/range/primitives/pop_back_exactly.html#r"><span class="pln"><a href="../../std/range/primitives/pop_front_exactly.html#r"><span class="pln">r</span></a></span></a></code> by <code class="lang-d"><span class="kwd">ref</span></code>,
+							<td>Eagerly advances <code class="lang-d"><a href="../../std/range/primitives/pop_front_exactly.html#r"><span class="pln">r</span></a></code> itself (not a copy) exactly <code class="lang-d"><a href="../../std/range/primitives/pop_front_exactly.html#n"><span class="pln">n</span></a></code> times (by
+    calling <code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">popFront</span></code>). <code class="lang-d"><span class="pln">popFrontExactly</span></code> takes <code class="lang-d"><a href="../../std/range/primitives/pop_front_exactly.html#r"><span class="pln">r</span></a></code> by <code class="lang-d"><span class="kwd">ref</span></code>,
     so it mutates the original range. Completes in <span class="bigoh">&Omicron;(<code class="lang-d"><span class="lit">1</span></code>)</span> steps for ranges
     that support slicing, and have either length or are infinite.
     Completes in <span class="bigoh">&Omicron;(<code class="lang-d"><a href="../../std/range/primitives/pop_front_exactly.html#n"><span class="pln">n</span></a></code>)</span> time for all other ranges.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="popFrontN" class="public" href="../../std/range/primitives/pop_front_n.html">popFrontN</a><span class="decoration">(r, n)</span>
+									<a id="popFrontN" class="public" href="../../std/range/primitives/pop_front_n.html">popFrontN</a><span class="tableEntryAnnotation">(r, n)</span>
 								</code>
 							</td>
-							<td><code class="lang-d"><a href="../../std/range/primitives/pop_front_n.html"><span class="pln"><span class="pln">popFrontN</span></span></a></code> eagerly advances <code class="lang-d"><a href="../../std/range/primitives/pop_back_n.html#r"><span class="pln"><a href="../../std/range/primitives/pop_front_n.html#r"><span class="pln">r</span></a></span></a></code> itself (not a copy) up to <code class="lang-d"><a href="../../std/range/primitives/pop_back_n.html#n"><span class="pln"><a href="../../std/range/primitives/pop_front_n.html#n"><span class="pln">n</span></a></span></a></code> times
-    (by calling <code class="lang-d"><span class="pln"><a href="../../std/range/primitives/pop_front_n.html#r"><span class="pln">r</span></a><wbr/></span><span class="pun">.</span><span class="pln"><a href="../../std/range/primitives/pop_front.html"><span class="pln">popFront</span></a></span></code>). <code class="lang-d"><a href="../../std/range/primitives/pop_front_n.html"><span class="pln"><span class="pln">popFrontN</span></span></a></code> takes <code class="lang-d"><a href="../../std/range/primitives/pop_back_n.html#r"><span class="pln"><a href="../../std/range/primitives/pop_front_n.html#r"><span class="pln">r</span></a></span></a></code> by <code class="lang-d"><span class="kwd">ref</span></code>,
+							<td><code class="lang-d"><span class="pln">popFrontN</span></code> eagerly advances <code class="lang-d"><a href="../../std/range/primitives/pop_front_n.html#r"><span class="pln">r</span></a></code> itself (not a copy) up to <code class="lang-d"><a href="../../std/range/primitives/pop_front_n.html#n"><span class="pln">n</span></a></code> times
+    (by calling <code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">popFront</span></code>). <code class="lang-d"><span class="pln">popFrontN</span></code> takes <code class="lang-d"><a href="../../std/range/primitives/pop_front_n.html#r"><span class="pln">r</span></a></code> by <code class="lang-d"><span class="kwd">ref</span></code>,
     so it mutates the original range. Completes in <span class="bigoh">&Omicron;(<code class="lang-d"><span class="lit">1</span></code>)</span> steps for ranges
     that support slicing and have length.
     Completes in <span class="bigoh">&Omicron;(<code class="lang-d"><a href="../../std/range/primitives/pop_front_n.html#n"><span class="pln">n</span></a></code>)</span> time for all other ranges.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="put" class="public" href="../../std/range/primitives/put.html">put</a><span class="decoration">(r, e)</span>
+									<a id="put" class="public" href="../../std/range/primitives/put.html">put</a><span class="tableEntryAnnotation">(r, e)</span>
 								</code>
 							</td>
 							<td>Outputs <code class="lang-d"><a href="../../std/range/primitives/put.html#e"><span class="pln">e</span></a></code> to <code class="lang-d"><a href="../../std/range/primitives/put.html#r"><span class="pln">r</span></a></code>. The exact effect is dependent upon the two
@@ -3212,11 +3263,14 @@ types. Several cases are accepted, as described below. The code snippets
 are attempted in order, and the first to compile "wins" and gets
 evaluated.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="save" class="public property" href="../../std/range/primitives/save.html">save</a><span class="decoration">(a)</span>
+									<a id="save" class="public property" href="../../std/range/primitives/save.html">save</a><span class="tableEntryAnnotation">(a)</span>
 								</code>
 							</td>
 							<td>Implements the range interface primitive <code class="lang-d"><span class="pln">save</span></code> for built-in
@@ -3225,16 +3279,22 @@ the first argument using the dot notation, <code class="lang-d"><span class="pln
 equivalent to <code class="lang-d"><span class="pln">save</span><span class="pun">(</span><span class="pln">array</span><span class="pun">)</span></code>. The function does not duplicate the
 content of the array, it simply returns its argument.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="walkLength" class="public" href="../../std/range/primitives/walk_length.html">walkLength</a><span class="decoration">(range)</span>
+									<a id="walkLength" class="public" href="../../std/range/primitives/walk_length.html">walkLength</a><span class="tableEntryAnnotation">(range)</span>
 								</code>
 							</td>
 							<td>This is a best-effort implementation of <code class="lang-d"><span class="pln">length</span></code> for any kind of
 range.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>

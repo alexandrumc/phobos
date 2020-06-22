@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/druntime/blob/master/src/core/thread/osthread.d#L3531">
+							<a href="https://github.com/dlang/druntime/blob/master/src/core/thread/osthread.d#L3480">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/druntime/edit/master/src/core/thread/osthread.d#L3531">
+							<a href="https://github.com/dlang/druntime/edit/master/src/core/thread/osthread.d#L3480">
 								Improve this page
 							</a>
 							<div>
@@ -2959,6 +2974,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../core/thread/osthread/thread_group.add.html" class="public">
 									<code>add</code>
 								</a>
+								<span class="tableEntryAnnotation">(t)</span>
 							</td>
 							<td>Add t to the list of tracked threads if it is not already being tracked.
 </td>
@@ -2968,6 +2984,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../core/thread/osthread/thread_group.create.html" class="public">
 									<code>create</code>
 								</a>
+								<span class="tableEntryAnnotation">(fn)</span>
 							</td>
 							<td>Creates and starts a new Thread object that executes fn and adds it to
  the list of tracked threads.
@@ -2978,6 +2995,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../core/thread/osthread/thread_group.create.html" class="public">
 									<code>create</code>
 								</a>
+								<span class="tableEntryAnnotation">(dg)</span>
 							</td>
 							<td>Creates and starts a new Thread object that executes dg and adds it to
  the list of tracked threads.
@@ -2988,6 +3006,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../core/thread/osthread/thread_group.join_all.html" class="public">
 									<code>joinAll</code>
 								</a>
+								<span class="tableEntryAnnotation">(rethrow)</span>
 							</td>
 							<td>Iteratively joins all tracked threads.  This function will block add,
  remove, and opApply until it completes.
@@ -2998,6 +3017,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../core/thread/osthread/thread_group.op_apply.html" class="public">
 									<code>opApply</code>
 								</a>
+								<span class="tableEntryAnnotation">(dg)</span>
 							</td>
 							<td>Operates on all threads currently tracked by this object.
 </td>
@@ -3007,6 +3027,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../core/thread/osthread/thread_group.remove.html" class="public">
 									<code>remove</code>
 								</a>
+								<span class="tableEntryAnnotation">(t)</span>
 							</td>
 							<td>Removes t from the list of tracked threads.  No operation will be
  performed if t is not currently being tracked by this object.
@@ -3017,6 +3038,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../object/object.factory.html" class="public inherited">
 									<code>factory</code>
 								</a>
+								<span class="tableEntryAnnotation">(classname)</span>
 							</td>
 							<td>Create instance of class specified by the fully qualified name
  classname.
@@ -3029,6 +3051,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../object/object.op_cmp.html" class="public inherited">
 									<code>opCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Compare with another Object obj.
 </td>
@@ -3038,6 +3061,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../object/object.op_equals.html" class="public inherited">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Test whether <code class="lang-d"><span class="kwd">this</span></code> is equal to <code class="lang-d"><a href="../../../object/object.op_equals.html#o"><span class="pln">o</span></a></code>.
  The default implementation only compares by identity (using the <code class="lang-d"><span class="kwd">is</span></code> operator).
@@ -3049,6 +3073,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../object/object.to_hash.html" class="public inherited">
 									<code>toHash</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Compute hash function for Object.
 </td>
@@ -3058,6 +3083,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../object/object.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Convert Object to a human readable string.
 </td>

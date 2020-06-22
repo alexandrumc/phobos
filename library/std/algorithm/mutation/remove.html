@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/blob/master/std/algorithm/mutation.d#L1892">
+							<a href="https://github.com/dlang/phobos/blob/master/std/algorithm/mutation.d#L1909">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/phobos/edit/master/std/algorithm/mutation.d#L1892">
+							<a href="https://github.com/dlang/phobos/edit/master/std/algorithm/mutation.d#L1909">
 								Improve this page
 							</a>
 							<div>
@@ -2952,7 +2967,7 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function remove</h2><p>Eliminates elements at given offsets from <code class="lang-d"><a href="../../std/algorithm/mutation/remove.html#range"><span class="pln"><a href="../../../std/algorithm/mutation/remove.html#range"><span class="pln">range</span></a></span></a></code> and returns the shortened
+				</nav><h2 id="0">Function remove</h2><p>Eliminates elements at given offsets from <code class="lang-d"><a href="../../../std/algorithm/mutation/remove.html#range"><span class="pln">range</span></a></code> and returns the shortened
 range.
 </p>
 				<div class="prototype">
@@ -3123,10 +3138,10 @@ cases.</li>
 </span></code></pre>
 </section>
 <h2 id="1">Function remove</h2><p>Reduces the length of the
-<a href="../../../std/range/primitives/is_bidirectional_range.html" title="std.range.primitives.isBidirectionalRange">bidirectional range</a> <code class="lang-d"><a href="../../std/algorithm/mutation/remove.html#range"><span class="pln"><a href="../../../std/algorithm/mutation/remove.html#range"><span class="pln">range</span></a></span></a></code> by removing
-elements that satisfy <code class="lang-d"><span class="pln">pred</span></code>. If <code class="lang-d"><span class="pln">s </span><span class="pun">= <a href="../../std/algorithm/mutation/swap_strategy.html#unstable"></span><span class="typ"><a href="../../../std/algorithm/mutation/swap_strategy.html"><span class="typ">SwapStrategy</span></a><wbr/></span><span class="pun">.</span><span class="pln">unstable</span></a></code>,
+<a href="../../../std/range/primitives/is_bidirectional_range.html" title="std.range.primitives.isBidirectionalRange">bidirectional range</a> <code class="lang-d"><a href="../../../std/algorithm/mutation/remove.html#range"><span class="pln">range</span></a></code> by removing
+elements that satisfy <code class="lang-d"><span class="pln">pred</span></code>. If <code class="lang-d"><span class="pln">s </span><span class="pun">= <a href="../../../std/algorithm/mutation/swap_strategy.html#unstable"></span><span class="typ">SwapStrategy<wbr/></span><span class="pun">.</span><span class="pln">unstable</span></a></code>,
 elements are moved from the right end of the range over the elements
-to eliminate. If <code class="lang-d"><span class="pln">s </span><span class="pun">= <a href="../../std/algorithm/mutation/swap_strategy.html#stable"></span><span class="typ"><a href="../../../std/algorithm/mutation/swap_strategy.html"><span class="typ">SwapStrategy</span></a><wbr/></span><span class="pun">.</span><span class="pln">stable</span></a></code> (the default),
+to eliminate. If <code class="lang-d"><span class="pln">s </span><span class="pun">= <a href="../../../std/algorithm/mutation/swap_strategy.html#stable"></span><span class="typ">SwapStrategy<wbr/></span><span class="pun">.</span><span class="pln">stable</span></a></code> (the default),
 elements are moved progressively to front such that their relative
 order is preserved. Returns the filtered range.
 </p>

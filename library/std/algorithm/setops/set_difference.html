@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2952,7 +2967,7 @@ $('#symbolSearchPane').show();</script>
 							</a>
 						</li>
 					</ul>
-				</nav><h2 id="0">Function setDifference</h2><p>Lazily computes the difference of <code class="lang-d"><a href="../../std/algorithm/setops/set_difference.html#r1"><span class="pln"><a href="../../../std/algorithm/setops/set_difference.html#r1"><span class="pln">r1</span></a></span></a></code> and <code class="lang-d"><a href="../../std/algorithm/setops/set_difference.html#r2"><span class="pln"><a href="../../../std/algorithm/setops/set_difference.html#r2"><span class="pln">r2</span></a></span></a></code>. The two ranges
+				</nav><h2 id="0">Function setDifference</h2><p>Lazily computes the difference of <code class="lang-d"><a href="../../../std/algorithm/setops/set_difference.html#r1"><span class="pln">r1</span></a></code> and <code class="lang-d"><a href="../../../std/algorithm/setops/set_difference.html#r2"><span class="pln">r2</span></a></code>. The two ranges
 are assumed to be sorted by <code class="lang-d"><span class="pln">less</span></code>. The element types of the two
 ranges must have a common type.
 </p>
@@ -3011,7 +3026,7 @@ of <code class="lang-d"><span class="pln">a</span></code> in the resulting range
 </span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">setDifference</span><span class="pun">(</span><span class="pln">r</span><span class="pun">, </span><span class="pln">x</span><span class="pun">)<wbr/>.</span><span class="pln">empty</span><span class="pun">);
 </span></code></pre>
 </section>
-<h2 id="1">Struct SetDifference</h2><p>Lazily computes the difference of <code class="lang-d"><a href="../../std/algorithm/setops/set_difference.html#r1"><span class="pln"><a href="../../../std/algorithm/setops/set_difference.html#r1"><span class="pln">r1</span></a></span></a></code> and <code class="lang-d"><a href="../../std/algorithm/setops/set_difference.html#r2"><span class="pln"><a href="../../../std/algorithm/setops/set_difference.html#r2"><span class="pln">r2</span></a></span></a></code>. The two ranges
+<h2 id="1">Struct SetDifference</h2><p>Lazily computes the difference of <code class="lang-d"><span class="pln">r1</span></code> and <code class="lang-d"><span class="pln">r2</span></code>. The two ranges
 are assumed to be sorted by <code class="lang-d"><span class="pln">less</span></code>. The element types of the two
 ranges must have a common type.
 </p>
@@ -3027,7 +3042,7 @@ ranges must have a common type.
 					</code>
 				</div>
 				<section><p>In the case of multisets, considering that element <code class="lang-d"><span class="pln">a</span></code> appears <code class="lang-d"><span class="pln">x</span></code>
-times in <code class="lang-d"><a href="../../../std/algorithm/setops/set_difference.html#r1"><span class="pln">r1</span></a></code> and <code class="lang-d"><span class="pln">y</span></code> times and <code class="lang-d"><a href="../../../std/algorithm/setops/set_difference.html#r2"><span class="pln">r2</span></a></code>, the number of occurences
+times in <code class="lang-d"><span class="pln">r1</span></code> and <code class="lang-d"><span class="pln">y</span></code> times and <code class="lang-d"><span class="pln">r2</span></code>, the number of occurences
 of <code class="lang-d"><span class="pln">a</span></code> in the resulting range is going to be <code class="lang-d"><span class="pln">x</span><span class="pun">-</span><span class="pln">y</span></code> if x &gt; y or 0 otherwise.
 </p>
 </section>
@@ -3043,6 +3058,7 @@ of <code class="lang-d"><span class="pln">a</span></code> in the resulting range
 								<a href="../../../std/algorithm/setops/set_difference.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(r1, r2)</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3085,6 +3101,7 @@ of <code class="lang-d"><span class="pln">a</span></code> in the resulting range
 								<a href="../../../std/algorithm/setops/set_difference.pop_front.html" class="public">
 									<code>popFront</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td></td>
 						</tr>
@@ -3094,11 +3111,11 @@ of <code class="lang-d"><span class="pln">a</span></code> in the resulting range
 <table><col class="caption"><tr><th>Name</th><th>Description</th></tr>
 <tr><td id="less">less</td><td> Predicate the given ranges are sorted by.</td></tr>
 <tr><td id="r1">r1</td><td> The first range.</td></tr>
-<tr><td id="r2">r2</td><td> The range to subtract from <code class="lang-d"><a href="../../../std/algorithm/setops/set_difference.html#r1"><span class="pln">r1</span></a></code>.</td></tr>
+<tr><td id="r2">r2</td><td> The range to subtract from <code class="lang-d"><span class="pln">r1</span></code>.</td></tr>
 </table>
 </section>
 <section><h3>Returns</h3>
-<p>A range of the difference of <code class="lang-d"><a href="../../../std/algorithm/setops/set_difference.html#r1"><span class="pln">r1</span></a></code> and <code class="lang-d"><a href="../../../std/algorithm/setops/set_difference.html#r2"><span class="pln">r2</span></a></code>.
+<p>A range of the difference of <code class="lang-d"><span class="pln">r1</span></code> and <code class="lang-d"><span class="pln">r2</span></code>.
 </p>
 </section>
 <section><h3>See also</h3>

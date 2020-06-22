@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2938,7 +2953,7 @@ $('#symbolSearchPane').show();</script>
 						</div>
 					</div>
 				</div><h1>Class <code><a href="../../../../std/experimental/logger/core.html">std.experimental.logger.core</a>.Logger</code></h1><p>This class is the base of every logger. In order to create a new kind of
-logger a deriving class needs to implement the <code class="lang-d"><a href="../../../std/experimental/logger/core/logger.write_log_msg.html"><span class="pln"><a href="../../../../std/experimental/logger/core/logger.write_log_msg.html"><span class="pln">writeLogMsg</span></a></span></a></code> method. By
+logger a deriving class needs to implement the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.write_log_msg.html"><span class="pln">writeLogMsg</span></a></code> method. By
 default this is not thread-safe.
 </p>
 				<div class="prototype">
@@ -2966,6 +2981,7 @@ flexibility.
 								<a href="../../../../std/experimental/logger/core/logger.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(lv)</span>
 							</td>
 							<td>Every subclass of <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> has to call this constructor from their
     constructor. It sets the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code>, and creates a fatal handler. The fatal
@@ -3012,6 +3028,7 @@ flexibility.
 								<a href="../../../../std/experimental/logger/core/logger.forward_msg.html" class="public">
 									<code>forwardMsg</code>
 								</a>
+								<span class="tableEntryAnnotation">(payload)</span>
 							</td>
 							<td>This method allows forwarding log entries from one logger to another.
 </td>
@@ -3021,6 +3038,7 @@ flexibility.
 								<a href="../../../../std/experimental/logger/core/logger.log.html" class="public">
 									<code>log</code>
 								</a>
+								<span class="tableEntryAnnotation">(ll, condition, args)</span>
 							</td>
 							<td>This method logs data with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> of the used <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code>.
 </td>
@@ -3030,6 +3048,7 @@ flexibility.
 								<a href="../../../../std/experimental/logger/core/logger.log.html" class="public">
 									<code>log</code>
 								</a>
+								<span class="tableEntryAnnotation">(ll, args)</span>
 							</td>
 							<td>This function logs data to the used <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> with a specific
     <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code>.
@@ -3040,6 +3059,7 @@ flexibility.
 								<a href="../../../../std/experimental/logger/core/logger.log.html" class="public">
 									<code>log</code>
 								</a>
+								<span class="tableEntryAnnotation">(condition, args)</span>
 							</td>
 							<td>This function logs data to the used <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> depending on a
     explicitly passed condition with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> of the used
@@ -3051,6 +3071,7 @@ flexibility.
 								<a href="../../../../std/experimental/logger/core/logger.log.html" class="public">
 									<code>log</code>
 								</a>
+								<span class="tableEntryAnnotation">(args)</span>
 							</td>
 							<td>This function logs data to the used <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code>
     of the used <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code>.
@@ -3061,6 +3082,7 @@ flexibility.
 								<a href="../../../../std/experimental/logger/core/logger.logf.html" class="public">
 									<code>logf</code>
 								</a>
+								<span class="tableEntryAnnotation">(ll, condition, msg, args)</span>
 							</td>
 							<td>This function logs data to the used <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> with a specific
     <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> and depending on a condition in a <code class="lang-d"><span class="pln">printf</span></code>-style manner.
@@ -3071,6 +3093,7 @@ flexibility.
 								<a href="../../../../std/experimental/logger/core/logger.logf.html" class="public">
 									<code>logf</code>
 								</a>
+								<span class="tableEntryAnnotation">(ll, msg, args)</span>
 							</td>
 							<td>This function logs data to the used <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> with a specific
     <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> in a <code class="lang-d"><span class="pln">printf</span></code>-style manner.
@@ -3081,6 +3104,7 @@ flexibility.
 								<a href="../../../../std/experimental/logger/core/logger.logf.html" class="public">
 									<code>logf</code>
 								</a>
+								<span class="tableEntryAnnotation">(condition, msg, args)</span>
 							</td>
 							<td>This function logs data to the used <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> depending on a
     condition with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> of the used <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> in a
@@ -3092,6 +3116,7 @@ flexibility.
 								<a href="../../../../std/experimental/logger/core/logger.logf.html" class="public">
 									<code>logf</code>
 								</a>
+								<span class="tableEntryAnnotation">(msg, args)</span>
 							</td>
 							<td>This method logs data to the used <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code>
     of the this <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> in a <code class="lang-d"><span class="pln">printf</span></code>-style manner.
@@ -3102,6 +3127,7 @@ flexibility.
 								<a href="../../../../object/object.factory.html" class="public inherited">
 									<code>factory</code>
 								</a>
+								<span class="tableEntryAnnotation">(classname)</span>
 							</td>
 							<td>Create instance of class specified by the fully qualified name
  classname.
@@ -3114,6 +3140,7 @@ flexibility.
 								<a href="../../../../object/object.op_cmp.html" class="public inherited">
 									<code>opCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Compare with another Object obj.
 </td>
@@ -3123,6 +3150,7 @@ flexibility.
 								<a href="../../../../object/object.op_equals.html" class="public inherited">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Test whether <code class="lang-d"><span class="kwd">this</span></code> is equal to <code class="lang-d"><a href="../../../../object/object.op_equals.html#o"><span class="pln">o</span></a></code>.
  The default implementation only compares by identity (using the <code class="lang-d"><span class="kwd">is</span></code> operator).
@@ -3134,6 +3162,7 @@ flexibility.
 								<a href="../../../../object/object.to_hash.html" class="public inherited">
 									<code>toHash</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Compute hash function for Object.
 </td>
@@ -3143,6 +3172,7 @@ flexibility.
 								<a href="../../../../object/object.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Convert Object to a human readable string.
 </td>
@@ -3152,6 +3182,7 @@ flexibility.
 								<a href="../../../../std/experimental/logger/core/logger.finish_log_msg.html" class="protected">
 									<code>finishLogMsg</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Signals that the message has been written and no more calls to
     <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.log_msg_part.html"><span class="pln">logMsgPart</span></a></code> follow.
@@ -3162,6 +3193,7 @@ flexibility.
 								<a href="../../../../std/experimental/logger/core/logger.log_msg_part.html" class="protected">
 									<code>logMsgPart</code>
 								</a>
+								<span class="tableEntryAnnotation">(msg)</span>
 							</td>
 							<td>Logs a part of the log message.
 </td>
@@ -3171,6 +3203,7 @@ flexibility.
 								<a href="../../../../std/experimental/logger/core/logger.write_log_msg.html" class="protected">
 									<code>writeLogMsg</code>
 								</a>
+								<span class="tableEntryAnnotation">(payload)</span>
 							</td>
 							<td>A custom logger must implement this method in order to work in a
     <code class="lang-d"><span class="typ">MultiLogger</span></code> and <code class="lang-d"><span class="typ">ArrayLogger</span></code>.
@@ -3219,8 +3252,8 @@ flexibility.
 									<code>criticalf</code>
 								</a>
 							</td>
-							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
-    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></code> encoded in the function name.
+							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
+    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> encoded in the function name.
 </td>
 						</tr>
 						<tr>
@@ -3229,8 +3262,8 @@ flexibility.
 									<code>error</code>
 								</a>
 							</td>
-							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></span></a></span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
-    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></span></a></code> encoded in the function name.
+							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
+    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> encoded in the function name.
 </td>
 						</tr>
 						<tr>
@@ -3239,8 +3272,8 @@ flexibility.
 									<code>errorf</code>
 								</a>
 							</td>
-							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></span></a></span></a></span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
-    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></span></a></span></a></code> encoded in the function name.
+							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
+    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> encoded in the function name.
 </td>
 						</tr>
 						<tr>
@@ -3249,8 +3282,8 @@ flexibility.
 									<code>fatal</code>
 								</a>
 							</td>
-							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></span></a></span></a></span></a></span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
-    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></span></a></span></a></span></a></code> encoded in the function name.
+							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
+    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> encoded in the function name.
 </td>
 						</tr>
 						<tr>
@@ -3259,8 +3292,8 @@ flexibility.
 									<code>fatalf</code>
 								</a>
 							</td>
-							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></span></a></span></a></span></a></span></a></span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
-    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></span></a></span></a></span></a></span></a></code> encoded in the function name.
+							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
+    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> encoded in the function name.
 </td>
 						</tr>
 						<tr>
@@ -3269,8 +3302,8 @@ flexibility.
 									<code>info</code>
 								</a>
 							</td>
-							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></span></a></span></a></span></a></span></a></span></a></span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
-    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></span></a></span></a></span></a></span></a></span></a></code> encoded in the function name.
+							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
+    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> encoded in the function name.
 </td>
 						</tr>
 						<tr>
@@ -3279,8 +3312,8 @@ flexibility.
 									<code>infof</code>
 								</a>
 							</td>
-							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
-    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></code> encoded in the function name.
+							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
+    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> encoded in the function name.
 </td>
 						</tr>
 						<tr>
@@ -3289,8 +3322,8 @@ flexibility.
 									<code>trace</code>
 								</a>
 							</td>
-							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
-    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></code> encoded in the function name.
+							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
+    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> encoded in the function name.
 </td>
 						</tr>
 						<tr>
@@ -3299,8 +3332,8 @@ flexibility.
 									<code>tracef</code>
 								</a>
 							</td>
-							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
-    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></code> encoded in the function name.
+							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
+    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> encoded in the function name.
 </td>
 						</tr>
 						<tr>
@@ -3309,8 +3342,8 @@ flexibility.
 									<code>warning</code>
 								</a>
 							</td>
-							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
-    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></code> encoded in the function name.
+							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
+    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> encoded in the function name.
 </td>
 						</tr>
 						<tr>
@@ -3319,8 +3352,8 @@ flexibility.
 									<code>warningf</code>
 								</a>
 							</td>
-							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
-    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></code> encoded in the function name.
+							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
+    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> encoded in the function name.
 </td>
 						</tr>
 					</table>
@@ -3337,8 +3370,8 @@ flexibility.
 									<code>memLogFunctions</code>
 								</a>
 							</td>
-							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
-    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></span></a></code> encoded in the function name.
+							<td>This template provides the log functions for the <code class="lang-d"><a href="../../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code> <code class="lang-d"><span class="kwd">class</span></code>
+    with the <code class="lang-d"><a href="../../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> encoded in the function name.
 </td>
 						</tr>
 					</table>

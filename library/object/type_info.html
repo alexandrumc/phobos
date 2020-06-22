@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2910,7 +2925,7 @@ $('#symbolSearchPane').show();</script>
 				<div id="tools">
 					<div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/druntime/blob/master/src/object.d#L309">
+							<a href="https://github.com/dlang/druntime/blob/master/src/object.d#L313">
 								View source code
 							</a>
 							<div>
@@ -2926,7 +2941,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 						<div class="tip smallprint">
-							<a href="https://github.com/dlang/druntime/edit/master/src/object.d#L309">
+							<a href="https://github.com/dlang/druntime/edit/master/src/object.d#L313">
 								Improve this page
 							</a>
 							<div>
@@ -3006,6 +3021,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../object/type_info.arg_types.html" class="public">
 									<code>argTypes</code>
 								</a>
+								<span class="tableEntryAnnotation">(arg1, arg2)</span>
 							</td>
 							<td>Return internal info on arguments fitting into 8byte.
  See X86-64 ABI 3.2.3
@@ -3016,6 +3032,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../object/type_info.compare.html" class="public">
 									<code>compare</code>
 								</a>
+								<span class="tableEntryAnnotation">(p1, p2)</span>
 							</td>
 							<td>Compares two instances for &lt;, ==, or &gt;.
 </td>
@@ -3025,6 +3042,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../object/type_info.destroy.html" class="public">
 									<code>destroy</code>
 								</a>
+								<span class="tableEntryAnnotation">(p)</span>
 							</td>
 							<td>Run the destructor on the object and all its sub-objects
 </td>
@@ -3034,6 +3052,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../object/type_info.equals.html" class="public">
 									<code>equals</code>
 								</a>
+								<span class="tableEntryAnnotation">(p1, p2)</span>
 							</td>
 							<td>Compares two instances for equality.
 </td>
@@ -3043,6 +3062,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../object/type_info.get_hash.html" class="public">
 									<code>getHash</code>
 								</a>
+								<span class="tableEntryAnnotation">(p)</span>
 							</td>
 							<td>Computes a hash of the instance of a type.
 </td>
@@ -3052,6 +3072,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../object/type_info.initializer.html" class="public">
 									<code>initializer</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Return default initializer.  If the type should be initialized to all
  zeros, an array with a null ptr and a length equal to the type size will
@@ -3064,6 +3085,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../object/type_info.off_ti.html" class="public">
 									<code>offTi</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Get type information on the contents of the type; null if not available
 </td>
@@ -3073,6 +3095,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../object/type_info.postblit.html" class="public">
 									<code>postblit</code>
 								</a>
+								<span class="tableEntryAnnotation">(p)</span>
 							</td>
 							<td>Run the postblit on the object and all its sub-objects
 </td>
@@ -3082,6 +3105,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../object/type_info.swap.html" class="public">
 									<code>swap</code>
 								</a>
+								<span class="tableEntryAnnotation">(p1, p2)</span>
 							</td>
 							<td>Swaps two instances of the type.
 </td>
@@ -3091,6 +3115,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../object/object.factory.html" class="public inherited">
 									<code>factory</code>
 								</a>
+								<span class="tableEntryAnnotation">(classname)</span>
 							</td>
 							<td>Create instance of class specified by the fully qualified name
  classname.
@@ -3103,6 +3128,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../object/object.op_cmp.html" class="public inherited">
 									<code>opCmp</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Compare with another Object obj.
 </td>
@@ -3112,6 +3138,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../object/object.op_equals.html" class="public inherited">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(o)</span>
 							</td>
 							<td>Test whether <code class="lang-d"><span class="kwd">this</span></code> is equal to <code class="lang-d"><a href="../object/object.op_equals.html#o"><span class="pln">o</span></a></code>.
  The default implementation only compares by identity (using the <code class="lang-d"><span class="kwd">is</span></code> operator).
@@ -3123,6 +3150,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../object/object.to_hash.html" class="public inherited">
 									<code>toHash</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Compute hash function for Object.
 </td>
@@ -3132,6 +3160,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../object/object.to_string.html" class="public inherited">
 									<code>toString</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Convert Object to a human readable string.
 </td>

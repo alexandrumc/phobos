@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2937,7 +2952,7 @@ $('#symbolSearchPane').show();</script>
 							</div>
 						</div>
 					</div>
-				</div><h1>Module <code>std.experimental.allocator.typed</code></h1><p>This module defines <code class="lang-d"><a href="./std/experimental/allocator/typed/typed_allocator.html"><span class="typ"><a href="../../../std/experimental/allocator/typed/typed_allocator.html"><span class="typ">TypedAllocator</span></a></span></a></code>, a statically-typed allocator that
+				</div><h1>Module <code>std.experimental.allocator.typed</code></h1><p>This module defines <code class="lang-d"><a href="../../../std/experimental/allocator/typed/typed_allocator.html"><span class="typ">TypedAllocator</span></a></code>, a statically-typed allocator that
 aggregates multiple untyped allocators and uses them depending on the static
 properties of the types allocated. For example, distinct allocators may be used
 for thread-local vs. thread-shared data, or for fixed-size data (<code class="lang-d"><span class="kwd">struct</span></code>,
@@ -2950,7 +2965,7 @@ for thread-local vs. thread-shared data, or for fixed-size data (<code class="la
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -2962,6 +2977,8 @@ for thread-local vs. thread-shared data, or for fixed-size data (<code class="la
 can be assembled. To let the system make a choice about a particular kind of
 allocation, use <code class="lang-d"><span class="typ">Default</span></code> for the respective parameters.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -2970,7 +2987,7 @@ allocation, use <code class="lang-d"><span class="typ">Default</span></code> for
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -2982,6 +2999,8 @@ allocation, use <code class="lang-d"><span class="typ">Default</span></code> for
 deduces these flags from the type being allocated and uses the appropriate
 allocator accordingly.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2938,7 +2953,7 @@ $('#symbolSearchPane').show();</script>
 						</div>
 					</div>
 				</div><h1>Struct <code><a href="../../../../../std/experimental/allocator/building_blocks/free_list.html">std.experimental.allocator.building_blocks.free_list</a>.SharedFreeList</code></h1><p>FreeList shared across threads. Allocation and deallocation are lock-free. The
-parameters have the same semantics as for <code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ">FreeList</span></a></span></a></code>.
+parameters have the same semantics as for <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ">FreeList</span></a></code>.
 </p>
 				<div class="prototype">
 					<code class="lang-d">
@@ -2989,7 +3004,7 @@ parameters have the same semantics as for <code class="lang-d"><a href="../../..
 							</td>
 							<td class="typecol"><code class="prettyprint lang-d"><span class="pln">size_t</span></code></td><td>Properties for getting (and possibly setting) the bounds. Setting bounds
         is allowed only once , and before any allocation takes place. Otherwise,
-        the primitives have the same semantics as those of <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ">FreeList</span></a></span></a></span></a></span></a></code>.
+        the primitives have the same semantics as those of <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ">FreeList</span></a></code>.
 </td>
 						</tr>
 						<tr>
@@ -2998,7 +3013,7 @@ parameters have the same semantics as for <code class="lang-d"><a href="../../..
 							</td>
 							<td class="typecol"><code class="prettyprint lang-d"><span class="pln">size_t</span></code></td><td>Properties for getting (and possibly setting) the bounds. Setting bounds
         is allowed only once , and before any allocation takes place. Otherwise,
-        the primitives have the same semantics as those of <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ">FreeList</span></a></span></a></span></a></span></a></span></a></code>.
+        the primitives have the same semantics as those of <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ">FreeList</span></a></code>.
 </td>
 						</tr>
 					</table>
@@ -3014,6 +3029,7 @@ parameters have the same semantics as for <code class="lang-d"><a href="../../..
 								<a href="../../../../../std/experimental/allocator/building_blocks/free_list/shared_free_list.allocate.html" class="public">
 									<code>allocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(bytes)</span>
 							</td>
 							<td>Standard primitives.
 </td>
@@ -3023,6 +3039,7 @@ parameters have the same semantics as for <code class="lang-d"><a href="../../..
 								<a href="../../../../../std/experimental/allocator/building_blocks/free_list/shared_free_list.deallocate.html" class="public">
 									<code>deallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>Standard primitives.
 </td>
@@ -3032,6 +3049,7 @@ parameters have the same semantics as for <code class="lang-d"><a href="../../..
 								<a href="../../../../../std/experimental/allocator/building_blocks/free_list/shared_free_list.deallocate_all.html" class="public">
 									<code>deallocateAll</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Standard primitives.
 </td>
@@ -3041,6 +3059,7 @@ parameters have the same semantics as for <code class="lang-d"><a href="../../..
 								<a href="../../../../../std/experimental/allocator/building_blocks/free_list/shared_free_list.good_alloc_size.html" class="public">
 									<code>goodAllocSize</code>
 								</a>
+								<span class="tableEntryAnnotation">(bytes)</span>
 							</td>
 							<td>Standard primitives.
 </td>
@@ -3050,10 +3069,11 @@ parameters have the same semantics as for <code class="lang-d"><a href="../../..
 								<a href="../../../../../std/experimental/allocator/building_blocks/free_list/shared_free_list.minimize.html" class="public">
 									<code>minimize</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Nonstandard function that minimizes the memory usage of the freelist by
     freeing each element in turn. Defined only if <code class="lang-d"><span class="typ">ParentAllocator</span></code> defines
-    <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/shared_free_list.deallocate.html"><span class="pln"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/shared_free_list.deallocate.html"><span class="pln">deallocate</span></a></span></a></code>.
+    <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/shared_free_list.deallocate.html"><span class="pln">deallocate</span></a></code>.
 </td>
 						</tr>
 						<tr>
@@ -3061,6 +3081,7 @@ parameters have the same semantics as for <code class="lang-d"><a href="../../..
 								<a href="../../../../../std/experimental/allocator/building_blocks/free_list/shared_free_list.owns.html" class="public">
 									<code>owns</code>
 								</a>
+								<span class="tableEntryAnnotation">(b)</span>
 							</td>
 							<td>Standard primitives.
 </td>
@@ -3070,6 +3091,7 @@ parameters have the same semantics as for <code class="lang-d"><a href="../../..
 								<a href="../../../../../std/experimental/allocator/building_blocks/free_list/shared_free_list.reallocate.html" class="public">
 									<code>reallocate</code>
 								</a>
+								<span class="tableEntryAnnotation">(b, s)</span>
 							</td>
 							<td>Standard primitives.
 </td>
@@ -3079,10 +3101,11 @@ parameters have the same semantics as for <code class="lang-d"><a href="../../..
 								<a href="../../../../../std/experimental/allocator/building_blocks/free_list/shared_free_list.set_bounds.html" class="public">
 									<code>setBounds</code>
 								</a>
+								<span class="tableEntryAnnotation">(newMin, newMax)</span>
 							</td>
 							<td>Properties for getting (and possibly setting) the bounds. Setting bounds
         is allowed only once , and before any allocation takes place. Otherwise,
-        the primitives have the same semantics as those of <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ">FreeList</span></a></span></a></span></a></span></a></span></a></span></a></code>.
+        the primitives have the same semantics as those of <code class="lang-d"><a href="../../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ">FreeList</span></a></code>.
 </td>
 						</tr>
 					</table>

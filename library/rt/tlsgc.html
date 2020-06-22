@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2944,48 +2959,60 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="destroy" class="public" href="../rt/tlsgc/destroy.html">destroy</a><span class="decoration">(data)</span>
+									<a id="destroy" class="public" href="../rt/tlsgc/destroy.html">destroy</a><span class="tableEntryAnnotation">(data)</span>
 								</code>
 							</td>
 							<td>Finalization hook, called FOR each thread. No assumptions about
  module initialization state should be made.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="init" class="public" href="../rt/tlsgc/init.html">init</a><span class="decoration">()</span>
+									<a id="init" class="public" href="../rt/tlsgc/init.html">init</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
 							<td>Initialization hook, called FROM each thread. No assumptions about
  module initialization state should be made.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="processGCMarks" class="public" href="../rt/tlsgc/process_gc_marks.html">processGCMarks</a><span class="decoration">(data, dg)</span>
+									<a id="processGCMarks" class="public" href="../rt/tlsgc/process_gc_marks.html">processGCMarks</a><span class="tableEntryAnnotation">(data, dg)</span>
 								</code>
 							</td>
 							<td>GC sweep hook, called FOR each thread. Can be used to free
  additional thread local memory or associated data structures. Note
  that only memory allocated from the GC can have marks.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="scan" class="public" href="../rt/tlsgc/scan.html">scan</a><span class="decoration">(data, dg)</span>
+									<a id="scan" class="public" href="../rt/tlsgc/scan.html">scan</a><span class="tableEntryAnnotation">(data, dg)</span>
 								</code>
 							</td>
 							<td>GC scan hook, called FOR each thread. Can be used to scan
  additional thread local memory.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -2994,7 +3021,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3004,6 +3031,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Per thread record to store thread associated data for garbage collection.
 </td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

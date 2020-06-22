@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2962,6 +2977,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/dlist/d_list.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Constructor taking a number of nodes
 </td>
@@ -2971,6 +2987,7 @@ $('#symbolSearchPane').show();</script>
 								<a href="../../../std/container/dlist/d_list.this.html" class="public">
 									<code>this</code>
 								</a>
+								<span class="tableEntryAnnotation">(stuff)</span>
 							</td>
 							<td>Constructor taking an <a href="../../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>
 </td>
@@ -3026,8 +3043,9 @@ elements.
 								<a href="../../../std/container/dlist/d_list.clear.html" class="public">
 									<code>clear</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
-							<td>Removes all contents from the <code class="lang-d"><a href="../../../std/container/dlist/d_list.html"><span class="typ"><a href="../../../std/container/dlist/d_list.html"><span class="typ">DList</span></a></span></a></code>.
+							<td>Removes all contents from the <code class="lang-d"><a href="../../../std/container/dlist/d_list.html"><span class="typ">DList</span></a></code>.
 </td>
 						</tr>
 						<tr>
@@ -3035,8 +3053,9 @@ elements.
 								<a href="../../../std/container/dlist/d_list.insert_after.html" class="public">
 									<code>insertAfter</code>
 								</a>
+								<span class="tableEntryAnnotation">(r, stuff)</span>
 							</td>
-							<td>Inserts <code class="lang-d"><a href="../../../std/container/dlist/d_list.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_after.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></code> after range <code class="lang-d"><a href="../../../std/container/dlist/d_list.insert_before.html#r"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_after.html#r"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_after.html#r"><span class="pln">r</span></a></span></a></span></a></code>, which must be a non-empty range
+							<td>Inserts <code class="lang-d"><a href="../../../std/container/dlist/d_list.insert_after.html#stuff"><span class="pln">stuff</span></a></code> after range <code class="lang-d"><a href="../../../std/container/dlist/d_list.insert_after.html#r"><span class="pln">r</span></a></code>, which must be a non-empty range
 previously extracted from this container.
 </td>
 						</tr>
@@ -3045,8 +3064,9 @@ previously extracted from this container.
 								<a href="../../../std/container/dlist/d_list.insert_back.html" class="public">
 									<code>insertBack</code>
 								</a>
+								<span class="tableEntryAnnotation">(stuff)</span>
 							</td>
-							<td>Inserts <code class="lang-d"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></code> to the front/back of the container. <code class="lang-d"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></code> can be a
+							<td>Inserts <code class="lang-d"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln">stuff</span></a></code> to the front/back of the container. <code class="lang-d"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln">stuff</span></a></code> can be a
 value convertible to <code class="lang-d"><span class="pln">T</span></code> or a range of objects convertible to <code class="lang-d"><span class="pln">T</span></code>. The stable version behaves the same, but guarantees that ranges
 iterating over the container are never invalidated.
 </td>
@@ -3056,8 +3076,9 @@ iterating over the container are never invalidated.
 								<a href="../../../std/container/dlist/d_list.insert_before.html" class="public">
 									<code>insertBefore</code>
 								</a>
+								<span class="tableEntryAnnotation">(r, stuff)</span>
 							</td>
-							<td>Inserts <code class="lang-d"><a href="../../../std/container/dlist/d_list.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_before.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></code> after range <code class="lang-d"><a href="../../../std/container/dlist/d_list.insert_before.html#r"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_after.html#r"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_after.html#r"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_before.html#r"><span class="pln">r</span></a></span></a></span></a></span></a></code>, which must be a non-empty range
+							<td>Inserts <code class="lang-d"><a href="../../../std/container/dlist/d_list.insert_before.html#stuff"><span class="pln">stuff</span></a></code> after range <code class="lang-d"><a href="../../../std/container/dlist/d_list.insert_before.html#r"><span class="pln">r</span></a></code>, which must be a non-empty range
 previously extracted from this container.
 </td>
 						</tr>
@@ -3066,8 +3087,9 @@ previously extracted from this container.
 								<a href="../../../std/container/dlist/d_list.insert_front.html" class="public">
 									<code>insertFront</code>
 								</a>
+								<span class="tableEntryAnnotation">(stuff)</span>
 							</td>
-							<td>Inserts <code class="lang-d"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></span></code> to the front/back of the container. <code class="lang-d"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></span></code> can be a
+							<td>Inserts <code class="lang-d"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln">stuff</span></a></code> to the front/back of the container. <code class="lang-d"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln">stuff</span></a></code> can be a
 value convertible to <code class="lang-d"><span class="pln">T</span></code> or a range of objects convertible to <code class="lang-d"><span class="pln">T</span></code>. The stable version behaves the same, but guarantees that ranges
 iterating over the container are never invalidated.
 </td>
@@ -3077,8 +3099,9 @@ iterating over the container are never invalidated.
 								<a href="../../../std/container/dlist/d_list.linear_remove.html" class="public">
 									<code>linearRemove</code>
 								</a>
+								<span class="tableEntryAnnotation">(r)</span>
 							</td>
-							<td>Removes all elements belonging to <code class="lang-d"><a href="../../../std/container/dlist/d_list.remove.html#r"><span class="pln"><a href="../../../std/container/dlist/d_list.linear_remove.html#r"><span class="pln"><a href="../../../std/container/dlist/d_list.linear_remove.html#r"><span class="pln">r</span></a></span></a></span></a></code>, which must be a range
+							<td>Removes all elements belonging to <code class="lang-d"><a href="../../../std/container/dlist/d_list.linear_remove.html#r"><span class="pln">r</span></a></code>, which must be a range
 obtained originally from this container.
 </td>
 						</tr>
@@ -3087,8 +3110,9 @@ obtained originally from this container.
 								<a href="../../../std/container/dlist/d_list.linear_remove.html" class="public">
 									<code>linearRemove</code>
 								</a>
+								<span class="tableEntryAnnotation">(r)</span>
 							</td>
-							<td><code class="lang-d"><a href="../../../std/container/dlist/d_list.linear_remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.linear_remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.linear_remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.linear_remove.html"><span class="pln">linearRemove</span></a></span></a></span></a></span></a></code> functions as <code class="lang-d"><a href="../../../std/container/dlist/d_list.remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.remove.html"><span class="pln">remove</span></a></span></a></span></a></span></a></code>, but also accepts ranges that are
+							<td><code class="lang-d"><a href="../../../std/container/dlist/d_list.linear_remove.html"><span class="pln">linearRemove</span></a></code> functions as <code class="lang-d"><a href="../../../std/container/dlist/d_list.remove.html"><span class="pln">remove</span></a></code>, but also accepts ranges that are
 result the of a <code class="lang-d"><span class="pln">take</span></code> operation. This is a convenient way to remove a
 fixed amount of elements from the range.
 </td>
@@ -3098,6 +3122,7 @@ fixed amount of elements from the range.
 								<a href="../../../std/container/dlist/d_list.linear_remove_element.html" class="public">
 									<code>linearRemoveElement</code>
 								</a>
+								<span class="tableEntryAnnotation">(value)</span>
 							</td>
 							<td>Removes the first occurence of an element from the list in linear time.
 </td>
@@ -3107,9 +3132,10 @@ fixed amount of elements from the range.
 								<a href="../../../std/container/dlist/d_list.op_binary.html" class="public">
 									<code>opBinary</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
-							<td>Returns a new <code class="lang-d"><a href="../../../std/container/dlist/d_list.html"><span class="typ"><a href="../../../std/container/dlist/d_list.html"><span class="typ">DList</span></a></span></a></code> that's the concatenation of <code class="lang-d"><span class="kwd">this</span></code> and its
-argument <code class="lang-d"><a href="../../../std/container/dlist/d_list.op_binary.html#rhs"><span class="pln"><a href="../../../std/container/dlist/d_list.op_binary.html#rhs"><span class="pln">rhs</span></a></span></a></code>.
+							<td>Returns a new <code class="lang-d"><a href="../../../std/container/dlist/d_list.html"><span class="typ">DList</span></a></code> that's the concatenation of <code class="lang-d"><span class="kwd">this</span></code> and its
+argument <code class="lang-d"><a href="../../../std/container/dlist/d_list.op_binary.html#rhs"><span class="pln">rhs</span></a></code>.
 </td>
 						</tr>
 						<tr>
@@ -3117,8 +3143,9 @@ argument <code class="lang-d"><a href="../../../std/container/dlist/d_list.op_bi
 								<a href="../../../std/container/dlist/d_list.op_binary_right.html" class="public">
 									<code>opBinaryRight</code>
 								</a>
+								<span class="tableEntryAnnotation">(lhs)</span>
 							</td>
-							<td>Returns a new <code class="lang-d"><a href="../../../std/container/dlist/d_list.html"><span class="typ"><a href="../../../std/container/dlist/d_list.html"><span class="typ">DList</span></a></span></a></code> that's the concatenation of the argument <code class="lang-d"><a href="../../../std/container/dlist/d_list.op_binary_right.html#lhs"><span class="pln"><a href="../../../std/container/dlist/d_list.op_binary_right.html#lhs"><span class="pln">lhs</span></a></span></a></code>
+							<td>Returns a new <code class="lang-d"><a href="../../../std/container/dlist/d_list.html"><span class="typ">DList</span></a></code> that's the concatenation of the argument <code class="lang-d"><a href="../../../std/container/dlist/d_list.op_binary_right.html#lhs"><span class="pln">lhs</span></a></code>
 and <code class="lang-d"><span class="kwd">this</span></code>.
 </td>
 						</tr>
@@ -3127,6 +3154,7 @@ and <code class="lang-d"><span class="kwd">this</span></code>.
 								<a href="../../../std/container/dlist/d_list.op_equals.html" class="public">
 									<code>opEquals</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td>Comparison for equality.
 </td>
@@ -3136,6 +3164,7 @@ and <code class="lang-d"><span class="kwd">this</span></code>.
 								<a href="../../../std/container/dlist/d_list.op_op_assign.html" class="public">
 									<code>opOpAssign</code>
 								</a>
+								<span class="tableEntryAnnotation">(rhs)</span>
 							</td>
 							<td>Appends the contents of the argument <code class="lang-d"><a href="../../../std/container/dlist/d_list.op_op_assign.html#rhs"><span class="pln">rhs</span></a></code> into <code class="lang-d"><span class="kwd">this</span></code>.
 </td>
@@ -3145,6 +3174,7 @@ and <code class="lang-d"><span class="kwd">this</span></code>.
 								<a href="../../../std/container/dlist/d_list.op_slice.html" class="public">
 									<code>opSlice</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Returns a range that iterates over all elements of the container, in
 forward order.
@@ -3155,9 +3185,10 @@ forward order.
 								<a href="../../../std/container/dlist/d_list.pop_first_of.html" class="public">
 									<code>popFirstOf</code>
 								</a>
+								<span class="tableEntryAnnotation">(r)</span>
 							</td>
-							<td>Removes first element of <code class="lang-d"><a href="../../../std/container/dlist/d_list.pop_first_of.html#r"><span class="pln"><a href="../../../std/container/dlist/d_list.pop_first_of.html#r"><span class="pln">r</span></a></span></a></code>, wich must be a range obtained originally
-from this container, from both DList instance and range <code class="lang-d"><a href="../../../std/container/dlist/d_list.pop_first_of.html#r"><span class="pln"><a href="../../../std/container/dlist/d_list.pop_first_of.html#r"><span class="pln">r</span></a></span></a></code>.
+							<td>Removes first element of <code class="lang-d"><a href="../../../std/container/dlist/d_list.pop_first_of.html#r"><span class="pln">r</span></a></code>, wich must be a range obtained originally
+from this container, from both DList instance and range <code class="lang-d"><a href="../../../std/container/dlist/d_list.pop_first_of.html#r"><span class="pln">r</span></a></code>.
 </td>
 						</tr>
 						<tr>
@@ -3165,6 +3196,7 @@ from this container, from both DList instance and range <code class="lang-d"><a 
 								<a href="../../../std/container/dlist/d_list.pop_last_of.html" class="public">
 									<code>popLastOf</code>
 								</a>
+								<span class="tableEntryAnnotation">(r)</span>
 							</td>
 							<td>Removes last element of <code class="lang-d"><a href="../../../std/container/dlist/d_list.pop_last_of.html#r"><span class="pln">r</span></a></code>, wich must be a range obtained originally
 from this container, from both DList instance and range <code class="lang-d"><a href="../../../std/container/dlist/d_list.pop_last_of.html#r"><span class="pln">r</span></a></code>.
@@ -3175,8 +3207,9 @@ from this container, from both DList instance and range <code class="lang-d"><a 
 								<a href="../../../std/container/dlist/d_list.remove.html" class="public">
 									<code>remove</code>
 								</a>
+								<span class="tableEntryAnnotation">(r)</span>
 							</td>
-							<td>Removes all elements belonging to <code class="lang-d"><a href="../../../std/container/dlist/d_list.remove.html#r"><span class="pln"><a href="../../../std/container/dlist/d_list.linear_remove.html#r"><span class="pln"><a href="../../../std/container/dlist/d_list.linear_remove.html#r"><span class="pln"><a href="../../../std/container/dlist/d_list.remove.html#r"><span class="pln">r</span></a></span></a></span></a></span></a></code>, which must be a range
+							<td>Removes all elements belonging to <code class="lang-d"><a href="../../../std/container/dlist/d_list.remove.html#r"><span class="pln">r</span></a></code>, which must be a range
 obtained originally from this container.
 </td>
 						</tr>
@@ -3185,6 +3218,7 @@ obtained originally from this container.
 								<a href="../../../std/container/dlist/d_list.remove_any.html" class="public">
 									<code>removeAny</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Picks one value in an unspecified position in the container, removes
 it from the container, and returns it. The stable version behaves the same,
@@ -3196,6 +3230,7 @@ but guarantees that ranges iterating over the container are never invalidated.
 								<a href="../../../std/container/dlist/d_list.remove_back.html" class="public">
 									<code>removeBack</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Removes the value at the front/back of the container. The stable version
 behaves the same, but guarantees that ranges iterating over the
@@ -3207,10 +3242,11 @@ container are never invalidated.
 								<a href="../../../std/container/dlist/d_list.remove_back.html" class="public">
 									<code>removeBack</code>
 								</a>
+								<span class="tableEntryAnnotation">(howMany)</span>
 							</td>
-							<td>Removes <code class="lang-d"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_front.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_back.html#howMany"><span class="pln">howMany</span></a></span></a></span></a></span></code> values at the front or back of the
+							<td>Removes <code class="lang-d"><a href="../../../std/container/dlist/d_list.remove_back.html#howMany"><span class="pln">howMany</span></a></code> values at the front or back of the
 container. Unlike the unparameterized versions above, these functions
-do not throw if they could not remove <code class="lang-d"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_front.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_back.html#howMany"><span class="pln">howMany</span></a></span></a></span></a></span></code> elements. Instead,
+do not throw if they could not remove <code class="lang-d"><a href="../../../std/container/dlist/d_list.remove_back.html#howMany"><span class="pln">howMany</span></a></code> elements. Instead,
 if <code class="lang-d"><a href="../../../std/container/dlist/d_list.remove_back.html#howMany"><span class="pln">howMany</span></a><span class="pln"> </span><span class="pun">&gt; </span><span class="pln">n</span></code>, all elements are removed. The returned value is
 the effective number of elements removed. The stable version behaves
 the same, but guarantees that ranges iterating over the container are
@@ -3222,6 +3258,7 @@ never invalidated.
 								<a href="../../../std/container/dlist/d_list.remove_front.html" class="public">
 									<code>removeFront</code>
 								</a>
+								<span class="tableEntryAnnotation">()</span>
 							</td>
 							<td>Removes the value at the front/back of the container. The stable version
 behaves the same, but guarantees that ranges iterating over the
@@ -3233,10 +3270,11 @@ container are never invalidated.
 								<a href="../../../std/container/dlist/d_list.remove_front.html" class="public">
 									<code>removeFront</code>
 								</a>
+								<span class="tableEntryAnnotation">(howMany)</span>
 							</td>
-							<td>Removes <code class="lang-d"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_front.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_front.html#howMany"><span class="pln">howMany</span></a></span></a></span></a></span></a></span></code> values at the front or back of the
+							<td>Removes <code class="lang-d"><a href="../../../std/container/dlist/d_list.remove_front.html#howMany"><span class="pln">howMany</span></a></code> values at the front or back of the
 container. Unlike the unparameterized versions above, these functions
-do not throw if they could not remove <code class="lang-d"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_front.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_front.html#howMany"><span class="pln">howMany</span></a></span></a></span></a></span></a></span></code> elements. Instead,
+do not throw if they could not remove <code class="lang-d"><a href="../../../std/container/dlist/d_list.remove_front.html#howMany"><span class="pln">howMany</span></a></code> elements. Instead,
 if <code class="lang-d"><a href="../../../std/container/dlist/d_list.remove_front.html#howMany"><span class="pln">howMany</span></a><span class="pln"> </span><span class="pun">&gt; </span><span class="pln">n</span></code>, all elements are removed. The returned value is
 the effective number of elements removed. The stable version behaves
 the same, but guarantees that ranges iterating over the container are
@@ -3274,7 +3312,7 @@ never invalidated.
 									<code>insert</code>
 								</a>
 							</td>
-							<td>Inserts <code class="lang-d"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></span></code> to the front/back of the container. <code class="lang-d"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></span></code> can be a
+							<td>Inserts <code class="lang-d"><span class="pln">stuff</span></code> to the front/back of the container. <code class="lang-d"><span class="pln">stuff</span></code> can be a
 value convertible to <code class="lang-d"><span class="pln">T</span></code> or a range of objects convertible to <code class="lang-d"><span class="pln">T</span></code>. The stable version behaves the same, but guarantees that ranges
 iterating over the container are never invalidated.
 </td>
@@ -3285,7 +3323,7 @@ iterating over the container are never invalidated.
 									<code>stableInsert</code>
 								</a>
 							</td>
-							<td>Inserts <code class="lang-d"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></span></code> to the front/back of the container. <code class="lang-d"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></span></code> can be a
+							<td>Inserts <code class="lang-d"><span class="pln">stuff</span></code> to the front/back of the container. <code class="lang-d"><span class="pln">stuff</span></code> can be a
 value convertible to <code class="lang-d"><span class="pln">T</span></code> or a range of objects convertible to <code class="lang-d"><span class="pln">T</span></code>. The stable version behaves the same, but guarantees that ranges
 iterating over the container are never invalidated.
 </td>
@@ -3296,7 +3334,7 @@ iterating over the container are never invalidated.
 									<code>stableInsertAfter</code>
 								</a>
 							</td>
-							<td>Inserts <code class="lang-d"><a href="../../../std/container/dlist/d_list.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_before.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></code> after range <code class="lang-d"><a href="../../../std/container/dlist/d_list.insert_before.html#r"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_after.html#r"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_after.html#r"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_before.html#r"><span class="pln">r</span></a></span></a></span></a></span></a></code>, which must be a non-empty range
+							<td>Inserts <code class="lang-d"><span class="pln">stuff</span></code> after range <code class="lang-d"><span class="pln">r</span></code>, which must be a non-empty range
 previously extracted from this container.
 </td>
 						</tr>
@@ -3306,7 +3344,7 @@ previously extracted from this container.
 									<code>stableInsertBack</code>
 								</a>
 							</td>
-							<td>Inserts <code class="lang-d"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></span></code> to the front/back of the container. <code class="lang-d"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></span></code> can be a
+							<td>Inserts <code class="lang-d"><span class="pln">stuff</span></code> to the front/back of the container. <code class="lang-d"><span class="pln">stuff</span></code> can be a
 value convertible to <code class="lang-d"><span class="pln">T</span></code> or a range of objects convertible to <code class="lang-d"><span class="pln">T</span></code>. The stable version behaves the same, but guarantees that ranges
 iterating over the container are never invalidated.
 </td>
@@ -3317,7 +3355,7 @@ iterating over the container are never invalidated.
 									<code>stableInsertBefore</code>
 								</a>
 							</td>
-							<td>Inserts <code class="lang-d"><a href="../../../std/container/dlist/d_list.insert_before.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_after.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_before.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></code> after range <code class="lang-d"><a href="../../../std/container/dlist/d_list.insert_before.html#r"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_after.html#r"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_after.html#r"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_before.html#r"><span class="pln">r</span></a></span></a></span></a></span></a></code>, which must be a non-empty range
+							<td>Inserts <code class="lang-d"><span class="pln">stuff</span></code> after range <code class="lang-d"><span class="pln">r</span></code>, which must be a non-empty range
 previously extracted from this container.
 </td>
 						</tr>
@@ -3327,7 +3365,7 @@ previously extracted from this container.
 									<code>stableInsertFront</code>
 								</a>
 							</td>
-							<td>Inserts <code class="lang-d"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></span></code> to the front/back of the container. <code class="lang-d"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_back.html#stuff"><span class="pln"><a href="../../../std/container/dlist/d_list.insert_front.html#stuff"><span class="pln">stuff</span></a></span></a></span></a></span></a></span></code> can be a
+							<td>Inserts <code class="lang-d"><span class="pln">stuff</span></code> to the front/back of the container. <code class="lang-d"><span class="pln">stuff</span></code> can be a
 value convertible to <code class="lang-d"><span class="pln">T</span></code> or a range of objects convertible to <code class="lang-d"><span class="pln">T</span></code>. The stable version behaves the same, but guarantees that ranges
 iterating over the container are never invalidated.
 </td>
@@ -3338,7 +3376,7 @@ iterating over the container are never invalidated.
 									<code>stableLinearRemove</code>
 								</a>
 							</td>
-							<td><code class="lang-d"><a href="../../../std/container/dlist/d_list.linear_remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.linear_remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.linear_remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.linear_remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.linear_remove.html"><span class="pln">linearRemove</span></a></span></a></span></a></span></a></span></a></code> functions as <code class="lang-d"><a href="../../../std/container/dlist/d_list.remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.remove.html"><span class="pln">remove</span></a></span></a></span></a></span></a></span></a></code>, but also accepts ranges that are
+							<td><code class="lang-d"><a href="../../../std/container/dlist/d_list.linear_remove.html"><span class="pln">linearRemove</span></a></code> functions as <code class="lang-d"><a href="../../../std/container/dlist/d_list.remove.html"><span class="pln">remove</span></a></code>, but also accepts ranges that are
 result the of a <code class="lang-d"><span class="pln">take</span></code> operation. This is a convenient way to remove a
 fixed amount of elements from the range.
 </td>
@@ -3349,7 +3387,7 @@ fixed amount of elements from the range.
 									<code>stableRemove</code>
 								</a>
 							</td>
-							<td><code class="lang-d"><a href="../../../std/container/dlist/d_list.linear_remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.linear_remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.linear_remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.linear_remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.linear_remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.linear_remove.html"><span class="pln">linearRemove</span></a></span></a></span></a></span></a></span></a></span></a></code> functions as <code class="lang-d"><a href="../../../std/container/dlist/d_list.remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.remove.html"><span class="pln"><a href="../../../std/container/dlist/d_list.remove.html"><span class="pln">remove</span></a></span></a></span></a></span></a></span></a></span></a></code>, but also accepts ranges that are
+							<td><code class="lang-d"><a href="../../../std/container/dlist/d_list.linear_remove.html"><span class="pln">linearRemove</span></a></code> functions as <code class="lang-d"><a href="../../../std/container/dlist/d_list.remove.html"><span class="pln">remove</span></a></code>, but also accepts ranges that are
 result the of a <code class="lang-d"><span class="pln">take</span></code> operation. This is a convenient way to remove a
 fixed amount of elements from the range.
 </td>
@@ -3382,9 +3420,9 @@ container are never invalidated.
 									<code>stableRemoveBack</code>
 								</a>
 							</td>
-							<td>Removes <code class="lang-d"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_front.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_front.html#howMany"><span class="pln">howMany</span></a></span></a></span></a></span></a></span></code> values at the front or back of the
+							<td>Removes <code class="lang-d"><span class="pln">howMany</span></code> values at the front or back of the
 container. Unlike the unparameterized versions above, these functions
-do not throw if they could not remove <code class="lang-d"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_front.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_front.html#howMany"><span class="pln">howMany</span></a></span></a></span></a></span></a></span></code> elements. Instead,
+do not throw if they could not remove <code class="lang-d"><span class="pln">howMany</span></code> elements. Instead,
 if <code class="lang-d"><span class="pln">howMany </span><span class="pun">&gt; </span><span class="pln">n</span></code>, all elements are removed. The returned value is
 the effective number of elements removed. The stable version behaves
 the same, but guarantees that ranges iterating over the container are
@@ -3408,9 +3446,9 @@ container are never invalidated.
 									<code>stableRemoveFront</code>
 								</a>
 							</td>
-							<td>Removes <code class="lang-d"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_front.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_front.html#howMany"><span class="pln">howMany</span></a></span></a></span></a></span></a></span></code> values at the front or back of the
+							<td>Removes <code class="lang-d"><span class="pln">howMany</span></code> values at the front or back of the
 container. Unlike the unparameterized versions above, these functions
-do not throw if they could not remove <code class="lang-d"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_front.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_back.html#howMany"><span class="pln"><a href="../../../std/container/dlist/d_list.remove_front.html#howMany"><span class="pln">howMany</span></a></span></a></span></a></span></a></span></code> elements. Instead,
+do not throw if they could not remove <code class="lang-d"><span class="pln">howMany</span></code> elements. Instead,
 if <code class="lang-d"><span class="pln">howMany </span><span class="pun">&gt; </span><span class="pln">n</span></code>, all elements are removed. The returned value is
 the effective number of elements removed. The stable version behaves
 the same, but guarantees that ranges iterating over the container are

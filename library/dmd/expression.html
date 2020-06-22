@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2958,130 +2973,169 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="doCopyOrMove" class="public" href="../dmd/expression/do_copy_or_move.html">doCopyOrMove</a><span class="decoration">(sc, e, t)</span>
+									<a id="doCopyOrMove" class="public" href="../dmd/expression/do_copy_or_move.html">doCopyOrMove</a><span class="tableEntryAnnotation">(sc, e, t)</span>
 								</code>
 							</td>
 							<td>Handle the postblit call on lvalue, or the move of rvalue.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="expandTuples" class="public" href="../dmd/expression/expand_tuples.html">expandTuples</a><span class="decoration">(exps)</span>
+									<a id="expandTuples" class="public" href="../dmd/expression/expand_tuples.html">expandTuples</a><span class="tableEntryAnnotation">(exps)</span>
 								</code>
 							</td>
 							<td>Expand tuples.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="expToVariable" class="public" href="../dmd/expression/exp_to_variable.html">expToVariable</a><span class="decoration">(e)</span>
+									<a id="expToVariable" class="public" href="../dmd/expression/exp_to_variable.html">expToVariable</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>Given an Expression, find the variable it really is.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="firstComma" class="public" href="../dmd/expression/first_comma.html">firstComma</a><span class="decoration">(e)</span>
+									<a id="firstComma" class="public" href="../dmd/expression/first_comma.html">firstComma</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>Find the first non-comma expression.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="getFuncTemplateDecl" class="public" href="../dmd/expression/get_func_template_decl.html">getFuncTemplateDecl</a><span class="decoration">(s)</span>
+									<a id="getFuncTemplateDecl" class="public" href="../dmd/expression/get_func_template_decl.html">getFuncTemplateDecl</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
 							<td>If <code class="lang-d"><a href="../dmd/expression/get_func_template_decl.html#s"><span class="pln">s</span></a></code> is a function template, i.e. the only member of a template
  and that member is a function, return that template.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="hasThis" class="public" href="../dmd/expression/has_this.html">hasThis</a><span class="decoration">(sc)</span>
+									<a id="hasThis" class="public" href="../dmd/expression/has_this.html">hasThis</a><span class="tableEntryAnnotation">(sc)</span>
 								</code>
 							</td>
 							<td>Determine if <code class="lang-d"><span class="kwd">this</span></code> is available by walking up the enclosing
  scopes until a function is found.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isAliasThisTuple" class="public" href="../dmd/expression/is_alias_this_tuple.html">isAliasThisTuple</a><span class="decoration">(e)</span>
+									<a id="isAliasThisTuple" class="public" href="../dmd/expression/is_alias_this_tuple.html">isAliasThisTuple</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>Expand alias this tuples.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isDotOpDispatch" class="public" href="../dmd/expression/is_dot_op_dispatch.html">isDotOpDispatch</a><span class="decoration">(e)</span>
+									<a id="isDotOpDispatch" class="public" href="../dmd/expression/is_dot_op_dispatch.html">isDotOpDispatch</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>check e is exp.opDispatch!(tiargs) or not
  It's used to switch to UFCS the semantic analysis path
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="isNeedThisScope" class="public" href="../dmd/expression/is_need_this_scope.html">isNeedThisScope</a><span class="decoration">(sc, d)</span>
+									<a id="isNeedThisScope" class="public" href="../dmd/expression/is_need_this_scope.html">isNeedThisScope</a><span class="tableEntryAnnotation">(sc, d)</span>
 								</code>
 							</td>
 							<td>Determine if a <code class="lang-d"><span class="kwd">this</span></code> is needed to access <code class="lang-d"><a href="../dmd/expression/is_need_this_scope.html#d"><span class="pln">d</span></a></code>.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="lastComma" class="public" href="../dmd/expression/last_comma.html">lastComma</a><span class="decoration">(e)</span>
+									<a id="lastComma" class="public" href="../dmd/expression/last_comma.html">lastComma</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>Find the last non-comma expression.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="RealIdentical" class="public" href="../dmd/expression/real_identical.html">RealIdentical</a><span class="decoration">(x1, x2)</span>
+									<a id="RealIdentical" class="public" href="../dmd/expression/real_identical.html">RealIdentical</a><span class="tableEntryAnnotation">(x1, x2)</span>
 								</code>
 							</td>
 							<td>Test to see if two reals are the same.
  Regard NaN's as equivalent.
  Regard +0 and -0 as different.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="typeDotIdExp" class="public" href="../dmd/expression/type_dot_id_exp.html">typeDotIdExp</a><span class="decoration">(loc, type, ident)</span>
+									<a id="typeDotIdExp" class="public" href="../dmd/expression/type_dot_id_exp.html">typeDotIdExp</a><span class="tableEntryAnnotation">(loc, type, ident)</span>
 								</code>
 							</td>
 							<td>TypeDotIdExp
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
-									<a id="valueNoDtor" class="public" href="../dmd/expression/value_no_dtor.html">valueNoDtor</a><span class="decoration">(e)</span>
+									<a id="valueNoDtor" class="public" href="../dmd/expression/value_no_dtor.html">valueNoDtor</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
 							<td>If we want the value of this expression, but do not want to call
  the destructor on it.
 </td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -3090,7 +3144,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -3099,6 +3153,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3107,6 +3163,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3115,6 +3173,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3123,6 +3183,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3131,6 +3193,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3140,6 +3204,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>e1 [ a0, a1, a2, a3 ,... ]
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3148,6 +3214,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3157,6 +3225,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>[ e1, e2, e3, ... ]
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3165,6 +3235,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3173,6 +3245,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3182,6 +3256,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>[ key0 : value0, key1 : value1, ... ]
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3190,6 +3266,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3198,6 +3276,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3206,6 +3286,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3214,6 +3296,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3223,6 +3307,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Possible to cast to one type while painting to another type
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3232,6 +3318,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>The ~= operator. It can have one of the following operators:
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3240,6 +3328,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3248,6 +3338,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3256,6 +3348,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3266,6 +3360,8 @@ $('#symbolSearchPane').show();</script>
 							<td><code class="lang-d"><span class="pln">op</span></code> is one of:
       TOK.lessThan, TOK.lessOrEqual, TOK.greaterThan, TOK.greaterOrEqual
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3274,6 +3370,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3282,6 +3380,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3290,6 +3390,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3298,6 +3400,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3307,6 +3411,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td><code class="lang-d"><span class="pln">econd </span><span class="pun">? </span><span class="pln">e1 </span><span class="pun">: </span><span class="pln">e2</span></code>
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3315,6 +3421,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3324,6 +3432,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Declaration of a symbol
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3332,6 +3442,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3340,6 +3452,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3348,6 +3462,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3356,6 +3472,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3364,6 +3482,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3372,6 +3492,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3380,6 +3502,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3388,6 +3512,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3396,6 +3522,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3405,6 +3533,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Mainly just a placeholder
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3414,6 +3544,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>foo.bar!(args)
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3422,6 +3554,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3430,6 +3564,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3439,6 +3575,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Won't be generated by parser.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3448,6 +3586,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td><code class="lang-d"><span class="pun">==</span></code> and <code class="lang-d"><span class="pun">!=</span></code>
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3458,6 +3598,8 @@ $('#symbolSearchPane').show();</script>
 							<td>Use this expression for error recovery.
  It should behave as a 'sink' to prevent further cascaded error messages.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3466,6 +3608,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3474,6 +3618,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3483,6 +3629,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Function/Delegate literal
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3491,6 +3639,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3499,6 +3649,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3507,6 +3659,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3516,6 +3670,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td><code class="lang-d"><span class="kwd">is</span></code> and <code class="lang-d"><span class="pun">!</span><span class="kwd">is</span></code>
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3524,6 +3680,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3533,6 +3691,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>e1 [ e2 ]
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3541,6 +3701,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3549,6 +3711,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3558,6 +3722,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Mainly just a placeholder
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3568,6 +3734,8 @@ $('#symbolSearchPane').show();</script>
 							<td>is(targ id tok tspec)
  is(targ id == tok2)
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3576,6 +3744,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3584,6 +3754,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3592,6 +3764,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3600,6 +3774,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3608,6 +3784,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3616,6 +3794,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3624,6 +3804,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3632,6 +3814,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3640,6 +3824,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3648,6 +3834,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3657,6 +3845,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>thisexp.new(newargs) class baseclasses { } (arguments)
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3666,6 +3856,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>thisexp.new(newargs) newtype(arguments)
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3674,6 +3866,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3682,6 +3876,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3691,6 +3887,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Objective-C class reference expression.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3699,6 +3897,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3707,6 +3907,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3716,6 +3918,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Overload Set
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3725,6 +3929,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>For both i++ and i--
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3733,6 +3939,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3741,6 +3949,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3750,6 +3960,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>For both ++i and --i
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3758,6 +3970,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3766,6 +3980,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3774,6 +3990,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3783,6 +4001,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>This deletes the key e1 from the associative array e2
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3793,6 +4013,8 @@ $('#symbolSearchPane').show();</script>
 							<td>Mainly just a placeholder of
   Package, Module, Nspace, and TemplateInstance (including TemplateMixin)
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3801,6 +4023,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3809,6 +4033,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3817,6 +4043,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3825,6 +4053,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3834,6 +4064,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>e1 [lwr .. upr]
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3842,6 +4074,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3851,6 +4085,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>sd( e1, e2, e3, ... )
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3859,6 +4095,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3867,6 +4105,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3876,6 +4116,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Offset from symbol
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3885,6 +4127,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Mainly just a placeholder
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3893,6 +4137,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3902,6 +4148,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>_traits(identifier, args...)
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3910,6 +4158,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3919,6 +4169,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Mainly just a placeholder
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3928,6 +4180,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>typeid(int)
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3936,6 +4190,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3944,6 +4200,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3952,6 +4210,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3960,6 +4220,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3969,6 +4231,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>Variable
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3978,6 +4242,8 @@ $('#symbolSearchPane').show();</script>
 							</td>
 							<td>e1.array property for vectors.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3986,6 +4252,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3996,6 +4264,8 @@ $('#symbolSearchPane').show();</script>
 							<td>An uninitialized value,
  generated from void initializers.
 </td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -4004,6 +4274,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 						<tr>
 							<td>
@@ -4012,6 +4284,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -4020,7 +4294,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th>
+							<th>Name</th><th>Description</th><th>nogc</th>
 						</tr>
 						<tr>
 							<td>
@@ -4029,6 +4303,8 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td></td>
+							<td>
+							</td>
 						</tr>
 					</table>
 				</section>

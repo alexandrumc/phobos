@@ -1032,6 +1032,11 @@ $('#symbolSearchPane').show();</script>
 						</a>
 					</li>
 					<li>
+						<a class="module " href="../../core/stdcpp/utility.html">
+							<span>utility</span>
+						</a>
+					</li>
+					<li>
 						<a class="module " href="../../core/stdcpp/vector.html">
 							<span>vector</span>
 						</a>
@@ -1098,6 +1103,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../core/thread.html">
 							<span>Package members</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../core/thread/context.html">
+							<span>context</span>
 						</a>
 					</li>
 					<li>
@@ -1731,6 +1741,11 @@ $('#symbolSearchPane').show();</script>
 					<li>
 						<a class="module " href="../../dmd/argtypes.html">
 							<span>argtypes</span>
+						</a>
+					</li>
+					<li>
+						<a class="module " href="../../dmd/argtypes_aarch64.html">
+							<span>argtypes_aarch64</span>
 						</a>
 					</li>
 					<li>
@@ -2980,34 +2995,34 @@ target object.
 </p>
 </section>
 <section><h2>Returns</h2>
-<p><code class="lang-d"><span class="kwd">true</span></code> if <code class="lang-d"><a href="../../std/exception/may_point_to.html#source"><span class="pln"><a href="../../std/exception/does_point_to.html#source"><span class="pln">source</span></a></span></a></code>'s representation embeds a pointer
-that points to <code class="lang-d"><a href="../../std/exception/may_point_to.html#target"><span class="pln"><a href="../../std/exception/does_point_to.html#target"><span class="pln">target</span></a></span></a></code>'s representation or somewhere inside
+<p><code class="lang-d"><span class="kwd">true</span></code> if <code class="lang-d"><a href="../../std/exception/does_point_to.html#source"><span class="pln">source</span></a></code>'s representation embeds a pointer
+that points to <code class="lang-d"><a href="../../std/exception/does_point_to.html#target"><span class="pln">target</span></a></code>'s representation or somewhere inside
 it.
 </p>
 
-<p>If <code class="lang-d"><a href="../../std/exception/may_point_to.html#source"><span class="pln"><a href="../../std/exception/does_point_to.html#source"><span class="pln">source</span></a></span></a></code> is or contains a dynamic array, then, then these functions will check
-if there is overlap between the dynamic array and <code class="lang-d"><a href="../../std/exception/may_point_to.html#target"><span class="pln"><a href="../../std/exception/does_point_to.html#target"><span class="pln">target</span></a></span></a></code>'s representation.
+<p>If <code class="lang-d"><a href="../../std/exception/does_point_to.html#source"><span class="pln">source</span></a></code> is or contains a dynamic array, then, then these functions will check
+if there is overlap between the dynamic array and <code class="lang-d"><a href="../../std/exception/does_point_to.html#target"><span class="pln">target</span></a></code>'s representation.
 </p>
 
-<p>If <code class="lang-d"><a href="../../std/exception/may_point_to.html#source"><span class="pln"><a href="../../std/exception/does_point_to.html#source"><span class="pln">source</span></a></span></a></code> is a class, then it will be handled as a pointer.
+<p>If <code class="lang-d"><a href="../../std/exception/does_point_to.html#source"><span class="pln">source</span></a></code> is a class, then it will be handled as a pointer.
 </p>
 
-<p>If <code class="lang-d"><a href="../../std/exception/may_point_to.html#target"><span class="pln"><a href="../../std/exception/does_point_to.html#target"><span class="pln">target</span></a></span></a></code> is a pointer, a dynamic array or a class, then these functions will only
-check if <code class="lang-d"><a href="../../std/exception/may_point_to.html#source"><span class="pln"><a href="../../std/exception/does_point_to.html#source"><span class="pln">source</span></a></span></a></code> points to <code class="lang-d"><a href="../../std/exception/may_point_to.html#target"><span class="pln"><a href="../../std/exception/does_point_to.html#target"><span class="pln">target</span></a></span></a></code>, <i>not</i> what <code class="lang-d"><a href="../../std/exception/may_point_to.html#target"><span class="pln"><a href="../../std/exception/does_point_to.html#target"><span class="pln">target</span></a></span></a></code> references.
+<p>If <code class="lang-d"><a href="../../std/exception/does_point_to.html#target"><span class="pln">target</span></a></code> is a pointer, a dynamic array or a class, then these functions will only
+check if <code class="lang-d"><a href="../../std/exception/does_point_to.html#source"><span class="pln">source</span></a></code> points to <code class="lang-d"><a href="../../std/exception/does_point_to.html#target"><span class="pln">target</span></a></code>, <i>not</i> what <code class="lang-d"><a href="../../std/exception/does_point_to.html#target"><span class="pln">target</span></a></code> references.
 </p>
 
-<p>If <code class="lang-d"><a href="../../std/exception/may_point_to.html#source"><span class="pln"><a href="../../std/exception/does_point_to.html#source"><span class="pln">source</span></a></span></a></code> is or contains a union, then there may be either false positives or
+<p>If <code class="lang-d"><a href="../../std/exception/does_point_to.html#source"><span class="pln">source</span></a></code> is or contains a union or <code class="lang-d"><span class="typ">void</span><span class="pun">[</span><span class="pln">n</span><span class="pun">]</span></code>, then there may be either false positives or
 false negatives:
 </p>
 
-<p><code class="lang-d"><a href="../../std/exception/does_point_to.html"><span class="pln"><span class="pln">doesPointTo</span></span></a></code> will return <code class="lang-d"><span class="kwd">true</span></code> if it is absolutely certain
-<code class="lang-d"><a href="../../std/exception/may_point_to.html#source"><span class="pln"><a href="../../std/exception/does_point_to.html#source"><span class="pln">source</span></a></span></a></code> points to <code class="lang-d"><a href="../../std/exception/may_point_to.html#target"><span class="pln"><a href="../../std/exception/does_point_to.html#target"><span class="pln">target</span></a></span></a></code>. It may produce false negatives, but never
+<p><code class="lang-d"><span class="pln">doesPointTo</span></code> will return <code class="lang-d"><span class="kwd">true</span></code> if it is absolutely certain
+<code class="lang-d"><a href="../../std/exception/does_point_to.html#source"><span class="pln">source</span></a></code> points to <code class="lang-d"><a href="../../std/exception/does_point_to.html#target"><span class="pln">target</span></a></code>. It may produce false negatives, but never
 false positives. This function should be prefered when trying to validate
 input data.
 </p>
 
-<p><code class="lang-d"><span class="pln"><a href="../../std/exception/may_point_to.html"><span class="pln">mayPointTo</span></a></span></code> will return <code class="lang-d"><span class="kwd">false</span></code> if it is absolutely certain
-<code class="lang-d"><a href="../../std/exception/may_point_to.html#source"><span class="pln"><a href="../../std/exception/does_point_to.html#source"><span class="pln">source</span></a></span></a></code> does not point to <code class="lang-d"><a href="../../std/exception/may_point_to.html#target"><span class="pln"><a href="../../std/exception/does_point_to.html#target"><span class="pln">target</span></a></span></a></code>. It may produce false positives, but never
+<p><code class="lang-d"><a href="../../std/exception/may_point_to.html"><span class="pln">mayPointTo</span></a></code> will return <code class="lang-d"><span class="kwd">false</span></code> if it is absolutely certain
+<code class="lang-d"><a href="../../std/exception/does_point_to.html#source"><span class="pln">source</span></a></code> does not point to <code class="lang-d"><a href="../../std/exception/does_point_to.html#target"><span class="pln">target</span></a></code>. It may produce false positives, but never
 false negatives. This function should be prefered for defensively choosing a
 code path.
 </p>
