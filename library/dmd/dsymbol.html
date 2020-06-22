@@ -2969,20 +2969,20 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="foreachDsymbol" class="public" href="../dmd/dsymbol/foreach_dsymbol.html">foreachDsymbol</a><span class="tableEntryAnnotation">(symbols, dg)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Calls dg(Dsymbol *sym) for each Dsymbol.
  If dg returns !=0, stops and returns that value else returns 0.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2990,11 +2990,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="foreachDsymbol" class="public" href="../dmd/dsymbol/foreach_dsymbol.html">foreachDsymbol</a><span class="tableEntryAnnotation">(symbols, dg)</span>
 								</code>
 							</td>
-							<td>Calls dg(Dsymbol *sym) for each Dsymbol.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Calls dg(Dsymbol *sym) for each Dsymbol.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3003,7 +3003,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3011,10 +3011,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="ArrayScopeSymbol" class="public" href="../dmd/dsymbol/array_scope_symbol.html">ArrayScopeSymbol</a>
 								</code>
 							</td>
-							<td>Array Index/Slice scope
-</td>
 							<td>
 							</td>
+							<td>Array Index/Slice scope
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3022,9 +3022,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="Dsymbol" class="public" href="../dmd/dsymbol/dsymbol.html">Dsymbol</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3032,10 +3032,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="DsymbolTable" class="public" href="../dmd/dsymbol/dsymbol_table.html">DsymbolTable</a>
 								</code>
 							</td>
-							<td>Table of Dsymbol's
-</td>
 							<td>
 							</td>
+							<td>Table of Dsymbol's
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3043,12 +3043,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="ExpressionDsymbol" class="public" href="../dmd/dsymbol/expression_dsymbol.html">ExpressionDsymbol</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Class that holds an expression in a Dsymbol wraper.
  This is not an AST node, but a class used to pass
  an expression as a function parameter of type Dsymbol.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3056,13 +3056,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="ForwardingScopeDsymbol" class="public" href="../dmd/dsymbol/forwarding_scope_dsymbol.html">ForwardingScopeDsymbol</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Forwarding ScopeDsymbol.  Used by ForwardingAttribDeclaration and
  ForwardingScopeDeclaration to forward symbol insertions to another
  scope.  See <code class="lang-d"><a href="../dmd/attrib/forwarding_attrib_declaration.html" title="dmd.attrib.ForwardingAttribDeclaration"><span class="typ">ForwardingAttribDeclaration</span></a></code> for more
  details.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3070,10 +3070,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="OverloadSet" class="public" href="../dmd/dsymbol/overload_set.html">OverloadSet</a>
 								</code>
 							</td>
-							<td>Overload Sets
-</td>
 							<td>
 							</td>
+							<td>Overload Sets
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3081,10 +3081,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="ScopeDsymbol" class="public" href="../dmd/dsymbol/scope_dsymbol.html">ScopeDsymbol</a>
 								</code>
 							</td>
-							<td>Dsymbol that generates a scope
-</td>
 							<td>
 							</td>
+							<td>Dsymbol that generates a scope
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3092,10 +3092,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="WithScopeSymbol" class="public" href="../dmd/dsymbol/with_scope_symbol.html">WithScopeSymbol</a>
 								</code>
 							</td>
-							<td>With statement scope
-</td>
 							<td>
 							</td>
+							<td>With statement scope
+</td>
 						</tr>
 					</table>
 				</section>

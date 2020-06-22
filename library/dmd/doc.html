@@ -2973,7 +2973,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2981,15 +2981,15 @@ $('#symbolSearchPane').show();</script>
 									<a id="escapeDdocString" class="public" href="../dmd/doc/escape_ddoc_string.html">escapeDdocString</a><span class="tableEntryAnnotation">(buf, start)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Having unmatched parentheses can hose the output of Ddoc,
  as the macros depend on properly nested parentheses.
  This function replaces all ( with ( and ) with )
  to preserve text literally. This also means macros in the
  text won't be expanded.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2997,10 +2997,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="gendocfile" class="public" href="../dmd/doc/gendocfile.html">gendocfile</a><span class="tableEntryAnnotation">(m)</span>
 								</code>
 							</td>
-							<td></td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3008,11 +3008,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="isIdStart" class="public" href="../dmd/doc/is_id_start.html">isIdStart</a><span class="tableEntryAnnotation">(p)</span>
 								</code>
 							</td>
-							<td>Determine if p points to the start of an identifier.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Determine if p points to the start of an identifier.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3020,11 +3020,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="isIdTail" class="public" href="../dmd/doc/is_id_tail.html">isIdTail</a><span class="tableEntryAnnotation">(p)</span>
 								</code>
 							</td>
-							<td>Determine if p points to the rest of an identifier.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Determine if p points to the rest of an identifier.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3032,14 +3032,14 @@ $('#symbolSearchPane').show();</script>
 									<a id="skiptoident" class="public" href="../dmd/doc/skiptoident.html">skiptoident</a><span class="tableEntryAnnotation">(buf, i)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Scan forward to one of:
       start of identifier
       beginning of next line
       end of buf
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3047,11 +3047,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="utfStride" class="public" href="../dmd/doc/utf_stride.html">utfStride</a><span class="tableEntryAnnotation">(p)</span>
 								</code>
 							</td>
-							<td>Return number of bytes in UTF character.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Return number of bytes in UTF character.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3060,7 +3060,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3068,9 +3068,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="DocComment" class="public" href="../dmd/doc/doc_comment.html">DocComment</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 					</table>
 				</section>

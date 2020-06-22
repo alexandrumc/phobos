@@ -2961,7 +2961,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2969,13 +2969,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="_d_run_main" class="public" href="../rt/dmain2/_d_run_main.html">_d_run_main</a><span class="tableEntryAnnotation">(argc, argv, mainFunc)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Sets up the D char[][] command-line args, initializes druntime,
  runs embedded unittests and then runs the given D main() function,
  optionally catching and printing any unhandled exceptions.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2983,13 +2983,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="_d_traceContext" class="public" href="../rt/dmain2/_d_trace_context.html">_d_traceContext</a><span class="tableEntryAnnotation">(ptr)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>This function will be called when an exception is constructed.  The
  user-supplied trace handler will be called if one has been supplied,
  otherwise no trace will be generated.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2997,12 +2997,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="gc_clrProxy" class="public" href="../rt/dmain2/gc_clr_proxy.html">gc_clrProxy</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>These are a temporary means of providing a GC hook for DLL use.  They may be
- replaced with some other similar functionality later.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>These are a temporary means of providing a GC hook for DLL use.  They may be
+ replaced with some other similar functionality later.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3010,12 +3010,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="gc_getProxy" class="public" href="../rt/dmain2/gc_get_proxy.html">gc_getProxy</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>These are a temporary means of providing a GC hook for DLL use.  They may be
- replaced with some other similar functionality later.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>These are a temporary means of providing a GC hook for DLL use.  They may be
+ replaced with some other similar functionality later.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3023,12 +3023,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="gc_setProxy" class="public" href="../rt/dmain2/gc_set_proxy.html">gc_setProxy</a><span class="tableEntryAnnotation">(p)</span>
 								</code>
 							</td>
-							<td>These are a temporary means of providing a GC hook for DLL use.  They may be
- replaced with some other similar functionality later.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>These are a temporary means of providing a GC hook for DLL use.  They may be
+ replaced with some other similar functionality later.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3036,11 +3036,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="rt_getTraceHandler" class="public" href="../rt/dmain2/rt_get_trace_handler.html">rt_getTraceHandler</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Return the current trace handler
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Return the current trace handler
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3048,13 +3048,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="rt_init" class="public" href="../rt/dmain2/rt_init.html">rt_init</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Initialize druntime.
  If a C program wishes to call D code, and there's no D main(), then it
  must call rt_init() and rt_term().
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3062,11 +3062,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="rt_setTraceHandler" class="public" href="../rt/dmain2/rt_set_trace_handler.html">rt_setTraceHandler</a><span class="tableEntryAnnotation">(h)</span>
 								</code>
 							</td>
-							<td>Overrides the default trace hander with a user-supplied version.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Overrides the default trace hander with a user-supplied version.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3074,11 +3074,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="rt_term" class="public" href="../rt/dmain2/rt_term.html">rt_term</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Terminate use of druntime.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Terminate use of druntime.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3087,7 +3087,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3095,11 +3095,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="CArgs" class="public" href="../rt/dmain2/c_args.html">CArgs</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Provide out-of-band access to the original C argc/argv
  passed to this program via main(argc,argv).
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>

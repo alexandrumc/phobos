@@ -2963,7 +2963,7 @@ facilities, or import individual heap building blocks and assemble them.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2971,14 +2971,14 @@ facilities, or import individual heap building blocks and assemble them.
 									<a id="mmapRegionList" class="public" href="../../../std/experimental/allocator/showcase/mmap_region_list.html">mmapRegionList</a><span class="tableEntryAnnotation">(bytesPerRegion)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Creates a scalable <code class="lang-d"><span class="typ">AllocatorList</span></code> of <code class="lang-d"><span class="typ">Regions</span></code>, each having at least
 <code class="lang-d"><a href="../../../std/experimental/allocator/showcase/mmap_region_list.html#bytesPerRegion"><span class="pln">bytesPerRegion</span></a></code> bytes. Allocation is very fast. This allocator does not offer
 <code class="lang-d"><span class="pln">deallocate</span></code> but does free all regions in its destructor. It is recommended for
 short-lived batch applications that count on never running out of memory.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>

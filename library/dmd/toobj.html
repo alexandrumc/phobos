@@ -2969,7 +2969,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2977,12 +2977,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="baseVtblOffset" class="public" href="../dmd/toobj/base_vtbl_offset.html">baseVtblOffset</a><span class="tableEntryAnnotation">(cd, bc)</span>
 								</code>
 							</td>
-							<td>Get offset of base class's vtbl[] initializer from start of csym.
- Returns ~0 if not this csym.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Get offset of base class's vtbl[] initializer from start of csym.
+ Returns ~0 if not this csym.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2990,12 +2990,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="write_instance_pointers" class="public" href="../dmd/toobj/write_instance_pointers.html">write_instance_pointers</a><span class="tableEntryAnnotation">(type, s, offset)</span>
 								</code>
 							</td>
-							<td>write pointer references for typed data to the object file
- a class type is considered to mean the instance, not a reference
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>write pointer references for typed data to the object file
+ a class type is considered to mean the instance, not a reference
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3003,12 +3003,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="write_pointers" class="public" href="../dmd/toobj/write_pointers.html">write_pointers</a><span class="tableEntryAnnotation">(type, s, offset)</span>
 								</code>
 							</td>
-							<td>write pointer references for typed data to the object file
- a class type is considered to mean a reference to a class instance
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>write pointer references for typed data to the object file
+ a class type is considered to mean a reference to a class instance
+</td>
 						</tr>
 					</table>
 				</section>

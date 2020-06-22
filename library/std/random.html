@@ -3091,7 +3091,7 @@ integers and real numbers have been implemented.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3099,13 +3099,13 @@ integers and real numbers have been implemented.
 									<a id="choice" class="public" href="../std/random/choice.html">choice</a><span class="tableEntryAnnotation">(range, urng)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Returns a random, uniformly chosen, element <code class="lang-d"><span class="pln">e</span></code> from the supplied
 <code class="lang-d"><span class="typ">Range </span><span class="pln">range</span></code>. If no random number generator is passed, the default
 <code class="lang-d"><a href="../std/random/rnd_gen.html"><span class="pln">rndGen</span></a></code> is used.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3113,17 +3113,20 @@ integers and real numbers have been implemented.
 									<a id="dice" class="public" href="../std/random/dice.html">dice</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Rolls a dice with relative probabilities stored in <code class="lang-d"><a href="../std/random/dice.html#proportions"><span class="pln">proportions</span></a></code>. Returns the index in <code class="lang-d"><a href="../std/random/dice.html#proportions"><span class="pln">proportions</span></a></code> that was chosen.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Rolls a dice with relative probabilities stored in <code class="lang-d"><a href="../std/random/dice.html#proportions"><span class="pln">proportions</span></a></code>. Returns the index in <code class="lang-d"><a href="../std/random/dice.html#proportions"><span class="pln">proportions</span></a></code> that was chosen.
+</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="partialShuffle" class="public" href="../std/random/partial_shuffle.html">partialShuffle</a><span class="tableEntryAnnotation">(r, n, gen)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Partially shuffles the elements of <code class="lang-d"><a href="../std/random/partial_shuffle.html#r"><span class="pln">r</span></a></code> such that upon returning <code class="lang-d"><a href="../std/random/partial_shuffle.html#r"><span class="pln">r</span></a><span class="pun">[</span><span class="lit">0 </span><span class="pun">.. <a href="../std/random/partial_shuffle.html#n"></span><span class="pln">n</span></a><span class="pun">]</span></code>
 is a random subset of <code class="lang-d"><a href="../std/random/partial_shuffle.html#r"><span class="pln">r</span></a></code> and is randomly ordered.  <code class="lang-d"><a href="../std/random/partial_shuffle.html#r"><span class="pln">r</span></a><span class="pun">[<a href="../std/random/partial_shuffle.html#n"></span><span class="pln">n</span></a><span class="pln"> </span><span class="pun">.. </span><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">]</span></code>
@@ -3132,9 +3135,6 @@ order, but will not be random in the sense that their order after
 <code class="lang-d"><span class="pln">partialShuffle</span></code> returns will not be independent of their order before
 <code class="lang-d"><span class="pln">partialShuffle</span></code> was called.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3142,13 +3142,13 @@ order, but will not be random in the sense that their order after
 									<a id="randomCover" class="public" href="../std/random/random_cover.html">randomCover</a><span class="tableEntryAnnotation">(r, rng)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Covers a given range <code class="lang-d"><a href="../std/random/random_cover.html#r"><span class="pln">r</span></a></code> in a random manner, i.e. goes through each
 element of <code class="lang-d"><a href="../std/random/random_cover.html#r"><span class="pln">r</span></a></code> once and only once, just in a random order. <code class="lang-d"><a href="../std/random/random_cover.html#r"><span class="pln">r</span></a></code>
 must be a random-access range with length.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3156,14 +3156,14 @@ must be a random-access range with length.
 									<a id="randomSample" class="public" href="../std/random/random_sample.html">randomSample</a><span class="tableEntryAnnotation">(r, n, total)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Selects a random subsample out of <code class="lang-d"><a href="../std/random/random_sample.html#r"><span class="pln">r</span></a></code>, containing exactly <code class="lang-d"><a href="../std/random/random_sample.html#n"><span class="pln">n</span></a></code>
 elements. The order of elements is the same as in the original
 range. The total length of <code class="lang-d"><a href="../std/random/random_sample.html#r"><span class="pln">r</span></a></code> must be known. If <code class="lang-d"><a href="../std/random/random_sample.html#total"><span class="pln">total</span></a></code> is
 passed in, the total number of sample is considered to be <code class="lang-d"><a href="../std/random/random_sample.html#total"><span class="pln">total</span></a></code>. Otherwise, <code class="lang-d"><a href="../std/random/random_sample.html"><span class="typ">RandomSample</span></a></code> uses <code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3171,13 +3171,13 @@ passed in, the total number of sample is considered to be <code class="lang-d"><
 									<a id="randomShuffle" class="public" href="../std/random/random_shuffle.html">randomShuffle</a><span class="tableEntryAnnotation">(r, gen)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Shuffles elements of <code class="lang-d"><a href="../std/random/random_shuffle.html#r"><span class="pln">r</span></a></code> using <code class="lang-d"><a href="../std/random/random_shuffle.html#gen"><span class="pln">gen</span></a></code> as a shuffler. <code class="lang-d"><a href="../std/random/random_shuffle.html#r"><span class="pln">r</span></a></code> must be
 a random-access range with length.  If no RNG is specified, <code class="lang-d"><a href="../std/random/rnd_gen.html"><span class="pln">rndGen</span></a></code>
 will be used.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3185,13 +3185,13 @@ will be used.
 									<a id="rndGen" class="public property" href="../std/random/rnd_gen.html">rndGen</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Global random number generator used by various functions in this
 module whenever no generator is specified. It is allocated per-thread
 and initialized to an unpredictable value for each thread.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3199,15 +3199,15 @@ and initialized to an unpredictable value for each thread.
 									<a id="uniform" class="public" href="../std/random/uniform.html">uniform</a><span class="tableEntryAnnotation">(a, b)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Generates a number between <code class="lang-d"><a href="../std/random/uniform.html#a"><span class="pln">a</span></a></code> and <code class="lang-d"><a href="../std/random/uniform.html#b"><span class="pln">b</span></a></code>. The <code class="lang-d"><span class="pln">boundaries</span></code>
 parameter controls the shape of the interval (open vs. closed on
 either side). Valid values for <code class="lang-d"><span class="pln">boundaries</span></code> are <code class="lang-d"><span class="str">"[]"</span></code>, <code class="lang-d"><span class="str">"(]"</span></code>, <code class="lang-d"><span class="str">"[)"</span></code>, and <code class="lang-d"><span class="str">"()"</span></code>. The default interval
 is closed to the left and open to the right. The version that does not
 take <code class="lang-d"><a href="../std/random/uniform.html#urng"><span class="pln">urng</span></a></code> uses the default generator <code class="lang-d"><a href="../std/random/rnd_gen.html"><span class="pln">rndGen</span></a></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3215,13 +3215,13 @@ take <code class="lang-d"><a href="../std/random/uniform.html#urng"><span class=
 									<a id="uniform" class="public" href="../std/random/uniform.html">uniform</a><span class="tableEntryAnnotation">(urng)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Generates a uniformly-distributed number in the range <code class="lang-d"><span class="pun">[</span><span class="pln">T<wbr/></span><span class="pun">.</span><span class="pln">min</span><span class="pun">,
 </span><span class="pln">T<wbr/></span><span class="pun">.</span><span class="pln">max</span><span class="pun">]</span></code> for any integral or character type <code class="lang-d"><span class="pln">T</span></code>. If no random
 number generator is passed, uses the default <code class="lang-d"><a href="../std/random/rnd_gen.html"><span class="pln">rndGen</span></a></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3229,14 +3229,14 @@ number generator is passed, uses the default <code class="lang-d"><a href="../st
 									<a id="uniform01" class="public" href="../std/random/uniform01.html">uniform01</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Generates a uniformly-distributed floating point number of type
  <code class="lang-d"><span class="pln">T</span></code> in the range [0, 1).  If no random number generator is
  specified, the default RNG <code class="lang-d"><a href="../std/random/rnd_gen.html"><span class="pln">rndGen</span></a></code> will be used as the source
  of randomness.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3244,13 +3244,13 @@ number generator is passed, uses the default <code class="lang-d"><a href="../st
 									<a id="uniformDistribution" class="public" href="../std/random/uniform_distribution.html">uniformDistribution</a><span class="tableEntryAnnotation">(n, useThis)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Generates a uniform probability distribution of size <code class="lang-d"><a href="../std/random/uniform_distribution.html#n"><span class="pln">n</span></a></code>, i.e., an
 array of size <code class="lang-d"><a href="../std/random/uniform_distribution.html#n"><span class="pln">n</span></a></code> of positive numbers of type <code class="lang-d"><span class="pln">F</span></code> that sum to
 <code class="lang-d"><span class="lit">1</span></code>. If <code class="lang-d"><a href="../std/random/uniform_distribution.html#useThis"><span class="pln">useThis</span></a></code> is provided, it is used as storage.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3258,13 +3258,13 @@ array of size <code class="lang-d"><a href="../std/random/uniform_distribution.h
 									<a id="unpredictableSeed" class="public property" href="../std/random/unpredictable_seed.html">unpredictableSeed</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>A "good" seed for initializing random number engines. Initializing
 with <span class="d_param">unpredictableSeed</span> makes engines generate different
 random number sequences every run.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>
@@ -3273,7 +3273,7 @@ random number sequences every run.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3281,10 +3281,10 @@ random number sequences every run.
 									<a id="LinearCongruentialEngine" class="public" href="../std/random/linear_congruential_engine.html">LinearCongruentialEngine</a>
 								</code>
 							</td>
-							<td>Linear Congruential generator.
-</td>
 							<td>
 							</td>
+							<td>Linear Congruential generator.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3292,10 +3292,10 @@ random number sequences every run.
 									<a id="MersenneTwisterEngine" class="public" href="../std/random/mersenne_twister_engine.html">MersenneTwisterEngine</a>
 								</code>
 							</td>
-							<td>The <a href="https://en.wikipedia.org/wiki/Mersenne_Twister">Mersenne Twister</a> generator.
-</td>
 							<td>
 							</td>
+							<td>The <a href="https://en.wikipedia.org/wiki/Mersenne_Twister">Mersenne Twister</a> generator.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3303,12 +3303,12 @@ random number sequences every run.
 									<a id="RandomCover" class="public" href="../std/random/random_cover.html">RandomCover</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Covers a given range <code class="lang-d"><span class="pln">r</span></code> in a random manner, i.e. goes through each
 element of <code class="lang-d"><span class="pln">r</span></code> once and only once, just in a random order. <code class="lang-d"><span class="pln">r</span></code>
 must be a random-access range with length.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3316,13 +3316,13 @@ must be a random-access range with length.
 									<a id="RandomSample" class="public" href="../std/random/random_sample.html">RandomSample</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Selects a random subsample out of <code class="lang-d"><span class="pln">r</span></code>, containing exactly <code class="lang-d"><span class="pln">n</span></code>
 elements. The order of elements is the same as in the original
 range. The total length of <code class="lang-d"><span class="pln">r</span></code> must be known. If <code class="lang-d"><span class="pln">total</span></code> is
 passed in, the total number of sample is considered to be <code class="lang-d"><span class="pln">total</span></code>. Otherwise, <code class="lang-d"><span class="typ">RandomSample</span></code> uses <code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3330,14 +3330,14 @@ passed in, the total number of sample is considered to be <code class="lang-d"><
 									<a id="XorshiftEngine" class="public" href="../std/random/xorshift_engine.html">XorshiftEngine</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Xorshift generator.
 Implemented according to <a href="http://www.jstatsoft.org/v08/i14/paper">Xorshift RNGs</a>
 (Marsaglia, 2003) when the size is small. For larger sizes the generator
 uses Sebastino Vigna's optimization of using an index to avoid needing
 to rotate the internal array.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>

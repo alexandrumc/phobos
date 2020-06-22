@@ -3028,7 +3028,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3036,12 +3036,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="appender" class="public" href="../std/array/appender.html">appender</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Convenience function that returns an <code class="lang-d"><a href="../std/array/appender.html"><span class="typ">Appender</span></a></code> instance,
-    optionally initialized with <code class="lang-d"><a href="../std/array/array.html"><span class="pln">array</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Convenience function that returns an <code class="lang-d"><a href="../std/array/appender.html"><span class="typ">Appender</span></a></code> instance,
+    optionally initialized with <code class="lang-d"><a href="../std/array/array.html"><span class="pln">array</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3049,13 +3049,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="appender" class="public" href="../std/array/appender.html">appender</a><span class="tableEntryAnnotation">(arrayPtr)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Convenience function that returns a <code class="lang-d"><a href="../std/array/ref_appender.html"><span class="typ">RefAppender</span></a></code> instance initialized
     with <code class="lang-d"><a href="../std/array/appender.html#arrayPtr"><span class="pln">arrayPtr</span></a></code>. Don't use null for the array pointer, use the other
     version of <code class="lang-d"><a href="../std/array/appender.html"><span class="pln">appender</span></a></code> instead.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3063,12 +3063,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="array" class="public" href="../std/array/array.html">array</a><span class="tableEntryAnnotation">(r)</span>
 								</code>
 							</td>
-							<td>Allocates an array and initializes it with copies of the elements
- of range <code class="lang-d"><a href="../std/array/array.html#r"><span class="pln">r</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Allocates an array and initializes it with copies of the elements
+ of range <code class="lang-d"><a href="../std/array/array.html#r"><span class="pln">r</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3076,12 +3076,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="array" class="public" href="../std/array/array.html">array</a><span class="tableEntryAnnotation">(str)</span>
 								</code>
 							</td>
-							<td>Convert a narrow string to an array type that fully supports random access.
-This is handled as a special case and always returns an array of <code class="lang-d"><span class="typ">dchar</span></code>
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Convert a narrow string to an array type that fully supports random access.
+This is handled as a special case and always returns an array of <code class="lang-d"><span class="typ">dchar</span></code>
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3089,12 +3089,12 @@ This is handled as a special case and always returns an array of <code class="la
 									<a id="assocArray" class="public" href="../std/array/assoc_array.html">assocArray</a><span class="tableEntryAnnotation">(r)</span>
 								</code>
 							</td>
-							<td>Returns a newly allocated associative array from a range of key/value tuples
-or from a range of keys and a range of values.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns a newly allocated associative array from a range of key/value tuples
+or from a range of keys and a range of values.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3102,11 +3102,11 @@ or from a range of keys and a range of values.
 									<a id="byPair" class="public" href="../std/array/by_pair.html">byPair</a><span class="tableEntryAnnotation">(aa)</span>
 								</code>
 							</td>
-							<td>Construct a range iterating over an associative array by key/value tuples.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Construct a range iterating over an associative array by key/value tuples.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3114,12 +3114,12 @@ or from a range of keys and a range of values.
 									<a id="insertInPlace" class="public" href="../std/array/insert_in_place.html">insertInPlace</a><span class="tableEntryAnnotation">(array, pos, stuff)</span>
 								</code>
 							</td>
-							<td>Inserts <code class="lang-d"><a href="../std/array/insert_in_place.html#stuff"><span class="pln">stuff</span></a></code> (which must be an input range or any number of
-    implicitly convertible items) in <code class="lang-d"><a href="../std/array/insert_in_place.html#array"><span class="pln">array</span></a></code> at position <code class="lang-d"><a href="../std/array/insert_in_place.html#pos"><span class="pln">pos</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Inserts <code class="lang-d"><a href="../std/array/insert_in_place.html#stuff"><span class="pln">stuff</span></a></code> (which must be an input range or any number of
+    implicitly convertible items) in <code class="lang-d"><a href="../std/array/insert_in_place.html#array"><span class="pln">array</span></a></code> at position <code class="lang-d"><a href="../std/array/insert_in_place.html#pos"><span class="pln">pos</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3127,12 +3127,12 @@ or from a range of keys and a range of values.
 									<a id="join" class="public" href="../std/array/join.html">join</a><span class="tableEntryAnnotation">(ror, sep)</span>
 								</code>
 							</td>
-							<td>Eagerly concatenates all of the ranges in <code class="lang-d"><a href="../std/array/join.html#ror"><span class="pln">ror</span></a></code> together (with the GC)
-   into one array using <code class="lang-d"><a href="../std/array/join.html#sep"><span class="pln">sep</span></a></code> as the separator if present.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Eagerly concatenates all of the ranges in <code class="lang-d"><a href="../std/array/join.html#ror"><span class="pln">ror</span></a></code> together (with the GC)
+   into one array using <code class="lang-d"><a href="../std/array/join.html#sep"><span class="pln">sep</span></a></code> as the separator if present.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3140,11 +3140,11 @@ or from a range of keys and a range of values.
 									<a id="minimallyInitializedArray" class="public" href="../std/array/minimally_initialized_array.html">minimallyInitializedArray</a><span class="tableEntryAnnotation">(sizes)</span>
 								</code>
 							</td>
-							<td>Returns a new array of type <code class="lang-d"><span class="pln">T</span></code> allocated on the garbage collected heap.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns a new array of type <code class="lang-d"><span class="pln">T</span></code> allocated on the garbage collected heap.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3152,15 +3152,15 @@ or from a range of keys and a range of values.
 									<a id="overlap" class="public" href="../std/array/overlap.html">overlap</a><span class="tableEntryAnnotation">(a, b)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Returns the overlapping portion, if any, of two arrays. Unlike <code class="lang-d"><span class="pln">equal</span></code>,
 <code class="lang-d"><span class="pln">overlap</span></code> only compares the pointers and lengths in the
 ranges, not the values referred by them. If <code class="lang-d"><span class="pln">r1</span></code> and <code class="lang-d"><span class="pln">r2</span></code> have an
 overlapping slice, returns that slice. Otherwise, returns the null
 slice.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3168,11 +3168,11 @@ slice.
 									<a id="replace" class="public" href="../std/array/replace.html">replace</a><span class="tableEntryAnnotation">(subject, from, to)</span>
 								</code>
 							</td>
-							<td>Replace occurrences of <code class="lang-d"><a href="../std/array/replace.html#from"><span class="pln">from</span></a></code> with <code class="lang-d"><a href="../std/array/replace.html#to"><span class="pln">to</span></a></code> in <code class="lang-d"><a href="../std/array/replace.html#subject"><span class="pln">subject</span></a></code> in a new array.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Replace occurrences of <code class="lang-d"><a href="../std/array/replace.html#from"><span class="pln">from</span></a></code> with <code class="lang-d"><a href="../std/array/replace.html#to"><span class="pln">to</span></a></code> in <code class="lang-d"><a href="../std/array/replace.html#subject"><span class="pln">subject</span></a></code> in a new array.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3180,12 +3180,12 @@ slice.
 									<a id="replace" class="public" href="../std/array/replace.html">replace</a><span class="tableEntryAnnotation">(subject, from, to, stuff)</span>
 								</code>
 							</td>
-							<td>Replaces elements from <code class="lang-d"><a href="../std/array/array.html"><span class="pln">array</span></a></code> with indices ranging from <code class="lang-d"><a href="../std/array/replace.html#from"><span class="pln">from</span></a></code>
-    (inclusive) to <code class="lang-d"><a href="../std/array/replace.html#to"><span class="pln">to</span></a></code> (exclusive) with the range <code class="lang-d"><a href="../std/array/replace.html#stuff"><span class="pln">stuff</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Replaces elements from <code class="lang-d"><a href="../std/array/array.html"><span class="pln">array</span></a></code> with indices ranging from <code class="lang-d"><a href="../std/array/replace.html#from"><span class="pln">from</span></a></code>
+    (inclusive) to <code class="lang-d"><a href="../std/array/replace.html#to"><span class="pln">to</span></a></code> (exclusive) with the range <code class="lang-d"><a href="../std/array/replace.html#stuff"><span class="pln">stuff</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3193,11 +3193,11 @@ slice.
 									<a id="replaceFirst" class="public" href="../std/array/replace_first.html">replaceFirst</a><span class="tableEntryAnnotation">(subject, from, to)</span>
 								</code>
 							</td>
-							<td>Replaces the first occurrence of <code class="lang-d"><a href="../std/array/replace_first.html#from"><span class="pln">from</span></a></code> with <code class="lang-d"><a href="../std/array/replace_first.html#to"><span class="pln">to</span></a></code> in <code class="lang-d"><a href="../std/array/replace_first.html#subject"><span class="pln">subject</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Replaces the first occurrence of <code class="lang-d"><a href="../std/array/replace_first.html#from"><span class="pln">from</span></a></code> with <code class="lang-d"><a href="../std/array/replace_first.html#to"><span class="pln">to</span></a></code> in <code class="lang-d"><a href="../std/array/replace_first.html#subject"><span class="pln">subject</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3205,13 +3205,13 @@ slice.
 									<a id="replaceInPlace" class="public" href="../std/array/replace_in_place.html">replaceInPlace</a><span class="tableEntryAnnotation">(array, from, to, stuff)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Replaces elements from <code class="lang-d"><a href="../std/array/replace_in_place.html#array"><span class="pln">array</span></a></code> with indices ranging from <code class="lang-d"><a href="../std/array/replace_in_place.html#from"><span class="pln">from</span></a></code>
     (inclusive) to <code class="lang-d"><a href="../std/array/replace_in_place.html#to"><span class="pln">to</span></a></code> (exclusive) with the range <code class="lang-d"><a href="../std/array/replace_in_place.html#stuff"><span class="pln">stuff</span></a></code>. Expands or
     shrinks the array as needed.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3219,12 +3219,12 @@ slice.
 									<a id="replaceInto" class="public" href="../std/array/replace_into.html">replaceInto</a><span class="tableEntryAnnotation">(sink, subject, from, to)</span>
 								</code>
 							</td>
-							<td>Replace occurrences of <code class="lang-d"><a href="../std/array/replace_into.html#from"><span class="pln">from</span></a></code> with <code class="lang-d"><a href="../std/array/replace_into.html#to"><span class="pln">to</span></a></code> in <code class="lang-d"><a href="../std/array/replace_into.html#subject"><span class="pln">subject</span></a></code> and output the result into
-    <code class="lang-d"><a href="../std/array/replace_into.html#sink"><span class="pln">sink</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Replace occurrences of <code class="lang-d"><a href="../std/array/replace_into.html#from"><span class="pln">from</span></a></code> with <code class="lang-d"><a href="../std/array/replace_into.html#to"><span class="pln">to</span></a></code> in <code class="lang-d"><a href="../std/array/replace_into.html#subject"><span class="pln">subject</span></a></code> and output the result into
+    <code class="lang-d"><a href="../std/array/replace_into.html#sink"><span class="pln">sink</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3232,11 +3232,11 @@ slice.
 									<a id="replaceLast" class="public" href="../std/array/replace_last.html">replaceLast</a><span class="tableEntryAnnotation">(subject, from, to)</span>
 								</code>
 							</td>
-							<td>Replaces the last occurrence of <code class="lang-d"><a href="../std/array/replace_last.html#from"><span class="pln">from</span></a></code> with <code class="lang-d"><a href="../std/array/replace_last.html#to"><span class="pln">to</span></a></code> in <code class="lang-d"><a href="../std/array/replace_last.html#subject"><span class="pln">subject</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Replaces the last occurrence of <code class="lang-d"><a href="../std/array/replace_last.html#from"><span class="pln">from</span></a></code> with <code class="lang-d"><a href="../std/array/replace_last.html#to"><span class="pln">to</span></a></code> in <code class="lang-d"><a href="../std/array/replace_last.html#subject"><span class="pln">subject</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3244,13 +3244,13 @@ slice.
 									<a id="replaceSlice" class="public" href="../std/array/replace_slice.html">replaceSlice</a><span class="tableEntryAnnotation">(s, slice, replacement)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Creates a new array such that the items in <code class="lang-d"><a href="../std/array/replace_slice.html#slice"><span class="pln">slice</span></a></code> are replaced with the
     items in <code class="lang-d"><a href="../std/array/replace_slice.html#replacement"><span class="pln">replacement</span></a></code>. <code class="lang-d"><a href="../std/array/replace_slice.html#slice"><span class="pln">slice</span></a></code> and <code class="lang-d"><a href="../std/array/replace_slice.html#replacement"><span class="pln">replacement</span></a></code> do not need to be the
     same length. The result will grow or shrink based on the items given.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3258,10 +3258,10 @@ slice.
 									<a id="replicate" class="public" href="../std/array/replicate.html">replicate</a><span class="tableEntryAnnotation">(s, n)</span>
 								</code>
 							</td>
-							<td></td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3269,13 +3269,13 @@ slice.
 									<a id="sameHead" class="public" href="../std/array/same_head.html">sameHead</a><span class="tableEntryAnnotation">(lhs, rhs)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Returns whether the <code class="lang-d"><span class="pln">front</span></code>s of <code class="lang-d"><a href="../std/array/same_head.html#lhs"><span class="pln">lhs</span></a></code> and <code class="lang-d"><a href="../std/array/same_head.html#rhs"><span class="pln">rhs</span></a></code> both refer to the
     same place in memory, making one of the arrays a slice of the other which
     starts at index <code class="lang-d"><span class="lit">0</span></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3283,13 +3283,13 @@ slice.
 									<a id="sameTail" class="public" href="../std/array/same_tail.html">sameTail</a><span class="tableEntryAnnotation">(lhs, rhs)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Returns whether the <code class="lang-d"><span class="pln">back</span></code>s of <code class="lang-d"><a href="../std/array/same_tail.html#lhs"><span class="pln">lhs</span></a></code> and <code class="lang-d"><a href="../std/array/same_tail.html#rhs"><span class="pln">rhs</span></a></code> both refer to the
     same place in memory, making one of the arrays a slice of the other which
     end at index <code class="lang-d"><span class="pun">$</span></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3297,17 +3297,20 @@ slice.
 									<a id="split" class="public" href="../std/array/split.html">split</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
-							<td>Eagerly splits <code class="lang-d"><a href="../std/array/split.html#range"><span class="pln">range</span></a></code> into an array, using <code class="lang-d"><a href="../std/array/split.html#sep"><span class="pln">sep</span></a></code> as the delimiter.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Eagerly splits <code class="lang-d"><a href="../std/array/split.html#range"><span class="pln">range</span></a></code> into an array, using <code class="lang-d"><a href="../std/array/split.html#sep"><span class="pln">sep</span></a></code> as the delimiter.
+</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="staticArray" class="public" href="../std/array/static_array.html">staticArray</a><span class="tableEntryAnnotation">(a)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Constructs a static array from <code class="lang-d"><a href="../std/array/static_array.html#a"><span class="pln">a</span></a></code>.
 The type of elements can be specified implicitly so that <code class="lang-d"><span class="pun">[</span><span class="lit">1</span><span class="pun">, </span><span class="lit">2</span><span class="pun">]<wbr/>.</span><span class="pln">staticArray</span></code> results in <code class="lang-d"><span class="typ">int</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]</span></code>,
@@ -3320,9 +3323,6 @@ When the range <code class="lang-d"><a href="../std/array/static_array.html#a"><
 template argument to avoid having to specify the number of elements
 (e.g.: <code class="lang-d"><span class="pln">staticArray</span><span class="pun">!(</span><span class="lit">2<wbr/></span><span class="pun">.</span><span class="pln">iota</span><span class="pun">)</span></code> or <code class="lang-d"><span class="pln">staticArray</span><span class="pun">!(</span><span class="typ">double</span><span class="pun">, </span><span class="lit">2<wbr/></span><span class="pun">.</span><span class="pln">iota</span><span class="pun">)</span></code>).
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3330,15 +3330,15 @@ template argument to avoid having to specify the number of elements
 									<a id="uninitializedArray" class="public" href="../std/array/uninitialized_array.html">uninitializedArray</a><span class="tableEntryAnnotation">(sizes)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Returns a new array of type <code class="lang-d"><span class="pln">T</span></code> allocated on the garbage collected heap
 without initializing its elements. This can be a useful optimization if every
 element will be immediately initialized. <code class="lang-d"><span class="pln">T</span></code> may be a multidimensional
 array. In this case sizes may be specified for any number of dimensions from 0
 to the number in <code class="lang-d"><span class="pln">T</span></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>
@@ -3347,7 +3347,7 @@ to the number in <code class="lang-d"><span class="pln">T</span></code>.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3355,13 +3355,13 @@ to the number in <code class="lang-d"><span class="pln">T</span></code>.
 									<a id="Appender" class="public" href="../std/array/appender.html">Appender</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Implements an output range that appends data to an array. This is
 recommended over <code class="lang-d"><a href="../std/array/array.html"><span class="pln">array</span></a><span class="pln"> </span><span class="pun">~= <a href="../std/array/appender.data.html"></span><span class="pln">data</span></a></code> when appending many elements because it is more
 efficient. <code class="lang-d"><span class="typ">Appender</span></code> maintains its own array metadata locally, so it can avoid
 global locking for each append where <code class="lang-d"><a href="../std/array/appender.capacity.html"><span class="pln">capacity</span></a></code> is non-zero.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3369,13 +3369,13 @@ global locking for each append where <code class="lang-d"><a href="../std/array/
 									<a id="RefAppender" class="public" href="../std/array/ref_appender.html">RefAppender</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>A version of <code class="lang-d"><a href="../std/array/appender.html"><span class="typ">Appender</span></a></code> that can update an array in-place.
  It forwards all calls to an underlying appender implementation.
  Any calls made to the appender also update the pointer to the
  original array passed in.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>

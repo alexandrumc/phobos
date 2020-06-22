@@ -2998,7 +2998,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3006,11 +3006,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="arrayObjectIsError" class="public" href="../dmd/dtemplate/array_object_is_error.html">arrayObjectIsError</a><span class="tableEntryAnnotation">(args)</span>
 								</code>
 							</td>
-							<td>Are any of the Objects an error?
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Are any of the Objects an error?
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3018,13 +3018,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="definitelyValueParameter" class="public" href="../dmd/dtemplate/definitely_value_parameter.html">definitelyValueParameter</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Return true if e could be valid only as a template value parameter.
  Return false if it might be an alias or tuple.
  (Note that even in this case, it could still turn out to be a value).
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3032,12 +3032,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="functionResolve" class="public" href="../dmd/dtemplate/function_resolve.html">functionResolve</a><span class="tableEntryAnnotation">(m, dstart, loc, sc, tiargs, tthis, fargs, pMessage)</span>
 								</code>
 							</td>
-							<td>Given function arguments, figure out which template function
- to expand, and return matching result.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Given function arguments, figure out which template function
+ to expand, and return matching result.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3045,11 +3045,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="getType" class="public" href="../dmd/dtemplate/get_type.html">getType</a><span class="tableEntryAnnotation">(o)</span>
 								</code>
 							</td>
-							<td>Try to get arg as a type.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Try to get arg as a type.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3057,11 +3057,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="isError" class="public" href="../dmd/dtemplate/is_error.html">isError</a><span class="tableEntryAnnotation">(o)</span>
 								</code>
 							</td>
-							<td>Is this Object an error?
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Is this Object an error?
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3069,12 +3069,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="isExpression" class="public" href="../dmd/dtemplate/is_expression.html">isExpression</a><span class="tableEntryAnnotation">(o)</span>
 								</code>
 							</td>
-							<td>These functions substitute for dynamic_cast. dynamic_cast does not work
- on earlier versions of gcc.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>These functions substitute for dynamic_cast. dynamic_cast does not work
+ on earlier versions of gcc.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3082,11 +3082,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="matchArg" class="public" href="../dmd/dtemplate/match_arg.html">matchArg</a><span class="tableEntryAnnotation">(tp, instLoc, sc, tiargs, i, parameters, dedtypes, psparam)</span>
 								</code>
 							</td>
-							<td>Match to a particular TemplateParameter.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Match to a particular TemplateParameter.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3094,11 +3094,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="reliesOnTident" class="public" href="../dmd/dtemplate/relies_on_tident.html">reliesOnTident</a><span class="tableEntryAnnotation">(t, tparams, iStart)</span>
 								</code>
 							</td>
-							<td>Check whether the type t representation relies on one or more the template parameters.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Check whether the type t representation relies on one or more the template parameters.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3106,15 +3106,15 @@ $('#symbolSearchPane').show();</script>
 									<a id="unSpeculative" class="public" href="../dmd/dtemplate/un_speculative.html">unSpeculative</a><span class="tableEntryAnnotation">(sc, o)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>IsExpression can evaluate the specified type speculatively, and even if
  it instantiates any symbols, they are normally unnecessary for the
  final executable.
  However, if those symbols leak to the actual code, compiler should remark
  them as non-speculative to generate their code and link to the final executable.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>
@@ -3123,7 +3123,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3131,9 +3131,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TemplateAliasParameter" class="public" href="../dmd/dtemplate/template_alias_parameter.html">TemplateAliasParameter</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3141,10 +3141,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="TemplateDeclaration" class="public" href="../dmd/dtemplate/template_declaration.html">TemplateDeclaration</a>
 								</code>
 							</td>
-							<td>[mixin] template Identifier (parameters) [Constraint]
-</td>
 							<td>
 							</td>
+							<td>[mixin] template Identifier (parameters) [Constraint]
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3152,9 +3152,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TemplateInstance" class="public" href="../dmd/dtemplate/template_instance.html">TemplateInstance</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3162,9 +3162,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TemplateMixin" class="public" href="../dmd/dtemplate/template_mixin.html">TemplateMixin</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3172,9 +3172,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TemplateParameter" class="public" href="../dmd/dtemplate/template_parameter.html">TemplateParameter</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3182,9 +3182,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TemplateThisParameter" class="public" href="../dmd/dtemplate/template_this_parameter.html">TemplateThisParameter</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3192,9 +3192,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TemplateTupleParameter" class="public" href="../dmd/dtemplate/template_tuple_parameter.html">TemplateTupleParameter</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3202,9 +3202,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TemplateTypeParameter" class="public" href="../dmd/dtemplate/template_type_parameter.html">TemplateTypeParameter</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3212,9 +3212,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TemplateValueParameter" class="public" href="../dmd/dtemplate/template_value_parameter.html">TemplateValueParameter</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 					</table>
 				</section>
@@ -3223,7 +3223,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3231,11 +3231,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="TemplateInstanceBox" class="public" href="../dmd/dtemplate/template_instance_box.html">TemplateInstanceBox</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>This struct is needed for TemplateInstance to be the key in an associative array.
  Fixing https://issues.dlang.org/show_bug.cgi?id=15812 and
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3243,10 +3243,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="TemplateStats" class="public" href="../dmd/dtemplate/template_stats.html">TemplateStats</a>
 								</code>
 							</td>
-							<td>Collect and print statistics on template instantiations.
-</td>
 							<td>
 							</td>
+							<td>Collect and print statistics on template instantiations.
+</td>
 						</tr>
 					</table>
 				</section>

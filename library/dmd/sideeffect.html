@@ -2969,7 +2969,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2977,11 +2977,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="callSideEffectLevel" class="public" href="../dmd/sideeffect/call_side_effect_level.html">callSideEffectLevel</a><span class="tableEntryAnnotation">(f)</span>
 								</code>
 							</td>
-							<td>Determine if the call of f, or function type or delegate type t1, has any side effects.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Determine if the call of f, or function type or delegate type t1, has any side effects.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2989,11 +2989,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="copyToTemp" class="public" href="../dmd/sideeffect/copy_to_temp.html">copyToTemp</a><span class="tableEntryAnnotation">(stc, name, e)</span>
 								</code>
 							</td>
-							<td>Build a temporary variable to copy the value of e into.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Build a temporary variable to copy the value of e into.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3001,12 +3001,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="discardValue" class="public" href="../dmd/sideeffect/discard_value.html">discardValue</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>The result of this expression will be discarded.
- Print error messages if the operation has no side effects (and hence is meaningless).
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>The result of this expression will be discarded.
+ Print error messages if the operation has no side effects (and hence is meaningless).
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3014,11 +3014,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="extractSideEffect" class="public" href="../dmd/sideeffect/extract_side_effect.html">extractSideEffect</a><span class="tableEntryAnnotation">(sc, name, e0, e, alwaysCopy)</span>
 								</code>
 							</td>
-							<td>Build a temporary variable to extract e's evaluation, if e is not trivial.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Build a temporary variable to extract e's evaluation, if e is not trivial.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3026,11 +3026,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="hasSideEffect" class="public" href="../dmd/sideeffect/has_side_effect.html">hasSideEffect</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>Determine if Expression has any side effects.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Determine if Expression has any side effects.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3038,14 +3038,14 @@ $('#symbolSearchPane').show();</script>
 									<a id="isTrivialExp" class="public" href="../dmd/sideeffect/is_trivial_exp.html">isTrivialExp</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Front-end expression rewriting should create temporary variables for
  non trivial sub-expressions in order to:
   1. save evaluation order
   2. prevent sharing of sub-expression in AST
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>

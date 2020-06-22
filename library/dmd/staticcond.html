@@ -2969,7 +2969,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2977,14 +2977,14 @@ $('#symbolSearchPane').show();</script>
 									<a id="evalStaticCondition" class="public" href="../dmd/staticcond/eval_static_condition.html">evalStaticCondition</a><span class="tableEntryAnnotation">(sc, original, e, errors, negatives)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Semantically analyze and then evaluate a static condition at compile time.
  This is special because short circuit operators &amp;&amp;, || and ?: at the top
  level are not semantically analyzed if the result of the expression is not
  necessary.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2992,12 +2992,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="visualizeStaticCondition" class="public" href="../dmd/staticcond/visualize_static_condition.html">visualizeStaticCondition</a><span class="tableEntryAnnotation">(original, instantiated, negatives, full, itemCount)</span>
 								</code>
 							</td>
-							<td>Format a static condition as a tree-like structure, marking failed and
- bypassed expressions.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Format a static condition as a tree-like structure, marking failed and
+ bypassed expressions.
+</td>
 						</tr>
 					</table>
 				</section>

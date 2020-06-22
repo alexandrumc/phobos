@@ -2971,7 +2971,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2979,15 +2979,15 @@ $('#symbolSearchPane').show();</script>
 									<a id="importHint" class="public" href="../dmd/imphint/import_hint.html">importHint</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Looks for undefined identifier s to see
  if it might be undefined because an import
  was not specified.
  Not meant to be a comprehensive list of names in each module,
  just the most common ones.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>

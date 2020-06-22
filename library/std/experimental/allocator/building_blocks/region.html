@@ -2959,7 +2959,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2967,11 +2967,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="InSituRegion" class="public" href="../../../../std/experimental/allocator/building_blocks/region/in_situ_region.html">InSituRegion</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td><code class="lang-d"><span class="typ">InSituRegion</span></code> is a convenient region that carries its storage within itself
 (in the form of a statically-sized array).
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2979,14 +2979,14 @@ $('#symbolSearchPane').show();</script>
 									<a id="Region" class="public" href="../../../../std/experimental/allocator/building_blocks/region/region.html">Region</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>A <code class="lang-d"><span class="typ">Region</span></code> allocator allocates memory straight from one contiguous chunk.
 There is no deallocation, and once the region is full, allocation requests
 return <code class="lang-d"><span class="kwd">null</span></code>. Therefore, <code class="lang-d"><span class="typ">Region</span></code>s are often used (a) in conjunction with
 more sophisticated allocators; or (b) for batch-style very fast allocations
 that deallocate everything at once.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2994,14 +2994,14 @@ that deallocate everything at once.
 									<a id="SbrkRegion" class="public" href="../../../../std/experimental/allocator/building_blocks/region/sbrk_region.html">SbrkRegion</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Allocator backed by <code class="lang-d"><a href="https://en.wikipedia.org/wiki/Sbrk"><span class="pln">sbrk</span></a></code>
 for Posix systems. Due to the fact that <code class="lang-d"><span class="pln">sbrk</span></code> is not thread-safe
 <a href="http://lifecs.likai.org/2010/02/sbrk-is-not-thread-safe.html">by design</a>,
 <code class="lang-d"><span class="typ">SbrkRegion</span></code> uses a mutex internally. This implies
 that uncontrolled calls to <code class="lang-d"><span class="pln">brk</span></code> and <code class="lang-d"><span class="pln">sbrk</span></code> may affect the workings of <code class="lang-d"><span class="typ">SbrkRegion</span></code> adversely.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3009,11 +3009,11 @@ that uncontrolled calls to <code class="lang-d"><span class="pln">brk</span></co
 									<a id="SharedRegion" class="public" href="../../../../std/experimental/allocator/building_blocks/region/shared_region.html">SharedRegion</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>The threadsafe version of the <code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/region/region.html"><span class="typ">Region</span></a></code> allocator.
 Allocations and deallocations are lock-free based using <code class="lang-d"><a href="../../../../core/atomic/cas.html" title="core.atomic.cas"><span class="pln">cas</span></a></code>.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>

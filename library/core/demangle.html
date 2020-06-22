@@ -2962,7 +2962,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2970,12 +2970,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="demangle" class="public" href="../core/demangle/demangle.html">demangle</a><span class="tableEntryAnnotation">(buf, dst)</span>
 								</code>
 							</td>
-							<td>Demangles D mangled names.  If it is not a D mangled name, it returns its
- argument name.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Demangles D mangled names.  If it is not a D mangled name, it returns its
+ argument name.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2983,11 +2983,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="demangleType" class="public" href="../core/demangle/demangle_type.html">demangleType</a><span class="tableEntryAnnotation">(buf, dst)</span>
 								</code>
 							</td>
-							<td>Demangles a D mangled type.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Demangles a D mangled type.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2995,11 +2995,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="mangle" class="public" href="../core/demangle/mangle.html">mangle</a><span class="tableEntryAnnotation">(fqn, dst)</span>
 								</code>
 							</td>
-							<td>Mangles a D symbol.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Mangles a D symbol.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3007,11 +3007,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="mangleFunc" class="public" href="../core/demangle/mangle_func.html">mangleFunc</a><span class="tableEntryAnnotation">(fqn, dst)</span>
 								</code>
 							</td>
-							<td>Mangles a D function.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Mangles a D function.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3019,13 +3019,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="reencodeMangled" class="public" href="../core/demangle/reencode_mangled.html">reencodeMangled</a><span class="tableEntryAnnotation">(mangled)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>reencode a mangled symbol name that might include duplicate occurrences
  of the same identifier by replacing all but the first occurence with
  a back reference.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>

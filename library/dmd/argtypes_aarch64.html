@@ -2969,7 +2969,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2977,14 +2977,14 @@ $('#symbolSearchPane').show();</script>
 									<a id="isHFVA" class="public" href="../dmd/argtypes_aarch64/is_hfva.html">isHFVA</a><span class="tableEntryAnnotation">(t, maxNumElements, rewriteType)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>A Homogeneous Floating-point/Vector Aggregate (HFA/HVA) is an ARM/AArch64
  concept that consists of up to 4 elements of the same floating point/vector
  type. It is the aggregate final data layout that matters so structs, unions,
  static arrays and complex numbers can result in an HFVA.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2992,13 +2992,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="toArgTypes_aarch64" class="public" href="../dmd/argtypes_aarch64/to_arg_types_aarch64.html">toArgTypes_aarch64</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>This breaks a type down into 'simpler' types that can be passed to a function
  in registers, and returned in registers.
  This is the implementation for the AAPCS64 ABI, based on
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>

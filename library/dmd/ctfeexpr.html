@@ -2969,7 +2969,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2977,11 +2977,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="assignInPlace" class="public" href="../dmd/ctfeexpr/assign_in_place.html">assignInPlace</a><span class="tableEntryAnnotation">(dest, src)</span>
 								</code>
 							</td>
-							<td>Assignment helper functions
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Assignment helper functions
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2989,13 +2989,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="changeArrayLiteralLength" class="public" href="../dmd/ctfeexpr/change_array_literal_length.html">changeArrayLiteralLength</a><span class="tableEntryAnnotation">(loc, arrayType, oldval, oldlen, newlen)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Given array literal oldval of type ArrayLiteralExp or StringExp, of length
 oldlen, change its length to newlen. If the newlen is longer than oldlen,
 all new elements will be set to the default initializer for the element type.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3003,12 +3003,12 @@ all new elements will be set to the default initializer for the element type.
 									<a id="createBlockDuplicatedArrayLiteral" class="public" href="../dmd/ctfeexpr/create_block_duplicated_array_literal.html">createBlockDuplicatedArrayLiteral</a><span class="tableEntryAnnotation">(pue, loc, type, elem, dim)</span>
 								</code>
 							</td>
-							<td>Helper for NewExp
- Create an array literal consisting of 'elem' duplicated 'dim' times.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Helper for NewExp
+ Create an array literal consisting of 'elem' duplicated 'dim' times.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3016,12 +3016,12 @@ all new elements will be set to the default initializer for the element type.
 									<a id="createBlockDuplicatedStringLiteral" class="public" href="../dmd/ctfeexpr/create_block_duplicated_string_literal.html">createBlockDuplicatedStringLiteral</a><span class="tableEntryAnnotation">(pue, loc, type, value, dim, sz)</span>
 								</code>
 							</td>
-							<td>Helper for NewExp
- Create a string literal consisting of 'value' duplicated 'dim' times.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Helper for NewExp
+ Create a string literal consisting of 'value' duplicated 'dim' times.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3029,11 +3029,11 @@ all new elements will be set to the default initializer for the element type.
 									<a id="ctfeCmp" class="public" href="../dmd/ctfeexpr/ctfe_cmp.html">ctfeCmp</a><span class="tableEntryAnnotation">(loc, op, e1, e2)</span>
 								</code>
 							</td>
-							<td>Evaluate &gt;,&lt;=, etc. Resolves slices before comparing. Returns 0 or 1
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Evaluate &gt;,&lt;=, etc. Resolves slices before comparing. Returns 0 or 1
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3041,11 +3041,11 @@ all new elements will be set to the default initializer for the element type.
 									<a id="ctfeEqual" class="public" href="../dmd/ctfeexpr/ctfe_equal.html">ctfeEqual</a><span class="tableEntryAnnotation">(loc, op, e1, e2)</span>
 								</code>
 							</td>
-							<td>Evaluate ==, !=.  Resolves slices before comparing. Returns 0 or 1
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Evaluate ==, !=.  Resolves slices before comparing. Returns 0 or 1
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3053,11 +3053,11 @@ all new elements will be set to the default initializer for the element type.
 									<a id="ctfeIdentity" class="public" href="../dmd/ctfeexpr/ctfe_identity.html">ctfeIdentity</a><span class="tableEntryAnnotation">(loc, op, e1, e2)</span>
 								</code>
 							</td>
-							<td>Evaluate is, !is.  Resolves slices before comparing. Returns 0 or 1
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Evaluate is, !is.  Resolves slices before comparing. Returns 0 or 1
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3065,11 +3065,11 @@ all new elements will be set to the default initializer for the element type.
 									<a id="findFieldIndexByName" class="public" href="../dmd/ctfeexpr/find_field_index_by_name.html">findFieldIndexByName</a><span class="tableEntryAnnotation">(sd, v)</span>
 								</code>
 							</td>
-							<td>Same as getFieldIndex, but checks for a direct match with the VarDeclaration
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Same as getFieldIndex, but checks for a direct match with the VarDeclaration
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3077,11 +3077,11 @@ all new elements will be set to the default initializer for the element type.
 									<a id="intSignedCmp" class="public" href="../dmd/ctfeexpr/int_signed_cmp.html">intSignedCmp</a><span class="tableEntryAnnotation">(op, n1, n2)</span>
 								</code>
 							</td>
-							<td>Returns e1 OP e2; where OP is ==, !=, &lt;, &gt;=, etc. Result is 0 or 1
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns e1 OP e2; where OP is ==, !=, &lt;, &gt;=, etc. Result is 0 or 1
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3089,11 +3089,11 @@ all new elements will be set to the default initializer for the element type.
 									<a id="intUnsignedCmp" class="public" href="../dmd/ctfeexpr/int_unsigned_cmp.html">intUnsignedCmp</a><span class="tableEntryAnnotation">(op, n1, n2)</span>
 								</code>
 							</td>
-							<td>Returns e1 OP e2; where OP is ==, !=, &lt;, &gt;=, etc. Result is 0 or 1
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns e1 OP e2; where OP is ==, !=, &lt;, &gt;=, etc. Result is 0 or 1
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3101,13 +3101,13 @@ all new elements will be set to the default initializer for the element type.
 									<a id="isCtfeComparable" class="public" href="../dmd/ctfeexpr/is_ctfe_comparable.html">isCtfeComparable</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Constant folding, with support for CTFE
 Return true if non-pointer expression e can be compared
 with &gt;,is, ==, etc, using ctfeCmp, ctfeEqual, ctfeIdentity
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3115,11 +3115,11 @@ with &gt;,is, ==, etc, using ctfeCmp, ctfeEqual, ctfeIdentity
 									<a id="isCtfeValueValid" class="public" href="../dmd/ctfeexpr/is_ctfe_value_valid.html">isCtfeValueValid</a><span class="tableEntryAnnotation">(newval)</span>
 								</code>
 							</td>
-							<td>CTFE Sanity Checks
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>CTFE Sanity Checks
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3127,11 +3127,11 @@ with &gt;,is, ==, etc, using ctfeCmp, ctfeEqual, ctfeIdentity
 									<a id="isPointer" class="public" href="../dmd/ctfeexpr/is_pointer.html">isPointer</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
-							<td>Pointer operations
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Pointer operations
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3139,11 +3139,11 @@ with &gt;,is, ==, etc, using ctfeCmp, ctfeEqual, ctfeIdentity
 									<a id="isTypeInfo_Class" class="public" href="../dmd/ctfeexpr/is_type_info__class.html">isTypeInfo_Class</a><span class="tableEntryAnnotation">(type)</span>
 								</code>
 							</td>
-							<td>TypeInfo operations
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>TypeInfo operations
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3151,11 +3151,11 @@ with &gt;,is, ==, etc, using ctfeCmp, ctfeEqual, ctfeIdentity
 									<a id="needToCopyLiteral" class="public" href="../dmd/ctfeexpr/need_to_copy_literal.html">needToCopyLiteral</a><span class="tableEntryAnnotation">(expr)</span>
 								</code>
 							</td>
-							<td>Aggregate literals (AA/string/array/struct)
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Aggregate literals (AA/string/array/struct)
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3163,11 +3163,11 @@ with &gt;,is, ==, etc, using ctfeCmp, ctfeEqual, ctfeIdentity
 									<a id="pointToSameMemoryBlock" class="public" href="../dmd/ctfeexpr/point_to_same_memory_block.html">pointToSameMemoryBlock</a><span class="tableEntryAnnotation">(agg1, agg2)</span>
 								</code>
 							</td>
-							<td>Return true if agg1 and agg2 are pointers to the same memory block
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Return true if agg1 and agg2 are pointers to the same memory block
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3175,11 +3175,11 @@ with &gt;,is, ==, etc, using ctfeCmp, ctfeEqual, ctfeIdentity
 									<a id="realCmp" class="public" href="../dmd/ctfeexpr/real_cmp.html">realCmp</a><span class="tableEntryAnnotation">(op, r1, r2)</span>
 								</code>
 							</td>
-							<td>Returns e1 OP e2; where OP is ==, !=, &lt;, &gt;=, etc. Result is 0 or 1
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns e1 OP e2; where OP is ==, !=, &lt;, &gt;=, etc. Result is 0 or 1
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3187,11 +3187,11 @@ with &gt;,is, ==, etc, using ctfeCmp, ctfeEqual, ctfeIdentity
 									<a id="resolveSlice" class="public" href="../dmd/ctfeexpr/resolve_slice.html">resolveSlice</a><span class="tableEntryAnnotation">(e, pue)</span>
 								</code>
 							</td>
-							<td>If e is a SliceExp, constant fold it.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>If e is a SliceExp, constant fold it.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3199,11 +3199,11 @@ with &gt;,is, ==, etc, using ctfeCmp, ctfeEqual, ctfeIdentity
 									<a id="specificCmp" class="public" href="../dmd/ctfeexpr/specific_cmp.html">specificCmp</a><span class="tableEntryAnnotation">(op, rawCmp)</span>
 								</code>
 							</td>
-							<td>Returns cmp OP 0; where OP is ==, !=, &lt;, &gt;=, etc. Result is 0 or 1
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns cmp OP 0; where OP is ==, !=, &lt;, &gt;=, etc. Result is 0 or 1
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3211,11 +3211,11 @@ with &gt;,is, ==, etc, using ctfeCmp, ctfeEqual, ctfeIdentity
 									<a id="voidInitLiteral" class="public" href="../dmd/ctfeexpr/void_init_literal.html">voidInitLiteral</a><span class="tableEntryAnnotation">(t, var)</span>
 								</code>
 							</td>
-							<td>Void initialization
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Void initialization
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3224,7 +3224,7 @@ with &gt;,is, ==, etc, using ctfeCmp, ctfeEqual, ctfeIdentity
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3232,11 +3232,11 @@ with &gt;,is, ==, etc, using ctfeCmp, ctfeEqual, ctfeIdentity
 									<a id="ClassReferenceExp" class="public" href="../dmd/ctfeexpr/class_reference_exp.html">ClassReferenceExp</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>A reference to a class, or an interface. We need this when we
  point to a base class (we must record what the type is).
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3244,10 +3244,10 @@ with &gt;,is, ==, etc, using ctfeCmp, ctfeEqual, ctfeIdentity
 									<a id="CTFEExp" class="public" href="../dmd/ctfeexpr/ctfe_exp.html">CTFEExp</a>
 								</code>
 							</td>
-							<td>This type is only used by the interpreter.
-</td>
 							<td>
 							</td>
+							<td>This type is only used by the interpreter.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3255,11 +3255,11 @@ with &gt;,is, ==, etc, using ctfeCmp, ctfeEqual, ctfeIdentity
 									<a id="ThrownExceptionExp" class="public" href="../dmd/ctfeexpr/thrown_exception_exp.html">ThrownExceptionExp</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Fake class which holds the thrown exception.
  Used for implementing exception handling.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>

@@ -2971,7 +2971,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2979,12 +2979,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="eval_builtin" class="public" href="../dmd/builtin/eval_builtin.html">eval_builtin</a><span class="tableEntryAnnotation">(loc, fd, arguments)</span>
 								</code>
 							</td>
-							<td>Evaluate builtin function.
- Return result; NULL if cannot evaluate it.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Evaluate builtin function.
+ Return result; NULL if cannot evaluate it.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2992,12 +2992,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="isBuiltin" class="public" href="../dmd/builtin/is_builtin.html">isBuiltin</a><span class="tableEntryAnnotation">(fd)</span>
 								</code>
 							</td>
-							<td>Determine if function is a builtin one that we can
- evaluate at compile time.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Determine if function is a builtin one that we can
+ evaluate at compile time.
+</td>
 						</tr>
 					</table>
 				</section>

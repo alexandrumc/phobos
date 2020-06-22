@@ -2976,7 +2976,7 @@ adaptor that makes a binary heap out of any user-provided random-access range.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2984,12 +2984,12 @@ adaptor that makes a binary heap out of any user-provided random-access range.
 									<a id="heapify" class="public" href="../../std/container/binaryheap/heapify.html">heapify</a><span class="tableEntryAnnotation">(s, initialSize)</span>
 								</code>
 							</td>
-							<td>Convenience function that returns a <code class="lang-d"><a href="../../std/container/binaryheap/binary_heap.html"><span class="typ">BinaryHeap</span></a><span class="pun">!</span><span class="typ">Store</span></code> object
-initialized with <code class="lang-d"><a href="../../std/container/binaryheap/heapify.html#s"><span class="pln">s</span></a></code> and <code class="lang-d"><a href="../../std/container/binaryheap/heapify.html#initialSize"><span class="pln">initialSize</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Convenience function that returns a <code class="lang-d"><a href="../../std/container/binaryheap/binary_heap.html"><span class="typ">BinaryHeap</span></a><span class="pun">!</span><span class="typ">Store</span></code> object
+initialized with <code class="lang-d"><a href="../../std/container/binaryheap/heapify.html#s"><span class="pln">s</span></a></code> and <code class="lang-d"><a href="../../std/container/binaryheap/heapify.html#initialSize"><span class="pln">initialSize</span></a></code>.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -2998,7 +2998,7 @@ initialized with <code class="lang-d"><a href="../../std/container/binaryheap/he
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3006,13 +3006,13 @@ initialized with <code class="lang-d"><a href="../../std/container/binaryheap/he
 									<a id="BinaryHeap" class="public" href="../../std/container/binaryheap/binary_heap.html">BinaryHeap</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Implements a <a href="http://en.wikipedia.org/wiki/Binary_heap">binary heap</a>
 container on top of a given random-access range type (usually <code class="lang-d"><span class="pln">T</span><span class="pun">[]</span></code>) or a random-access container type (usually <code class="lang-d"><span class="typ">Array</span><span class="pun">!</span><span class="pln">T</span></code>). The
 documentation of <code class="lang-d"><span class="typ">BinaryHeap</span></code> will refer to the underlying range or
 container as the <i>store</i> of the heap.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>

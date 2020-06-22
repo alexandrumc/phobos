@@ -2969,7 +2969,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2977,13 +2977,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="speller" class="public" href="../../dmd/root/speller/speller.html">speller</a><span class="tableEntryAnnotation">(seed)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Looks for correct spelling.
  Currently only looks a 'distance' of one from the seed[].
  This does an exhaustive search, so can potentially be very slow.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>

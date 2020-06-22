@@ -2986,7 +2986,7 @@ documents behaviour in the presence of duplicated inputs.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2994,12 +2994,12 @@ documents behaviour in the presence of duplicated inputs.
 									<a id="cartesianProduct" class="public" href="../../std/algorithm/setops/cartesian_product.html">cartesianProduct</a><span class="tableEntryAnnotation">(range1, range2)</span>
 								</code>
 							</td>
-							<td>Lazily computes the Cartesian product of two or more ranges. The product is a
-range of tuples of elements from each respective range.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Lazily computes the Cartesian product of two or more ranges. The product is a
+range of tuples of elements from each respective range.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3007,13 +3007,13 @@ range of tuples of elements from each respective range.
 									<a id="largestPartialIntersection" class="public" href="../../std/algorithm/setops/largest_partial_intersection.html">largestPartialIntersection</a><span class="tableEntryAnnotation">(ror, tgt, sorted)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Given a range of sorted <a href="../../std/range/primitives/is_forward_range.html" title="std.range.primitives.isForwardRange">forward ranges</a>
 <code class="lang-d"><a href="../../std/algorithm/setops/largest_partial_intersection.html#ror"><span class="pln">ror</span></a></code>, copies to <code class="lang-d"><a href="../../std/algorithm/setops/largest_partial_intersection.html#tgt"><span class="pln">tgt</span></a></code> the elements that are common to most ranges, along with their number
 of occurrences. All ranges in <code class="lang-d"><a href="../../std/algorithm/setops/largest_partial_intersection.html#ror"><span class="pln">ror</span></a></code> are assumed to be sorted by <code class="lang-d"><span class="pln">less</span></code>. Only the most frequent <code class="lang-d"><span class="pln">tgt<wbr/></span><span class="pun">.</span><span class="pln">length</span></code> elements are returned.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3021,18 +3021,21 @@ of occurrences. All ranges in <code class="lang-d"><a href="../../std/algorithm/
 									<a id="largestPartialIntersectionWeighted" class="public" href="../../std/algorithm/setops/largest_partial_intersection_weighted.html">largestPartialIntersectionWeighted</a><span class="tableEntryAnnotation">(ror, tgt, weights, sorted)</span>
 								</code>
 							</td>
-							<td>Similar to <code class="lang-d"><a href="../../std/algorithm/setops/largest_partial_intersection.html"><span class="pln">largestPartialIntersection</span></a></code>, but associates a weight
-with each distinct element in the intersection.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Similar to <code class="lang-d"><a href="../../std/algorithm/setops/largest_partial_intersection.html"><span class="pln">largestPartialIntersection</span></a></code>, but associates a weight
+with each distinct element in the intersection.
+</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="multiwayMerge" class="public" href="../../std/algorithm/setops/multiway_merge.html">multiwayMerge</a><span class="tableEntryAnnotation">(ror)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Merges multiple sets. The input sets are passed as a
 range of ranges and each is assumed to be sorted by <code class="lang-d"><span class="pln">less</span></code>. Computation is done lazily, one union element at a time. The
@@ -3042,9 +3045,6 @@ contained within <code class="lang-d"><a href="../../std/algorithm/setops/multiw
 (worst case scenario), the complexity of a full pass through <code class="lang-d"><a href="../../std/algorithm/setops/multiway_merge.html"><span class="typ">MultiwayMerge</span></a></code> is <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">n </span><span class="pun">* </span><span class="pln">ror<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">* </span><span class="pln">log</span><span class="pun">(</span><span class="pln">ror<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code>)</span>, i.e., <code class="lang-d"><span class="pln">log</span><span class="pun">(</span><span class="pln">ror<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code> times worse than just spanning all ranges in
 turn. The output comes sorted (unstably) by <code class="lang-d"><span class="pln">less</span></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3052,14 +3052,14 @@ turn. The output comes sorted (unstably) by <code class="lang-d"><span class="pl
 									<a id="multiwayUnion" class="public" href="../../std/algorithm/setops/multiway_union.html">multiwayUnion</a><span class="tableEntryAnnotation">(ror)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Computes the union of multiple ranges. The
 <a href="../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input ranges</a> are passed
 as a range of ranges and each is assumed to be sorted by <code class="lang-d"><span class="pln">less</span></code>. Computation is done lazily, one union element at a time.
 <code class="lang-d"><span class="pln">multiwayUnion</span><span class="pun">(<a href="../../std/algorithm/setops/multiway_union.html#ror"></span><span class="pln">ror</span></a><span class="pun">)</span></code> is functionally equivalent to <code class="lang-d"><a href="../../std/algorithm/setops/multiway_merge.html"><span class="pln">multiwayMerge</span></a><span class="pun">(<a href="../../std/algorithm/setops/multiway_union.html#ror"></span><span class="pln">ror</span></a><span class="pun">)<wbr/>.</span><span class="pln">uniq</span></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3067,13 +3067,13 @@ as a range of ranges and each is assumed to be sorted by <code class="lang-d"><s
 									<a id="setDifference" class="public" href="../../std/algorithm/setops/set_difference.html">setDifference</a><span class="tableEntryAnnotation">(r1, r2)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Lazily computes the difference of <code class="lang-d"><a href="../../std/algorithm/setops/set_difference.html#r1"><span class="pln">r1</span></a></code> and <code class="lang-d"><a href="../../std/algorithm/setops/set_difference.html#r2"><span class="pln">r2</span></a></code>. The two ranges
 are assumed to be sorted by <code class="lang-d"><span class="pln">less</span></code>. The element types of the two
 ranges must have a common type.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3081,14 +3081,14 @@ ranges must have a common type.
 									<a id="setIntersection" class="public" href="../../std/algorithm/setops/set_intersection.html">setIntersection</a><span class="tableEntryAnnotation">(ranges)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Lazily computes the intersection of two or more
 <a href="../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input ranges</a>
 <code class="lang-d"><a href="../../std/algorithm/setops/set_intersection.html#ranges"><span class="pln">ranges</span></a></code>. The ranges are assumed to be sorted by <code class="lang-d"><span class="pln">less</span></code>. The element
 types of the ranges must have a common type.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3096,14 +3096,14 @@ types of the ranges must have a common type.
 									<a id="setSymmetricDifference" class="public" href="../../std/algorithm/setops/set_symmetric_difference.html">setSymmetricDifference</a><span class="tableEntryAnnotation">(r1, r2)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Lazily computes the symmetric difference of <code class="lang-d"><a href="../../std/algorithm/setops/set_symmetric_difference.html#r1"><span class="pln">r1</span></a></code> and <code class="lang-d"><a href="../../std/algorithm/setops/set_symmetric_difference.html#r2"><span class="pln">r2</span></a></code>,
 i.e. the elements that are present in exactly one of <code class="lang-d"><a href="../../std/algorithm/setops/set_symmetric_difference.html#r1"><span class="pln">r1</span></a></code> and <code class="lang-d"><a href="../../std/algorithm/setops/set_symmetric_difference.html#r2"><span class="pln">r2</span></a></code>. The two ranges are assumed to be sorted by <code class="lang-d"><span class="pln">less</span></code>, and the
 output is also sorted by <code class="lang-d"><span class="pln">less</span></code>. The element types of the two
 ranges must have a common type.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>
@@ -3112,13 +3112,15 @@ ranges must have a common type.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="MultiwayMerge" class="public" href="../../std/algorithm/setops/multiway_merge.html">MultiwayMerge</a>
 								</code>
+							</td>
+							<td>
 							</td>
 							<td>Merges multiple sets. The input sets are passed as a
 range of ranges and each is assumed to be sorted by <code class="lang-d"><span class="pln">less</span></code>. Computation is done lazily, one union element at a time. The
@@ -3128,8 +3130,6 @@ contained within <code class="lang-d"><span class="pln">ror</span></code>. If al
 (worst case scenario), the complexity of a full pass through <code class="lang-d"><span class="typ">MultiwayMerge</span></code> is <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">n </span><span class="pun">* </span><span class="pln">ror<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">* </span><span class="pln">log</span><span class="pun">(</span><span class="pln">ror<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code>)</span>, i.e., <code class="lang-d"><span class="pln">log</span><span class="pun">(</span><span class="pln">ror<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code> times worse than just spanning all ranges in
 turn. The output comes sorted (unstably) by <code class="lang-d"><span class="pln">less</span></code>.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3137,12 +3137,12 @@ turn. The output comes sorted (unstably) by <code class="lang-d"><span class="pl
 									<a id="SetDifference" class="public" href="../../std/algorithm/setops/set_difference.html">SetDifference</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Lazily computes the difference of <code class="lang-d"><span class="pln">r1</span></code> and <code class="lang-d"><span class="pln">r2</span></code>. The two ranges
 are assumed to be sorted by <code class="lang-d"><span class="pln">less</span></code>. The element types of the two
 ranges must have a common type.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3150,13 +3150,13 @@ ranges must have a common type.
 									<a id="SetIntersection" class="public" href="../../std/algorithm/setops/set_intersection.html">SetIntersection</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Lazily computes the intersection of two or more
 <a href="../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input ranges</a>
 <code class="lang-d"><span class="pln">ranges</span></code>. The ranges are assumed to be sorted by <code class="lang-d"><span class="pln">less</span></code>. The element
 types of the ranges must have a common type.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3164,13 +3164,13 @@ types of the ranges must have a common type.
 									<a id="SetSymmetricDifference" class="public" href="../../std/algorithm/setops/set_symmetric_difference.html">SetSymmetricDifference</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Lazily computes the symmetric difference of <code class="lang-d"><span class="pln">r1</span></code> and <code class="lang-d"><span class="pln">r2</span></code>,
 i.e. the elements that are present in exactly one of <code class="lang-d"><span class="pln">r1</span></code> and <code class="lang-d"><span class="pln">r2</span></code>. The two ranges are assumed to be sorted by <code class="lang-d"><span class="pln">less</span></code>, and the
 output is also sorted by <code class="lang-d"><span class="pln">less</span></code>. The element types of the two
 ranges must have a common type.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>

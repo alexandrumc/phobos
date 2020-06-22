@@ -2971,7 +2971,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2979,13 +2979,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="decode" class="public" href="../std/uri/decode.html">decode</a><span class="tableEntryAnnotation">(encodedURI)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Decodes the URI string encodedURI into a UTF-8 string and returns it.
  Escape sequences that resolve to reserved URI characters are not replaced.
  Escape sequences that resolve to the '#' character are not replaced.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2993,12 +2993,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="decodeComponent" class="public" href="../std/uri/decode_component.html">decodeComponent</a><span class="tableEntryAnnotation">(encodedURIComponent)</span>
 								</code>
 							</td>
-							<td>Decodes the URI string encodedURI into a UTF-8 string and returns it. All
- escape sequences are decoded.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Decodes the URI string encodedURI into a UTF-8 string and returns it. All
+ escape sequences are decoded.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3006,11 +3006,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="emailLength" class="public" href="../std/uri/email_length.html">emailLength</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
-							<td>Does string s[] start with an email address?
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Does string s[] start with an email address?
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3018,12 +3018,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="encode" class="public" href="../std/uri/encode.html">encode</a><span class="tableEntryAnnotation">(uri)</span>
 								</code>
 							</td>
-							<td>Encodes the UTF-8 string uri into a URI and returns that URI. Any character
- not a valid URI character is escaped. The '#' character is not escaped.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Encodes the UTF-8 string uri into a URI and returns that URI. Any character
+ not a valid URI character is escaped. The '#' character is not escaped.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3031,12 +3031,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="encodeComponent" class="public" href="../std/uri/encode_component.html">encodeComponent</a><span class="tableEntryAnnotation">(uriComponent)</span>
 								</code>
 							</td>
-							<td>Encodes the UTF-8 string uriComponent into a URI and returns that URI.
- Any character not a letter, digit, or one of -_.!~*'() is escaped.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Encodes the UTF-8 string uriComponent into a URI and returns that URI.
+ Any character not a letter, digit, or one of -_.!~*'() is escaped.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3044,11 +3044,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="uriLength" class="public" href="../std/uri/uri_length.html">uriLength</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
-							<td>Does string s[] start with a URL?
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Does string s[] start with a URL?
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3057,7 +3057,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3065,11 +3065,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="URIException" class="public" href="../std/uri/uri_exception.html">URIException</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>This Exception is thrown if something goes wrong when encoding or
 decoding a URI.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>

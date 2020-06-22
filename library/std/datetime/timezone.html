@@ -2975,7 +2975,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2983,11 +2983,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="clearTZEnvVar" class="public" href="../../std/datetime/timezone/clear_tz_env_var.html">clearTZEnvVar</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td><span class="blue">This function is Posix-Only.</span>
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td><span class="blue">This function is Posix-Only.</span>
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2995,12 +2995,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="parseTZConversions" class="public" href="../../std/datetime/timezone/parse_tz_conversions.html">parseTZConversions</a><span class="tableEntryAnnotation">(windowsZonesXMLText)</span>
 								</code>
 							</td>
-							<td>Provides the conversions between the IANA time zone database time zone names
-    (which POSIX systems use) and the time zone names that Windows uses.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Provides the conversions between the IANA time zone database time zone names
+    (which POSIX systems use) and the time zone names that Windows uses.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3008,11 +3008,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="setTZEnvVar" class="public" href="../../std/datetime/timezone/set_tz_env_var.html">setTZEnvVar</a><span class="tableEntryAnnotation">(tzDatabaseName)</span>
 								</code>
 							</td>
-							<td><span class="blue">This function is Posix-Only.</span>
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td><span class="blue">This function is Posix-Only.</span>
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3021,7 +3021,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3029,17 +3029,19 @@ $('#symbolSearchPane').show();</script>
 									<a id="LocalTime" class="public" href="../../std/datetime/timezone/local_time.html">LocalTime</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>A TimeZone which represents the current local time zone on
     the system running your program.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="PosixTimeZone" class="public" href="../../std/datetime/timezone/posix_time_zone.html">PosixTimeZone</a>
 								</code>
+							</td>
+							<td>
 							</td>
 							<td>Represents a time zone from a TZ Database time zone file. Files from the TZ
     Database are how Posix systems hold their time zone information.
@@ -3048,8 +3050,6 @@ $('#symbolSearchPane').show();</script>
     files on disk) on Windows by providing the TZ Database files and telling
     <code class="lang-d"><a href="../../std/datetime/timezone/posix_time_zone.get_time_zone.html"><span class="typ">PosixTimeZone<wbr/></span><span class="pun">.</span><span class="pln">getTimeZone</span></a></code> where the directory holding them is.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3057,11 +3057,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="SimpleTimeZone" class="public" href="../../std/datetime/timezone/simple_time_zone.html">SimpleTimeZone</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Represents a time zone with an offset (in minutes, west is negative) from
     UTC but no DST.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3069,11 +3069,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="TimeZone" class="public" href="../../std/datetime/timezone/time_zone.html">TimeZone</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Represents a time zone. It is used with <code class="lang-d"><a href="../../std/datetime/systime/sys_time.html" title="std.datetime.systime.SysTime"><span class="typ">SysTime</span></a></code>
     to indicate the time zone of a <code class="lang-d"><a href="../../std/datetime/systime/sys_time.html" title="std.datetime.systime.SysTime"><span class="typ">SysTime</span></a></code>.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3081,10 +3081,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="UTC" class="public" href="../../std/datetime/timezone/utc.html">UTC</a>
 								</code>
 							</td>
-							<td>A <code class="lang-d"><a href="../../std/datetime/timezone/time_zone.html"><span class="typ">TimeZone</span></a></code> which represents UTC.
-</td>
 							<td>
 							</td>
+							<td>A <code class="lang-d"><a href="../../std/datetime/timezone/time_zone.html"><span class="typ">TimeZone</span></a></code> which represents UTC.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3092,10 +3092,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="WindowsTimeZone" class="public" href="../../std/datetime/timezone/windows_time_zone.html">WindowsTimeZone</a>
 								</code>
 							</td>
-							<td><span class="blue">This class is Windows-Only.</span>
-</td>
 							<td>
 							</td>
+							<td><span class="blue">This class is Windows-Only.</span>
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3104,7 +3104,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3112,11 +3112,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="TZConversions" class="public" href="../../std/datetime/timezone/tz_conversions.html">TZConversions</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Provides the conversions between the IANA time zone database time zone names
     (which POSIX systems use) and the time zone names that Windows uses.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>

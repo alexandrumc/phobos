@@ -3157,7 +3157,7 @@ template assembly, and gets wrapped with <code class="lang-d"><a href="../../std
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3165,15 +3165,15 @@ template assembly, and gets wrapped with <code class="lang-d"><a href="../../std
 									<a id="allocatorObject" class="public" href="../../std/experimental/allocator/allocator_object.html">allocatorObject</a><span class="tableEntryAnnotation">(a)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Returns a dynamically-typed <code class="lang-d"><span class="typ">CAllocator</span></code> built around a given statically-
 typed allocator <code class="lang-d"><a href="../../std/experimental/allocator/allocator_object.html#a"><span class="pln">a</span></a></code> of type <code class="lang-d"><span class="pln">A</span></code>. Passing a pointer to the allocator
 creates a dynamic allocator around the allocator pointed to by the pointer,
 without attempting to copy or move it. Passing the allocator by value or
 reference behaves as follows.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3181,14 +3181,14 @@ reference behaves as follows.
 									<a id="dispose" class="public" href="../../std/experimental/allocator/dispose.html">dispose</a><span class="tableEntryAnnotation">(alloc, p)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Destroys and then deallocates (using <code class="lang-d"><a href="../../std/experimental/allocator/dispose.html#alloc"><span class="pln">alloc</span></a></code>) the object pointed to by a
 pointer, the class object referred to by a <code class="lang-d"><span class="kwd">class</span></code> or <code class="lang-d"><span class="kwd">interface</span></code>
 reference, or an entire array. It is assumed the respective entities had been
 allocated with the same allocator.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3196,12 +3196,12 @@ allocated with the same allocator.
 									<a id="disposeMultidimensionalArray" class="public" href="../../std/experimental/allocator/dispose_multidimensional_array.html">disposeMultidimensionalArray</a><span class="tableEntryAnnotation">(alloc, array)</span>
 								</code>
 							</td>
-							<td>Destroys and then deallocates a multidimensional array, assuming it was
-created with makeMultidimensionalArray and the same allocator was used.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Destroys and then deallocates a multidimensional array, assuming it was
+created with makeMultidimensionalArray and the same allocator was used.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3209,20 +3209,23 @@ created with makeMultidimensionalArray and the same allocator was used.
 									<a id="expandArray" class="public" href="../../std/experimental/allocator/expand_array.html">expandArray</a><span class="tableEntryAnnotation">(alloc, array, delta)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Grows <code class="lang-d"><a href="../../std/experimental/allocator/expand_array.html#array"><span class="pln">array</span></a></code> by appending <code class="lang-d"><a href="../../std/experimental/allocator/expand_array.html#delta"><span class="pln">delta</span></a></code> more elements. The needed memory is
 allocated using <code class="lang-d"><a href="../../std/experimental/allocator/expand_array.html#alloc"><span class="pln">alloc</span></a></code>. The extra elements added are either default-
 initialized, filled with copies of <code class="lang-d"><a href="../../std/experimental/allocator/expand_array.html#init"><span class="pln">init</span></a></code>, or initialized with values
 fetched from <code class="lang-d"><a href="../../std/experimental/allocator/expand_array.html#range"><span class="pln">range</span></a></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="make" class="public" href="../../std/experimental/allocator/make.html">make</a><span class="tableEntryAnnotation">(alloc, args)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Dynamically allocates (using <code class="lang-d"><a href="../../std/experimental/allocator/make.html#alloc"><span class="pln">alloc</span></a></code>) and then creates in the memory
 allocated an object of type <code class="lang-d"><span class="pln">T</span></code>, using <code class="lang-d"><a href="../../std/experimental/allocator/make.html#args"><span class="pln">args</span></a></code> (if any) for its
@@ -3232,9 +3235,6 @@ semantically the same as <code class="lang-d"><span class="pln">T</span><span cl
 of <code class="lang-d"><span class="pln">T</span></code>s, not an array. To use an allocator to allocate and initialize an
 array, use <code class="lang-d"><span class="pln">alloc<wbr/></span><span class="pun">.</span><span class="pln">makeArray</span><span class="pun">!</span><span class="pln">T</span></code> described below.)
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3242,11 +3242,11 @@ array, use <code class="lang-d"><span class="pln">alloc<wbr/></span><span class=
 									<a id="makeArray" class="public" href="../../std/experimental/allocator/make_array.html">makeArray</a><span class="tableEntryAnnotation">(alloc, length)</span>
 								</code>
 							</td>
-							<td>Create an array of <code class="lang-d"><span class="pln">T</span></code> with <code class="lang-d"><a href="../../std/experimental/allocator/make_array.html#length"><span class="pln">length</span></a></code> elements using <code class="lang-d"><a href="../../std/experimental/allocator/make_array.html#alloc"><span class="pln">alloc</span></a></code>. The array is either default-initialized, filled with copies of <code class="lang-d"><a href="../../std/experimental/allocator/make_array.html#init"><span class="pln">init</span></a></code>, or initialized with values fetched from <code class="lang-d"><a href="../../std/experimental/allocator/make_array.html#range"><span class="pln">range</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Create an array of <code class="lang-d"><span class="pln">T</span></code> with <code class="lang-d"><a href="../../std/experimental/allocator/make_array.html#length"><span class="pln">length</span></a></code> elements using <code class="lang-d"><a href="../../std/experimental/allocator/make_array.html#alloc"><span class="pln">alloc</span></a></code>. The array is either default-initialized, filled with copies of <code class="lang-d"><a href="../../std/experimental/allocator/make_array.html#init"><span class="pln">init</span></a></code>, or initialized with values fetched from <code class="lang-d"><a href="../../std/experimental/allocator/make_array.html#range"><span class="pln">range</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3254,11 +3254,11 @@ array, use <code class="lang-d"><span class="pln">alloc<wbr/></span><span class=
 									<a id="makeMultidimensionalArray" class="public" href="../../std/experimental/allocator/make_multidimensional_array.html">makeMultidimensionalArray</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Allocates a multidimensional array of elements of type T.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Allocates a multidimensional array of elements of type T.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3266,13 +3266,13 @@ array, use <code class="lang-d"><span class="pln">alloc<wbr/></span><span class=
 									<a id="processAllocator" class="public property" href="../../std/experimental/allocator/process_allocator.html">processAllocator</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Gets/sets the allocator for the current process. This allocator must be used
 for allocating memory shared across threads. Objects created using this
 allocator can be cast to <code class="lang-d"><span class="kwd">shared</span></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3280,15 +3280,15 @@ allocator can be cast to <code class="lang-d"><span class="kwd">shared</span></c
 									<a id="sharedAllocatorObject" class="public" href="../../std/experimental/allocator/shared_allocator_object.html">sharedAllocatorObject</a><span class="tableEntryAnnotation">(a)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Returns a dynamically-typed <code class="lang-d"><span class="typ">CSharedAllocator</span></code> built around a given statically-
 typed allocator <code class="lang-d"><a href="../../std/experimental/allocator/shared_allocator_object.html#a"><span class="pln">a</span></a></code> of type <code class="lang-d"><span class="pln">A</span></code>. Passing a pointer to the allocator
 creates a dynamic allocator around the allocator pointed to by the pointer,
 without attempting to copy or move it. Passing the allocator by value or
 reference behaves as follows.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3296,11 +3296,11 @@ reference behaves as follows.
 									<a id="shrinkArray" class="public" href="../../std/experimental/allocator/shrink_array.html">shrinkArray</a><span class="tableEntryAnnotation">(alloc, array, delta)</span>
 								</code>
 							</td>
-							<td>Shrinks an array by <code class="lang-d"><a href="../../std/experimental/allocator/shrink_array.html#delta"><span class="pln">delta</span></a></code> elements.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Shrinks an array by <code class="lang-d"><a href="../../std/experimental/allocator/shrink_array.html#delta"><span class="pln">delta</span></a></code> elements.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3308,15 +3308,15 @@ reference behaves as follows.
 									<a id="theAllocator" class="public property" href="../../std/experimental/allocator/the_allocator.html">theAllocator</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Gets/sets the allocator for the current thread. This is the default allocator
 that should be used for allocating thread-local memory. For allocating memory
 to be shared across threads, use <code class="lang-d"><a href="../../std/experimental/allocator/process_allocator.html"><span class="pln">processAllocator</span></a></code> (below). By default,
 <code class="lang-d"><span class="pln">theAllocator</span></code> ultimately fetches memory from <code class="lang-d"><a href="../../std/experimental/allocator/process_allocator.html"><span class="pln">processAllocator</span></a></code>, which
 in turn uses the garbage collected heap.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>
@@ -3325,7 +3325,7 @@ in turn uses the garbage collected heap.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3333,12 +3333,12 @@ in turn uses the garbage collected heap.
 									<a id="IAllocator" class="public" href="../../std/experimental/allocator/i_allocator.html">IAllocator</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Dynamic allocator interface. Code that defines allocators ultimately implements
 this interface. This should be used wherever a uniform type is required for
 encapsulating various allocator implementations.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3346,13 +3346,13 @@ encapsulating various allocator implementations.
 									<a id="ISharedAllocator" class="public" href="../../std/experimental/allocator/i_shared_allocator.html">ISharedAllocator</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Dynamic shared allocator interface. Code that defines allocators shareable
 across threads ultimately implements this interface. This should be used
 wherever a uniform type is required for encapsulating various allocator
 implementations.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>
@@ -3361,7 +3361,7 @@ implementations.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3369,12 +3369,12 @@ implementations.
 									<a id="CAllocatorImpl" class="public" href="../../std/experimental/allocator/c_allocator_impl.html">CAllocatorImpl</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Implementation of <code class="lang-d"><a href="../../std/experimental/allocator/i_allocator.html"><span class="typ">IAllocator</span></a></code> using <code class="lang-d"><span class="typ">Allocator</span></code>. This adapts a
 statically-built allocator type to <code class="lang-d"><a href="../../std/experimental/allocator/i_allocator.html"><span class="typ">IAllocator</span></a></code> that is directly usable by
 non-templated code.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3382,12 +3382,12 @@ non-templated code.
 									<a id="CSharedAllocatorImpl" class="public" href="../../std/experimental/allocator/c_shared_allocator_impl.html">CSharedAllocatorImpl</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Implementation of <code class="lang-d"><a href="../../std/experimental/allocator/i_shared_allocator.html"><span class="typ">ISharedAllocator</span></a></code> using <code class="lang-d"><span class="typ">Allocator</span></code>. This adapts a
 statically-built, shareable across threads, allocator type to <code class="lang-d"><a href="../../std/experimental/allocator/i_shared_allocator.html"><span class="typ">ISharedAllocator</span></a></code>
 that is directly usable by non-templated code.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>
@@ -3396,7 +3396,7 @@ that is directly usable by non-templated code.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3404,12 +3404,12 @@ that is directly usable by non-templated code.
 									<a id="RCIAllocator" class="public" href="../../std/experimental/allocator/rci_allocator.html">RCIAllocator</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>A reference counted struct that wraps the dynamic allocator interface.
 This should be used wherever a uniform type is required for encapsulating
 various allocator implementations.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3417,12 +3417,12 @@ various allocator implementations.
 									<a id="RCISharedAllocator" class="public" href="../../std/experimental/allocator/rci_shared_allocator.html">RCISharedAllocator</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>A reference counted struct that wraps the dynamic shared allocator interface.
 This should be used wherever a uniform type is required for encapsulating
 various allocator implementations.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>

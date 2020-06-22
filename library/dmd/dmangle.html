@@ -2977,7 +2977,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2985,11 +2985,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="mangleExact" class="public" href="../dmd/dmangle/mangle_exact.html">mangleExact</a><span class="tableEntryAnnotation">(fd)</span>
 								</code>
 							</td>
-							<td>Returns exact mangled name of function.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns exact mangled name of function.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2997,14 +2997,14 @@ $('#symbolSearchPane').show();</script>
 									<a id="mangleToFuncSignature" class="public" href="../dmd/dmangle/mangle_to_func_signature.html">mangleToFuncSignature</a><span class="tableEntryAnnotation">(buf, fd)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Mangle function signatures ('this' qualifier, and parameter types)
  to check conflicts in function overloads.
  It's different from fd.type.deco. For example, fd.type.deco would be null
  if fd is an auto function.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>

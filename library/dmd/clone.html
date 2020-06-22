@@ -2969,7 +2969,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2977,13 +2977,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="buildDtor" class="public" href="../dmd/clone/build_dtor.html">buildDtor</a><span class="tableEntryAnnotation">(ad, sc)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Create inclusive destructor for struct/class by aggregating
  all the destructors in dtors[] with the destructors for
  all the members.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2991,18 +2991,21 @@ $('#symbolSearchPane').show();</script>
 									<a id="buildExternDDtor" class="public" href="../dmd/clone/build_extern_d_dtor.html">buildExternDDtor</a><span class="tableEntryAnnotation">(ad, sc)</span>
 								</code>
 							</td>
-							<td>build a shim function around the compound dtor that translates
-  a C++ destructor to a destructor with extern(D) calling convention
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>build a shim function around the compound dtor that translates
+  a C++ destructor to a destructor with extern(D) calling convention
+</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="buildInv" class="public" href="../dmd/clone/build_inv.html">buildInv</a><span class="tableEntryAnnotation">(ad, sc)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Create inclusive invariant for struct/class by aggregating
  all the invariants in invs[].
@@ -3011,9 +3014,6 @@ $('#symbolSearchPane').show();</script>
           invs[0](), invs[1](), ...;
       }
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3021,11 +3021,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="buildOpAssign" class="public" href="../dmd/clone/build_op_assign.html">buildOpAssign</a><span class="tableEntryAnnotation">(sd, sc)</span>
 								</code>
 							</td>
-							<td>Build opAssign for a <code class="lang-d"><span class="kwd">struct</span></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Build opAssign for a <code class="lang-d"><span class="kwd">struct</span></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3033,12 +3033,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="buildOpEquals" class="public" href="../dmd/clone/build_op_equals.html">buildOpEquals</a><span class="tableEntryAnnotation">(sd, sc)</span>
 								</code>
 							</td>
-							<td>Build opEquals for struct.
-      const bool opEquals(const S s) { ... }
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Build opEquals for struct.
+      const bool opEquals(const S s) { ... }
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3046,15 +3046,15 @@ $('#symbolSearchPane').show();</script>
 									<a id="buildXopCmp" class="public" href="../dmd/clone/build_xop_cmp.html">buildXopCmp</a><span class="tableEntryAnnotation">(sd, sc)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Build _xopCmp for TypeInfo_Struct
       static bool _xopCmp(ref const S p, ref const S q)
       {
           return p.opCmp(q);
       }
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3062,15 +3062,15 @@ $('#symbolSearchPane').show();</script>
 									<a id="buildXopEquals" class="public" href="../dmd/clone/build_xop_equals.html">buildXopEquals</a><span class="tableEntryAnnotation">(sd, sc)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Build _xopEquals for TypeInfo_Struct
       static bool _xopEquals(ref const S p, ref const S q)
       {
           return p == q;
       }
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3078,12 +3078,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="buildXtoHash" class="public" href="../dmd/clone/build_xto_hash.html">buildXtoHash</a><span class="tableEntryAnnotation">(sd, sc)</span>
 								</code>
 							</td>
-							<td>Build _xtoHash for non-bitwise hashing
-      static hash_t xtoHash(ref const S p) nothrow @trusted;
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Build _xtoHash for non-bitwise hashing
+      static hash_t xtoHash(ref const S p) nothrow @trusted;
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3091,11 +3091,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="hasIdentityOpAssign" class="public" href="../dmd/clone/has_identity_op_assign.html">hasIdentityOpAssign</a><span class="tableEntryAnnotation">(ad, sc)</span>
 								</code>
 							</td>
-							<td>Check given aggregate actually has an identity opAssign or not.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Check given aggregate actually has an identity opAssign or not.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3103,12 +3103,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="mergeFuncAttrs" class="public" href="../dmd/clone/merge_func_attrs.html">mergeFuncAttrs</a><span class="tableEntryAnnotation">(s1, f)</span>
 								</code>
 							</td>
-							<td>Merge function attributes pure, nothrow, @safe, @nogc, and @disable
- from f into s1.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Merge function attributes pure, nothrow, @safe, @nogc, and @disable
+ from f into s1.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3116,13 +3116,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="needOpEquals" class="public" href="../dmd/clone/need_op_equals.html">needOpEquals</a><span class="tableEntryAnnotation">(sd)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>We need an opEquals for the struct if
  any fields has an opEquals.
  Generate one if a user-specified one does not exist.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>

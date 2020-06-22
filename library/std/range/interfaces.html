@@ -3020,7 +3020,7 @@ wrap around range objects created by the <code class="lang-d"><a href="../../std
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3028,12 +3028,12 @@ wrap around range objects created by the <code class="lang-d"><a href="../../std
 									<a id="inputRangeObject" class="public" href="../../std/range/interfaces/input_range_object.html">inputRangeObject</a><span class="tableEntryAnnotation">(range)</span>
 								</code>
 							</td>
-							<td>Convenience function for creating an <code class="lang-d"><a href="../../std/range/interfaces/input_range_object.html"><span class="typ">InputRangeObject</span></a></code> of the proper type.
- See <code class="lang-d"><a href="../../std/range/interfaces/input_range.html"><span class="typ">InputRange</span></a></code> for an example.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Convenience function for creating an <code class="lang-d"><a href="../../std/range/interfaces/input_range_object.html"><span class="typ">InputRangeObject</span></a></code> of the proper type.
+ See <code class="lang-d"><a href="../../std/range/interfaces/input_range.html"><span class="typ">InputRange</span></a></code> for an example.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3042,7 +3042,7 @@ wrap around range objects created by the <code class="lang-d"><a href="../../std
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3050,10 +3050,10 @@ wrap around range objects created by the <code class="lang-d"><a href="../../std
 									<a id="BidirectionalAssignable" class="public" href="../../std/range/interfaces/bidirectional_assignable.html">BidirectionalAssignable</a>
 								</code>
 							</td>
-							<td>Adds assignable elements to BidirectionalRange.
-</td>
 							<td>
 							</td>
+							<td>Adds assignable elements to BidirectionalRange.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3061,10 +3061,10 @@ wrap around range objects created by the <code class="lang-d"><a href="../../std
 									<a id="BidirectionalRange" class="public" href="../../std/range/interfaces/bidirectional_range.html">BidirectionalRange</a>
 								</code>
 							</td>
-							<td>Interface for a bidirectional range of type <code class="lang-d"><span class="pln">E</span></code>.
-</td>
 							<td>
 							</td>
+							<td>Interface for a bidirectional range of type <code class="lang-d"><span class="pln">E</span></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3072,10 +3072,10 @@ wrap around range objects created by the <code class="lang-d"><a href="../../std
 									<a id="ForwardAssignable" class="public" href="../../std/range/interfaces/forward_assignable.html">ForwardAssignable</a>
 								</code>
 							</td>
-							<td>Adds assignable elements to ForwardRange.
-</td>
 							<td>
 							</td>
+							<td>Adds assignable elements to ForwardRange.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3083,10 +3083,10 @@ wrap around range objects created by the <code class="lang-d"><a href="../../std
 									<a id="ForwardRange" class="public" href="../../std/range/interfaces/forward_range.html">ForwardRange</a>
 								</code>
 							</td>
-							<td>Interface for a forward range of type <code class="lang-d"><span class="pln">E</span></code>.
-</td>
 							<td>
 							</td>
+							<td>Interface for a forward range of type <code class="lang-d"><span class="pln">E</span></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3094,16 +3094,18 @@ wrap around range objects created by the <code class="lang-d"><a href="../../std
 									<a id="InputAssignable" class="public" href="../../std/range/interfaces/input_assignable.html">InputAssignable</a>
 								</code>
 							</td>
-							<td>Adds assignable elements to InputRange.
-</td>
 							<td>
 							</td>
+							<td>Adds assignable elements to InputRange.
+</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="InputRange" class="public" href="../../std/range/interfaces/input_range.html">InputRange</a>
 								</code>
+							</td>
+							<td>
 							</td>
 							<td>These interfaces are intended to provide virtual function-based wrappers
  around input ranges with element type E.  This is useful where a well-defined
@@ -3113,8 +3115,6 @@ wrap around range objects created by the <code class="lang-d"><a href="../../std
  and friends check for conformance to structural interfaces
  not for implementation of these <code class="lang-d"><span class="kwd">interface</span></code> types.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3122,11 +3122,11 @@ wrap around range objects created by the <code class="lang-d"><a href="../../std
 									<a id="OutputRange" class="public" href="../../std/range/interfaces/output_range.html">OutputRange</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Interface for an output range of type <code class="lang-d"><span class="pln">E</span></code>.  Usage is similar to the
  <code class="lang-d"><a href="../../std/range/interfaces/input_range.html"><span class="typ">InputRange</span></a></code> interface and descendants.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3134,10 +3134,10 @@ wrap around range objects created by the <code class="lang-d"><a href="../../std
 									<a id="RandomAccessFinite" class="public" href="../../std/range/interfaces/random_access_finite.html">RandomAccessFinite</a>
 								</code>
 							</td>
-							<td>Interface for a finite random access range of type <code class="lang-d"><span class="pln">E</span></code>.
-</td>
 							<td>
 							</td>
+							<td>Interface for a finite random access range of type <code class="lang-d"><span class="pln">E</span></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3145,10 +3145,10 @@ wrap around range objects created by the <code class="lang-d"><a href="../../std
 									<a id="RandomAccessInfinite" class="public" href="../../std/range/interfaces/random_access_infinite.html">RandomAccessInfinite</a>
 								</code>
 							</td>
-							<td>Interface for an infinite random access range of type <code class="lang-d"><span class="pln">E</span></code>.
-</td>
 							<td>
 							</td>
+							<td>Interface for an infinite random access range of type <code class="lang-d"><span class="pln">E</span></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3156,10 +3156,10 @@ wrap around range objects created by the <code class="lang-d"><a href="../../std
 									<a id="RandomFiniteAssignable" class="public" href="../../std/range/interfaces/random_finite_assignable.html">RandomFiniteAssignable</a>
 								</code>
 							</td>
-							<td>Adds assignable elements to RandomAccessFinite.
-</td>
 							<td>
 							</td>
+							<td>Adds assignable elements to RandomAccessFinite.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3168,7 +3168,7 @@ wrap around range objects created by the <code class="lang-d"><a href="../../std
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3176,11 +3176,11 @@ wrap around range objects created by the <code class="lang-d"><a href="../../std
 									<a id="OutputRangeObject" class="public" href="../../std/range/interfaces/output_range_object.html">OutputRangeObject</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Implements the <code class="lang-d"><a href="../../std/range/interfaces/output_range.html"><span class="typ">OutputRange</span></a></code> interface for all types E and wraps the
  <code class="lang-d"><span class="pln">put</span></code> method for each type <code class="lang-d"><span class="pln">E</span></code> in a virtual function.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>
@@ -3189,7 +3189,7 @@ wrap around range objects created by the <code class="lang-d"><a href="../../std
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3197,11 +3197,11 @@ wrap around range objects created by the <code class="lang-d"><a href="../../std
 									<a id="outputRangeObject" class="public" href="../../std/range/interfaces/output_range_object.html">outputRangeObject</a>
 								</code>
 							</td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 							<td>Convenience function for creating an <code class="lang-d"><a href="../../std/range/interfaces/output_range_object.html"><span class="typ">OutputRangeObject</span></a></code> with a base range
  of type <code class="lang-d"><span class="pln">R</span></code> that accepts types <code class="lang-d"><span class="pln">E</span></code>.
 </td>
-							<td><tdd class="canBeNogc"></tdd>
-							</td>
 						</tr>
 					</table>
 				</section>

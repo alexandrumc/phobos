@@ -2961,7 +2961,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2969,12 +2969,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="_d_interface_cast" class="public" href="../rt/cast_/_d_interface_cast.html">_d_interface_cast</a><span class="tableEntryAnnotation">(p, c)</span>
 								</code>
 							</td>
-							<td>Attempts to cast Object o to class c.
- Returns o if successful, null if not.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Attempts to cast Object o to class c.
+ Returns o if successful, null if not.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2982,15 +2982,15 @@ $('#symbolSearchPane').show();</script>
 									<a id="_d_toObject" class="public" href="../rt/cast_/_d_to_object.html">_d_toObject</a><span class="tableEntryAnnotation">(p)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Given a pointer:
       If it is an Object, return that Object.
       If it is an interface, return the Object implementing the interface.
       If it is null, return null.
       Else, undefined crash
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>

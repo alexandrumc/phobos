@@ -2969,7 +2969,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2977,12 +2977,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="isUniAlpha" class="public" href="../dmd/utf/is_uni_alpha.html">isUniAlpha</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
-							<td>Return !=0 if unicode alpha.
- Use table from C99 Appendix D.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Return !=0 if unicode alpha.
+ Use table from C99 Appendix D.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2990,12 +2990,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="utf_codeLength" class="public" href="../dmd/utf/utf_code_length.html">utf_codeLength</a><span class="tableEntryAnnotation">(sz, c)</span>
 								</code>
 							</td>
-							<td>Returns the code length of c in code units for the encoding.
- sz is the encoding: 1 = utf8, 2 = utf16, 4 = utf32.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns the code length of c in code units for the encoding.
+ sz is the encoding: 1 = utf8, 2 = utf16, 4 = utf32.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3003,11 +3003,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="utf_codeLengthChar" class="public" href="../dmd/utf/utf_code_length_char.html">utf_codeLengthChar</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
-							<td>Returns the code length of c in code units.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns the code length of c in code units.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3015,11 +3015,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="utf_decodeChar" class="public" href="../dmd/utf/utf_decode_char.html">utf_decodeChar</a><span class="tableEntryAnnotation">(s, ridx, rresult)</span>
 								</code>
 							</td>
-							<td>Decode a UTF-8 sequence as a single UTF-32 code point.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Decode a UTF-8 sequence as a single UTF-32 code point.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3027,11 +3027,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="utf_decodeWchar" class="public" href="../dmd/utf/utf_decode_wchar.html">utf_decodeWchar</a><span class="tableEntryAnnotation">(s, ridx, rresult)</span>
 								</code>
 							</td>
-							<td>Decode a UTF-16 sequence as a single UTF-32 code point.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Decode a UTF-16 sequence as a single UTF-32 code point.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3039,12 +3039,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="utf_isValidDchar" class="public" href="../dmd/utf/utf_is_valid_dchar.html">utf_isValidDchar</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
-							<td>The Unicode code space is the range of code points [0x000000,0x10FFFF]
-except the UTF-16 surrogate pairs in the range [0xD800,0xDFFF]
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>The Unicode code space is the range of code points [0x000000,0x10FFFF]
+except the UTF-16 surrogate pairs in the range [0xD800,0xDFFF]
+</td>
 						</tr>
 					</table>
 				</section>

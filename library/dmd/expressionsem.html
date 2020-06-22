@@ -2973,7 +2973,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2981,11 +2981,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="arrayExpressionSemantic" class="public" href="../dmd/expressionsem/array_expression_semantic.html">arrayExpressionSemantic</a><span class="tableEntryAnnotation">(exps, sc, preserveErrors)</span>
 								</code>
 							</td>
-							<td>Perform semantic() on an array of Expressions.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Perform semantic() on an array of Expressions.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2993,12 +2993,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="binSemantic" class="public" href="../dmd/expressionsem/bin_semantic.html">binSemantic</a><span class="tableEntryAnnotation">(e, sc)</span>
 								</code>
 							</td>
-							<td>Helper function for easy error propagation.
- If error occurs, returns ErrorExp. Otherwise returns NULL.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Helper function for easy error propagation.
+ If error occurs, returns ErrorExp. Otherwise returns NULL.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3006,11 +3006,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="checkAddressVar" class="public" href="../dmd/expressionsem/check_address_var.html">checkAddressVar</a><span class="tableEntryAnnotation">(sc, exp, v)</span>
 								</code>
 							</td>
-							<td>Determine if <code class="lang-d"><a href="../dmd/expressionsem/check_address_var.html#exp"><span class="pln">exp</span></a></code>, which gets its address taken, can do so safely.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Determine if <code class="lang-d"><a href="../dmd/expressionsem/check_address_var.html#exp"><span class="pln">exp</span></a></code>, which gets its address taken, can do so safely.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3018,12 +3018,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="checkSharedAccess" class="public" href="../dmd/expressionsem/check_shared_access.html">checkSharedAccess</a><span class="tableEntryAnnotation">(e, sc)</span>
 								</code>
 							</td>
-							<td>If expression is shared, check that we can access it.
- Give error message if not.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>If expression is shared, check that we can access it.
+ Give error message if not.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3031,12 +3031,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="expressionsToString" class="public" href="../dmd/expressionsem/expressions_to_string.html">expressionsToString</a><span class="tableEntryAnnotation">(buf, sc, exps)</span>
 								</code>
 							</td>
-							<td>Perform semantic analysis and CTFE on expressions to produce
- a string.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Perform semantic analysis and CTFE on expressions to produce
+ a string.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3044,12 +3044,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="getThisSkipNestedFuncs" class="public" href="../dmd/expressionsem/get_this_skip_nested_funcs.html">getThisSkipNestedFuncs</a><span class="tableEntryAnnotation">(loc, sc, s, ad, e1, t, var, flag)</span>
 								</code>
 							</td>
-							<td>Helper function for <code class="lang-d"><span class="pln">getRightThis</span><span class="pun">()</span></code>.
- Gets <code class="lang-d"><span class="kwd">this</span></code> of the next outer aggregate.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Helper function for <code class="lang-d"><span class="pln">getRightThis</span><span class="pun">()</span></code>.
+ Gets <code class="lang-d"><span class="kwd">this</span></code> of the next outer aggregate.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3057,11 +3057,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="makeThis2Argument" class="public" href="../dmd/expressionsem/make_this2_argument.html">makeThis2Argument</a><span class="tableEntryAnnotation">(loc, sc, fd)</span>
 								</code>
 							</td>
-							<td>Make a dual-context container for use as a <code class="lang-d"><span class="kwd">this</span></code> argument.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Make a dual-context container for use as a <code class="lang-d"><span class="kwd">this</span></code> argument.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3069,12 +3069,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="resolveIsPackage" class="public" href="../dmd/expressionsem/resolve_is_package.html">resolveIsPackage</a><span class="tableEntryAnnotation">(sym)</span>
 								</code>
 							</td>
-							<td>Determines whether a symbol represents a module or package
- (Used as a helper for is(type == module) and is(type == package))
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Determines whether a symbol represents a module or package
+ (Used as a helper for is(type == module) and is(type == package))
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3082,12 +3082,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="resolveOpDollar" class="public" href="../dmd/expressionsem/resolve_op_dollar.html">resolveOpDollar</a><span class="tableEntryAnnotation">(sc, ae, pe0)</span>
 								</code>
 							</td>
-							<td>Runs semantic on ae.arguments. Declares temporary variables
- if '$' was used.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Runs semantic on ae.arguments. Declares temporary variables
+ if '$' was used.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3095,12 +3095,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="resolveOpDollar" class="public" href="../dmd/expressionsem/resolve_op_dollar.html">resolveOpDollar</a><span class="tableEntryAnnotation">(sc, ae, ie, pe0)</span>
 								</code>
 							</td>
-							<td>Runs semantic on se.lwr and se.upr. Declares a temporary variable
- if '$' was used.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Runs semantic on se.lwr and se.upr. Declares a temporary variable
+ if '$' was used.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3108,11 +3108,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="resolvePropertiesOnly" class="public" href="../dmd/expressionsem/resolve_properties_only.html">resolvePropertiesOnly</a><span class="tableEntryAnnotation">(sc, e1)</span>
 								</code>
 							</td>
-							<td>If e1 is a property function (template), resolve it.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>If e1 is a property function (template), resolve it.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3120,11 +3120,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="semanticString" class="public" href="../dmd/expressionsem/semantic_string.html">semanticString</a><span class="tableEntryAnnotation">(sc, exp, s)</span>
 								</code>
 							</td>
-							<td>Resolve <code class="lang-d"><a href="../dmd/expressionsem/semantic_string.html#exp"><span class="pln">exp</span></a></code> as a compile-time known string.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Resolve <code class="lang-d"><a href="../dmd/expressionsem/semantic_string.html#exp"><span class="pln">exp</span></a></code> as a compile-time known string.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3132,11 +3132,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="symbolToExp" class="public" href="../dmd/expressionsem/symbol_to_exp.html">symbolToExp</a><span class="tableEntryAnnotation">(s, loc, sc, hasOverloads)</span>
 								</code>
 							</td>
-							<td>Turn symbol <code class="lang-d"><a href="../dmd/expressionsem/symbol_to_exp.html#s"><span class="pln">s</span></a></code> into the expression it represents.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Turn symbol <code class="lang-d"><a href="../dmd/expressionsem/symbol_to_exp.html#s"><span class="pln">s</span></a></code> into the expression it represents.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3144,12 +3144,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="trySemantic" class="public" href="../dmd/expressionsem/try_semantic.html">trySemantic</a><span class="tableEntryAnnotation">(exp, sc)</span>
 								</code>
 							</td>
-							<td>Try to run semantic routines.
- If they fail, return NULL.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Try to run semantic routines.
+ If they fail, return NULL.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3157,12 +3157,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="unaSemantic" class="public" href="../dmd/expressionsem/una_semantic.html">unaSemantic</a><span class="tableEntryAnnotation">(e, sc)</span>
 								</code>
 							</td>
-							<td>Helper function for easy error propagation.
- If error occurs, returns ErrorExp. Otherwise returns NULL.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Helper function for easy error propagation.
+ If error occurs, returns ErrorExp. Otherwise returns NULL.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3170,11 +3170,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="verifyHookExist" class="public" href="../dmd/expressionsem/verify_hook_exist.html">verifyHookExist</a><span class="tableEntryAnnotation">(loc, sc, id, description, module_)</span>
 								</code>
 							</td>
-							<td>Make sure that the runtime hook <code class="lang-d"><a href="../dmd/expressionsem/verify_hook_exist.html#id"><span class="pln">id</span></a></code> exists.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Make sure that the runtime hook <code class="lang-d"><a href="../dmd/expressionsem/verify_hook_exist.html#id"><span class="pln">id</span></a></code> exists.
+</td>
 						</tr>
 					</table>
 				</section>

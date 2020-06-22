@@ -2969,7 +2969,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2977,11 +2977,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="addImport" class="public" href="../dmd/frontend/add_import.html">addImport</a><span class="tableEntryAnnotation">(path)</span>
 								</code>
 							</td>
-							<td>Add import path to the <code class="lang-d"><span class="pln">global<wbr/></span><span class="pun">.</span><span class="pln">path</span></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Add import path to the <code class="lang-d"><span class="pln">global<wbr/></span><span class="pun">.</span><span class="pln">path</span></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2989,11 +2989,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="addStringImport" class="public" href="../dmd/frontend/add_string_import.html">addStringImport</a><span class="tableEntryAnnotation">(path)</span>
 								</code>
 							</td>
-							<td>Add string import path to <code class="lang-d"><span class="pln">global<wbr/></span><span class="pun">.</span><span class="pln">filePath</span></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Add string import path to <code class="lang-d"><span class="pln">global<wbr/></span><span class="pun">.</span><span class="pln">filePath</span></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3001,11 +3001,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="deinitializeDMD" class="public" href="../dmd/frontend/deinitialize_dmd.html">deinitializeDMD</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Deinitializes the global variables of the DMD compiler.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Deinitializes the global variables of the DMD compiler.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3013,11 +3013,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="determineDefaultCompiler" class="public" href="../dmd/frontend/determine_default_compiler.html">determineDefaultCompiler</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Detect the currently active compiler.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Detect the currently active compiler.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3025,11 +3025,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="findDMDConfig" class="public" href="../dmd/frontend/find_dmd_config.html">findDMDConfig</a><span class="tableEntryAnnotation">(dmdFilePath)</span>
 								</code>
 							</td>
-							<td>Searches for a <code class="lang-d"><span class="pln">dmd<wbr/></span><span class="pun">.</span><span class="pln">conf</span></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Searches for a <code class="lang-d"><span class="pln">dmd<wbr/></span><span class="pun">.</span><span class="pln">conf</span></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3037,13 +3037,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="findImportPaths" class="public" href="../dmd/frontend/find_import_paths.html">findImportPaths</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Finds a <code class="lang-d"><span class="pln">dmd<wbr/></span><span class="pun">.</span><span class="pln">conf</span></code> and parses it for import paths.
 This depends on the <code class="lang-d"><span class="pun">$</span><span class="pln">DMD</span></code> environment variable.
 If <code class="lang-d"><span class="pun">$</span><span class="pln">DMD</span></code> is set to <code class="lang-d"><span class="pln">ldmd</span></code>, it will try to detect and parse a <code class="lang-d"><span class="pln">ldc2<wbr/></span><span class="pun">.</span><span class="pln">conf</span></code> instead.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3051,11 +3051,11 @@ If <code class="lang-d"><span class="pun">$</span><span class="pln">DMD</span></
 									<a id="findLDCConfig" class="public" href="../dmd/frontend/find_ldc_config.html">findLDCConfig</a><span class="tableEntryAnnotation">(ldcFilePath)</span>
 								</code>
 							</td>
-							<td>Searches for a <code class="lang-d"><span class="pln">ldc2<wbr/></span><span class="pun">.</span><span class="pln">conf</span></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Searches for a <code class="lang-d"><span class="pln">ldc2<wbr/></span><span class="pun">.</span><span class="pln">conf</span></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3063,11 +3063,11 @@ If <code class="lang-d"><span class="pun">$</span><span class="pln">DMD</span></
 									<a id="fullSemantic" class="public" href="../dmd/frontend/full_semantic.html">fullSemantic</a><span class="tableEntryAnnotation">(m)</span>
 								</code>
 							</td>
-							<td>Run full semantic analysis on a module.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Run full semantic analysis on a module.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3075,11 +3075,11 @@ If <code class="lang-d"><span class="pun">$</span><span class="pln">DMD</span></
 									<a id="parseImportPathsFromConfig" class="public" href="../dmd/frontend/parse_import_paths_from_config.html">parseImportPathsFromConfig</a><span class="tableEntryAnnotation">(iniFile, execDir)</span>
 								</code>
 							</td>
-							<td>Parses a <code class="lang-d"><span class="pln">dmd<wbr/></span><span class="pun">.</span><span class="pln">conf</span></code> or <code class="lang-d"><span class="pln">ldc2<wbr/></span><span class="pun">.</span><span class="pln">conf</span></code> config file and returns defined import paths.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Parses a <code class="lang-d"><span class="pln">dmd<wbr/></span><span class="pun">.</span><span class="pln">conf</span></code> or <code class="lang-d"><span class="pln">ldc2<wbr/></span><span class="pun">.</span><span class="pln">conf</span></code> config file and returns defined import paths.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3087,11 +3087,11 @@ If <code class="lang-d"><span class="pun">$</span><span class="pln">DMD</span></
 									<a id="parseModule" class="public" href="../dmd/frontend/parse_module.html">parseModule</a><span class="tableEntryAnnotation">(fileName, code)</span>
 								</code>
 							</td>
-							<td>Parse a module from a string.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Parse a module from a string.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3099,11 +3099,11 @@ If <code class="lang-d"><span class="pun">$</span><span class="pln">DMD</span></
 									<a id="prettyPrint" class="public" href="../dmd/frontend/pretty_print.html">prettyPrint</a><span class="tableEntryAnnotation">(m)</span>
 								</code>
 							</td>
-							<td>Pretty print a module.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Pretty print a module.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3112,7 +3112,7 @@ If <code class="lang-d"><span class="pun">$</span><span class="pln">DMD</span></
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3120,10 +3120,10 @@ If <code class="lang-d"><span class="pun">$</span><span class="pln">DMD</span></
 									<a id="DiagnosticReporter" class="public" href="../dmd/frontend/diagnostic_reporter.html">DiagnosticReporter</a>
 								</code>
 							</td>
-							<td>Interface for diagnostic reporting.
-</td>
 							<td>
 							</td>
+							<td>Interface for diagnostic reporting.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3131,10 +3131,10 @@ If <code class="lang-d"><span class="pun">$</span><span class="pln">DMD</span></
 									<a id="StderrDiagnosticReporter" class="public" href="../dmd/frontend/stderr_diagnostic_reporter.html">StderrDiagnosticReporter</a>
 								</code>
 							</td>
-							<td>Diagnostic reporter which prints the diagnostic messages to stderr.
-</td>
 							<td>
 							</td>
+							<td>Diagnostic reporter which prints the diagnostic messages to stderr.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3143,7 +3143,7 @@ If <code class="lang-d"><span class="pun">$</span><span class="pln">DMD</span></
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3151,10 +3151,10 @@ If <code class="lang-d"><span class="pun">$</span><span class="pln">DMD</span></
 									<a id="ContractChecks" class="public" href="../dmd/frontend/contract_checks.html">ContractChecks</a>
 								</code>
 							</td>
-							<td>Indicates which contracts should be checked or not.
-</td>
 							<td>
 							</td>
+							<td>Indicates which contracts should be checked or not.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3162,10 +3162,10 @@ If <code class="lang-d"><span class="pun">$</span><span class="pln">DMD</span></
 									<a id="Diagnostics" class="public" href="../dmd/frontend/diagnostics.html">Diagnostics</a>
 								</code>
 							</td>
-							<td>Contains aggregated diagnostics information.
-</td>
 							<td>
 							</td>
+							<td>Contains aggregated diagnostics information.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3174,7 +3174,7 @@ If <code class="lang-d"><span class="pun">$</span><span class="pln">DMD</span></
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3182,10 +3182,10 @@ If <code class="lang-d"><span class="pun">$</span><span class="pln">DMD</span></
 									<a id="ContractChecking" class="public" href="../dmd/frontend/contract_checking.html">ContractChecking</a>
 								</code>
 							</td>
-							<td>Indicates the checking state of various contracts.
-</td>
 							<td>
 							</td>
+							<td>Indicates the checking state of various contracts.
+</td>
 						</tr>
 					</table>
 				</section>

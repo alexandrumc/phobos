@@ -3014,7 +3014,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3022,11 +3022,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="DosFileTimeToSysTime" class="public" href="../../std/datetime/systime/dos_file_time_to_sys_time.html">DosFileTimeToSysTime</a><span class="tableEntryAnnotation">(dft, tz)</span>
 								</code>
 							</td>
-							<td>Converts from DOS file date/time to <code class="lang-d"><a href="../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Converts from DOS file date/time to <code class="lang-d"><a href="../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3034,11 +3034,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="FILETIMEToStdTime" class="public" href="../../std/datetime/systime/filetime_to_std_time.html">FILETIMEToStdTime</a><span class="tableEntryAnnotation">(ft)</span>
 								</code>
 							</td>
-							<td><span class="blue">This function is Windows-Only.</span>
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td><span class="blue">This function is Windows-Only.</span>
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3046,17 +3046,20 @@ $('#symbolSearchPane').show();</script>
 									<a id="FILETIMEToSysTime" class="public" href="../../std/datetime/systime/filetime_to_sys_time.html">FILETIMEToSysTime</a><span class="tableEntryAnnotation">(ft, tz)</span>
 								</code>
 							</td>
-							<td><span class="blue">This function is Windows-Only.</span>
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td><span class="blue">This function is Windows-Only.</span>
+</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="parseRFC822DateTime" class="public" href="../../std/datetime/systime/parse_rf_c822_date_time.html">parseRFC822DateTime</a><span class="tableEntryAnnotation">(value)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>The given array of <code class="lang-d"><span class="typ">char</span></code> or random-access range of <code class="lang-d"><span class="typ">char</span></code> or
     <code class="lang-d"><span class="typ">ubyte</span></code> is expected to be in the format specified in
@@ -3065,9 +3068,6 @@ $('#symbolSearchPane').show();</script>
     internet messages such as e-mail and HTTP. The corresponding
     <code class="lang-d"><a href="../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code> will be returned.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3075,11 +3075,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="stdTimeToFILETIME" class="public" href="../../std/datetime/systime/std_time_tofiletime.html">stdTimeToFILETIME</a><span class="tableEntryAnnotation">(stdTime)</span>
 								</code>
 							</td>
-							<td><span class="blue">This function is Windows-Only.</span>
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td><span class="blue">This function is Windows-Only.</span>
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3087,13 +3087,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="stdTimeToUnixTime" class="public" href="../../std/datetime/systime/std_time_to_unix_time.html">stdTimeToUnixTime</a><span class="tableEntryAnnotation">(stdTime)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Converts std time (which uses midnight, January 1st, 1 A.D. UTC as its epoch
     and hnsecs as its units) to unix time (which uses midnight, January 1st,
     1970 UTC as its epoch and seconds as its units).
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3101,11 +3101,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="SYSTEMTIMEToSysTime" class="public" href="../../std/datetime/systime/systemtime_to_sys_time.html">SYSTEMTIMEToSysTime</a><span class="tableEntryAnnotation">(st, tz)</span>
 								</code>
 							</td>
-							<td><span class="blue">This function is Windows-Only.</span>
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td><span class="blue">This function is Windows-Only.</span>
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3113,11 +3113,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="SysTimeToDosFileTime" class="public" href="../../std/datetime/systime/sys_time_to_dos_file_time.html">SysTimeToDosFileTime</a><span class="tableEntryAnnotation">(sysTime)</span>
 								</code>
 							</td>
-							<td>Converts from <code class="lang-d"><a href="../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code> to DOS file date/time.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Converts from <code class="lang-d"><a href="../../std/datetime/systime/sys_time.html"><span class="typ">SysTime</span></a></code> to DOS file date/time.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3125,11 +3125,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="SysTimeToFILETIME" class="public" href="../../std/datetime/systime/sys_time_tofiletime.html">SysTimeToFILETIME</a><span class="tableEntryAnnotation">(sysTime)</span>
 								</code>
 							</td>
-							<td><span class="blue">This function is Windows-Only.</span>
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td><span class="blue">This function is Windows-Only.</span>
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3137,11 +3137,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="SysTimeToSYSTEMTIME" class="public" href="../../std/datetime/systime/sys_time_tosystemtime.html">SysTimeToSYSTEMTIME</a><span class="tableEntryAnnotation">(sysTime)</span>
 								</code>
 							</td>
-							<td><span class="blue">This function is Windows-Only.</span>
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td><span class="blue">This function is Windows-Only.</span>
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3149,13 +3149,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="unixTimeToStdTime" class="public" href="../../std/datetime/systime/unix_time_to_std_time.html">unixTimeToStdTime</a><span class="tableEntryAnnotation">(unixTime)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Converts from unix time (which uses midnight, January 1st, 1970 UTC as its
     epoch and seconds as its units) to "std time" (which uses midnight,
     January 1st, 1 A.D. UTC and hnsecs as its units).
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>
@@ -3164,7 +3164,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3172,11 +3172,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="Clock" class="public" href="../../std/datetime/systime/clock.html">Clock</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Effectively a namespace to make it clear that the methods it contains are
     getting the time from the system clock. It cannot be instantiated.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>
@@ -3185,13 +3185,15 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="SysTime" class="public" href="../../std/datetime/systime/sys_time.html">SysTime</a>
 								</code>
+							</td>
+							<td>
 							</td>
 							<td><code class="lang-d"><span class="typ">SysTime</span></code> is the type used to get the current time from the
     system or doing anything that involves time zones. Unlike
@@ -3204,8 +3206,6 @@ $('#symbolSearchPane').show();</script>
     calendar-based operations, and getting individual units from it such as
     years or days is going to involve conversions and be less efficient.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>

@@ -2965,7 +2965,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2973,12 +2973,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="sysErrorString" class="public" href="../../std/windows/syserror/sys_error_string.html">sysErrorString</a><span class="tableEntryAnnotation">(errCode, langId, subLangId)</span>
 								</code>
 							</td>
-							<td>Query the text for a Windows error code, as returned by
-        <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms679360.aspx">        <code class="lang-d"><span class="typ">GetLastError</span></code></a>, as a D string.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Query the text for a Windows error code, as returned by
+        <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms679360.aspx">        <code class="lang-d"><span class="typ">GetLastError</span></code></a>, as a D string.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2986,14 +2986,14 @@ $('#symbolSearchPane').show();</script>
 									<a id="wenforce" class="public" href="../../std/windows/syserror/wenforce.html">wenforce</a><span class="tableEntryAnnotation">(value, msg, file, line)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>If <code class="lang-d"><span class="pun">!!<a href="../../std/windows/syserror/wenforce.html#value"></span><span class="pln">value</span></a></code> is true, <code class="lang-d"><a href="../../std/windows/syserror/wenforce.html#value"><span class="pln">value</span></a></code> is returned. Otherwise,
         <code class="lang-d"><span class="kwd">new <a href="../../std/windows/syserror/windows_exception.html"></span><span class="typ">WindowsException</span></a><span class="pun">(</span><span class="typ">GetLastError</span><span class="pun">(), <a href="../../std/windows/syserror/wenforce.html#msg"></span><span class="pln">msg</span></a><span class="pun">)</span></code> is thrown.
         <code class="lang-d"><a href="../../std/windows/syserror/windows_exception.html"><span class="typ">WindowsException</span></a></code> assumes that the last operation set
         <code class="lang-d"><span class="typ">GetLastError</span><span class="pun">()</span></code> appropriately.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>
@@ -3002,7 +3002,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3010,11 +3010,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="WindowsException" class="public" href="../../std/windows/syserror/windows_exception.html">WindowsException</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Thrown if errors that set
        <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms679360.aspx">       <code class="lang-d"><span class="typ">GetLastError</span></code></a> occur.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>

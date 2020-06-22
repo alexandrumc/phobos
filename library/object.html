@@ -2963,7 +2963,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2971,13 +2971,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="assumeSafeAppend" class="public" href="./object/assume_safe_append.html">assumeSafeAppend</a><span class="tableEntryAnnotation">(arr)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Assume that it is safe to append to this array. Appends made to this array
 after calling this function may append in place, even if the array was a
 slice of a larger array to begin with.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2985,11 +2985,11 @@ slice of a larger array to begin with.
 									<a id="byKey" class="public" href="./object/by_key.html">byKey</a><span class="tableEntryAnnotation">(aa)</span>
 								</code>
 							</td>
-							<td>Returns a forward range over the keys of the associative array.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns a forward range over the keys of the associative array.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2997,11 +2997,11 @@ slice of a larger array to begin with.
 									<a id="byKeyValue" class="public" href="./object/by_key_value.html">byKeyValue</a><span class="tableEntryAnnotation">(aa)</span>
 								</code>
 							</td>
-							<td>Returns a forward range over the key value pairs of the associative array.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns a forward range over the key value pairs of the associative array.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3009,11 +3009,11 @@ slice of a larger array to begin with.
 									<a id="byValue" class="public" href="./object/by_value.html">byValue</a><span class="tableEntryAnnotation">(aa)</span>
 								</code>
 							</td>
-							<td>Returns a forward range over the values of the associative array.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns a forward range over the values of the associative array.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3021,13 +3021,13 @@ slice of a larger array to begin with.
 									<a id="capacity" class="public property" href="./object/capacity.html">capacity</a><span class="tableEntryAnnotation">(arr)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>(Property) Gets the current capacity of a slice. The capacity is the size
 that the slice can grow to before the underlying array must be
 reallocated or extended.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3035,17 +3035,20 @@ reallocated or extended.
 									<a id="clear" class="public" href="./object/clear.html">clear</a><span class="tableEntryAnnotation">(aa)</span>
 								</code>
 							</td>
-							<td>Removes all remaining keys and values from an associative array.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Removes all remaining keys and values from an associative array.
+</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="destroy" class="public" href="./object/destroy.html">destroy</a><span class="tableEntryAnnotation">(obj)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Destroys the given object and optionally resets to initial state. It's used to
 destroy an object, calling its destructor or finalizer so it no longer
@@ -3054,9 +3057,6 @@ any GC memory.
 If <code class="lang-d"><span class="pln">initialize</span></code> is supplied <code class="lang-d"><span class="kwd">false</span></code>, the object is considered invalid after
 destruction, and should not be referenced.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3064,12 +3064,12 @@ destruction, and should not be referenced.
 									<a id="dup" class="public" href="./object/dup.html">dup</a><span class="tableEntryAnnotation">(aa)</span>
 								</code>
 							</td>
-							<td>Create a new associative array of the same size and copy the contents of the
- associative array into it.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Create a new associative array of the same size and copy the contents of the
+ associative array into it.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3077,11 +3077,11 @@ destruction, and should not be referenced.
 									<a id="dup" class="public property" href="./object/dup.html">dup</a><span class="tableEntryAnnotation">(a)</span>
 								</code>
 							</td>
-							<td>Provide the .dup array property.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Provide the .dup array property.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3089,12 +3089,12 @@ destruction, and should not be referenced.
 									<a id="get" class="public" href="./object/get.html">get</a><span class="tableEntryAnnotation">(aa, key, defaultValue)</span>
 								</code>
 							</td>
-							<td>Looks up key; if it exists returns corresponding value else evaluates and
- returns defaultValue.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Looks up key; if it exists returns corresponding value else evaluates and
+ returns defaultValue.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3102,12 +3102,12 @@ destruction, and should not be referenced.
 									<a id="hashOf" class="public" href="./object/hash_of.html">hashOf</a><span class="tableEntryAnnotation">(arg, seed)</span>
 								</code>
 							</td>
-							<td>Calculates the hash value of <code class="lang-d"><a href="./object/hash_of.html#arg"><span class="pln">arg</span></a></code> with an optional <code class="lang-d"><a href="./object/hash_of.html#seed"><span class="pln">seed</span></a></code> initial value.
-    The result might not be equal to <code class="lang-d"><span class="kwd">typeid</span><span class="pun">(</span><span class="pln">T</span><span class="pun">)<wbr/>.</span><span class="pln">getHash</span><span class="pun">(&amp;<a href="./object/hash_of.html#arg"></span><span class="pln">arg</span></a><span class="pun">)</span></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Calculates the hash value of <code class="lang-d"><a href="./object/hash_of.html#arg"><span class="pln">arg</span></a></code> with an optional <code class="lang-d"><a href="./object/hash_of.html#seed"><span class="pln">seed</span></a></code> initial value.
+    The result might not be equal to <code class="lang-d"><span class="kwd">typeid</span><span class="pun">(</span><span class="pln">T</span><span class="pun">)<wbr/>.</span><span class="pln">getHash</span><span class="pun">(&amp;<a href="./object/hash_of.html#arg"></span><span class="pln">arg</span></a><span class="pun">)</span></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3115,11 +3115,11 @@ destruction, and should not be referenced.
 									<a id="idup" class="public property" href="./object/idup.html">idup</a><span class="tableEntryAnnotation">(a)</span>
 								</code>
 							</td>
-							<td>Provide the .idup array property.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Provide the .idup array property.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3127,12 +3127,12 @@ destruction, and should not be referenced.
 									<a id="keys" class="public property" href="./object/keys.html">keys</a><span class="tableEntryAnnotation">(aa)</span>
 								</code>
 							</td>
-							<td>Returns a dynamic array, the elements of which are the keys in the
- associative array.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns a dynamic array, the elements of which are the keys in the
+ associative array.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3140,11 +3140,11 @@ destruction, and should not be referenced.
 									<a id="opEquals" class="public" href="./object/op_equals.html">opEquals</a><span class="tableEntryAnnotation">(lhs, rhs)</span>
 								</code>
 							</td>
-							<td>Returns true if lhs and rhs are equal.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns true if lhs and rhs are equal.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3152,12 +3152,12 @@ destruction, and should not be referenced.
 									<a id="rehash" class="public" href="./object/rehash.html">rehash</a><span class="tableEntryAnnotation">(aa)</span>
 								</code>
 							</td>
-							<td>Reorganizes the associative array in place so that lookups are more
- efficient.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Reorganizes the associative array in place so that lookups are more
+ efficient.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3165,12 +3165,12 @@ destruction, and should not be referenced.
 									<a id="require" class="public" href="./object/require.html">require</a><span class="tableEntryAnnotation">(aa, key, value)</span>
 								</code>
 							</td>
-							<td>Looks up key; if it exists returns corresponding value else evaluates
- value, adds it to the associative array and returns it.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Looks up key; if it exists returns corresponding value else evaluates
+ value, adds it to the associative array and returns it.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3178,13 +3178,13 @@ destruction, and should not be referenced.
 									<a id="reserve" class="public" href="./object/reserve.html">reserve</a><span class="tableEntryAnnotation">(arr, newcapacity)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Reserves capacity for a slice. The capacity is the size
 that the slice can grow to before the underlying array must be
 reallocated or extended.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3192,12 +3192,12 @@ reallocated or extended.
 									<a id="update" class="public" href="./object/update.html">update</a><span class="tableEntryAnnotation">(aa, key, create, update)</span>
 								</code>
 							</td>
-							<td>Looks up key; if it exists applies the update callable else evaluates the
- create callable and adds it to the associative array
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Looks up key; if it exists applies the update callable else evaluates the
+ create callable and adds it to the associative array
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3205,12 +3205,12 @@ reallocated or extended.
 									<a id="values" class="public property" href="./object/values.html">values</a><span class="tableEntryAnnotation">(aa)</span>
 								</code>
 							</td>
-							<td>Returns a dynamic array, the elements of which are the values in the
- associative array.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns a dynamic array, the elements of which are the values in the
+ associative array.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3219,7 +3219,7 @@ reallocated or extended.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3227,10 +3227,10 @@ reallocated or extended.
 									<a id="Error" class="public" href="./object/error.html">Error</a>
 								</code>
 							</td>
-							<td>The base class of all unrecoverable runtime errors.
-</td>
 							<td>
 							</td>
+							<td>The base class of all unrecoverable runtime errors.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3238,10 +3238,10 @@ reallocated or extended.
 									<a id="Exception" class="public" href="./object/exception.html">Exception</a>
 								</code>
 							</td>
-							<td>The base class of all errors that are safe to catch and handle.
-</td>
 							<td>
 							</td>
+							<td>The base class of all errors that are safe to catch and handle.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3249,10 +3249,10 @@ reallocated or extended.
 									<a id="Object" class="public" href="./object/object.html">Object</a>
 								</code>
 							</td>
-							<td>All D class objects inherit from Object.
-</td>
 							<td>
 							</td>
+							<td>All D class objects inherit from Object.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3260,10 +3260,10 @@ reallocated or extended.
 									<a id="Throwable" class="public" href="./object/throwable.html">Throwable</a>
 								</code>
 							</td>
-							<td>The base class of all thrown objects.
-</td>
 							<td>
 							</td>
+							<td>The base class of all thrown objects.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3271,12 +3271,12 @@ reallocated or extended.
 									<a id="TypeInfo" class="public" href="./object/type_info.html">TypeInfo</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Runtime type information about a type.
  Can be retrieved for any type using a
  <a href="/spec/expression.html#TypeidExpression"><i>TypeidExpression</i></a>.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3284,12 +3284,12 @@ reallocated or extended.
 									<a id="TypeInfo_Class" class="public" href="./object/type_info__class.html">TypeInfo_Class</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Runtime type information about a class.
  Can be retrieved from an object instance by using the
  <a href="/spec/property.html#classinfo">.classinfo</a> property.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>
@@ -3298,7 +3298,7 @@ reallocated or extended.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3306,12 +3306,12 @@ reallocated or extended.
 									<a id="Interface" class="public" href="./object/interface.html">Interface</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Information about an interface.
  When an object is accessed via an interface, an Interface* appears as the
  first entry in its vtbl.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3319,10 +3319,10 @@ reallocated or extended.
 									<a id="ModuleInfo" class="public" href="./object/module_info.html">ModuleInfo</a>
 								</code>
 							</td>
-							<td>An instance of ModuleInfo is generated into the object file for each compiled module.
-</td>
 							<td>
 							</td>
+							<td>An instance of ModuleInfo is generated into the object file for each compiled module.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3330,11 +3330,11 @@ reallocated or extended.
 									<a id="OffsetTypeInfo" class="public" href="./object/offset_type_info.html">OffsetTypeInfo</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Array of pairs giving the offset and type information for each
  member in an aggregate.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>

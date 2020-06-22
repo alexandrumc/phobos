@@ -2962,7 +2962,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2970,13 +2970,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="cdvecfill" class="public" href="../../dmd/backend/cgxmm/cdvecfill.html">cdvecfill</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Generate code for OPvecfill (broadcast).
  OPvecfill takes the single value in e1 and
  fills the vector type with it.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2984,14 +2984,14 @@ $('#symbolSearchPane').show();</script>
 									<a id="cdvecsto" class="public" href="../../dmd/backend/cgxmm/cdvecsto.html">cdvecsto</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Generate code for vector "store" operations.
  The tree e must look like:
   (op1 OPvecsto (op OPparam op2))
  where op is the store instruction STOxxxx.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2999,12 +2999,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="checkSetVex" class="public" href="../../dmd/backend/cgxmm/check_set_vex.html">checkSetVex</a><span class="tableEntryAnnotation">(c, ty)</span>
 								</code>
 							</td>
-							<td>Determine if operation should be rewritten as a VEX
- operation; and do so.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Determine if operation should be rewritten as a VEX
+ operation; and do so.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3012,12 +3012,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="checkSetVex3" class="public" href="../../dmd/backend/cgxmm/check_set_vex3.html">checkSetVex3</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
-							<td>VEX prefixes can be 2 or 3 bytes.
- If it must be 3 bytes, set the CFvex3 flag.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>VEX prefixes can be 2 or 3 bytes.
+ If it must be 3 bytes, set the CFvex3 flag.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3025,11 +3025,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="isXMMstore" class="public" href="../../dmd/backend/cgxmm/is_xm_mstore.html">isXMMstore</a><span class="tableEntryAnnotation">(op)</span>
 								</code>
 							</td>
-							<td>Is operator a store operator?
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Is operator a store operator?
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3037,11 +3037,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="orthxmm" class="public" href="../../dmd/backend/cgxmm/orthxmm.html">orthxmm</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
-							<td>Do simple orthogonal operators for XMM registers.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Do simple orthogonal operators for XMM registers.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3049,11 +3049,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="xmmcnvt" class="public" href="../../dmd/backend/cgxmm/xmmcnvt.html">xmmcnvt</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
-							<td>Generate code for conversion using SSE2 instructions.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Generate code for conversion using SSE2 instructions.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3061,11 +3061,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="xmmeq" class="public" href="../../dmd/backend/cgxmm/xmmeq.html">xmmeq</a><span class="tableEntryAnnotation">(cdb, e, op, e1, e2, pretregs)</span>
 								</code>
 							</td>
-							<td>Generate code for an assignment using XMM registers.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Generate code for an assignment using XMM registers.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3073,12 +3073,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="xmmIsAligned" class="public" href="../../dmd/backend/cgxmm/xmm_is_aligned.html">xmmIsAligned</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>Determine if lvalue e is a vector aligned on a 16/32 byte boundary.
- Assume it to be aligned unless can prove it is not.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Determine if lvalue e is a vector aligned on a 16/32 byte boundary.
+ Assume it to be aligned unless can prove it is not.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3086,13 +3086,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="xmmload" class="public" href="../../dmd/backend/cgxmm/xmmload.html">xmmload</a><span class="tableEntryAnnotation">(tym, aligned)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Get correct load operator based on type.
  It is important to use the right one even if the number of bits moved is the same,
  as there are performance consequences for using the wrong one.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3100,11 +3100,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="xmmneg" class="public" href="../../dmd/backend/cgxmm/xmmneg.html">xmmneg</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
-							<td>Negate operator
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Negate operator
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3112,11 +3112,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="xmmopass" class="public" href="../../dmd/backend/cgxmm/xmmopass.html">xmmopass</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
-							<td>Generate code for op=
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Generate code for op=
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3124,11 +3124,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="xmmpost" class="public" href="../../dmd/backend/cgxmm/xmmpost.html">xmmpost</a><span class="tableEntryAnnotation">(cdb, e, pretregs)</span>
 								</code>
 							</td>
-							<td>Generate code for post increment and post decrement.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Generate code for post increment and post decrement.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3136,11 +3136,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="xmmstore" class="public" href="../../dmd/backend/cgxmm/xmmstore.html">xmmstore</a><span class="tableEntryAnnotation">(tym, aligned)</span>
 								</code>
 							</td>
-							<td>Get correct store operator based on type.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Get correct store operator based on type.
+</td>
 						</tr>
 					</table>
 				</section>

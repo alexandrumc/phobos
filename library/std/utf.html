@@ -3006,7 +3006,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3014,11 +3014,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="byCodeUnit" class="public" href="../std/utf/by_code_unit.html">byCodeUnit</a><span class="tableEntryAnnotation">(r)</span>
 								</code>
 							</td>
-							<td>Iterate a range of char, wchar, or dchars by code unit.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Iterate a range of char, wchar, or dchars by code unit.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3026,12 +3026,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="codeLength" class="public" href="../std/utf/code_length.html">codeLength</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
-							<td>Returns the number of code units that are required to encode the code point
-    <code class="lang-d"><a href="../std/utf/code_length.html#c"><span class="pln">c</span></a></code> when <code class="lang-d"><span class="pln">C</span></code> is the character type used to encode it.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns the number of code units that are required to encode the code point
+    <code class="lang-d"><a href="../std/utf/code_length.html#c"><span class="pln">c</span></a></code> when <code class="lang-d"><span class="pln">C</span></code> is the character type used to encode it.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3039,14 +3039,14 @@ $('#symbolSearchPane').show();</script>
 									<a id="codeLength" class="public" href="../std/utf/code_length.html">codeLength</a><span class="tableEntryAnnotation">(input)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Returns the number of code units that are required to encode <code class="lang-d"><span class="pln">str</span></code>
     in a string whose character type is <code class="lang-d"><span class="pln">C</span></code>. This is particularly useful
     when slicing one string with the length of another and the two string
     types use different character types.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3054,11 +3054,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="count" class="public" href="../std/utf/count.html">count</a><span class="tableEntryAnnotation">(str)</span>
 								</code>
 							</td>
-							<td>Returns the total number of code points encoded in <code class="lang-d"><a href="../std/utf/count.html#str"><span class="pln">str</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns the total number of code points encoded in <code class="lang-d"><a href="../std/utf/count.html#str"><span class="pln">str</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3066,20 +3066,23 @@ $('#symbolSearchPane').show();</script>
 									<a id="decode" class="public" href="../std/utf/decode.html">decode</a><span class="tableEntryAnnotation">(str, index)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Decodes and returns the code point starting at <code class="lang-d"><a href="../std/utf/decode.html#str"><span class="pln">str</span></a><span class="pun">[<a href="../std/utf/decode.html#index"></span><span class="pln">index</span></a><span class="pun">]</span></code>. <code class="lang-d"><a href="../std/utf/decode.html#index"><span class="pln">index</span></a></code>
     is advanced to one past the decoded code point. If the code point is not
     well-formed, then a <code class="lang-d"><a href="../std/utf/utf_exception.html"><span class="typ">UTFException</span></a></code> is thrown and <code class="lang-d"><a href="../std/utf/decode.html#index"><span class="pln">index</span></a></code> remains
     unchanged.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="decodeBack" class="public" href="../std/utf/decode_back.html">decodeBack</a><span class="tableEntryAnnotation">(str, numCodeUnits)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td><code class="lang-d"><span class="pln">decodeBack</span></code> is a variant of <code class="lang-d"><a href="../std/utf/decode.html"><span class="pln">decode</span></a></code> which specifically decodes
     the last code point. Unlike <code class="lang-d"><a href="../std/utf/decode.html"><span class="pln">decode</span></a></code>, <code class="lang-d"><span class="pln">decodeBack</span></code> accepts any
@@ -3088,15 +3091,15 @@ $('#symbolSearchPane').show();</script>
     decodes them. If <code class="lang-d"><a href="../std/utf/decode_back.html#numCodeUnits"><span class="pln">numCodeUnits</span></a></code> is passed in, it gets set to the number
     of code units which were in the code point which was decoded.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="decodeFront" class="public" href="../std/utf/decode_front.html">decodeFront</a><span class="tableEntryAnnotation">(str, numCodeUnits)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td><code class="lang-d"><span class="pln">decodeFront</span></code> is a variant of <code class="lang-d"><a href="../std/utf/decode.html"><span class="pln">decode</span></a></code> which specifically decodes
     the first code point. Unlike <code class="lang-d"><a href="../std/utf/decode.html"><span class="pln">decode</span></a></code>, <code class="lang-d"><span class="pln">decodeFront</span></code> accepts any
@@ -3106,9 +3109,6 @@ $('#symbolSearchPane').show();</script>
     decodes them. If <code class="lang-d"><a href="../std/utf/decode_front.html#numCodeUnits"><span class="pln">numCodeUnits</span></a></code> is passed in, it gets set to the number
     of code units which were in the code point which was decoded.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3116,14 +3116,14 @@ $('#symbolSearchPane').show();</script>
 									<a id="encode" class="public" href="../std/utf/encode.html">encode</a><span class="tableEntryAnnotation">(buf, c)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Encodes <code class="lang-d"><a href="../std/utf/encode.html#c"><span class="pln">c</span></a></code> into the static array, <code class="lang-d"><a href="../std/utf/encode.html#buf"><span class="pln">buf</span></a></code>, and returns the actual
     length of the encoded character (a number between <code class="lang-d"><span class="lit">1</span></code> and <code class="lang-d"><span class="lit">4</span></code> for
     <code class="lang-d"><span class="typ">char</span><span class="pun">[</span><span class="lit">4</span><span class="pun">]</span></code> buffers and a number between <code class="lang-d"><span class="lit">1</span></code> and <code class="lang-d"><span class="lit">2</span></code> for
     <code class="lang-d"><span class="typ">wchar</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]</span></code> buffers).
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3131,11 +3131,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="encode" class="public" href="../std/utf/encode.html">encode</a><span class="tableEntryAnnotation">(str, c)</span>
 								</code>
 							</td>
-							<td>Encodes <code class="lang-d"><a href="../std/utf/encode.html#c"><span class="pln">c</span></a></code> in <code class="lang-d"><a href="../std/utf/encode.html#str"><span class="pln">str</span></a></code>'s encoding and appends it to <code class="lang-d"><a href="../std/utf/encode.html#str"><span class="pln">str</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Encodes <code class="lang-d"><a href="../std/utf/encode.html#c"><span class="pln">c</span></a></code> in <code class="lang-d"><a href="../std/utf/encode.html#str"><span class="pln">str</span></a></code>'s encoding and appends it to <code class="lang-d"><a href="../std/utf/encode.html#str"><span class="pln">str</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3143,11 +3143,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="isValidDchar" class="public" href="../std/utf/is_valid_dchar.html">isValidDchar</a><span class="tableEntryAnnotation">(c)</span>
 								</code>
 							</td>
-							<td>Check whether the given Unicode code point is valid.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Check whether the given Unicode code point is valid.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3155,12 +3155,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="stride" class="public" href="../std/utf/stride.html">stride</a><span class="tableEntryAnnotation">(str, index)</span>
 								</code>
 							</td>
-							<td>Calculate the length of the UTF sequence starting at <code class="lang-d"><a href="../std/utf/stride.html#index"><span class="pln">index</span></a></code>
-    in <code class="lang-d"><a href="../std/utf/stride.html#str"><span class="pln">str</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Calculate the length of the UTF sequence starting at <code class="lang-d"><a href="../std/utf/stride.html#index"><span class="pln">index</span></a></code>
+    in <code class="lang-d"><a href="../std/utf/stride.html#str"><span class="pln">str</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3168,12 +3168,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="strideBack" class="public" href="../std/utf/stride_back.html">strideBack</a><span class="tableEntryAnnotation">(str, index)</span>
 								</code>
 							</td>
-							<td>Calculate the length of the UTF sequence ending one code unit before
-    <code class="lang-d"><a href="../std/utf/stride_back.html#index"><span class="pln">index</span></a></code> in <code class="lang-d"><a href="../std/utf/stride_back.html#str"><span class="pln">str</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Calculate the length of the UTF sequence ending one code unit before
+    <code class="lang-d"><a href="../std/utf/stride_back.html#index"><span class="pln">index</span></a></code> in <code class="lang-d"><a href="../std/utf/stride_back.html#str"><span class="pln">str</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3181,15 +3181,15 @@ $('#symbolSearchPane').show();</script>
 									<a id="toUCSindex" class="public" href="../std/utf/to_uc_sindex.html">toUCSindex</a><span class="tableEntryAnnotation">(str, index)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Given <code class="lang-d"><a href="../std/utf/to_uc_sindex.html#index"><span class="pln">index</span></a></code> into <code class="lang-d"><a href="../std/utf/to_uc_sindex.html#str"><span class="pln">str</span></a></code> and assuming that <code class="lang-d"><a href="../std/utf/to_uc_sindex.html#index"><span class="pln">index</span></a></code> is at the start
     of a UTF sequence, <code class="lang-d"><span class="pln">toUCSindex</span></code> determines the number of UCS characters
     up to <code class="lang-d"><a href="../std/utf/to_uc_sindex.html#index"><span class="pln">index</span></a></code>. So, <code class="lang-d"><a href="../std/utf/to_uc_sindex.html#index"><span class="pln">index</span></a></code> is the index of a code unit at the
     beginning of a code point, and the return value is how many code points into
     the string that that code point is.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3197,12 +3197,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="toUTF16" class="public" href="../std/utf/to_ut_f16.html">toUTF16</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
-							<td>Encodes the elements of <code class="lang-d"><a href="../std/utf/to_ut_f16.html#s"><span class="pln">s</span></a></code> to UTF-16 and returns a newly GC allocated
- <code class="lang-d"><span class="pln">wstring</span></code> of the elements.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Encodes the elements of <code class="lang-d"><a href="../std/utf/to_ut_f16.html#s"><span class="pln">s</span></a></code> to UTF-16 and returns a newly GC allocated
+ <code class="lang-d"><span class="pln">wstring</span></code> of the elements.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3210,11 +3210,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="toUTF16z" class="public" href="../std/utf/to_ut_f16z.html">toUTF16z</a><span class="tableEntryAnnotation">(str)</span>
 								</code>
 							</td>
-							<td><code class="lang-d"><span class="pln">toUTF16z</span></code> is a convenience function for <code class="lang-d"><a href="../std/utf/to_ut_fz.html"><span class="pln">toUTFz</span></a><span class="pun">!(</span><span class="kwd">const</span><span class="pun">(</span><span class="typ">wchar</span><span class="pun">)*)</span></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td><code class="lang-d"><span class="pln">toUTF16z</span></code> is a convenience function for <code class="lang-d"><a href="../std/utf/to_ut_fz.html"><span class="pln">toUTFz</span></a><span class="pun">!(</span><span class="kwd">const</span><span class="pun">(</span><span class="typ">wchar</span><span class="pun">)*)</span></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3222,12 +3222,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="toUTF32" class="public" href="../std/utf/to_ut_f32.html">toUTF32</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
-							<td>Encodes the elements of <code class="lang-d"><a href="../std/utf/to_ut_f32.html#s"><span class="pln">s</span></a></code> to UTF-32 and returns a newly GC allocated
- <code class="lang-d"><span class="pln">dstring</span></code> of the elements.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Encodes the elements of <code class="lang-d"><a href="../std/utf/to_ut_f32.html#s"><span class="pln">s</span></a></code> to UTF-32 and returns a newly GC allocated
+ <code class="lang-d"><span class="pln">dstring</span></code> of the elements.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3235,12 +3235,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="toUTF8" class="public" href="../std/utf/to_ut_f8.html">toUTF8</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
-							<td>Encodes the elements of <code class="lang-d"><a href="../std/utf/to_ut_f8.html#s"><span class="pln">s</span></a></code> to UTF-8 and returns a newly allocated
- string of the elements.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Encodes the elements of <code class="lang-d"><a href="../std/utf/to_ut_f8.html#s"><span class="pln">s</span></a></code> to UTF-8 and returns a newly allocated
+ string of the elements.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3248,13 +3248,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="toUTFindex" class="public" href="../std/utf/to_ut_findex.html">toUTFindex</a><span class="tableEntryAnnotation">(str, n)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Given a UCS index <code class="lang-d"><a href="../std/utf/to_ut_findex.html#n"><span class="pln">n</span></a></code> into <code class="lang-d"><a href="../std/utf/to_ut_findex.html#str"><span class="pln">str</span></a></code>, returns the UTF index.
     So, <code class="lang-d"><a href="../std/utf/to_ut_findex.html#n"><span class="pln">n</span></a></code> is how many code points into the string the code point is, and
     the array index of the code unit is returned.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3262,11 +3262,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="validate" class="public" href="../std/utf/validate.html">validate</a><span class="tableEntryAnnotation">(str)</span>
 								</code>
 							</td>
-							<td>Checks to see if <code class="lang-d"><a href="../std/utf/validate.html#str"><span class="pln">str</span></a></code> is well-formed unicode or not.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Checks to see if <code class="lang-d"><a href="../std/utf/validate.html#str"><span class="pln">str</span></a></code> is well-formed unicode or not.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3275,7 +3275,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3283,10 +3283,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="UTFException" class="public" href="../std/utf/utf_exception.html">UTFException</a>
 								</code>
 							</td>
-							<td>Exception thrown on errors in std.utf functions.
-</td>
 							<td>
 							</td>
+							<td>Exception thrown on errors in std.utf functions.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3295,7 +3295,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3303,13 +3303,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="toUTFz" class="public" href="../std/utf/to_ut_fz.html">toUTFz</a>
 								</code>
 							</td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 							<td>Returns a C-style zero-terminated string equivalent to <code class="lang-d"><span class="pln">str</span></code>. <code class="lang-d"><span class="pln">str</span></code>
     must not contain embedded <code class="lang-d"><span class="str">'\0'</span></code>'s as any C function will treat the first
     <code class="lang-d"><span class="str">'\0'</span></code> that it sees as the end of the string. If <code class="lang-d"><span class="pln">str<wbr/></span><span class="pun">.</span><span class="pln">empty</span></code> is
     <code class="lang-d"><span class="kwd">true</span></code>, then a string containing only <code class="lang-d"><span class="str">'\0'</span></code> is returned.
 </td>
-							<td><tdd class="canBeNogc"></tdd>
-							</td>
 						</tr>
 					</table>
 				</section>

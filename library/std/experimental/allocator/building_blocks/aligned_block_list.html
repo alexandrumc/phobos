@@ -2962,7 +2962,7 @@ and preserving a low degree of fragmentation by means of aligned allocations.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2970,14 +2970,14 @@ and preserving a low degree of fragmentation by means of aligned allocations.
 									<a id="AlignedBlockList" class="public" href="../../../../std/experimental/allocator/building_blocks/aligned_block_list/aligned_block_list.html">AlignedBlockList</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td><code class="lang-d"><span class="typ">AlignedBlockList</span></code> represents a wrapper around a chain of allocators, allowing for fast deallocations
 and preserving a low degree of fragmentation.
 The allocator holds internally a doubly linked list of <code class="lang-d"><span class="typ">Allocator</span></code> objects, which will serve allocations
 in a most-recently-used fashion. Most recent allocators used for <code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/aligned_block_list/aligned_block_list.allocate.html"><span class="pln">allocate</span></a></code> calls, will be
 moved to the front of the list.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2985,12 +2985,12 @@ moved to the front of the list.
 									<a id="SharedAlignedBlockList" class="public" href="../../../../std/experimental/allocator/building_blocks/aligned_block_list/shared_aligned_block_list.html">SharedAlignedBlockList</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td><code class="lang-d"><span class="typ">SharedAlignedBlockList</span></code> is the threadsafe version of <code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/aligned_block_list/aligned_block_list.html"><span class="typ">AlignedBlockList</span></a></code>.
 The <code class="lang-d"><span class="typ">Allocator</span></code> template parameter must refer a shared allocator.
 Also, <code class="lang-d"><span class="typ">ParentAllocator</span></code> must be a shared allocator, supporting <code class="lang-d"><span class="pln">alignedAllocate</span></code>.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>

@@ -2969,7 +2969,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2977,13 +2977,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="toArgTypes" class="public" href="../dmd/argtypes/to_arg_types.html">toArgTypes</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>This breaks a type down into 'simpler' types that can be passed to a function
  in registers, and returned in registers.
  It's highly platform dependent.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>

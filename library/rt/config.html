@@ -2991,13 +2991,16 @@ options specified through the environment or embedded in the executable.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="rt_configOption" class="public" href="../rt/config/rt_config_option.html">rt_configOption</a><span class="tableEntryAnnotation">(opt, dg, reverse)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>get a druntime config option using standard configuration options
       opt             name of the option to retrieve
@@ -3007,9 +3010,6 @@ options specified through the environment or embedded in the executable.
                       to allow overwriting settings in the delegate with values
                       from higher priority
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>

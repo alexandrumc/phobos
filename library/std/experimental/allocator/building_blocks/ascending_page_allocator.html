@@ -2959,7 +2959,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2967,13 +2967,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="AscendingPageAllocator" class="public" href="../../../../std/experimental/allocator/building_blocks/ascending_page_allocator/ascending_page_allocator.html">AscendingPageAllocator</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td><code class="lang-d"><span class="typ">AscendingPageAllocator</span></code> is a fast and safe allocator that rounds all allocations
 to multiples of the system's page size. It reserves a range of virtual addresses
 (using <code class="lang-d"><span class="pln">mmap</span></code> on Posix and <code class="lang-d"><span class="typ">VirtualAlloc</span></code> on Windows) and allocates memory at consecutive virtual
 addresses.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2981,10 +2981,10 @@ addresses.
 									<a id="SharedAscendingPageAllocator" class="public" href="../../../../std/experimental/allocator/building_blocks/ascending_page_allocator/shared_ascending_page_allocator.html">SharedAscendingPageAllocator</a>
 								</code>
 							</td>
-							<td><code class="lang-d"><span class="typ">SharedAscendingPageAllocator</span></code> is the threadsafe version of <code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/ascending_page_allocator/ascending_page_allocator.html"><span class="typ">AscendingPageAllocator</span></a></code>.
-</td>
 							<td>
 							</td>
+							<td><code class="lang-d"><span class="typ">SharedAscendingPageAllocator</span></code> is the threadsafe version of <code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/ascending_page_allocator/ascending_page_allocator.html"><span class="typ">AscendingPageAllocator</span></a></code>.
+</td>
 						</tr>
 					</table>
 				</section>

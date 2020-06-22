@@ -2973,7 +2973,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2981,14 +2981,14 @@ $('#symbolSearchPane').show();</script>
 									<a id="ensureStaticLinkTo" class="public" href="../dmd/delegatize/ensure_static_link_to.html">ensureStaticLinkTo</a><span class="tableEntryAnnotation">(s, p)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>See if context <code class="lang-d"><a href="../dmd/delegatize/ensure_static_link_to.html#s"><span class="pln">s</span></a></code> is nested within context <code class="lang-d"><a href="../dmd/delegatize/ensure_static_link_to.html#p"><span class="pln">p</span></a></code>, meaning
  it <code class="lang-d"><a href="../dmd/delegatize/ensure_static_link_to.html#p"><span class="pln">p</span></a></code> is reachable at runtime by walking the static links.
  If any of the intervening contexts are function literals,
  make sure they are delegates.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2996,11 +2996,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="lambdaCheckForNestedRef" class="public" href="../dmd/delegatize/lambda_check_for_nested_ref.html">lambdaCheckForNestedRef</a><span class="tableEntryAnnotation">(e, sc)</span>
 								</code>
 							</td>
-							<td>Look for references to variables in a scope enclosing the new function literal.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Look for references to variables in a scope enclosing the new function literal.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3008,11 +3008,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="toDelegate" class="public" href="../dmd/delegatize/to_delegate.html">toDelegate</a><span class="tableEntryAnnotation">(e, t, sc)</span>
 								</code>
 							</td>
-							<td>Convert expression into a delegate.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Convert expression into a delegate.
+</td>
 						</tr>
 					</table>
 				</section>

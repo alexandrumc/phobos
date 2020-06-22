@@ -2969,7 +2969,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2977,14 +2977,14 @@ $('#symbolSearchPane').show();</script>
 									<a id="toArgTypes_sysv_x64" class="public" href="../dmd/argtypes_sysv_x64/to_arg_types_sysv_x64.html">toArgTypes_sysv_x64</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>This breaks a type down into 'simpler' types that can be passed to a function
  in registers, and returned in registers.
  This is the implementation for the x86_64 System V ABI (not used for Win64),
  based on https://www.uclibc.org/docs/psABI-x86_64.pdf.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>

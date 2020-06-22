@@ -2970,7 +2970,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2978,11 +2978,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="constprop" class="public" href="../../dmd/backend/gother/constprop.html">constprop</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Constant Propagation
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Constant Propagation
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2990,13 +2990,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="copyprop" class="public" href="../../dmd/backend/gother/copyprop.html">copyprop</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Do copy propagation.
  Copy propagation elems are of the form OPvar=OPvar, and they are
  in go.expnod[].
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3004,13 +3004,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="deadvar" class="public" href="../../dmd/backend/gother/deadvar.html">deadvar</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Mark all dead variables. Only worry about register candidates.
  Compute live ranges for register candidates.
  Be careful not to compute live ranges for members of structures (CLMOS).
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3018,11 +3018,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="elimass" class="public" href="../../dmd/backend/gother/elimass.html">elimass</a><span class="tableEntryAnnotation">(n)</span>
 								</code>
 							</td>
-							<td>Remove side effect of assignment elem.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Remove side effect of assignment elem.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3030,11 +3030,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="find" class="public" href="../../dmd/backend/gother/find.html">find</a><span class="tableEntryAnnotation">(eds, e)</span>
 								</code>
 							</td>
-							<td>Find <code class="lang-d"><a href="../../dmd/backend/gother/find.html#e"><span class="pln">e</span></a></code> in Elemdata list.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Find <code class="lang-d"><a href="../../dmd/backend/gother/find.html#e"><span class="pln">e</span></a></code> in Elemdata list.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3042,11 +3042,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="listrds" class="public" href="../../dmd/backend/gother/listrds.html">listrds</a><span class="tableEntryAnnotation">(IN, e, f, rdlist)</span>
 								</code>
 							</td>
-							<td>Find all the reaching defs of OPvar e.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Find all the reaching defs of OPvar e.
+</td>
 						</tr>
 					</table>
 				</section>

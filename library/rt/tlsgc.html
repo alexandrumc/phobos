@@ -2959,7 +2959,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2967,12 +2967,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="destroy" class="public" href="../rt/tlsgc/destroy.html">destroy</a><span class="tableEntryAnnotation">(data)</span>
 								</code>
 							</td>
-							<td>Finalization hook, called FOR each thread. No assumptions about
- module initialization state should be made.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Finalization hook, called FOR each thread. No assumptions about
+ module initialization state should be made.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2980,12 +2980,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="init" class="public" href="../rt/tlsgc/init.html">init</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Initialization hook, called FROM each thread. No assumptions about
- module initialization state should be made.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Initialization hook, called FROM each thread. No assumptions about
+ module initialization state should be made.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2993,13 +2993,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="processGCMarks" class="public" href="../rt/tlsgc/process_gc_marks.html">processGCMarks</a><span class="tableEntryAnnotation">(data, dg)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>GC sweep hook, called FOR each thread. Can be used to free
  additional thread local memory or associated data structures. Note
  that only memory allocated from the GC can have marks.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3007,12 +3007,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="scan" class="public" href="../rt/tlsgc/scan.html">scan</a><span class="tableEntryAnnotation">(data, dg)</span>
 								</code>
 							</td>
-							<td>GC scan hook, called FOR each thread. Can be used to scan
- additional thread local memory.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>GC scan hook, called FOR each thread. Can be used to scan
+ additional thread local memory.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3021,7 +3021,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3029,10 +3029,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="Data" class="public" href="../rt/tlsgc/data.html">Data</a>
 								</code>
 							</td>
-							<td>Per thread record to store thread associated data for garbage collection.
-</td>
 							<td>
 							</td>
+							<td>Per thread record to store thread associated data for garbage collection.
+</td>
 						</tr>
 					</table>
 				</section>

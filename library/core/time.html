@@ -3014,7 +3014,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3022,11 +3022,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="abs" class="public" href="../core/time/abs.html">abs</a><span class="tableEntryAnnotation">(duration)</span>
 								</code>
 							</td>
-							<td>Returns the absolute value of a duration.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns the absolute value of a duration.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3034,11 +3034,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="convClockFreq" class="public" href="../core/time/conv_clock_freq.html">convClockFreq</a><span class="tableEntryAnnotation">(ticks, srcTicksPerSecond, dstTicksPerSecond)</span>
 								</code>
 							</td>
-							<td>Converts the given time from one clock frequency/resolution to another.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Converts the given time from one clock frequency/resolution to another.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3046,15 +3046,15 @@ $('#symbolSearchPane').show();</script>
 									<a id="convert" class="public" href="../core/time/convert.html">convert</a><span class="tableEntryAnnotation">(value)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Generic way of converting between two time units. Conversions to smaller
     units use truncating division. Years and months can be converted to each
     other, small units can be converted to each other, but years and months
     cannot be converted to or from smaller units (due to the varying number
     of days in a month or year).
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3062,12 +3062,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="dur" class="public" href="../core/time/dur.html">dur</a><span class="tableEntryAnnotation">(length)</span>
 								</code>
 							</td>
-							<td>These allow you to construct a <code class="lang-d"><a href="../core/time/duration.html"><span class="typ">Duration</span></a></code> from the given time units
-    with the given length.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>These allow you to construct a <code class="lang-d"><a href="../core/time/duration.html"><span class="typ">Duration</span></a></code> from the given time units
+    with the given length.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3075,11 +3075,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="nsecsToTicks" class="public" href="../core/time/nsecs_to_ticks.html">nsecsToTicks</a><span class="tableEntryAnnotation">(ticks)</span>
 								</code>
 							</td>
-							<td>The reverse of <code class="lang-d"><a href="../core/time/ticks_ton_secs.html"><span class="pln">ticksToNSecs</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>The reverse of <code class="lang-d"><a href="../core/time/ticks_ton_secs.html"><span class="pln">ticksToNSecs</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3087,12 +3087,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="ticksToNSecs" class="public" href="../core/time/ticks_ton_secs.html">ticksToNSecs</a><span class="tableEntryAnnotation">(ticks)</span>
 								</code>
 							</td>
-							<td>Convenience wrapper around <code class="lang-d"><a href="../core/time/conv_clock_freq.html"><span class="pln">convClockFreq</span></a></code> which converts ticks at
-    a clock frequency of <code class="lang-d"><span class="typ">MonoTime<wbr/></span><span class="pun">.</span><span class="pln">ticksPerSecond</span></code> to nanoseconds.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Convenience wrapper around <code class="lang-d"><a href="../core/time/conv_clock_freq.html"><span class="pln">convClockFreq</span></a></code> which converts ticks at
+    a clock frequency of <code class="lang-d"><span class="typ">MonoTime<wbr/></span><span class="pun">.</span><span class="pln">ticksPerSecond</span></code> to nanoseconds.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3100,12 +3100,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="to" class="public" href="../core/time/to.html">to</a><span class="tableEntryAnnotation">(td)</span>
 								</code>
 							</td>
-							<td>Converts a <code class="lang-d"><a href="../core/time/tick_duration.html"><span class="typ">TickDuration</span></a></code> to the given units as either an integral
-    value or a floating point value.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Converts a <code class="lang-d"><a href="../core/time/tick_duration.html"><span class="typ">TickDuration</span></a></code> to the given units as either an integral
+    value or a floating point value.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3114,7 +3114,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3122,10 +3122,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="TimeException" class="public" href="../core/time/time_exception.html">TimeException</a>
 								</code>
 							</td>
-							<td>Exception type used by core.time.
-</td>
 							<td>
 							</td>
+							<td>Exception type used by core.time.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3134,7 +3134,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3142,11 +3142,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="Duration" class="public" href="../core/time/duration.html">Duration</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Represents a duration of time of weeks or less (kept internally as hnsecs).
     (e.g. 22 days or 700 seconds).
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3154,16 +3154,18 @@ $('#symbolSearchPane').show();</script>
 									<a id="MonoTimeImpl" class="public" href="../core/time/mono_time_impl.html">MonoTimeImpl</a>
 								</code>
 							</td>
-							<td>Represents a timestamp of the system's monotonic clock.
-</td>
 							<td>
 							</td>
+							<td>Represents a timestamp of the system's monotonic clock.
+</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="TickDuration" class="public" href="../core/time/tick_duration.html">TickDuration</a>
 								</code>
+							</td>
+							<td>
 							</td>
 							<td><span class="red">Warning: TickDuration will be deprecated in the near future (once all
           uses of it in Phobos have been deprecated). Please use
@@ -3174,8 +3176,6 @@ $('#symbolSearchPane').show();</script>
            clock ticks) and that having multiple duration types is too awkward
           and confusing.</span>
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>
@@ -3184,7 +3184,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3192,12 +3192,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="ClockType" class="public" href="../core/time/clock_type.html">ClockType</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>What type of clock to use with <code class="lang-d"><a href="../core/time/mono_time.html"><span class="typ">MonoTime</span></a></code> / <code class="lang-d"><a href="../core/time/mono_time_impl.html"><span class="typ">MonoTimeImpl</span></a></code> or
     <code class="lang-d"><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">datetime<wbr/></span><span class="pun">.</span><span class="typ">Clock<wbr/></span><span class="pun">.</span><span class="pln">currTime</span></code>. They default to <code class="lang-d"><a href="../core/time/clock_type.html#normal"><span class="typ">ClockType<wbr/></span><span class="pun">.</span><span class="pln">normal</span></a></code>,
     and most programs do not need to ever deal with the others.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>

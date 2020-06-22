@@ -2971,7 +2971,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2979,20 +2979,23 @@ $('#symbolSearchPane').show();</script>
 									<a id="insertArgumentsFromResponse" class="public" href="../../dmd/root/response/insert_arguments_from_response.html">insertArgumentsFromResponse</a><span class="tableEntryAnnotation">(buffer, args, argIndex)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Take the contents of a response-file 'buffer', parse it and put the resulting
  arguments in 'args' at 'argIndex'. 'argIndex' will be updated to point just
  after the inserted arguments.
  The logic of this should match that in setargv()
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="responseExpandFrom" class="public" href="../../dmd/root/response/response_expand_from.html">responseExpandFrom</a><span class="tableEntryAnnotation">(args)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Expand any response files in command line.
  Response files are arguments that look like:
@@ -3006,9 +3009,6 @@ $('#symbolSearchPane').show();</script>
  A line comment can be started with #.
  Recursively expands nested response files.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>

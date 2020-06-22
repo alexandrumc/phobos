@@ -3001,13 +3001,16 @@ It contains generic sorting algorithms.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="completeSort" class="public" href="../../std/algorithm/sorting/complete_sort.html">completeSort</a><span class="tableEntryAnnotation">(lhs, rhs)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Sorts the random-access range <code class="lang-d"><span class="pln">chain</span><span class="pun">(<a href="../../std/algorithm/sorting/complete_sort.html#lhs"></span><span class="pln">lhs</span></a><span class="pun">, <a href="../../std/algorithm/sorting/complete_sort.html#rhs"></span><span class="pln">rhs</span></a><span class="pun">)</span></code> according to
 predicate <code class="lang-d"><span class="pln">less</span></code>. The left-hand side of the range <code class="lang-d"><a href="../../std/algorithm/sorting/complete_sort.html#lhs"><span class="pln">lhs</span></a></code> is
@@ -3017,9 +3020,6 @@ exact strategy chosen depends on the relative sizes of <code class="lang-d"><a h
 (best case) to <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pun">(</span><span class="pln">lhs<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">+ </span><span class="pln">rhs<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">) * </span><span class="pln">log</span><span class="pun">(</span><span class="pln">lhs<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">+
 </span><span class="pln">rhs<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code>)</span> (worst-case) evaluations of <code class="lang-d"><span class="pln">swap</span></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3027,10 +3027,10 @@ exact strategy chosen depends on the relative sizes of <code class="lang-d"><a h
 									<a id="isPartitioned" class="public" href="../../std/algorithm/sorting/is_partitioned.html">isPartitioned</a><span class="tableEntryAnnotation">(r)</span>
 								</code>
 							</td>
-							<td></td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3038,13 +3038,13 @@ exact strategy chosen depends on the relative sizes of <code class="lang-d"><a h
 									<a id="isSorted" class="public" href="../../std/algorithm/sorting/is_sorted.html">isSorted</a><span class="tableEntryAnnotation">(r)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Checks whether a <a href="../../std/range/primitives/is_forward_range.html" title="std.range.primitives.isForwardRange">forward range</a>
 is sorted according to the comparison operation <code class="lang-d"><span class="pln">less</span></code>. Performs <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>)</span>
 evaluations of <code class="lang-d"><span class="pln">less</span></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3052,19 +3052,22 @@ evaluations of <code class="lang-d"><span class="pln">less</span></code>.
 									<a id="isStrictlyMonotonic" class="public" href="../../std/algorithm/sorting/is_strictly_monotonic.html">isStrictlyMonotonic</a><span class="tableEntryAnnotation">(r)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Checks whether a <a href="../../std/range/primitives/is_forward_range.html" title="std.range.primitives.isForwardRange">forward range</a>
 is sorted according to the comparison operation <code class="lang-d"><span class="pln">less</span></code>. Performs <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>)</span>
 evaluations of <code class="lang-d"><span class="pln">less</span></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="makeIndex" class="public" href="../../std/algorithm/sorting/make_index.html">makeIndex</a><span class="tableEntryAnnotation">(r, index)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Computes an index for <code class="lang-d"><a href="../../std/algorithm/sorting/make_index.html#r"><span class="pln">r</span></a></code> based on the comparison <code class="lang-d"><span class="pln">less</span></code>. The
 index is a sorted array of pointers or indices into the original
@@ -3078,15 +3081,15 @@ extra indirection, and is always larger than a sorting-based solution
 because it needs space for the index in addition to the original
 collection. The complexity is the same as <code class="lang-d"><a href="../../std/algorithm/sorting/sort.html"><span class="pln">sort</span></a></code>'s.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="merge" class="public" href="../../std/algorithm/sorting/merge.html">merge</a><span class="tableEntryAnnotation">(rs)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Merge multiple sorted ranges <code class="lang-d"><a href="../../std/algorithm/sorting/merge.html#rs"><span class="pln">rs</span></a></code> with less-than predicate function <code class="lang-d"><span class="pln">pred</span></code>
    into one single sorted output range containing the sorted union of the
@@ -3096,9 +3099,6 @@ collection. The complexity is the same as <code class="lang-d"><a href="../../st
    <code class="lang-d"><span class="pln">length</span></code>. The element types of all the inputs must have a common type
    <code class="lang-d"><span class="typ">CommonType</span></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3106,12 +3106,12 @@ collection. The complexity is the same as <code class="lang-d"><a href="../../st
 									<a id="nextEvenPermutation" class="public" href="../../std/algorithm/sorting/next_even_permutation.html">nextEvenPermutation</a><span class="tableEntryAnnotation">(range)</span>
 								</code>
 							</td>
-							<td>Permutes <code class="lang-d"><a href="../../std/algorithm/sorting/next_even_permutation.html#range"><span class="pln">range</span></a></code> in-place to the next lexicographically greater <i>even</i>
- permutation.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Permutes <code class="lang-d"><a href="../../std/algorithm/sorting/next_even_permutation.html#range"><span class="pln">range</span></a></code> in-place to the next lexicographically greater <i>even</i>
+ permutation.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3119,18 +3119,21 @@ collection. The complexity is the same as <code class="lang-d"><a href="../../st
 									<a id="nextPermutation" class="public" href="../../std/algorithm/sorting/next_permutation.html">nextPermutation</a><span class="tableEntryAnnotation">(range)</span>
 								</code>
 							</td>
-							<td>Permutes <code class="lang-d"><a href="../../std/algorithm/sorting/next_permutation.html#range"><span class="pln">range</span></a></code> in-place to the next lexicographically greater
- permutation.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Permutes <code class="lang-d"><a href="../../std/algorithm/sorting/next_permutation.html#range"><span class="pln">range</span></a></code> in-place to the next lexicographically greater
+ permutation.
+</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="nthPermutation" class="public" href="../../std/algorithm/sorting/nth_permutation.html">nthPermutation</a><span class="tableEntryAnnotation">(range, perm)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Permutes <code class="lang-d"><a href="../../std/algorithm/sorting/nth_permutation.html#range"><span class="pln">range</span></a></code> into the <code class="lang-d"><a href="../../std/algorithm/sorting/nth_permutation.html#perm"><span class="pln">perm</span></a></code> permutation.
 The algorithm has a constant runtime complexity with respect to the number of
@@ -3141,9 +3144,6 @@ permuted.
 This algorithm uses the <a href="http://en.wikipedia.org/wiki/Lehmer_code">Lehmer
 Code</a>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3151,10 +3151,10 @@ Code</a>.
 									<a id="nthPermutationImpl" class="public" href="../../std/algorithm/sorting/nth_permutation_impl.html">nthPermutationImpl</a><span class="tableEntryAnnotation">(range, perm)</span>
 								</code>
 							</td>
-							<td></td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3162,13 +3162,13 @@ Code</a>.
 									<a id="ordered" class="public" href="../../std/algorithm/sorting/ordered.html">ordered</a><span class="tableEntryAnnotation">(values)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Like <code class="lang-d"><a href="../../std/algorithm/sorting/is_sorted.html"><span class="pln">isSorted</span></a></code>, returns <code class="lang-d"><span class="kwd">true</span></code> if the given <code class="lang-d"><a href="../../std/algorithm/sorting/ordered.html#values"><span class="pln">values</span></a></code> are ordered
 according to the comparison operation <code class="lang-d"><span class="pln">less</span></code>. Unlike <code class="lang-d"><a href="../../std/algorithm/sorting/is_sorted.html"><span class="pln">isSorted</span></a></code>, takes values
 directly instead of structured in a range.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3176,15 +3176,15 @@ directly instead of structured in a range.
 									<a id="partialSort" class="public" href="../../std/algorithm/sorting/partial_sort.html">partialSort</a><span class="tableEntryAnnotation">(r, n)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Reorders the random-access range <code class="lang-d"><a href="../../std/algorithm/sorting/partial_sort.html#r"><span class="pln">r</span></a></code> such that the range <code class="lang-d"><a href="../../std/algorithm/sorting/partial_sort.html#r"><span class="pln">r</span></a><span class="pun">[</span><span class="lit">0 </span><span class="pun">.. </span><span class="pln">mid</span><span class="pun">]</span></code>
 is the same as if the entire <code class="lang-d"><a href="../../std/algorithm/sorting/partial_sort.html#r"><span class="pln">r</span></a></code> were sorted, and leaves
 the range <code class="lang-d"><a href="../../std/algorithm/sorting/partial_sort.html#r"><span class="pln">r</span></a><span class="pun">[</span><span class="pln">mid </span><span class="pun">.. </span><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">]</span></code> in no particular order. Performs
 <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">* </span><span class="pln">log</span><span class="pun">(</span><span class="pln">mid</span><span class="pun">)</span></code>)</span> evaluations of <code class="lang-d"><span class="pln">pred</span></code>. The
 implementation simply calls <code class="lang-d"><a href="../../std/algorithm/sorting/top_n.html"><span class="pln">topN</span></a><span class="pun">!(</span><span class="pln">less</span><span class="pun">, </span><span class="pln">ss</span><span class="pun">)(<a href="../../std/algorithm/sorting/partial_sort.html#r"></span><span class="pln">r</span></a><span class="pun">, <a href="../../std/algorithm/sorting/partial_sort.html#n"></span><span class="pln">n</span></a><span class="pun">)</span></code> and then <code class="lang-d"><a href="../../std/algorithm/sorting/sort.html"><span class="pln">sort</span></a><span class="pun">!(</span><span class="pln">less</span><span class="pun">, </span><span class="pln">ss</span><span class="pun">)(<a href="../../std/algorithm/sorting/partial_sort.html#r"></span><span class="pln">r</span></a><span class="pun">[</span><span class="lit">0 </span><span class="pun">.. <a href="../../std/algorithm/sorting/partial_sort.html#n"></span><span class="pln">n</span></a><span class="pun">])</span></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3192,11 +3192,11 @@ implementation simply calls <code class="lang-d"><a href="../../std/algorithm/so
 									<a id="partialSort" class="public" href="../../std/algorithm/sorting/partial_sort.html">partialSort</a><span class="tableEntryAnnotation">(r1, r2)</span>
 								</code>
 							</td>
-							<td>Stores the smallest elements of the two ranges in the left-hand range in sorted order.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Stores the smallest elements of the two ranges in the left-hand range in sorted order.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3204,20 +3204,23 @@ implementation simply calls <code class="lang-d"><a href="../../std/algorithm/so
 									<a id="partition" class="public" href="../../std/algorithm/sorting/partition.html">partition</a><span class="tableEntryAnnotation">(r)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Partitions a range in two using the given <code class="lang-d"><span class="pln">predicate</span></code>.
 Specifically, reorders the range <code class="lang-d"><a href="../../std/algorithm/sorting/partition.html#r"><span class="pln">r</span></a><span class="pln"> </span><span class="pun">= [</span><span class="pln">left</span><span class="pun">, </span><span class="pln">right</span><span class="pun">class="pln"&gt;RPAREN</span><span class="pun"></span></code> using <code class="lang-d"><span class="pln">swap</span></code>
 such that all elements <code class="lang-d"><span class="pln">i</span></code> for which <code class="lang-d"><span class="pln">predicate</span><span class="pun">(</span><span class="pln">i</span><span class="pun">)</span></code> is <code class="lang-d"><span class="kwd">true</span></code> come
 before all elements <code class="lang-d"><span class="pln">j</span></code> for which <code class="lang-d"><span class="pln">predicate</span><span class="pun">(</span><span class="pln">j</span><span class="pun">)</span></code> returns <code class="lang-d"><span class="kwd">false</span></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="partition3" class="public" href="../../std/algorithm/sorting/partition3.html">partition3</a><span class="tableEntryAnnotation">(r, pivot)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Rearranges elements in <code class="lang-d"><a href="../../std/algorithm/sorting/partition3.html#r"><span class="pln">r</span></a></code> in three adjacent ranges and returns
 them. The first and leftmost range only contains elements in <code class="lang-d"><a href="../../std/algorithm/sorting/partition3.html#r"><span class="pln">r</span></a></code>
@@ -3227,9 +3230,6 @@ and rightmost range only contains elements in <code class="lang-d"><a href="../.
 than <code class="lang-d"><a href="../../std/algorithm/sorting/partition3.html#pivot"><span class="pln">pivot</span></a></code>. The less-than test is defined by the binary function
 <code class="lang-d"><span class="pln">less</span></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3237,19 +3237,22 @@ than <code class="lang-d"><a href="../../std/algorithm/sorting/partition3.html#p
 									<a id="pivotPartition" class="public" href="../../std/algorithm/sorting/pivot_partition.html">pivotPartition</a><span class="tableEntryAnnotation">(r, pivot)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Partitions <code class="lang-d"><a href="../../std/algorithm/sorting/pivot_partition.html#r"><span class="pln">r</span></a></code> around <code class="lang-d"><a href="../../std/algorithm/sorting/pivot_partition.html#pivot"><span class="pln">pivot</span></a></code> using comparison function <code class="lang-d"><span class="pln">less</span></code>, algorithm akin
 to <a href="https://en.wikipedia.org/wiki/Quicksort#Hoare_partition_scheme">Hoare partition</a>. Specifically, permutes elements of <code class="lang-d"><a href="../../std/algorithm/sorting/pivot_partition.html#r"><span class="pln">r</span></a></code> and returns
 an index <code class="lang-d"><span class="pln">k </span><span class="pun">&lt; </span><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length</span></code> such that:
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="schwartzSort" class="public" href="../../std/algorithm/sorting/schwartz_sort.html">schwartzSort</a><span class="tableEntryAnnotation">(r)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Alternative sorting method that should be used when comparing keys involves an
 expensive computation. Instead of using <code class="lang-d"><span class="pln">less</span><span class="pun">(</span><span class="pln">a</span><span class="pun">, </span><span class="pln">b</span><span class="pun">)</span></code> for comparing elements,
@@ -3259,9 +3262,6 @@ repeatedly computing it. Conversely, if the cost of <code class="lang-d"><span c
 compared to the cost of allocating and filling the precomputed array, <code class="lang-d"><a href="../../std/algorithm/sorting/sort.html"><span class="pln">sort</span></a></code>
 may be faster and therefore preferable.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3269,14 +3269,14 @@ may be faster and therefore preferable.
 									<a id="sort" class="public" href="../../std/algorithm/sorting/sort.html">sort</a><span class="tableEntryAnnotation">(r)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Sorts a random-access range according to the predicate <code class="lang-d"><span class="pln">less</span></code>. Performs
 <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">* </span><span class="pln">log</span><span class="pun">(</span><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code>)</span> evaluations of <code class="lang-d"><span class="pln">less</span></code>. If <code class="lang-d"><span class="pln">less</span></code> involves
 expensive computations on the sort key, it may be worthwhile to use
 <code class="lang-d"><a href="../../std/algorithm/sorting/schwartz_sort.html"><span class="pln">schwartzSort</span></a></code> instead.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3284,19 +3284,22 @@ expensive computations on the sort key, it may be worthwhile to use
 									<a id="strictlyOrdered" class="public" href="../../std/algorithm/sorting/strictly_ordered.html">strictlyOrdered</a><span class="tableEntryAnnotation">(values)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Like <code class="lang-d"><a href="../../std/algorithm/sorting/is_sorted.html"><span class="pln">isSorted</span></a></code>, returns <code class="lang-d"><span class="kwd">true</span></code> if the given <code class="lang-d"><a href="../../std/algorithm/sorting/strictly_ordered.html#values"><span class="pln">values</span></a></code> are ordered
 according to the comparison operation <code class="lang-d"><span class="pln">less</span></code>. Unlike <code class="lang-d"><a href="../../std/algorithm/sorting/is_sorted.html"><span class="pln">isSorted</span></a></code>, takes values
 directly instead of structured in a range.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="topN" class="public" href="../../std/algorithm/sorting/top_n.html">topN</a><span class="tableEntryAnnotation">(r, nth)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Reorders the range <code class="lang-d"><a href="../../std/algorithm/sorting/top_n.html#r"><span class="pln">r</span></a></code> using <code class="lang-d"><span class="pln">swap</span></code> such that <code class="lang-d"><a href="../../std/algorithm/sorting/top_n.html#r"><span class="pln">r</span></a><span class="pun">[<a href="../../std/algorithm/sorting/top_n.html#nth"></span><span class="pln">nth</span></a><span class="pun">]</span></code> refers
 to the element that would fall there if the range were fully
@@ -3308,9 +3311,6 @@ and all elements <code class="lang-d"><span class="pln">e2</span></code> from <c
 <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>)</span> (if unstable) or <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">* </span><span class="pln">log</span><span class="pun">(</span><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span></code>)</span>
 (if stable) evaluations of <code class="lang-d"><span class="pln">less</span></code> and <code class="lang-d"><span class="pln">swap</span></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3318,11 +3318,11 @@ and all elements <code class="lang-d"><span class="pln">e2</span></code> from <c
 									<a id="topN" class="public" href="../../std/algorithm/sorting/top_n.html">topN</a><span class="tableEntryAnnotation">(r1, r2)</span>
 								</code>
 							</td>
-							<td>Stores the smallest elements of the two ranges in the left-hand range.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Stores the smallest elements of the two ranges in the left-hand range.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3330,15 +3330,15 @@ and all elements <code class="lang-d"><span class="pln">e2</span></code> from <c
 									<a id="topNCopy" class="public" href="../../std/algorithm/sorting/top_n_copy.html">topNCopy</a><span class="tableEntryAnnotation">(source, target, sorted)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Copies the top <code class="lang-d"><span class="pln">n</span></code> elements of the
 <a href="../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a> <code class="lang-d"><a href="../../std/algorithm/sorting/top_n_copy.html#source"><span class="pln">source</span></a></code> into the
 random-access range <code class="lang-d"><a href="../../std/algorithm/sorting/top_n_copy.html#target"><span class="pln">target</span></a></code>, where <code class="lang-d"><span class="pln">n </span><span class="pun">= </span><span class="pln">target<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>.
 Elements of <code class="lang-d"><a href="../../std/algorithm/sorting/top_n_copy.html#source"><span class="pln">source</span></a></code> are not touched. If <code class="lang-d"><a href="../../std/algorithm/sorting/top_n_copy.html#sorted"><span class="pln">sorted</span></a></code> is <code class="lang-d"><span class="kwd">true</span></code>, the target is sorted. Otherwise, the target
 respects the <a href="http://en.wikipedia.org/wiki/Binary_heap">heap property</a>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3346,12 +3346,12 @@ respects the <a href="http://en.wikipedia.org/wiki/Binary_heap">heap property</a
 									<a id="topNIndex" class="public" href="../../std/algorithm/sorting/top_n_index.html">topNIndex</a><span class="tableEntryAnnotation">(r, index, sorted)</span>
 								</code>
 							</td>
-							<td>Given a range of elements, constructs an index of its top <i>n</i> elements
-(i.e., the first <i>n</i> elements if the range were sorted).
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Given a range of elements, constructs an index of its top <i>n</i> elements
+(i.e., the first <i>n</i> elements if the range were sorted).
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3360,13 +3360,15 @@ respects the <a href="http://en.wikipedia.org/wiki/Binary_heap">heap property</a
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="multiSort" class="public" href="../../std/algorithm/sorting/multi_sort.html">multiSort</a>
 								</code>
+							</td>
+							<td><tdd class="canBeNogc"></tdd>
 							</td>
 							<td>Sorts a range by multiple keys. The call <code class="lang-d"><a href="../../std/algorithm/sorting/multi_sort.multi_sort.html"><span class="pln">multiSort</span></a><span class="pun">!(</span><span class="str">"a.id &lt; b.id"</span><span class="pun">,
 </span><span class="str">"a.date &gt; b.date"</span><span class="pun">)(</span><span class="pln">r</span><span class="pun">)</span></code> sorts the range <code class="lang-d"><span class="pln">r</span></code> by <code class="lang-d"><span class="pln">id</span></code> ascending,
@@ -3375,8 +3377,6 @@ descending. Such a call is equivalent to <code class="lang-d"><a href="../../std
 &lt; b.id : a.date &gt; b.date"</span><span class="pun">(</span><span class="pln">r</span><span class="pun">)</span></code>, but <code class="lang-d"><a href="../../std/algorithm/sorting/multi_sort.multi_sort.html"><span class="pln">multiSort</span></a></code> is faster because it
 does fewer comparisons (in addition to being more convenient).
 </td>
-							<td><tdd class="canBeNogc"></tdd>
-							</td>
 						</tr>
 					</table>
 				</section>

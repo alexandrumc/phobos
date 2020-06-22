@@ -2966,7 +2966,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2974,18 +2974,21 @@ $('#symbolSearchPane').show();</script>
 									<a id="boolopt" class="public" href="../../dmd/backend/gdag/boolopt.html">boolopt</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Do optimizations based on if we know an expression is
- 0 or !=0, even though we don't know anything else.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Do optimizations based on if we know an expression is
+ 0 or !=0, even though we don't know anything else.
+</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="builddags" class="public" href="../../dmd/backend/gdag/builddags.html">builddags</a><span class="tableEntryAnnotation">()</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Build DAGs (basically find all the common subexpressions).
  Must be done after all other optimizations, because most
@@ -2998,9 +3001,6 @@ $('#symbolSearchPane').show();</script>
               unstick unprofitable common subexpressions
               (this is generally target-dependent)
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>

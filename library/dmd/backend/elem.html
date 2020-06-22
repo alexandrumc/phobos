@@ -2962,7 +2962,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2970,10 +2970,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_alignsize" class="public" href="../../dmd/backend/elem/el_alignsize.html">el_alignsize</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td></td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -2981,11 +2981,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_allbits" class="public" href="../../dmd/backend/elem/el_allbits.html">el_allbits</a><span class="tableEntryAnnotation">(e, bit)</span>
 								</code>
 							</td>
-							<td>Determine if constant e is all ones or all zeros.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Determine if constant e is all ones or all zeros.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2993,11 +2993,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_alloctmp" class="public" href="../../dmd/backend/elem/el_alloctmp.html">el_alloctmp</a><span class="tableEntryAnnotation">(ty)</span>
 								</code>
 							</td>
-							<td>Allocate a temporary, and return temporary elem.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Allocate a temporary, and return temporary elem.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3005,11 +3005,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_anydef" class="public" href="../../dmd/backend/elem/el_anydef.html">el_anydef</a><span class="tableEntryAnnotation">(ed, e)</span>
 								</code>
 							</td>
-							<td>Does any definition of lvalue ed appear in e?
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Does any definition of lvalue ed appear in e?
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3017,11 +3017,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_appears" class="public" href="../../dmd/backend/elem/el_appears.html">el_appears</a><span class="tableEntryAnnotation">(e, s)</span>
 								</code>
 							</td>
-							<td>Does symbol s appear in tree e?
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Does symbol s appear in tree e?
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3029,11 +3029,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_bint" class="public" href="../../dmd/backend/elem/el_bint.html">el_bint</a><span class="tableEntryAnnotation">(op, t, e1, e2)</span>
 								</code>
 							</td>
-							<td>Make a binary operator node.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Make a binary operator node.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3041,11 +3041,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_calloc" class="public" href="../../dmd/backend/elem/el_calloc.html">el_calloc</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Allocate an element.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Allocate an element.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3053,12 +3053,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_combine" class="public" href="../../dmd/backend/elem/el_combine.html">el_combine</a><span class="tableEntryAnnotation">(e1, e2)</span>
 								</code>
 							</td>
-							<td>Combine e1 and e2 with a comma-expression.
- Be careful about either or both being null.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Combine e1 and e2 with a comma-expression.
+ Be careful about either or both being null.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3066,12 +3066,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_combines" class="public" href="../../dmd/backend/elem/el_combines.html">el_combines</a><span class="tableEntryAnnotation">(args, length)</span>
 								</code>
 							</td>
-							<td>Do an array of parameters as a balanced
- binary tree.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Do an array of parameters as a balanced
+ binary tree.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3079,13 +3079,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_const" class="public" href="../../dmd/backend/elem/el_const.html">el_const</a><span class="tableEntryAnnotation">(ty, pconst)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Make a constant elem.
       ty      = type of elem
       *pconst = union of constant data
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3093,11 +3093,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_convert" class="public" href="../../dmd/backend/elem/el_convert.html">el_convert</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>Run through a tree converting it to CODGEN.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Run through a tree converting it to CODGEN.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3105,12 +3105,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_convfloat" class="public" href="../../dmd/backend/elem/el_convfloat.html">el_convfloat</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>Convert floating point constant to a read-only symbol.
- Needed iff floating point code can't load immediate constants.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Convert floating point constant to a read-only symbol.
+ Needed iff floating point code can't load immediate constants.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3118,12 +3118,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_convstring" class="public" href="../../dmd/backend/elem/el_convstring.html">el_convstring</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>Convert reference to a string to reference to a symbol
- stored in the static data segment.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Convert reference to a string to reference to a symbol
+ stored in the static data segment.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3131,12 +3131,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_convxmm" class="public" href="../../dmd/backend/elem/el_convxmm.html">el_convxmm</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>Convert vector constant to a read-only symbol.
- Needed iff vector code can't load immediate constants.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Convert vector constant to a read-only symbol.
+ Needed iff vector code can't load immediate constants.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3144,11 +3144,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_copy" class="public" href="../../dmd/backend/elem/el_copy.html">el_copy</a><span class="tableEntryAnnotation">(to, from)</span>
 								</code>
 							</td>
-							<td>Copy an element (not the tree!).
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Copy an element (not the tree!).
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3156,12 +3156,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_copytotmp" class="public" href="../../dmd/backend/elem/el_copytotmp.html">el_copytotmp</a><span class="tableEntryAnnotation">(pe)</span>
 								</code>
 							</td>
-							<td>Thin wrapper of exp2_copytotemp. Different from el_same,
- always makes a temporary.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Thin wrapper of exp2_copytotemp. Different from el_same,
+ always makes a temporary.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3169,12 +3169,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_copytree" class="public" href="../../dmd/backend/elem/el_copytree.html">el_copytree</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>Create and return a duplicate of e, including its leaves.
- No CSEs.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Create and return a duplicate of e, including its leaves.
+ No CSEs.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3182,11 +3182,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_countCommas" class="public" href="../../dmd/backend/elem/el_count_commas.html">el_countCommas</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>Count number of commas in the expression.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Count number of commas in the expression.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3194,11 +3194,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_ctor_dtor" class="public" href="../../dmd/backend/elem/el_ctor_dtor.html">el_ctor_dtor</a><span class="tableEntryAnnotation">(ec, ed, pedtor)</span>
 								</code>
 							</td>
-							<td>Create constructor/destructor pair of elems.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Create constructor/destructor pair of elems.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3206,10 +3206,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_depends" class="public" href="../../dmd/backend/elem/el_depends.html">el_depends</a><span class="tableEntryAnnotation">(ea, eb)</span>
 								</code>
 							</td>
-							<td></td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3217,13 +3217,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_dtor" class="public" href="../../dmd/backend/elem/el_dtor.html">el_dtor</a><span class="tableEntryAnnotation">(edtor, e)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Insert destructor information into tree.
       edtor   pointer to object being destructed
       e       code to do the destruction
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3231,11 +3231,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_free" class="public" href="../../dmd/backend/elem/el_free.html">el_free</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>Free element
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Free element
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3243,10 +3243,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_funcsideeff" class="public" href="../../dmd/backend/elem/el_funcsideeff.html">el_funcsideeff</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td></td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3254,11 +3254,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_init" class="public" href="../../dmd/backend/elem/el_init.html">el_init</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Initialize el package.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Initialize el package.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3266,11 +3266,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_isdependent" class="public" href="../../dmd/backend/elem/el_isdependent.html">el_isdependent</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>Is elem type-dependent or value-dependent?
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Is elem type-dependent or value-dependent?
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3278,11 +3278,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_longt" class="public" href="../../dmd/backend/elem/el_longt.html">el_longt</a><span class="tableEntryAnnotation">(t, val)</span>
 								</code>
 							</td>
-							<td>Make a constant node out of integral type.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Make a constant node out of integral type.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3290,10 +3290,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_match" class="public" href="../../dmd/backend/elem/el_match.html">el_match</a><span class="tableEntryAnnotation">(n1, n2)</span>
 								</code>
 							</td>
-							<td></td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3301,11 +3301,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_match2" class="public" href="../../dmd/backend/elem/el_match2.html">el_match2</a><span class="tableEntryAnnotation">(n1, n2)</span>
 								</code>
 							</td>
-							<td>Kludge on el_match(). Same, but ignore differences in OPconst.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Kludge on el_match(). Same, but ignore differences in OPconst.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3313,11 +3313,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_match3" class="public" href="../../dmd/backend/elem/el_match3.html">el_match3</a><span class="tableEntryAnnotation">(n1, n2)</span>
 								</code>
 							</td>
-							<td>Kludge on el_match(). Same, but ignore differences in type modifiers.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Kludge on el_match(). Same, but ignore differences in type modifiers.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3325,11 +3325,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_match4" class="public" href="../../dmd/backend/elem/el_match4.html">el_match4</a><span class="tableEntryAnnotation">(n1, n2)</span>
 								</code>
 							</td>
-							<td>Kludge on el_match(). Same, but ignore differences in spelling of var's.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Kludge on el_match(). Same, but ignore differences in spelling of var's.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3337,11 +3337,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_match5" class="public" href="../../dmd/backend/elem/el_match5.html">el_match5</a><span class="tableEntryAnnotation">(n1, n2)</span>
 								</code>
 							</td>
-							<td>Kludge on el_match(). Same, but regard signed/unsigned as equivalent.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Kludge on el_match(). Same, but regard signed/unsigned as equivalent.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3349,11 +3349,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_nparams" class="public" href="../../dmd/backend/elem/el_nparams.html">el_nparams</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>Return a list of the parameters.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Return a list of the parameters.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3361,11 +3361,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_opArray" class="public" href="../../dmd/backend/elem/el_op_array.html">el_opArray</a><span class="tableEntryAnnotation">(parray, e, op)</span>
 								</code>
 							</td>
-							<td>Fill an array with the ops.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Fill an array with the ops.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3373,11 +3373,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_opCombine" class="public" href="../../dmd/backend/elem/el_op_combine.html">el_opCombine</a><span class="tableEntryAnnotation">(args, length, op, ty)</span>
 								</code>
 							</td>
-							<td>Do an array of parameters as a tree
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Do an array of parameters as a tree
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3385,11 +3385,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_opN" class="public" href="../../dmd/backend/elem/el_op_n.html">el_opN</a><span class="tableEntryAnnotation">(e, op)</span>
 								</code>
 							</td>
-							<td>Return number of op nodes
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Return number of op nodes
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3397,11 +3397,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_pair" class="public" href="../../dmd/backend/elem/el_pair.html">el_pair</a><span class="tableEntryAnnotation">(tym, lo, hi)</span>
 								</code>
 							</td>
-							<td>Create a quad word out of two dwords.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Create a quad word out of two dwords.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3409,12 +3409,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_param" class="public" href="../../dmd/backend/elem/el_param.html">el_param</a><span class="tableEntryAnnotation">(e1, e2)</span>
 								</code>
 							</td>
-							<td>Combine e1 and e2 as parameters to a function.
- Be careful about either or both being null.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Combine e1 and e2 as parameters to a function.
+ Be careful about either or both being null.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3422,11 +3422,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_paramArray" class="public" href="../../dmd/backend/elem/el_param_array.html">el_paramArray</a><span class="tableEntryAnnotation">(parray, e)</span>
 								</code>
 							</td>
-							<td>Fill an array with the parameters.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Fill an array with the parameters.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3434,11 +3434,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_params" class="public" href="../../dmd/backend/elem/el_params.html">el_params</a><span class="tableEntryAnnotation">(e1)</span>
 								</code>
 							</td>
-							<td>Create parameter list, terminated by a null.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Create parameter list, terminated by a null.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3446,12 +3446,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_params" class="public" href="../../dmd/backend/elem/el_params.html">el_params</a><span class="tableEntryAnnotation">(args, length)</span>
 								</code>
 							</td>
-							<td>Do an array of parameters as a balanced
- binary tree.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Do an array of parameters as a balanced
+ binary tree.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3459,12 +3459,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_parent" class="public" href="../../dmd/backend/elem/el_parent.html">el_parent</a><span class="tableEntryAnnotation">(e, pe)</span>
 								</code>
 							</td>
-							<td>Find and return pointer to parent of e starting at *pe.
- Return null if can't find it.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Find and return pointer to parent of e starting at *pe.
+ Return null if can't find it.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3472,11 +3472,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_reset" class="public" href="../../dmd/backend/elem/el_reset.html">el_reset</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Initialize for another run through.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Initialize for another run through.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3484,12 +3484,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_returns" class="public" href="../../dmd/backend/elem/el_returns.html">el_returns</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>Determine if expression may return.
- Does not detect all cases, errs on the side of saying it returns.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Determine if expression may return.
+ Does not detect all cases, errs on the side of saying it returns.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3497,12 +3497,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_same" class="public" href="../../dmd/backend/elem/el_same.html">el_same</a><span class="tableEntryAnnotation">(pe)</span>
 								</code>
 							</td>
-							<td>Similar to el_copytree(e). But if e has any side effects, it's replaced
- with (tmp = e) and tmp is returned.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Similar to el_copytree(e). But if e has any side effects, it's replaced
+ with (tmp = e) and tmp is returned.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3510,11 +3510,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_scancommas" class="public" href="../../dmd/backend/elem/el_scancommas.html">el_scancommas</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>Scan down commas and return the controlling elem.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Scan down commas and return the controlling elem.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3522,11 +3522,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_selecte1" class="public" href="../../dmd/backend/elem/el_selecte1.html">el_selecte1</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>Select the e1 child of e.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Select the e1 child of e.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3534,11 +3534,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_selecte2" class="public" href="../../dmd/backend/elem/el_selecte2.html">el_selecte2</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>Select the e2 child of e.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Select the e2 child of e.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3546,11 +3546,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_settype" class="public" href="../../dmd/backend/elem/el_settype.html">el_settype</a><span class="tableEntryAnnotation">(e, t)</span>
 								</code>
 							</td>
-							<td>Set new type for elem.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Set new type for elem.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3558,10 +3558,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_sideeffect" class="public" href="../../dmd/backend/elem/el_sideeffect.html">el_sideeffect</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td></td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3569,11 +3569,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_signx32" class="public" href="../../dmd/backend/elem/el_signx32.html">el_signx32</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>Determine if constant e is a 32 bit or less value, or is a 32 bit value sign extended to 64 bits.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Determine if constant e is a 32 bit or less value, or is a 32 bit value sign extended to 64 bits.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3581,11 +3581,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_term" class="public" href="../../dmd/backend/elem/el_term.html">el_term</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Terminate el package.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Terminate el package.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3593,12 +3593,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_toldouble" class="public" href="../../dmd/backend/elem/el_toldouble.html">el_toldouble</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>Extract long double value from constant elem.
- Silently ignore types which are not floating point values.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Extract long double value from constant elem.
+ Silently ignore types which are not floating point values.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3606,11 +3606,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_tolong" class="public" href="../../dmd/backend/elem/el_tolong.html">el_tolong</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>Extract long value from constant elem.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Extract long value from constant elem.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3618,11 +3618,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_tolongt" class="public" href="../../dmd/backend/elem/el_tolongt.html">el_tolongt</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>Extract long value from constant parser elem.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Extract long value from constant parser elem.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3630,11 +3630,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_typesize" class="public" href="../../dmd/backend/elem/el_typesize.html">el_typesize</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
-							<td>Create elem that is the size of a type.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Create elem that is the size of a type.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3642,11 +3642,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_unat" class="public" href="../../dmd/backend/elem/el_unat.html">el_unat</a><span class="tableEntryAnnotation">(op, t, e1)</span>
 								</code>
 							</td>
-							<td>Make a unary operator node.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Make a unary operator node.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3654,11 +3654,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="el_zero" class="public" href="../../dmd/backend/elem/el_zero.html">el_zero</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
-							<td>Create an elem of the constant 0, of the type t.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Create an elem of the constant 0, of the type t.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3666,11 +3666,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="elem_print" class="public" href="../../dmd/backend/elem/elem_print.html">elem_print</a><span class="tableEntryAnnotation">(e, nestlevel)</span>
 								</code>
 							</td>
-							<td>Write out expression elem.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Write out expression elem.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3678,10 +3678,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="ERTOL" class="public" href="../../dmd/backend/elem/ertol.html">ERTOL</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td></td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3689,11 +3689,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="exp2_copytotemp" class="public" href="../../dmd/backend/elem/exp2_copytotemp.html">exp2_copytotemp</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>Replace (e) with ((stmp = e),stmp)
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Replace (e) with ((stmp = e),stmp)
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3701,15 +3701,15 @@ $('#symbolSearchPane').show();</script>
 									<a id="shrinkLongDoubleConstantIfPossible" class="public" href="../../dmd/backend/elem/shrink_long_double_constant_if_possible.html">shrinkLongDoubleConstantIfPossible</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>If e is a long double constant, and it is perfectly representable as a
  double constant, convert it to a double constant.
  Note that this must NOT be done in contexts where there are no further
  operations, since then it could change the type (eg, in the function call
  printf("%La", 2.0L); the 2.0 must stay as a long double).
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>
@@ -3718,7 +3718,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3726,9 +3726,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="STAB" class="public" href="../../dmd/backend/elem/stab.html">STAB</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 					</table>
 				</section>

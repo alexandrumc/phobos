@@ -2973,7 +2973,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2981,13 +2981,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="checkAccess" class="public" href="../dmd/access/check_access.html">checkAccess</a><span class="tableEntryAnnotation">(ad, loc, sc, smember)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Do access check for member of this class, this class being the
  type of the 'this' pointer used to access smember.
  Returns true if the member is not accessible.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2995,12 +2995,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="checkAccess" class="public" href="../dmd/access/check_access.html">checkAccess</a><span class="tableEntryAnnotation">(loc, sc, e, d)</span>
 								</code>
 							</td>
-							<td>Check access to d for expression e.d
- Returns true if the declaration is not accessible.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Check access to d for expression e.d
+ Returns true if the declaration is not accessible.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3008,11 +3008,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="checkAccess" class="public" href="../dmd/access/check_access.html">checkAccess</a><span class="tableEntryAnnotation">(sc, p)</span>
 								</code>
 							</td>
-							<td>Check access to package/module <code class="lang-d"><a href="../dmd/access/check_access.html#p"><span class="pln">p</span></a></code> from scope <code class="lang-d"><a href="../dmd/access/check_access.html#sc"><span class="pln">sc</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Check access to package/module <code class="lang-d"><a href="../dmd/access/check_access.html#p"><span class="pln">p</span></a></code> from scope <code class="lang-d"><a href="../dmd/access/check_access.html#sc"><span class="pln">sc</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3020,12 +3020,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="checkSymbolAccess" class="public" href="../dmd/access/check_symbol_access.html">checkSymbolAccess</a><span class="tableEntryAnnotation">(sc, s)</span>
 								</code>
 							</td>
-							<td>Check if a symbol is visible from a given scope without taking
- into account the most visible overload.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Check if a symbol is visible from a given scope without taking
+ into account the most visible overload.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3033,14 +3033,14 @@ $('#symbolSearchPane').show();</script>
 									<a id="mostVisibleOverload" class="public" href="../dmd/access/most_visible_overload.html">mostVisibleOverload</a><span class="tableEntryAnnotation">(s, mod)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Use the most visible overload to check visibility. Later perform an access
  check on the resolved overload.  This function is similar to overloadApply,
  but doesn't recurse nor resolve aliases because protection/visibility is an
  attribute of the alias not the aliasee.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3048,11 +3048,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="symbolIsVisible" class="public" href="../dmd/access/symbol_is_visible.html">symbolIsVisible</a><span class="tableEntryAnnotation">(mod, s)</span>
 								</code>
 							</td>
-							<td>Check whether symbols <code class="lang-d"><a href="../dmd/access/symbol_is_visible.html#s"><span class="pln">s</span></a></code> is visible in <code class="lang-d"><a href="../dmd/access/symbol_is_visible.html#mod"><span class="pln">mod</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Check whether symbols <code class="lang-d"><a href="../dmd/access/symbol_is_visible.html#s"><span class="pln">s</span></a></code> is visible in <code class="lang-d"><a href="../dmd/access/symbol_is_visible.html#mod"><span class="pln">mod</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3060,11 +3060,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="symbolIsVisible" class="public" href="../dmd/access/symbol_is_visible.html">symbolIsVisible</a><span class="tableEntryAnnotation">(origin, s)</span>
 								</code>
 							</td>
-							<td>Same as above, but determines the lookup module from symbols <code class="lang-d"><a href="../dmd/access/symbol_is_visible.html#origin"><span class="pln">origin</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Same as above, but determines the lookup module from symbols <code class="lang-d"><a href="../dmd/access/symbol_is_visible.html#origin"><span class="pln">origin</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3072,12 +3072,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="symbolIsVisible" class="public" href="../dmd/access/symbol_is_visible.html">symbolIsVisible</a><span class="tableEntryAnnotation">(sc, s)</span>
 								</code>
 							</td>
-							<td>Same as above but also checks for protected symbols visible from scope <code class="lang-d"><a href="../dmd/access/symbol_is_visible.html#sc"><span class="pln">sc</span></a></code>.
- Used for qualified name lookup.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Same as above but also checks for protected symbols visible from scope <code class="lang-d"><a href="../dmd/access/symbol_is_visible.html#sc"><span class="pln">sc</span></a></code>.
+ Used for qualified name lookup.
+</td>
 						</tr>
 					</table>
 				</section>

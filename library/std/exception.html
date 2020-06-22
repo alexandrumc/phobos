@@ -3053,7 +3053,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3061,14 +3061,14 @@ $('#symbolSearchPane').show();</script>
 									<a id="assertNotThrown" class="public" href="../std/exception/assert_not_thrown.html">assertNotThrown</a><span class="tableEntryAnnotation">(expression, msg, file, line)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Asserts that the given expression does <i>not</i> throw the given type
     of <code class="lang-d"><span class="typ">Throwable</span></code>. If a <code class="lang-d"><span class="typ">Throwable</span></code> of the given type is thrown,
     it is caught and does not escape assertNotThrown. Rather, an
     <code class="lang-d"><span class="typ">AssertError</span></code> is thrown. However, any other <code class="lang-d"><span class="typ">Throwable</span></code>s will escape.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3076,20 +3076,23 @@ $('#symbolSearchPane').show();</script>
 									<a id="assertThrown" class="public" href="../std/exception/assert_thrown.html">assertThrown</a><span class="tableEntryAnnotation">(expression, msg, file, line)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Asserts that the given expression throws the given type of <code class="lang-d"><span class="typ">Throwable</span></code>.
     The <code class="lang-d"><span class="typ">Throwable</span></code> is caught and does not escape assertThrown. However,
     any other <code class="lang-d"><span class="typ">Throwable</span></code>s <i>will</i> escape, and if no <code class="lang-d"><span class="typ">Throwable</span></code>
     of the given type is thrown, then an <code class="lang-d"><span class="typ">AssertError</span></code> is thrown.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="assumeUnique" class="public" href="../std/exception/assume_unique.html">assumeUnique</a><span class="tableEntryAnnotation">(array)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Casts a mutable array to an immutable array in an idiomatic
  manner. Technically, <code class="lang-d"><span class="pln">assumeUnique</span></code> just inserts a cast,
@@ -3101,9 +3104,6 @@ $('#symbolSearchPane').show();</script>
  (transitively), and that all future accesses will be done through
  the immutable array returned by <code class="lang-d"><span class="pln">assumeUnique</span></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3111,12 +3111,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="assumeWontThrow" class="public" href="../std/exception/assume_wont_throw.html">assumeWontThrow</a><span class="tableEntryAnnotation">(expr, msg, file, line)</span>
 								</code>
 							</td>
-							<td>Wraps a possibly-throwing expression in a <code class="lang-d"><span class="kwd">nothrow</span></code> wrapper so that it
- can be called by a <code class="lang-d"><span class="kwd">nothrow</span></code> function.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Wraps a possibly-throwing expression in a <code class="lang-d"><span class="kwd">nothrow</span></code> wrapper so that it
+ can be called by a <code class="lang-d"><span class="kwd">nothrow</span></code> function.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3124,13 +3124,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="collectException" class="public" href="../std/exception/collect_exception.html">collectException</a><span class="tableEntryAnnotation">(expression, result)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Catches and returns the exception thrown from the given expression.
     If no exception is thrown, then null is returned and <code class="lang-d"><a href="../std/exception/collect_exception.html#result"><span class="pln">result</span></a></code> is
     set to the result of the expression.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3138,13 +3138,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="collectException" class="public" href="../std/exception/collect_exception.html">collectException</a><span class="tableEntryAnnotation">(expression)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Catches and returns the exception thrown from the given expression.
     If no exception is thrown, then null is returned. <code class="lang-d"><span class="pln">E</span></code> can be
     <code class="lang-d"><span class="typ">void</span></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3152,13 +3152,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="collectExceptionMsg" class="public" href="../std/exception/collect_exception_msg.html">collectExceptionMsg</a><span class="tableEntryAnnotation">(expression)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Catches the exception thrown from the given expression and returns the
     msg property of that exception. If no exception is thrown, then null is
     returned. <code class="lang-d"><span class="pln">E</span></code> can be <code class="lang-d"><span class="typ">void</span></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3166,18 +3166,21 @@ $('#symbolSearchPane').show();</script>
 									<a id="doesPointTo" class="public" href="../std/exception/does_point_to.html">doesPointTo</a><span class="tableEntryAnnotation">(source, target)</span>
 								</code>
 							</td>
-							<td>Checks whether a given source object contains pointers or references to a given
-target object.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Checks whether a given source object contains pointers or references to a given
+target object.
+</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="enforce" class="public" href="../std/exception/enforce.html">enforce</a><span class="tableEntryAnnotation">(value, dg)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Enforces that the given value is true.
     If the given value is false, an exception is thrown.
@@ -3187,9 +3190,6 @@ target object.
         <li><code class="lang-d"><a href="../std/exception/enforce.html#ex"><span class="pln">ex</span></a></code> - custom exception to be thrown. It is <code class="lang-d"><span class="kwd">lazy</span></code> and is only created if an exception occurred</li>
     </ul>
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3197,11 +3197,11 @@ target object.
 									<a id="handle" class="public" href="../std/exception/handle.html">handle</a><span class="tableEntryAnnotation">(input)</span>
 								</code>
 							</td>
-							<td>Handle exceptions thrown from range primitives.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Handle exceptions thrown from range primitives.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3209,14 +3209,14 @@ target object.
 									<a id="ifThrown" class="public" href="../std/exception/if_thrown.html">ifThrown</a><span class="tableEntryAnnotation">(expression, errorHandler)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>ML-style functional exception handling. Runs the supplied expression and
     returns its result. If the expression throws a <code class="lang-d"><span class="typ">Throwable</span></code>, runs the
     supplied error handler instead and return its result. The error handler's
     type must be the same as the expression's type.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3224,12 +3224,12 @@ target object.
 									<a id="mayPointTo" class="public" href="../std/exception/may_point_to.html">mayPointTo</a><span class="tableEntryAnnotation">(source, target)</span>
 								</code>
 							</td>
-							<td>Checks whether a given source object contains pointers or references to a given
-target object.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Checks whether a given source object contains pointers or references to a given
+target object.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3238,7 +3238,7 @@ target object.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3246,10 +3246,10 @@ target object.
 									<a id="ErrnoException" class="public" href="../std/exception/errno_exception.html">ErrnoException</a>
 								</code>
 							</td>
-							<td>Thrown if errors that set <code class="lang-d"><a href="../std/exception/errno_exception.errno.html"><span class="pln">errno</span></a></code> occur.
-</td>
 							<td>
 							</td>
+							<td>Thrown if errors that set <code class="lang-d"><a href="../std/exception/errno_exception.errno.html"><span class="pln">errno</span></a></code> occur.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3258,7 +3258,7 @@ target object.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3266,12 +3266,12 @@ target object.
 									<a id="RangePrimitive" class="public" href="../std/exception/range_primitive.html">RangePrimitive</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>This <code class="lang-d"><span class="kwd">enum</span></code> is used to select the primitives of the range to handle by the
   <code class="lang-d"><a href="../std/exception/handle.html"><span class="pln">handle</span></a></code> range wrapper. The values of the <code class="lang-d"><span class="kwd">enum</span></code> can be <code class="lang-d"><span class="pln">OR</span></code>'d to
   select multiple primitives to be handled.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>
@@ -3280,7 +3280,7 @@ target object.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3288,16 +3288,18 @@ target object.
 									<a id="basicExceptionCtors" class="public" href="../std/exception/basic_exception_ctors.html">basicExceptionCtors</a>
 								</code>
 							</td>
-							<td>Convenience mixin for trivially sub-classing exceptions
-</td>
 							<td><tdd class="canBeNogc"></tdd>
 							</td>
+							<td>Convenience mixin for trivially sub-classing exceptions
+</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="enforce" class="public" href="../std/exception/enforce.html">enforce</a>
 								</code>
+							</td>
+							<td><tdd class="canBeNogc"></tdd>
 							</td>
 							<td>Enforces that the given value is true.
     If the given value is false, an exception is thrown.
@@ -3307,8 +3309,6 @@ target object.
         <li><code class="lang-d"><a href="../std/exception/enforce.html#ex"><span class="pln">ex</span></a></code> - custom exception to be thrown. It is <code class="lang-d"><span class="kwd">lazy</span></code> and is only created if an exception occurred</li>
     </ul>
 </td>
-							<td><tdd class="canBeNogc"></tdd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3316,10 +3316,10 @@ target object.
 									<a id="enforceEx" class="public" href="../std/exception/enforce_ex.html">enforceEx</a>
 								</code>
 							</td>
-							<td><span class="red">Deprecated. Please use <code class="lang-d"><a href="../std/exception/enforce.html"><span class="pln">enforce</span></a></code> instead. This function will be removed 2.089.</span>
-</td>
 							<td><tdd class="canBeNogc"></tdd>
 							</td>
+							<td><span class="red">Deprecated. Please use <code class="lang-d"><a href="../std/exception/enforce.html"><span class="pln">enforce</span></a></code> instead. This function will be removed 2.089.</span>
+</td>
 						</tr>
 					</table>
 				</section>

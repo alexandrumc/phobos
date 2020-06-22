@@ -2969,7 +2969,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2977,11 +2977,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="foreachExpAndVar" class="public" href="../dmd/foreachvar/foreach_exp_and_var.html">foreachExpAndVar</a><span class="tableEntryAnnotation">(s, dgExp, dgVar)</span>
 								</code>
 							</td>
-							<td>Transitively walk Statement s, pass Expressions to dgExp(), VarDeclarations to dgVar().
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Transitively walk Statement s, pass Expressions to dgExp(), VarDeclarations to dgVar().
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2989,11 +2989,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="foreachVar" class="public" href="../dmd/foreachvar/foreach_var.html">foreachVar</a><span class="tableEntryAnnotation">(e, dgVar)</span>
 								</code>
 							</td>
-							<td>Visit each Expression in e, and call dgVar() on each variable declared in it.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Visit each Expression in e, and call dgVar() on each variable declared in it.
+</td>
 						</tr>
 					</table>
 				</section>

@@ -2970,7 +2970,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2978,13 +2978,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="checkFrameAccess" class="public" href="../dmd/declaration/check_frame_access.html">checkFrameAccess</a><span class="tableEntryAnnotation">(loc, sc, ad, iStart)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Check to see the aggregate type is nested and its context pointer is
  accessible from the current scope.
  Returns true if error occurs.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2992,12 +2992,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="modifyFieldVar" class="public" href="../dmd/declaration/modify_field_var.html">modifyFieldVar</a><span class="tableEntryAnnotation">(loc, sc, var, e1)</span>
 								</code>
 							</td>
-							<td>Mark variable v as modified if it is inside a constructor that var
- is a field in.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Mark variable v as modified if it is inside a constructor that var
+ is a field in.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3005,10 +3005,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="ObjectNotFound" class="public" href="../dmd/declaration/object_not_found.html">ObjectNotFound</a><span class="tableEntryAnnotation">(id)</span>
 								</code>
 							</td>
-							<td></td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td></td>
 						</tr>
 					</table>
 				</section>
@@ -3017,7 +3017,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3025,9 +3025,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="AliasDeclaration" class="public" href="../dmd/declaration/alias_declaration.html">AliasDeclaration</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3035,9 +3035,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="Declaration" class="public" href="../dmd/declaration/declaration.html">Declaration</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3045,9 +3045,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="OverDeclaration" class="public" href="../dmd/declaration/over_declaration.html">OverDeclaration</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3055,10 +3055,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="SymbolDeclaration" class="public" href="../dmd/declaration/symbol_declaration.html">SymbolDeclaration</a>
 								</code>
 							</td>
-							<td>This is a shell around a back end symbol
-</td>
 							<td>
 							</td>
+							<td>This is a shell around a back end symbol
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3066,10 +3066,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="ThisDeclaration" class="public" href="../dmd/declaration/this_declaration.html">ThisDeclaration</a>
 								</code>
 							</td>
-							<td>For the "this" parameter to member functions
-</td>
 							<td>
 							</td>
+							<td>For the "this" parameter to member functions
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3077,9 +3077,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TupleDeclaration" class="public" href="../dmd/declaration/tuple_declaration.html">TupleDeclaration</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3087,9 +3087,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TypeInfoArrayDeclaration" class="public" href="../dmd/declaration/type_info_array_declaration.html">TypeInfoArrayDeclaration</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3097,9 +3097,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TypeInfoAssociativeArrayDeclaration" class="public" href="../dmd/declaration/type_info_associative_array_declaration.html">TypeInfoAssociativeArrayDeclaration</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3107,9 +3107,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TypeInfoClassDeclaration" class="public" href="../dmd/declaration/type_info_class_declaration.html">TypeInfoClassDeclaration</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3117,9 +3117,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TypeInfoConstDeclaration" class="public" href="../dmd/declaration/type_info_const_declaration.html">TypeInfoConstDeclaration</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3127,9 +3127,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TypeInfoDeclaration" class="public" href="../dmd/declaration/type_info_declaration.html">TypeInfoDeclaration</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3137,9 +3137,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TypeInfoDelegateDeclaration" class="public" href="../dmd/declaration/type_info_delegate_declaration.html">TypeInfoDelegateDeclaration</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3147,9 +3147,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TypeInfoEnumDeclaration" class="public" href="../dmd/declaration/type_info_enum_declaration.html">TypeInfoEnumDeclaration</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3157,9 +3157,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TypeInfoFunctionDeclaration" class="public" href="../dmd/declaration/type_info_function_declaration.html">TypeInfoFunctionDeclaration</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3167,9 +3167,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TypeInfoInterfaceDeclaration" class="public" href="../dmd/declaration/type_info_interface_declaration.html">TypeInfoInterfaceDeclaration</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3177,9 +3177,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TypeInfoInvariantDeclaration" class="public" href="../dmd/declaration/type_info_invariant_declaration.html">TypeInfoInvariantDeclaration</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3187,9 +3187,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TypeInfoPointerDeclaration" class="public" href="../dmd/declaration/type_info_pointer_declaration.html">TypeInfoPointerDeclaration</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3197,9 +3197,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TypeInfoSharedDeclaration" class="public" href="../dmd/declaration/type_info_shared_declaration.html">TypeInfoSharedDeclaration</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3207,9 +3207,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TypeInfoStaticArrayDeclaration" class="public" href="../dmd/declaration/type_info_static_array_declaration.html">TypeInfoStaticArrayDeclaration</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3217,9 +3217,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TypeInfoStructDeclaration" class="public" href="../dmd/declaration/type_info_struct_declaration.html">TypeInfoStructDeclaration</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3227,9 +3227,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TypeInfoTupleDeclaration" class="public" href="../dmd/declaration/type_info_tuple_declaration.html">TypeInfoTupleDeclaration</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3237,9 +3237,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TypeInfoVectorDeclaration" class="public" href="../dmd/declaration/type_info_vector_declaration.html">TypeInfoVectorDeclaration</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3247,9 +3247,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="TypeInfoWildDeclaration" class="public" href="../dmd/declaration/type_info_wild_declaration.html">TypeInfoWildDeclaration</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3257,9 +3257,9 @@ $('#symbolSearchPane').show();</script>
 									<a id="VarDeclaration" class="public" href="../dmd/declaration/var_declaration.html">VarDeclaration</a>
 								</code>
 							</td>
-							<td></td>
 							<td>
 							</td>
+							<td></td>
 						</tr>
 					</table>
 				</section>

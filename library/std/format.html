@@ -3008,7 +3008,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3016,11 +3016,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="format" class="public" href="../std/format/format.html">format</a><span class="tableEntryAnnotation">(fmt, args)</span>
 								</code>
 							</td>
-							<td>Format arguments into a string.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Format arguments into a string.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3028,12 +3028,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="formattedRead" class="public" href="../std/format/formatted_read.html">formattedRead</a><span class="tableEntryAnnotation">(r, args)</span>
 								</code>
 							</td>
-							<td>Reads characters from <a href="../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>
-<code class="lang-d"><a href="../std/format/formatted_read.html#r"><span class="pln">r</span></a></code>, converts them according to <code class="lang-d"><a href="../std/format/formatted_read.html#fmt"><span class="pln">fmt</span></a></code>, and writes them to <code class="lang-d"><a href="../std/format/formatted_read.html#args"><span class="pln">args</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Reads characters from <a href="../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>
+<code class="lang-d"><a href="../std/format/formatted_read.html#r"><span class="pln">r</span></a></code>, converts them according to <code class="lang-d"><a href="../std/format/formatted_read.html#fmt"><span class="pln">fmt</span></a></code>, and writes them to <code class="lang-d"><a href="../std/format/formatted_read.html#args"><span class="pln">args</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3041,14 +3041,14 @@ $('#symbolSearchPane').show();</script>
 									<a id="formattedWrite" class="public" href="../std/format/formatted_write.html">formattedWrite</a><span class="tableEntryAnnotation">(w, args)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Interprets variadic argument list <code class="lang-d"><a href="../std/format/formatted_write.html#args"><span class="pln">args</span></a></code>, formats them according
    to <code class="lang-d"><a href="../std/format/formatted_write.html#fmt"><span class="pln">fmt</span></a></code>, and sends the resulting characters to <code class="lang-d"><a href="../std/format/formatted_write.html#w"><span class="pln">w</span></a></code>. The
    encoding of the output is the same as <code class="lang-d"><span class="typ">Char</span></code>. The type <code class="lang-d"><span class="typ">Writer</span></code>
    must satisfy <code class="lang-d"><code class="lang-d"><a href="../std/range/primitives/is_output_range.html" title="std.range.primitives.isOutputRange"><span class="pln"><span class="pln">isOutputRange</span></span></a></code><span class="pun">!(</span><span class="typ">Writer</span><span class="pun">, </span><span class="typ">Char</span><span class="pun">)</span></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3056,11 +3056,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="formatValue" class="public" href="../std/format/format_value.html">formatValue</a><span class="tableEntryAnnotation">(w, val, f)</span>
 								</code>
 							</td>
-							<td>Formats any value into <code class="lang-d"><span class="typ">Char</span></code> accepting <code class="lang-d"><span class="typ">OutputRange</span></code>, using the given <code class="lang-d"><a href="../std/format/format_spec.html"><span class="typ">FormatSpec</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Formats any value into <code class="lang-d"><span class="typ">Char</span></code> accepting <code class="lang-d"><span class="typ">OutputRange</span></code>, using the given <code class="lang-d"><a href="../std/format/format_spec.html"><span class="typ">FormatSpec</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3068,12 +3068,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="sformat" class="public" href="../std/format/sformat.html">sformat</a><span class="tableEntryAnnotation">(buf, args)</span>
 								</code>
 							</td>
-							<td>Format arguments into buffer <i>buf</i> which must be large
- enough to hold the result.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Format arguments into buffer <i>buf</i> which must be large
+ enough to hold the result.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3081,12 +3081,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="singleSpec" class="public" href="../std/format/single_spec.html">singleSpec</a><span class="tableEntryAnnotation">(fmt)</span>
 								</code>
 							</td>
-							<td>Helper function that returns a <code class="lang-d"><a href="../std/format/format_spec.html"><span class="typ">FormatSpec</span></a></code> for a single specifier given
-in <code class="lang-d"><a href="../std/format/single_spec.html#fmt"><span class="pln">fmt</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Helper function that returns a <code class="lang-d"><a href="../std/format/format_spec.html"><span class="typ">FormatSpec</span></a></code> for a single specifier given
+in <code class="lang-d"><a href="../std/format/single_spec.html#fmt"><span class="pln">fmt</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3094,12 +3094,12 @@ in <code class="lang-d"><a href="../std/format/single_spec.html#fmt"><span class
 									<a id="unformatValue" class="public" href="../std/format/unformat_value.html">unformatValue</a><span class="tableEntryAnnotation">(input, spec)</span>
 								</code>
 							</td>
-							<td>Reads a value from the given input range according to spec
- and returns it as type <code class="lang-d"><span class="pln">T</span></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Reads a value from the given input range according to spec
+ and returns it as type <code class="lang-d"><span class="pln">T</span></code>.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3108,7 +3108,7 @@ in <code class="lang-d"><a href="../std/format/single_spec.html#fmt"><span class
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3116,10 +3116,10 @@ in <code class="lang-d"><a href="../std/format/single_spec.html#fmt"><span class
 									<a id="FormatException" class="public" href="../std/format/format_exception.html">FormatException</a>
 								</code>
 							</td>
-							<td>Signals a mismatch between a format and its corresponding argument.
-</td>
 							<td>
 							</td>
+							<td>Signals a mismatch between a format and its corresponding argument.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3128,7 +3128,7 @@ in <code class="lang-d"><a href="../std/format/single_spec.html#fmt"><span class
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3136,11 +3136,11 @@ in <code class="lang-d"><a href="../std/format/single_spec.html#fmt"><span class
 									<a id="FormatSpec" class="public" href="../std/format/format_spec.html">FormatSpec</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>A General handler for <code class="lang-d"><span class="pln">printf</span></code> style format specifiers. Used for building more
  specific formatting functions.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>

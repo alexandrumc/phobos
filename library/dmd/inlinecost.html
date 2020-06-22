@@ -2969,7 +2969,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2977,11 +2977,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="inlineCostExpression" class="public" href="../dmd/inlinecost/inline_cost_expression.html">inlineCostExpression</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>Determine cost of inlining Expression
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Determine cost of inlining Expression
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2989,11 +2989,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="inlineCostFunction" class="public" href="../dmd/inlinecost/inline_cost_function.html">inlineCostFunction</a><span class="tableEntryAnnotation">(fd, hasthis, hdrscan)</span>
 								</code>
 							</td>
-							<td>Determine cost of inlining function
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Determine cost of inlining function
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3001,13 +3001,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="isInlinableNestedAggregate" class="public" href="../dmd/inlinecost/is_inlinable_nested_aggregate.html">isInlinableNestedAggregate</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Indicates if a nested aggregate prevents or not a function to be inlined.
  It's used to compute the cost but also to avoid a copy of the aggregate
  while the inliner processes.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3015,11 +3015,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="tooCostly" class="public" href="../dmd/inlinecost/too_costly.html">tooCostly</a><span class="tableEntryAnnotation">(cost)</span>
 								</code>
 							</td>
-							<td>Determine if too expensive to inline.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Determine if too expensive to inline.
+</td>
 						</tr>
 					</table>
 				</section>

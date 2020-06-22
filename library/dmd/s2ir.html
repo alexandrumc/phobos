@@ -2969,7 +2969,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2977,21 +2977,24 @@ $('#symbolSearchPane').show();</script>
 									<a id="insertFinallyBlockCalls" class="public" href="../dmd/s2ir/insert_finally_block_calls.html">insertFinallyBlockCalls</a><span class="tableEntryAnnotation">(startblock)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Insert finally block calls when doing a goto from
  inside a try block to outside.
  Done after blocks are generated because then we know all
  the edges of the graph, but before the Bpred's are computed.
  Only for EH_DWARF exception unwinding.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="insertFinallyBlockGotos" class="public" href="../dmd/s2ir/insert_finally_block_gotos.html">insertFinallyBlockGotos</a><span class="tableEntryAnnotation">(startblock)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Insert gotos to finally blocks when doing a return or goto from
  inside a try block to outside.
@@ -3000,9 +3003,6 @@ $('#symbolSearchPane').show();</script>
  Only for functions with no exception handling.
  Very similar to insertFinallyBlockCalls().
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>

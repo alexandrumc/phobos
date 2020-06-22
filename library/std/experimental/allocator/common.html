@@ -2963,7 +2963,7 @@ appropriate parts of <code class="lang-d"><a href="../../../std.html"><span clas
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2971,15 +2971,15 @@ appropriate parts of <code class="lang-d"><a href="../../../std.html"><span clas
 									<a id="alignedReallocate" class="public" href="../../../std/experimental/allocator/common/aligned_reallocate.html">alignedReallocate</a><span class="tableEntryAnnotation">(alloc, b, s, a)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>The default <code class="lang-d"><span class="pln">alignedReallocate</span></code> function first attempts to use <code class="lang-d"><span class="pln">expand</span></code>.
 If <code class="lang-d"><span class="typ">Allocator<wbr/></span><span class="pun">.</span><span class="pln">expand</span></code> is not defined or returns <code class="lang-d"><span class="kwd">false</span></code>,  <code class="lang-d"><span class="pln">alignedReallocate</span></code> allocates a new block of memory of appropriate size and
 copies data from the old block to the new block. Finally, if <code class="lang-d"><span class="typ">Allocator</span></code>
 defines <code class="lang-d"><span class="pln">deallocate</span></code>, <code class="lang-d"><span class="pln">alignedReallocate</span></code> uses it to free the old memory
 block.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2987,11 +2987,11 @@ block.
 									<a id="forwardToMember" class="public" href="../../../std/experimental/allocator/common/forward_to_member.html">forwardToMember</a><span class="tableEntryAnnotation">(member, funs)</span>
 								</code>
 							</td>
-							<td>Forwards each of the methods in <code class="lang-d"><a href="../../../std/experimental/allocator/common/forward_to_member.html#funs"><span class="pln">funs</span></a></code> (if defined) to <code class="lang-d"><a href="../../../std/experimental/allocator/common/forward_to_member.html#member"><span class="pln">member</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Forwards each of the methods in <code class="lang-d"><a href="../../../std/experimental/allocator/common/forward_to_member.html#funs"><span class="pln">funs</span></a></code> (if defined) to <code class="lang-d"><a href="../../../std/experimental/allocator/common/forward_to_member.html#member"><span class="pln">member</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2999,12 +2999,12 @@ block.
 									<a id="goodAllocSize" class="public" href="../../../std/experimental/allocator/common/good_alloc_size.html">goodAllocSize</a><span class="tableEntryAnnotation">(a, n)</span>
 								</code>
 							</td>
-							<td>The default good size allocation is deduced as <code class="lang-d"><a href="../../../std/experimental/allocator/common/good_alloc_size.html#n"><span class="pln">n</span></a></code> rounded up to the
-allocator's alignment.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>The default good size allocation is deduced as <code class="lang-d"><a href="../../../std/experimental/allocator/common/good_alloc_size.html#n"><span class="pln">n</span></a></code> rounded up to the
+allocator's alignment.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3012,13 +3012,13 @@ allocator's alignment.
 									<a id="reallocate" class="public" href="../../../std/experimental/allocator/common/reallocate.html">reallocate</a><span class="tableEntryAnnotation">(a, b, s)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>The default <code class="lang-d"><span class="pln">reallocate</span></code> function first attempts to use <code class="lang-d"><span class="pln">expand</span></code>. If <code class="lang-d"><span class="typ">Allocator<wbr/></span><span class="pun">.</span><span class="pln">expand</span></code> is not defined or returns <code class="lang-d"><span class="kwd">false</span></code>, <code class="lang-d"><span class="pln">reallocate</span></code>
 allocates a new block of memory of appropriate size and copies data from the old
 block to the new block. Finally, if <code class="lang-d"><span class="typ">Allocator</span></code> defines <code class="lang-d"><span class="pln">deallocate</span></code>, <code class="lang-d"><span class="pln">reallocate</span></code> uses it to free the old memory block.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 					</table>
 				</section>

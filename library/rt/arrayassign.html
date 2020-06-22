@@ -2961,7 +2961,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2969,11 +2969,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="_d_arrayassign" class="public" href="../rt/arrayassign/_d_arrayassign.html">_d_arrayassign</a><span class="tableEntryAnnotation">(ti, from, to)</span>
 								</code>
 							</td>
-							<td>Keep for backward binary compatibility. This function can be removed in the future.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Keep for backward binary compatibility. This function can be removed in the future.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2981,13 +2981,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="_d_arrayassign_l" class="public" href="../rt/arrayassign/_d_arrayassign_l.html">_d_arrayassign_l</a><span class="tableEntryAnnotation">(ti, src, dst, ptmp)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Does array assignment (not construction) from another
  lvalue array of the same element type.
  Handles overlapping copies.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2995,12 +2995,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="_d_arrayassign_r" class="public" href="../rt/arrayassign/_d_arrayassign_r.html">_d_arrayassign_r</a><span class="tableEntryAnnotation">(ti, src, dst, ptmp)</span>
 								</code>
 							</td>
-							<td>Does array assignment (not construction) from another
- rvalue array of the same element type.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Does array assignment (not construction) from another
+ rvalue array of the same element type.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3008,13 +3008,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="_d_arrayctor" class="public" href="../rt/arrayassign/_d_arrayctor.html">_d_arrayctor</a><span class="tableEntryAnnotation">(ti, from, to)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Does array initialization (not assignment) from another
  array of the same element type.
  ti is the element type.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3022,12 +3022,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="_d_arraysetassign" class="public" href="../rt/arrayassign/_d_arraysetassign.html">_d_arraysetassign</a><span class="tableEntryAnnotation">(p, value, count, ti)</span>
 								</code>
 							</td>
-							<td>Do assignment to an array.
-      p[0 .. count] = value;
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Do assignment to an array.
+      p[0 .. count] = value;
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3035,12 +3035,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="_d_arraysetctor" class="public" href="../rt/arrayassign/_d_arraysetctor.html">_d_arraysetctor</a><span class="tableEntryAnnotation">(p, value, count, ti)</span>
 								</code>
 							</td>
-							<td>Do construction of an array.
-      ti[count] p = value;
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Do construction of an array.
+      ti[count] p = value;
+</td>
 						</tr>
 					</table>
 				</section>

@@ -2962,7 +2962,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2970,11 +2970,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="baseclass_find" class="public" href="../../dmd/backend/symbol/baseclass_find.html">baseclass_find</a><span class="tableEntryAnnotation">(bm, sbase)</span>
 								</code>
 							</td>
-							<td>Look down baseclass list to find sbase.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Look down baseclass list to find sbase.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2982,11 +2982,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="baseclass_nitems" class="public" href="../../dmd/backend/symbol/baseclass_nitems.html">baseclass_nitems</a><span class="tableEntryAnnotation">(b)</span>
 								</code>
 							</td>
-							<td>Calculate number of baseclasses in list.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Calculate number of baseclasses in list.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2994,12 +2994,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="freesymtab" class="public" href="../../dmd/backend/symbol/freesymtab.html">freesymtab</a><span class="tableEntryAnnotation">(stab, n1, n2)</span>
 								</code>
 							</td>
-							<td>Free up the symbol table, from symbols n1 through n2, not
- including n2.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Free up the symbol table, from symbols n1 through n2, not
+ including n2.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3007,13 +3007,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="meminit_free" class="public" href="../../dmd/backend/symbol/meminit_free.html">meminit_free</a><span class="tableEntryAnnotation">(m)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Delete symbol from symbol table, taking care to delete
  all children of a symbol.
  Make sure there are no more forward references (labels, tags).
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3021,11 +3021,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="symbol_add" class="public" href="../../dmd/backend/symbol/symbol_add.html">symbol_add</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
-							<td>Add symbol to current symbol array.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Add symbol to current symbol array.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3033,11 +3033,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="symbol_calloc" class="public" href="../../dmd/backend/symbol/symbol_calloc.html">symbol_calloc</a><span class="tableEntryAnnotation">(id)</span>
 								</code>
 							</td>
-							<td>Create a new symbol.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Create a new symbol.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3045,11 +3045,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="symbol_copy" class="public" href="../../dmd/backend/symbol/symbol_copy.html">symbol_copy</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
-							<td>Create a copy of a symbol.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Create a copy of a symbol.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3057,11 +3057,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="symbol_func" class="public" href="../../dmd/backend/symbol/symbol_func.html">symbol_func</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
-							<td>Add in the variants for a function symbol.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Add in the variants for a function symbol.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3069,11 +3069,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="symbol_funcalias" class="public" href="../../dmd/backend/symbol/symbol_funcalias.html">symbol_funcalias</a><span class="tableEntryAnnotation">(sf)</span>
 								</code>
 							</td>
-							<td>Create a symbol that is an alias to another function symbol.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Create a symbol that is an alias to another function symbol.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3081,11 +3081,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="symbol_genauto" class="public" href="../../dmd/backend/symbol/symbol_genauto.html">symbol_genauto</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
-							<td>Generate an auto symbol, and add it to the symbol table.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Generate an auto symbol, and add it to the symbol table.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3093,11 +3093,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="symbol_genauto" class="public" href="../../dmd/backend/symbol/symbol_genauto.html">symbol_genauto</a><span class="tableEntryAnnotation">(e)</span>
 								</code>
 							</td>
-							<td>Generate symbol into which we can copy the contents of expression e.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Generate symbol into which we can copy the contents of expression e.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3105,11 +3105,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="symbol_generate" class="public" href="../../dmd/backend/symbol/symbol_generate.html">symbol_generate</a><span class="tableEntryAnnotation">(sclass, t)</span>
 								</code>
 							</td>
-							<td>Create a symbol, give it a name, storage class and type.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Create a symbol, give it a name, storage class and type.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3117,11 +3117,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="symbol_ident" class="public" href="../../dmd/backend/symbol/symbol_ident.html">symbol_ident</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
-							<td>Get user name of symbol.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Get user name of symbol.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3129,11 +3129,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="symbol_insert" class="public" href="../../dmd/backend/symbol/symbol_insert.html">symbol_insert</a><span class="tableEntryAnnotation">(symtab, s, n)</span>
 								</code>
 							</td>
-							<td>Insert s into symtab at position n.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Insert s into symtab at position n.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3141,12 +3141,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="Symbol_isAffected" class="public" href="../../dmd/backend/symbol/symbol_is_affected.html">Symbol_isAffected</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
-							<td>Determine if <code class="lang-d"><a href="../../dmd/backend/symbol/symbol_is_affected.html#s"><span class="pln">s</span></a></code> may be affected if an assignment is done through
- a pointer.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Determine if <code class="lang-d"><a href="../../dmd/backend/symbol/symbol_is_affected.html#s"><span class="pln">s</span></a></code> may be affected if an assignment is done through
+ a pointer.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3154,11 +3154,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="symbol_name" class="public" href="../../dmd/backend/symbol/symbol_name.html">symbol_name</a><span class="tableEntryAnnotation">(name, sclass, t)</span>
 								</code>
 							</td>
-							<td>Create a symbol, given a name and type.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Create a symbol, given a name and type.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3166,11 +3166,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="Symbol_needThis" class="public" href="../../dmd/backend/symbol/symbol_need_this.html">Symbol_needThis</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
-							<td>Determine if symbol needs a 'this' pointer.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Determine if symbol needs a 'this' pointer.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3178,13 +3178,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="symbol_pointerType" class="public" href="../../dmd/backend/symbol/symbol_pointer_type.html">symbol_pointerType</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Determine pointer type needed to access a Symbol,
  essentially what type an OPrelconst should get
  for that Symbol.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3192,11 +3192,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="symbol_print" class="public" href="../../dmd/backend/symbol/symbol_print.html">symbol_print</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
-							<td>Type out symbol information.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Type out symbol information.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3204,11 +3204,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="symbol_reset" class="public" href="../../dmd/backend/symbol/symbol_reset.html">symbol_reset</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
-							<td>Reset Symbol so that it's now an "extern" to the next obj file being created.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Reset Symbol so that it's now an "extern" to the next obj file being created.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3216,11 +3216,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="Symbol_Salignsize" class="public" href="../../dmd/backend/symbol/symbol__salignsize.html">Symbol_Salignsize</a><span class="tableEntryAnnotation">(s)</span>
 								</code>
 							</td>
-							<td>Return alignment of symbol.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Return alignment of symbol.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3228,11 +3228,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="Symbol_Sisdead" class="public" href="../../dmd/backend/symbol/symbol__sisdead.html">Symbol_Sisdead</a><span class="tableEntryAnnotation">(s, anyInlineAsm)</span>
 								</code>
 							</td>
-							<td>Aver if Symbol is not only merely dead, but really most sincerely dead.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Aver if Symbol is not only merely dead, but really most sincerely dead.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3240,11 +3240,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="symbol_struct_addField" class="public" href="../../dmd/backend/symbol/symbol_struct_add_field.html">symbol_struct_addField</a><span class="tableEntryAnnotation">(s, name, t, offset)</span>
 								</code>
 							</td>
-							<td>Add a field to a struct s.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Add a field to a struct s.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3252,11 +3252,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="symtab_realloc" class="public" href="../../dmd/backend/symbol/symtab_realloc.html">symtab_realloc</a><span class="tableEntryAnnotation">(tab, symmax)</span>
 								</code>
 							</td>
-							<td>Allocate/free symbol table.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Allocate/free symbol table.
+</td>
 						</tr>
 					</table>
 				</section>

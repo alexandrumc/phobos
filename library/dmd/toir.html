@@ -2969,7 +2969,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2977,13 +2977,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="buildCapture" class="public" href="../dmd/toir/build_capture.html">buildCapture</a><span class="tableEntryAnnotation">(fd)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>build a debug info struct for variables captured by nested functions,
  but not in a closure.
  must be called after generating the function to fill stack offsets
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2991,15 +2991,15 @@ $('#symbolSearchPane').show();</script>
 									<a id="buildClosure" class="public" href="../dmd/toir/build_closure.html">buildClosure</a><span class="tableEntryAnnotation">(fd, irs)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Closures are implemented by taking the local variables that
  need to survive the scope of the function, and copying them
  into a gc allocated chuck of memory. That chunk, called the
  closure here, is inserted into the linked list of stack
  frames instead of the usual stack frame.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3007,17 +3007,20 @@ $('#symbolSearchPane').show();</script>
 									<a id="fixEthis2" class="public" href="../dmd/toir/fix_ethis2.html">fixEthis2</a><span class="tableEntryAnnotation">(ethis, fd, ctxt2)</span>
 								</code>
 							</td>
-							<td>Select one context pointer from a dual-context array
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Select one context pointer from a dual-context array
+</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="getEthis" class="public" href="../dmd/toir/get_ethis.html">getEthis</a><span class="tableEntryAnnotation">(loc, irs, fd, fdp, origSc)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Return elem that evaluates to the static frame pointer for function fd.
  If fd is a member function, the returned expression will compute the value
@@ -3026,9 +3029,6 @@ $('#symbolSearchPane').show();</script>
  'origSc' is the original scope we inlined from.
  This routine is critical for implementing nested functions.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3036,15 +3036,15 @@ $('#symbolSearchPane').show();</script>
 									<a id="getParentClosureType" class="public" href="../dmd/toir/get_parent_closure_type.html">getParentClosureType</a><span class="tableEntryAnnotation">(sthis, fd)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>for a nested function 'fd' return the type of the closure
  of an outer function or aggregate. If the function is a member function
  the 'this' type is expected to be stored in 'sthis.Sthis'.
  It is always returned if it is not a void pointer.
  buildClosure() must have been called on the outer function before.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3052,13 +3052,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="incUsageElem" class="public" href="../dmd/toir/inc_usage_elem.html">incUsageElem</a><span class="tableEntryAnnotation">(irs, loc)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Produce elem which increments the usage count for a particular line.
  Sets corresponding bit in bitmap <code class="lang-d"><span class="pln">m<wbr/></span><span class="pun">.</span><span class="pln">covb</span><span class="pun">[</span><span class="pln">linnum</span><span class="pun">]</span></code>.
  Used to implement -cov switch (coverage analysis).
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3066,11 +3066,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="intrinsic_op" class="public" href="../dmd/toir/intrinsic_op.html">intrinsic_op</a><span class="tableEntryAnnotation">(fd)</span>
 								</code>
 							</td>
-							<td>Convert intrinsic function to operator.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Convert intrinsic function to operator.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3078,12 +3078,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="resolveLengthVar" class="public" href="../dmd/toir/resolve_length_var.html">resolveLengthVar</a><span class="tableEntryAnnotation">(lengthVar, pe, t1)</span>
 								</code>
 							</td>
-							<td>Given an expression e that is an array,
- determine and set the 'length' variable.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Given an expression e that is an array,
+ determine and set the 'length' variable.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3091,12 +3091,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="retStyle" class="public" href="../dmd/toir/ret_style.html">retStyle</a><span class="tableEntryAnnotation">(tf, needsThis)</span>
 								</code>
 							</td>
-							<td>Determine return style of function - whether in registers or
- through a hidden pointer to the caller's stack.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Determine return style of function - whether in registers or
+ through a hidden pointer to the caller's stack.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3104,15 +3104,15 @@ $('#symbolSearchPane').show();</script>
 									<a id="setClosureVarOffset" class="public" href="../dmd/toir/set_closure_var_offset.html">setClosureVarOffset</a><span class="tableEntryAnnotation">(fd)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Go through the variables in function fd that are
  to be allocated in a closure, and set the .offset fields
  for those variables to their positions relative to the start
  of the closure instance.
  Also turns off nrvo for closure variables.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3120,12 +3120,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="setEthis" class="public" href="../dmd/toir/set_ethis.html">setEthis</a><span class="tableEntryAnnotation">(loc, irs, ey, ad, setthis2)</span>
 								</code>
 							</td>
-							<td>Initialize the hidden aggregate member, vthis, with
- the context pointer.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Initialize the hidden aggregate member, vthis, with
+ the context pointer.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3134,7 +3134,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3142,10 +3142,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="IRState" class="public" href="../dmd/toir/ir_state.html">IRState</a>
 								</code>
 							</td>
-							<td>Collect state variables needed by the intermediate representation (IR)
-</td>
 							<td>
 							</td>
+							<td>Collect state variables needed by the intermediate representation (IR)
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3153,10 +3153,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="Label" class="public" href="../dmd/toir/label.html">Label</a>
 								</code>
 							</td>
-							<td>Our label symbol
-</td>
 							<td>
 							</td>
+							<td>Our label symbol
+</td>
 						</tr>
 					</table>
 				</section>

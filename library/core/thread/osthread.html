@@ -2962,7 +2962,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2970,12 +2970,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="createLowLevelThread" class="public" href="../../core/thread/osthread/create_low_level_thread.html">createLowLevelThread</a><span class="tableEntryAnnotation">(dg, stacksize, cbDllUnload)</span>
 								</code>
 							</td>
-							<td>Create a thread not under control of the runtime, i.e. TLS module constructors are
- not run and the GC does not suspend it during a collection.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Create a thread not under control of the runtime, i.e. TLS module constructors are
+ not run and the GC does not suspend it during a collection.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2983,11 +2983,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="findLowLevelThread" class="public" href="../../core/thread/osthread/find_low_level_thread.html">findLowLevelThread</a><span class="tableEntryAnnotation">(tid)</span>
 								</code>
 							</td>
-							<td>Check whether a thread was created by <code class="lang-d"><a href="../../core/thread/osthread/create_low_level_thread.html"><span class="pln">createLowLevelThread</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Check whether a thread was created by <code class="lang-d"><a href="../../core/thread/osthread/create_low_level_thread.html"><span class="pln">createLowLevelThread</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2995,11 +2995,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="joinLowLevelThread" class="public" href="../../core/thread/osthread/join_low_level_thread.html">joinLowLevelThread</a><span class="tableEntryAnnotation">(tid)</span>
 								</code>
 							</td>
-							<td>Wait for a thread created with <code class="lang-d"><a href="../../core/thread/osthread/create_low_level_thread.html"><span class="pln">createLowLevelThread</span></a></code> to terminate.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Wait for a thread created with <code class="lang-d"><a href="../../core/thread/osthread/create_low_level_thread.html"><span class="pln">createLowLevelThread</span></a></code> to terminate.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3007,12 +3007,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="thread_attachThis" class="public" href="../../core/thread/osthread/thread_attach_this.html">thread_attachThis</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Registers the calling thread for use with the D Runtime.  If this routine
- is called for a thread which is already registered, no action is performed.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Registers the calling thread for use with the D Runtime.  If this routine
+ is called for a thread which is already registered, no action is performed.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3020,12 +3020,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="thread_detachByAddr" class="public" href="../../core/thread/osthread/thread_detach_by_addr.html">thread_detachByAddr</a><span class="tableEntryAnnotation">(addr)</span>
 								</code>
 							</td>
-							<td>Deregisters the given thread from use with the runtime.  If this routine
- is called for a thread which is not registered, the result is undefined.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Deregisters the given thread from use with the runtime.  If this routine
+ is called for a thread which is not registered, the result is undefined.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3033,12 +3033,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="thread_detachInstance" class="public" href="../../core/thread/osthread/thread_detach_instance.html">thread_detachInstance</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
-							<td>Deregisters the given thread from use with the runtime.  If this routine
- is called for a thread which is not registered, the result is undefined.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Deregisters the given thread from use with the runtime.  If this routine
+ is called for a thread which is not registered, the result is undefined.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3046,12 +3046,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="thread_detachThis" class="public" href="../../core/thread/osthread/thread_detach_this.html">thread_detachThis</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Deregisters the calling thread from use with the runtime.  If this routine
- is called for a thread which is not registered, the result is undefined.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Deregisters the calling thread from use with the runtime.  If this routine
+ is called for a thread which is not registered, the result is undefined.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3059,13 +3059,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="thread_enterCriticalRegion" class="public" href="../../core/thread/osthread/thread_enter_critical_region.html">thread_enterCriticalRegion</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Signals that the code following this call is a critical region. Any code in
  this region must finish running before the calling thread can be suspended
  by a call to thread_suspendAll.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3073,12 +3073,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="thread_exitCriticalRegion" class="public" href="../../core/thread/osthread/thread_exit_critical_region.html">thread_exitCriticalRegion</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Signals that the calling thread is no longer in a critical region. Following
- a call to this function, the thread can once again be suspended.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Signals that the calling thread is no longer in a critical region. Following
+ a call to this function, the thread can once again be suspended.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3086,11 +3086,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="thread_findByAddr" class="public" href="../../core/thread/osthread/thread_find_by_addr.html">thread_findByAddr</a><span class="tableEntryAnnotation">(addr)</span>
 								</code>
 							</td>
-							<td>Search the list of all threads for a thread with the given thread identifier.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Search the list of all threads for a thread with the given thread identifier.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3098,11 +3098,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="thread_inCriticalRegion" class="public" href="../../core/thread/osthread/thread_in_critical_region.html">thread_inCriticalRegion</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Returns true if the current thread is in a critical region; otherwise, false.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns true if the current thread is in a critical region; otherwise, false.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3110,13 +3110,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="thread_init" class="public" href="../../core/thread/osthread/thread_init.html">thread_init</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Initializes the thread module.  This function must be called by the
  garbage collector on startup and before any other thread routines
  are called.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3124,10 +3124,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="thread_isMainThread" class="public" href="../../core/thread/osthread/thread_is_main_thread.html">thread_isMainThread</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td></td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3135,13 +3135,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="thread_joinAll" class="public" href="../../core/thread/osthread/thread_join_all.html">thread_joinAll</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Joins all non-daemon threads that are currently running.  This is done by
  performing successive scans through the thread list until a scan consists
  of only daemon threads.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3149,14 +3149,14 @@ $('#symbolSearchPane').show();</script>
 									<a id="thread_processGCMarks" class="public" href="../../core/thread/osthread/thread_process_gc_marks.html">thread_processGCMarks</a><span class="tableEntryAnnotation">(isMarked)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>This routine allows the runtime to process any special per-thread handling
  for the GC.  This is needed for taking into account any memory that is
  referenced by non-scanned pointers but is about to be freed.  That currently
  means the array append cache.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3164,13 +3164,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="thread_resumeAll" class="public" href="../../core/thread/osthread/thread_resume_all.html">thread_resumeAll</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Resume all threads but the calling thread for "stop the world" garbage
  collection runs.  This function must be called once for each preceding
  call to thread_suspendAll before the threads are actually resumed.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3178,12 +3178,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="thread_scanAll" class="public" href="../../core/thread/osthread/thread_scan_all.html">thread_scanAll</a><span class="tableEntryAnnotation">(scan)</span>
 								</code>
 							</td>
-							<td>The main entry point for garbage collection.  The supplied delegate
- will be passed ranges representing both stack and register values.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>The main entry point for garbage collection.  The supplied delegate
+ will be passed ranges representing both stack and register values.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3191,12 +3191,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="thread_scanAllType" class="public" href="../../core/thread/osthread/thread_scan_all_type.html">thread_scanAllType</a><span class="tableEntryAnnotation">(scan)</span>
 								</code>
 							</td>
-							<td>The main entry point for garbage collection.  The supplied delegate
- will be passed ranges representing both stack and register values.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>The main entry point for garbage collection.  The supplied delegate
+ will be passed ranges representing both stack and register values.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3204,14 +3204,14 @@ $('#symbolSearchPane').show();</script>
 									<a id="thread_setGCSignals" class="public" href="../../core/thread/osthread/thread_set_gc_signals.html">thread_setGCSignals</a><span class="tableEntryAnnotation">(suspendSignalNo, resumeSignalNo)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Instruct the thread module, when initialized, to use a different set of
  signals besides SIGUSR1 and SIGUSR2 for suspension and resumption of threads.
  This function should be called at most once, prior to thread_init().
  This function is Posix-only.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3219,15 +3219,15 @@ $('#symbolSearchPane').show();</script>
 									<a id="thread_setThis" class="public" href="../../core/thread/osthread/thread_set_this.html">thread_setThis</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Sets the current thread to a specific reference. Only to be used
  when dealing with externally-created threads (in e.g. C code).
  The primary use of this function is when Thread.getThis() must
  return a sensible value in, for example, TLS destructors. In
  other words, don't touch this unless you know what you're doing.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3235,12 +3235,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="thread_stackBottom" class="public" href="../../core/thread/osthread/thread_stack_bottom.html">thread_stackBottom</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Returns the stack bottom of the currently active stack within the calling
- thread.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns the stack bottom of the currently active stack within the calling
+ thread.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3248,12 +3248,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="thread_stackTop" class="public" href="../../core/thread/osthread/thread_stack_top.html">thread_stackTop</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Returns the stack top of the currently active stack within the calling
- thread.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns the stack top of the currently active stack within the calling
+ thread.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3261,14 +3261,14 @@ $('#symbolSearchPane').show();</script>
 									<a id="thread_suspendAll" class="public" href="../../core/thread/osthread/thread_suspend_all.html">thread_suspendAll</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Suspend all threads but the calling thread for "stop the world" garbage
  collection runs.  This function may be called multiple times, and must
  be followed by a matching number of calls to thread_resumeAll before
  processing is resumed.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3276,12 +3276,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="thread_term" class="public" href="../../core/thread/osthread/thread_term.html">thread_term</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Terminates the thread module. No other thread routine may be called
- afterwards.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Terminates the thread module. No other thread routine may be called
+ afterwards.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3290,13 +3290,15 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="Thread" class="public" href="../../core/thread/osthread/thread.html">Thread</a>
 								</code>
+							</td>
+							<td>
 							</td>
 							<td>This class encapsulates all threading functionality for the D
  programming language.  As thread manipulation is a required facility
@@ -3305,8 +3307,6 @@ $('#symbolSearchPane').show();</script>
  A new thread may be created using either derivation or composition, as
  in the following example.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3314,10 +3314,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="ThreadError" class="public" href="../../core/thread/osthread/thread_error.html">ThreadError</a>
 								</code>
 							</td>
-							<td>Base class for thread errors to be used for function inside GC when allocations are unavailable.
-</td>
 							<td>
 							</td>
+							<td>Base class for thread errors to be used for function inside GC when allocations are unavailable.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3325,10 +3325,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="ThreadException" class="public" href="../../core/thread/osthread/thread_exception.html">ThreadException</a>
 								</code>
 							</td>
-							<td>Base class for thread exceptions.
-</td>
 							<td>
 							</td>
+							<td>Base class for thread exceptions.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3336,10 +3336,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="ThreadGroup" class="public" href="../../core/thread/osthread/thread_group.html">ThreadGroup</a>
 								</code>
 							</td>
-							<td>This class is intended to simplify certain common programming techniques.
-</td>
 							<td>
 							</td>
+							<td>This class is intended to simplify certain common programming techniques.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3348,7 +3348,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3356,10 +3356,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="IsMarked" class="public" href="../../core/thread/osthread/is_marked.html">IsMarked</a>
 								</code>
 							</td>
-							<td>Indicates whether an address has been marked by the GC.
-</td>
 							<td>
 							</td>
+							<td>Indicates whether an address has been marked by the GC.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3367,10 +3367,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="ScanType" class="public" href="../../core/thread/osthread/scan_type.html">ScanType</a>
 								</code>
 							</td>
-							<td>Indicates the kind of scan being performed by <code class="lang-d"><a href="../../core/thread/osthread/thread_scan_all_type.html"><span class="pln">thread_scanAllType</span></a></code>.
-</td>
 							<td>
 							</td>
+							<td>Indicates the kind of scan being performed by <code class="lang-d"><a href="../../core/thread/osthread/thread_scan_all_type.html"><span class="pln">thread_scanAllType</span></a></code>.
+</td>
 						</tr>
 					</table>
 				</section>

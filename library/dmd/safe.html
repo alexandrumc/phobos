@@ -2973,7 +2973,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2981,15 +2981,15 @@ $('#symbolSearchPane').show();</script>
 									<a id="checkUnsafeAccess" class="public" href="../dmd/safe/check_unsafe_access.html">checkUnsafeAccess</a><span class="tableEntryAnnotation">(sc, e, readonly, printmsg)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Check for unsafe access in @safe code:
  1. read overlapped pointers
  2. write misaligned pointers
  3. write overlapped storage classes
  Print error if unsafe.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2997,11 +2997,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="isSafeCast" class="public" href="../dmd/safe/is_safe_cast.html">isSafeCast</a><span class="tableEntryAnnotation">(e, tfrom, tto)</span>
 								</code>
 							</td>
-							<td>Determine if it is @safe to cast e from tfrom to tto.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Determine if it is @safe to cast e from tfrom to tto.
+</td>
 						</tr>
 					</table>
 				</section>

@@ -2961,7 +2961,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2969,25 +2969,25 @@ $('#symbolSearchPane').show();</script>
 									<a id="_popcnt" class="public" href="../core/bitop/_popcnt.html">_popcnt</a><span class="tableEntryAnnotation">(x)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Calculates the number of set bits in an integer
  using the X86 SSE4 POPCNT instruction.
  POPCNT is not available on all X86 CPUs.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="bitswap" class="public" href="../core/bitop/bitswap.html">bitswap</a><span class="tableEntryAnnotation">(x)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Reverses the order of bits in a 32-bit integer.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -2995,11 +2995,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="bitswap" class="public" href="../core/bitop/bitswap.html">bitswap</a><span class="tableEntryAnnotation">(x)</span>
 								</code>
 							</td>
-							<td>Reverses the order of bits in a 64-bit integer.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Reverses the order of bits in a 64-bit integer.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3007,12 +3007,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="bsf" class="public" href="../core/bitop/bsf.html">bsf</a><span class="tableEntryAnnotation">(v)</span>
 								</code>
 							</td>
-							<td>Scans the bits in v starting with bit 0, looking
- for the first set bit.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Scans the bits in v starting with bit 0, looking
+ for the first set bit.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3020,27 +3020,27 @@ $('#symbolSearchPane').show();</script>
 									<a id="bsr" class="public" href="../core/bitop/bsr.html">bsr</a><span class="tableEntryAnnotation">(v)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Scans the bits in v from the most significant bit
  to the least significant bit, looking
  for the first set bit.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="bswap" class="public" href="../core/bitop/bswap.html">bswap</a><span class="tableEntryAnnotation">(v)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Swaps bytes in a 4 byte uint end-to-end, i.e. byte 0 becomes
  byte 3, byte 1 becomes byte 2, byte 2 becomes byte 1, byte 3
  becomes byte 0.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3048,12 +3048,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="bswap" class="public" href="../core/bitop/bswap.html">bswap</a><span class="tableEntryAnnotation">(v)</span>
 								</code>
 							</td>
-							<td>Swaps bytes in an 8 byte ulong end-to-end, i.e. byte 0 becomes
- byte 7, byte 1 becomes byte 6, etc.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Swaps bytes in an 8 byte ulong end-to-end, i.e. byte 0 becomes
+ byte 7, byte 1 becomes byte 6, etc.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3061,13 +3061,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="bt" class="public" href="../core/bitop/bt.html">bt</a><span class="tableEntryAnnotation">(p, bitnum)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Tests the bit.
  (No longer an intrisic - the compiler recognizes the patterns
  in the body.)
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3075,11 +3075,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="btc" class="public" href="../core/bitop/btc.html">btc</a><span class="tableEntryAnnotation">(p, bitnum)</span>
 								</code>
 							</td>
-							<td>Tests and complements the bit.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Tests and complements the bit.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3087,11 +3087,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="btr" class="public" href="../core/bitop/btr.html">btr</a><span class="tableEntryAnnotation">(p, bitnum)</span>
 								</code>
 							</td>
-							<td>Tests and resets (sets to 0) the bit.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Tests and resets (sets to 0) the bit.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3099,11 +3099,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="bts" class="public" href="../core/bitop/bts.html">bts</a><span class="tableEntryAnnotation">(p, bitnum)</span>
 								</code>
 							</td>
-							<td>Tests and sets the bit.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Tests and sets the bit.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3111,11 +3111,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="inp" class="public" href="../core/bitop/inp.html">inp</a><span class="tableEntryAnnotation">(port_address)</span>
 								</code>
 							</td>
-							<td>Reads I/O port at port_address.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Reads I/O port at port_address.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3123,11 +3123,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="inpl" class="public" href="../core/bitop/inpl.html">inpl</a><span class="tableEntryAnnotation">(port_address)</span>
 								</code>
 							</td>
-							<td>Reads I/O port at port_address.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Reads I/O port at port_address.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3135,11 +3135,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="inpw" class="public" href="../core/bitop/inpw.html">inpw</a><span class="tableEntryAnnotation">(port_address)</span>
 								</code>
 							</td>
-							<td>Reads I/O port at port_address.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Reads I/O port at port_address.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3147,11 +3147,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="outp" class="public" href="../core/bitop/outp.html">outp</a><span class="tableEntryAnnotation">(port_address, value)</span>
 								</code>
 							</td>
-							<td>Writes and returns value to I/O port at port_address.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Writes and returns value to I/O port at port_address.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3159,11 +3159,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="outpl" class="public" href="../core/bitop/outpl.html">outpl</a><span class="tableEntryAnnotation">(port_address, value)</span>
 								</code>
 							</td>
-							<td>Writes and returns value to I/O port at port_address.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Writes and returns value to I/O port at port_address.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3171,11 +3171,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="outpw" class="public" href="../core/bitop/outpw.html">outpw</a><span class="tableEntryAnnotation">(port_address, value)</span>
 								</code>
 							</td>
-							<td>Writes and returns value to I/O port at port_address.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Writes and returns value to I/O port at port_address.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3183,11 +3183,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="popcnt" class="public" href="../core/bitop/popcnt.html">popcnt</a><span class="tableEntryAnnotation">(x)</span>
 								</code>
 							</td>
-							<td>Calculates the number of set bits in an integer.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Calculates the number of set bits in an integer.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3195,12 +3195,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="rol" class="public" href="../core/bitop/rol.html">rol</a><span class="tableEntryAnnotation">(value, count)</span>
 								</code>
 							</td>
-							<td>Bitwise rotate <code class="lang-d"><a href="../core/bitop/rol.html#value"><span class="pln">value</span></a></code> left (<code class="lang-d"><span class="pln">rol</span></code>) or right (<code class="lang-d"><a href="../core/bitop/ror.html"><span class="pln">ror</span></a></code>) by
-  <code class="lang-d"><a href="../core/bitop/rol.html#count"><span class="pln">count</span></a></code> bit positions.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Bitwise rotate <code class="lang-d"><a href="../core/bitop/rol.html#value"><span class="pln">value</span></a></code> left (<code class="lang-d"><span class="pln">rol</span></code>) or right (<code class="lang-d"><a href="../core/bitop/ror.html"><span class="pln">ror</span></a></code>) by
+  <code class="lang-d"><a href="../core/bitop/rol.html#count"><span class="pln">count</span></a></code> bit positions.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3208,12 +3208,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="ror" class="public" href="../core/bitop/ror.html">ror</a><span class="tableEntryAnnotation">(value, count)</span>
 								</code>
 							</td>
-							<td>Bitwise rotate <code class="lang-d"><a href="../core/bitop/ror.html#value"><span class="pln">value</span></a></code> left (<code class="lang-d"><a href="../core/bitop/rol.html"><span class="pln">rol</span></a></code>) or right (<code class="lang-d"><span class="pln">ror</span></code>) by
-  <code class="lang-d"><a href="../core/bitop/ror.html#count"><span class="pln">count</span></a></code> bit positions.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Bitwise rotate <code class="lang-d"><a href="../core/bitop/ror.html#value"><span class="pln">value</span></a></code> left (<code class="lang-d"><a href="../core/bitop/rol.html"><span class="pln">rol</span></a></code>) or right (<code class="lang-d"><span class="pln">ror</span></code>) by
+  <code class="lang-d"><a href="../core/bitop/ror.html#count"><span class="pln">count</span></a></code> bit positions.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3222,7 +3222,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3230,10 +3230,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="BitRange" class="public" href="../core/bitop/bit_range.html">BitRange</a>
 								</code>
 							</td>
-							<td>Range over bit set. Each element is the bit number that is set.
-</td>
 							<td>
 							</td>
+							<td>Range over bit set. Each element is the bit number that is set.
+</td>
 						</tr>
 					</table>
 				</section>

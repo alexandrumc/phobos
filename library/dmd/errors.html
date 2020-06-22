@@ -2969,7 +2969,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2977,12 +2977,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="deprecation" class="public" href="../dmd/errors/deprecation.html">deprecation</a><span class="tableEntryAnnotation">(loc, format)</span>
 								</code>
 							</td>
-							<td>Print a deprecation message, may increase the global warning or error count
- depending on whether deprecations are ignored.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Print a deprecation message, may increase the global warning or error count
+ depending on whether deprecations are ignored.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2990,24 +2990,24 @@ $('#symbolSearchPane').show();</script>
 									<a id="deprecationSupplemental" class="public" href="../dmd/errors/deprecation_supplemental.html">deprecationSupplemental</a><span class="tableEntryAnnotation">(loc, format)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Print additional details about a deprecation message.
  Doesn't increase the error count, or print an additional deprecation prefix.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="error" class="public" href="../dmd/errors/error.html">error</a><span class="tableEntryAnnotation">(loc, format)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Print an error message, increasing the global error count.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3015,11 +3015,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="error" class="public" href="../dmd/errors/error.html">error</a><span class="tableEntryAnnotation">(loc, format)</span>
 								</code>
 							</td>
-							<td>Same as above, but allows Loc() literals to be passed.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Same as above, but allows Loc() literals to be passed.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3027,11 +3027,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="error" class="public" href="../dmd/errors/error.html">error</a><span class="tableEntryAnnotation">(filename, linnum, charnum, format)</span>
 								</code>
 							</td>
-							<td>Same as above, but takes a filename and line information arguments as separate parameters.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Same as above, but takes a filename and line information arguments as separate parameters.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3039,12 +3039,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="errorSupplemental" class="public" href="../dmd/errors/error_supplemental.html">errorSupplemental</a><span class="tableEntryAnnotation">(loc, format)</span>
 								</code>
 							</td>
-							<td>Print additional details about an error message.
- Doesn't increase the error count or print an additional error prefix.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Print additional details about an error message.
+ Doesn't increase the error count or print an additional error prefix.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3052,12 +3052,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="fatal" class="public" href="../dmd/errors/fatal.html">fatal</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Call this after printing out fatal error messages to clean up and exit
- the compiler.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Call this after printing out fatal error messages to clean up and exit
+ the compiler.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3065,12 +3065,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="halt" class="public" href="../dmd/errors/halt.html">halt</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Try to stop forgetting to remove the breakpoints from
- release builds.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Try to stop forgetting to remove the breakpoints from
+ release builds.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3078,12 +3078,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="message" class="public" href="../dmd/errors/message.html">message</a><span class="tableEntryAnnotation">(loc, format)</span>
 								</code>
 							</td>
-							<td>Print a verbose message.
- Doesn't prefix or highlight messages.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Print a verbose message.
+ Doesn't prefix or highlight messages.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3091,11 +3091,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="message" class="public" href="../dmd/errors/message.html">message</a><span class="tableEntryAnnotation">(format)</span>
 								</code>
 							</td>
-							<td>Same as above, but doesn't take a location argument.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Same as above, but doesn't take a location argument.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3103,11 +3103,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="tip" class="public" href="../dmd/errors/tip.html">tip</a><span class="tableEntryAnnotation">(format)</span>
 								</code>
 							</td>
-							<td>Print a tip message with the prefix and highlighting.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Print a tip message with the prefix and highlighting.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3115,11 +3115,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="vdeprecation" class="public" href="../dmd/errors/vdeprecation.html">vdeprecation</a><span class="tableEntryAnnotation">(loc, format, ap, p1, p2)</span>
 								</code>
 							</td>
-							<td>Same as <code class="lang-d"><a href="../dmd/errors/deprecation.html"><span class="pln">deprecation</span></a></code>, but takes a va_list parameter, and optionally additional message prefixes.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Same as <code class="lang-d"><a href="../dmd/errors/deprecation.html"><span class="pln">deprecation</span></a></code>, but takes a va_list parameter, and optionally additional message prefixes.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3127,11 +3127,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="vdeprecationSupplemental" class="public" href="../dmd/errors/vdeprecation_supplemental.html">vdeprecationSupplemental</a><span class="tableEntryAnnotation">(loc, format, ap)</span>
 								</code>
 							</td>
-							<td>Same as <code class="lang-d"><a href="../dmd/errors/deprecation_supplemental.html"><span class="pln">deprecationSupplemental</span></a></code>, but takes a va_list parameter.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Same as <code class="lang-d"><a href="../dmd/errors/deprecation_supplemental.html"><span class="pln">deprecationSupplemental</span></a></code>, but takes a va_list parameter.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3139,11 +3139,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="verror" class="public" href="../dmd/errors/verror.html">verror</a><span class="tableEntryAnnotation">(loc, format, ap, p1, p2, header)</span>
 								</code>
 							</td>
-							<td>Same as <code class="lang-d"><a href="../dmd/errors/error.html"><span class="pln">error</span></a></code>, but takes a va_list parameter, and optionally additional message prefixes.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Same as <code class="lang-d"><a href="../dmd/errors/error.html"><span class="pln">error</span></a></code>, but takes a va_list parameter, and optionally additional message prefixes.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3151,11 +3151,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="verrorSupplemental" class="public" href="../dmd/errors/verror_supplemental.html">verrorSupplemental</a><span class="tableEntryAnnotation">(loc, format, ap)</span>
 								</code>
 							</td>
-							<td>Same as <code class="lang-d"><a href="../dmd/errors/error_supplemental.html"><span class="pln">errorSupplemental</span></a></code>, but takes a va_list parameter.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Same as <code class="lang-d"><a href="../dmd/errors/error_supplemental.html"><span class="pln">errorSupplemental</span></a></code>, but takes a va_list parameter.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3163,11 +3163,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="vmessage" class="public" href="../dmd/errors/vmessage.html">vmessage</a><span class="tableEntryAnnotation">(loc, format, ap)</span>
 								</code>
 							</td>
-							<td>Same as <code class="lang-d"><a href="../dmd/errors/message.html"><span class="pln">message</span></a></code>, but takes a va_list parameter.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Same as <code class="lang-d"><a href="../dmd/errors/message.html"><span class="pln">message</span></a></code>, but takes a va_list parameter.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3175,11 +3175,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="vtip" class="public" href="../dmd/errors/vtip.html">vtip</a><span class="tableEntryAnnotation">(format, ap)</span>
 								</code>
 							</td>
-							<td>Same as <code class="lang-d"><a href="../dmd/errors/tip.html"><span class="pln">tip</span></a></code>, but takes a va_list parameter.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Same as <code class="lang-d"><a href="../dmd/errors/tip.html"><span class="pln">tip</span></a></code>, but takes a va_list parameter.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3187,11 +3187,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="vwarning" class="public" href="../dmd/errors/vwarning.html">vwarning</a><span class="tableEntryAnnotation">(loc, format, ap)</span>
 								</code>
 							</td>
-							<td>Same as <code class="lang-d"><a href="../dmd/errors/warning.html"><span class="pln">warning</span></a></code>, but takes a va_list parameter.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Same as <code class="lang-d"><a href="../dmd/errors/warning.html"><span class="pln">warning</span></a></code>, but takes a va_list parameter.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3199,11 +3199,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="vwarningSupplemental" class="public" href="../dmd/errors/vwarning_supplemental.html">vwarningSupplemental</a><span class="tableEntryAnnotation">(loc, format, ap)</span>
 								</code>
 							</td>
-							<td>Same as <code class="lang-d"><a href="../dmd/errors/warning_supplemental.html"><span class="pln">warningSupplemental</span></a></code>, but takes a va_list parameter.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Same as <code class="lang-d"><a href="../dmd/errors/warning_supplemental.html"><span class="pln">warningSupplemental</span></a></code>, but takes a va_list parameter.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3211,11 +3211,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="warning" class="public" href="../dmd/errors/warning.html">warning</a><span class="tableEntryAnnotation">(loc, format)</span>
 								</code>
 							</td>
-							<td>Print a warning message, increasing the global warning count.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Print a warning message, increasing the global warning count.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3223,12 +3223,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="warningSupplemental" class="public" href="../dmd/errors/warning_supplemental.html">warningSupplemental</a><span class="tableEntryAnnotation">(loc, format)</span>
 								</code>
 							</td>
-							<td>Print additional details about a warning message.
- Doesn't increase the warning count or print an additional warning prefix.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Print additional details about a warning message.
+ Doesn't increase the warning count or print an additional warning prefix.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3237,7 +3237,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3245,10 +3245,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="Classification" class="public" href="../dmd/errors/classification.html">Classification</a>
 								</code>
 							</td>
-							<td>Color highlighting to classify messages
-</td>
 							<td>
 							</td>
+							<td>Color highlighting to classify messages
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3256,11 +3256,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="HIGHLIGHT" class="public" href="../dmd/errors/highlight.html">HIGHLIGHT</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Embed these highlighting commands in the text stream.
  HIGHLIGHT.Escape indicates a Color follows.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>

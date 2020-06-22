@@ -3025,7 +3025,7 @@ for associative arrays; (3) friendlier behavior towards the garbage collector.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3033,11 +3033,11 @@ for associative arrays; (3) friendlier behavior towards the garbage collector.
 									<a id="variantArray" class="public" href="../std/variant/variant_array.html">variantArray</a><span class="tableEntryAnnotation">(args)</span>
 								</code>
 							</td>
-							<td>Returns an array of variants constructed from <code class="lang-d"><a href="../std/variant/variant_array.html#args"><span class="pln">args</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns an array of variants constructed from <code class="lang-d"><a href="../std/variant/variant_array.html#args"><span class="pln">args</span></a></code>.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3046,7 +3046,7 @@ for associative arrays; (3) friendlier behavior towards the garbage collector.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3054,10 +3054,10 @@ for associative arrays; (3) friendlier behavior towards the garbage collector.
 									<a id="VariantException" class="public" href="../std/variant/variant_exception.html">VariantException</a>
 								</code>
 							</td>
-							<td>Thrown in three cases:
-</td>
 							<td>
 							</td>
+							<td>Thrown in three cases:
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3066,7 +3066,7 @@ for associative arrays; (3) friendlier behavior towards the garbage collector.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3074,11 +3074,11 @@ for associative arrays; (3) friendlier behavior towards the garbage collector.
 									<a id="VariantN" class="public" href="../std/variant/variant_n.html">VariantN</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Back-end type seldom used directly by user
  code. Two commonly-used types using <code class="lang-d"><span class="typ">VariantN</span></code> are:
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>
@@ -3087,7 +3087,7 @@ for associative arrays; (3) friendlier behavior towards the garbage collector.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3095,11 +3095,11 @@ for associative arrays; (3) friendlier behavior towards the garbage collector.
 									<a id="tryVisit" class="public" href="../std/variant/try_visit.html">tryVisit</a>
 								</code>
 							</td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 							<td>Behaves as <code class="lang-d"><a href="../std/variant/visit.html"><span class="pln">visit</span></a></code> but doesn't enforce that all types are handled
  by the visiting functions.
 </td>
-							<td><tdd class="canBeNogc"></tdd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3107,11 +3107,11 @@ for associative arrays; (3) friendlier behavior towards the garbage collector.
 									<a id="visit" class="public" href="../std/variant/visit.html">visit</a>
 								</code>
 							</td>
+							<td><tdd class="canBeNogc"></tdd>
+							</td>
 							<td>Applies a delegate or function to the given <code class="lang-d"><a href="../std/variant/algebraic.html"><span class="typ">Algebraic</span></a></code> depending on the held type,
  ensuring that all types are handled by the visiting functions.
 </td>
-							<td><tdd class="canBeNogc"></tdd>
-							</td>
 						</tr>
 					</table>
 				</section>

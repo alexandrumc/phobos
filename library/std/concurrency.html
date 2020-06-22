@@ -3009,7 +3009,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3017,12 +3017,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="initOnce" class="public" href="../std/concurrency/init_once.html">initOnce</a><span class="tableEntryAnnotation">(init)</span>
 								</code>
 							</td>
-							<td>Initializes <span class="d_param">var</span> with the lazy <span class="d_param">init</span> value in a
- thread-safe manner.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Initializes <span class="d_param">var</span> with the lazy <span class="d_param">init</span> value in a
+ thread-safe manner.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3030,12 +3030,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="initOnce" class="public" href="../std/concurrency/init_once.html">initOnce</a><span class="tableEntryAnnotation">(init, mutex)</span>
 								</code>
 							</td>
-							<td>Same as above, but takes a separate mutex instead of sharing one among
- all initOnce instances.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Same as above, but takes a separate mutex instead of sharing one among
+ all initOnce instances.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3043,11 +3043,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="locate" class="public" href="../std/concurrency/locate.html">locate</a><span class="tableEntryAnnotation">(name)</span>
 								</code>
 							</td>
-							<td>Gets the Tid associated with name.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Gets the Tid associated with name.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3055,11 +3055,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="ownerTid" class="public property" href="../std/concurrency/owner_tid.html">ownerTid</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Return the Tid of the thread which spawned the caller's thread.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Return the Tid of the thread which spawned the caller's thread.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3067,11 +3067,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="prioritySend" class="public" href="../std/concurrency/priority_send.html">prioritySend</a><span class="tableEntryAnnotation">(tid, vals)</span>
 								</code>
 							</td>
-							<td>Places the values as a message on the front of tid's message queue.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Places the values as a message on the front of tid's message queue.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3079,11 +3079,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="receive" class="public" href="../std/concurrency/receive.html">receive</a><span class="tableEntryAnnotation">(ops)</span>
 								</code>
 							</td>
-							<td>Receives a message from another thread.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Receives a message from another thread.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3091,11 +3091,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="receiveOnly" class="public" href="../std/concurrency/receive_only.html">receiveOnly</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Receives only messages with arguments of the specified types.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Receives only messages with arguments of the specified types.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3103,12 +3103,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="receiveTimeout" class="public" href="../std/concurrency/receive_timeout.html">receiveTimeout</a><span class="tableEntryAnnotation">(duration, ops)</span>
 								</code>
 							</td>
-							<td>Receives a message from another thread and gives up if no match
- arrives within a specified duration.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Receives a message from another thread and gives up if no match
+ arrives within a specified duration.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3116,11 +3116,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="register" class="public" href="../std/concurrency/register.html">register</a><span class="tableEntryAnnotation">(name, tid)</span>
 								</code>
 							</td>
-							<td>Associates name with tid.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Associates name with tid.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3128,11 +3128,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="send" class="public" href="../std/concurrency/send.html">send</a><span class="tableEntryAnnotation">(tid, vals)</span>
 								</code>
 							</td>
-							<td>Places the values as a message at the back of tid's message queue.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Places the values as a message at the back of tid's message queue.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3140,11 +3140,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="setMaxMailboxSize" class="public" href="../std/concurrency/set_max_mailbox_size.html">setMaxMailboxSize</a><span class="tableEntryAnnotation">(tid, messages, doThis)</span>
 								</code>
 							</td>
-							<td>Sets a maximum mailbox size.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Sets a maximum mailbox size.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3152,11 +3152,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="setMaxMailboxSize" class="public" href="../std/concurrency/set_max_mailbox_size.html">setMaxMailboxSize</a><span class="tableEntryAnnotation">(tid, messages, onCrowdingDoThis)</span>
 								</code>
 							</td>
-							<td>Sets a maximum mailbox size.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Sets a maximum mailbox size.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3164,11 +3164,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="spawn" class="public" href="../std/concurrency/spawn.html">spawn</a><span class="tableEntryAnnotation">(fn, args)</span>
 								</code>
 							</td>
-							<td>Starts fn(args) in a new logical thread.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Starts fn(args) in a new logical thread.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3176,12 +3176,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="spawnLinked" class="public" href="../std/concurrency/spawn_linked.html">spawnLinked</a><span class="tableEntryAnnotation">(fn, args)</span>
 								</code>
 							</td>
-							<td>Starts fn(args) in a logical thread and will receive a LinkTerminated
- message when the operation terminates.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Starts fn(args) in a logical thread and will receive a LinkTerminated
+ message when the operation terminates.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3189,10 +3189,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="thisTid" class="public property" href="../std/concurrency/this_tid.html">thisTid</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td></td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3200,11 +3200,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="unregister" class="public" href="../std/concurrency/unregister.html">unregister</a><span class="tableEntryAnnotation">(name)</span>
 								</code>
 							</td>
-							<td>Removes the registered name associated with a tid.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Removes the registered name associated with a tid.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3212,12 +3212,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="yield" class="public" href="../std/concurrency/yield.html">yield</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>If the caller is a Fiber and is not a Generator, this function will call
- scheduler.yield() or Fiber.yield(), as appropriate.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>If the caller is a Fiber and is not a Generator, this function will call
+ scheduler.yield() or Fiber.yield(), as appropriate.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3225,12 +3225,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="yield" class="public" href="../std/concurrency/yield.html">yield</a><span class="tableEntryAnnotation">(value)</span>
 								</code>
 							</td>
-							<td>Yields a value of type T to the caller of the currently executing
- generator.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Yields a value of type T to the caller of the currently executing
+ generator.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3239,7 +3239,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3247,10 +3247,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="Scheduler" class="public" href="../std/concurrency/scheduler.html">Scheduler</a>
 								</code>
 							</td>
-							<td>A Scheduler controls how threading is performed by spawn.
-</td>
 							<td>
 							</td>
+							<td>A Scheduler controls how threading is performed by spawn.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3259,7 +3259,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3267,10 +3267,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="FiberScheduler" class="public" href="../std/concurrency/fiber_scheduler.html">FiberScheduler</a>
 								</code>
 							</td>
-							<td>An example Scheduler using Fibers.
-</td>
 							<td>
 							</td>
+							<td>An example Scheduler using Fibers.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3278,11 +3278,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="Generator" class="public" href="../std/concurrency/generator.html">Generator</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>A Generator is a Fiber that periodically returns values of type T to the
  caller via yield.  This is represented as an InputRange.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3290,10 +3290,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="LinkTerminated" class="public" href="../std/concurrency/link_terminated.html">LinkTerminated</a>
 								</code>
 							</td>
-							<td>Thrown if a linked thread has terminated.
-</td>
 							<td>
 							</td>
+							<td>Thrown if a linked thread has terminated.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3301,11 +3301,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="MailboxFull" class="public" href="../std/concurrency/mailbox_full.html">MailboxFull</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Thrown on mailbox crowding if the mailbox is configured with
  <code class="lang-d"><a href="../std/concurrency/on_crowding.html#throwException"><span class="typ">OnCrowding<wbr/></span><span class="pun">.</span><span class="pln">throwException</span></a></code>.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3313,11 +3313,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="MessageMismatch" class="public" href="../std/concurrency/message_mismatch.html">MessageMismatch</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Thrown on calls to <code class="lang-d"><a href="../std/concurrency/receive_only.html"><span class="pln">receiveOnly</span></a></code> if a message other than the type
  the receiving thread expected is sent.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3325,11 +3325,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="OwnerTerminated" class="public" href="../std/concurrency/owner_terminated.html">OwnerTerminated</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Thrown on calls to <code class="lang-d"><a href="../std/concurrency/receive.html"><span class="pln">receive</span></a></code> if the thread that spawned the receiving
  thread has terminated and no more messages exist.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3337,12 +3337,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="PriorityMessageException" class="public" href="../std/concurrency/priority_message_exception.html">PriorityMessageException</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Thrown if a message was sent to a thread via
  <code class="lang-d"><a href="../std/concurrency/priority_send.html" title="std.concurrency.prioritySend"><span class="pln">prioritySend</span></a></code> and the receiver does not have a handler
  for a message of this type.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3350,10 +3350,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="ThreadScheduler" class="public" href="../std/concurrency/thread_scheduler.html">ThreadScheduler</a>
 								</code>
 							</td>
-							<td>An example Scheduler using kernel threads.
-</td>
 							<td>
 							</td>
+							<td>An example Scheduler using kernel threads.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3361,11 +3361,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="TidMissingException" class="public" href="../std/concurrency/tid_missing_exception.html">TidMissingException</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Thrown when a Tid is missing, e.g. when <code class="lang-d"><a href="../std/concurrency/owner_tid.html"><span class="pln">ownerTid</span></a></code> doesn't
  find an owner thread.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>
@@ -3374,7 +3374,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3382,10 +3382,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="ThreadInfo" class="public" href="../std/concurrency/thread_info.html">ThreadInfo</a>
 								</code>
 							</td>
-							<td>Encapsulates all implementation-level data needed for scheduling.
-</td>
 							<td>
 							</td>
+							<td>Encapsulates all implementation-level data needed for scheduling.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3393,10 +3393,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="Tid" class="public" href="../std/concurrency/tid.html">Tid</a>
 								</code>
 							</td>
-							<td>An opaque type used to represent a logical thread.
-</td>
 							<td>
 							</td>
+							<td>An opaque type used to represent a logical thread.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3405,7 +3405,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3413,10 +3413,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="OnCrowding" class="public" href="../std/concurrency/on_crowding.html">OnCrowding</a>
 								</code>
 							</td>
-							<td>These behaviors may be specified when a mailbox is full.
-</td>
 							<td>
 							</td>
+							<td>These behaviors may be specified when a mailbox is full.
+</td>
 						</tr>
 					</table>
 				</section>

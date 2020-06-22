@@ -2961,7 +2961,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2969,12 +2969,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="loadUnaligned" class="public" href="../core/simd/load_unaligned.html">loadUnaligned</a><span class="tableEntryAnnotation">(p)</span>
 								</code>
 							</td>
-							<td>Load unaligned vector from address.
- This is a compiler intrinsic.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Load unaligned vector from address.
+ This is a compiler intrinsic.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2982,11 +2982,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="prefetch" class="public" href="../core/simd/prefetch.html">prefetch</a><span class="tableEntryAnnotation">(address)</span>
 								</code>
 							</td>
-							<td>Emit prefetch instruction.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Emit prefetch instruction.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2994,11 +2994,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="simd" class="public" href="../core/simd/simd.html">simd</a><span class="tableEntryAnnotation">(op1, op2)</span>
 								</code>
 							</td>
-							<td>Generate two operand instruction with XMM 128 bit operands.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Generate two operand instruction with XMM 128 bit operands.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3006,11 +3006,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="simd" class="public" href="../core/simd/simd.html">simd</a><span class="tableEntryAnnotation">(op1)</span>
 								</code>
 							</td>
-							<td>Unary SIMD instructions.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Unary SIMD instructions.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3018,10 +3018,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="simd" class="public" href="../core/simd/simd.html">simd</a><span class="tableEntryAnnotation">(d)</span>
 								</code>
 							</td>
-							<td></td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3029,16 +3029,19 @@ $('#symbolSearchPane').show();</script>
 									<a id="simd" class="public" href="../core/simd/simd.html">simd</a><span class="tableEntryAnnotation">(f)</span>
 								</code>
 							</td>
-							<td></td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="simd" class="public" href="../core/simd/simd.html">simd</a><span class="tableEntryAnnotation">(op1, op2)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>For instructions:
  CMPPD, CMPSS, CMPSD, CMPPS,
@@ -3047,9 +3050,6 @@ $('#symbolSearchPane').show();</script>
  MPSADBW, PBLENDW,
  ROUNDPD, ROUNDPS, ROUNDSD, ROUNDSS
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3057,13 +3057,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="simd" class="public" href="../core/simd/simd.html">simd</a><span class="tableEntryAnnotation">(op1)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>For instructions with the imm8 version:
  PSLLD, PSLLQ, PSLLW, PSRAD, PSRAW, PSRLD, PSRLQ, PSRLW,
  PSRLDQ, PSLLDQ
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3071,12 +3071,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="simd_sto" class="public" href="../core/simd/simd_sto.html">simd_sto</a><span class="tableEntryAnnotation">(op1, op2)</span>
 								</code>
 							</td>
-							<td>For "store" operations of the form:
-    op1 op= op2
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>For "store" operations of the form:
+    op1 op= op2
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3084,10 +3084,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="simd_stod" class="public" href="../core/simd/simd_stod.html">simd_stod</a><span class="tableEntryAnnotation">(op1, op2)</span>
 								</code>
 							</td>
-							<td></td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3095,10 +3095,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="simd_stof" class="public" href="../core/simd/simd_stof.html">simd_stof</a><span class="tableEntryAnnotation">(op1, op2)</span>
 								</code>
 							</td>
-							<td></td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -3106,12 +3106,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="storeUnaligned" class="public" href="../core/simd/store_unaligned.html">storeUnaligned</a><span class="tableEntryAnnotation">(p, value)</span>
 								</code>
 							</td>
-							<td>Store vector to unaligned address.
- This is a compiler intrinsic.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Store vector to unaligned address.
+ This is a compiler intrinsic.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3120,7 +3120,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3128,10 +3128,10 @@ $('#symbolSearchPane').show();</script>
 									<a id="XMM" class="public" href="../core/simd/xmm.html">XMM</a>
 								</code>
 							</td>
-							<td>XMM opcodes that conform to the following:
-</td>
 							<td>
 							</td>
+							<td>XMM opcodes that conform to the following:
+</td>
 						</tr>
 					</table>
 				</section>

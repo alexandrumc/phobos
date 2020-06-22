@@ -2965,7 +2965,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2973,11 +2973,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="defaultTraceHandler" class="public" href="../core/runtime/default_trace_handler.html">defaultTraceHandler</a><span class="tableEntryAnnotation">(ptr)</span>
 								</code>
 							</td>
-							<td>Get the default <code class="lang-d"><span class="typ">Throwable<wbr/></span><span class="pun">.</span><span class="typ">TraceInfo</span></code> implementation for the platform
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Get the default <code class="lang-d"><span class="typ">Throwable<wbr/></span><span class="pun">.</span><span class="typ">TraceInfo</span></code> implementation for the platform
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2985,11 +2985,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="dmd_coverDestPath" class="public" href="../core/runtime/dmd_cover_dest_path.html">dmd_coverDestPath</a><span class="tableEntryAnnotation">(path)</span>
 								</code>
 							</td>
-							<td>Set output path for coverage reports.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Set output path for coverage reports.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2997,11 +2997,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="dmd_coverSetMerge" class="public" href="../core/runtime/dmd_cover_set_merge.html">dmd_coverSetMerge</a><span class="tableEntryAnnotation">(flag)</span>
 								</code>
 							</td>
-							<td>Enable merging of coverage reports with existing data.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Enable merging of coverage reports with existing data.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3009,11 +3009,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="dmd_coverSourcePath" class="public" href="../core/runtime/dmd_cover_source_path.html">dmd_coverSourcePath</a><span class="tableEntryAnnotation">(path)</span>
 								</code>
 							</td>
-							<td>Set source file path for coverage reports.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Set source file path for coverage reports.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3021,12 +3021,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="profilegc_setlogfilename" class="public" href="../core/runtime/profilegc_setlogfilename.html">profilegc_setlogfilename</a><span class="tableEntryAnnotation">(name)</span>
 								</code>
 							</td>
-							<td>Set the output file name for memory profile reports (-profile=gc switch).
- An empty name will set the output to stdout.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Set the output file name for memory profile reports (-profile=gc switch).
+ An empty name will set the output to stdout.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3034,11 +3034,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="rt_init" class="public" href="../core/runtime/rt_init.html">rt_init</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>C interface for Runtime.initialize, returns 1/0 instead of bool
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>C interface for Runtime.initialize, returns 1/0 instead of bool
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3046,11 +3046,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="rt_loadLibrary" class="public" href="../core/runtime/rt_load_library.html">rt_loadLibrary</a><span class="tableEntryAnnotation">(name)</span>
 								</code>
 							</td>
-							<td>C interface for Runtime.loadLibrary
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>C interface for Runtime.loadLibrary
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3058,11 +3058,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="rt_term" class="public" href="../core/runtime/rt_term.html">rt_term</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>C interface for Runtime.terminate, returns 1/0 instead of bool
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>C interface for Runtime.terminate, returns 1/0 instead of bool
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3070,11 +3070,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="rt_unloadLibrary" class="public" href="../core/runtime/rt_unload_library.html">rt_unloadLibrary</a><span class="tableEntryAnnotation">(ptr)</span>
 								</code>
 							</td>
-							<td>C interface for Runtime.unloadLibrary, returns 1/0 instead of bool
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>C interface for Runtime.unloadLibrary, returns 1/0 instead of bool
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3082,13 +3082,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="runModuleUnitTests" class="public" href="../core/runtime/run_module_unit_tests.html">runModuleUnitTests</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>This routine is called by the runtime to run module unit tests on startup.
  The user-supplied unit tester will be called if one has been set,
  otherwise all unit tests will be run in sequence.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3096,12 +3096,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="trace_setdeffilename" class="public" href="../core/runtime/trace_setdeffilename.html">trace_setdeffilename</a><span class="tableEntryAnnotation">(name)</span>
 								</code>
 							</td>
-							<td>Set the output file name for the optimized profile linker DEF file (-profile switch).
- An empty name will set the output to stdout.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Set the output file name for the optimized profile linker DEF file (-profile switch).
+ An empty name will set the output to stdout.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3109,12 +3109,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="trace_setlogfilename" class="public" href="../core/runtime/trace_setlogfilename.html">trace_setlogfilename</a><span class="tableEntryAnnotation">(name)</span>
 								</code>
 							</td>
-							<td>Set the output file name for profile reports (-profile switch).
- An empty name will set the output to stdout.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Set the output file name for profile reports (-profile switch).
+ An empty name will set the output to stdout.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3123,7 +3123,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3131,11 +3131,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="CArgs" class="public" href="../core/runtime/c_args.html">CArgs</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>Stores the unprocessed arguments supplied when the
  process was started.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3143,11 +3143,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="Runtime" class="public" href="../core/runtime/runtime.html">Runtime</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>This struct encapsulates all functionality related to the underlying runtime
  module for the calling context.
 </td>
-							<td>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3155,11 +3155,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="UnitTestResult" class="public" href="../core/runtime/unit_test_result.html">UnitTestResult</a>
 								</code>
 							</td>
+							<td>
+							</td>
 							<td>This type is returned by the module unit test handler to indicate testing
  results.
 </td>
-							<td>
-							</td>
 						</tr>
 					</table>
 				</section>

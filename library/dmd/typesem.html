@@ -2969,7 +2969,7 @@ $('#symbolSearchPane').show();</script>
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -2977,11 +2977,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="compileTypeMixin" class="public" href="../dmd/typesem/compile_type_mixin.html">compileTypeMixin</a><span class="tableEntryAnnotation">(tm, loc, sc)</span>
 								</code>
 							</td>
-							<td>Compile the MixinType, returning the type or expression AST.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Compile the MixinType, returning the type or expression AST.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -2989,11 +2989,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="defaultInit" class="public" href="../dmd/typesem/default_init.html">defaultInit</a><span class="tableEntryAnnotation">(mt, loc)</span>
 								</code>
 							</td>
-							<td>Get the the default initialization expression for a type.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Get the the default initialization expression for a type.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3001,11 +3001,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="dotExp" class="public" href="../dmd/typesem/dot_exp.html">dotExp</a><span class="tableEntryAnnotation">(mt, sc, e, ident, flag)</span>
 								</code>
 							</td>
-							<td>Access the members of the object e. This type is same as e.type.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Access the members of the object e. This type is same as e.type.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3013,11 +3013,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="getProperty" class="public" href="../dmd/typesem/get_property.html">getProperty</a><span class="tableEntryAnnotation">(t, scope_, loc, ident, flag)</span>
 								</code>
 							</td>
-							<td>Calculate built-in properties which just the type is necessary.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Calculate built-in properties which just the type is necessary.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3025,13 +3025,13 @@ $('#symbolSearchPane').show();</script>
 									<a id="merge" class="public" href="../dmd/typesem/merge.html">merge</a><span class="tableEntryAnnotation">(type)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>If an identical type to <code class="lang-d"><a href="../dmd/typesem/merge.html#type"><span class="pln">type</span></a></code> is in <code class="lang-d"><span class="pln">type<wbr/></span><span class="pun">.</span><span class="pln">stringtable</span></code>, return
  the latter one. Otherwise, add it to <code class="lang-d"><span class="pln">type<wbr/></span><span class="pun">.</span><span class="pln">stringtable</span></code>.
  Some types don't get merged and are returned as-is.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3039,12 +3039,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="resolve" class="public" href="../dmd/typesem/resolve.html">resolve</a><span class="tableEntryAnnotation">(mt, loc, sc, pe, pt, ps, intypeid)</span>
 								</code>
 							</td>
-							<td>Resolve type 'mt' to either type, symbol, or expression.
- If errors happened, resolved to Type.terror.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Resolve type 'mt' to either type, symbol, or expression.
+ If errors happened, resolved to Type.terror.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3052,11 +3052,11 @@ $('#symbolSearchPane').show();</script>
 									<a id="typeSemantic" class="public" href="../dmd/typesem/type_semantic.html">typeSemantic</a><span class="tableEntryAnnotation">(t, loc, sc)</span>
 								</code>
 							</td>
-							<td>Perform semantic analysis on a type.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Perform semantic analysis on a type.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3064,12 +3064,12 @@ $('#symbolSearchPane').show();</script>
 									<a id="typeToExpression" class="public" href="../dmd/typesem/type_to_expression.html">typeToExpression</a><span class="tableEntryAnnotation">(t)</span>
 								</code>
 							</td>
-							<td>We've mistakenly parsed <code class="lang-d"><a href="../dmd/typesem/type_to_expression.html#t"><span class="pln">t</span></a></code> as a type.
- Redo <code class="lang-d"><a href="../dmd/typesem/type_to_expression.html#t"><span class="pln">t</span></a></code> as an Expression.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>We've mistakenly parsed <code class="lang-d"><a href="../dmd/typesem/type_to_expression.html#t"><span class="pln">t</span></a></code> as a type.
+ Redo <code class="lang-d"><a href="../dmd/typesem/type_to_expression.html#t"><span class="pln">t</span></a></code> as an Expression.
+</td>
 						</tr>
 					</table>
 				</section>

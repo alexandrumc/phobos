@@ -3023,7 +3023,7 @@ and module <code class="lang-d"><a href="../std/path.html"><span class="pln">std
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3031,11 +3031,11 @@ and module <code class="lang-d"><a href="../std/path.html"><span class="pln">std
 									<a id="append" class="public" href="../std/file/append.html">append</a><span class="tableEntryAnnotation">(name, buffer)</span>
 								</code>
 							</td>
-							<td>Appends <code class="lang-d"><a href="../std/file/append.html#buffer"><span class="pln">buffer</span></a></code> to file <code class="lang-d"><a href="../std/file/append.html#name"><span class="pln">name</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Appends <code class="lang-d"><a href="../std/file/append.html#buffer"><span class="pln">buffer</span></a></code> to file <code class="lang-d"><a href="../std/file/append.html#name"><span class="pln">name</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3043,11 +3043,11 @@ and module <code class="lang-d"><a href="../std/path.html"><span class="pln">std
 									<a id="attrIsDir" class="public" href="../std/file/attr_is_dir.html">attrIsDir</a><span class="tableEntryAnnotation">(attributes)</span>
 								</code>
 							</td>
-							<td>Returns whether the given file attributes are for a directory.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns whether the given file attributes are for a directory.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3055,11 +3055,11 @@ and module <code class="lang-d"><a href="../std/path.html"><span class="pln">std
 									<a id="attrIsFile" class="public" href="../std/file/attr_is_file.html">attrIsFile</a><span class="tableEntryAnnotation">(attributes)</span>
 								</code>
 							</td>
-							<td>Returns whether the given file attributes are for a file.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns whether the given file attributes are for a file.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3067,11 +3067,11 @@ and module <code class="lang-d"><a href="../std/path.html"><span class="pln">std
 									<a id="attrIsSymlink" class="public" href="../std/file/attr_is_symlink.html">attrIsSymlink</a><span class="tableEntryAnnotation">(attributes)</span>
 								</code>
 							</td>
-							<td>Returns whether the given file attributes are for a symbolic link.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns whether the given file attributes are for a symbolic link.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3079,12 +3079,12 @@ and module <code class="lang-d"><a href="../std/path.html"><span class="pln">std
 									<a id="chdir" class="public" href="../std/file/chdir.html">chdir</a><span class="tableEntryAnnotation">(pathname)</span>
 								</code>
 							</td>
-							<td>Change directory to <code class="lang-d"><a href="../std/file/chdir.html#pathname"><span class="pln">pathname</span></a></code>. Equivalent to <code class="lang-d"><span class="pln">cd</span></code> on
-Windows and POSIX.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Change directory to <code class="lang-d"><a href="../std/file/chdir.html#pathname"><span class="pln">pathname</span></a></code>. Equivalent to <code class="lang-d"><span class="pln">cd</span></code> on
+Windows and POSIX.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3092,20 +3092,23 @@ Windows and POSIX.
 									<a id="copy" class="public" href="../std/file/copy.html">copy</a><span class="tableEntryAnnotation">(from, to, preserve)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Copy file <code class="lang-d"><a href="../std/file/copy.html#from"><span class="pln">from</span></a></code> to file <code class="lang-d"><a href="../std/file/copy.html#to"><span class="pln">to</span></a></code>. File timestamps are preserved.
 File attributes are preserved, if <code class="lang-d"><a href="../std/file/copy.html#preserve"><span class="pln">preserve</span></a></code> equals <code class="lang-d"><span class="typ">Yes<wbr/></span><span class="pun">.</span><span class="pln">preserveAttributes</span></code>.
 On Windows only <code class="lang-d"><span class="typ">Yes<wbr/></span><span class="pun">.</span><span class="pln">preserveAttributes</span></code> (the default on Windows) is supported.
 If the target file exists, it is overwritten.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
 								<code>
 									<a id="dirEntries" class="public" href="../std/file/dir_entries.html">dirEntries</a><span class="tableEntryAnnotation">(path, mode, followSymlink)</span>
 								</code>
+							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
 							</td>
 							<td>Returns an <a href="../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>
     of <code class="lang-d"><a href="../std/file/dir_entry.html"><span class="typ">DirEntry</span></a></code> that lazily iterates a given directory,
@@ -3115,9 +3118,6 @@ If the target file exists, it is overwritten.
     directory is traversed. The name of each iterated directory entry
     contains the absolute or relative path (depending on pathname).
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3125,11 +3125,11 @@ If the target file exists, it is overwritten.
 									<a id="exists" class="public" href="../std/file/exists.html">exists</a><span class="tableEntryAnnotation">(name)</span>
 								</code>
 							</td>
-							<td>Determine whether the given file (or directory) exists.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Determine whether the given file (or directory) exists.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3137,11 +3137,11 @@ If the target file exists, it is overwritten.
 									<a id="getAttributes" class="public" href="../std/file/get_attributes.html">getAttributes</a><span class="tableEntryAnnotation">(name)</span>
 								</code>
 							</td>
-							<td>Returns the attributes of the given file.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns the attributes of the given file.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3149,12 +3149,12 @@ If the target file exists, it is overwritten.
 									<a id="getAvailableDiskSpace" class="public" href="../std/file/get_available_disk_space.html">getAvailableDiskSpace</a><span class="tableEntryAnnotation">(path)</span>
 								</code>
 							</td>
-							<td>Returns the available disk space based on a given path.
-On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.html#path"><span class="pln">path</span></a></code> must be a directory; on POSIX systems, it can be a file or directory.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns the available disk space based on a given path.
+On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.html#path"><span class="pln">path</span></a></code> must be a directory; on POSIX systems, it can be a file or directory.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3162,11 +3162,11 @@ On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.h
 									<a id="getcwd" class="public" href="../std/file/getcwd.html">getcwd</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Get the current working directory.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Get the current working directory.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3174,14 +3174,14 @@ On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.h
 									<a id="getLinkAttributes" class="public" href="../std/file/get_link_attributes.html">getLinkAttributes</a><span class="tableEntryAnnotation">(name)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>If the given file is a symbolic link, then this returns the attributes of the
     symbolic link itself rather than file that it points to. If the given file
     is <i>not</i> a symbolic link, then this function returns the same result
     as getAttributes.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3189,11 +3189,11 @@ On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.h
 									<a id="getSize" class="public" href="../std/file/get_size.html">getSize</a><span class="tableEntryAnnotation">(name)</span>
 								</code>
 							</td>
-							<td>Get size of file <code class="lang-d"><a href="../std/file/get_size.html#name"><span class="pln">name</span></a></code> in bytes.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Get size of file <code class="lang-d"><a href="../std/file/get_size.html#name"><span class="pln">name</span></a></code> in bytes.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3201,11 +3201,11 @@ On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.h
 									<a id="getTimes" class="public" href="../std/file/get_times.html">getTimes</a><span class="tableEntryAnnotation">(name, accessTime, modificationTime)</span>
 								</code>
 							</td>
-							<td>Get the access and modified times of file or folder <code class="lang-d"><a href="../std/file/get_times.html#name"><span class="pln">name</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Get the access and modified times of file or folder <code class="lang-d"><a href="../std/file/get_times.html#name"><span class="pln">name</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3213,11 +3213,11 @@ On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.h
 									<a id="getTimesWin" class="public" href="../std/file/get_times_win.html">getTimesWin</a><span class="tableEntryAnnotation">(name, fileCreationTime, fileAccessTime, fileModificationTime)</span>
 								</code>
 							</td>
-							<td><span class="blue">This function is Windows-Only.</span>
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td><span class="blue">This function is Windows-Only.</span>
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3225,11 +3225,11 @@ On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.h
 									<a id="isDir" class="public property" href="../std/file/is_dir.html">isDir</a><span class="tableEntryAnnotation">(name)</span>
 								</code>
 							</td>
-							<td>Returns whether the given file is a directory.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns whether the given file is a directory.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3237,11 +3237,11 @@ On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.h
 									<a id="isFile" class="public property" href="../std/file/is_file.html">isFile</a><span class="tableEntryAnnotation">(name)</span>
 								</code>
 							</td>
-							<td>Returns whether the given file (or directory) is a file.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns whether the given file (or directory) is a file.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3249,11 +3249,11 @@ On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.h
 									<a id="isSymlink" class="public property" href="../std/file/is_symlink.html">isSymlink</a><span class="tableEntryAnnotation">(name)</span>
 								</code>
 							</td>
-							<td>Returns whether the given file is a symbolic link.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns whether the given file is a symbolic link.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3261,11 +3261,11 @@ On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.h
 									<a id="mkdir" class="public" href="../std/file/mkdir.html">mkdir</a><span class="tableEntryAnnotation">(pathname)</span>
 								</code>
 							</td>
-							<td>Make a new directory <code class="lang-d"><a href="../std/file/mkdir.html#pathname"><span class="pln">pathname</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Make a new directory <code class="lang-d"><a href="../std/file/mkdir.html#pathname"><span class="pln">pathname</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3273,11 +3273,11 @@ On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.h
 									<a id="mkdirRecurse" class="public" href="../std/file/mkdir_recurse.html">mkdirRecurse</a><span class="tableEntryAnnotation">(pathname)</span>
 								</code>
 							</td>
-							<td>Make directory and all parent directories as needed.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Make directory and all parent directories as needed.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3285,13 +3285,13 @@ On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.h
 									<a id="read" class="public" href="../std/file/read.html">read</a><span class="tableEntryAnnotation">(name, upTo)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Read entire contents of file <code class="lang-d"><a href="../std/file/read.html#name"><span class="pln">name</span></a></code> and returns it as an untyped
 array. If the file size is larger than <code class="lang-d"><a href="../std/file/read.html#upTo"><span class="pln">upTo</span></a></code>, only <code class="lang-d"><a href="../std/file/read.html#upTo"><span class="pln">upTo</span></a></code>
 bytes are read.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3299,11 +3299,11 @@ bytes are read.
 									<a id="readLink" class="public" href="../std/file/read_link.html">readLink</a><span class="tableEntryAnnotation">(link)</span>
 								</code>
 							</td>
-							<td><span class="blue">This function is POSIX-Only.</span>
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td><span class="blue">This function is POSIX-Only.</span>
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3311,15 +3311,15 @@ bytes are read.
 									<a id="readText" class="public" href="../std/file/read_text.html">readText</a><span class="tableEntryAnnotation">(name)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Reads and validates (using <code class="lang-d"><a href="../std/utf/validate.html" title="std.utf.validate"><span class="pln">validate</span></a></code>) a text file. S can be
     an array of any character type. However, no width or endian conversions are
     performed. So, if the width or endianness of the characters in the given
     file differ from the width or endianness of the element type of S, then
     validation will fail.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3327,11 +3327,11 @@ bytes are read.
 									<a id="remove" class="public" href="../std/file/remove.html">remove</a><span class="tableEntryAnnotation">(name)</span>
 								</code>
 							</td>
-							<td>Delete file <code class="lang-d"><a href="../std/file/remove.html#name"><span class="pln">name</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Delete file <code class="lang-d"><a href="../std/file/remove.html#name"><span class="pln">name</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3339,12 +3339,12 @@ bytes are read.
 									<a id="rename" class="public" href="../std/file/rename.html">rename</a><span class="tableEntryAnnotation">(from, to)</span>
 								</code>
 							</td>
-							<td>Rename file <code class="lang-d"><a href="../std/file/rename.html#from"><span class="pln">from</span></a></code> to <code class="lang-d"><a href="../std/file/rename.html#to"><span class="pln">to</span></a></code>, moving it between directories if required.
- If the target file exists, it is overwritten.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Rename file <code class="lang-d"><a href="../std/file/rename.html#from"><span class="pln">from</span></a></code> to <code class="lang-d"><a href="../std/file/rename.html#to"><span class="pln">to</span></a></code>, moving it between directories if required.
+ If the target file exists, it is overwritten.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3352,11 +3352,11 @@ bytes are read.
 									<a id="rmdir" class="public" href="../std/file/rmdir.html">rmdir</a><span class="tableEntryAnnotation">(pathname)</span>
 								</code>
 							</td>
-							<td>Remove directory <code class="lang-d"><a href="../std/file/rmdir.html#pathname"><span class="pln">pathname</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Remove directory <code class="lang-d"><a href="../std/file/rmdir.html#pathname"><span class="pln">pathname</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3364,12 +3364,12 @@ bytes are read.
 									<a id="rmdirRecurse" class="public" href="../std/file/rmdir_recurse.html">rmdirRecurse</a><span class="tableEntryAnnotation">(pathname)</span>
 								</code>
 							</td>
-							<td>Remove directory and all of its content and subdirectories,
-    recursively.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Remove directory and all of its content and subdirectories,
+    recursively.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3377,11 +3377,11 @@ bytes are read.
 									<a id="setAttributes" class="public" href="../std/file/set_attributes.html">setAttributes</a><span class="tableEntryAnnotation">(name, attributes)</span>
 								</code>
 							</td>
-							<td>Set the attributes of the given file.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Set the attributes of the given file.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3389,11 +3389,11 @@ bytes are read.
 									<a id="setTimes" class="public" href="../std/file/set_times.html">setTimes</a><span class="tableEntryAnnotation">(name, accessTime, modificationTime)</span>
 								</code>
 							</td>
-							<td>Set access/modified times of file or folder <code class="lang-d"><a href="../std/file/set_times.html#name"><span class="pln">name</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Set access/modified times of file or folder <code class="lang-d"><a href="../std/file/set_times.html#name"><span class="pln">name</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3401,15 +3401,15 @@ bytes are read.
 									<a id="slurp" class="public" href="../std/file/slurp.html">slurp</a><span class="tableEntryAnnotation">(filename, format)</span>
 								</code>
 							</td>
+							<td>
+								<fd class="canBeNogc"></fd>
+							</td>
 							<td>Reads a file line by line and parses the line into a single value or a
  <code class="lang-d"><a href="../std/typecons/tuple.html" title="std.typecons.Tuple"><span class="typ">Tuple</span></a></code> of values depending on the length of <code class="lang-d"><span class="typ">Types</span></code>.
  The lines are parsed using the specified format string. The format string is
  passed to <code class="lang-d"><a href="../std/format/formatted_read.html" title="std.format.formattedRead"><span class="pln">formattedRead</span></a></code>, and therefore must conform to the
  format string specification outlined in <code class="lang-d"><a href="../std/format.html"><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">format</span></a></code>.
 </td>
-							<td>
-								<fd class="canBeNogc"></fd>
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -3417,11 +3417,11 @@ bytes are read.
 									<a id="symlink" class="public" href="../std/file/symlink.html">symlink</a><span class="tableEntryAnnotation">(original, link)</span>
 								</code>
 							</td>
-							<td><span class="blue">This function is POSIX-Only.</span>
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td><span class="blue">This function is POSIX-Only.</span>
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3429,11 +3429,11 @@ bytes are read.
 									<a id="tempDir" class="public" href="../std/file/temp_dir.html">tempDir</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Returns the path to a directory for temporary files.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns the path to a directory for temporary files.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3441,11 +3441,11 @@ bytes are read.
 									<a id="thisExePath" class="public" href="../std/file/this_exe_path.html">thisExePath</a><span class="tableEntryAnnotation">()</span>
 								</code>
 							</td>
-							<td>Returns the full path of the current executable.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns the full path of the current executable.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3453,11 +3453,11 @@ bytes are read.
 									<a id="timeLastAccessed" class="public" href="../std/file/time_last_accessed.html">timeLastAccessed</a><span class="tableEntryAnnotation">(statbuf)</span>
 								</code>
 							</td>
-							<td><span class="blue">This function is POSIX-Only.</span>
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td><span class="blue">This function is POSIX-Only.</span>
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3465,11 +3465,11 @@ bytes are read.
 									<a id="timeLastModified" class="public" href="../std/file/time_last_modified.html">timeLastModified</a><span class="tableEntryAnnotation">(name)</span>
 								</code>
 							</td>
-							<td>Returns the time that the given file was last modified.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns the time that the given file was last modified.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3477,12 +3477,12 @@ bytes are read.
 									<a id="timeLastModified" class="public" href="../std/file/time_last_modified.html">timeLastModified</a><span class="tableEntryAnnotation">(name, returnIfMissing)</span>
 								</code>
 							</td>
-							<td>Returns the time that the given file was last modified. If the
-    file does not exist, returns <code class="lang-d"><a href="../std/file/time_last_modified.html#returnIfMissing"><span class="pln">returnIfMissing</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Returns the time that the given file was last modified. If the
+    file does not exist, returns <code class="lang-d"><a href="../std/file/time_last_modified.html#returnIfMissing"><span class="pln">returnIfMissing</span></a></code>.
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3490,11 +3490,11 @@ bytes are read.
 									<a id="timeLastModified" class="public" href="../std/file/time_last_modified.html">timeLastModified</a><span class="tableEntryAnnotation">(statbuf)</span>
 								</code>
 							</td>
-							<td><span class="blue">This function is POSIX-Only.</span>
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td><span class="blue">This function is POSIX-Only.</span>
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3502,11 +3502,11 @@ bytes are read.
 									<a id="timeStatusChanged" class="public" href="../std/file/time_status_changed.html">timeStatusChanged</a><span class="tableEntryAnnotation">(statbuf)</span>
 								</code>
 							</td>
-							<td><span class="blue">This function is POSIX-Only.</span>
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td><span class="blue">This function is POSIX-Only.</span>
+</td>
 						</tr>
 						<tr>
 							<td>
@@ -3514,11 +3514,11 @@ bytes are read.
 									<a id="write" class="public" href="../std/file/write.html">write</a><span class="tableEntryAnnotation">(name, buffer)</span>
 								</code>
 							</td>
-							<td>Write <code class="lang-d"><a href="../std/file/write.html#buffer"><span class="pln">buffer</span></a></code> to file <code class="lang-d"><a href="../std/file/write.html#name"><span class="pln">name</span></a></code>.
-</td>
 							<td>
 								<fd class="canBeNogc"></fd>
 							</td>
+							<td>Write <code class="lang-d"><a href="../std/file/write.html#buffer"><span class="pln">buffer</span></a></code> to file <code class="lang-d"><a href="../std/file/write.html#name"><span class="pln">name</span></a></code>.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3527,7 +3527,7 @@ bytes are read.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3535,10 +3535,10 @@ bytes are read.
 									<a id="FileException" class="public" href="../std/file/file_exception.html">FileException</a>
 								</code>
 							</td>
-							<td>Exception thrown for file I/O errors.
-</td>
 							<td>
 							</td>
+							<td>Exception thrown for file I/O errors.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3547,7 +3547,7 @@ bytes are read.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3555,10 +3555,10 @@ bytes are read.
 									<a id="DirEntry" class="public" href="../std/file/dir_entry.html">DirEntry</a>
 								</code>
 							</td>
-							<td>Info on a file, similar to what you'd get from stat on a POSIX system.
-</td>
 							<td>
 							</td>
+							<td>Info on a file, similar to what you'd get from stat on a POSIX system.
+</td>
 						</tr>
 					</table>
 				</section>
@@ -3567,7 +3567,7 @@ bytes are read.
 					<table>
 						<col class="caption"/>
 						<tr>
-							<th>Name</th><th>Description</th><th>nogc</th>
+							<th>Name</th><th>@nogc</th><th>Description</th>
 						</tr>
 						<tr>
 							<td>
@@ -3575,10 +3575,10 @@ bytes are read.
 									<a id="SpanMode" class="public" href="../std/file/span_mode.html">SpanMode</a>
 								</code>
 							</td>
-							<td>Dictates directory spanning policy for <span class="d_param">dirEntries</span> (see below).
-</td>
 							<td>
 							</td>
+							<td>Dictates directory spanning policy for <span class="d_param">dirEntries</span> (see below).
+</td>
 						</tr>
 					</table>
 				</section>
