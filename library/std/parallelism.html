@@ -3045,7 +3045,7 @@ and executed immediately in the thread where the result is needed.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>These properties get and set the number of worker threads in the <code class="lang-d"><a href="../std/parallelism/task_pool.html"><span class="typ">TaskPool</span></a></code>
 instance returned by <code class="lang-d"><a href="../std/parallelism/task_pool.html"><span class="pln">taskPool</span></a></code>.  The default value is <code class="lang-d"><a href="../std/parallelism/total_cp_us.html"><span class="pln">totalCPUs</span></a></code> - 1.
@@ -3060,7 +3060,7 @@ number of worker threads in the instance returned by <code class="lang-d"><a hre
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Convenience functions that forwards to <code class="lang-d"><span class="pln">taskPool<wbr/></span><span class="pun">.</span><span class="pln">parallel</span></code>.  The
 purpose of these is to make parallel foreach less verbose and more
@@ -3074,7 +3074,7 @@ readable.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>These functions allow the creation of <code class="lang-d"><a href="../std/parallelism/task.html"><span class="typ">Task</span></a></code> objects on the stack rather
 than the GC heap.  The lifetime of a <code class="lang-d"><a href="../std/parallelism/task.html"><span class="typ">Task</span></a></code> created by <code class="lang-d"><span class="pln">scopedTask</span></code>
@@ -3088,7 +3088,7 @@ cannot exceed the lifetime of the scope it was created in.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Creates a <code class="lang-d"><a href="../std/parallelism/task.html"><span class="typ">Task</span></a></code> on the GC heap that calls an alias.  This may be executed
 via <code class="lang-d"><a href="../std/parallelism/task.execute_in_new_thread.html"><span class="typ">Task<wbr/></span><span class="pun">.</span><span class="pln">executeInNewThread</span></a></code> or by submitting to a
@@ -3103,7 +3103,7 @@ via <code class="lang-d"><a href="../std/parallelism/task.execute_in_new_thread.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Creates a <code class="lang-d"><a href="../std/parallelism/task.html"><span class="typ">Task</span></a></code> on the GC heap that calls a function pointer, delegate, or
 class/struct with overloaded opCall.
@@ -3116,7 +3116,7 @@ class/struct with overloaded opCall.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Version of <code class="lang-d"><a href="../std/parallelism/task.html"><span class="pln">task</span></a></code> usable from <code class="lang-d"><span class="kwd">@safe</span></code> code.  Usage mechanics are
 identical to the non-@safe case, but safety introduces some restrictions:
@@ -3129,7 +3129,7 @@ identical to the non-@safe case, but safety introduces some restrictions:
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Returns a lazily initialized global instantiation of <code class="lang-d"><a href="../std/parallelism/task_pool.html"><span class="typ">TaskPool</span></a></code>.
 This function can safely be called concurrently from multiple non-worker
@@ -3153,8 +3153,6 @@ terminating the main thread.
 									<a id="TaskPool" class="public" href="../std/parallelism/task_pool.html">TaskPool</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>This class encapsulates a task queue and a set of worker threads.  Its purpose
 is to efficiently map a large number of <code class="lang-d"><a href="../std/parallelism/task.html"><span class="typ">Task</span></a></code>s onto a smaller number of
 threads.  A task queue is a FIFO queue of <code class="lang-d"><a href="../std/parallelism/task.html"><span class="typ">Task</span></a></code> objects that have been
@@ -3177,8 +3175,6 @@ available and sleeps when the queue is empty.
 								<code>
 									<a id="Task" class="public" href="../std/parallelism/task.html">Task</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td><code class="lang-d"><span class="typ">Task</span></code> represents the fundamental unit of work.  A <code class="lang-d"><span class="typ">Task</span></code> may be
 executed in parallel with any other <code class="lang-d"><span class="typ">Task</span></code>.  Using this struct directly

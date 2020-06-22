@@ -2967,8 +2967,6 @@ $('#symbolSearchPane').show();</script>
 									<a id="InSituRegion" class="public" href="../../../../std/experimental/allocator/building_blocks/region/in_situ_region.html">InSituRegion</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td><code class="lang-d"><span class="typ">InSituRegion</span></code> is a convenient region that carries its storage within itself
 (in the form of a statically-sized array).
 </td>
@@ -2978,8 +2976,6 @@ $('#symbolSearchPane').show();</script>
 								<code>
 									<a id="Region" class="public" href="../../../../std/experimental/allocator/building_blocks/region/region.html">Region</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>A <code class="lang-d"><span class="typ">Region</span></code> allocator allocates memory straight from one contiguous chunk.
 There is no deallocation, and once the region is full, allocation requests
@@ -2994,8 +2990,6 @@ that deallocate everything at once.
 									<a id="SbrkRegion" class="public" href="../../../../std/experimental/allocator/building_blocks/region/sbrk_region.html">SbrkRegion</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>Allocator backed by <code class="lang-d"><a href="https://en.wikipedia.org/wiki/Sbrk"><span class="pln">sbrk</span></a></code>
 for Posix systems. Due to the fact that <code class="lang-d"><span class="pln">sbrk</span></code> is not thread-safe
 <a href="http://lifecs.likai.org/2010/02/sbrk-is-not-thread-safe.html">by design</a>,
@@ -3008,8 +3002,6 @@ that uncontrolled calls to <code class="lang-d"><span class="pln">brk</span></co
 								<code>
 									<a id="SharedRegion" class="public" href="../../../../std/experimental/allocator/building_blocks/region/shared_region.html">SharedRegion</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>The threadsafe version of the <code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/region/region.html"><span class="typ">Region</span></a></code> allocator.
 Allocations and deallocations are lock-free based using <code class="lang-d"><a href="../../../../core/atomic/cas.html" title="core.atomic.cas"><span class="pln">cas</span></a></code>.

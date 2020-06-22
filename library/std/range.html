@@ -3185,7 +3185,7 @@ range operations that take advantage of the fact that the range is sorted.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Assumes <code class="lang-d"><a href="../std/range/assume_sorted.html#r"><span class="pln">r</span></a></code> is sorted by predicate <code class="lang-d"><span class="pln">pred</span></code> and returns the
 corresponding <code class="lang-d"><a href="../std/range/sorted_range.html"><span class="typ">SortedRange</span></a><span class="pun">!(</span><span class="pln">pred</span><span class="pun">, </span><span class="pln">R</span><span class="pun">)</span></code> having <code class="lang-d"><a href="../std/range/assume_sorted.html#r"><span class="pln">r</span></a></code> as support.
@@ -3200,7 +3200,7 @@ cost <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">n</spa
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Bitwise adapter over an integral type range. Consumes the range elements bit by
 bit, from the least significant bit to the most significant bit.
@@ -3213,7 +3213,7 @@ bit, from the least significant bit to the most significant bit.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Spans multiple ranges in sequence. The function <code class="lang-d"><span class="pln">chain</span></code> takes any
 number of ranges and returns a <code class="lang-d"><span class="typ">Chain</span><span class="pun">!(</span><span class="pln">R1</span><span class="pun">, </span><span class="pln">R2</span><span class="pun">,...)</span></code> object. The
@@ -3228,7 +3228,7 @@ result is a range that offers the <code class="lang-d"><span class="pln">front</
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Choose one of two ranges at runtime depending on a Boolean condition.
 </td>
@@ -3240,7 +3240,7 @@ result is a range that offers the <code class="lang-d"><span class="pln">front</
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Choose one of multiple ranges at runtime.
 </td>
@@ -3252,7 +3252,7 @@ result is a range that offers the <code class="lang-d"><span class="pln">front</
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>This range iterates over fixed-sized chunks of size <code class="lang-d"><a href="../std/range/chunks.html#chunkSize"><span class="pln">chunkSize</span></a></code> of a
 <code class="lang-d"><a href="../std/range/chunks.html#source"><span class="pln">source</span></a></code> range. <code class="lang-d"><span class="typ">Source</span></code> must be an <a href="../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>.
@@ -3266,7 +3266,7 @@ result is a range that offers the <code class="lang-d"><span class="pln">front</
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Repeats the given forward range ad infinitum. If the original range is
 infinite (fact that would make <code class="lang-d"><a href="../std/range/cycle.html"><span class="typ">Cycle</span></a></code> the identity application),
@@ -3285,7 +3285,7 @@ mostly for performance reasons.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Convenience function which calls
     <code class="lang-d"><a href="../std/range/primitives/pop_front_n.html" title="std.range.primitives.popFrontN"><span class="pln">popFrontN</span></a></code><code class="lang-d"><span class="pun">(<a href="../std/range/drop.html#range"></span><span class="pln">range</span></a><span class="pun">, <a href="../std/range/drop.html#n"></span><span class="pln">n</span></a><span class="pun">)</span></code> and returns <code class="lang-d"><a href="../std/range/drop.html#range"><span class="pln">range</span></a></code>.
@@ -3301,7 +3301,7 @@ mostly for performance reasons.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Convenience function which calls
     <code class="lang-d"><a href="../std/range/primitives/pop_front_n.html" title="std.range.primitives.popFrontN"><span class="pln">popFrontN</span></a></code><code class="lang-d"><span class="pun">(<a href="../std/range/drop_back.html#range"></span><span class="pln">range</span></a><span class="pun">, <a href="../std/range/drop_back.html#n"></span><span class="pln">n</span></a><span class="pun">)</span></code> and returns <code class="lang-d"><a href="../std/range/drop_back.html#range"><span class="pln">range</span></a></code>.
@@ -3317,7 +3317,7 @@ mostly for performance reasons.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Similar to <code class="lang-d"><a href="../std/range/drop.html"><span class="pln">drop</span></a></code> and <code class="lang-d"><a href="../std/range/drop_back.html"><span class="pln">dropBack</span></a></code> but they call
     <code class="lang-d"><span class="pln">range<wbr/></span><span class="pun">.</span><code class="lang-d"><span class="pln"><span class="pln">popFrontExactly</span></span></code><span class="pun">(<a href="../std/range/drop_back_exactly.html#n"></span><span class="pln">n</span></a><span class="pun">)</span></code> and <code class="lang-d"><span class="pln">range<wbr/></span><span class="pun">.</span><span class="pln">popBackExactly</span><span class="pun">(<a href="../std/range/drop_back_exactly.html#n"></span><span class="pln">n</span></a><span class="pun">)</span></code>
@@ -3331,7 +3331,7 @@ mostly for performance reasons.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Convenience function which calls
     <code class="lang-d"><span class="pln">range<wbr/></span><span class="pun">.</span><span class="pln">popFront</span><span class="pun">()</span></code> and returns <code class="lang-d"><a href="../std/range/drop_back_one.html#range"><span class="pln">range</span></a></code>. <code class="lang-d"><a href="../std/range/drop_one.html"><span class="pln">dropOne</span></a></code>
@@ -3347,7 +3347,7 @@ mostly for performance reasons.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Similar to <code class="lang-d"><a href="../std/range/drop.html"><span class="pln">drop</span></a></code> and <code class="lang-d"><a href="../std/range/drop_back.html"><span class="pln">dropBack</span></a></code> but they call
     <code class="lang-d"><span class="pln">range<wbr/></span><span class="pun">.</span><code class="lang-d"><span class="pln"><span class="pln">popFrontExactly</span></span></code><span class="pun">(<a href="../std/range/drop_exactly.html#n"></span><span class="pln">n</span></a><span class="pun">)</span></code> and <code class="lang-d"><span class="pln">range<wbr/></span><span class="pun">.</span><span class="pln">popBackExactly</span><span class="pun">(<a href="../std/range/drop_exactly.html#n"></span><span class="pln">n</span></a><span class="pun">)</span></code>
@@ -3361,7 +3361,7 @@ mostly for performance reasons.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Convenience function which calls
     <code class="lang-d"><span class="pln">range<wbr/></span><span class="pun">.</span><span class="pln">popFront</span><span class="pun">()</span></code> and returns <code class="lang-d"><a href="../std/range/drop_one.html#range"><span class="pln">range</span></a></code>. <code class="lang-d"><span class="pln">dropOne</span></code>
@@ -3377,7 +3377,7 @@ mostly for performance reasons.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Iterate over <code class="lang-d"><a href="../std/range/enumerate.html#range"><span class="pln">range</span></a></code> with an attached index variable.
 </td>
@@ -3389,7 +3389,7 @@ mostly for performance reasons.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>This range splits a <code class="lang-d"><a href="../std/range/even_chunks.html#source"><span class="pln">source</span></a></code> range into <code class="lang-d"><a href="../std/range/even_chunks.html#chunkCount"><span class="pln">chunkCount</span></a></code> chunks of
 approximately equal length. <code class="lang-d"><span class="typ">Source</span></code> must be a forward range with
@@ -3403,7 +3403,7 @@ known length.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Given a range of ranges, iterate transversally through the first
    elements of each of the enclosed ranges.
@@ -3416,7 +3416,7 @@ known length.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Given callable (<code class="lang-d"><a href="../std/traits/is_callable.html" title="std.traits.isCallable"><span class="pln">isCallable</span></a></code>) <code class="lang-d"><a href="../std/range/generate.html#fun"><span class="pln">fun</span></a></code>, create as a range
 whose front is defined by successive calls to <code class="lang-d"><a href="../std/range/generate.html#fun"><span class="pln">fun</span></a><span class="pun">()</span></code>.
@@ -3439,7 +3439,7 @@ The resulting range will call <code class="lang-d"><a href="../std/range/generat
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>This struct takes two ranges, <code class="lang-d"><a href="../std/range/indexed.html#source"><span class="pln">source</span></a></code> and <code class="lang-d"><a href="../std/range/indexed.html#indices"><span class="pln">indices</span></a></code>, and creates a view
 of <code class="lang-d"><a href="../std/range/indexed.html#source"><span class="pln">source</span></a></code> as if its elements were reordered according to <code class="lang-d"><a href="../std/range/indexed.html#indices"><span class="pln">indices</span></a></code>.
@@ -3454,7 +3454,7 @@ may also repeat elements.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Creates a range of values that span the given starting and stopping
    values.
@@ -3467,7 +3467,7 @@ may also repeat elements.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Iterate multiple ranges in lockstep using a <code class="lang-d"><span class="kwd">foreach</span></code> loop. In contrast to
    <code class="lang-d"><a href="../std/range/zip.html"><span class="pln">zip</span></a></code> it allows reference access to its elements. If only a single
@@ -3486,7 +3486,7 @@ may also repeat elements.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>An OutputRange that discards the data it receives.
 </td>
@@ -3498,7 +3498,7 @@ may also repeat elements.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Assemble <code class="lang-d"><a href="../std/range/only.html#values"><span class="pln">values</span></a></code> into a range that carries all its
 elements in-situ.
@@ -3511,7 +3511,7 @@ elements in-situ.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Extends the length of the input range <code class="lang-d"><a href="../std/range/pad_left.html#r"><span class="pln">r</span></a></code> by padding out the start of the
 range with the element <code class="lang-d"><a href="../std/range/pad_left.html#e"><span class="pln">e</span></a></code>. The element <code class="lang-d"><a href="../std/range/pad_left.html#e"><span class="pln">e</span></a></code> must be of a common type with
@@ -3526,7 +3526,7 @@ If <code class="lang-d"><a href="../std/range/pad_left.html#n"><span class="pln"
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Extend the length of the input range <code class="lang-d"><a href="../std/range/pad_right.html#r"><span class="pln">r</span></a></code> by padding out the end of the range
 with the element <code class="lang-d"><a href="../std/range/pad_right.html#e"><span class="pln">e</span></a></code>. The element <code class="lang-d"><a href="../std/range/pad_right.html#e"><span class="pln">e</span></a></code> must be of a common type with the
@@ -3542,7 +3542,7 @@ returned.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Iterates a random-access range starting from a given point and
 progressively extending left and right from that point. If no initial
@@ -3557,7 +3557,7 @@ range. Iteration spans the entire range.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Creates a mathematical sequence given the initial values and a
 recurrence function that computes the next value from the existing
@@ -3573,7 +3573,7 @@ often, recurrences are obtained by calling the function <code class="lang-d"><sp
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Wrapper which effectively makes it possible to pass a range by reference.
     Both the original range and the RefRange will always have the exact same
@@ -3590,7 +3590,7 @@ often, recurrences are obtained by calling the function <code class="lang-d"><sp
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Create a range which repeats one value.
 </td>
@@ -3602,7 +3602,7 @@ often, recurrences are obtained by calling the function <code class="lang-d"><sp
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Iterates a bidirectional range backwards. The original range can be
 accessed by using the <code class="lang-d"><span class="pln">source</span></code> property. Applying retro twice to
@@ -3616,7 +3616,7 @@ the same range yields the original range.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td><code class="lang-d"><span class="pln">roundRobin</span><span class="pun">(</span><span class="pln">r1</span><span class="pun">, </span><span class="pln">r2</span><span class="pun">, </span><span class="pln">r3</span><span class="pun">)</span></code> yields <code class="lang-d"><span class="pln">r1<wbr/></span><span class="pun">.</span><span class="pln">front</span></code>, then <code class="lang-d"><span class="pln">r2<wbr/></span><span class="pun">.</span><span class="pln">front</span></code>,
 then <code class="lang-d"><span class="pln">r3<wbr/></span><span class="pun">.</span><span class="pln">front</span></code>, after which it pops off one element from each and
@@ -3633,7 +3633,7 @@ finish early).
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td><code class="lang-d"><a href="../std/range/sequence.html"><span class="typ">Sequence</span></a></code> is similar to <code class="lang-d"><a href="../std/range/recurrence.html"><span class="typ">Recurrence</span></a></code> except that iteration is
    presented in the so-called <a href="http://en.wikipedia.org/wiki/Closed_form">  closed form</a>. This means that the <code class="lang-d"><span class="pln">n</span></code>th element in the series is
@@ -3650,7 +3650,7 @@ finish early).
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>A fixed-sized sliding window iteration
 of size <code class="lang-d"><a href="../std/range/slide.html#windowSize"><span class="pln">windowSize</span></a></code> over a <code class="lang-d"><a href="../std/range/slide.html#source"><span class="pln">source</span></a></code> range by a custom <code class="lang-d"><a href="../std/range/slide.html#stepSize"><span class="pln">stepSize</span></a></code>.
@@ -3663,7 +3663,7 @@ of size <code class="lang-d"><a href="../std/range/slide.html#windowSize"><span 
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Iterates range <code class="lang-d"><a href="../std/range/stride.html#r"><span class="pln">r</span></a></code> with stride <code class="lang-d"><a href="../std/range/stride.html#n"><span class="pln">n</span></a></code>. If the range is a
 random-access range, moves by indexing into the range; otherwise,
@@ -3679,7 +3679,7 @@ product of the two applications. It is an error for <code class="lang-d"><a href
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Return a range advanced to within <code class="lang-d"><span class="pln">_n</span></code> elements of the end of
  <code class="lang-d"><a href="../std/range/tail.html#range"><span class="pln">range</span></a></code>.
@@ -3692,7 +3692,7 @@ product of the two applications. It is an error for <code class="lang-d"><a href
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Lazily takes only up to <code class="lang-d"><a href="../std/range/take.html#n"><span class="pln">n</span></a></code> elements of a range. This is
 particularly useful when using with infinite ranges.
@@ -3705,7 +3705,7 @@ particularly useful when using with infinite ranges.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Similar to <code class="lang-d"><a href="../std/range/take.html"><span class="pln">take</span></a></code>, but assumes that <code class="lang-d"><a href="../std/range/take_exactly.html#range"><span class="pln">range</span></a></code> has at least <code class="lang-d"><a href="../std/range/take_exactly.html#n"><span class="pln">n</span></a></code> elements. Consequently, the result of <code class="lang-d"><span class="pln">takeExactly</span><span class="pun">(<a href="../std/range/take_exactly.html#range"></span><span class="pln">range</span></a><span class="pun">, <a href="../std/range/take_exactly.html#n"></span><span class="pln">n</span></a><span class="pun">)</span></code>
 always defines the <code class="lang-d"><span class="pln">length</span></code> property (and initializes it to <code class="lang-d"><a href="../std/range/take_exactly.html#n"><span class="pln">n</span></a></code>)
@@ -3719,7 +3719,7 @@ even when <code class="lang-d"><a href="../std/range/take_exactly.html#range"><s
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Returns an empty range which is statically known to be empty and is
     guaranteed to have <code class="lang-d"><span class="pln">length</span></code> and be random access regardless of <code class="lang-d"><span class="pln">R</span></code>'s
@@ -3733,7 +3733,7 @@ even when <code class="lang-d"><a href="../std/range/take_exactly.html#range"><s
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Creates an empty range from the given range in <span class="bigoh">&Omicron;(<code class="lang-d"><span class="lit">1</span></code>)</span>. If it can, it
     will return the same range type. If not, it will return
@@ -3747,7 +3747,7 @@ even when <code class="lang-d"><a href="../std/range/take_exactly.html#range"><s
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Returns a range with at most one element; for example, <code class="lang-d"><span class="pln">takeOne</span><span class="pun">([</span><span class="lit">42</span><span class="pun">, </span><span class="lit">43</span><span class="pun">, </span><span class="lit">44</span><span class="pun">])</span></code> returns a range consisting of the integer <code class="lang-d"><span class="lit">42</span></code>. Calling <code class="lang-d"><span class="pln">popFront</span><span class="pun">()</span></code> off that range renders it empty.
 </td>
@@ -3759,7 +3759,7 @@ even when <code class="lang-d"><a href="../std/range/take_exactly.html#range"><s
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Implements a "tee" style pipe, wrapping an input range so that elements of the
   range can be passed to a provided function or <code class="lang-d"><span class="typ">OutputRange</span></code> as they are
@@ -3776,7 +3776,7 @@ even when <code class="lang-d"><a href="../std/range/take_exactly.html#range"><s
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Given a range of ranges, returns a range of ranges where the <i>i</i>'th subrange
 contains the <i>i</i>'th elements of the original subranges.
@@ -3789,7 +3789,7 @@ contains the <i>i</i>'th elements of the original subranges.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Given a range of ranges, iterate transversally through the
     <code class="lang-d"><a href="../std/range/transversal.html#n"><span class="pln">n</span></a></code>th element of each of the enclosed ranges. This function
@@ -3803,7 +3803,7 @@ contains the <i>i</i>'th elements of the original subranges.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Iterate several ranges in lockstep. The element type is a proxy tuple
    that allows accessing the current element in the <code class="lang-d"><span class="pln">n</span></code>th range by
@@ -3825,8 +3825,6 @@ contains the <i>i</i>'th elements of the original subranges.
 									<a id="Chunks" class="public" href="../std/range/chunks.html">Chunks</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>This range iterates over fixed-sized chunks of size <code class="lang-d"><span class="pln">chunkSize</span></code> of a
 <code class="lang-d"><span class="pln">source</span></code> range. <code class="lang-d"><span class="typ">Source</span></code> must be an <a href="../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>.
 <code class="lang-d"><span class="pln">chunkSize</span></code> must be greater than zero.
@@ -3837,8 +3835,6 @@ contains the <i>i</i>'th elements of the original subranges.
 								<code>
 									<a id="Cycle" class="public" href="../std/range/cycle.html">Cycle</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>Repeats the given forward range ad infinitum. If the original range is
 infinite (fact that would make <code class="lang-d"><span class="typ">Cycle</span></code> the identity application),
@@ -3856,8 +3852,6 @@ mostly for performance reasons.
 									<a id="EvenChunks" class="public" href="../std/range/even_chunks.html">EvenChunks</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>This range splits a <code class="lang-d"><span class="pln">source</span></code> range into <code class="lang-d"><span class="pln">chunkCount</span></code> chunks of
 approximately equal length. <code class="lang-d"><span class="typ">Source</span></code> must be a forward range with
 known length.
@@ -3869,8 +3863,6 @@ known length.
 									<a id="FrontTransversal" class="public" href="../std/range/front_transversal.html">FrontTransversal</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>Given a range of ranges, iterate transversally through the first
    elements of each of the enclosed ranges.
 </td>
@@ -3880,8 +3872,6 @@ known length.
 								<code>
 									<a id="Indexed" class="public" href="../std/range/indexed.html">Indexed</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>This struct takes two ranges, <code class="lang-d"><a href="../std/range/indexed.source.html"><span class="pln">source</span></a></code> and <code class="lang-d"><a href="../std/range/indexed.indices.html"><span class="pln">indices</span></a></code>, and creates a view
 of <code class="lang-d"><a href="../std/range/indexed.source.html"><span class="pln">source</span></a></code> as if its elements were reordered according to <code class="lang-d"><a href="../std/range/indexed.indices.html"><span class="pln">indices</span></a></code>.
@@ -3894,8 +3884,6 @@ may also repeat elements.
 								<code>
 									<a id="Lockstep" class="public" href="../std/range/lockstep.html">Lockstep</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>Iterate multiple ranges in lockstep using a <code class="lang-d"><span class="kwd">foreach</span></code> loop. In contrast to
    <code class="lang-d"><a href="../std/range/zip.html"><span class="pln">zip</span></a></code> it allows reference access to its elements. If only a single
@@ -3913,8 +3901,6 @@ may also repeat elements.
 									<a id="NullSink" class="public" href="../std/range/null_sink.html">NullSink</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>An OutputRange that discards the data it receives.
 </td>
 						</tr>
@@ -3923,8 +3909,6 @@ may also repeat elements.
 								<code>
 									<a id="Recurrence" class="public" href="../std/range/recurrence.html">Recurrence</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>Creates a mathematical sequence given the initial values and a
 recurrence function that computes the next value from the existing
@@ -3938,8 +3922,6 @@ often, recurrences are obtained by calling the function <code class="lang-d"><a 
 								<code>
 									<a id="RefRange" class="public" href="../std/range/ref_range.html">RefRange</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>Wrapper which effectively makes it possible to pass a range by reference.
     Both the original range and the RefRange will always have the exact same
@@ -3955,8 +3937,6 @@ often, recurrences are obtained by calling the function <code class="lang-d"><a 
 									<a id="Repeat" class="public" href="../std/range/repeat.html">Repeat</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>Create a range which repeats one value.
 </td>
 						</tr>
@@ -3965,8 +3945,6 @@ often, recurrences are obtained by calling the function <code class="lang-d"><a 
 								<code>
 									<a id="Sequence" class="public" href="../std/range/sequence.html">Sequence</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td><code class="lang-d"><span class="typ">Sequence</span></code> is similar to <code class="lang-d"><a href="../std/range/recurrence.html"><span class="typ">Recurrence</span></a></code> except that iteration is
    presented in the so-called <a href="http://en.wikipedia.org/wiki/Closed_form">  closed form</a>. This means that the <code class="lang-d"><span class="pln">n</span></code>th element in the series is
@@ -3982,8 +3960,6 @@ often, recurrences are obtained by calling the function <code class="lang-d"><a 
 									<a id="SortedRange" class="public" href="../std/range/sorted_range.html">SortedRange</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>Represents a sorted range. In addition to the regular range
    primitives, supports additional operations that take advantage of the
    ordering, such as merge and binary search. To obtain a <code class="lang-d"><span class="pln">   </span><span class="typ">SortedRange</span></code> from an unsorted range <code class="lang-d"><span class="pln">r</span></code>, use
@@ -3998,8 +3974,6 @@ often, recurrences are obtained by calling the function <code class="lang-d"><a 
 									<a id="Take" class="public" href="../std/range/take.html">Take</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>Lazily takes only up to <code class="lang-d"><span class="pln">n</span></code> elements of a range. This is
 particularly useful when using with infinite ranges.
 </td>
@@ -4009,8 +3983,6 @@ particularly useful when using with infinite ranges.
 								<code>
 									<a id="Transversal" class="public" href="../std/range/transversal.html">Transversal</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>Given a range of ranges, iterate transversally through the
     <code class="lang-d"><span class="pln">n</span></code>th element of each of the enclosed ranges. This function
@@ -4022,8 +3994,6 @@ particularly useful when using with infinite ranges.
 								<code>
 									<a id="Zip" class="public" href="../std/range/zip.html">Zip</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>Iterate several ranges in lockstep. The element type is a proxy tuple
    that allows accessing the current element in the <code class="lang-d"><span class="pln">n</span></code>th range by
@@ -4045,8 +4015,6 @@ particularly useful when using with infinite ranges.
 									<a id="SearchPolicy" class="public" href="../std/range/search_policy.html">SearchPolicy</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>Policy used with the searching primitives <code class="lang-d"><span class="pln">lowerBound</span></code>, <code class="lang-d"><span class="pln">   upperBound</span></code>, and <code class="lang-d"><span class="pln">equalRange</span></code> of <code class="lang-d"><a href="../std/range/sorted_range.html"><span class="typ">SortedRange</span></a></code> below.
 </td>
 						</tr>
@@ -4055,8 +4023,6 @@ particularly useful when using with infinite ranges.
 								<code>
 									<a id="SortedRangeOptions" class="public" href="../std/range/sorted_range_options.html">SortedRangeOptions</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>Options for <code class="lang-d"><a href="../std/range/sorted_range.html"><span class="typ">SortedRange</span></a></code> ranges (below).
 </td>
@@ -4067,8 +4033,6 @@ particularly useful when using with infinite ranges.
 									<a id="StoppingPolicy" class="public" href="../std/range/stopping_policy.html">StoppingPolicy</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>Dictates how iteration in a <code class="lang-d"><a href="../std/range/zip.html"><span class="pln">zip</span></a></code> and <code class="lang-d"><a href="../std/range/lockstep.html"><span class="pln">lockstep</span></a></code> should stop.
    By default stop at the end of the shortest of all ranges.
 </td>
@@ -4078,8 +4042,6 @@ particularly useful when using with infinite ranges.
 								<code>
 									<a id="TransverseOptions" class="public" href="../std/range/transverse_options.html">TransverseOptions</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>Options for the <code class="lang-d"><a href="../std/range/front_transversal.html"><span class="typ">FrontTransversal</span></a></code> and <code class="lang-d"><a href="../std/range/transversal.html"><span class="typ">Transversal</span></a></code> ranges
    (below).

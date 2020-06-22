@@ -2968,7 +2968,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Finalization hook, called FOR each thread. No assumptions about
  module initialization state should be made.
@@ -2981,7 +2981,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Initialization hook, called FROM each thread. No assumptions about
  module initialization state should be made.
@@ -2994,7 +2994,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>GC sweep hook, called FOR each thread. Can be used to free
  additional thread local memory or associated data structures. Note
@@ -3008,7 +3008,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>GC scan hook, called FOR each thread. Can be used to scan
  additional thread local memory.
@@ -3028,8 +3028,6 @@ $('#symbolSearchPane').show();</script>
 								<code>
 									<a id="Data" class="public" href="../rt/tlsgc/data.html">Data</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>Per thread record to store thread associated data for garbage collection.
 </td>

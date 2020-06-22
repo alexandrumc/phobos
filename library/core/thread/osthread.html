@@ -2971,7 +2971,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Create a thread not under control of the runtime, i.e. TLS module constructors are
  not run and the GC does not suspend it during a collection.
@@ -2984,7 +2984,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Check whether a thread was created by <code class="lang-d"><a href="../../core/thread/osthread/create_low_level_thread.html"><span class="pln">createLowLevelThread</span></a></code>.
 </td>
@@ -2996,7 +2996,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Wait for a thread created with <code class="lang-d"><a href="../../core/thread/osthread/create_low_level_thread.html"><span class="pln">createLowLevelThread</span></a></code> to terminate.
 </td>
@@ -3008,7 +3008,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Registers the calling thread for use with the D Runtime.  If this routine
  is called for a thread which is already registered, no action is performed.
@@ -3021,7 +3021,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Deregisters the given thread from use with the runtime.  If this routine
  is called for a thread which is not registered, the result is undefined.
@@ -3034,7 +3034,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Deregisters the given thread from use with the runtime.  If this routine
  is called for a thread which is not registered, the result is undefined.
@@ -3047,7 +3047,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Deregisters the calling thread from use with the runtime.  If this routine
  is called for a thread which is not registered, the result is undefined.
@@ -3060,7 +3060,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Signals that the code following this call is a critical region. Any code in
  this region must finish running before the calling thread can be suspended
@@ -3074,7 +3074,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Signals that the calling thread is no longer in a critical region. Following
  a call to this function, the thread can once again be suspended.
@@ -3087,7 +3087,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Search the list of all threads for a thread with the given thread identifier.
 </td>
@@ -3099,7 +3099,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Returns true if the current thread is in a critical region; otherwise, false.
 </td>
@@ -3111,7 +3111,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Initializes the thread module.  This function must be called by the
  garbage collector on startup and before any other thread routines
@@ -3125,7 +3125,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td></td>
 						</tr>
@@ -3136,7 +3136,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Joins all non-daemon threads that are currently running.  This is done by
  performing successive scans through the thread list until a scan consists
@@ -3150,7 +3150,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>This routine allows the runtime to process any special per-thread handling
  for the GC.  This is needed for taking into account any memory that is
@@ -3165,7 +3165,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Resume all threads but the calling thread for "stop the world" garbage
  collection runs.  This function must be called once for each preceding
@@ -3179,7 +3179,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>The main entry point for garbage collection.  The supplied delegate
  will be passed ranges representing both stack and register values.
@@ -3192,7 +3192,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>The main entry point for garbage collection.  The supplied delegate
  will be passed ranges representing both stack and register values.
@@ -3205,7 +3205,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Instruct the thread module, when initialized, to use a different set of
  signals besides SIGUSR1 and SIGUSR2 for suspension and resumption of threads.
@@ -3220,7 +3220,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Sets the current thread to a specific reference. Only to be used
  when dealing with externally-created threads (in e.g. C code).
@@ -3236,7 +3236,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Returns the stack bottom of the currently active stack within the calling
  thread.
@@ -3249,7 +3249,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Returns the stack top of the currently active stack within the calling
  thread.
@@ -3262,7 +3262,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Suspend all threads but the calling thread for "stop the world" garbage
  collection runs.  This function may be called multiple times, and must
@@ -3277,7 +3277,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Terminates the thread module. No other thread routine may be called
  afterwards.
@@ -3298,8 +3298,6 @@ $('#symbolSearchPane').show();</script>
 									<a id="Thread" class="public" href="../../core/thread/osthread/thread.html">Thread</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>This class encapsulates all threading functionality for the D
  programming language.  As thread manipulation is a required facility
  for garbage collection, all user threads should derive from this
@@ -3314,8 +3312,6 @@ $('#symbolSearchPane').show();</script>
 									<a id="ThreadError" class="public" href="../../core/thread/osthread/thread_error.html">ThreadError</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>Base class for thread errors to be used for function inside GC when allocations are unavailable.
 </td>
 						</tr>
@@ -3325,8 +3321,6 @@ $('#symbolSearchPane').show();</script>
 									<a id="ThreadException" class="public" href="../../core/thread/osthread/thread_exception.html">ThreadException</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>Base class for thread exceptions.
 </td>
 						</tr>
@@ -3335,8 +3329,6 @@ $('#symbolSearchPane').show();</script>
 								<code>
 									<a id="ThreadGroup" class="public" href="../../core/thread/osthread/thread_group.html">ThreadGroup</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>This class is intended to simplify certain common programming techniques.
 </td>
@@ -3356,8 +3348,6 @@ $('#symbolSearchPane').show();</script>
 									<a id="IsMarked" class="public" href="../../core/thread/osthread/is_marked.html">IsMarked</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>Indicates whether an address has been marked by the GC.
 </td>
 						</tr>
@@ -3366,8 +3356,6 @@ $('#symbolSearchPane').show();</script>
 								<code>
 									<a id="ScanType" class="public" href="../../core/thread/osthread/scan_type.html">ScanType</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>Indicates the kind of scan being performed by <code class="lang-d"><a href="../../core/thread/osthread/thread_scan_all_type.html"><span class="pln">thread_scanAllType</span></a></code>.
 </td>

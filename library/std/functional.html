@@ -3019,7 +3019,7 @@ functions are helpful when constructing predicates for the algorithms in
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Takes a function of (potentially) many arguments, and returns a function taking
 one argument and returns a callable taking the rest.  f(x, y) == curry(f)(x)(y)
@@ -3032,7 +3032,7 @@ one argument and returns a callable taking the rest.  f(x, y) == curry(f)(x)(y)
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td><a href="https://en.wikipedia.org/wiki/Memoization">Memoizes</a> a function so as
  to avoid repeated computation. The memoization structure is a hash table keyed by a
@@ -3048,7 +3048,7 @@ one argument and returns a callable taking the rest.  f(x, y) == curry(f)(x)(y)
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Convert a callable to a delegate with the same parameter list and
  return type, avoiding heap allocations and use of auxiliary storage.
@@ -3069,7 +3069,8 @@ one argument and returns a callable taking the rest.  f(x, y) == curry(f)(x)(y)
 									<a id="adjoin" class="public" href="../std/functional/adjoin.html">adjoin</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td>Takes multiple functions and adjoins them together.
 </td>
@@ -3080,7 +3081,8 @@ one argument and returns a callable taking the rest.  f(x, y) == curry(f)(x)(y)
 									<a id="binaryFun" class="public" href="../std/functional/binary_fun.html">binaryFun</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td>Transforms a <code class="lang-d"><span class="typ">string</span></code> representing an expression into a binary function. The
 <code class="lang-d"><span class="typ">string</span></code> must either use symbol names <code class="lang-d"><span class="pln">a</span></code> and <code class="lang-d"><span class="pln">b</span></code> as the parameters or
@@ -3093,7 +3095,8 @@ provide the symbols via the <code class="lang-d"><span class="pln">parm1Name</sp
 									<a id="not" class="public" href="../std/functional/not.html">not</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td>Negates predicate <code class="lang-d"><span class="pln">pred</span></code>.
 </td>
@@ -3104,7 +3107,8 @@ provide the symbols via the <code class="lang-d"><span class="pln">parm1Name</sp
 									<a id="partial" class="public" href="../std/functional/partial.html">partial</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td><a href="http://en.wikipedia.org/wiki/Partial_application">Partially
 applies</a> <span class="d_param">fun</span> by tying its first argument to <span class="d_param">arg</span>.
@@ -3116,7 +3120,8 @@ applies</a> <span class="d_param">fun</span> by tying its first argument to <spa
 									<a id="reverseArgs" class="public" href="../std/functional/reverse_args.html">reverseArgs</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td>N-ary predicate that reverses the order of arguments, e.g., given
 <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">a</span><span class="pun">, </span><span class="pln">b</span><span class="pun">, </span><span class="pln">c</span><span class="pun">)</span></code>, returns <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">c</span><span class="pun">, </span><span class="pln">b</span><span class="pun">, </span><span class="pln">a</span><span class="pun">)</span></code>.
@@ -3128,7 +3133,8 @@ applies</a> <span class="d_param">fun</span> by tying its first argument to <spa
 									<a id="unaryFun" class="public" href="../std/functional/unary_fun.html">unaryFun</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td>Transforms a <code class="lang-d"><span class="typ">string</span></code> representing an expression into a unary
 function. The <code class="lang-d"><span class="typ">string</span></code> must either use symbol name <code class="lang-d"><span class="pln">a</span></code> as

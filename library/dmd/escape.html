@@ -2978,7 +2978,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Array literal is going to be allocated on the GC heap.
  Check its elements to see if any would escape by going on the heap.
@@ -2991,7 +2991,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Given an <code class="lang-d"><span class="typ">AssignExp</span></code>, determine if the lvalue will cause
  the contents of the rvalue to escape.
@@ -3007,7 +3007,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Associative array literal is going to be allocated on the GC heap.
  Check its elements to see if any would escape by going on the heap.
@@ -3020,7 +3020,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Check struct constructor of the form <code class="lang-d"><span class="pln">s<wbr/></span><span class="pun">.</span><span class="kwd">this</span><span class="pun">(</span><span class="pln">args</span><span class="pun">)</span></code>, by
  checking each <code class="lang-d"><span class="kwd">return</span></code> parameter to see if it gets
@@ -3034,7 +3034,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Checks memory objects passed to a function.
  Checks that if a memory object is passed by ref or by pointer,
@@ -3049,7 +3049,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Detect cases where pointers to the stack can escape the
  lifetime of the stack frame by being placed into a GC allocated object.
@@ -3063,7 +3063,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Function parameter <code class="lang-d"><a href="../dmd/escape/check_param_argument_escape.html#par"><span class="pln">par</span></a></code> is being initialized to <code class="lang-d"><a href="../dmd/escape/check_param_argument_escape.html#arg"><span class="pln">arg</span></a></code>,
  and <code class="lang-d"><a href="../dmd/escape/check_param_argument_escape.html#par"><span class="pln">par</span></a></code> may escape.
@@ -3078,7 +3078,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Function argument initializes a <code class="lang-d"><span class="kwd">return</span></code> parameter,
  and that parameter gets assigned to <code class="lang-d"><a href="../dmd/escape/check_param_argument_return.html#firstArg"><span class="pln">firstArg</span></a></code>.
@@ -3092,7 +3092,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Detect cases where pointers to the stack can escape the
  lifetime of the stack frame by returning <code class="lang-d"><a href="../dmd/escape/check_return_escape.html#e"><span class="pln">e</span></a></code> by value.
@@ -3106,7 +3106,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Detect cases where returning <code class="lang-d"><a href="../dmd/escape/check_return_escape_ref.html#e"><span class="pln">e</span></a></code> by <code class="lang-d"><span class="kwd">ref</span></code> can result in a reference to the stack
  being returned.
@@ -3120,7 +3120,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Detect cases where pointers to the stack can escape the
  lifetime of the stack frame when throwing <code class="lang-d"><a href="../dmd/escape/check_throw_escape.html#e"><span class="pln">e</span></a></code>.
@@ -3134,7 +3134,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Have some variables that are maybescopes that were
  assigned values from other maybescope variables.
@@ -3150,7 +3150,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>e is an expression to be returned by 'ref'.
  Walk e to determine which variables are possibly being
@@ -3170,7 +3170,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>e is an expression to be returned by value, and that value contains pointers.
  Walk e to determine which variables are possibly being
@@ -3190,7 +3190,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Find all variables accessed by this delegate that are
  in functions enclosing it.
@@ -3203,7 +3203,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Is type a reference to a mutable value?
 </td>
@@ -3215,7 +3215,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Is parameter a reference to a mutable value?
 </td>
@@ -3227,7 +3227,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Turn off <code class="lang-d"><span class="pln">STC<wbr/></span><span class="pun">.</span><span class="pln">maybescope</span></code> for variable <code class="lang-d"><a href="../dmd/escape/not_maybe_scope.html#v"><span class="pln">v</span></a></code>.
 </td>
@@ -3246,8 +3246,6 @@ $('#symbolSearchPane').show();</script>
 								<code>
 									<a id="EscapeByResults" class="public" href="../dmd/escape/escape_by_results.html">EscapeByResults</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>Aggregate the data collected by the escapeBy??() functions.
 </td>

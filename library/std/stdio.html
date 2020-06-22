@@ -2971,7 +2971,7 @@ is <span class="d_param">public</span>ally imported when importing <b>std.stdio<
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Convenience function that forwards to <code class="lang-d"><span class="pln">core<wbr/></span><span class="pun">.</span><span class="pln">sys<wbr/></span><span class="pun">.</span><span class="pln">posix<wbr/></span><span class="pun">.</span><span class="pln">stdio<wbr/></span><span class="pun">.</span><span class="pln">popen</span></code>
  with appropriately-constructed C-style strings.
@@ -2984,7 +2984,7 @@ is <span class="d_param">public</span>ally imported when importing <b>std.stdio<
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Iterates through a file a chunk at a time by using <code class="lang-d"><span class="kwd">foreach</span></code>.
 </td>
@@ -2996,7 +2996,7 @@ is <span class="d_param">public</span>ally imported when importing <b>std.stdio<
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Experimental network access via the File interface
 </td>
@@ -3008,7 +3008,7 @@ is <span class="d_param">public</span>ally imported when importing <b>std.stdio<
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Reads formatted data from <code class="lang-d"><a href="../std/stdio/stdin.html"><span class="pln">stdin</span></a></code> using <code class="lang-d"><a href="../std/format/formatted_read.html" title="std.format.formattedRead"><span class="pln">formattedRead</span></a></code>.
 </td>
@@ -3020,7 +3020,7 @@ is <span class="d_param">public</span>ally imported when importing <b>std.stdio<
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Read line from <code class="lang-d"><a href="../std/stdio/stdin.html"><span class="pln">stdin</span></a></code>.
 </td>
@@ -3032,7 +3032,7 @@ is <span class="d_param">public</span>ally imported when importing <b>std.stdio<
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Read line from <code class="lang-d"><a href="../std/stdio/stdin.html"><span class="pln">stdin</span></a></code> and write it to buf[], including terminating character.
 </td>
@@ -3044,7 +3044,7 @@ is <span class="d_param">public</span>ally imported when importing <b>std.stdio<
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Writes an array or range to a file.
 Shorthand for <code class="lang-d"><span class="pln">data<wbr/></span><span class="pun">.</span><span class="pln">copy</span><span class="pun">(<a href="../std/stdio/file.html"></span><span class="typ">File</span></a><span class="pun">(<a href="../std/stdio/to_file.html#fileName"></span><span class="pln">fileName</span></a><span class="pun">, </span><span class="str">"wb"</span><span class="pun">)<wbr/>.</span><span class="pln">lockingBinaryWriter</span><span class="pun">)</span></code>.
@@ -3059,7 +3059,7 @@ rather than encoded according to the <code class="lang-d"><a href="../std/stdio/
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Writes its arguments in text format to standard output (without a trailing newline).
 </td>
@@ -3071,7 +3071,7 @@ rather than encoded according to the <code class="lang-d"><a href="../std/stdio/
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Writes formatted data to standard output (without a trailing newline).
 </td>
@@ -3083,7 +3083,7 @@ rather than encoded according to the <code class="lang-d"><a href="../std/stdio/
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Equivalent to <code class="lang-d"><a href="../std/stdio/writef.html"><span class="pln">writef</span></a><span class="pun">(<a href="../std/stdio/writefln.html#fmt"></span><span class="pln">fmt</span></a><span class="pun">, <a href="../std/stdio/writefln.html#args"></span><span class="pln">args</span></a><span class="pun">, </span><span class="str">'\n'</span><span class="pun">)</span></code>.
 </td>
@@ -3095,7 +3095,7 @@ rather than encoded according to the <code class="lang-d"><a href="../std/stdio/
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Equivalent to <code class="lang-d"><a href="../std/stdio/write.html"><span class="pln">write</span></a><span class="pun">(<a href="../std/stdio/writeln.html#args"></span><span class="pln">args</span></a><span class="pun">, </span><span class="str">'\n'</span><span class="pun">)</span></code>.  Calling <code class="lang-d"><span class="pln">writeln</span></code> without
  arguments is valid and just prints a newline to the standard
@@ -3117,8 +3117,6 @@ rather than encoded according to the <code class="lang-d"><a href="../std/stdio/
 									<a id="StdioException" class="public" href="../std/stdio/stdio_exception.html">StdioException</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>Thrown if I/O errors happen.
 </td>
 						</tr>
@@ -3137,8 +3135,6 @@ rather than encoded according to the <code class="lang-d"><a href="../std/stdio/
 									<a id="File" class="public" href="../std/stdio/file.html">File</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>Encapsulates a <code class="lang-d"><span class="pln">FILE</span><span class="pun">*</span></code>. Generally D does not attempt to provide
 thin wrappers over equivalent functions in the C standard library, but
 manipulating <code class="lang-d"><span class="pln">FILE</span><span class="pun">*</span></code> values directly is unsafe and error-prone in
@@ -3151,8 +3147,6 @@ file closing, and a lot of convenience.
 								<code>
 									<a id="lines" class="public" href="../std/stdio/lines.html">lines</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>Iterates through the lines of a file by using <code class="lang-d"><span class="kwd">foreach</span></code>.
 </td>
@@ -3171,8 +3165,6 @@ file closing, and a lot of convenience.
 								<code>
 									<a id="LockType" class="public" href="../std/stdio/lock_type.html">LockType</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>Used to specify the lock type for <code class="lang-d"><a href="../std/stdio/file.lock.html"><span class="typ">File<wbr/></span><span class="pun">.</span><span class="pln">lock</span></a></code> and <code class="lang-d"><a href="../std/stdio/file.try_lock.html"><span class="typ">File<wbr/></span><span class="pun">.</span><span class="pln">tryLock</span></a></code>.
 </td>

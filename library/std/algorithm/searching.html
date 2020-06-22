@@ -3028,7 +3028,7 @@ It contains generic searching algorithms.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Checks whether <code class="lang-d"><a href="../../std/algorithm/searching/balanced_parens.html#r"><span class="pln">r</span></a></code> has "balanced parentheses", i.e. all instances
 of <code class="lang-d"><a href="../../std/algorithm/searching/balanced_parens.html#lPar"><span class="pln">lPar</span></a></code> are closed by corresponding instances of <code class="lang-d"><a href="../../std/algorithm/searching/balanced_parens.html#rPar"><span class="pln">rPar</span></a></code>. The
@@ -3044,7 +3044,7 @@ nesting is allowed.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Sets up Boyer-Moore matching for use with <code class="lang-d"><a href="../../std/algorithm/searching/find.html"><span class="pln">find</span></a></code> below.
  By default, elements are compared for equality.
@@ -3057,7 +3057,7 @@ nesting is allowed.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Returns the common prefix of two ranges.
 </td>
@@ -3069,7 +3069,7 @@ nesting is allowed.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>The first version counts the number of elements <code class="lang-d"><span class="pln">x</span></code> in <code class="lang-d"><span class="pln">r</span></code> for
 which <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">x</span><span class="pun">, </span><span class="pln">value</span><span class="pun">)</span></code> is <code class="lang-d"><span class="kwd">true</span></code>. <code class="lang-d"><span class="pln">pred</span></code> defaults to
@@ -3083,7 +3083,7 @@ equality. Performs <span class="bigoh">&Omicron;(<code class="lang-d"><span clas
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Counts elements in the given
     <a href="../../std/range/primitives/is_forward_range.html" title="std.range.primitives.isForwardRange">forward range</a>
@@ -3097,7 +3097,7 @@ equality. Performs <span class="bigoh">&Omicron;(<code class="lang-d"><span clas
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Checks if the given range ends with (one of) the given needle(s).
 The reciprocal of <code class="lang-d"><a href="../../std/algorithm/searching/starts_with.html"><span class="pln">startsWith</span></a></code>.
@@ -3110,7 +3110,7 @@ The reciprocal of <code class="lang-d"><a href="../../std/algorithm/searching/st
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Finds an individual element in an <a href="../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>.
 Elements of <code class="lang-d"><a href="../../std/algorithm/searching/find.html#haystack"><span class="pln">haystack</span></a></code> are compared with <code class="lang-d"><a href="../../std/algorithm/searching/find.html#needle"><span class="pln">needle</span></a></code> by using predicate
@@ -3125,7 +3125,7 @@ Elements of <code class="lang-d"><a href="../../std/algorithm/searching/find.htm
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Finds two or more <code class="lang-d"><a href="../../std/algorithm/searching/find.html#needles"><span class="pln">needles</span></a></code> into a <code class="lang-d"><a href="../../std/algorithm/searching/find.html#haystack"><span class="pln">haystack</span></a></code>. The predicate <code class="lang-d"><span class="pln">pred</span></code> is used throughout to compare elements. By default, elements are
 compared for equality.
@@ -3138,7 +3138,7 @@ compared for equality.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Finds <code class="lang-d"><a href="../../std/algorithm/searching/find.html#needle"><span class="pln">needle</span></a></code> in <code class="lang-d"><a href="../../std/algorithm/searching/find.html#haystack"><span class="pln">haystack</span></a></code> efficiently using the
  <a href="https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string_search_algorithm"> Boyer-Moore</a> method.
@@ -3151,7 +3151,7 @@ compared for equality.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Advances <code class="lang-d"><a href="../../std/algorithm/searching/find_adjacent.html#r"><span class="pln">r</span></a></code> until it finds the first two adjacent elements <code class="lang-d"><span class="pln">a</span></code>,
 <code class="lang-d"><span class="pln">b</span></code> that satisfy <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">a</span><span class="pun">, </span><span class="pln">b</span><span class="pun">)</span></code>. Performs <span class="bigoh">&Omicron;(<code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length</span></code>)</span>
@@ -3165,7 +3165,7 @@ evaluations of <code class="lang-d"><span class="pln">pred</span></code>.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Searches the given range for an element that matches one of the given choices.
 </td>
@@ -3177,7 +3177,7 @@ evaluations of <code class="lang-d"><span class="pln">pred</span></code>.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Finds <code class="lang-d"><a href="../../std/algorithm/searching/find_skip.html#needle"><span class="pln">needle</span></a></code> in <code class="lang-d"><a href="../../std/algorithm/searching/find_skip.html#haystack"><span class="pln">haystack</span></a></code> and positions <code class="lang-d"><a href="../../std/algorithm/searching/find_skip.html#haystack"><span class="pln">haystack</span></a></code>
  right after the first occurrence of <code class="lang-d"><a href="../../std/algorithm/searching/find_skip.html#needle"><span class="pln">needle</span></a></code>.
@@ -3190,7 +3190,7 @@ evaluations of <code class="lang-d"><span class="pln">pred</span></code>.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>These functions find the first occurrence of <code class="lang-d"><a href="../../std/algorithm/searching/find_split.html#needle"><span class="pln">needle</span></a></code> in <code class="lang-d"><a href="../../std/algorithm/searching/find_split.html#haystack"><span class="pln">haystack</span></a></code> and then
 split <code class="lang-d"><a href="../../std/algorithm/searching/find_split.html#haystack"><span class="pln">haystack</span></a></code> as follows.
@@ -3203,7 +3203,7 @@ split <code class="lang-d"><a href="../../std/algorithm/searching/find_split.htm
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>These functions find the first occurrence of <code class="lang-d"><a href="../../std/algorithm/searching/find_split_after.html#needle"><span class="pln">needle</span></a></code> in <code class="lang-d"><a href="../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln">haystack</span></a></code> and then
 split <code class="lang-d"><a href="../../std/algorithm/searching/find_split_after.html#haystack"><span class="pln">haystack</span></a></code> as follows.
@@ -3216,7 +3216,7 @@ split <code class="lang-d"><a href="../../std/algorithm/searching/find_split_aft
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>These functions find the first occurrence of <code class="lang-d"><a href="../../std/algorithm/searching/find_split_before.html#needle"><span class="pln">needle</span></a></code> in <code class="lang-d"><a href="../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></code> and then
 split <code class="lang-d"><a href="../../std/algorithm/searching/find_split_before.html#haystack"><span class="pln">haystack</span></a></code> as follows.
@@ -3229,7 +3229,7 @@ split <code class="lang-d"><a href="../../std/algorithm/searching/find_split_bef
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Computes the minimum (respectively maximum) of <code class="lang-d"><a href="../../std/algorithm/searching/max_count.html#range"><span class="pln">range</span></a></code> along with its number of
 occurrences. Formally, the minimum is a value <code class="lang-d"><span class="pln">x</span></code> in <code class="lang-d"><a href="../../std/algorithm/searching/max_count.html#range"><span class="pln">range</span></a></code> such that <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">a</span><span class="pun">, </span><span class="pln">x</span><span class="pun">)</span></code> is <code class="lang-d"><span class="kwd">false</span></code> for all values <code class="lang-d"><span class="pln">a</span></code> in <code class="lang-d"><a href="../../std/algorithm/searching/max_count.html#range"><span class="pln">range</span></a></code>. Conversely, the maximum is
@@ -3244,7 +3244,7 @@ in <code class="lang-d"><a href="../../std/algorithm/searching/max_count.html#ra
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Iterates the passed range and returns the maximal element.
 A custom mapping function can be passed to <code class="lang-d"><span class="pln">map</span></code>.
@@ -3258,7 +3258,7 @@ In other languages this is sometimes called <code class="lang-d"><span class="pl
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Computes the index of the first occurrence of <code class="lang-d"><a href="../../std/algorithm/searching/max_index.html#range"><span class="pln">range</span></a></code>'s maximum element.
 </td>
@@ -3270,7 +3270,7 @@ In other languages this is sometimes called <code class="lang-d"><span class="pl
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Computes a subrange of <code class="lang-d"><a href="../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></code> starting at the first occurrence of <code class="lang-d"><a href="../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></code>'s
 minimum (respectively maximum) and with the same ending as <code class="lang-d"><a href="../../std/algorithm/searching/max_pos.html#range"><span class="pln">range</span></a></code>, or the
@@ -3284,7 +3284,7 @@ empty range if <code class="lang-d"><a href="../../std/algorithm/searching/max_p
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Computes the minimum (respectively maximum) of <code class="lang-d"><a href="../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></code> along with its number of
 occurrences. Formally, the minimum is a value <code class="lang-d"><span class="pln">x</span></code> in <code class="lang-d"><a href="../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></code> such that <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">a</span><span class="pun">, </span><span class="pln">x</span><span class="pun">)</span></code> is <code class="lang-d"><span class="kwd">false</span></code> for all values <code class="lang-d"><span class="pln">a</span></code> in <code class="lang-d"><a href="../../std/algorithm/searching/min_count.html#range"><span class="pln">range</span></a></code>. Conversely, the maximum is
@@ -3299,7 +3299,7 @@ in <code class="lang-d"><a href="../../std/algorithm/searching/min_count.html#ra
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Iterates the passed range and returns the minimal element.
 A custom mapping function can be passed to <code class="lang-d"><span class="pln">map</span></code>.
@@ -3313,7 +3313,7 @@ In other languages this is sometimes called <code class="lang-d"><span class="pl
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Computes the index of the first occurrence of <code class="lang-d"><a href="../../std/algorithm/searching/min_index.html#range"><span class="pln">range</span></a></code>'s minimum element.
 </td>
@@ -3325,7 +3325,7 @@ In other languages this is sometimes called <code class="lang-d"><span class="pl
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Computes a subrange of <code class="lang-d"><a href="../../std/algorithm/searching/min_pos.html#range"><span class="pln">range</span></a></code> starting at the first occurrence of <code class="lang-d"><a href="../../std/algorithm/searching/min_pos.html#range"><span class="pln">range</span></a></code>'s
 minimum (respectively maximum) and with the same ending as <code class="lang-d"><a href="../../std/algorithm/searching/min_pos.html#range"><span class="pln">range</span></a></code>, or the
@@ -3339,7 +3339,7 @@ empty range if <code class="lang-d"><a href="../../std/algorithm/searching/min_p
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Checks whether the given
 <a href="../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a> starts with (one
@@ -3354,7 +3354,7 @@ if its front element fulfils predicate <code class="lang-d"><span class="pln">pr
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Lazily iterates <code class="lang-d"><a href="../../std/algorithm/searching/until.html#range"><span class="pln">range</span></a></code> until the element <code class="lang-d"><span class="pln">e</span></code> for which
 <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">e</span><span class="pun">, <a href="../../std/algorithm/searching/until.html#sentinel"></span><span class="pln">sentinel</span></a><span class="pun">)</span></code> is true.
@@ -3375,8 +3375,6 @@ if its front element fulfils predicate <code class="lang-d"><span class="pln">pr
 									<a id="BoyerMooreFinder" class="public" href="../../std/algorithm/searching/boyer_moore_finder.html">BoyerMooreFinder</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>Sets up Boyer-Moore matching for use with <code class="lang-d"><a href="../../std/algorithm/searching/find.html"><span class="pln">find</span></a></code> below.
  By default, elements are compared for equality.
 </td>
@@ -3386,8 +3384,6 @@ if its front element fulfils predicate <code class="lang-d"><span class="pln">pr
 								<code>
 									<a id="Until" class="public" href="../../std/algorithm/searching/until.html">Until</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>Lazily iterates <code class="lang-d"><span class="pln">range</span></code> until the element <code class="lang-d"><span class="pln">e</span></code> for which
 <code class="lang-d"><span class="pln">pred</span><span class="pun">(</span><span class="pln">e</span><span class="pun">, </span><span class="pln">sentinel</span><span class="pun">)</span></code> is true.
@@ -3408,7 +3404,8 @@ if its front element fulfils predicate <code class="lang-d"><span class="pln">pr
 									<a id="all" class="public" href="../../std/algorithm/searching/all.html">all</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td>Checks if <i>all</i> of the elements verify <code class="lang-d"><span class="pln">pred</span></code>.
 </td>
@@ -3419,7 +3416,8 @@ if its front element fulfils predicate <code class="lang-d"><span class="pln">pr
 									<a id="any" class="public" href="../../std/algorithm/searching/any.html">any</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td>Checks if <i>any</i> of the elements verifies <code class="lang-d"><span class="pln">pred</span></code>.
 <code class="lang-d"><span class="pun">!<a href="../../std/algorithm/searching/any.any.html"></span><span class="pln">any</span></a></code> can be used to verify that <i>none</i> of the elements verify
@@ -3433,7 +3431,8 @@ This is sometimes called <code class="lang-d"><span class="pln">exists</span></c
 									<a id="canFind" class="public" href="../../std/algorithm/searching/can_find.html">canFind</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td>Convenience function. Like find, but only returns whether or not the search
 was successful.
@@ -3445,7 +3444,8 @@ was successful.
 									<a id="skipOver" class="public" href="../../std/algorithm/searching/skip_over.html">skipOver</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								true
 							</td>
 							<td>Skip over the initial portion of the first given range (<code class="lang-d"><span class="pln">haystack</span></code>) that matches
 any of the additionally given ranges (<code class="lang-d"><span class="pln">needles</span></code>) fully, or

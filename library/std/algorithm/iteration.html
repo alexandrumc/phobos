@@ -3006,7 +3006,7 @@ It contains generic iteration algorithms.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td><code class="lang-d"><span class="pln">cache</span></code> eagerly evaluates <a href="../../std/range/primitives/front.html" title="std.range.primitives.front">front</a> of <code class="lang-d"><a href="../../std/algorithm/iteration/cache.html#range"><span class="pln">range</span></a></code>
 on each construction or call to <a href="../../std/range/primitives/pop_front.html" title="std.range.primitives.popFront">popFront</a>,
@@ -3022,7 +3022,7 @@ rather than re-evaluated.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td><code class="lang-d"><a href="../../std/algorithm/iteration/cache.html"><span class="pln">cache</span></a></code> eagerly evaluates <a href="../../std/range/primitives/front.html" title="std.range.primitives.front">front</a> of <code class="lang-d"><a href="../../std/algorithm/iteration/cache_bidirectional.html#range"><span class="pln">range</span></a></code>
 on each construction or call to <a href="../../std/range/primitives/pop_front.html" title="std.range.primitives.popFront">popFront</a>,
@@ -3038,7 +3038,7 @@ rather than re-evaluated.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Chunks an input range into subranges of equivalent adjacent elements.
  In other languages this is often called <code class="lang-d"><span class="pln">partitionBy</span></code>, <code class="lang-d"><span class="pln">groupBy</span></code>
@@ -3052,7 +3052,7 @@ rather than re-evaluated.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Groups consecutively equivalent elements into a single tuple of the element and
 the number of its repetitions.
@@ -3065,7 +3065,7 @@ the number of its repetitions.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Lazily joins a range of ranges with a separator. The separator itself
 is a range. If a separator is not provided, then the ranges are
@@ -3080,7 +3080,7 @@ in other languages).
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Finds the mean (colloquially known as the average) of a range.
 </td>
@@ -3092,7 +3092,7 @@ in other languages).
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Lazily computes all permutations of <code class="lang-d"><a href="../../std/algorithm/iteration/permutations.html#r"><span class="pln">r</span></a></code> using <a href="http://en.wikipedia.org/wiki/Heap%27s_algorithm">Heap's algorithm</a>.
 </td>
@@ -3104,7 +3104,7 @@ in other languages).
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Lazily splits a range using an element or range as a separator.
 Separator ranges can be any narrow string type or sliceable range type.
@@ -3117,7 +3117,7 @@ Separator ranges can be any narrow string type or sliceable range type.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Lazily splits the character-based range <code class="lang-d"><a href="../../std/algorithm/iteration/splitter.html#s"><span class="pln">s</span></a></code> into words, using whitespace as the
 delimiter.
@@ -3130,7 +3130,7 @@ delimiter.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Returns a range with all occurrences of <code class="lang-d"><a href="../../std/algorithm/iteration/substitute.html#substs"><span class="pln">substs</span></a></code> in <code class="lang-d"><a href="../../std/algorithm/iteration/substitute.html#r"><span class="pln">r</span></a></code>.
 replaced with their substitution.
@@ -3143,7 +3143,7 @@ replaced with their substitution.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Sums elements of <code class="lang-d"><a href="../../std/algorithm/iteration/sum.html#r"><span class="pln">r</span></a></code>, which must be a finite
 <a href="../../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>. Although
@@ -3159,7 +3159,7 @@ as follows.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Lazily iterates unique consecutive elements of the given range (functionality
 akin to the <a href="http://wikipedia.org/wiki/Uniq">uniq</a> system
@@ -3186,8 +3186,6 @@ bidirectional, <code class="lang-d"><span class="pln">uniq</span></code> also yi
 									<a id="Group" class="public" href="../../std/algorithm/iteration/group.html">Group</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>Groups consecutively equivalent elements into a single tuple of the element and
 the number of its repetitions.
 </td>
@@ -3197,8 +3195,6 @@ the number of its repetitions.
 								<code>
 									<a id="Permutations" class="public" href="../../std/algorithm/iteration/permutations.html">Permutations</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>Lazily computes all permutations of <code class="lang-d"><span class="pln">r</span></code> using <a href="http://en.wikipedia.org/wiki/Heap%27s_algorithm">Heap's algorithm</a>.
 </td>
@@ -3218,7 +3214,8 @@ the number of its repetitions.
 									<a id="cumulativeFold" class="public" href="../../std/algorithm/iteration/cumulative_fold.html">cumulativeFold</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td>Similar to <code class="lang-d"><a href="../../std/algorithm/iteration/fold.html"><span class="pln">fold</span></a></code>, but returns a range containing the successive reduced values.
 The call <code class="lang-d"><a href="../../std/algorithm/iteration/cumulative_fold.cumulative_fold.html"><span class="pln">cumulativeFold</span></a><span class="pun">!(</span><span class="pln">fun</span><span class="pun">)(</span><span class="pln">range</span><span class="pun">, </span><span class="pln">seed</span><span class="pun">)</span></code> first assigns <code class="lang-d"><span class="pln">seed</span></code> to an
@@ -3242,7 +3239,8 @@ This function is also known as
 									<a id="each" class="public" href="../../std/algorithm/iteration/each.html">each</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td>Eagerly iterates over <code class="lang-d"><span class="pln">r</span></code> and calls <code class="lang-d"><span class="pln">fun</span></code> over each element.
 </td>
@@ -3253,7 +3251,8 @@ This function is also known as
 									<a id="filter" class="public" href="../../std/algorithm/iteration/filter.html">filter</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td>Implements the higher order filter function. The predicate is passed to
 <code class="lang-d"><a href="../../std/functional/unary_fun.html" title="std.functional.unaryFun"><span class="pln">unaryFun</span></a></code>, and can either accept a string, or any callable
@@ -3266,7 +3265,8 @@ that can be executed via <code class="lang-d"><span class="pln">pred</span><span
 									<a id="filterBidirectional" class="public" href="../../std/algorithm/iteration/filter_bidirectional.html">filterBidirectional</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td>Similar to <code class="lang-d"><a href="../../std/algorithm/iteration/filter.html"><span class="pln">filter</span></a></code>, except it defines a
  <a href="../../std/range/primitives/is_bidirectional_range.html" title="std.range.primitives.isBidirectionalRange">bidirectional range</a>.
@@ -3283,7 +3283,8 @@ that can be executed via <code class="lang-d"><span class="pln">pred</span><span
 									<a id="fold" class="public" href="../../std/algorithm/iteration/fold.html">fold</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td>Implements the homonym function (also known as <code class="lang-d"><span class="pln">accumulate</span></code>, <code class="lang-d"><span class="pln">compress</span></code>, <code class="lang-d"><span class="pln">inject</span></code>, or <code class="lang-d"><span class="pln">foldl</span></code>) present in various programming
 languages of functional flavor. The call <code class="lang-d"><a href="../../std/algorithm/iteration/fold.fold.html"><span class="pln">fold</span></a><span class="pun">!(</span><span class="pln">fun</span><span class="pun">)(</span><span class="pln">range</span><span class="pun">, </span><span class="pln">seed</span><span class="pun">)</span></code>
@@ -3299,7 +3300,8 @@ seed (the range must be non-empty).
 									<a id="map" class="public" href="../../std/algorithm/iteration/map.html">map</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								true
 							</td>
 							<td>Implements the homonym function (also known as <code class="lang-d"><span class="pln">transform</span></code>) present
 in many languages of functional flavor. The call <code class="lang-d"><a href="../../std/algorithm/iteration/map.map.html"><span class="pln">map</span></a><span class="pun">!(</span><span class="pln">fun</span><span class="pun">)(</span><span class="pln">range</span><span class="pun">)</span></code>
@@ -3314,7 +3316,8 @@ not changed. Evaluation is done lazily.
 									<a id="reduce" class="public" href="../../std/algorithm/iteration/reduce.html">reduce</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								true
 							</td>
 							<td>Implements the homonym function (also known as <code class="lang-d"><span class="pln">accumulate</span></code>, <code class="lang-d"><span class="pln">compress</span></code>, <code class="lang-d"><span class="pln">inject</span></code>, or <code class="lang-d"><span class="pln">foldl</span></code>) present in various programming
 languages of functional flavor. There is also <code class="lang-d"><a href="../../std/algorithm/iteration/fold.html"><span class="pln">fold</span></a></code> which does
@@ -3334,7 +3337,8 @@ seed (the range must be non-empty).
 									<a id="substitute" class="public" href="../../std/algorithm/iteration/substitute.html">substitute</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td>Returns a range with all occurrences of <code class="lang-d"><a href="../../std/algorithm/iteration/substitute.html#substs"><span class="pln">substs</span></a></code> in <code class="lang-d"><a href="../../std/algorithm/iteration/substitute.html#r"><span class="pln">r</span></a></code>.
 replaced with their substitution.

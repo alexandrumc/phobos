@@ -3032,7 +3032,7 @@ and module <code class="lang-d"><a href="../std/path.html"><span class="pln">std
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Appends <code class="lang-d"><a href="../std/file/append.html#buffer"><span class="pln">buffer</span></a></code> to file <code class="lang-d"><a href="../std/file/append.html#name"><span class="pln">name</span></a></code>.
 </td>
@@ -3044,7 +3044,7 @@ and module <code class="lang-d"><a href="../std/path.html"><span class="pln">std
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Returns whether the given file attributes are for a directory.
 </td>
@@ -3056,7 +3056,7 @@ and module <code class="lang-d"><a href="../std/path.html"><span class="pln">std
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Returns whether the given file attributes are for a file.
 </td>
@@ -3068,7 +3068,7 @@ and module <code class="lang-d"><a href="../std/path.html"><span class="pln">std
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Returns whether the given file attributes are for a symbolic link.
 </td>
@@ -3080,7 +3080,7 @@ and module <code class="lang-d"><a href="../std/path.html"><span class="pln">std
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Change directory to <code class="lang-d"><a href="../std/file/chdir.html#pathname"><span class="pln">pathname</span></a></code>. Equivalent to <code class="lang-d"><span class="pln">cd</span></code> on
 Windows and POSIX.
@@ -3093,7 +3093,7 @@ Windows and POSIX.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Copy file <code class="lang-d"><a href="../std/file/copy.html#from"><span class="pln">from</span></a></code> to file <code class="lang-d"><a href="../std/file/copy.html#to"><span class="pln">to</span></a></code>. File timestamps are preserved.
 File attributes are preserved, if <code class="lang-d"><a href="../std/file/copy.html#preserve"><span class="pln">preserve</span></a></code> equals <code class="lang-d"><span class="typ">Yes<wbr/></span><span class="pun">.</span><span class="pln">preserveAttributes</span></code>.
@@ -3108,7 +3108,7 @@ If the target file exists, it is overwritten.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Returns an <a href="../std/range/primitives/is_input_range.html" title="std.range.primitives.isInputRange">input range</a>
     of <code class="lang-d"><a href="../std/file/dir_entry.html"><span class="typ">DirEntry</span></a></code> that lazily iterates a given directory,
@@ -3126,7 +3126,7 @@ If the target file exists, it is overwritten.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Determine whether the given file (or directory) exists.
 </td>
@@ -3138,7 +3138,7 @@ If the target file exists, it is overwritten.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Returns the attributes of the given file.
 </td>
@@ -3150,7 +3150,7 @@ If the target file exists, it is overwritten.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Returns the available disk space based on a given path.
 On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.html#path"><span class="pln">path</span></a></code> must be a directory; on POSIX systems, it can be a file or directory.
@@ -3163,7 +3163,7 @@ On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.h
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Get the current working directory.
 </td>
@@ -3175,7 +3175,7 @@ On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.h
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>If the given file is a symbolic link, then this returns the attributes of the
     symbolic link itself rather than file that it points to. If the given file
@@ -3190,7 +3190,7 @@ On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.h
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Get size of file <code class="lang-d"><a href="../std/file/get_size.html#name"><span class="pln">name</span></a></code> in bytes.
 </td>
@@ -3202,7 +3202,7 @@ On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.h
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Get the access and modified times of file or folder <code class="lang-d"><a href="../std/file/get_times.html#name"><span class="pln">name</span></a></code>.
 </td>
@@ -3214,7 +3214,7 @@ On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.h
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td><span class="blue">This function is Windows-Only.</span>
 </td>
@@ -3226,7 +3226,7 @@ On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.h
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Returns whether the given file is a directory.
 </td>
@@ -3238,7 +3238,7 @@ On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.h
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Returns whether the given file (or directory) is a file.
 </td>
@@ -3250,7 +3250,7 @@ On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.h
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Returns whether the given file is a symbolic link.
 </td>
@@ -3262,7 +3262,7 @@ On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.h
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Make a new directory <code class="lang-d"><a href="../std/file/mkdir.html#pathname"><span class="pln">pathname</span></a></code>.
 </td>
@@ -3274,7 +3274,7 @@ On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.h
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Make directory and all parent directories as needed.
 </td>
@@ -3286,7 +3286,7 @@ On Windows, <code class="lang-d"><a href="../std/file/get_available_disk_space.h
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Read entire contents of file <code class="lang-d"><a href="../std/file/read.html#name"><span class="pln">name</span></a></code> and returns it as an untyped
 array. If the file size is larger than <code class="lang-d"><a href="../std/file/read.html#upTo"><span class="pln">upTo</span></a></code>, only <code class="lang-d"><a href="../std/file/read.html#upTo"><span class="pln">upTo</span></a></code>
@@ -3300,7 +3300,7 @@ bytes are read.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td><span class="blue">This function is POSIX-Only.</span>
 </td>
@@ -3312,7 +3312,7 @@ bytes are read.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Reads and validates (using <code class="lang-d"><a href="../std/utf/validate.html" title="std.utf.validate"><span class="pln">validate</span></a></code>) a text file. S can be
     an array of any character type. However, no width or endian conversions are
@@ -3328,7 +3328,7 @@ bytes are read.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Delete file <code class="lang-d"><a href="../std/file/remove.html#name"><span class="pln">name</span></a></code>.
 </td>
@@ -3340,7 +3340,7 @@ bytes are read.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Rename file <code class="lang-d"><a href="../std/file/rename.html#from"><span class="pln">from</span></a></code> to <code class="lang-d"><a href="../std/file/rename.html#to"><span class="pln">to</span></a></code>, moving it between directories if required.
  If the target file exists, it is overwritten.
@@ -3353,7 +3353,7 @@ bytes are read.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Remove directory <code class="lang-d"><a href="../std/file/rmdir.html#pathname"><span class="pln">pathname</span></a></code>.
 </td>
@@ -3365,7 +3365,7 @@ bytes are read.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Remove directory and all of its content and subdirectories,
     recursively.
@@ -3378,7 +3378,7 @@ bytes are read.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Set the attributes of the given file.
 </td>
@@ -3390,7 +3390,7 @@ bytes are read.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Set access/modified times of file or folder <code class="lang-d"><a href="../std/file/set_times.html#name"><span class="pln">name</span></a></code>.
 </td>
@@ -3402,7 +3402,7 @@ bytes are read.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Reads a file line by line and parses the line into a single value or a
  <code class="lang-d"><a href="../std/typecons/tuple.html" title="std.typecons.Tuple"><span class="typ">Tuple</span></a></code> of values depending on the length of <code class="lang-d"><span class="typ">Types</span></code>.
@@ -3418,7 +3418,7 @@ bytes are read.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td><span class="blue">This function is POSIX-Only.</span>
 </td>
@@ -3430,7 +3430,7 @@ bytes are read.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Returns the path to a directory for temporary files.
 </td>
@@ -3442,7 +3442,7 @@ bytes are read.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Returns the full path of the current executable.
 </td>
@@ -3454,7 +3454,7 @@ bytes are read.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td><span class="blue">This function is POSIX-Only.</span>
 </td>
@@ -3466,7 +3466,7 @@ bytes are read.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Returns the time that the given file was last modified.
 </td>
@@ -3478,7 +3478,7 @@ bytes are read.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Returns the time that the given file was last modified. If the
     file does not exist, returns <code class="lang-d"><a href="../std/file/time_last_modified.html#returnIfMissing"><span class="pln">returnIfMissing</span></a></code>.
@@ -3491,7 +3491,7 @@ bytes are read.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td><span class="blue">This function is POSIX-Only.</span>
 </td>
@@ -3503,7 +3503,7 @@ bytes are read.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td><span class="blue">This function is POSIX-Only.</span>
 </td>
@@ -3515,7 +3515,7 @@ bytes are read.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Write <code class="lang-d"><a href="../std/file/write.html#buffer"><span class="pln">buffer</span></a></code> to file <code class="lang-d"><a href="../std/file/write.html#name"><span class="pln">name</span></a></code>.
 </td>
@@ -3535,8 +3535,6 @@ bytes are read.
 									<a id="FileException" class="public" href="../std/file/file_exception.html">FileException</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>Exception thrown for file I/O errors.
 </td>
 						</tr>
@@ -3555,8 +3553,6 @@ bytes are read.
 									<a id="DirEntry" class="public" href="../std/file/dir_entry.html">DirEntry</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>Info on a file, similar to what you'd get from stat on a POSIX system.
 </td>
 						</tr>
@@ -3574,8 +3570,6 @@ bytes are read.
 								<code>
 									<a id="SpanMode" class="public" href="../std/file/span_mode.html">SpanMode</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>Dictates directory spanning policy for <span class="d_param">dirEntries</span> (see below).
 </td>

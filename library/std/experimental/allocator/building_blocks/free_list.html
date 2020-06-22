@@ -2967,8 +2967,6 @@ $('#symbolSearchPane').show();</script>
 									<a id="ContiguousFreeList" class="public" href="../../../../std/experimental/allocator/building_blocks/free_list/contiguous_free_list.html">ContiguousFreeList</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>Free list built on top of exactly one contiguous block of memory. The block is
 assumed to have been allocated with <code class="lang-d"><span class="typ">ParentAllocator</span></code>, and is released in
 <code class="lang-d"><span class="typ">ContiguousFreeList</span></code>'s destructor (unless <code class="lang-d"><span class="typ">ParentAllocator</span></code> is <code class="lang-d"><span class="typ">NullAllocator</span></code>).
@@ -2979,8 +2977,6 @@ assumed to have been allocated with <code class="lang-d"><span class="typ">Paren
 								<code>
 									<a id="FreeList" class="public" href="../../../../std/experimental/allocator/building_blocks/free_list/free_list.html">FreeList</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td><a href="http://en.wikipedia.org/wiki/Free_list">Free list allocator</a>, stackable on top of
 another allocator. Allocation requests between <code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/free_list/free_list.min.html"><span class="pln">min</span></a></code> and <code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/free_list/free_list.max.html"><span class="pln">max</span></a></code> bytes are
@@ -2996,8 +2992,6 @@ allocator much more than the lists' available nodes.
 								<code>
 									<a id="SharedFreeList" class="public" href="../../../../std/experimental/allocator/building_blocks/free_list/shared_free_list.html">SharedFreeList</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>FreeList shared across threads. Allocation and deallocation are lock-free. The
 parameters have the same semantics as for <code class="lang-d"><a href="../../../../std/experimental/allocator/building_blocks/free_list/free_list.html"><span class="typ">FreeList</span></a></code>.

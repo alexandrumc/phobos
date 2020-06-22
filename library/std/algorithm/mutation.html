@@ -3012,7 +3012,7 @@ It contains generic mutation algorithms.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td><code class="lang-d"><span class="pln">bringToFront</span></code> takes two ranges <code class="lang-d"><a href="../../std/algorithm/mutation/bring_to_front.html#front"><span class="pln">front</span></a></code> and <code class="lang-d"><a href="../../std/algorithm/mutation/bring_to_front.html#back"><span class="pln">back</span></a></code>, which may
 be of different types. Considering the concatenation of <code class="lang-d"><a href="../../std/algorithm/mutation/bring_to_front.html#front"><span class="pln">front</span></a></code> and
@@ -3029,7 +3029,7 @@ and <code class="lang-d"><a href="../../std/algorithm/mutation/bring_to_front.ht
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Copies the content of <code class="lang-d"><a href="../../std/algorithm/mutation/copy.html#source"><span class="pln">source</span></a></code> into <code class="lang-d"><a href="../../std/algorithm/mutation/copy.html#target"><span class="pln">target</span></a></code> and returns the
 remaining (unfilled) part of <code class="lang-d"><a href="../../std/algorithm/mutation/copy.html#target"><span class="pln">target</span></a></code>.
@@ -3042,7 +3042,7 @@ remaining (unfilled) part of <code class="lang-d"><a href="../../std/algorithm/m
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Assigns <code class="lang-d"><a href="../../std/algorithm/mutation/fill.html#value"><span class="pln">value</span></a></code> to each element of input range <code class="lang-d"><a href="../../std/algorithm/mutation/fill.html#range"><span class="pln">range</span></a></code>.
 </td>
@@ -3054,7 +3054,7 @@ remaining (unfilled) part of <code class="lang-d"><a href="../../std/algorithm/m
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Initializes all elements of <code class="lang-d"><a href="../../std/algorithm/mutation/initialize_all.html#range"><span class="pln">range</span></a></code> with their <code class="lang-d"><wbr/><span class="pun">.</span><span class="pln">init</span></code> value.
 Assumes that the elements of the range are uninitialized.
@@ -3067,7 +3067,7 @@ Assumes that the elements of the range are uninitialized.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Moves <code class="lang-d"><a href="../../std/algorithm/mutation/move.html#source"><span class="pln">source</span></a></code> into <code class="lang-d"><a href="../../std/algorithm/mutation/move.html#target"><span class="pln">target</span></a></code>, via a destructive copy when necessary.
 </td>
@@ -3079,7 +3079,7 @@ Assumes that the elements of the range are uninitialized.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Calls <code class="lang-d"><a href="../../std/algorithm/mutation/move.html"><span class="pln">move</span></a><span class="pun">(</span><span class="pln">a</span><span class="pun">, </span><span class="pln">b</span><span class="pun">)</span></code> for each element <code class="lang-d"><span class="pln">a</span></code> in <code class="lang-d"><a href="../../std/algorithm/mutation/move_all.html#src"><span class="pln">src</span></a></code> and the corresponding
 element <code class="lang-d"><span class="pln">b</span></code> in <code class="lang-d"><a href="../../std/algorithm/mutation/move_all.html#tgt"><span class="pln">tgt</span></a></code>, in increasing order.
@@ -3092,7 +3092,7 @@ element <code class="lang-d"><span class="pln">b</span></code> in <code class="l
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Similar to <code class="lang-d"><a href="../../std/algorithm/mutation/move.html"><span class="pln">move</span></a></code> but assumes <code class="lang-d"><a href="../../std/algorithm/mutation/move_emplace.html#target"><span class="pln">target</span></a></code> is uninitialized. This
  is more efficient because <code class="lang-d"><a href="../../std/algorithm/mutation/move_emplace.html#source"><span class="pln">source</span></a></code> can be blitted over <code class="lang-d"><a href="../../std/algorithm/mutation/move_emplace.html#target"><span class="pln">target</span></a></code>
@@ -3106,7 +3106,7 @@ element <code class="lang-d"><span class="pln">b</span></code> in <code class="l
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Similar to <code class="lang-d"><a href="../../std/algorithm/mutation/move_all.html"><span class="pln">moveAll</span></a></code> but assumes all elements in <code class="lang-d"><a href="../../std/algorithm/mutation/move_emplace_all.html#tgt"><span class="pln">tgt</span></a></code> are
  uninitialized. Uses <code class="lang-d"><a href="../../std/algorithm/mutation/move_emplace.html"><span class="pln">moveEmplace</span></a></code> to move elements from
@@ -3120,7 +3120,7 @@ element <code class="lang-d"><span class="pln">b</span></code> in <code class="l
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Same as <code class="lang-d"><a href="../../std/algorithm/mutation/move_some.html"><span class="pln">moveSome</span></a></code> but assumes all elements in <code class="lang-d"><a href="../../std/algorithm/mutation/move_emplace_some.html#tgt"><span class="pln">tgt</span></a></code> are
  uninitialized. Uses <code class="lang-d"><a href="../../std/algorithm/mutation/move_emplace.html"><span class="pln">moveEmplace</span></a></code> to move elements from
@@ -3134,7 +3134,7 @@ element <code class="lang-d"><span class="pln">b</span></code> in <code class="l
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Calls <code class="lang-d"><a href="../../std/algorithm/mutation/move.html"><span class="pln">move</span></a><span class="pun">(</span><span class="pln">a</span><span class="pun">, </span><span class="pln">b</span><span class="pun">)</span></code> for each element <code class="lang-d"><span class="pln">a</span></code> in <code class="lang-d"><a href="../../std/algorithm/mutation/move_some.html#src"><span class="pln">src</span></a></code> and the corresponding
 element <code class="lang-d"><span class="pln">b</span></code> in <code class="lang-d"><a href="../../std/algorithm/mutation/move_some.html#tgt"><span class="pln">tgt</span></a></code>, in increasing order, stopping when either range has been
@@ -3148,7 +3148,7 @@ exhausted.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Eliminates elements at given offsets from <code class="lang-d"><a href="../../std/algorithm/mutation/remove.html#range"><span class="pln">range</span></a></code> and returns the shortened
 range.
@@ -3161,7 +3161,7 @@ range.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Reduces the length of the
 <a href="../../std/range/primitives/is_bidirectional_range.html" title="std.range.primitives.isBidirectionalRange">bidirectional range</a> <code class="lang-d"><a href="../../std/algorithm/mutation/remove.html#range"><span class="pln">range</span></a></code> by removing
@@ -3179,7 +3179,7 @@ order is preserved. Returns the filtered range.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Reverses <code class="lang-d"><a href="../../std/algorithm/mutation/reverse.html#r"><span class="pln">r</span></a></code> in-place.  Performs <code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">/ </span><span class="lit">2</span></code> evaluations of <code class="lang-d"><a href="../../std/algorithm/mutation/swap.html"><span class="pln">swap</span></a></code>.
 UTF sequences consisting of multiple code units are preserved properly.
@@ -3192,7 +3192,7 @@ UTF sequences consisting of multiple code units are preserved properly.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>The strip group of functions allow stripping of either leading, trailing,
     or both leading and trailing elements.
@@ -3205,7 +3205,7 @@ UTF sequences consisting of multiple code units are preserved properly.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>The strip group of functions allow stripping of either leading, trailing,
     or both leading and trailing elements.
@@ -3218,7 +3218,7 @@ UTF sequences consisting of multiple code units are preserved properly.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>The strip group of functions allow stripping of either leading, trailing,
     or both leading and trailing elements.
@@ -3231,7 +3231,7 @@ UTF sequences consisting of multiple code units are preserved properly.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Swaps <code class="lang-d"><a href="../../std/algorithm/mutation/swap.html#lhs"><span class="pln">lhs</span></a></code> and <code class="lang-d"><a href="../../std/algorithm/mutation/swap.html#rhs"><span class="pln">rhs</span></a></code>. The instances <code class="lang-d"><a href="../../std/algorithm/mutation/swap.html#lhs"><span class="pln">lhs</span></a></code> and <code class="lang-d"><a href="../../std/algorithm/mutation/swap.html#rhs"><span class="pln">rhs</span></a></code> are moved in
 memory, without ever calling <code class="lang-d"><span class="pln">opAssign</span></code>, nor any other function. <code class="lang-d"><span class="pln">T</span></code>
@@ -3245,7 +3245,7 @@ need not be assignable at all to be swapped.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Swaps two elements in-place of a range <code class="lang-d"><a href="../../std/algorithm/mutation/swap_at.html#r"><span class="pln">r</span></a></code>,
 specified by their indices <code class="lang-d"><a href="../../std/algorithm/mutation/swap_at.html#i1"><span class="pln">i1</span></a></code> and <code class="lang-d"><a href="../../std/algorithm/mutation/swap_at.html#i2"><span class="pln">i2</span></a></code>.
@@ -3258,7 +3258,7 @@ specified by their indices <code class="lang-d"><a href="../../std/algorithm/mut
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Swaps all elements of <code class="lang-d"><a href="../../std/algorithm/mutation/swap_ranges.html#r1"><span class="pln">r1</span></a></code> with successive elements in <code class="lang-d"><a href="../../std/algorithm/mutation/swap_ranges.html#r2"><span class="pln">r2</span></a></code>.
 Returns a tuple containing the remainder portions of <code class="lang-d"><a href="../../std/algorithm/mutation/swap_ranges.html#r1"><span class="pln">r1</span></a></code> and <code class="lang-d"><a href="../../std/algorithm/mutation/swap_ranges.html#r2"><span class="pln">r2</span></a></code> that were not swapped (one of them will be empty). The ranges may
@@ -3273,7 +3273,7 @@ swapping.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Initializes each element of <code class="lang-d"><a href="../../std/algorithm/mutation/uninitialized_fill.html#range"><span class="pln">range</span></a></code> with <code class="lang-d"><a href="../../std/algorithm/mutation/uninitialized_fill.html#value"><span class="pln">value</span></a></code>.
 Assumes that the elements of the range are uninitialized.
@@ -3296,8 +3296,6 @@ uninitializedFill are equivalent).
 								<code>
 									<a id="SwapStrategy" class="public" href="../../std/algorithm/mutation/swap_strategy.html">SwapStrategy</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>Defines the swapping strategy for algorithms that need to swap
 elements in a range (such as partition and sort). The strategy

@@ -3034,7 +3034,7 @@ for associative arrays; (3) friendlier behavior towards the garbage collector.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Returns an array of variants constructed from <code class="lang-d"><a href="../std/variant/variant_array.html#args"><span class="pln">args</span></a></code>.
 </td>
@@ -3054,8 +3054,6 @@ for associative arrays; (3) friendlier behavior towards the garbage collector.
 									<a id="VariantException" class="public" href="../std/variant/variant_exception.html">VariantException</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>Thrown in three cases:
 </td>
 						</tr>
@@ -3073,8 +3071,6 @@ for associative arrays; (3) friendlier behavior towards the garbage collector.
 								<code>
 									<a id="VariantN" class="public" href="../std/variant/variant_n.html">VariantN</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>Back-end type seldom used directly by user
  code. Two commonly-used types using <code class="lang-d"><span class="typ">VariantN</span></code> are:
@@ -3095,7 +3091,8 @@ for associative arrays; (3) friendlier behavior towards the garbage collector.
 									<a id="tryVisit" class="public" href="../std/variant/try_visit.html">tryVisit</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td>Behaves as <code class="lang-d"><a href="../std/variant/visit.html"><span class="pln">visit</span></a></code> but doesn't enforce that all types are handled
  by the visiting functions.
@@ -3107,7 +3104,8 @@ for associative arrays; (3) friendlier behavior towards the garbage collector.
 									<a id="visit" class="public" href="../std/variant/visit.html">visit</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td>Applies a delegate or function to the given <code class="lang-d"><a href="../std/variant/algebraic.html"><span class="typ">Algebraic</span></a></code> depending on the held type,
  ensuring that all types are handled by the visiting functions.

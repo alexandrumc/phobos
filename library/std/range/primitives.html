@@ -3076,7 +3076,7 @@ whether a given object is a range, and what kind of range it is:
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Implements the range interface primitive <code class="lang-d"><span class="pln">back</span></code> for built-in
 arrays. Due to the fact that nonmember functions can be called with
@@ -3091,7 +3091,7 @@ equivalent to <code class="lang-d"><span class="pln">back</span><span class="pun
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Implements the range interface primitive <code class="lang-d"><span class="pln">empty</span></code> for types that
 obey <code class="lang-d"><a href="../../std/range/primitives/has_length.html"><span class="pln">hasLength</span></a></code> property and for narrow strings. Due to the
@@ -3106,7 +3106,7 @@ using the dot notation, <code class="lang-d"><span class="pln">a<wbr/></span><sp
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Implements the range interface primitive <code class="lang-d"><span class="pln">front</span></code> for built-in
 arrays. Due to the fact that nonmember functions can be called with
@@ -3121,7 +3121,7 @@ equivalent to <code class="lang-d"><span class="pln">front</span><span class="pu
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Moves element at index <code class="lang-d"><a href="../../std/range/primitives/move_at.html#i"><span class="pln">i</span></a></code> of <code class="lang-d"><a href="../../std/range/primitives/move_at.html#r"><span class="pln">r</span></a></code> out and returns it. Leaves <code class="lang-d"><span class="pln">   <a href="../../std/range/primitives/move_at.html#r"></span><span class="pln">r</span></a><span class="pun">[<a href="../../std/range/primitives/move_at.html#i"></span><span class="pln">i</span></a><span class="pun">]</span></code> in a destroyable state that does not allocate any resources
    (usually equal to its <code class="lang-d"><wbr/><span class="pun">.</span><span class="pln">init</span></code> value).
@@ -3134,7 +3134,7 @@ equivalent to <code class="lang-d"><span class="pln">front</span><span class="pu
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Moves the back of <code class="lang-d"><a href="../../std/range/primitives/move_back.html#r"><span class="pln">r</span></a></code> out and returns it. Leaves <code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">back</span></code> in a
    destroyable state that does not allocate any resources (usually equal
@@ -3148,7 +3148,7 @@ equivalent to <code class="lang-d"><span class="pln">front</span><span class="pu
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Moves the front of <code class="lang-d"><a href="../../std/range/primitives/move_front.html#r"><span class="pln">r</span></a></code> out and returns it. Leaves <code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">front</span></code> in a
    destroyable state that does not allocate any resources (usually equal
@@ -3162,7 +3162,7 @@ equivalent to <code class="lang-d"><span class="pln">front</span><span class="pu
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Implements the range interface primitive <code class="lang-d"><span class="pln">popBack</span></code> for built-in
 arrays. Due to the fact that nonmember functions can be called with
@@ -3177,7 +3177,7 @@ equivalent to <code class="lang-d"><span class="pln">popBack</span><span class="
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Eagerly advances <code class="lang-d"><a href="../../std/range/primitives/pop_back_exactly.html#r"><span class="pln">r</span></a></code> itself (not a copy) exactly <code class="lang-d"><a href="../../std/range/primitives/pop_back_exactly.html#n"><span class="pln">n</span></a></code> times (by
     calling <code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">popFront</span></code>). <code class="lang-d"><a href="../../std/range/primitives/pop_front_exactly.html"><span class="pln">popFrontExactly</span></a></code> takes <code class="lang-d"><a href="../../std/range/primitives/pop_back_exactly.html#r"><span class="pln">r</span></a></code> by <code class="lang-d"><span class="kwd">ref</span></code>,
@@ -3193,7 +3193,7 @@ equivalent to <code class="lang-d"><span class="pln">popBack</span><span class="
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td><code class="lang-d"><a href="../../std/range/primitives/pop_front_n.html"><span class="pln">popFrontN</span></a></code> eagerly advances <code class="lang-d"><a href="../../std/range/primitives/pop_back_n.html#r"><span class="pln">r</span></a></code> itself (not a copy) up to <code class="lang-d"><a href="../../std/range/primitives/pop_back_n.html#n"><span class="pln">n</span></a></code> times
     (by calling <code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">popFront</span></code>). <code class="lang-d"><a href="../../std/range/primitives/pop_front_n.html"><span class="pln">popFrontN</span></a></code> takes <code class="lang-d"><a href="../../std/range/primitives/pop_back_n.html#r"><span class="pln">r</span></a></code> by <code class="lang-d"><span class="kwd">ref</span></code>,
@@ -3209,7 +3209,7 @@ equivalent to <code class="lang-d"><span class="pln">popBack</span><span class="
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Implements the range interface primitive <code class="lang-d"><span class="pln">popFront</span></code> for built-in
 arrays. Due to the fact that nonmember functions can be called with
@@ -3227,7 +3227,7 @@ point</a>.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Eagerly advances <code class="lang-d"><a href="../../std/range/primitives/pop_front_exactly.html#r"><span class="pln">r</span></a></code> itself (not a copy) exactly <code class="lang-d"><a href="../../std/range/primitives/pop_front_exactly.html#n"><span class="pln">n</span></a></code> times (by
     calling <code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">popFront</span></code>). <code class="lang-d"><span class="pln">popFrontExactly</span></code> takes <code class="lang-d"><a href="../../std/range/primitives/pop_front_exactly.html#r"><span class="pln">r</span></a></code> by <code class="lang-d"><span class="kwd">ref</span></code>,
@@ -3243,7 +3243,7 @@ point</a>.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td><code class="lang-d"><span class="pln">popFrontN</span></code> eagerly advances <code class="lang-d"><a href="../../std/range/primitives/pop_front_n.html#r"><span class="pln">r</span></a></code> itself (not a copy) up to <code class="lang-d"><a href="../../std/range/primitives/pop_front_n.html#n"><span class="pln">n</span></a></code> times
     (by calling <code class="lang-d"><span class="pln">r<wbr/></span><span class="pun">.</span><span class="pln">popFront</span></code>). <code class="lang-d"><span class="pln">popFrontN</span></code> takes <code class="lang-d"><a href="../../std/range/primitives/pop_front_n.html#r"><span class="pln">r</span></a></code> by <code class="lang-d"><span class="kwd">ref</span></code>,
@@ -3259,7 +3259,7 @@ point</a>.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Outputs <code class="lang-d"><a href="../../std/range/primitives/put.html#e"><span class="pln">e</span></a></code> to <code class="lang-d"><a href="../../std/range/primitives/put.html#r"><span class="pln">r</span></a></code>. The exact effect is dependent upon the two
 types. Several cases are accepted, as described below. The code snippets
@@ -3274,7 +3274,7 @@ evaluated.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Implements the range interface primitive <code class="lang-d"><span class="pln">save</span></code> for built-in
 arrays. Due to the fact that nonmember functions can be called with
@@ -3290,7 +3290,7 @@ content of the array, it simply returns its argument.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>This is a best-effort implementation of <code class="lang-d"><span class="pln">length</span></code> for any kind of
 range.

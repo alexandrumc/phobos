@@ -3062,7 +3062,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Asserts that the given expression does <i>not</i> throw the given type
     of <code class="lang-d"><span class="typ">Throwable</span></code>. If a <code class="lang-d"><span class="typ">Throwable</span></code> of the given type is thrown,
@@ -3077,7 +3077,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Asserts that the given expression throws the given type of <code class="lang-d"><span class="typ">Throwable</span></code>.
     The <code class="lang-d"><span class="typ">Throwable</span></code> is caught and does not escape assertThrown. However,
@@ -3092,7 +3092,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Casts a mutable array to an immutable array in an idiomatic
  manner. Technically, <code class="lang-d"><span class="pln">assumeUnique</span></code> just inserts a cast,
@@ -3112,7 +3112,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Wraps a possibly-throwing expression in a <code class="lang-d"><span class="kwd">nothrow</span></code> wrapper so that it
  can be called by a <code class="lang-d"><span class="kwd">nothrow</span></code> function.
@@ -3125,7 +3125,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Catches and returns the exception thrown from the given expression.
     If no exception is thrown, then null is returned and <code class="lang-d"><a href="../std/exception/collect_exception.html#result"><span class="pln">result</span></a></code> is
@@ -3139,7 +3139,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Catches and returns the exception thrown from the given expression.
     If no exception is thrown, then null is returned. <code class="lang-d"><span class="pln">E</span></code> can be
@@ -3153,7 +3153,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Catches the exception thrown from the given expression and returns the
     msg property of that exception. If no exception is thrown, then null is
@@ -3167,7 +3167,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Checks whether a given source object contains pointers or references to a given
 target object.
@@ -3180,7 +3180,7 @@ target object.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Enforces that the given value is true.
     If the given value is false, an exception is thrown.
@@ -3198,7 +3198,7 @@ target object.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Handle exceptions thrown from range primitives.
 </td>
@@ -3210,7 +3210,7 @@ target object.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>ML-style functional exception handling. Runs the supplied expression and
     returns its result. If the expression throws a <code class="lang-d"><span class="typ">Throwable</span></code>, runs the
@@ -3225,7 +3225,7 @@ target object.
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Checks whether a given source object contains pointers or references to a given
 target object.
@@ -3246,8 +3246,6 @@ target object.
 									<a id="ErrnoException" class="public" href="../std/exception/errno_exception.html">ErrnoException</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>Thrown if errors that set <code class="lang-d"><a href="../std/exception/errno_exception.errno.html"><span class="pln">errno</span></a></code> occur.
 </td>
 						</tr>
@@ -3265,8 +3263,6 @@ target object.
 								<code>
 									<a id="RangePrimitive" class="public" href="../std/exception/range_primitive.html">RangePrimitive</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>This <code class="lang-d"><span class="kwd">enum</span></code> is used to select the primitives of the range to handle by the
   <code class="lang-d"><a href="../std/exception/handle.html"><span class="pln">handle</span></a></code> range wrapper. The values of the <code class="lang-d"><span class="kwd">enum</span></code> can be <code class="lang-d"><span class="pln">OR</span></code>'d to
@@ -3288,7 +3284,8 @@ target object.
 									<a id="basicExceptionCtors" class="public" href="../std/exception/basic_exception_ctors.html">basicExceptionCtors</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td>Convenience mixin for trivially sub-classing exceptions
 </td>
@@ -3299,7 +3296,8 @@ target object.
 									<a id="enforce" class="public" href="../std/exception/enforce.html">enforce</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td>Enforces that the given value is true.
     If the given value is false, an exception is thrown.
@@ -3316,7 +3314,8 @@ target object.
 									<a id="enforceEx" class="public" href="../std/exception/enforce_ex.html">enforceEx</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td><span class="red">Deprecated. Please use <code class="lang-d"><a href="../std/exception/enforce.html"><span class="pln">enforce</span></a></code> instead. This function will be removed 2.089.</span>
 </td>

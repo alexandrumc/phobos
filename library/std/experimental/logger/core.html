@@ -2968,7 +2968,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>This methods get and set the global <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code>.
 </td>
@@ -2980,7 +2980,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>This functions is used at runtime to determine if a <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> is
 active. The same previously defined version statements are used to disable
@@ -2996,7 +2996,7 @@ pure bool isLoggingEnabled()(LogLevel ll) @safe nothrow @nogc
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>This function logs data.
 </td>
@@ -3008,7 +3008,7 @@ pure bool isLoggingEnabled()(LogLevel ll) @safe nothrow @nogc
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>This function logs data.
 </td>
@@ -3020,7 +3020,7 @@ pure bool isLoggingEnabled()(LogLevel ll) @safe nothrow @nogc
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>This function logs data.
 </td>
@@ -3032,7 +3032,7 @@ pure bool isLoggingEnabled()(LogLevel ll) @safe nothrow @nogc
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>This function logs data.
 </td>
@@ -3044,7 +3044,7 @@ pure bool isLoggingEnabled()(LogLevel ll) @safe nothrow @nogc
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>This function logs data in a <code class="lang-d"><span class="pln">printf</span></code>-style manner.
 </td>
@@ -3056,7 +3056,7 @@ pure bool isLoggingEnabled()(LogLevel ll) @safe nothrow @nogc
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>This function logs data in a <code class="lang-d"><span class="pln">printf</span></code>-style manner.
 </td>
@@ -3068,7 +3068,7 @@ pure bool isLoggingEnabled()(LogLevel ll) @safe nothrow @nogc
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>This function logs data in a <code class="lang-d"><span class="pln">printf</span></code>-style manner.
 </td>
@@ -3080,7 +3080,7 @@ pure bool isLoggingEnabled()(LogLevel ll) @safe nothrow @nogc
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>This function logs data in a <code class="lang-d"><span class="pln">printf</span></code>-style manner.
 </td>
@@ -3092,7 +3092,7 @@ pure bool isLoggingEnabled()(LogLevel ll) @safe nothrow @nogc
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>This property sets and gets the default <code class="lang-d"><a href="../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code>.
 </td>
@@ -3104,7 +3104,7 @@ pure bool isLoggingEnabled()(LogLevel ll) @safe nothrow @nogc
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>This function returns a thread unique <code class="lang-d"><a href="../../../std/experimental/logger/core/logger.html"><span class="typ">Logger</span></a></code>, that by default
 propergates all data logged to it to the <code class="lang-d"><a href="../../../std/experimental/logger/core/shared_log.html"><span class="pln">sharedLog</span></a></code>.
@@ -3125,8 +3125,6 @@ propergates all data logged to it to the <code class="lang-d"><a href="../../../
 									<a id="Logger" class="public" href="../../../std/experimental/logger/core/logger.html">Logger</a>
 								</code>
 							</td>
-							<td>
-							</td>
 							<td>This class is the base of every logger. In order to create a new kind of
 logger a deriving class needs to implement the <code class="lang-d"><a href="../../../std/experimental/logger/core/logger.write_log_msg.html"><span class="pln">writeLogMsg</span></a></code> method. By
 default this is not thread-safe.
@@ -3137,8 +3135,6 @@ default this is not thread-safe.
 								<code>
 									<a id="StdForwardLogger" class="public" href="../../../std/experimental/logger/core/std_forward_logger.html">StdForwardLogger</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>The <code class="lang-d"><span class="typ">StdForwardLogger</span></code> will always forward anything to the sharedLog.
 </td>
@@ -3157,8 +3153,6 @@ default this is not thread-safe.
 								<code>
 									<a id="LogLevel" class="public" href="../../../std/experimental/logger/core/log_level.html">LogLevel</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>There are eight usable logging level. These level are <i>all</i>, <i>trace</i>,
 <i>info</i>, <i>warning</i>, <i>error</i>, <i>critical</i>, <i>fatal</i>, and <i>off</i>.
@@ -3181,7 +3175,8 @@ that logger is called.
 									<a id="defaultLogFunction" class="public" href="../../../std/experimental/logger/core/default_log_function.html">defaultLogFunction</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td>This template provides the global log functions with the <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code>
 is encoded in the function name.
@@ -3193,7 +3188,8 @@ is encoded in the function name.
 									<a id="defaultLogFunctionf" class="public" href="../../../std/experimental/logger/core/default_log_functionf.html">defaultLogFunctionf</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td>This template provides the global <code class="lang-d"><span class="pln">printf</span></code>-style log functions with
 the <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> is encoded in the function name.
@@ -3205,7 +3201,8 @@ the <code class="lang-d"><a href="../../../std/experimental/logger/core/log_leve
 									<a id="moduleLogLevel" class="public" href="../../../std/experimental/logger/core/module_log_level.html">moduleLogLevel</a>
 								</code>
 							</td>
-							<td><tdd class="canBeNogc"></tdd>
+							<td>
+								false
 							</td>
 							<td>This template returns the <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> named "logLevel" of type <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> defined in a user defined module where the filename has the
 suffix "loggerconfig.d". This <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code> sets the minimal <code class="lang-d"><a href="../../../std/experimental/logger/core/log_level.html"><span class="typ">LogLevel</span></a></code>

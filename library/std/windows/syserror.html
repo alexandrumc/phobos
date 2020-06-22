@@ -2974,7 +2974,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Query the text for a Windows error code, as returned by
         <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms679360.aspx">        <code class="lang-d"><span class="typ">GetLastError</span></code></a>, as a D string.
@@ -2987,7 +2987,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>If <code class="lang-d"><span class="pun">!!<a href="../../std/windows/syserror/wenforce.html#value"></span><span class="pln">value</span></a></code> is true, <code class="lang-d"><a href="../../std/windows/syserror/wenforce.html#value"><span class="pln">value</span></a></code> is returned. Otherwise,
         <code class="lang-d"><span class="kwd">new <a href="../../std/windows/syserror/windows_exception.html"></span><span class="typ">WindowsException</span></a><span class="pun">(</span><span class="typ">GetLastError</span><span class="pun">(), <a href="../../std/windows/syserror/wenforce.html#msg"></span><span class="pln">msg</span></a><span class="pun">)</span></code> is thrown.
@@ -3009,8 +3009,6 @@ $('#symbolSearchPane').show();</script>
 								<code>
 									<a id="WindowsException" class="public" href="../../std/windows/syserror/windows_exception.html">WindowsException</a>
 								</code>
-							</td>
-							<td>
 							</td>
 							<td>Thrown if errors that set
        <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms679360.aspx">       <code class="lang-d"><span class="typ">GetLastError</span></code></a> occur.

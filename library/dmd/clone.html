@@ -2978,7 +2978,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Create inclusive destructor for struct/class by aggregating
  all the destructors in dtors[] with the destructors for
@@ -2992,7 +2992,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>build a shim function around the compound dtor that translates
   a C++ destructor to a destructor with extern(D) calling convention
@@ -3005,7 +3005,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Create inclusive invariant for struct/class by aggregating
  all the invariants in invs[].
@@ -3022,7 +3022,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Build opAssign for a <code class="lang-d"><span class="kwd">struct</span></code>.
 </td>
@@ -3034,7 +3034,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Build opEquals for struct.
       const bool opEquals(const S s) { ... }
@@ -3047,7 +3047,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Build _xopCmp for TypeInfo_Struct
       static bool _xopCmp(ref const S p, ref const S q)
@@ -3063,7 +3063,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Build _xopEquals for TypeInfo_Struct
       static bool _xopEquals(ref const S p, ref const S q)
@@ -3079,7 +3079,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Build _xtoHash for non-bitwise hashing
       static hash_t xtoHash(ref const S p) nothrow @trusted;
@@ -3092,7 +3092,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Check given aggregate actually has an identity opAssign or not.
 </td>
@@ -3104,7 +3104,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>Merge function attributes pure, nothrow, @safe, @nogc, and @disable
  from f into s1.
@@ -3117,7 +3117,7 @@ $('#symbolSearchPane').show();</script>
 								</code>
 							</td>
 							<td>
-								<fd class="canBeNogc"></fd>
+								false
 							</td>
 							<td>We need an opEquals for the struct if
  any fields has an opEquals.
